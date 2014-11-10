@@ -1,0 +1,7 @@
+AtlasCore
+AtlasConditions
+AtlasEvent
+AtlasReconstruction
+AtlasTrigger
+AtlasAnalysis
+AtlasOffline
