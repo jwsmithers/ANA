@@ -15,7 +15,7 @@ do
         cmt create $TopDir/$line $line-$VERSION
         rm $TopDir/$line/$line-$VERSION/cmt/*
         echo "project $line" >> $TopDir/$line/$line-$VERSION/cmt/project.cmt
-	python $TopDir/../AddProjects.py "${line}Release ${line}Release-v*" "$line" >> $TopDir/$line/$line-$VERSION/cmt/project.cmt 
+	python $TopDir/../scripts/AddProjects.py "${line}Release ${line}Release-v*" "$line" >> $TopDir/$line/$line-$VERSION/cmt/project.cmt 
 done < Projects.txt
 
 ################################ Create the Release files for each project and the requirements files ################################
@@ -23,7 +23,7 @@ echo "Creating Release packages..."
 
 function CreateRequirements {
 	echo "package $2" > ./$2/$3/cmt/requirements
-        python ../../../CreateRequirementsfile.py ../../../SVN/$1 >> ./$2/cmt/requirements
+        python ../../../scripts/CreateRequirementsfile.py ../../../SVN/$1 >> ./$2/cmt/requirements
 }
 
 while read line
@@ -63,5 +63,10 @@ CreateRequirements "SVNAtlasHLT.txt" "AtlasHLTRelease"
 ################################################################################################################################
 
 goHome && cd ../
+
+echo "At this point you need to checkout all the packages from SVN. Do 'source PopulateProjects.sh' from this directory"
+
+
+
 
 echo "goodbye!";
