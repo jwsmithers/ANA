@@ -10,4 +10,3 @@ python $TopDir/../scripts/CreateCMT_CheckoutList.py ./SVN/SVNAtlasTrigger.txt > 
 python $TopDir/../scripts/CreateCMT_CheckoutList.py ./SVN/SVNAtlasAnalysis.txt > ./TEMPAtlasAnalysis.txt
 python $TopDir/../scripts/CreateCMT_CheckoutList.py ./SVN/SVNAtlasOffline.txt > ./TEMPAtlasOffline.txt
 python $TopDir/../scripts/CreateCMT_CheckoutList.py ./SVN/SVNAtlasHLT.txt > ./TEMPAtlasHLT.txt
-

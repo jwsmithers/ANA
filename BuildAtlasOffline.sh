@@ -86,4 +86,11 @@ else
 	echo "Not checking out packages."
 fi
 
+### Create the extra environment scripts in each directory ##
+source ./scripts/CreateEnvironments.sh
+
+### Build Everything by default ###
+echo "I'm now going to build all the packages from ground up. This is a lenghtly process"
+source ./scripts/BuildInOrder.sh
+
 echo "goodbye!";

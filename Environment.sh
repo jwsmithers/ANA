@@ -6,3 +6,15 @@ export CMTSITE=STANDALONE
 export SVNROOT=svn+ssh://jwsmith@svn.cern.ch/reps/atlasoff
 export VERSION=18.9.0
 export TopDir=/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea
+
+##COOL
+export COOLDir=$ROOTDIR/COOL/COOL_2_9_2.r19029
+export COOL_include=$ROOTDIR/COOL/$CMTCONFIG/include
+##CORAL
+export CORALDir=$ROOTDIR/CORAL/CORAL-2-4-2
+export CORAL_include=$ROOTDIR/CORAL/$CMTCONFIG/include
+##LCG
+export LCG_install=$ROOTDIR/lcgcmake-install
+##Gaudi
+export GaudiDir=$ROOTDIR/Gaudi
+
