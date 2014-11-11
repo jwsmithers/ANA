@@ -12,7 +12,7 @@ if sys.argv[2]=="DetCommon":
 if sys.argv[2]=="AtlasCore":
         print "use Gaudi"
         print "use LCGCMT LCGCMT_preview"
-	print "use use DetCommon DetCommon-18.9.0"
+	print "use DetCommon DetCommon-18.9.0"
 if sys.argv[2]=="AtlasConditions":
         print "use Gaudi"
         print "use LCGCMT LCGCMT_preview"

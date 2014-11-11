@@ -31,34 +31,34 @@ do
 	alias $line="cd $TopDir/$line/$line-$VERSION"
 done < Projects.txt
 
-DetCommon && cmt create DetCommonRelease DetCommonRelease-DetCommon-00-01-52
+DetCommon && cmt create DetCommonRelease DetCommonRelease-v*
 CreateRequirements "SVNDetCommon.txt" "DetCommonRelease"
 
-AtlasCore && cmt create  AtlasCoreRelease AtlasCoreRelease-AtlasCore-00-02-16
+AtlasCore && cmt create  AtlasCoreRelease AtlasCoreRelease-v*
 CreateRequirements "SVNAtlasCore.txt" "AtlasCoreRelease"
 
-AtlasConditions && cmt create AtlasConditionsRelease AtlasConditionsRelease-AtlasConditions-00-02-11
+AtlasConditions && cmt create AtlasConditionsRelease AtlasConditionsRelease-v*
 CreateRequirements "SVNAtlasConditions.txt" "AtlasConditionsRelease"
 
-AtlasEvent && cmt create AtlasEventRelease AtlasEventRelease-AtlasEvent-01-02-19
+AtlasEvent && cmt create AtlasEventRelease AtlasEventRelease-v*
 CreateRequirements "SVNAtlasEvent.txt" "AtlasEventRelease"
 
-AtlasReconstruction && cmt create AtlasReconstructionRelease AtlasReconstructionRelease-AtlasReconstruction-00-02-13
+AtlasReconstruction && cmt create AtlasReconstructionRelease AtlasReconstructionRelease-v*
 CreateRequirements "SVNAtlasReconstruction.txt" "AtlasReconstructionRelease"
 
-AtlasSimulation && cmt create AtlasSimulationRelease AtlasSimulationRelease-AtlasSimulation-00-01-96
+AtlasSimulation && cmt create AtlasSimulationRelease AtlasSimulationRelease-v*
 CreateRequirements "SVNAtlasSimulation.txt" "AtlasSimulationRelease"
 
-AtlasTrigger && cmt create AtlasTriggerRelease AtlasTriggerRelease-AtlasTrigger-00-01-94
+AtlasTrigger && cmt create AtlasTriggerRelease AtlasTriggerRelease-v*
 CreateRequirements "SVNAtlasTrigger.txt" "AtlasTriggerRelease"
 
-AtlasAnalysis && cmt create AtlasAnalysisRelease AtlasAnalysisRelease-AtlasAnalysis-00-01-99
+AtlasAnalysis && cmt create AtlasAnalysisRelease AtlasAnalysisRelease-v*
 CreateRequirements "SVNAtlasAnalysis.txt" "AtlasAnalysisRelease"
 
-AtlasOffline && cmt create AtlasOfflineRelease AtlasOfflineRelease-AtlasOffline-00-01-70
+AtlasOffline && cmt create AtlasOfflineRelease AtlasOfflineRelease-v*
 CreateRequirements "SVNAtlasOffline.txt" "AtlasOfflineRelease"
 
-AtlasHLT && cmt create AtlasHLTRelease AtlasHLTRelease-AtlasHLT-00-01-58
+AtlasHLT && cmt create AtlasHLTRelease AtlasHLTRelease-v*
 CreateRequirements "SVNAtlasHLT.txt" "AtlasHLTRelease"
 ################################################################################################################################
 
