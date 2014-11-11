@@ -5,4 +5,4 @@ export CMTBIN=Linux-armv7l
 export CMTSITE=STANDALONE
 export SVNROOT=svn+ssh://jwsmith@svn.cern.ch/reps/atlasoff
 export VERSION=18.9.0
-export TopDir=/home/jwsmith/HDD/AtlasOfflineBuild/Test
+export TopDir=/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea
