@@ -1,0 +1,11 @@
+AtlasCoreRelease-AtlasCore-00-02-16
+AtlasConditionsRelease-AtlasConditions-00-02-11
+AtlasEventRelease-AtlasEvent-01-02-19
+AtlasReconstructionRelease-AtlasReconstruction-00-02-13
+AtlasSimulationRelease-AtlasSimulation-00-01-96
+AtlasTriggerRelease-AtlasTrigger-00-01-94
+AtlasAnalysisRelease-AtlasAnalysis-00-01-99
+AtlasOfflineRelease-AtlasOffline-00-01-70
+DetCommonRelease-DetCommon-00-01-52
+AtlasHLTRelease-AtlasHLT-00-01-58
+
