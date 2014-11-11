@@ -64,9 +64,26 @@ CreateRequirements "SVNAtlasHLT.txt" "AtlasHLTRelease"
 
 goHome && cd ../
 
-echo "At this point you need to checkout all the packages from SVN. Do 'source PopulateProjects.sh' from this directory"
+function CMTCheckout {
+	cd $1
+	while read line
+	do
+		cmt co -r $line
+	done < $2 
+}
 
-
-
+read -t 7 -p "Do you want to populate all directories? This is a very lenghly proceess and so will defualt to 'no' in 5 seconds. " -i "no " -e input
+if [ "$input" == "yes" ]
+then
+	echo "Checkout out all packages..."
+	source ./scripts/PopulateDirectories.sh
+	while read line
+	do
+		CMTCheckout "$TopDir/$line/${line}-$VERSION" "$TopDir/../TEMP${line}.txt"
+	done < Projects.txt
+	
+else
+	echo "Not checking out packages."
+fi
 
 echo "goodbye!";
