@@ -11,4 +11,4 @@ do
 	cmt broadcast make install_headers
 	cmt broadcast make -i -j4	
 	
-done < Projects.txt
+done < WhatToBuild.txt

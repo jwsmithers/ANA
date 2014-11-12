@@ -12,8 +12,8 @@ while read name
 do
         alias $name="cd $TopDir/$name/$name-$VERSION"
 done < Projects.txt
-
-################################ Check to see if projects and their project.cmt files have been created. If not, create them  ################################
+################################################################################################################################
+## Check to see if projects and their project.cmt files have been created. If not, create them  ##
 
 if [ "$HASRUNBEFORE" == "1" ]
 then
@@ -23,7 +23,8 @@ else
 fi
 
 export HASRUNBEFORE=1
-################################ Create the Release files for each project and the requirements files ################################
+################################################################################################################################
+## Create the Release files for each project and the requirements files ##
 echo "Creating Release packages..."
 
 function CreateRequirements {
@@ -62,7 +63,7 @@ CreateRequirements "AtlasOfflineRelease" "SVNAtlasOffline.txt"
 AtlasHLT && cmt create AtlasHLTRelease AtlasHLTRelease-v*
 CreateRequirements "AtlasHLTRelease" "SVNAtlasHLT.txt"
 ################################################################################################################################
-
+## Checkout or don't checkout all the packages from SVN ###
 goHome && cd ../
 
 function CMTCheckout {
@@ -87,11 +88,70 @@ else
 	echo "Not checking out packages."
 fi
 goHome; cd ../
+################################################################################################################################
 ### Create the extra environment scripts in each directory ##
 source ./scripts/CreateEnvironments.sh
+################################################################################################################################
+### What to build (Build Everything by default) ###
+read -t 15 -p "What package would you like to build? Only specify one. I.e. DetCommon, AtlasCore, AtlasConditions etc. By default everything gets built. You have 15 seconds. " -e input2
+if [ "$input2" == "DetCommon" ]
+then
+	echo "Building DetCommon..."
+	echo "DetCommon" > ./WhatToBuild.txt
 
-### Build Everything by default ###
-echo "I'm now going to build all the packages from ground up. This is a lenghtly process"
+elif [ "$input2" == "AtlasCore" ]
+then
+        echo "Building AtlasCore..."
+        echo "AtlasCore" > ./WhatToBuild.txt
+
+elif [ "$input2" == "AtlasConditions" ]
+then
+        echo "Building AtlasConditions..."
+        echo "AtlasConditions" > ./WhatToBuild.txt
+
+elif [ "$input2" == "AtlasEvent" ]
+then
+        echo "Building AtlasEvent..."
+        echo "AtlasEvent" > ./WhatToBuild.txt
+	
+elif [ "$input2" == "AtlasReconstruction" ]
+then
+        echo "Building AtlasReconstruction..."
+        echo "AtlasReconstruction" > ./WhatToBuild.txt
+
+elif [ "$input2" == "AtlasTrigger" ]
+then
+        echo "Building AtlasTrigger..."
+        echo "AtlasTrigger" > ./WhatToBuild.txt
+
+elif [ "$input2" == "AtlasAnalysis" ]
+then
+        echo "Building AtlasAnalysis..."
+        echo "AtlasAnalysis" > ./WhatToBuild.txt
+
+elif [ "$input2" == "AtlasSimulation" ]
+then
+        echo "Building AtlasSimulation..."
+        echo "AtlasSimulation" > ./WhatToBuild.txt
+
+elif [ "$input2" == "AtlasOffline" ]
+then
+        echo "Building AtlasOffline..."
+        echo "AtlasOffline" > ./WhatToBuild.txt
+
+elif [ "$input2" == "AtlasHLT" ]
+then
+        echo "Building AtlasHLT..."
+        echo "AtlasHLT" > ./WhatToBuild.txt
+
+else
+	echo "Building everything... sit tight."
+	cat Projects.txt > ./WhatToBuild.txt
+fi
+
+
+
 source ./scripts/BuildInOrder.sh #> >(tee $TopDir/../logs/StdOut.log) 2> >(tee $TopDir/../logs/StdError.log >&2)
-
+################################################################################################################################
 echo "goodbye!";
+################################################################################################################################
