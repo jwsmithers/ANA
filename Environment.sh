@@ -18,3 +18,5 @@ export LCG_install=$ROOTDIR/lcgcmake-install
 ##Gaudi
 export GaudiDir=$ROOTDIR/Gaudi
 
+#Java
+export CPLUS_INCLUDE_PATH=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm/include:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm/include/linux:$CPLUS_INCLUDE_PATH

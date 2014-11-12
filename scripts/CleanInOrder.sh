@@ -5,10 +5,6 @@ do
 	cd $TopDir/$line/$line-$VERSION
 	source BuildSetup.sh
 	cd $TopDir/$line/$line-$VERSION/${line}Release/cmt
-	cmt config
-	source setup.sh
-	cmt broadcast cmt config
-	cmt broadcast make install_headers
-	cmt broadcast make -i -j4	
+	cmt broadcast make clean	
 	
 done < Projects.txt

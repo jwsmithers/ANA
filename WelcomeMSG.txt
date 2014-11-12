@@ -58,11 +58,11 @@
                                         
 
 
-Welcome, this will set up the build environment for an AtlasBuild.
+Welcome, this will set up the build environment for an entire AtlasBuild.
 This assumes you have already built LCG and Gaudi packages separately in Gaudi_install and LCG_install.
 Please set the environment variables in Environment.sh
 
-Run ./buildAndInstall
+>> source BuildAtlasOffline.sh
 
 Now grab a cup of coffee or 300. This could take a while.
 

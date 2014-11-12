@@ -85,12 +85,12 @@ then
 else
 	echo "Not checking out packages."
 fi
-
+goHome; cd ../
 ### Create the extra environment scripts in each directory ##
 source ./scripts/CreateEnvironments.sh
 
 ### Build Everything by default ###
 echo "I'm now going to build all the packages from ground up. This is a lenghtly process"
-source ./scripts/BuildInOrder.sh
+source ./scripts/BuildInOrder.sh #> >(tee $TopDir/../logs/StdOut.log) 2> >(tee $TopDir/../logs/StdError.log >&2)
 
 echo "goodbye!";

@@ -4,9 +4,6 @@ Database/CoralDB	CoralDB-00-00-17
 DetCommonPolicy	DetCommonPolicy-00-00-25
 External/AtlasCompilers	AtlasCompilers-00-00-18
 InnerDetector/InDetConditions/InDetCoolCoralClientUtils	InDetCoolCoralClientUtils-00-01-03
-LCG_Configuration	LCG_Configuration-00-65-00-01
-LCG_Interfaces/CLHEP	CLHEP-00-63-00-02
-LCG_Interfaces/ROOT	ROOT-00-62-01-01
 PackDist	PackDist-00-12-00
 Tools/AtlasDoxygen	AtlasDoxygen-00-03-03
 Trigger/TrigConfiguration/AutoPrescaleTool	AutoPrescaleTool-00-00-12

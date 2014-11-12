@@ -1,0 +1,115 @@
+--- requirements	2014-11-11 20:29:23.954160952 +0200
++++ requirements1	2014-11-11 20:29:38.509066882 +0200
+@@ -17,10 +17,10 @@
+ # ---------------------------------------------------------
+ 
+ pattern detcommon_ignores \
+-        ignore_pattern include_dir_policy ; \
+-        ignore_pattern install_includes ; \
+-        ignore_pattern install_pythonmods ; \
+-        ignore_pattern library
++	ignore_pattern include_dir_policy ; \
++	ignore_pattern install_includes ; \
++	ignore_pattern install_pythonmods ; \
++	ignore_pattern library
+ 
+ apply_pattern detcommon_ignores
+ 
+@@ -33,7 +33,7 @@
+   macro <package>_linkopts " -l<package> " ; \
+   private ; \
+   macro <package>_shlibflags "$(libraryshr_linkopts) \
+-        $(cmt_installarea_linkopts) $(<package>_use_linkopts) " ; \
++	$(cmt_installarea_linkopts) $(<package>_use_linkopts) " ; \
+   macro_remove <package>_use_linkopts "$(<package>_linkopts)" ; \
+   end_private
+ 
+@@ -55,7 +55,7 @@
+   macro <package>_linkopts " -l<library> " ; \
+   private ; \
+   macro <library>_shlibflags "$(libraryshr_linkopts) \
+-        $(cmt_installarea_linkopts) $(<library>_use_linkopts) " ; \
++	$(cmt_installarea_linkopts) $(<library>_use_linkopts) " ; \
+   macro_remove <library>_use_linkopts "$(<package>_linkopts)" ; \
+   end_private
+ 
+@@ -73,8 +73,8 @@
+ pattern trigconf_example_application \
+   application <name> <file> bindirname="bin" ;\
+   macro_append <name>linkopts " $(<package>_linkopts) \
+-        -L$(CMTINSTALLAREA)/$(CMTCONFIG)/lib \
+-        $(Boost_linkopts_thread) "
++	-L$(CMTINSTALLAREA)/$(CMTCONFIG)/lib \
++	$(Boost_linkopts_thread) "
+ 
+ pattern trigconf_application \
+   apply_pattern trigconf_example_application name=TrigConf<name> \
+@@ -93,32 +93,32 @@
+ # ---------------------------------------------------------
+ 
+ macro_append cppflags " -Wwrite-strings -Wpointer-arith \
+-        -Woverloaded-virtual -Wno-long-long "
+-        
++	-Woverloaded-virtual -Wno-long-long "
++	
+ macro_append pp_cppflags       "" \
+       host-slc6&target-slc5 " -D__USE_XOPEN2K8 "
+-        
++	
+ # ---------------------------------------------------------
+ 
+ 
+ # ---------------------------------------------------------
+ # Java stuff
+ # ---------------------------------------------------------
+-set JAVA_SUBDIR "sw/lcg/external/Java" \
+-        BNL         "cernsw/java"
++set JAVA_SUBDIR "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm" \
++	BNL         "cernsw/java"
+      
+ set JAVA_BASE "${SITEROOT}/${JAVA_SUBDIR}"
+ 
+ macro JDK_VENDOR "SUN_" \
+       Darwin     ""
+ macro JDK_ARCH   "ia32"\
+-          64         "amd64" \
+-          Darwin     "Darwin"
++	  64         "amd64" \
++	  Darwin     "Darwin"
+ macro JDK_FULL_VERSION "1.5.0_11" \
+       Darwin           "1.5.0"
+ 
+-set JDK_HOME  "${JAVA_BASE}/JDK/${JDK_VENDOR}${JDK_FULL_VERSION}/${JDK_ARCH}"
+-set JAVA_HOME "${JDK_HOME}" target-mac106 ""
++set JDK_HOME  "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm"
++set JAVA_HOME "${JDK_HOME}"
+ 
+ set _JAVA_OPTIONS "-Xms64m -Xmx128m"
+ 
+@@ -135,7 +135,7 @@
+ macro JavaSDK_platform "" PACK "${JDK_ARCH}"
+ 
+ macro ANT_VERSION "1.7.0"
+-set   ANT_HOME    "${JAVA_BASE}/Ant/${ANT_VERSION}/share"
++set   ANT_HOME    "/usr/share/ant"
+ 
+ path_remove PATH "Ant"
+ path_prepend PATH "${ANT_HOME}/bin" noJava ""
+@@ -143,7 +143,7 @@
+ set ANT_SITE "CMT"
+ 
+ make_fragment ant -header=dummy
+-                        
++			
+ macro Ant_export_paths   "${ANT_HOME}"
+ macro Ant_native_version "${ANT_VERSION}"
+ 
+@@ -225,7 +225,7 @@
+ make_fragment atlas_data_installer -header=atlas_data_installer_header
+ 
+ pattern detcommon_generic_install \
+-        macro_append <package>_<kind> " <files> " ; \
++  	macro_append <package>_<kind> " <files> " ; \
+    document atlas_data_installer install_<name><kind> prefix=<prefix> $(<package>_<kind>) cmt_install_area_command="'<install_command>'"
+ 
+ pattern detcommon_link_files \
