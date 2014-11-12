@@ -6,7 +6,6 @@ export CMTSITE=STANDALONE
 export SVNROOT=svn+ssh://jwsmith@svn.cern.ch/reps/atlasoff
 export VERSION=18.9.0
 export TopDir=/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea
-
 ##COOL
 export COOLDir=$ROOTDIR/COOL/COOL_2_9_2.r19029
 export COOL_include=$ROOTDIR/COOL/$CMTCONFIG/include

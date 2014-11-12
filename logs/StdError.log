@@ -68,10 +68,10 @@ Creating cleanup scripts.
 #CMT---> (constituents.make) install_headers: No rule for such target
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document checkreq
-#CMT---> Info: Document install_header_files
-#CMT---> Info: Document checkreq
-#CMT---> Info: Library L1TopoCoreSimulation#CMT--->
- Info: Application TrigConfTopoTest
+#CMT---> Info: #CMT---> Info: Document install_header_files
+Document checkreq
+#CMT---> Info: Application TrigConfTopoTest
+#CMT---> Info: Library L1TopoCoreSimulation
 #CMT---> Info: Document install_pythonmods
 #CMT---> Info: Document install_includes
 #CMT---> Info: calculating dependencies for ../src/Parameter.cxx
@@ -102,49 +102,49 @@ Creating cleanup scripts.
 #CMT---> Info: calculating dependencies for ../src/CompositeTOB.cxx
 #CMT---> Info: calculating dependencies for ../src/ClusterSortingAlg.cxx
 #CMT---> Info: calculating dependencies for ../src/Connector.cxx
-#CMT---> Info: calculating dependencies for ../src/test/TopoTest.cxx
 #CMT---> Info: calculating dependencies for ../src/ParameterSpace.cxx
 #CMT---> Info: calculating dependencies for ../src/GenericTOB.cxx
+#CMT---> Info: calculating dependencies for ../src/test/TopoTest.cxx
 #CMT---> Info: Document L1TopoCoreSimulation_optdebug_library
 #CMT---> Info: Document checkreq
-#CMT---> Info: Document install_pythonmods
 #CMT---> Info: Document install_includes
-#CMT---> Info: Document install_python_modspython_modules
-#CMT---> Info: Document install_header_files
-#CMT---> Info: Library TriggerMenuCompiler
+#CMT---> Info: #CMT---> Info: Document install_python_modspython_modules
+Document install_pythonmods
 #CMT---> Info: Document checkreq
+#CMT---> Info: Library TriggerMenuCompiler
+#CMT---> Info: Document install_header_files
 #CMT---> Info: Library TriggerMenuCompilerProxyImpl
 #CMT---> Info: Document install_TMC_XMLsXML
 #CMT---> Info: calculating dependencies for ../src/CentralTriggerProcessor.cxx
 #CMT---> Info: Application triggerMenuCompilerApp
 #CMT---> Info: calculating dependencies for ../src/PatternInTime.cxx
-#CMT--->#CMT---> Info: Application testCamCompiler
- Info: calculating dependencies for ../src/TriggerMenuCompilerProxyImpl.cxx
-#CMT---> Info: Application triggerMenuReverse
+#CMT---> Info: calculating dependencies for ../src/TriggerMenuCompilerProxyImpl.cxx
+#CMT---> Info: Application testCamCompiler
 #CMT---> Info: calculating dependencies for ../src/TMCErrorHandler.cxx
 #CMT---> Info: calculating dependencies for ../src/TMCObject.cxx
 #CMT---> Info: calculating dependencies for ../src/TriggerInputSignal.cxx
+#CMT---> Info: Application triggerMenuReverse
 #CMT---> Info: calculating dependencies for ../src/TriggerThreshold.cxx
 #CMT---> Info: calculating dependencies for ../src/ContentAddressableMemory.cxx
 #CMT---> Info: calculating dependencies for ../src/test/triggerMenuCompilerApp.cxx
-#CMT---> Info: calculating dependencies for ../src/test/testCamCompiler.cxx
 #CMT---> Info: calculating dependencies for ../src/SumTermResult.cxx
+#CMT---> Info: calculating dependencies for ../src/test/testCamCompiler.cxx
 #CMT---> Info: calculating dependencies for ../src/TMCList.cxx
 #CMT---> Info: calculating dependencies for ../src/TMCUtilities.cxx
 #CMT---> Info: calculating dependencies for ../src/TriggerItem.cxx
 #CMT---> Info: calculating dependencies for ../src/TriggerMenu.cxx
 #CMT---> Info: calculating dependencies for ../src/LookupTable.cxx
-#CMT---> Info: calculating dependencies for ../src/test/triggerMenuReverse.cxx
 #CMT---> Info: calculating dependencies for ../src/SwitchMatrix.cxx
+#CMT---> Info: calculating dependencies for ../src/test/triggerMenuReverse.cxx
 #CMT---> Info: calculating dependencies for ../src/TMCNode.cxx
 #CMT---> Info: calculating dependencies for ../src/TriggerCondition.cxx
 #CMT---> Info: calculating dependencies for ../src/TriggerMenuCompiler.cxx
 #CMT---> Info: calculating dependencies for ../src/TriggerSumTerm.cxx
 #CMT---> Info: Document TriggerMenuCompiler_optdebug_library
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document install_python_modulespython
 #CMT---> Info: Document install_python_scriptsscripts
-#CMT---> Info: Document install_XMLXML
+#CMT---> Info: #CMT---> Info: Document install_python_modulespython
+#CMT---> Info: Document checkreq
+Document install_XMLXML
 #CMT---> Info: Document install_DB_scriptsscripts
 #CMT---> Info: Document install_sql_scriptssql
 #CMT---> Info: Document checkreq
@@ -152,520 +152,3 @@ Creating cleanup scripts.
 #CMT---> Info: Document install_scripts
 #CMT---> Info: Document dist
 Picked up _JAVA_OPTIONS: -Xms64m -Xmx128m
-
-BUILD FAILED
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/ant/build.xml:104: Compile failed; see the compiler error output for details.
-
-Total time: 10 minutes 24 seconds
-make[2]: [dist] Error 1 (ignored)
-#CMT---> Info: Document install_jars
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document install_header_files
-#CMT---> Info: Document install_
-#CMT---> Info: Library TrigConfMuctpi
-#CMT---> Info: Document install_includes
-#CMT---> Info: Document install_pythonmods
-#CMT---> Info: calculating dependencies for ../src/ErrorHandler.cxx
-#CMT---> Info: calculating dependencies for ../src/EntityResolver.cxx
-#CMT---> Info: Document TrigConfMuctpi_optdebug_library
-#CMT---> Info: Document install_header_files
-#CMT---> Info: Document checkreq
-#CMT---> Info: Library TrigConfBase
-#CMT---> Info: calculating dependencies for ../src/TrigDBConnectionConfig.cxx
-#CMT---> Info: calculating dependencies for ../src/MsgStream.cxx
-#CMT---> Info: Document TrigConfBase_optdebug_library
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document install_header_files
-#CMT---> Info: Library TrigConfL1Data
-#CMT---> Info: calculating dependencies for ../src/ThresholdMonitor.cxx
-#CMT---> Info: calculating dependencies for ../src/XsThresholdValue.cxx
-#CMT---> Info: calculating dependencies for ../src/NimThresholdValue.cxx
-#CMT---> Info: calculating dependencies for ../src/ClusterThresholdValue.cxx
-#CMT---> Info: calculating dependencies for ../src/MuonThresholdValue.cxx
-#CMT---> Info: calculating dependencies for ../src/TrigConfData.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerThreshold.cxx
-#CMT---> Info: calculating dependencies for ../src/LutCam.cxx
-#CMT---> Info: calculating dependencies for ../src/PrioritySet.cxx
-#CMT---> Info: calculating dependencies for ../src/CTPConfig.cxx
-#CMT---> Info: calculating dependencies for ../src/Random.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerItem.cxx
-#CMT---> Info: calculating dependencies for ../src/PIT.cxx
-#CMT---> Info: calculating dependencies for ../src/Menu.cxx
-#CMT---> Info: calculating dependencies for ../src/BunchGroup.cxx
-#CMT---> Info: calculating dependencies for ../src/JetThresholdValue.cxx
-#CMT---> Info: calculating dependencies for ../src/CaloInfo.cxx
-#CMT---> Info: calculating dependencies for ../src/L1DataDef.cxx
-#CMT---> Info: calculating dependencies for ../src/CTPConfigOnline.cxx
-#CMT---> Info: calculating dependencies for ../src/PrescaledClock.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerThresholdValue.cxx
-#CMT---> Info: calculating dependencies for ../src/EtThresholdValue.cxx
-#CMT---> Info: calculating dependencies for ../src/L1PSNumber.cxx
-#CMT---> Info: calculating dependencies for ../src/DeadTime.cxx
-#CMT---> Info: calculating dependencies for ../src/LVL1Config.cxx
-#CMT---> Info: calculating dependencies for ../src/CaloSinCos.cxx
-#CMT---> Info: calculating dependencies for ../src/HelperFunctions.cxx
-#CMT---> Info: calculating dependencies for ../src/DiffStruct.cxx
-#CMT---> Info: calculating dependencies for ../src/Muctpi.cxx
-#CMT---> Info: calculating dependencies for ../src/BunchGroupSet.cxx
-#CMT---> Info: calculating dependencies for ../src/ThresholdConfig.cxx
-#CMT---> Info: calculating dependencies for ../src/CTPFiles.cxx
-#CMT---> Info: calculating dependencies for ../src/CTPExtraWordsFormat.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerItemNode.cxx
-#CMT---> Info: calculating dependencies for ../src/METSigParam.cxx
-#CMT---> Info: calculating dependencies for ../src/MuonThresholdSet.cxx
-#CMT---> Info: calculating dependencies for ../src/PrescaleSet.cxx
-#CMT---> Info: calculating dependencies for ../src/CaloJetInput.cxx
-#CMT---> Info: Document TrigConfL1Data_optdebug_library
-#CMT---> Info: Library TrigConfJobOptData
-#CMT---> Info: Document install_header_files
-#CMT---> Info: Document checkreq
-#CMT---> Info: calculating dependencies for ../src/JobOptionTable.cxx
-#CMT---> Info: calculating dependencies for ../src/JobOption.cxx
-#CMT---> Info: Document TrigConfJobOptData_optdebug_library
-#CMT---> Info: Document checkreq
-#CMT---> Info: Library TrigConfHLTData
-#CMT---> Info: Document install_header_files
-#CMT---> Info: calculating dependencies for ../src/HLTSequenceList.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTUtils.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTTriggerType.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTFrame.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTSequence.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTLevel.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTChainList.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTChain.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTPrescaleSetCollection.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTStreamTag.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTTriggerElement.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTSignature.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTPrescaleSet.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTPrescale.cxx
-#CMT---> Info: Document TrigConfHLTData_optdebug_library
-#CMT---> Info: Library TrigConfStorage
-#CMT--->#CMT---> Info: Document install_header_files
- Info: Application TrigConf2COOLApp
-#CMT---> Info: Document checkreq
-#CMT---> Info: Application TrigConfConsistencyChecker
-#CMT---> Info: Application TrigConfReadWrite
-#CMT---> Info: Document install_python_scriptsscripts
-#CMT---> Info: Document install_python_modspython_modules
-#CMT---> Info: calculating dependencies for ../src/XMLBunchGroupLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTPrescaleSetCollectionLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/ConfigurationCheck.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLStorageMgr.cxx
-#CMT---> Info: calculating dependencies for ../src/PrescaleSetLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/test/2COOLApp.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLMasterTableLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/test/ConsistencyChecker.cxx
-#CMT---> Info: calculating dependencies for ../src/PrescaledClockLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLCTPFilesLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerThresholdLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLTriggerThresholdValueLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLMuctpiLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/JobOptionTableLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/test/ReadWrite.cxx
-#CMT---> Info: calculating dependencies for ../src/DeadTimeLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/TrigConfCoolFolderSpec.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLRandomLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/BunchGroupLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/CaloInfoLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/LogicExpression.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLJobOptionTableLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/CaloJetInputLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/BunchGroupSetLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLHLTFrameLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLPrescaledClockLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/MasterTableLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLCaloSinCosLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLDeadTimeLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/TrigConfCoolL1PayloadConverters.cxx
-#CMT---> Info: calculating dependencies for ../src/ThresholdMonitorLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLThresholdMonitorLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTChainLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLLutCamLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLBoostHelper.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTSequenceLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLPrioritySetLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/TrigConfCoolHLTPayloadConverters.cxx
-#CMT---> Info: calculating dependencies for ../src/CTPFilesLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/MenuLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/MuctpiLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/MuonThresholdSetLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/SessionMgr.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLTriggerThresholdLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTPrescaleSetLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/ThresholdConfigLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerThresholdValueLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLMenuLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/CaloSinCosLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/HLTFrameLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/RandomLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/TrigConfCoolWriter.cxx
-#CMT---> Info: calculating dependencies for ../src/CTPConfigOnlineLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/LutCamLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/DBLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLThresholdConfigLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLCTPConfigOnlineLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/StorageMgr.cxx
-#CMT---> Info: calculating dependencies for ../src/DBHelper.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLPrescaleSetLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLBunchGroupSetLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/CTPConfigLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/IStorageMgr.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLCaloInfoLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/XMLCTPConfigLoader.cxx
-#CMT---> Info: calculating dependencies for ../src/PrioritySetLoader.cxx
-In file included from ../src/TrigConfCoolFolderSpec.cxx:1:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In constructor ‘TrigConf::FolderDefinition::FolderDefinition(const string&, cool::FolderVersioning::Mode)’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: error: no matching function for call to ‘cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode&)’
-          folder(folder), fspec(mode) {}
-                                    ^
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: note: candidates are:
-In file included from /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:22:0,
-                 from ../src/TrigConfCoolFolderSpec.cxx:1:
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note: cool::FolderSpecification::FolderSpecification()
-     FolderSpecification();
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note:   candidate expects 0 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note: cool::FolderSpecification::FolderSpecification(const cool::FolderSpecification&)
-     FolderSpecification( const FolderSpecification& rhs );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::FolderSpecification&’
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note: cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode, const cool::IRecordSpecification&, cool::PayloadMode::Mode)
-     FolderSpecification( FolderVersioning::Mode mode,
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note:   candidate expects 3 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note: cool::FolderSpecification::FolderSpecification(const cool::IRecordSpecification&)
-     FolderSpecification( const IRecordSpecification& payloadSpecification );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::IRecordSpecification&’
-In file included from ../src/TrigConfCoolFolderSpec.cxx:1:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In member function ‘cool::RecordSpecification& TrigConf::FolderDefinition::rspec()’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:42:78: error: invalid initialization of reference of type ‘cool::RecordSpecification&’ from expression of type ‘const cool::IRecordSpecification’
-       cool::RecordSpecification& rspec() { return fspec.payloadSpecification(); }
-                                                                              ^
-../src/TrigConfCoolFolderSpec.cxx: In static member function ‘static cool::IFolderSetPtr TrigConf::TrigConfCoolFolderSpec::createMonFolderStructure(cool::IDatabasePtr, int)’:
-../src/TrigConfCoolFolderSpec.cxx:467:58: warning: ‘virtual cool::IFolderPtr cool::IDatabase::createFolder(const string&, const cool::IRecordSpecification&, const string&, cool::FolderVersioning::Mode, bool)’ is deprecated (declared at /home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/IDatabase.h:110) [-Wdeprecated-declarations]
-                                          multiChannelDesc);
-                                                          ^
-In file included from ../src/TrigConfCoolFolderSpec.cxx:1:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In member function ‘cool::RecordSpecification& TrigConf::FolderDefinition::rspec()’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:42:81: warning: control reaches end of non-void function [-Wreturn-type]
-       cool::RecordSpecification& rspec() { return fspec.payloadSpecification(); }
-                                                                                 ^
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfCoolFolderSpec.o] Error 1 (ignored)
-In file included from ../src/TrigConfCoolHLTPayloadConverters.cxx:2:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In constructor ‘TrigConf::FolderDefinition::FolderDefinition(const string&, cool::FolderVersioning::Mode)’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: error: no matching function for call to ‘cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode&)’
-          folder(folder), fspec(mode) {}
-                                    ^
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: note: candidates are:
-In file included from /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:22:0,
-                 from ../src/TrigConfCoolHLTPayloadConverters.cxx:2:
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note: cool::FolderSpecification::FolderSpecification()
-     FolderSpecification();
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note:   candidate expects 0 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note: cool::FolderSpecification::FolderSpecification(const cool::FolderSpecification&)
-     FolderSpecification( const FolderSpecification& rhs );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::FolderSpecification&’
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note: cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode, const cool::IRecordSpecification&, cool::PayloadMode::Mode)
-     FolderSpecification( FolderVersioning::Mode mode,
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note:   candidate expects 3 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note: cool::FolderSpecification::FolderSpecification(const cool::IRecordSpecification&)
-     FolderSpecification( const IRecordSpecification& payloadSpecification );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::IRecordSpecification&’
-In file included from ../src/TrigConfCoolHLTPayloadConverters.cxx:2:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In member function ‘cool::RecordSpecification& TrigConf::FolderDefinition::rspec()’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:42:78: error: invalid initialization of reference of type ‘cool::RecordSpecification&’ from expression of type ‘const cool::IRecordSpecification’
-       cool::RecordSpecification& rspec() { return fspec.payloadSpecification(); }
-                                                                              ^
-In file included from ../src/TrigConfCoolL1PayloadConverters.cxx:2:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In constructor ‘TrigConf::FolderDefinition::FolderDefinition(const string&, cool::FolderVersioning::Mode)’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: error: no matching function for call to ‘cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode&)’
-          folder(folder), fspec(mode) {}
-                                    ^
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: note: candidates are:
-In file included from /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:22:0,
-                 from ../src/TrigConfCoolL1PayloadConverters.cxx:2:
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note: cool::FolderSpecification::FolderSpecification()
-     FolderSpecification();
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note:   candidate expects 0 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note: cool::FolderSpecification::FolderSpecification(const cool::FolderSpecification&)
-     FolderSpecification( const FolderSpecification& rhs );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::FolderSpecification&’
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note: cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode, const cool::IRecordSpecification&, cool::PayloadMode::Mode)
-     FolderSpecification( FolderVersioning::Mode mode,
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note:   candidate expects 3 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note: cool::FolderSpecification::FolderSpecification(const cool::IRecordSpecification&)
-     FolderSpecification( const IRecordSpecification& payloadSpecification );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::IRecordSpecification&’
-In file included from ../src/TrigConfCoolL1PayloadConverters.cxx:2:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In member function ‘cool::RecordSpecification& TrigConf::FolderDefinition::rspec()’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:42:78: error: invalid initialization of reference of type ‘cool::RecordSpecification&’ from expression of type ‘const cool::IRecordSpecification’
-       cool::RecordSpecification& rspec() { return fspec.payloadSpecification(); }
-                                                                              ^
-In file included from ../src/TrigConfCoolWriter.cxx:2:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In constructor ‘TrigConf::FolderDefinition::FolderDefinition(const string&, cool::FolderVersioning::Mode)’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: error: no matching function for call to ‘cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode&)’
-          folder(folder), fspec(mode) {}
-                                    ^
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: note: candidates are:
-In file included from /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:22:0,
-                 from ../src/TrigConfCoolWriter.cxx:2:
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note: cool::FolderSpecification::FolderSpecification()
-     FolderSpecification();
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note:   candidate expects 0 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note: cool::FolderSpecification::FolderSpecification(const cool::FolderSpecification&)
-     FolderSpecification( const FolderSpecification& rhs );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::FolderSpecification&’
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note: cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode, const cool::IRecordSpecification&, cool::PayloadMode::Mode)
-     FolderSpecification( FolderVersioning::Mode mode,
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note:   candidate expects 3 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note: cool::FolderSpecification::FolderSpecification(const cool::IRecordSpecification&)
-     FolderSpecification( const IRecordSpecification& payloadSpecification );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::IRecordSpecification&’
-In file included from ../src/TrigConfCoolWriter.cxx:2:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In member function ‘cool::RecordSpecification& TrigConf::FolderDefinition::rspec()’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:42:78: error: invalid initialization of reference of type ‘cool::RecordSpecification&’ from expression of type ‘const cool::IRecordSpecification’
-       cool::RecordSpecification& rspec() { return fspec.payloadSpecification(); }
-                                                                              ^
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfCoolHLTPayloadConverters.o] Error 1 (ignored)
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfCoolL1PayloadConverters.o] Error 1 (ignored)
-../src/TrigConfCoolWriter.cxx: In member function ‘void TrigConf::TrigConfCoolWriter::writeL1BunchGroupRunPayload(TrigConf::ValidityRange, const TrigConf::Menu&, const TrigConf::BunchGroupSet&)’:
-../src/TrigConfCoolWriter.cxx:881:67: warning: ‘virtual void cool::IFolder::storeObject(const ValidityKey&, const ValidityKey&, const coral::AttributeList&, const ChannelId&, const string&, bool)’ is deprecated (declared at /home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/IFolder.h:137) [-Wdeprecated-declarations]
-       bgDescFolder->storeObject(vr.since(), vr.until(), payload, 0);
-                                                                   ^
-../src/TrigConfCoolWriter.cxx: In member function ‘void TrigConf::TrigConfCoolWriter::writeL1BunchGroupLBPayload(TrigConf::ValidityRange, unsigned int, const TrigConf::BunchGroupSet&)’:
-../src/TrigConfCoolWriter.cxx:935:72: warning: ‘virtual void cool::IFolder::storeObject(const ValidityKey&, const ValidityKey&, const coral::AttributeList&, const ChannelId&, const string&, bool)’ is deprecated (declared at /home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/IFolder.h:137) [-Wdeprecated-declarations]
-          lvl1BGContentFolder->storeObject(vr.since(), vr.until(), al, 0);
-                                                                        ^
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfCoolWriter.o] Error 1 (ignored)
-In file included from ../src/TrigConfCoolFolderSpec.cxx:1:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In constructor ‘TrigConf::FolderDefinition::FolderDefinition(const string&, cool::FolderVersioning::Mode)’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: error: no matching function for call to ‘cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode&)’
-          folder(folder), fspec(mode) {}
-                                    ^
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: note: candidates are:
-In file included from /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:22:0,
-                 from ../src/TrigConfCoolFolderSpec.cxx:1:
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note: cool::FolderSpecification::FolderSpecification()
-     FolderSpecification();
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note:   candidate expects 0 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note: cool::FolderSpecification::FolderSpecification(const cool::FolderSpecification&)
-     FolderSpecification( const FolderSpecification& rhs );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::FolderSpecification&’
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note: cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode, const cool::IRecordSpecification&, cool::PayloadMode::Mode)
-     FolderSpecification( FolderVersioning::Mode mode,
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note:   candidate expects 3 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note: cool::FolderSpecification::FolderSpecification(const cool::IRecordSpecification&)
-     FolderSpecification( const IRecordSpecification& payloadSpecification );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::IRecordSpecification&’
-In file included from ../src/TrigConfCoolFolderSpec.cxx:1:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In member function ‘cool::RecordSpecification& TrigConf::FolderDefinition::rspec()’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:42:78: error: invalid initialization of reference of type ‘cool::RecordSpecification&’ from expression of type ‘const cool::IRecordSpecification’
-       cool::RecordSpecification& rspec() { return fspec.payloadSpecification(); }
-                                                                              ^
-../src/TrigConfCoolFolderSpec.cxx: In static member function ‘static cool::IFolderSetPtr TrigConf::TrigConfCoolFolderSpec::createMonFolderStructure(cool::IDatabasePtr, int)’:
-../src/TrigConfCoolFolderSpec.cxx:467:58: warning: ‘virtual cool::IFolderPtr cool::IDatabase::createFolder(const string&, const cool::IRecordSpecification&, const string&, cool::FolderVersioning::Mode, bool)’ is deprecated (declared at /home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/IDatabase.h:110) [-Wdeprecated-declarations]
-                                          multiChannelDesc);
-                                                          ^
-In file included from ../src/TrigConfCoolFolderSpec.cxx:1:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In member function ‘cool::RecordSpecification& TrigConf::FolderDefinition::rspec()’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:42:81: warning: control reaches end of non-void function [-Wreturn-type]
-       cool::RecordSpecification& rspec() { return fspec.payloadSpecification(); }
-                                                                                 ^
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfCoolFolderSpec.o] Error 1 (ignored)
-In file included from ../src/TrigConfCoolHLTPayloadConverters.cxx:2:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In constructor ‘TrigConf::FolderDefinition::FolderDefinition(const string&, cool::FolderVersioning::Mode)’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: error: no matching function for call to ‘cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode&)’
-          folder(folder), fspec(mode) {}
-                                    ^
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: note: candidates are:
-In file included from /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:22:0,
-                 from ../src/TrigConfCoolHLTPayloadConverters.cxx:2:
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note: cool::FolderSpecification::FolderSpecification()
-     FolderSpecification();
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note:   candidate expects 0 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note: cool::FolderSpecification::FolderSpecification(const cool::FolderSpecification&)
-     FolderSpecification( const FolderSpecification& rhs );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::FolderSpecification&’
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note: cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode, const cool::IRecordSpecification&, cool::PayloadMode::Mode)
-     FolderSpecification( FolderVersioning::Mode mode,
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note:   candidate expects 3 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note: cool::FolderSpecification::FolderSpecification(const cool::IRecordSpecification&)
-     FolderSpecification( const IRecordSpecification& payloadSpecification );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::IRecordSpecification&’
-In file included from ../src/TrigConfCoolHLTPayloadConverters.cxx:2:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In member function ‘cool::RecordSpecification& TrigConf::FolderDefinition::rspec()’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:42:78: error: invalid initialization of reference of type ‘cool::RecordSpecification&’ from expression of type ‘const cool::IRecordSpecification’
-       cool::RecordSpecification& rspec() { return fspec.payloadSpecification(); }
-                                                                              ^
-In file included from ../src/TrigConfCoolL1PayloadConverters.cxx:2:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In constructor ‘TrigConf::FolderDefinition::FolderDefinition(const string&, cool::FolderVersioning::Mode)’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: error: no matching function for call to ‘cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode&)’
-          folder(folder), fspec(mode) {}
-                                    ^
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: note: candidates are:
-In file included from /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:22:0,
-                 from ../src/TrigConfCoolL1PayloadConverters.cxx:2:
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note: cool::FolderSpecification::FolderSpecification()
-     FolderSpecification();
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note:   candidate expects 0 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note: cool::FolderSpecification::FolderSpecification(const cool::FolderSpecification&)
-     FolderSpecification( const FolderSpecification& rhs );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::FolderSpecification&’
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note: cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode, const cool::IRecordSpecification&, cool::PayloadMode::Mode)
-     FolderSpecification( FolderVersioning::Mode mode,
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note:   candidate expects 3 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note: cool::FolderSpecification::FolderSpecification(const cool::IRecordSpecification&)
-     FolderSpecification( const IRecordSpecification& payloadSpecification );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::IRecordSpecification&’
-In file included from ../src/TrigConfCoolL1PayloadConverters.cxx:2:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In member function ‘cool::RecordSpecification& TrigConf::FolderDefinition::rspec()’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:42:78: error: invalid initialization of reference of type ‘cool::RecordSpecification&’ from expression of type ‘const cool::IRecordSpecification’
-       cool::RecordSpecification& rspec() { return fspec.payloadSpecification(); }
-                                                                              ^
-In file included from ../src/TrigConfCoolWriter.cxx:2:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In constructor ‘TrigConf::FolderDefinition::FolderDefinition(const string&, cool::FolderVersioning::Mode)’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: error: no matching function for call to ‘cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode&)’
-          folder(folder), fspec(mode) {}
-                                    ^
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:39:36: note: candidates are:
-In file included from /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:22:0,
-                 from ../src/TrigConfCoolWriter.cxx:2:
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note: cool::FolderSpecification::FolderSpecification()
-     FolderSpecification();
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:132:5: note:   candidate expects 0 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note: cool::FolderSpecification::FolderSpecification(const cool::FolderSpecification&)
-     FolderSpecification( const FolderSpecification& rhs );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:83:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::FolderSpecification&’
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note: cool::FolderSpecification::FolderSpecification(cool::FolderVersioning::Mode, const cool::IRecordSpecification&, cool::PayloadMode::Mode)
-     FolderSpecification( FolderVersioning::Mode mode,
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:59:5: note:   candidate expects 3 arguments, 1 provided
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note: cool::FolderSpecification::FolderSpecification(const cool::IRecordSpecification&)
-     FolderSpecification( const IRecordSpecification& payloadSpecification );
-     ^
-/home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/FolderSpecification.h:46:5: note:   no known conversion for argument 1 from ‘cool::FolderVersioning::Mode’ to ‘const cool::IRecordSpecification&’
-In file included from ../src/TrigConfCoolWriter.cxx:2:0:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h: In member function ‘cool::RecordSpecification& TrigConf::FolderDefinition::rspec()’:
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage/TrigConfCoolFolderSpec.h:42:78: error: invalid initialization of reference of type ‘cool::RecordSpecification&’ from expression of type ‘const cool::IRecordSpecification’
-       cool::RecordSpecification& rspec() { return fspec.payloadSpecification(); }
-                                                                              ^
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfCoolHLTPayloadConverters.o] Error 1 (ignored)
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfCoolL1PayloadConverters.o] Error 1 (ignored)
-../src/TrigConfCoolWriter.cxx: In member function ‘void TrigConf::TrigConfCoolWriter::writeL1BunchGroupRunPayload(TrigConf::ValidityRange, const TrigConf::Menu&, const TrigConf::BunchGroupSet&)’:
-../src/TrigConfCoolWriter.cxx:881:67: warning: ‘virtual void cool::IFolder::storeObject(const ValidityKey&, const ValidityKey&, const coral::AttributeList&, const ChannelId&, const string&, bool)’ is deprecated (declared at /home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/IFolder.h:137) [-Wdeprecated-declarations]
-       bgDescFolder->storeObject(vr.since(), vr.until(), payload, 0);
-                                                                   ^
-../src/TrigConfCoolWriter.cxx: In member function ‘void TrigConf::TrigConfCoolWriter::writeL1BunchGroupLBPayload(TrigConf::ValidityRange, unsigned int, const TrigConf::BunchGroupSet&)’:
-../src/TrigConfCoolWriter.cxx:935:72: warning: ‘virtual void cool::IFolder::storeObject(const ValidityKey&, const ValidityKey&, const coral::AttributeList&, const ChannelId&, const string&, bool)’ is deprecated (declared at /home/jwsmith/HDD/COOL/armv7l-fc21-gcc49-opt/include/CoolKernel/IFolder.h:137) [-Wdeprecated-declarations]
-          lvl1BGContentFolder->storeObject(vr.since(), vr.until(), al, 0);
-                                                                        ^
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfCoolWriter.o] Error 1 (ignored)
-g++: error: ../armv7l-fc21-gcc49-opt/TrigConfCoolFolderSpec.o: No such file or directory
-g++: error: ../armv7l-fc21-gcc49-opt/TrigConfCoolL1PayloadConverters.o: No such file or directory
-g++: error: ../armv7l-fc21-gcc49-opt/TrigConfCoolHLTPayloadConverters.o: No such file or directory
-g++: error: ../armv7l-fc21-gcc49-opt/TrigConfCoolWriter.o: No such file or directory
-make[2]: [../armv7l-fc21-gcc49-opt/libTrigConfStorage.so] Error 1 (ignored)
-#CMT---> Info: Document TrigConfStorage_optdebug_library
-#CMT---> (TrigConfStorage_optdebug_library.make) ../armv7l-fc21-gcc49-opt/libTrigConfStorage.so: No rule for such target
-objcopy: '../armv7l-fc21-gcc49-opt/libTrigConfStorage.so': No such file
-make[2]: [../armv7l-fc21-gcc49-opt/libTrigConfStorage.so.debug] Error 1 (ignored)
-objcopy: '../armv7l-fc21-gcc49-opt/libTrigConfStorage.so': No such file
-make[2]: [../armv7l-fc21-gcc49-opt/libTrigConfStorage.so.debug] Error 1 (ignored)
-objcopy: 'libTrigConfStorage.so': No such file
-make[2]: [../armv7l-fc21-gcc49-opt/libTrigConfStorage.so.debug] Error 1 (ignored)
-/usr//binusr//ldbin:/ ldcannot:  findcannot  -find lTrigConfStorage-
-/lTrigConfStorageusr
-//binusr//ldbin:/ ldcannot:  findcannot  -find llcg_CoolKernel-
-/llcg_CoolKernelusr
-//binusr//ld:bin /ldcannot:  find cannot- find llcg_CoolApplication-
-/usrllcg_CoolApplication/
-bin//usrld/:bin /cannotld : find cannot- findllcg_CoralBase 
--llcg_CoralBase
-/usr/bin/ld: cannot find -lTrigConfStorage
-/usr/bin/ld: cannot find -llcg_CoolKernel
-/usr/bin/ld: cannot find -llcg_CoolApplication
-/usr/bin/ld: cannot find -llcg_CoralBase
-collect2: error: ld returned 1 exit status
-collect2: error: ld returned 1 exit status
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConf2COOLApp] Error 1 (ignored)
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfReadWrite] Error 1 (ignored)
-collect2: error: ld returned 1 exit status
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfConsistencyChecker] Error 1 (ignored)
-objcopy: '../armv7l-fc21-gcc49-opt/TrigConf2COOLApp': No such file
-objcopy: '../armv7l-fc21-gcc49-opt/TrigConfReadWrite': No such file
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConf2COOLApp] Error 1 (ignored)
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfReadWrite] Error 1 (ignored)
-objcopy: '../armv7l-fc21-gcc49-opt/TrigConfConsistencyChecker': No such file
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfConsistencyChecker] Error 1 (ignored)
-objcopy: '../armv7l-fc21-gcc49-opt/TrigConf2COOLApp': No such file
-objcopy: '../armv7l-fc21-gcc49-opt/TrigConfReadWrite': No such file
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConf2COOLApp] Error 1 (ignored)
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfReadWrite] Error 1 (ignored)
-objcopy: '../armv7l-fc21-gcc49-opt/TrigConfConsistencyChecker': No such file
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfConsistencyChecker] Error 1 (ignored)
-objcopy: 'TrigConf2COOLApp': No such file
-objcopy: 'TrigConfReadWrite': No such file
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConf2COOLApp] Error 1 (ignored)
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfReadWrite] Error 1 (ignored)
-objcopy: 'TrigConfConsistencyChecker': No such file
-make[2]: [../armv7l-fc21-gcc49-opt/TrigConfConsistencyChecker] Error 1 (ignored)
-#CMT---> Info: #CMT---> Info: Document checkreq
-Document install_header_files
-#CMT---> Info: Library AutoPrescaleTool
-#CMT---> Info: Application AutoPSOnlyL1
-#CMT---> Info: Document install_AP_XMLXML
-#CMT---> Info: calculating dependencies for ../src/StrategyNode.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerSetList.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerSet.cxx
-#CMT---> Info: calculating dependencies for ../src/PrescaleSet.cxx
-#CMT---> Info: calculating dependencies for ../src/test/AutoPSOnlyL1.cxx
-make[2]: *** Deleting file '../armv7l-fc21-gcc49-opt/TriggerSet.o'
-make[2]: *** Deleting file '../armv7l-fc21-gcc49-opt/TriggerSetList.o'
-make[2]: *** wait: No child processes.  Stop.
-make[2]: *** Waiting for unfinished jobs....
-make[2]: *** wait: No child processes.  Stop.
-make[1]: [AutoPSOnlyL1compile] Error 2 (ignored)
-make[2]: [../armv7l-fc21-gcc49-opt/StrategyNode.o] Interrupt (ignored)
-make[2]: [../armv7l-fc21-gcc49-opt/TriggerSet.o] Interrupt (ignored)
-make[2]: [../armv7l-fc21-gcc49-opt/TriggerSetList.o] Interrupt (ignored)
-make[1]: [AutoPrescaleToolcompile] Interrupt (ignored)
-make: [all] Interrupt (ignored)
-#CMT---> Info: Document checkreq
-#CMT---> Info: Library InDetCoolCoralClientUtils
-#CMT---> Info: Document install_header_files
-#CMT---> Info: calculating dependencies for ../src/CoolCoralClient.cpp
-#CMT---> Info: calculating dependencies for ../src/TRT_COOLCORALClient.cpp
-make[1]: [InDetCoolCoralClientUtilscompile] Interrupt (ignored)
-make: [all] Interrupt (ignored)
-make: [all] Interrupt (ignored)
-make: [all] Interrupt (ignored)
-make: [all] Interrupt (ignored)
