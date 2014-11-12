@@ -17,6 +17,11 @@ export CORAL_include=$ROOTDIR/CORAL/$CMTCONFIG/include
 export LCG_install=$ROOTDIR/lcgcmake-install
 ##Gaudi
 export GaudiDir=$ROOTDIR/Gaudi
+##CLHEP
+export CPLUS_INCLUDE_PATH=$LCG_install/clhep/1.9.4.7/armv7l-fc21-gcc49-opt/include:$CPLUS_INCLUDE_PATH
+
+##TCMALLOC
+export TCMALLOCDIR=$LCG_install/tcmalloc/1.7p3/$CMTCONFIG/lib
 
 #Java
 export CPLUS_INCLUDE_PATH=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm/include:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm/include/linux:$CPLUS_INCLUDE_PATH

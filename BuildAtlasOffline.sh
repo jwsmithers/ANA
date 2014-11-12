@@ -7,68 +7,69 @@ source Environment.sh
 echo "You've identified your system as $CMTCONFIG"
 
 alias goHome="cd $TopDir"
-################################ Create the main projects and their project.cmt files ################################
 
-
-while read line 
+while read name
 do
-        cmt create $TopDir/$line $line-$VERSION
-        rm $TopDir/$line/$line-$VERSION/cmt/*
-        echo "project $line" >> $TopDir/$line/$line-$VERSION/cmt/project.cmt
-	python $TopDir/../scripts/AddProjects.py "${line}Release ${line}Release-v*" "$line" >> $TopDir/$line/$line-$VERSION/cmt/project.cmt 
+        alias $name="cd $TopDir/$name/$name-$VERSION"
 done < Projects.txt
 
+################################ Check to see if projects and their project.cmt files have been created. If not, create them  ################################
+
+if [ "$HASRUNBEFORE" == "1" ]
+then
+	echo "Major CMT structure and project.cmt files have already neen built... therefore skipping."
+else
+	source ./scripts/CMTStructure.sh
+fi
+
+export HASRUNBEFORE=1
 ################################ Create the Release files for each project and the requirements files ################################
 echo "Creating Release packages..."
 
 function CreateRequirements {
-	echo "package $2" > ./$2/$3/cmt/requirements
-        python ../../../scripts/CreateRequirementsfile.py ../../../SVN/$1 >> ./$2/cmt/requirements
+	echo "package $1" > ./$1/cmt/requirements
+        python ../../../scripts/CreateRequirementsfile.py ../../../SVN/$2 >> ./$1/cmt/requirements
 }
 
-while read line
-do 
-	alias $line="cd $TopDir/$line/$line-$VERSION"
-done < Projects.txt
 
-DetCommon && cmt create DetCommonRelease DetCommonRelease-v*
-CreateRequirements "SVNDetCommon.txt" "DetCommonRelease"
+DetCommon ; cmt create DetCommonRelease DetCommonRelease-v*
+CreateRequirements "DetCommonRelease" "SVNDetCommon.txt"
 
 AtlasCore && cmt create  AtlasCoreRelease AtlasCoreRelease-v*
-CreateRequirements "SVNAtlasCore.txt" "AtlasCoreRelease"
+CreateRequirements "AtlasCoreRelease" "SVNAtlasCore.txt"
 
 AtlasConditions && cmt create AtlasConditionsRelease AtlasConditionsRelease-v*
-CreateRequirements "SVNAtlasConditions.txt" "AtlasConditionsRelease"
+CreateRequirements "AtlasConditionsRelease" "SVNAtlasConditions.txt"
 
 AtlasEvent && cmt create AtlasEventRelease AtlasEventRelease-v*
-CreateRequirements "SVNAtlasEvent.txt" "AtlasEventRelease"
+CreateRequirements "AtlasEventRelease" "SVNAtlasEvent.txt"
 
 AtlasReconstruction && cmt create AtlasReconstructionRelease AtlasReconstructionRelease-v*
-CreateRequirements "SVNAtlasReconstruction.txt" "AtlasReconstructionRelease"
+CreateRequirements "AtlasReconstructionRelease" "SVNAtlasReconstruction.txt"
 
 AtlasSimulation && cmt create AtlasSimulationRelease AtlasSimulationRelease-v*
-CreateRequirements "SVNAtlasSimulation.txt" "AtlasSimulationRelease"
+CreateRequirements "AtlasSimulationRelease" "SVNAtlasSimulation.txt"
 
 AtlasTrigger && cmt create AtlasTriggerRelease AtlasTriggerRelease-v*
-CreateRequirements "SVNAtlasTrigger.txt" "AtlasTriggerRelease"
+CreateRequirements "AtlasTriggerRelease" "SVNAtlasTrigger.txt"
 
 AtlasAnalysis && cmt create AtlasAnalysisRelease AtlasAnalysisRelease-v*
-CreateRequirements "SVNAtlasAnalysis.txt" "AtlasAnalysisRelease"
+CreateRequirements "AtlasAnalysisRelease" "SVNAtlasAnalysis.txt"
 
 AtlasOffline && cmt create AtlasOfflineRelease AtlasOfflineRelease-v*
-CreateRequirements "SVNAtlasOffline.txt" "AtlasOfflineRelease"
+CreateRequirements "AtlasOfflineRelease" "SVNAtlasOffline.txt"
 
 AtlasHLT && cmt create AtlasHLTRelease AtlasHLTRelease-v*
-CreateRequirements "SVNAtlasHLT.txt" "AtlasHLTRelease"
+CreateRequirements "AtlasHLTRelease" "SVNAtlasHLT.txt"
 ################################################################################################################################
 
 goHome && cd ../
 
 function CMTCheckout {
-	cd $1
-	while read line
+	$1
+	while read package
 	do
-		cmt co -r $line
+		cmt co -r $package
 	done < $2 
 }
 
@@ -79,7 +80,7 @@ then
 	source ./scripts/PopulateDirectories.sh
 	while read line
 	do
-		CMTCheckout "$TopDir/$line/${line}-$VERSION" "$TopDir/../TEMP${line}.txt"
+		CMTCheckout "$line" "$TopDir/../TEMP${line}.txt"
 	done < Projects.txt
 	
 else
