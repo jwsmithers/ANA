@@ -24,3 +24,7 @@ export TCMALLOCDIR=$LCG_install/tcmalloc/1.7p3/$CMTCONFIG/lib
 
 #Java
 export CPLUS_INCLUDE_PATH=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm/include:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm/include/linux:$CPLUS_INCLUDE_PATH
+
+
+
+export CPLUS_INCLUDE_PATH=$LCG_install/AIDA/3.2.1/$CMTCONFIG/src/cpp:$CPLUS_INCLUDE_PATH

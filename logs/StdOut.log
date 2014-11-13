@@ -208,40 +208,40 @@ Removing all previous make fragments from ../armv7l-fc21-gcc49-opt
 # L1TopoCoreSimulation L1TopoCoreSimulation-00-00-02 Trigger/TriggerSimulation: Now trying [make -i -j4] in /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TriggerSimulation/L1TopoCoreSimulation/cmt (21/37)
 #--------------------------------------------------------------
 #CMT---> (constituents.make) Rebuilding library links
-#CMT---> (constituents.make) Building checkreq.make
 #CMT---> (constituents.make) Building install_header_files.make
-#CMT---> (constituents.make) Building TrigConfTopoTest.make
 #CMT---> (constituents.make) Building L1TopoCoreSimulation.make
-#CMT---> (constituents.make) Building install_pythonmods.make
+#CMT---> (constituents.make) Building checkreq.make
+#CMT---> (constituents.make) Building TrigConfTopoTest.make
 #CMT---> (constituents.make) Building install_includes.make
+#CMT---> (constituents.make) Building install_pythonmods.make
 #CMT---> (constituents.make) Starting checkreq
 #CMT---> (constituents.make) Starting install_header_files
-#CMT---> (constituents.make) Starting L1TopoCoreSimulationcompile
-#CMT---> (constituents.make) Starting TrigConfTopoTestprototype
-#CMT---> (constituents.make) checkreq done
 #CMT---> (constituents.make) Starting install_includes
-make[2]: 'TrigConfTopoTestprototype' is up to date.
+#CMT---> (constituents.make) Starting L1TopoCoreSimulationcompile
+#CMT---> (constituents.make) checkreq done
+#CMT---> (constituents.make) Starting install_pythonmods
 #CMT---> (L1TopoCoreSimulation.make) Rebuilding ../armv7l-fc21-gcc49-opt/L1TopoCoreSimulation_dependencies.make
 Files from standard ../L1TopoCoreSimulation already installed
-#CMT---> (constituents.make) TrigConfTopoTestprototype done
-#CMT---> (constituents.make) install_header_files done
-#CMT---> (constituents.make) Starting install_pythonmods
-#CMT---> (constituents.make) Starting TrigConfTopoTestcompile
 Files from standard ../L1TopoCoreSimulation already installed
 #CMT---> (constituents.make) install_includes done
+#CMT---> (constituents.make) install_header_files done
 No standard python area
-#CMT---> (TrigConfTopoTest.make) Rebuilding ../armv7l-fc21-gcc49-opt/TrigConfTopoTest_dependencies.make
+#CMT---> (constituents.make) Starting TrigConfTopoTestprototype
 installation done
 #CMT---> (constituents.make) install_pythonmods done
-make[2]: 'L1TopoCoreSimulationcompile' is up to date.
+make[2]: 'TrigConfTopoTestprototype' is up to date.
+#CMT---> (constituents.make) TrigConfTopoTestprototype done
+#CMT---> (constituents.make) Starting TrigConfTopoTestcompile
+#CMT---> (TrigConfTopoTest.make) Rebuilding ../armv7l-fc21-gcc49-opt/TrigConfTopoTest_dependencies.make
 make[2]: 'TrigConfTopoTestcompile' is up to date.
-#CMT---> (constituents.make) L1TopoCoreSimulationcompile done
 #CMT---> (constituents.make) TrigConfTopoTestcompile done
+make[2]: 'L1TopoCoreSimulationcompile' is up to date.
+#CMT---> (constituents.make) L1TopoCoreSimulationcompile done
 #CMT---> (constituents.make) Starting L1TopoCoreSimulationinstall
 #CMT---> installation done
 #CMT---> (constituents.make) L1TopoCoreSimulationinstall done
-#CMT---> (constituents.make) Starting TrigConfTopoTestinstall
 #CMT---> (constituents.make) Building L1TopoCoreSimulation_optdebug_library.make
+#CMT---> (constituents.make) Starting TrigConfTopoTestinstall
 #CMT---> (constituents.make) Starting L1TopoCoreSimulation_optdebug_library
 #CMT---> installation done
 #CMT---> (constituents.make) TrigConfTopoTestinstall done
@@ -252,20 +252,20 @@ make[2]: 'TrigConfTopoTestcompile' is up to date.
 # TrigStatsFromCool TrigStatsFromCool-00-00-02 Trigger/TrigMonitoring: Now trying [make -i -j4] in /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigMonitoring/TrigStatsFromCool/cmt (22/37)
 #--------------------------------------------------------------
 #CMT---> (constituents.make) Rebuilding library links
-#CMT---> (constituents.make) Building checkreq.make
-#CMT---> (constituents.make) Building install_includes.make
 #CMT---> (constituents.make) Building install_python_modspython_modules.make
 #CMT---> (constituents.make) Building install_pythonmods.make
+#CMT---> (constituents.make) Building checkreq.make
+#CMT---> (constituents.make) Building install_includes.make
 #CMT---> (constituents.make) Starting checkreq
-#CMT---> (constituents.make) Starting install_includes
 #CMT---> (constituents.make) Starting install_pythonmods
 #CMT---> (constituents.make) Starting install_python_modspython_modules
-#CMT---> (constituents.make) checkreq done
-No standard include file area
+#CMT---> (constituents.make) Starting install_includes
 Installing files from standard ../python to /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/InstallArea/armv7l-fc21-gcc49-opt/python
+#CMT---> (constituents.make) checkreq done
+installation done
+No standard include file area
 installation done
 #CMT---> (constituents.make) install_includes done
-installation done
 installation done
 installation done
 #CMT---> (constituents.make) install_python_modspython_modules done
@@ -275,53 +275,53 @@ installation done
 # TriggerMenuCompiler TriggerMenuCompiler-00-00-24 Trigger/TrigConfiguration: Now trying [make -i -j4] in /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerMenuCompiler/cmt (23/37)
 #--------------------------------------------------------------
 #CMT---> (constituents.make) Rebuilding library links
-#CMT---> (constituents.make) Building checkreq.make
 #CMT---> (constituents.make) Building TriggerMenuCompiler.make
-#CMT---> (constituents.make) Building TriggerMenuCompilerProxyImpl.make
 #CMT---> (constituents.make) Building install_header_files.make
-#CMT---> (constituents.make) Starting checkreq
+#CMT---> (constituents.make) Building checkreq.make
+#CMT---> (constituents.make) Building TriggerMenuCompilerProxyImpl.make
 #CMT---> (constituents.make) Building install_TMC_XMLsXML.make
 #CMT---> (constituents.make) Starting install_header_files
-#CMT---> (constituents.make) Starting TriggerMenuCompilercompile
 #CMT---> (constituents.make) Starting TriggerMenuCompilerProxyImplprototype
-#CMT---> (TriggerMenuCompiler.make) Rebuilding ../armv7l-fc21-gcc49-opt/TriggerMenuCompiler_dependencies.make
-#CMT---> (constituents.make) checkreq done
+#CMT---> (constituents.make) Starting checkreq
 make[2]: 'TriggerMenuCompilerProxyImplprototype' is up to date.
-#CMT---> (constituents.make) Starting install_TMC_XMLsXML
-Files from standard ../TriggerMenuCompiler already installed
 #CMT---> (constituents.make) TriggerMenuCompilerProxyImplprototype done
-#CMT---> (constituents.make) install_header_files done
+#CMT---> (constituents.make) Starting TriggerMenuCompilercompile
+#CMT---> (constituents.make) checkreq done
+#CMT---> (constituents.make) Starting install_TMC_XMLsXML
 #CMT---> (constituents.make) Starting TriggerMenuCompilerProxyImplcompile
+Files from standard ../TriggerMenuCompiler already installed
+#CMT---> (constituents.make) install_header_files done
 #CMT---> (constituents.make) Building triggerMenuCompilerApp.make
 installation done
-installation done
+#CMT---> (TriggerMenuCompiler.make) Rebuilding ../armv7l-fc21-gcc49-opt/TriggerMenuCompiler_dependencies.make
 #CMT---> (TriggerMenuCompilerProxyImpl.make) Rebuilding ../armv7l-fc21-gcc49-opt/TriggerMenuCompilerProxyImpl_dependencies.make
 installation done
 #CMT---> (constituents.make) Building testCamCompiler.make
+installation done
 installation done
 #CMT---> (constituents.make) install_TMC_XMLsXML done
 #CMT---> (constituents.make) Building triggerMenuReverse.make
 #CMT---> (constituents.make) Starting triggerMenuCompilerAppprototype
 make[2]: 'triggerMenuCompilerAppprototype' is up to date.
-#CMT---> (constituents.make) triggerMenuCompilerAppprototype done
 #CMT---> (constituents.make) Starting testCamCompilerprototype
+#CMT---> (constituents.make) triggerMenuCompilerAppprototype done
 #CMT---> (constituents.make) Starting triggerMenuReverseprototype
 make[2]: 'testCamCompilerprototype' is up to date.
 #CMT---> (constituents.make) testCamCompilerprototype done
 make[2]: 'triggerMenuReverseprototype' is up to date.
-#CMT---> (constituents.make) triggerMenuReverseprototype done
 #CMT---> (constituents.make) Starting triggerMenuCompilerAppcompile
+#CMT---> (constituents.make) triggerMenuReverseprototype done
 #CMT---> (constituents.make) Starting testCamCompilercompile
 #CMT---> (triggerMenuCompilerApp.make) Rebuilding ../armv7l-fc21-gcc49-opt/triggerMenuCompilerApp_dependencies.make
 #CMT---> (testCamCompiler.make) Rebuilding ../armv7l-fc21-gcc49-opt/testCamCompiler_dependencies.make
+make[2]: 'testCamCompilercompile' is up to date.
+make[2]: 'triggerMenuCompilerAppcompile' is up to date.
 make[2]: 'TriggerMenuCompilerProxyImplcompile' is up to date.
+#CMT---> (constituents.make) testCamCompilercompile done
 #CMT---> (constituents.make) TriggerMenuCompilerProxyImplcompile done
+#CMT---> (constituents.make) triggerMenuCompilerAppcompile done
 #CMT---> (constituents.make) Starting triggerMenuReversecompile
 #CMT---> (triggerMenuReverse.make) Rebuilding ../armv7l-fc21-gcc49-opt/triggerMenuReverse_dependencies.make
-make[2]: 'triggerMenuCompilerAppcompile' is up to date.
-#CMT---> (constituents.make) triggerMenuCompilerAppcompile done
-make[2]: 'testCamCompilercompile' is up to date.
-#CMT---> (constituents.make) testCamCompilercompile done
 make[2]: 'triggerMenuReversecompile' is up to date.
 #CMT---> (constituents.make) triggerMenuReversecompile done
 make[2]: 'TriggerMenuCompilercompile' is up to date.
@@ -329,39 +329,40 @@ make[2]: 'TriggerMenuCompilercompile' is up to date.
 #CMT---> (constituents.make) Starting TriggerMenuCompilerinstall
 #CMT---> installation done
 #CMT---> (constituents.make) TriggerMenuCompilerinstall done
-#CMT---> (constituents.make) Building TriggerMenuCompiler_optdebug_library.make
 #CMT---> (constituents.make) Starting TriggerMenuCompilerProxyImplinstall
+#CMT---> (constituents.make) Building TriggerMenuCompiler_optdebug_library.make
 #CMT---> (constituents.make) Starting TriggerMenuCompiler_optdebug_library
 #CMT---> libTriggerMenuCompiler.so.debug installation done
 #CMT---> (constituents.make) TriggerMenuCompiler_optdebug_library done
 #CMT---> installation done
 #CMT---> (constituents.make) TriggerMenuCompilerProxyImplinstall done
-#CMT---> (constituents.make) Starting testCamCompilerinstall
 #CMT---> (constituents.make) Starting triggerMenuCompilerAppinstall
+#CMT---> (constituents.make) Starting testCamCompilerinstall
 #CMT---> (constituents.make) Starting triggerMenuReverseinstall
 #CMT---> installation done
 #CMT---> installation done
 #CMT---> installation done
+#CMT---> (constituents.make) testCamCompilerinstall done
 #CMT---> (constituents.make) triggerMenuCompilerAppinstall done
 #CMT---> (constituents.make) triggerMenuReverseinstall done
-#CMT---> (constituents.make) testCamCompilerinstall done
 #CMT---> all ok.
 #--------------------------------------------------------------
 # TrigDbHltUpload TrigDbHltUpload-00-00-84 Trigger/TrigConfiguration: Now trying [make -i -j4] in /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigDbHltUpload/cmt (24/37)
 #--------------------------------------------------------------
 #CMT---> (constituents.make) Rebuilding library links
-#CMT---> (constituents.make) Building install_python_scriptsscripts.make
 #CMT---> (constituents.make) Building checkreq.make
-#CMT---> (constituents.make) Building install_python_modulespython.make
+#CMT---> (constituents.make) Building install_python_scriptsscripts.make
 #CMT---> (constituents.make) Building install_XMLXML.make
+#CMT---> (constituents.make) Building install_python_modulespython.make
 #CMT---> (constituents.make) Starting checkreq
+#CMT---> (constituents.make) Starting install_python_scriptsscripts
 #CMT---> (constituents.make) Starting install_XMLXML
 #CMT---> (constituents.make) Starting install_python_modulespython
-#CMT---> (constituents.make) Starting install_python_scriptsscripts
-installation done
-installation done
-installation done
 #CMT---> (constituents.make) checkreq done
+installation done
+installation done
+installation done
+installation done
 installation done
 installation done
 #CMT---> (constituents.make) install_XMLXML done
@@ -372,11 +373,10 @@ installation done
 installation done
 installation done
 installation done
-installation done
-installation done
-installation done
-installation done
 #CMT---> (constituents.make) install_python_scriptsscripts done
+installation done
+installation done
+installation done
 installation done
 installation done
 installation done
@@ -389,9 +389,10 @@ installation done
 #CMT---> (constituents.make) Building checkreq.make
 #CMT---> (constituents.make) Building install_DB_scriptsscripts.make
 #CMT---> (constituents.make) Building install_sql_scriptssql.make
-#CMT---> (constituents.make) Starting install_DB_scriptsscripts
 #CMT---> (constituents.make) Starting checkreq
+#CMT---> (constituents.make) Starting install_DB_scriptsscripts
 #CMT---> (constituents.make) Starting install_sql_scriptssql
+installation done
 installation done
 installation done
 #CMT---> (constituents.make) checkreq done
@@ -399,9 +400,8 @@ installation done
 installation done
 installation done
 installation done
-installation done
-installation done
 #CMT---> (constituents.make) install_DB_scriptsscripts done
+installation done
 installation done
 installation done
 installation done
@@ -424,17 +424,17 @@ installation done
 # TriggerTool TriggerTool-02-02-85-13 Trigger/TrigConfiguration: Now trying [make -i -j4] in /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/cmt (26/37)
 #--------------------------------------------------------------
 #CMT---> (constituents.make) Rebuilding library links
-#CMT---> (constituents.make) Building checkreq.make
-#CMT---> (constituents.make) Building install_scripts.make
 #CMT---> (constituents.make) Building dist.make
-#CMT---> (constituents.make) Starting checkreq
+#CMT---> (constituents.make) Building install_scripts.make
+#CMT---> (constituents.make) Building checkreq.make
 #CMT---> (constituents.make) Starting install_scripts
+#CMT---> (constituents.make) Starting checkreq
 #CMT---> (constituents.make) Starting dist
+installation done
+installation done
 /bin/mkdir -p /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/lib
-installation done
-ant  -buildfile ../ant/build.xml -DDBSchemaBaseDir=/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigDb 
 #CMT---> (constituents.make) checkreq done
-installation done
+ant  -buildfile ../ant/build.xml -DDBSchemaBaseDir=/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigDb 
 #CMT---> (constituents.make) install_scripts done
 Buildfile: /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/ant/build.xml
      [echo] Directory for TriggerDB schema /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigDb
@@ -443,8 +443,8 @@ Buildfile: /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-1
 
 init:
      [exec] Setting TriggerTool version to: Trigger/TrigConfiguration
-     [exec] ../ant/version.sh: line 3: [: too many argumentsTriggerTool-02-02-85-13
-     [exec] 
+     [exec] TriggerTool-02-02-85-13
+     [exec] ../ant/version.sh: line 3: [: too many arguments
 
 unzip:
     [unzip] Expanding: /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/external/commons-cli-1.1.jar into /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/build
@@ -458,3 +458,93 @@ unzip:
 compile:
     [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/ant/build.xml:104: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
     [javac] Compiling 210 source files to /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/build
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/HLTRecords/HLTComponent.java:820: warning: [unchecked] unchecked call to JComboBox(Vector<E>) as a member of the raw type JComboBox
+    [javac]                     JComboBox cb = new JComboBox(values);
+    [javac]                                    ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JComboBox
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Components/JTableX.java:122: warning: [unchecked] unchecked call to JComboBox(Vector<E>) as a member of the raw type JComboBox
+    [javac]                 JComboBox cb = new JComboBox(InMon);
+    [javac]                                ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JComboBox
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/L1Records/L1Item.java:92: warning: [unchecked] unchecked call to JComboBox(Vector<E>) as a member of the raw type JComboBox
+    [javac]             JComboBox ctp = new JComboBox(ctpItems);
+    [javac]                             ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JComboBox
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/L1Records/L1Item.java:95: warning: [unchecked] unchecked call to addItem(E) as a member of the raw type JComboBox
+    [javac]             prior.addItem("LOW");
+    [javac]                          ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JComboBox
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/L1Records/L1Item.java:96: warning: [unchecked] unchecked call to addItem(E) as a member of the raw type JComboBox
+    [javac]             prior.addItem("HIGH");
+    [javac]                          ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JComboBox
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Panels/TriggerConfigurationViewer.java:145: warning: [unchecked] unchecked call to addItem(E) as a member of the raw type JComboBox
+    [javac]                 comboRandomRate1.addItem(new String(rset.getString(2)));
+    [javac]                                         ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JComboBox
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Panels/TriggerConfigurationViewer.java:146: warning: [unchecked] unchecked call to addItem(E) as a member of the raw type JComboBox
+    [javac]                 comboRandomRate2.addItem(new String(rset.getString(2)));
+    [javac]                                         ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JComboBox
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Panels/TriggerConfigurationViewer.java:160: warning: [unchecked] unchecked call to addItem(E) as a member of the raw type JComboBox
+    [javac]         comboDTs.addItem(l1master.get_deadtime().get_id() + "   " + l1master.get_deadtime().get_name() + " v" + l1master.get_deadtime().get_version());
+    [javac]                         ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JComboBox
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Panels/TriggerConfigurationViewer.java:173: warning: [unchecked] unchecked call to addItem(E) as a member of the raw type JComboBox
+    [javac]                     comboDTs.addItem(rset.getInt(1) + "   " + rset.getString(2) + " v" + rset.getString(3));
+    [javac]                                     ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JComboBox
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Panels/TriggerConfigurationViewer.java:363: warning: [unchecked] unchecked call to setModel(ListModel<E>) as a member of the raw type JList
+    [javac]         listResults.setModel(items);
+    [javac]                             ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JList
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Panels/TriggerConfigurationViewer.java:680: warning: [unchecked] unchecked call to setModel(ListModel<E>) as a member of the raw type JList
+    [javac]         jList1.setModel(new javax.swing.AbstractListModel() {
+    [javac]                        ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JList
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Panels/TriggerConfigurationViewer.java:1035: warning: [unchecked] unchecked call to DefaultComboBoxModel(E[]) as a member of the raw type DefaultComboBoxModel
+    [javac]         comboDTs.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+    [javac]                           ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class DefaultComboBoxModel
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Panels/TriggerConfigurationViewer.java:1035: warning: [unchecked] unchecked call to setModel(ComboBoxModel<E>) as a member of the raw type JComboBox
+    [javac]         comboDTs.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+    [javac]                          ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JComboBox
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Panels/TriggerConfigurationViewer.java:1186: warning: [unchecked] unchecked call to DefaultComboBoxModel(E[]) as a member of the raw type DefaultComboBoxModel
+    [javac]         comboRandomRate1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+    [javac]                                   ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class DefaultComboBoxModel
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Panels/TriggerConfigurationViewer.java:1186: warning: [unchecked] unchecked call to setModel(ComboBoxModel<E>) as a member of the raw type JComboBox
+    [javac]         comboRandomRate1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+    [javac]                                  ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JComboBox
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Panels/TriggerConfigurationViewer.java:1188: warning: [unchecked] unchecked call to DefaultComboBoxModel(E[]) as a member of the raw type DefaultComboBoxModel
+    [javac]         comboRandomRate2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+    [javac]                                   ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class DefaultComboBoxModel
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Panels/TriggerConfigurationViewer.java:1188: warning: [unchecked] unchecked call to setModel(ComboBoxModel<E>) as a member of the raw type JComboBox
+    [javac]         comboRandomRate2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+    [javac]                                  ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class JComboBox
+    [javac] /home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TriggerTool/triggertool/Panels/TriggerConfigurationViewer.java:1955: warning: [unchecked] unchecked call to addElement(E) as a member of the raw type DefaultListModel
+    [javac]             items.addElement(at);
+    [javac]                             ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class DefaultListModel

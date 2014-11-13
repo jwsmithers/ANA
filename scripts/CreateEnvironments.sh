@@ -5,7 +5,7 @@ function CreatePaths {
 	echo "export CMTINSTALLAREA="$TopDir/$line/$line-$VERSION"/InstallArea" >> BuildSetup.sh	
 	echo "export CMTPROJECTPATH="$TopDir":"$TopDir/$line/$line-$VERSION":"$LCG_install":"$ROOTDIR"" >> BuildSetup.sh
 	echo "export CMTPATH="$TopDir/$line/$line-$VERSION":"$LCG_install"/LCGCMT:"$ROOTDIR"" >> BuildSetup.sh
-	echo "export CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH":"$GaudiDir"/InstallArea/"$CMTCONFIG"/include:"$CORAL_include":"$COOL_include"" >> BuildSetup.sh	
+	echo "export CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH":"$GaudiDir"/InstallArea/"$CMTCONFIG"/include:"$CORAL_include":"$COOL_include":"$LCG_install"/uuid/1.42/"$CMTCONFIG"/include:"$LCG_install"/tcmalloc/1.7p3/"$CMTCONFIG"/include" >> BuildSetup.sh	
 	echo "export PATH="$PATH":"$GaudiDir"/InstallArea/$CMTCONFIG/bin" >> BuildSetup.sh
 }
 #$10=$TopDir

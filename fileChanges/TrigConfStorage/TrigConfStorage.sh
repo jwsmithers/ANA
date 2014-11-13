@@ -1,6 +1,6 @@
 #!/bin/bash
-TrigConfStorageLib=/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/src
-TrigConfStorageHeader=/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage
+TrigConfStorageLib=$TopDir/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/src
+TrigConfStorageHeader=$TopDir/DetCommon/DetCommon-18.9.0/Trigger/TrigConfiguration/TrigConfStorage/TrigConfStorage
 
 
 mv $TrigConfStorageLib/TrigConfCoolFolderSpec.cxx $TrigConfStorageLib/TrigConfCoolFolderSpec.cxx.backup
