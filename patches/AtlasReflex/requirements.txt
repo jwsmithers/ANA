@@ -1,1 +1,1 @@
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/AtlasCore/AtlasCore-18.9.0/External/AtlasReflex/cmt
+$TopDir/AtlasCore/AtlasCore-18.9.0/External/AtlasReflex/cmt

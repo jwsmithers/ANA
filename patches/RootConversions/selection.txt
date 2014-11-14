@@ -1,1 +1,1 @@
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/AtlasCore/AtlasCore-18.9.0/Database/AthenaPOOL/RootConversions/RootConversions
+$TopDir/AtlasCore/AtlasCore-18.9.0/Database/AthenaPOOL/RootConversions/RootConversions

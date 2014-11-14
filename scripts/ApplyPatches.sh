@@ -1,4 +1,13 @@
 #!/bin/bash
 
-patchDir=$TopDir/../patches
-patch -b < $PATHTOPATCH/$File
+Patch=$TopDir/../patches/*/*.patch
+DirLocation=`cat $TopDir/../patches/*/*.txt`
+
+
+for i in $Patch
+do 
+	echo "Applying patch: ${i}"
+	cd $DirLocation
+	patch -b < ${i}
+
+done

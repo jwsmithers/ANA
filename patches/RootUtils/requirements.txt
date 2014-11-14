@@ -1,1 +1,1 @@
-/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea/AtlasCore/AtlasCore-18.9.0/Control/RootUtils/cmt
+$TopDir/AtlasCore/AtlasCore-18.9.0/Control/RootUtils/cmt
