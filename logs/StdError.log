@@ -1,3 +1,166 @@
+#CMT---> Warning: package not found: TDAQCPolicyExt v* TDAQCPolicy (requested by DataCollection)
+#CMT---> Warning: package not found: DBRelease current (requested by AtlasDBRelease)
+#CMT---> Warning: package not found: AtlasCoreRunTime AtlasCoreRunTime-00-00-49 (requested by AtlasCoreRelease)
+Creating setup scripts.
+Creating cleanup scripts.
+#CMT---> Warning: package not found: TDAQCPolicyExt v* TDAQCPolicy (requested by DataCollection)
+#CMT---> Warning: package not found: DBRelease current (requested by AtlasDBRelease)
+#CMT---> Warning: package not found: AtlasCoreRunTime AtlasCoreRunTime-00-00-49 (requested by AtlasCoreRelease)
+#CMT---> Warning: package not found: TDAQCPolicyExt v* TDAQCPolicy (requested by DataCollection)
+#CMT---> Warning: package not found: DBRelease current (requested by AtlasDBRelease)
+#CMT---> Warning: package not found: AtlasCoreRunTime AtlasCoreRunTime-00-00-49 (requested by AtlasCoreRelease)
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+#CMT---> Warning: package not found: DBRelease current (requested by AtlasDBRelease)
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+#CMT---> Warning: package not found: TDAQCPolicyExt v* TDAQCPolicy (requested by DataCollection)
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating native_version file.
 Creating setup scripts.
 Creating cleanup scripts.
 Creating setup scripts.
@@ -44,111 +207,273 @@ Creating setup scripts.
 Creating cleanup scripts.
 Creating setup scripts.
 Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+#CMT---> Warning: package not found: TDAQCPolicyExt v* TDAQCPolicy (requested by DataCollection)
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+#CMT---> Warning: package not found: TDAQCPolicyExt v* TDAQCPolicy (requested by DataCollection)
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+#CMT---> Warning: package not found: TDAQCPolicyExt v* TDAQCPolicy (requested by DataCollection)
+Creating setup scripts.
+Creating cleanup scripts.
+#CMT---> Warning: package not found: TDAQCPolicyExt v* TDAQCPolicy (requested by DataCollection)
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+Creating setup scripts.
+Creating cleanup scripts.
+#CMT---> Warning: package not found: TDAQCPolicyExt v* TDAQCPolicy (requested by DataCollection)
+#CMT---> Warning: package not found: DBRelease current (requested by AtlasDBRelease)
+#CMT---> Warning: package not found: AtlasCoreRunTime AtlasCoreRunTime-00-00-49 (requested by AtlasCoreRelease)
+Creating setup scripts.
+Creating cleanup scripts.
+#CMT---> Warning: package not found: TDAQCPolicyExt v* TDAQCPolicy (requested by DataCollection)
+#CMT---> Warning: package not found: DBRelease current (requested by AtlasDBRelease)
+#CMT---> Warning: package not found: AtlasCoreRunTime AtlasCoreRunTime-00-00-49 (requested by AtlasCoreRelease)
 #CMT---> (constituents.make) install_headers: No rule for such target
 #CMT---> (constituents.make) install_headers: No rule for such target
 #CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> (constituents.make) install_headers: No rule for such target
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document install_header_files
-#CMT---> Info: Library L1TopoCoreSimulation
-#CMT---> Info: Application TrigConfTopoTest
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document install_includes
-#CMT---> Info: Document install_pythonmods
-#CMT---> Info: calculating dependencies for ../src/Parameter.cxx
-#CMT---> Info: calculating dependencies for ../src/TopoCoreSimResult.cxx
-#CMT---> Info: calculating dependencies for ../src/BaseTOB.cxx
-#CMT---> Info: calculating dependencies for ../src/InputTOBArray.cxx
-#CMT---> Info: calculating dependencies for ../src/TopoInputEvent.cxx
-#CMT---> Info: calculating dependencies for ../src/DecisionAlg.cxx
-#CMT---> Info: calculating dependencies for ../src/ClusterTOBArray.cxx
-#CMT---> Info: calculating dependencies for ../src/TOBArray.cxx
-#CMT---> Info: calculating dependencies for ../src/SortingAlg.cxx
-#CMT---> Info: calculating dependencies for ../src/GlobalDecision.cxx
-#CMT---> Info: calculating dependencies for ../src/ParameterArray.cxx
-#CMT---> Info: calculating dependencies for ../src/ClusterTOB.cxx
-#CMT---> Info: calculating dependencies for ../src/Exception.cxx
-#CMT---> Info: calculating dependencies for ../src/AlgFactory.cxx
-#CMT---> Info: calculating dependencies for ../src/JetTOB.cxx
-#CMT---> Info: calculating dependencies for ../src/DeltaPhiLeading.cxx
-#CMT---> Info: calculating dependencies for ../src/LayoutConstraints.cxx
-#CMT---> Info: calculating dependencies for ../src/JetTOBArray.cxx
-#CMT---> Info: calculating dependencies for ../src/DataArray.cxx
-#CMT---> Info: calculating dependencies for ../src/Decision.cxx
-#CMT---> Info: calculating dependencies for ../src/Types.cxx
-#CMT---> Info: calculating dependencies for ../src/ConfigurableAlg.cxx
-#CMT---> Info: calculating dependencies for ../src/StatusCode.cxx
-#CMT---> Info: calculating dependencies for ../src/test/TopoTest.cxx
-#CMT---> Info: calculating dependencies for ../src/Heap.cxx
-#CMT---> Info: calculating dependencies for ../src/TopoSteering.cxx
-#CMT---> Info: calculating dependencies for ../src/CompositeTOB.cxx
-#CMT---> Info: calculating dependencies for ../src/ClusterSortingAlg.cxx
-#CMT---> Info: calculating dependencies for ../src/Connector.cxx
-#CMT---> Info: calculating dependencies for ../src/ParameterSpace.cxx
-#CMT---> Info: calculating dependencies for ../src/GenericTOB.cxx
-#CMT---> Info: Document L1TopoCoreSimulation_optdebug_library
-#CMT---> Info: Document install_pythonmods
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document install_python_modspython_modules
-#CMT---> Info: Document install_includes
-#CMT---> Info: Document install_header_files
-#CMT--->#CMT---> Info: Library TriggerMenuCompilerProxyImpl
- Info: Library TriggerMenuCompiler
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document install_TMC_XMLsXML
-#CMT---> Info: Application triggerMenuCompilerApp
-#CMT---> Info: calculating dependencies for ../src/CentralTriggerProcessor.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerMenuCompilerProxyImpl.cxx
-#CMT---> Info: Application testCamCompiler
-#CMT---> Info: Application triggerMenuReverse
-#CMT---> Info: calculating dependencies for ../src/test/triggerMenuCompilerApp.cxx
-#CMT---> Info: calculating dependencies for ../src/test/testCamCompiler.cxx
-#CMT---> Info: calculating dependencies for ../src/PatternInTime.cxx
-#CMT---> Info: calculating dependencies for ../src/TMCErrorHandler.cxx
-#CMT---> Info: calculating dependencies for ../src/TMCObject.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerInputSignal.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerThreshold.cxx
-#CMT---> Info: calculating dependencies for ../src/test/triggerMenuReverse.cxx
-#CMT---> Info: calculating dependencies for ../src/ContentAddressableMemory.cxx
-#CMT---> Info: calculating dependencies for ../src/SumTermResult.cxx
-#CMT---> Info: calculating dependencies for ../src/TMCList.cxx
-#CMT---> Info: calculating dependencies for ../src/TMCUtilities.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerItem.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerMenu.cxx
-#CMT---> Info: calculating dependencies for ../src/LookupTable.cxx
-#CMT---> Info: calculating dependencies for ../src/SwitchMatrix.cxx
-#CMT---> Info: calculating dependencies for ../src/TMCNode.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerCondition.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerMenuCompiler.cxx
-#CMT---> Info: calculating dependencies for ../src/TriggerSumTerm.cxx
-#CMT---> Info: Document TriggerMenuCompiler_optdebug_library
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document install_python_scriptsscripts
-#CMT---> Info: Document install_XMLXML
-#CMT---> Info: Document install_python_modulespython
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document install_sql_scriptssql
-#CMT---> Info: Document install_DB_scriptsscripts
-#CMT---> Info: Document dist
-#CMT---> Info: Document install_scripts
-#CMT---> Info: Document checkreq
-Picked up _JAVA_OPTIONS: -Xms64m -Xmx128m
+make: *** Deleting file '../armv7l-fc21-gcc49-opt/armv7l-fc21-gcc49-opt.make'

@@ -6,6 +6,7 @@ export CMTSITE=STANDALONE
 export SVNROOT=svn+ssh://jwsmith@svn.cern.ch/reps/atlasoff
 export VERSION=18.9.0
 export TopDir=/home/jwsmith/HDD/AtlasOfflineBuild/InstallArea
+
 ##COOL
 export COOLDir=$ROOTDIR/COOL/COOL_2_9_2.r19029
 export COOL_include=$ROOTDIR/COOL/$CMTCONFIG/include
@@ -16,15 +17,7 @@ export CORAL_include=$ROOTDIR/CORAL/$CMTCONFIG/include
 export LCG_install=$ROOTDIR/lcgcmake-install
 ##Gaudi
 export GaudiDir=$ROOTDIR/Gaudi
-##CLHEP
-export CPLUS_INCLUDE_PATH=$LCG_install/clhep/1.9.4.7/armv7l-fc21-gcc49-opt/include:$CPLUS_INCLUDE_PATH
-
-##TCMALLOC
-export TCMALLOCDIR=$LCG_install/tcmalloc/1.7p3/$CMTCONFIG/lib
 
 #Java
 export CPLUS_INCLUDE_PATH=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm/include:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm/include/linux:$CPLUS_INCLUDE_PATH
 
-
-
-export CPLUS_INCLUDE_PATH=$LCG_install/AIDA/3.2.1/$CMTCONFIG/src/cpp:$CPLUS_INCLUDE_PATH

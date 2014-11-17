@@ -1,0 +1,60 @@
+--- AthCnvSvc.cxx	2014-11-11 18:02:35.065888953 +0200
++++ AthCnvSvc1.cxx	2014-11-17 12:05:28.755366725 +0200
+@@ -19,7 +19,7 @@
+ // AthenaBaseComps includes
+ #include "AthenaBaseComps/AthCnvSvc.h"
+ 
+-namespace Rflx = ROOT::Reflex;
++//namespace Rflx = ROOT::Reflex;
+ 
+ enum CnvSvcAction   {
+   CREATE_OBJ,
+@@ -494,27 +494,27 @@
+                             const CLID& clid, 
+                             const ICnvFactory* /*fac*/)
+ {
+-#ifdef ATLAS_GAUDI_V21
+-  IConverter *cnv = 0;
+-  cnv = Rflx::PluginService::CreateWithId<IConverter*> 
+-    (ConverterID (typ,clid), serviceLocator().get());
+-  if (0==cnv) {
+-    typ = (typ<0xFF) ? typ : typ&0xFFFFFF00;
+-    cnv = Rflx::PluginService::CreateWithId<IConverter*>
+-      (ConverterID(typ,clid), serviceLocator().get());
+-  }
+-  return cnv;
+-#else
+-  IConverter *cnv = 0;
+-  cnv = Rflx::PluginService::CreateWithId<IConverter*> 
+-    (ConverterID (typ,clid), serviceLocator());
+-  if (0==cnv) {
+-    typ = (typ<0xFF) ? typ : typ&0xFFFFFF00;
+-    cnv = Rflx::PluginService::CreateWithId<IConverter*>
+-      (ConverterID(typ,clid), serviceLocator());
+-  }
+-  return cnv;
+-#endif
++//#ifdef ATLAS_GAUDI_V21
++//  IConverter *cnv = 0;
++//  cnv = Rflx::PluginService::CreateWithId<IConverter*> 
++//    (ConverterID (typ,clid), serviceLocator().get());
++//  if (0==cnv) {
++//    typ = (typ<0xFF) ? typ : typ&0xFFFFFF00;
++//    cnv = Rflx::PluginService::CreateWithId<IConverter*>
++//      (ConverterID(typ,clid), serviceLocator().get());
++//  }
++//  return cnv;
++//#else
++//  IConverter *cnv = 0;
++//  cnv = Rflx::PluginService::CreateWithId<IConverter*> 
++ //   (ConverterID (typ,clid), serviceLocator());
++ // if (0==cnv) {
++ //   typ = (typ<0xFF) ? typ : typ&0xFFFFFF00;
++  //  cnv = Rflx::PluginService::CreateWithId<IConverter*>
++  //    (ConverterID(typ,clid), serviceLocator());
++ // }
++ // return cnv;
++//#endif
+ }
+ 
+ /// Configure the new converter before initialize is called

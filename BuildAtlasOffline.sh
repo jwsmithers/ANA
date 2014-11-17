@@ -17,15 +17,14 @@ done < Projects.txt
 
 if [ "$HASRUNBEFORE" == "1" ]
 then
-	echo "Major CMT structure and project.cmt files have already neen built... therefore skipping."
+	echo "Major CMT structure, project.cmt files and requirements have already neen built... therefore skipping."
 else
 	source ./scripts/CMTStructure.sh
-fi
 
-export HASRUNBEFORE=1
+
 ################################################################################################################################
 ## Create the Release files for each project and the requirements files ##
-echo "Creating Release packages..."
+	echo "Creating Release packages..."
 
 function CreateRequirements {
 	echo "package $1" > ./$1/cmt/requirements
@@ -62,6 +61,10 @@ CreateRequirements "AtlasOfflineRelease" "SVNAtlasOffline.txt"
 
 AtlasHLT && cmt create AtlasHLTRelease AtlasHLTRelease-v*
 CreateRequirements "AtlasHLTRelease" "SVNAtlasHLT.txt"
+
+fi
+
+export HASRUNBEFORE=1
 ################################################################################################################################
 ## Checkout or don't checkout all the packages from SVN ###
 goHome && cd ../
