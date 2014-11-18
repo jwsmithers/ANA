@@ -65,21 +65,6 @@ fi
 
 export HASRUNBEFORE=1
 
-################################################################################################################################
-## Should we apply files changes and patches? ###
-echo ""
-read -t -7 -p "Do you want to apply the patches and file changes for ARM? Type 'yes' if this is the first time runnning after a cmt package checkout. It will default to no. " -e input0
-if [ "$input0" == "yes" ] || [ "$input0" == "Yes" ]
-then 
-	echo "Applying file changes to suit the ARM archetecture..."
-	source ./scripts/ApplyFileChanges.sh
-	echo "Applying patches to suit the ARM archetecture..."
-	source ./scripts/ApplyPatches.sh
-else
-	echo ""
-	echo "Not applying patches and files changes. I assume this already has been done."
-fi
-
 
 ################################################################################################################################
 ## Checkout or don't checkout all the packages from SVN ###
@@ -110,6 +95,22 @@ goHome; cd ../
 ################################################################################################################################
 ### Create the extra environment scripts in each directory ##
 source ./scripts/CreateEnvironments.sh
+
+################################################################################################################################
+## Should we apply files changes and patches? ###
+echo ""
+read -t -7 -p "Do you want to apply the patches and file changes for ARM? Type 'yes' if this is the first time runnning after a cmt package checkout. It will default to no. " -e input0
+if [ "$input0" == "yes" ] || [ "$input0" == "Yes" ]
+then 
+	echo "Applying file changes to suit the ARM archetecture..."
+	source ./scripts/ApplyFileChanges.sh
+	echo "Applying patches to suit the ARM archetecture..."
+	source ./scripts/ApplyPatches.sh
+else
+	echo ""
+	echo "Not applying patches and files changes. I assume this already has been done."
+fi
+
 ################################################################################################################################
 ### What to build (Build Everything by default) ###
 echo ""
