@@ -1,0 +1,17 @@
+--- requirements	2014-11-18 10:37:22.804495112 +0200
++++ requirements1	2014-11-18 10:37:07.404590270 +0200
+@@ -17,7 +17,7 @@
+ use CoraCool             CoraCool-*     Database
+ end_private
+ 
+-use AtlasOracle          AtlasOracle-*  External
++#use AtlasOracle          AtlasOracle-*  External
+ use AtlasReflex          AtlasReflex-*  External
+ 
+ apply_tag NEEDS_PYCOOL
+@@ -40,4 +40,5 @@
+ 
+ apply_pattern declare_python_modules files="*.py ext sugar"
+ apply_pattern declare_scripts files="count_filled_lbs.py dqu_grldiff.py dqu_lumi.py dqu_grl_extract_period.py dqu_dump_periods.py"
++macro_remove oracle_linkopts "-lclntsh"
+ 
