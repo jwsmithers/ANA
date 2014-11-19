@@ -5,6 +5,8 @@ boxes WelcomeMSG.txt
 echo "Setting up your directory structure..."
 source Environment.sh
 echo "You've identified your system as $CMTCONFIG"
+alias goHome="cd $TopDir"
+
 
 while read name
 do
