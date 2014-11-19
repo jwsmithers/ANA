@@ -73,11 +73,10 @@ export HASRUNBEFORE=1
 goHome && cd ../
 
 function CMTCheckout {
-	$1
 	while read package
 	do
 		cmt co -r $package
-	done < $2 
+	done < $1 
 }
 echo ""
 read -t 7 -p "Do you want to populate all directories? This is a very lenghly proceess and so will defualt to 'no' in 7 seconds. " -e input
@@ -87,13 +86,14 @@ then
 	source ./scripts/PopulateDirectories.sh
 	while read line
 	do
-		CMTCheckout "$line" "$TopDir/../TEMP${line}.txt"
+		 cd $TopDir/$line/$line-$VERSION
+		 CMTCheckout "$TopDir/../TEMP${line}.txt"
 	done < Projects.txt
 	
 else
 	echo "Not checking out packages."
 fi
-goHome; cd ../
+goHome && cd ../
 ################################################################################################################################
 ### Create the extra environment scripts in each directory ##
 source ./scripts/CreateEnvironments.sh
@@ -101,7 +101,7 @@ source ./scripts/CreateEnvironments.sh
 ################################################################################################################################
 ## Should we apply files changes and patches? ###
 echo ""
-read -t -7 -p "Do you want to apply the patches and file changes for ARM? Type 'yes' if this is the first time runnning after a cmt package checkout. It will default to no. " -e input0
+read -t 7 -p "Do you want to apply the patches and file changes for ARM? Type 'yes' if this is the first time runnning after a cmt package checkout. It will default to no. " -e input0
 if [ "$input0" == "yes" ] || [ "$input0" == "Yes" ]
 then 
 	echo "Applying file changes to suit the ARM archetecture..."
