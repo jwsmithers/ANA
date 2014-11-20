@@ -79,8 +79,8 @@ function CMTCheckout {
 	done < $1 
 }
 echo ""
-read -t 7 -p "Do you want to populate all directories? This is a very lenghly proceess and so will defualt to 'no' in 7 seconds. " -e input
-if [ "$input" == "yes" ] || [ "$input" == "Yes" ]
+read -t 7 -p "Do you want to populate all directories? This is a very lenghly proceess and so will defualt to 'no' in 7 seconds. " -e Package_input
+if [ "$Package_input" == "yes" ] || [ "$Package_input" == "Yes" ]
 then
 	echo "Checkout out all packages..."
 	source ./scripts/PopulateDirectories.sh
@@ -101,8 +101,8 @@ source ./scripts/CreateEnvironments.sh
 ################################################################################################################################
 ## Should we apply files changes and patches? ###
 echo ""
-read -t 7 -p "Do you want to apply the patches and file changes for ARM? Type 'yes' if this is the first time runnning after a cmt package checkout. It will default to no. " -e input0
-if [ "$input0" == "yes" ] || [ "$input0" == "Yes" ]
+read -t 7 -p "Do you want to apply the patches and file changes for ARM? If you recently checked out packages then this will default to 'yes', otherwise it will be skipped. " -e Changes_input
+if [ "$Changes_input" == "yes" ] || [ "$Changes_input" == "Yes" ] || [ "$Package_input" == "yes" ] || [ "$Package_input" == "Yes" ]
 then 
 	echo "Applying file changes to suit the ARM archetecture..."
 	source ./scripts/ApplyFileChanges.sh
@@ -116,53 +116,53 @@ fi
 ################################################################################################################################
 ### What to build (Build Everything by default) ###
 echo ""
-read -t 15 -p "What package would you like to build? Only specify one. I.e. DetCommon, AtlasCore, AtlasConditions etc. By default everything gets built. You have 15 seconds. " -e input2
-if [ "$input2" == "DetCommon" ]
+read -t 15 -p "What package would you like to build? Only specify one. I.e. DetCommon, AtlasCore, AtlasConditions etc. By default everything gets built. You have 15 seconds. " -e Package_name
+if [ "$Package_name" == "DetCommon" ]
 then
 	echo "Building DetCommon..."
 	echo "DetCommon" > ./WhatToBuild.txt
 
-elif [ "$input2" == "AtlasCore" ]
+elif [ "$Package_name" == "AtlasCore" ]
 then
         echo "Building AtlasCore..."
         echo "AtlasCore" > ./WhatToBuild.txt
 
-elif [ "$input2" == "AtlasConditions" ]
+elif [ "$Package_name" == "AtlasConditions" ]
 then
         echo "Building AtlasConditions..."
         echo "AtlasConditions" > ./WhatToBuild.txt
 
-elif [ "$input2" == "AtlasEvent" ]
+elif [ "$Package_name" == "AtlasEvent" ]
 then
         echo "Building AtlasEvent..."
         echo "AtlasEvent" > ./WhatToBuild.txt
 	
-elif [ "$input2" == "AtlasReconstruction" ]
+elif [ "$Package_name" == "AtlasReconstruction" ]
 then
         echo "Building AtlasReconstruction..."
         echo "AtlasReconstruction" > ./WhatToBuild.txt
 
-elif [ "$input2" == "AtlasTrigger" ]
+elif [ "$Package_name" == "AtlasTrigger" ]
 then
         echo "Building AtlasTrigger..."
         echo "AtlasTrigger" > ./WhatToBuild.txt
 
-elif [ "$input2" == "AtlasAnalysis" ]
+elif [ "$Package_name" == "AtlasAnalysis" ]
 then
         echo "Building AtlasAnalysis..."
         echo "AtlasAnalysis" > ./WhatToBuild.txt
 
-elif [ "$input2" == "AtlasSimulation" ]
+elif [ "$Package_name" == "AtlasSimulation" ]
 then
         echo "Building AtlasSimulation..."
         echo "AtlasSimulation" > ./WhatToBuild.txt
 
-elif [ "$input2" == "AtlasOffline" ]
+elif [ "$Package_name" == "AtlasOffline" ]
 then
         echo "Building AtlasOffline..."
         echo "AtlasOffline" > ./WhatToBuild.txt
 
-elif [ "$input2" == "AtlasHLT" ]
+elif [ "$Package_name" == "AtlasHLT" ]
 then
         echo "Building AtlasHLT..."
         echo "AtlasHLT" > ./WhatToBuild.txt
