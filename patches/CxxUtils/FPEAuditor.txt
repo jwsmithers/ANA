@@ -1,1 +1,0 @@
-$TopDir/AtlasCore/AtlasCore-18.9.0/Control/AthenaServices/src

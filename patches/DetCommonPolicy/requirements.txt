@@ -1,1 +1,0 @@
-$TopDir/DetCommon/DetCommon-18.9.0/DetCommonPolicy/cmt
