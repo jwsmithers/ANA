@@ -1,4 +1,9 @@
 #!/bin/bash
+################################################################################################
+#                               Joshua Wyatt Smith                                             #
+#                               joshua.wyatt.smith@cern.ch                                     #
+################################################################################################
+
 ################################ House Keeping ################################
 boxes WelcomeMSG.txt
 
@@ -112,7 +117,7 @@ else
 	echo ""
 	echo "Not applying patches and files changes. I assume this already has been done."
 fi
-
+goHome && cd ../
 ################################################################################################################################
 ### What to build (Build Everything by default) ###
 echo ""

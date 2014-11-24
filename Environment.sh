@@ -1,3 +1,8 @@
+#!/bin/bash
+################################################################################################
+#                               Joshua Wyatt Smith                                             #
+#                               joshua.wyatt.smith@cern.ch                                     #
+################################################################################################
 export ROOTDIR=/home/jwsmith/HDD
 source $ROOTDIR/CMT/v1r26p20140131/mgr/setup.sh
 export CMTCONFIG=armv7l-fc21-gcc49-opt
