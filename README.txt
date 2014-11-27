@@ -13,6 +13,3 @@ To configure everything simply run
 >> source BuildAtlasOffline.sh
 
 It's that easy.
-
-However, there are things you need to do manually for now. patches, LinkLibraries  and
-fileChanges need to be done manually. This will change soon.
