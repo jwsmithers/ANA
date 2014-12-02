@@ -1,5 +1,5 @@
---- requirements	2014-11-11 20:29:23.954160952 +0200
-+++ requirements1	2014-11-11 20:29:38.509066882 +0200
+--- requirements	2014-11-24 11:56:06.721803640 +0200
++++ requirements1	2014-12-02 14:50:34.708336636 +0200
 @@ -17,10 +17,10 @@
  # ---------------------------------------------------------
  
@@ -44,7 +44,7 @@
  
  pattern trigconf_application \
    apply_pattern trigconf_example_application name=TrigConf<name> \
-@@ -93,32 +93,32 @@
+@@ -93,37 +93,37 @@
  # ---------------------------------------------------------
  
  macro_append cppflags " -Wwrite-strings -Wpointer-arith \
@@ -64,10 +64,11 @@
  # ---------------------------------------------------------
 -set JAVA_SUBDIR "sw/lcg/external/Java" \
 -        BNL         "cernsw/java"
-+set JAVA_SUBDIR "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm" \
++set JAVA_SUBDIR "/usr/lib/jvm/java-1.8.0" \
 +	BNL         "cernsw/java"
       
- set JAVA_BASE "${SITEROOT}/${JAVA_SUBDIR}"
+-set JAVA_BASE "${SITEROOT}/${JAVA_SUBDIR}"
++set JAVA_BASE "${JAVA_SUBDIR}"
  
  macro JDK_VENDOR "SUN_" \
        Darwin     ""
@@ -81,11 +82,17 @@
  
 -set JDK_HOME  "${JAVA_BASE}/JDK/${JDK_VENDOR}${JDK_FULL_VERSION}/${JDK_ARCH}"
 -set JAVA_HOME "${JDK_HOME}" target-mac106 ""
-+set JDK_HOME  "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm"
++set JDK_HOME  "/usr/lib/jvm/java-1.8.0"
 +set JAVA_HOME "${JDK_HOME}"
  
  set _JAVA_OPTIONS "-Xms64m -Xmx128m"
  
+ path_remove PATH "/JDK"
+-path_append PATH "${JDK_HOME}/jre/bin" noJava ""
++path_append PATH "${JDK_HOME}/bin" noJava ""
+ path_append PATH "${JDK_HOME}/bin" noJava ""
+ 
+ include_dirs "${JDK_HOME}/include"
 @@ -135,7 +135,7 @@
  macro JavaSDK_platform "" PACK "${JDK_ARCH}"
  

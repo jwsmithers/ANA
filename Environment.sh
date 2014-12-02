@@ -11,9 +11,10 @@ export CMTSITE=STANDALONE
 export SVNROOT=svn+ssh://jwsmith@svn.cern.ch/reps/atlasoff
 export VERSION=18.9.0
 export TopDir=$ROOTDIR/AtlasOfflineBuild-framework/InstallArea
+export AntVersion=1.9.4
 
 ##COOL
-export COOLDir=$ROOTDIR/COOL/COOL_2_9_2.r19029
+export COOLDir=$ROOTDIR/COOL/COOL_2_9_2
 export COOL_include=$ROOTDIR/COOL/$CMTCONFIG/include
 ##CORAL
 export CORALDir=$ROOTDIR/CORAL/CORAL-2-4-2
@@ -24,5 +25,5 @@ export LCG_install=$ROOTDIR/lcgcmake-install
 export GaudiDir=$ROOTDIR/Gaudi
 
 #Java
-export CPLUS_INCLUDE_PATH=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm/include:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.25-2.b18.fc21.arm/include/linux:$CPLUS_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=/usr/lib/jvm/$JAVAVERS/include:/usr/lib/jvm/$JAVAVERS/include/linux:$CPLUS_INCLUDE_PATH
 
