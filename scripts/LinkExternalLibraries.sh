@@ -2,6 +2,7 @@
 #DetCommon
 ln -s $ROOTDIR/COOL/$CMTCONFIG/lib/* $TopDir/DetCommon/DetCommon-18.9.0/InstallArea/$CMTCONFIG/lib/
 ln -s $ROOTDIR/CORAL/$CMTCONFIG/lib/* $TopDir/DetCommon/DetCommon-18.9.0/InstallArea/$CMTCONFIG/lib/
+ln -s $LCG_install/Boost/1.55.0_python2.7/$CMTCONFIG/lib/* $TopDir/DetCommon/DetCommon-18.9.0/InstallArea/$CMTCONFIG/lib/
 
 #AtlasCore
 ln -s $LCG_install/pytools/1.8_python2.7/share/sources/pyxml/xml $TopDir/AtlasCore/AtlasCore-18.9.0/TestPolicy/python
