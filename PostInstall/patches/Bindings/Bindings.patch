@@ -1,0 +1,17 @@
+--- Bindings.py	2014-12-09 19:15:48.960884500 +0200
++++ Bindings1.py	2014-12-09 19:15:37.450957122 +0200
+@@ -24,11 +24,11 @@
+     print "# WARNING: using PyCintex as cppyy implementation"
+     import PyCintex as cppyy
+ 
+-if ROOT6WorkAroundEnabled('ROOT-5478'):
++#if ROOT6WorkAroundEnabled('ROOT-5478'):
+     # Trigger the loading of GaudiKernelDict
+-    cppyy.gbl.DataObject
++#    cppyy.gbl.DataObject
+     # Trigger the loading of GaudiPythonDict
+-    cppyy.gbl.Chrono
++#    cppyy.gbl.Chrono
+ 
+ import Pythonizations
+ # Import Configurable from AthenaCommon or GaudiKernel if the first is not

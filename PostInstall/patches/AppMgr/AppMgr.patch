@@ -1,0 +1,17 @@
+--- AppMgr.py	2014-12-09 19:04:03.485331109 +0200
++++ AppMgr1.py	2014-12-09 19:03:12.930645820 +0200
+@@ -360,10 +360,10 @@
+        # to go when all code has been cleaned up
+          if self._opts and not self._opts.minimal:
+             from ConfigurableDb import getConfigurable
+-            if not hasattr(svcMgr, 'JobOptionsSvc'):
+-               svcMgr += getConfigurable(self.JobOptionsSvcType)("JobOptionsSvc")
+-            if not hasattr(svcMgr, 'MessageSvc'):
+-               svcMgr += getConfigurable(self.MessageSvcType)("MessageSvc")
++            #if not hasattr(svcMgr, 'JobOptionsSvc'):
++            #   svcMgr += getConfigurable(self.JobOptionsSvcType)("JobOptionsSvc")
++            #if not hasattr(svcMgr, 'MessageSvc'):
++            #   svcMgr += getConfigurable(self.MessageSvcType)("MessageSvc")
+        # -- end minimal
+          try:
+             from GaudiPython import AppMgr as GaudiAppMgr
