@@ -165,7 +165,7 @@ External/AtlasPython	AtlasPython-00-01-06
 External/AtlasQt4	AtlasQt4-00-00-11
 External/AtlasRELAX	AtlasRELAX-00-01-00
 External/AtlasROOT	AtlasROOT-02-03-09
-External/AtlasReflex	AtlasReflex-00-02-42-01
+External/AtlasReflex	AtlasReflex-00-02-36-10
 External/AtlasSQLite	AtlasSQLite-00-00-05
 External/AtlasSciPy	AtlasSciPy-00-04-00
 External/AtlasShift	AtlasShift-00-00-10

@@ -27,7 +27,6 @@ then
 else
 	source ./scripts/CMTStructure.sh
 
-
 ################################################################################################################################
 ## Create the Release files for each project and the requirements files ##
 	echo "Creating Release packages..."
@@ -72,7 +71,6 @@ fi
 
 export HASRUNBEFORE=1
 
-
 ################################################################################################################################
 ## Checkout or don't checkout all the packages from SVN ###
 goHome && cd ../
@@ -99,6 +97,7 @@ else
 	echo "Not checking out packages."
 fi
 goHome && cd ../
+return 1
 ################################################################################################################################
 ### Create the extra environment scripts in each directory ##
 source ./scripts/CreateEnvironments.sh
