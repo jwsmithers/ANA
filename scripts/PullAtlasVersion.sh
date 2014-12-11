@@ -1,5 +1,8 @@
 #!/bin/bash
 cd $TopDir/../
+echo ""
+echo "Retreiving version ${VERSION} and creating package lists..."
+echo ""
 wget http://atlas-computing.web.cern.ch/atlas-computing/links/buildDirectory/www/nicos_content${VERSION}.html
 html2text -width 160 nicos_content${VERSION}.html > ATLAS${VERSION}TEMP.txt
 rm nicos_content${VERSION}.html

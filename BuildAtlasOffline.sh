@@ -42,34 +42,34 @@ else
 
 
 	DetCommon && cmt create DetCommonRelease DetCommonRelease-v*
-	CreateRequirements "DetCommonRelease" "SVNDetCommon.txt"
+	CreateRequirements "DetCommonRelease" "DetCommon-${VERSION}-Dependents.txt"
 
 	AtlasCore && cmt create  AtlasCoreRelease AtlasCoreRelease-v*
-	CreateRequirements "AtlasCoreRelease" "SVNAtlasCore.txt"
+	CreateRequirements "AtlasCoreRelease" "AtlasCore-${VERSION}-Dependents.txt"
 
 	AtlasConditions && cmt create AtlasConditionsRelease AtlasConditionsRelease-v*
-	CreateRequirements "AtlasConditionsRelease" "SVNAtlasConditions.txt"
+	CreateRequirements "AtlasConditionsRelease" "AtlasConditions-${VERSION}-Dependents.txt"
 
 	AtlasEvent && cmt create AtlasEventRelease AtlasEventRelease-v*
-	CreateRequirements "AtlasEventRelease" "SVNAtlasEvent.txt"
+	CreateRequirements "AtlasEventRelease" "AtlasEvent-${VERSION}-Dependents.txt"
 
 	AtlasReconstruction && cmt create AtlasReconstructionRelease AtlasReconstructionRelease-v*
-	CreateRequirements "AtlasReconstructionRelease" "SVNAtlasReconstruction.txt"
+	CreateRequirements "AtlasReconstructionRelease" "AtlasReconstruction-${VERSION}-Dependents.txt"
 
 	AtlasSimulation && cmt create AtlasSimulationRelease AtlasSimulationRelease-v*
-	CreateRequirements "AtlasSimulationRelease" "SVNAtlasSimulation.txt"
+	CreateRequirements "AtlasSimulationRelease" "AtlasSimulation-${VERSION}-Dependents.txt"
 
 	AtlasTrigger && cmt create AtlasTriggerRelease AtlasTriggerRelease-v*
-	CreateRequirements "AtlasTriggerRelease" "SVNAtlasTrigger.txt"
+	CreateRequirements "AtlasTriggerRelease" "AtlasTrigger-${VERSION}-Dependents.txt"
 
 	AtlasAnalysis && cmt create AtlasAnalysisRelease AtlasAnalysisRelease-v*
-	CreateRequirements "AtlasAnalysisRelease" "SVNAtlasAnalysis.txt"
+	CreateRequirements "AtlasAnalysisRelease" "AtlasAnalysis-${VERSION}-Dependents.txt"
 
 	AtlasOffline && cmt create AtlasOfflineRelease AtlasOfflineRelease-v*
-	CreateRequirements "AtlasOfflineRelease" "SVNAtlasOffline.txt"
+	CreateRequirements "AtlasOfflineRelease" "AtlasOffline-${VERSION}-Dependents.txt"
 
 	AtlasHLT && cmt create AtlasHLTRelease AtlasHLTRelease-v*
-	CreateRequirements "AtlasHLTRelease" "SVNAtlasHLT.txt"
+	CreateRequirements "AtlasHLTRelease" "AtlasHLT-${VERSION}-Dependents.txt"
 
 fi
 

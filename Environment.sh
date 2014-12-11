@@ -10,6 +10,7 @@ export CMTBIN=Linux-armv7l
 export CMTSITE=STANDALONE
 export SVNROOT=svn+ssh://jwsmith@svn.cern.ch/reps/atlasoff
 export VERSION=19.3.0
+export LCGCMT_VERS=LCGCMT_67b
 export TopDir=$ROOTDIR/AtlasOfflineBuild-framework/InstallArea
 export AntVersion=1.9.4
 
