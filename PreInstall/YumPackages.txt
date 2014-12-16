@@ -1,0 +1,1800 @@
+CERN-CA-certs.noarch           20140325-3.slc6    @slc6-updates                 
+CERN-texstyles.noarch          4-5                @anaconda-base-20120625.x86_64
+ConsoleKit.x86_64              0.4.1-3.el6        @anaconda-base-20120625.x86_64
+ConsoleKit-libs.x86_64         0.4.1-3.el6        @anaconda-base-20120625.x86_64
+ConsoleKit-x11.x86_64          0.4.1-3.el6        @anaconda-base-20120625.x86_64
+DeviceKit-power.x86_64         014-3.el6          @anaconda-base-20120625.x86_64
+GConf2.x86_64                  2.28.0-6.el6       @anaconda-base-20120625.x86_64
+GConf2-devel.x86_64            2.28.0-6.el6       @anaconda-base-20120625.x86_64
+GConf2-gtk.x86_64              2.28.0-6.el6       @anaconda-base-20120625.x86_64
+MAKEDEV.x86_64                 3.24-6.el6         @anaconda-base-20120625.x86_64
+ModemManager.x86_64            0.4.0-5.git20100628.el6
+                                                  @anaconda-base-20120625.x86_64
+NetworkManager.x86_64          1:0.8.1-75.el6     @anaconda-base-20120625.x86_64
+NetworkManager-glib.x86_64     1:0.8.1-75.el6     @anaconda-base-20120625.x86_64
+NetworkManager-gnome.x86_64    1:0.8.1-75.el6     @anaconda-base-20120625.x86_64
+ORBit2.x86_64                  2.14.17-5.el6      @anaconda-base-20120625.x86_64
+ORBit2-devel.x86_64            2.14.17-5.el6      @anaconda-base-20120625.x86_64
+OpenEXR-libs.x86_64            1.6.1-8.1.el6      @anaconda-base-20120625.x86_64
+PackageKit.x86_64              0.5.8-23.el6       @anaconda-base-20120625.x86_64
+PackageKit-device-rebind.x86_64
+                               0.5.8-23.el6       @anaconda-base-20120625.x86_64
+PackageKit-glib.x86_64         0.5.8-23.el6       @anaconda-base-20120625.x86_64
+PackageKit-gstreamer-plugin.x86_64
+                               0.5.8-23.el6       @anaconda-base-20120625.x86_64
+PackageKit-gtk-module.x86_64   0.5.8-23.el6       @anaconda-base-20120625.x86_64
+PackageKit-yum.x86_64          0.5.8-23.el6       @anaconda-base-20120625.x86_64
+PackageKit-yum-plugin.x86_64   0.5.8-23.el6       @anaconda-base-20120625.x86_64
+SDL.x86_64                     1.2.14-3.el6       @anaconda-base-20120625.x86_64
+SL_rpm_show_arch.noarch        1.1-1              @anaconda-base-20120625.x86_64
+abrt.x86_64                    2.0.8-26.el6       @anaconda-base-20120625.x86_64
+abrt-addon-ccpp.x86_64         2.0.8-26.el6       @anaconda-base-20120625.x86_64
+abrt-addon-kerneloops.x86_64   2.0.8-26.el6       @anaconda-base-20120625.x86_64
+abrt-addon-python.x86_64       2.0.8-26.el6       @anaconda-base-20120625.x86_64
+abrt-cli.x86_64                2.0.8-26.el6       @anaconda-base-20120625.x86_64
+abrt-desktop.x86_64            2.0.8-26.el6       @anaconda-base-20120625.x86_64
+abrt-gui.x86_64                2.0.8-26.el6       @anaconda-base-20120625.x86_64
+abrt-libs.x86_64               2.0.8-26.el6       @anaconda-base-20120625.x86_64
+abrt-tui.x86_64                2.0.8-26.el6       @anaconda-base-20120625.x86_64
+abyssinica-fonts.noarch        1.0-5.1.el6        @anaconda-base-20120625.x86_64
+acl.x86_64                     2.2.49-6.el6       @anaconda-base-20120625.x86_64
+acpid.x86_64                   1.0.10-2.1.el6     @anaconda-base-20120625.x86_64
+afs_tools.noarch               2.00-2.cern        @anaconda-base-20120625.x86_64
+aic94xx-firmware.noarch        30-2.el6           @anaconda-base-20120625.x86_64
+alsa-lib.x86_64                1.0.22-3.el6       @anaconda-base-20120625.x86_64
+alsa-lib-devel.x86_64          1.0.22-3.el6       @anaconda-base-20120625.x86_64
+alsa-plugins-pulseaudio.x86_64 1.0.21-3.el6       @anaconda-base-20120625.x86_64
+alsa-utils.x86_64              1.0.22-7.el6       @anaconda-base-20120625.x86_64
+ant.x86_64                     1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-antlr.x86_64               1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-apache-bcel.x86_64         1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-apache-bsf.x86_64          1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-apache-log4j.x86_64        1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-apache-oro.x86_64          1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-apache-regexp.x86_64       1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-apache-resolver.x86_64     1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-commons-logging.x86_64     1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-commons-net.x86_64         1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-javamail.x86_64            1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-jdepend.x86_64             1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-jsch.x86_64                1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-junit.x86_64               1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-nodeps.x86_64              1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-swing.x86_64               1.7.1-13.el6       @anaconda-base-20120625.x86_64
+ant-trax.x86_64                1.7.1-13.el6       @anaconda-base-20120625.x86_64
+anthy.x86_64                   9100h-10.1.el6     @anaconda-base-20120625.x86_64
+antlr.x86_64                   2.7.7-6.5.el6      @anaconda-base-20120625.x86_64
+apache-jasper.noarch           5.5.28-3.el6       @anaconda-base-20120625.x86_64
+apache-tomcat-apis.noarch      0.1-1.el6          @anaconda-base-20120625.x86_64
+apr.x86_64                     1.3.9-5.el6_2      @anaconda-base-20120625.x86_64
+apr-util.x86_64                1.3.9-3.el6_0.1    @anaconda-base-20120625.x86_64
+apr-util-ldap.x86_64           1.3.9-3.el6_0.1    @anaconda-base-20120625.x86_64
+arc.x86_64                     44-40.1.slc6       @anaconda-base-20120625.x86_64
+at.x86_64                      3.1.10-44.el6_6.2  @anaconda-base-20120625.x86_64
+at-spi.x86_64                  1.28.1-2.el6       @anaconda-base-20120625.x86_64
+at-spi-python.x86_64           1.28.1-2.el6       @anaconda-base-20120625.x86_64
+atk.x86_64                     1.30.0-1.el6       @anaconda-base-20120625.x86_64
+atk-devel.x86_64               1.30.0-1.el6       @anaconda-base-20120625.x86_64
+atlas.x86_64                   3.8.4-2.el6        @anaconda-base-20120625.x86_64
+atmel-firmware.noarch          1.3-7.el6          @anaconda-base-20120625.x86_64
+attr.x86_64                    2.4.44-7.el6       @anaconda-base-20120625.x86_64
+audit.x86_64                   2.3.7-5.el6        @anaconda-base-20120625.x86_64
+audit-libs.x86_64              2.3.7-5.el6        @anaconda-base-20120625.x86_64
+audit-libs-devel.x86_64        2.3.7-5.el6        @anaconda-base-20120625.x86_64
+augeas-libs.x86_64             1.0.0-7.el6        @anaconda-base-20120625.x86_64
+authconfig.x86_64              6.1.12-19.el6      @anaconda-base-20120625.x86_64
+authconfig-gtk.x86_64          6.1.12-19.el6      @anaconda-base-20120625.x86_64
+autoconf.noarch                2.63-5.1.el6       @anaconda-base-20120625.x86_64
+autocorr-en.noarch             1:4.0.4.2-14.el6   @anaconda-base-20120625.x86_64
+autofs.x86_64                  1:5.0.5-109.el6    @anaconda-base-20120625.x86_64
+automake.noarch                1.11.1-4.el6       @anaconda-base-20120625.x86_64
+avahi-autoipd.x86_64           0.6.25-15.el6      @anaconda-base-20120625.x86_64
+avahi-glib.x86_64              0.6.25-15.el6      @anaconda-base-20120625.x86_64
+avahi-libs.x86_64              0.6.25-15.el6      @anaconda-base-20120625.x86_64
+avahi-ui.x86_64                0.6.25-15.el6      @anaconda-base-20120625.x86_64
+avalon-framework.x86_64        4.1.4-7.el6        @anaconda-base-20120625.x86_64
+axis.noarch                    1.2.1-7.5.el6_5    @anaconda-base-20120625.x86_64
+b43-fwcutter.x86_64            012-2.2.el6        @anaconda-base-20120625.x86_64
+b43-openfwwf.noarch            5.2-4.el6          @anaconda-base-20120625.x86_64
+babl.x86_64                    0.1.2-4.el6        @anaconda-base-20120625.x86_64
+basesystem.noarch              10.0-4.el6         @anaconda-base-20120625.x86_64
+bash.x86_64                    4.1.2-29.el6       @anaconda-base-20120625.x86_64
+batik.x86_64                   1.7-8.5.el6        @anaconda-base-20120625.x86_64
+bc.x86_64                      1.06.95-1.el6      @anaconda-base-20120625.x86_64
+bcel.x86_64                    5.2-7.2.el6        @anaconda-base-20120625.x86_64
+bfa-firmware.noarch            3.2.23.0-2.el6     @anaconda-base-20120625.x86_64
+bind-libs.x86_64               32:9.8.2-0.30.rc1.el6
+                                                  @anaconda-base-20120625.x86_64
+bind-utils.x86_64              32:9.8.2-0.30.rc1.el6
+                                                  @anaconda-base-20120625.x86_64
+binutils.x86_64                2.20.51.0.2-5.42.el6
+                                                  @anaconda-base-20120625.x86_64
+binutils-devel.x86_64          2.20.51.0.2-5.42.el6
+                                                  @anaconda-base-20120625.x86_64
+biosdevname.x86_64             0.5.1-1.el6        @anaconda-base-20120625.x86_64
+bison.x86_64                   2.4.1-5.el6        @anaconda-base-20120625.x86_64
+blktrace.x86_64                1.0.1-6.el6        @anaconda-base-20120625.x86_64
+bluez.x86_64                   4.66-1.el6         @anaconda-base-20120625.x86_64
+bluez-libs.x86_64              4.66-1.el6         @anaconda-base-20120625.x86_64
+boost.x86_64                   1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-date-time.x86_64         1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-devel.x86_64             1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-filesystem.x86_64        1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-graph.x86_64             1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-iostreams.x86_64         1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-math.x86_64              1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-program-options.x86_64   1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-python.x86_64            1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-regex.x86_64             1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-serialization.x86_64     1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-signals.x86_64           1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-system.x86_64            1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-test.x86_64              1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-thread.x86_64            1.41.0-25.el6      @anaconda-base-20120625.x86_64
+boost-wave.x86_64              1.41.0-25.el6      @anaconda-base-20120625.x86_64
+brasero.x86_64                 2.28.3-6.el6       @anaconda-base-20120625.x86_64
+brasero-libs.x86_64            2.28.3-6.el6       @anaconda-base-20120625.x86_64
+brasero-nautilus.x86_64        2.28.3-6.el6       @anaconda-base-20120625.x86_64
+bridge-utils.x86_64            1.2-10.el6         @anaconda-base-20120625.x86_64
+bsf.noarch                     2.4.0-4.1.el6      @anaconda-base-20120625.x86_64
+btparser.x86_64                0.17-2.el6         @anaconda-base-20120625.x86_64
+busybox.x86_64                 1:1.15.1-20.el6    @anaconda-base-20120625.x86_64
+byacc.x86_64                   1.9.20070509-7.el6 @anaconda-base-20120625.x86_64
+bzip2.x86_64                   1.0.5-7.el6_0      @anaconda-base-20120625.x86_64
+bzip2-devel.x86_64             1.0.5-7.el6_0      @anaconda-base-20120625.x86_64
+bzip2-libs.x86_64              1.0.5-7.el6_0      @anaconda-base-20120625.x86_64
+c-ares.x86_64                  1.10.0-3.el6       @anaconda-base-20120625.x86_64
+c2050.x86_64                   0.3b-3.1.el6       @anaconda-base-20120625.x86_64
+c2070.x86_64                   0.99-7.el6         @anaconda-base-20120625.x86_64
+ca-certificates.noarch         2014.1.98-65.1.el6 @anaconda-base-20120625.x86_64
+cairo.x86_64                   1.8.8-3.1.el6      @anaconda-base-20120625.x86_64
+cairo-devel.x86_64             1.8.8-3.1.el6      @anaconda-base-20120625.x86_64
+cairomm.x86_64                 1.8.0-2.1.el6      @anaconda-base-20120625.x86_64
+cas.noarch                     0.15-1.el6.1       @anaconda-base-20120625.x86_64
+ccm.noarch                     2.2.8-1.1.slc6     @anaconda-base-20120625.x86_64
+cdparanoia.x86_64              10.2-5.1.el6       @anaconda-base-20120625.x86_64
+cdparanoia-libs.x86_64         10.2-5.1.el6       @anaconda-base-20120625.x86_64
+cdrdao.x86_64                  1.2.3-4.el6        @anaconda-base-20120625.x86_64
+celt051.x86_64                 0.5.1.3-0.el6      @anaconda-base-20120625.x86_64
+cern-alerter.noarch            0.9b-11.el6        @anaconda-base-20120625.x86_64
+cern-config-users.noarch       1.8-0.slc6         @anaconda-base-20120625.x86_64
+cern-get-keytab.noarch         0.9.5-1.slc6       @anaconda-base-20120625.x86_64
+cern-wrappers.noarch           1-13.slc6          @anaconda-base-20120625.x86_64
+certmonger.x86_64              0.75.13-1.el6      @anaconda-base-20120625.x86_64
+check.x86_64                   0.9.8-1.1.el6      @anaconda-base-20120625.x86_64
+check-devel.x86_64             0.9.8-1.1.el6      @anaconda-base-20120625.x86_64
+checkpolicy.x86_64             2.0.22-1.el6       @anaconda-base-20120625.x86_64
+cheese.x86_64                  2.28.1-8.el6       @anaconda-base-20120625.x86_64
+chkconfig.x86_64               1.3.49.3-2.el6_4.1 @anaconda-base-20120625.x86_64
+cifs-utils.x86_64              4.8.1-19.el6       @anaconda-base-20120625.x86_64
+cjet.x86_64                    0.8.9-9.1.el6      @anaconda-base-20120625.x86_64
+cjkuni-fonts-common.noarch     0.2.20080216.1-36.el6
+                                                  @anaconda-base-20120625.x86_64
+cjkuni-uming-fonts.noarch      0.2.20080216.1-36.el6
+                                                  @anaconda-base-20120625.x86_64
+classpathx-jaf.x86_64          1.0-15.4.el6       @anaconda-base-20120625.x86_64
+classpathx-mail.noarch         1.1.1-9.4.el6      @anaconda-base-20120625.x86_64
+cloog-ppl.x86_64               0.15.7-1.2.el6     @anaconda-base-20120625.x86_64
+cmake.x86_64                   2.8.12.2-4.el6     @slc6-os                      
+compiz.x86_64                  0.8.2-24.el6       @anaconda-base-20120625.x86_64
+compiz-gnome.x86_64            0.8.2-24.el6       @anaconda-base-20120625.x86_64
+comps-extras.noarch            17.8-1.el6         @anaconda-base-20120625.x86_64
+control-center.x86_64          1:2.28.1-39.el6    @anaconda-base-20120625.x86_64
+control-center-extra.x86_64    1:2.28.1-39.el6    @anaconda-base-20120625.x86_64
+control-center-filesystem.x86_64
+                               1:2.28.1-39.el6    @anaconda-base-20120625.x86_64
+coreutils.x86_64               8.4-37.el6         @anaconda-base-20120625.x86_64
+coreutils-libs.x86_64          8.4-37.el6         @anaconda-base-20120625.x86_64
+cpio.x86_64                    2.10-12.el6_5      @anaconda-base-20120625.x86_64
+cpp.x86_64                     4.4.7-11.el6       @anaconda-base-20120625.x86_64
+cpufrequtils.x86_64            007-6.el6          @anaconda-base-20120625.x86_64
+cpuspeed.x86_64                1:1.5-20.el6_4     @anaconda-base-20120625.x86_64
+cracklib.x86_64                2.8.16-4.el6       @anaconda-base-20120625.x86_64
+cracklib-dicts.x86_64          2.8.16-4.el6       @anaconda-base-20120625.x86_64
+cracklib-python.x86_64         2.8.16-4.el6       @anaconda-base-20120625.x86_64
+crash.x86_64                   6.1.0-5.el6        @anaconda-base-20120625.x86_64
+crash-gcore-command.x86_64     1.0-5.el6          @anaconda-base-20120625.x86_64
+crash-trace-command.x86_64     1.0-5.el6          @anaconda-base-20120625.x86_64
+crda.x86_64                    1.1.3_2014.06.13-1.el6
+                                                  @anaconda-base-20120625.x86_64
+cronie.x86_64                  1.4.4-12.el6       @anaconda-base-20120625.x86_64
+cronie-anacron.x86_64          1.4.4-12.el6       @anaconda-base-20120625.x86_64
+crontabs.noarch                1.10-33.el6        @anaconda-base-20120625.x86_64
+cryptsetup-luks.x86_64         1.2.0-11.el6       @anaconda-base-20120625.x86_64
+cryptsetup-luks-libs.x86_64    1.2.0-11.el6       @anaconda-base-20120625.x86_64
+cscope.x86_64                  15.6-6.el6         @anaconda-base-20120625.x86_64
+ctags.x86_64                   5.8-2.el6          @anaconda-base-20120625.x86_64
+ctan-cm-lgc-fonts-common.noarch
+                               0.5-17.1.el6       @anaconda-base-20120625.x86_64
+ctan-cm-lgc-roman-fonts.noarch 0.5-17.1.el6       @anaconda-base-20120625.x86_64
+ctan-cm-lgc-sans-fonts.noarch  0.5-17.1.el6       @anaconda-base-20120625.x86_64
+ctan-cm-lgc-typewriter-fonts.noarch
+                               0.5-17.1.el6       @anaconda-base-20120625.x86_64
+cups.x86_64                    1:1.4.2-67.el6     @anaconda-base-20120625.x86_64
+cups-libs.x86_64               1:1.4.2-67.el6     @anaconda-base-20120625.x86_64
+cups-pk-helper.x86_64          0.0.4-12.el6       @anaconda-base-20120625.x86_64
+curl.x86_64                    7.19.7-40.el6_6.3  @slc6-updates                 
+cvs.x86_64                     1.11.23-16.slc6    @anaconda-base-20120625.x86_64
+cyrus-sasl.x86_64              2.1.23-15.el6_6.1  @slc6-updates                 
+cyrus-sasl-devel.x86_64        2.1.23-15.el6_6.1  @slc6-updates                 
+cyrus-sasl-gssapi.x86_64       2.1.23-15.el6_6.1  @slc6-updates                 
+cyrus-sasl-lib.x86_64          2.1.23-15.el6_6.1  @slc6-updates                 
+cyrus-sasl-md5.x86_64          2.1.23-15.el6_6.1  @slc6-updates                 
+cyrus-sasl-plain.x86_64        2.1.23-15.el6_6.1  @slc6-updates                 
+dash.x86_64                    0.5.5.1-4.el6      @anaconda-base-20120625.x86_64
+db4.x86_64                     4.7.25-18.el6_4    @anaconda-base-20120625.x86_64
+db4-cxx.x86_64                 4.7.25-18.el6_4    @anaconda-base-20120625.x86_64
+db4-devel.x86_64               4.7.25-18.el6_4    @anaconda-base-20120625.x86_64
+db4-utils.x86_64               4.7.25-18.el6_4    @anaconda-base-20120625.x86_64
+dbus.x86_64                    1:1.2.24-7.el6_3   @anaconda-base-20120625.x86_64
+dbus-c++.x86_64                0.5.0-0.10.20090203git13281b3.1.el6
+                                                  @anaconda-base-20120625.x86_64
+dbus-devel.x86_64              1:1.2.24-7.el6_3   @anaconda-base-20120625.x86_64
+dbus-glib.x86_64               0.86-6.el6_4       @anaconda-base-20120625.x86_64
+dbus-glib-devel.x86_64         0.86-6.el6_4       @anaconda-base-20120625.x86_64
+dbus-libs.x86_64               1:1.2.24-7.el6_3   @anaconda-base-20120625.x86_64
+dbus-python.x86_64             0.83.0-6.1.el6     @anaconda-base-20120625.x86_64
+dbus-x11.x86_64                1:1.2.24-7.el6_3   @anaconda-base-20120625.x86_64
+dejavu-fonts-common.noarch     2.30-2.el6         @anaconda-base-20120625.x86_64
+dejavu-sans-fonts.noarch       2.30-2.el6         @anaconda-base-20120625.x86_64
+dejavu-sans-mono-fonts.noarch  2.30-2.el6         @anaconda-base-20120625.x86_64
+dejavu-serif-fonts.noarch      2.30-2.el6         @anaconda-base-20120625.x86_64
+desktop-effects.x86_64         0.8.4-7.el6        @anaconda-base-20120625.x86_64
+desktop-file-utils.x86_64      0.15-9.el6         @anaconda-base-20120625.x86_64
+device-mapper.x86_64           1.02.90-2.el6_6.1  @slc6-updates                 
+device-mapper-event.x86_64     1.02.90-2.el6_6.1  @slc6-updates                 
+device-mapper-event-libs.x86_64
+                               1.02.90-2.el6_6.1  @slc6-updates                 
+device-mapper-libs.x86_64      1.02.90-2.el6_6.1  @slc6-updates                 
+device-mapper-persistent-data.x86_64
+                               0.3.2-1.el6        @anaconda-base-20120625.x86_64
+dhclient.x86_64                12:4.1.1-43.P1.el6 @anaconda-base-20120625.x86_64
+dhcp-common.x86_64             12:4.1.1-43.P1.el6 @anaconda-base-20120625.x86_64
+diffstat.x86_64                1.51-2.el6         @anaconda-base-20120625.x86_64
+diffutils.x86_64               2.8.1-28.el6       @anaconda-base-20120625.x86_64
+dmidecode.x86_64               1:2.12-5.el6_5     @anaconda-base-20120625.x86_64
+dmraid.x86_64                  1.0.0.rc16-11.el6  @anaconda-base-20120625.x86_64
+dmraid-events.x86_64           1.0.0.rc16-11.el6  @anaconda-base-20120625.x86_64
+dmz-cursor-themes.noarch       0.4-4.el6          @anaconda-base-20120625.x86_64
+dnsmasq.x86_64                 2.48-14.el6        @anaconda-base-20120625.x86_64
+docbook-dtds.noarch            1.0-51.el6         @anaconda-base-20120625.x86_64
+docbook-simple.noarch          1.1-8.el6          @anaconda-base-20120625.x86_64
+docbook-slides.noarch          3.4.0-9.el6        @anaconda-base-20120625.x86_64
+docbook-style-dsssl.noarch     1.79-10.el6        @anaconda-base-20120625.x86_64
+docbook-style-xsl.noarch       1.75.2-6.el6       @anaconda-base-20120625.x86_64
+docbook-utils.noarch           0.6.14-25.el6      @anaconda-base-20120625.x86_64
+docbook5-schemas.noarch        5.0-4.1.el6        @anaconda-base-20120625.x86_64
+docbook5-style-xsl.noarch      1.75.2-4.el6       @anaconda-base-20120625.x86_64
+dosfstools.x86_64              3.0.9-4.el6        @anaconda-base-20120625.x86_64
+doxygen.x86_64                 1:1.6.1-6.el6      @anaconda-base-20120625.x86_64
+dracut.noarch                  004-356.el6        @anaconda-base-20120625.x86_64
+dracut-kernel.noarch           004-356.el6        @anaconda-base-20120625.x86_64
+dstat.noarch                   0.7.0-1.el6        @anaconda-base-20120625.x86_64
+dvd+rw-tools.x86_64            7.1-6.el6          @anaconda-base-20120625.x86_64
+e2fsprogs.x86_64               1.41.12-21.el6     @anaconda-base-20120625.x86_64
+e2fsprogs-libs.x86_64          1.41.12-21.el6     @anaconda-base-20120625.x86_64
+ebtables.x86_64                2.0.9-6.el6        @anaconda-base-20120625.x86_64
+ecj.x86_64                     1:3.4.2-6.el6      @anaconda-base-20120625.x86_64
+eclipse-birt.x86_64            2.6.0-1.1.el6      @anaconda-base-20120625.x86_64
+eclipse-callgraph.x86_64       0.6.1-1.el6        @anaconda-base-20120625.x86_64
+eclipse-cdt.x86_64             1:7.0.1-4.el6      @anaconda-base-20120625.x86_64
+eclipse-changelog.x86_64       1:2.7.0-1.el6      @anaconda-base-20120625.x86_64
+eclipse-dtp.x86_64             1.8.1-1.1.el6      @anaconda-base-20120625.x86_64
+eclipse-emf.x86_64             2.6.0-1.el6        @anaconda-base-20120625.x86_64
+eclipse-gef.x86_64             3.6.1-3.el6        @anaconda-base-20120625.x86_64
+eclipse-jdt.x86_64             1:3.6.1-6.13.el6   @anaconda-base-20120625.x86_64
+eclipse-linuxprofilingframework.x86_64
+                               0.6.1-1.el6        @anaconda-base-20120625.x86_64
+eclipse-mylyn.x86_64           3.4.2-9.el6        @anaconda-base-20120625.x86_64
+eclipse-mylyn-java.x86_64      3.4.2-9.el6        @anaconda-base-20120625.x86_64
+eclipse-oprofile.x86_64        0.6.1-1.el6        @anaconda-base-20120625.x86_64
+eclipse-pde.x86_64             1:3.6.1-6.13.el6   @anaconda-base-20120625.x86_64
+eclipse-platform.x86_64        1:3.6.1-6.13.el6   @anaconda-base-20120625.x86_64
+eclipse-rcp.x86_64             1:3.6.1-6.13.el6   @anaconda-base-20120625.x86_64
+eclipse-rpm-editor.x86_64      0.5.0-2.el6        @anaconda-base-20120625.x86_64
+eclipse-rse.x86_64             3.2-1.el6          @anaconda-base-20120625.x86_64
+eclipse-subclipse.x86_64       1.6.5-6.el6        @anaconda-base-20120625.x86_64
+eclipse-svnkit.x86_64          1.3.0-3.el6        @anaconda-base-20120625.x86_64
+eclipse-swt.x86_64             1:3.6.1-6.13.el6   @anaconda-base-20120625.x86_64
+eclipse-valgrind.x86_64        0.6.1-1.el6        @anaconda-base-20120625.x86_64
+ed.x86_64                      1.1-3.3.el6        @anaconda-base-20120625.x86_64
+efibootmgr.x86_64              0.5.4-12.el6       @anaconda-base-20120625.x86_64
+eggdbus.x86_64                 0.6-3.el6          @anaconda-base-20120625.x86_64
+eject.x86_64                   2.1.5-17.el6       @anaconda-base-20120625.x86_64
+ekiga.x86_64                   3.2.6-4.el6        @anaconda-base-20120625.x86_64
+elfutils.x86_64                0.158-3.2.el6      @anaconda-base-20120625.x86_64
+elfutils-devel.x86_64          0.158-3.2.el6      @anaconda-base-20120625.x86_64
+elfutils-libelf.x86_64         0.158-3.2.el6      @anaconda-base-20120625.x86_64
+elfutils-libelf-devel.x86_64   0.158-3.2.el6      @anaconda-base-20120625.x86_64
+elfutils-libs.x86_64           0.158-3.2.el6      @anaconda-base-20120625.x86_64
+elinks.x86_64                  0.12-0.21.pre5.el6_3
+                                                  @anaconda-base-20120625.x86_64
+emacs.x86_64                   1:23.1-25.el6      @anaconda-base-20120625.x86_64
+emacs-common.x86_64            1:23.1-25.el6      @anaconda-base-20120625.x86_64
+enchant.x86_64                 1:1.5.0-4.el6      @anaconda-base-20120625.x86_64
+enscript.x86_64                1.6.4-15.el6       @anaconda-base-20120625.x86_64
+eog.x86_64                     2.28.2-4.el6       @anaconda-base-20120625.x86_64
+ethtool.x86_64                 2:3.5-5.el6        @anaconda-base-20120625.x86_64
+evince.x86_64                  2.28.2-14.el6_0.1  @anaconda-base-20120625.x86_64
+evince-dvi.x86_64              2.28.2-14.el6_0.1  @anaconda-base-20120625.x86_64
+evince-libs.x86_64             2.28.2-14.el6_0.1  @anaconda-base-20120625.x86_64
+evolution.x86_64               2.32.3-34.el6      @anaconda-base-20120625.x86_64
+evolution-data-server.x86_64   2.32.3-21.el6      @anaconda-base-20120625.x86_64
+evolution-data-server-devel.x86_64
+                               2.32.3-21.el6      @anaconda-base-20120625.x86_64
+evolution-exchange.x86_64      2.32.3-16.el6      @anaconda-base-20120625.x86_64
+evolution-help.noarch          2.32.3-34.el6      @anaconda-base-20120625.x86_64
+evolution-mapi.x86_64          0.32.2-12.el6      @anaconda-base-20120625.x86_64
+exempi.x86_64                  2.1.0-5.el6        @anaconda-base-20120625.x86_64
+expat.x86_64                   2.0.1-11.el6_2     @anaconda-base-20120625.x86_64
+expect.x86_64                  5.44.1.15-5.el6_4  @anaconda-base-20120625.x86_64
+fakeroot.x86_64                1.12.2-22.2.el6    @anaconda-base-20120625.x86_64
+fakeroot-libs.x86_64           1.12.2-22.2.el6    @anaconda-base-20120625.x86_64
+farsight2.x86_64               0.0.16-1.1.el6     @anaconda-base-20120625.x86_64
+festival.x86_64                1.96-18.el6        @anaconda-base-20120625.x86_64
+festival-lib.x86_64            1.96-18.el6        @anaconda-base-20120625.x86_64
+festival-speechtools-libs.x86_64
+                               1.2.96-18.el6      @anaconda-base-20120625.x86_64
+festvox-slt-arctic-hts.noarch  0.20061229-18.el6  @anaconda-base-20120625.x86_64
+file.x86_64                    5.04-21.el6        @anaconda-base-20120625.x86_64
+file-libs.x86_64               5.04-21.el6        @anaconda-base-20120625.x86_64
+file-roller.x86_64             2.28.2-7.el6       @anaconda-base-20120625.x86_64
+filesystem.x86_64              2.4.30-3.el6       @anaconda-base-20120625.x86_64
+findutils.x86_64               1:4.4.2-6.el6      @anaconda-base-20120625.x86_64
+fipscheck.x86_64               1.2.0-7.el6        @anaconda-base-20120625.x86_64
+fipscheck-lib.x86_64           1.2.0-7.el6        @anaconda-base-20120625.x86_64
+firefox.x86_64                 31.3.0-3.el6_6     @slc6-updates                 
+firstboot.x86_64               1.110.15-1.el6     @anaconda-base-20120625.x86_64
+flac.x86_64                    1.2.1-6.1.el6      @anaconda-base-20120625.x86_64
+flex.x86_64                    2.5.35-9.el6       @anaconda-base-20120625.x86_64
+fontconfig.x86_64              2.8.0-5.el6        @anaconda-base-20120625.x86_64
+fontconfig-devel.x86_64        2.8.0-5.el6        @anaconda-base-20120625.x86_64
+fontpackages-filesystem.noarch 1.41-1.1.el6       @anaconda-base-20120625.x86_64
+foomatic.x86_64                4.0.4-3.el6        @anaconda-base-20120625.x86_64
+foomatic-db.noarch             4.0-7.20091126.el6 @anaconda-base-20120625.x86_64
+foomatic-db-filesystem.noarch  4.0-7.20091126.el6 @anaconda-base-20120625.x86_64
+foomatic-db-ppds.noarch        4.0-7.20091126.el6 @anaconda-base-20120625.x86_64
+fop.x86_64                     0.95-4.2.el6       @anaconda-base-20120625.x86_64
+fprintd.x86_64                 0.1-21.git04fd09cfa.el6
+                                                  @anaconda-base-20120625.x86_64
+fprintd-pam.x86_64             0.1-21.git04fd09cfa.el6
+                                                  @anaconda-base-20120625.x86_64
+freetype.x86_64                2.3.11-14.el6_3.1  @anaconda-base-20120625.x86_64
+freetype-devel.x86_64          2.3.11-14.el6_3.1  @anaconda-base-20120625.x86_64
+fuse.x86_64                    2.8.3-4.el6        @anaconda-base-20120625.x86_64
+fuse-libs.x86_64               2.8.3-4.el6        @anaconda-base-20120625.x86_64
+gamin.x86_64                   0.1.10-9.el6       @anaconda-base-20120625.x86_64
+gamin-python.x86_64            0.1.10-9.el6       @anaconda-base-20120625.x86_64
+gawk.x86_64                    3.1.7-10.el6       @anaconda-base-20120625.x86_64
+gcalctool.x86_64               5.28.2-3.el6       @anaconda-base-20120625.x86_64
+gcc.x86_64                     4.4.7-11.el6       @anaconda-base-20120625.x86_64
+gcc-c++.x86_64                 4.4.7-11.el6       @anaconda-base-20120625.x86_64
+gcc-gfortran.x86_64            4.4.7-11.el6       @anaconda-base-20120625.x86_64
+gconfmm26.x86_64               2.28.0-1.el6       @anaconda-base-20120625.x86_64
+gd.x86_64                      2.0.35-11.el6      @anaconda-base-20120625.x86_64
+gdb.x86_64                     7.2-75.el6         @anaconda-base-20120625.x86_64
+gdbm.x86_64                    1.8.0-36.el6       @anaconda-base-20120625.x86_64
+gdbm-devel.x86_64              1.8.0-36.el6       @anaconda-base-20120625.x86_64
+gdk-pixbuf2.x86_64             2.24.1-5.el6       @anaconda-base-20120625.x86_64
+gdk-pixbuf2-devel.x86_64       2.24.1-5.el6       @anaconda-base-20120625.x86_64
+gdm.x86_64                     1:2.30.4-64.el6    @anaconda-base-20120625.x86_64
+gdm-libs.x86_64                1:2.30.4-64.el6    @anaconda-base-20120625.x86_64
+gdm-plugin-fingerprint.x86_64  1:2.30.4-64.el6    @anaconda-base-20120625.x86_64
+gdm-user-switch-applet.x86_64  1:2.30.4-64.el6    @anaconda-base-20120625.x86_64
+gedit.x86_64                   1:2.28.4-3.el6     @anaconda-base-20120625.x86_64
+gegl.x86_64                    0.1.2-5.el6        @anaconda-base-20120625.x86_64
+genisoimage.x86_64             1.1.9-12.el6       @anaconda-base-20120625.x86_64
+geronimo-specs.noarch          1.0-3.5.M2.el6     @anaconda-base-20120625.x86_64
+geronimo-specs-compat.noarch   1.0-3.5.M2.el6     @anaconda-base-20120625.x86_64
+gettext.x86_64                 0.17-18.el6        @anaconda-base-20120625.x86_64
+gettext-devel.x86_64           0.17-18.el6        @anaconda-base-20120625.x86_64
+gettext-libs.x86_64            0.17-18.el6        @anaconda-base-20120625.x86_64
+ghostscript.x86_64             8.70-19.el6        @anaconda-base-20120625.x86_64
+ghostscript-fonts.noarch       5.50-23.2.el6      @anaconda-base-20120625.x86_64
+giflib.x86_64                  4.1.6-3.1.el6      @anaconda-base-20120625.x86_64
+gimp.x86_64                    2:2.6.9-8.el6_6    @slc6-updates                 
+gimp-data-extras.noarch        2.0.2-3.1.el6      @anaconda-base-20120625.x86_64
+gimp-help.noarch               2.4.2-5.1.el6      @anaconda-base-20120625.x86_64
+gimp-help-browser.x86_64       2:2.6.9-8.el6_6    @slc6-updates                 
+gimp-libs.x86_64               2:2.6.9-8.el6_6    @slc6-updates                 
+git.x86_64                     1.7.1-3.el6_4.1    @anaconda-base-20120625.x86_64
+glib-networking.x86_64         2.28.6.1-2.2.el6   @anaconda-base-20120625.x86_64
+glib2.x86_64                   2.28.8-4.el6       @anaconda-base-20120625.x86_64
+glib2-devel.x86_64             2.28.8-4.el6       @anaconda-base-20120625.x86_64
+glibc.x86_64                   2.12-1.149.el6     @anaconda-base-20120625.x86_64
+glibc-common.x86_64            2.12-1.149.el6     @anaconda-base-20120625.x86_64
+glibc-devel.x86_64             2.12-1.149.el6     @anaconda-base-20120625.x86_64
+glibc-headers.x86_64           2.12-1.149.el6     @anaconda-base-20120625.x86_64
+glibmm24.x86_64                2.22.1-1.el6       @anaconda-base-20120625.x86_64
+glusterfs.x86_64               3.6.0.29-2.el6     @anaconda-base-20120625.x86_64
+glusterfs-api.x86_64           3.6.0.29-2.el6     @anaconda-base-20120625.x86_64
+glusterfs-libs.x86_64          3.6.0.29-2.el6     @anaconda-base-20120625.x86_64
+glx-utils.x86_64               10.1.2-2.el6       @anaconda-base-20120625.x86_64
+gmp.x86_64                     4.3.1-7.el6_2.2    @anaconda-base-20120625.x86_64
+gnome-applets.x86_64           1:2.28.0-7.el6     @anaconda-base-20120625.x86_64
+gnome-backgrounds.noarch       2.28.0-2.el6       @anaconda-base-20120625.x86_64
+gnome-bluetooth.x86_64         2.28.6-8.el6       @anaconda-base-20120625.x86_64
+gnome-bluetooth-libs.x86_64    2.28.6-8.el6       @anaconda-base-20120625.x86_64
+gnome-desktop.x86_64           2.28.2-11.el6      @anaconda-base-20120625.x86_64
+gnome-desktop-devel.x86_64     2.28.2-11.el6      @anaconda-base-20120625.x86_64
+gnome-disk-utility.x86_64      2.30.1-2.el6       @anaconda-base-20120625.x86_64
+gnome-disk-utility-libs.x86_64 2.30.1-2.el6       @anaconda-base-20120625.x86_64
+gnome-disk-utility-ui-libs.x86_64
+                               2.30.1-2.el6       @anaconda-base-20120625.x86_64
+gnome-doc-utils.noarch         0.18.1-1.el6       @anaconda-base-20120625.x86_64
+gnome-doc-utils-stylesheets.noarch
+                               0.18.1-1.el6       @anaconda-base-20120625.x86_64
+gnome-icon-theme.noarch        2.28.0-2.el6       @anaconda-base-20120625.x86_64
+gnome-keyring.x86_64           2.28.2-8.el6_3     @anaconda-base-20120625.x86_64
+gnome-keyring-devel.x86_64     2.28.2-8.el6_3     @anaconda-base-20120625.x86_64
+gnome-keyring-pam.x86_64       2.28.2-8.el6_3     @anaconda-base-20120625.x86_64
+gnome-mag.x86_64               0.15.9-2.el6       @anaconda-base-20120625.x86_64
+gnome-media.x86_64             2.29.91-6.el6      @anaconda-base-20120625.x86_64
+gnome-media-libs.x86_64        2.29.91-6.el6      @anaconda-base-20120625.x86_64
+gnome-menus.x86_64             2.28.0-4.el6       @anaconda-base-20120625.x86_64
+gnome-packagekit.x86_64        2.28.3-9.el6       @anaconda-base-20120625.x86_64
+gnome-panel.x86_64             2.30.2-15.el6      @anaconda-base-20120625.x86_64
+gnome-panel-libs.x86_64        2.30.2-15.el6      @anaconda-base-20120625.x86_64
+gnome-power-manager.x86_64     2.28.3-7.el6_4     @anaconda-base-20120625.x86_64
+gnome-python2.x86_64           2.28.0-3.el6       @anaconda-base-20120625.x86_64
+gnome-python2-applet.x86_64    2.28.0-5.el6       @anaconda-base-20120625.x86_64
+gnome-python2-bonobo.x86_64    2.28.0-3.el6       @anaconda-base-20120625.x86_64
+gnome-python2-canvas.x86_64    2.28.0-3.el6       @anaconda-base-20120625.x86_64
+gnome-python2-desktop.x86_64   2.28.0-5.el6       @anaconda-base-20120625.x86_64
+gnome-python2-extras.x86_64    2.25.3-20.el6      @anaconda-base-20120625.x86_64
+gnome-python2-gconf.x86_64     2.28.0-3.el6       @anaconda-base-20120625.x86_64
+gnome-python2-gnome.x86_64     2.28.0-3.el6       @anaconda-base-20120625.x86_64
+gnome-python2-gnomekeyring.x86_64
+                               2.28.0-5.el6       @anaconda-base-20120625.x86_64
+gnome-python2-gnomevfs.x86_64  2.28.0-3.el6       @anaconda-base-20120625.x86_64
+gnome-python2-gtkhtml2.x86_64  2.25.3-20.el6      @anaconda-base-20120625.x86_64
+gnome-python2-libegg.x86_64    2.25.3-20.el6      @anaconda-base-20120625.x86_64
+gnome-python2-libwnck.x86_64   2.28.0-5.el6       @anaconda-base-20120625.x86_64
+gnome-screensaver.x86_64       2.28.3-28.el6      @anaconda-base-20120625.x86_64
+gnome-session.x86_64           2.28.0-22.el6      @anaconda-base-20120625.x86_64
+gnome-session-xsession.x86_64  2.28.0-22.el6      @anaconda-base-20120625.x86_64
+gnome-settings-daemon.x86_64   2.28.2-30.el6      @anaconda-base-20120625.x86_64
+gnome-speech.x86_64            0.4.25-3.1.el6     @anaconda-base-20120625.x86_64
+gnome-system-monitor.x86_64    2.28.0-11.el6      @anaconda-base-20120625.x86_64
+gnome-terminal.x86_64          2.31.3-8.el6       @anaconda-base-20120625.x86_64
+gnome-themes.noarch            2.28.1-6.el6       @anaconda-base-20120625.x86_64
+gnome-user-docs.noarch         2.28.0-4.el6       @anaconda-base-20120625.x86_64
+gnome-user-share.x86_64        2.28.2-3.el6       @anaconda-base-20120625.x86_64
+gnome-utils.x86_64             1:2.28.1-10.el6    @anaconda-base-20120625.x86_64
+gnome-utils-libs.x86_64        1:2.28.1-10.el6    @anaconda-base-20120625.x86_64
+gnome-vfs2.x86_64              2.24.2-6.el6       @anaconda-base-20120625.x86_64
+gnome-vfs2-devel.x86_64        2.24.2-6.el6       @anaconda-base-20120625.x86_64
+gnome-vfs2-smb.x86_64          2.24.2-6.el6       @anaconda-base-20120625.x86_64
+gnote.x86_64                   0.6.3-3.el6        @anaconda-base-20120625.x86_64
+gnupg2.x86_64                  2.0.14-8.el6       @anaconda-base-20120625.x86_64
+gnuplot.x86_64                 4.2.6-2.el6        @anaconda-base-20120625.x86_64
+gnuplot-common.x86_64          4.2.6-2.el6        @anaconda-base-20120625.x86_64
+gnutls.x86_64                  2.8.5-14.el6_5     @anaconda-base-20120625.x86_64
+gnutls-devel.x86_64            2.8.5-14.el6_5     @anaconda-base-20120625.x86_64
+gnutls-utils.x86_64            2.8.5-14.el6_5     @anaconda-base-20120625.x86_64
+gok.x86_64                     2.28.1-5.el6       @anaconda-base-20120625.x86_64
+google-crosextra-caladea-fonts.noarch
+                               1.002-0.3.20130214.el6.1
+                                                  @anaconda-base-20120625.x86_64
+google-crosextra-carlito-fonts.noarch
+                               1.103-0.1.20130920.el6.1
+                                                  @anaconda-base-20120625.x86_64
+gpgme.x86_64                   1.1.8-3.el6        @anaconda-base-20120625.x86_64
+gpm-libs.x86_64                1.20.6-12.el6      @anaconda-base-20120625.x86_64
+grep.x86_64                    2.6.3-6.el6        @anaconda-base-20120625.x86_64
+groff.x86_64                   1.18.1.4-21.el6    @anaconda-base-20120625.x86_64
+grub.x86_64                    1:0.97-93.el6      @anaconda-base-20120625.x86_64
+grubby.x86_64                  7.0.15-7.el6       @anaconda-base-20120625.x86_64
+gsm.x86_64                     1.0.13-4.el6       @anaconda-base-20120625.x86_64
+gssdp.x86_64                   0.7.1-1.el6        @anaconda-base-20120625.x86_64
+gstreamer.x86_64               0.10.29-1.el6      @anaconda-base-20120625.x86_64
+gstreamer-devel.x86_64         0.10.29-1.el6      @anaconda-base-20120625.x86_64
+gstreamer-plugins-bad-free.x86_64
+                               0.10.19-3.el6_5    @anaconda-base-20120625.x86_64
+gstreamer-plugins-base.x86_64  0.10.29-2.el6      @anaconda-base-20120625.x86_64
+gstreamer-plugins-good.x86_64  0.10.23-1.el6      @anaconda-base-20120625.x86_64
+gstreamer-python.x86_64        0.10.16-1.1.el6    @anaconda-base-20120625.x86_64
+gstreamer-tools.x86_64         0.10.29-1.el6      @anaconda-base-20120625.x86_64
+gthumb.x86_64                  2.10.11-8.el6      @anaconda-base-20120625.x86_64
+gtk-doc.noarch                 1.11-5.1.el6       @anaconda-base-20120625.x86_64
+gtk-vnc.x86_64                 0.3.10-3.el6       @anaconda-base-20120625.x86_64
+gtk-vnc-python.x86_64          0.3.10-3.el6       @anaconda-base-20120625.x86_64
+gtk2.x86_64                    2.24.23-6.el6      @anaconda-base-20120625.x86_64
+gtk2-devel.x86_64              2.24.23-6.el6      @anaconda-base-20120625.x86_64
+gtk2-engines.x86_64            2.18.4-5.el6       @anaconda-base-20120625.x86_64
+gtk2-immodule-xim.x86_64       2.24.23-6.el6      @anaconda-base-20120625.x86_64
+gtkhtml2.x86_64                2.11.1-7.el6       @anaconda-base-20120625.x86_64
+gtkhtml3.x86_64                3.32.2-2.el6       @anaconda-base-20120625.x86_64
+gtkmm24.x86_64                 2.18.2-1.el6       @anaconda-base-20120625.x86_64
+gtksourceview2.x86_64          2.8.2-4.el6        @anaconda-base-20120625.x86_64
+gtkspell.x86_64                2.0.16-1.el6       @anaconda-base-20120625.x86_64
+gucharmap.x86_64               2.28.2-2.el6       @anaconda-base-20120625.x86_64
+gupnp.x86_64                   0.13.2-1.el6       @anaconda-base-20120625.x86_64
+gupnp-igd.x86_64               0.1.3-3.1.el6      @anaconda-base-20120625.x86_64
+gutenprint.x86_64              5.2.5-2.el6        @anaconda-base-20120625.x86_64
+gutenprint-cups.x86_64         5.2.5-2.el6        @anaconda-base-20120625.x86_64
+gutenprint-plugin.x86_64       5.2.5-2.el6        @anaconda-base-20120625.x86_64
+gvfs.x86_64                    1.4.3-18.el6       @anaconda-base-20120625.x86_64
+gvfs-afc.x86_64                1.4.3-18.el6       @anaconda-base-20120625.x86_64
+gvfs-archive.x86_64            1.4.3-18.el6       @anaconda-base-20120625.x86_64
+gvfs-devel.x86_64              1.4.3-18.el6       @anaconda-base-20120625.x86_64
+gvfs-fuse.x86_64               1.4.3-18.el6       @anaconda-base-20120625.x86_64
+gvfs-gphoto2.x86_64            1.4.3-18.el6       @anaconda-base-20120625.x86_64
+gvfs-obexftp.x86_64            1.4.3-18.el6       @anaconda-base-20120625.x86_64
+gvfs-smb.x86_64                1.4.3-18.el6       @anaconda-base-20120625.x86_64
+gzip.x86_64                    1.3.12-22.el6      @anaconda-base-20120625.x86_64
+hal.x86_64                     0.5.14-14.el6      @anaconda-base-20120625.x86_64
+hal-devel.x86_64               0.5.14-14.el6      @anaconda-base-20120625.x86_64
+hal-info.noarch                20090716-3.1.el6   @anaconda-base-20120625.x86_64
+hal-libs.x86_64                0.5.14-14.el6      @anaconda-base-20120625.x86_64
+hamcrest.x86_64                1.1-9.4.el6        @anaconda-base-20120625.x86_64
+hdparm.x86_64                  9.43-4.el6         @anaconda-base-20120625.x86_64
+hepix.noarch                   4.0.13-1.slc6      @anaconda-base-20120625.x86_64
+hesiod.x86_64                  3.1.0-19.el6       @anaconda-base-20120625.x86_64
+hicolor-icon-theme.noarch      0.11-1.1.el6       @anaconda-base-20120625.x86_64
+hmaccalc.x86_64                0.9.12-2.el6       @anaconda-base-20120625.x86_64
+hpijs.x86_64                   1:3.12.4-6.el6     @anaconda-base-20120625.x86_64
+hplip-common.x86_64            3.12.4-6.el6       @anaconda-base-20120625.x86_64
+hplip-libs.x86_64              3.12.4-6.el6       @anaconda-base-20120625.x86_64
+hsqldb.noarch                  1:1.8.0.10-12.el6  @anaconda-base-20120625.x86_64
+httpd.x86_64                   2.2.15-39.el6      @anaconda-base-20120625.x86_64
+httpd-tools.x86_64             2.2.15-39.el6      @anaconda-base-20120625.x86_64
+hunspell.x86_64                1.2.8-16.el6       @anaconda-base-20120625.x86_64
+hunspell-en.noarch             0.20090216-7.1.el6 @anaconda-base-20120625.x86_64
+hwdata.noarch                  0.233-11.1.el6     @anaconda-base-20120625.x86_64
+hyperv-daemons-license.noarch  0-0.15.20130826git.el6
+                                                  @anaconda-base-20120625.x86_64
+hypervkvpd.x86_64              0-0.15.20130826git.el6
+                                                  @anaconda-base-20120625.x86_64
+hyphen.x86_64                  2.4-5.1.el6        @anaconda-base-20120625.x86_64
+hyphen-en.noarch               2.4-5.1.el6        @anaconda-base-20120625.x86_64
+ibus.x86_64                    1.3.4-6.el6        @anaconda-base-20120625.x86_64
+ibus-anthy.x86_64              1.2.1-3.el6        @anaconda-base-20120625.x86_64
+ibus-chewing.x86_64            1.3.5.20100714-4.el6
+                                                  @anaconda-base-20120625.x86_64
+ibus-gtk.x86_64                1.3.4-6.el6        @anaconda-base-20120625.x86_64
+ibus-hangul.x86_64             1.3.0.20100329-6.el6
+                                                  @anaconda-base-20120625.x86_64
+ibus-libs.x86_64               1.3.4-6.el6        @anaconda-base-20120625.x86_64
+ibus-m17n.x86_64               1.3.0-2.el6        @anaconda-base-20120625.x86_64
+ibus-pinyin.x86_64             1.3.8-1.el6        @anaconda-base-20120625.x86_64
+ibus-qt.x86_64                 1.3.0-2.el6        @anaconda-base-20120625.x86_64
+ibus-rawcode.x86_64            1.3.0.20100421-2.el6
+                                                  @anaconda-base-20120625.x86_64
+ibus-sayura.x86_64             1.2.99.20100209-3.el6
+                                                  @anaconda-base-20120625.x86_64
+ibus-table.noarch              1.2.0.20100111-5.el6
+                                                  @anaconda-base-20120625.x86_64
+ibus-table-additional.noarch   1.2.0.20100111-5.el6
+                                                  @anaconda-base-20120625.x86_64
+icedax.x86_64                  1.1.9-12.el6       @anaconda-base-20120625.x86_64
+icu4j-eclipse.x86_64           1:4.2.1-5.el6      @anaconda-base-20120625.x86_64
+ilmbase.x86_64                 1.0.1-6.1.el6      @anaconda-base-20120625.x86_64
+im-chooser.x86_64              1.3.1-3.el6        @anaconda-base-20120625.x86_64
+imsettings.x86_64              0.108.0-3.6.el6    @anaconda-base-20120625.x86_64
+imsettings-libs.x86_64         0.108.0-3.6.el6    @anaconda-base-20120625.x86_64
+indent.x86_64                  2.2.10-7.el6       @anaconda-base-20120625.x86_64
+info.x86_64                    4.13a-8.el6        @anaconda-base-20120625.x86_64
+initscripts.x86_64             9.03.46-1.el6_6.1  @slc6-updates                 
+intltool.noarch                0.41.0-1.1.el6     @anaconda-base-20120625.x86_64
+iok.x86_64                     1.3.13-3.el6       @anaconda-base-20120625.x86_64
+iotop.noarch                   0.3.2-7.el6        @anaconda-base-20120625.x86_64
+ipa-client.x86_64              3.0.0-42.el6       @anaconda-base-20120625.x86_64
+ipa-python.x86_64              3.0.0-42.el6       @anaconda-base-20120625.x86_64
+iproute.x86_64                 2.6.32-33.el6_6    @slc6-updates                 
+iptables.x86_64                1.4.7-14.el6       @anaconda-base-20120625.x86_64
+iptables-ipv6.x86_64           1.4.7-14.el6       @anaconda-base-20120625.x86_64
+iputils.x86_64                 20071127-17.el6_4.2
+                                                  @anaconda-base-20120625.x86_64
+ipw2100-firmware.noarch        1.3-11.el6         @anaconda-base-20120625.x86_64
+ipw2200-firmware.noarch        3.1-4.el6          @anaconda-base-20120625.x86_64
+irqbalance.x86_64              2:1.0.4-10.el6     @anaconda-base-20120625.x86_64
+iscsi-initiator-utils.x86_64   6.2.0.873-13.el6   @anaconda-base-20120625.x86_64
+iso-codes.noarch               3.16-2.el6         @anaconda-base-20120625.x86_64
+ivtv-firmware.noarch           2:20080701-20.2    @anaconda-base-20120625.x86_64
+iw.x86_64                      3.10-1.1.el6       @anaconda-base-20120625.x86_64
+iwl100-firmware.noarch         39.31.5.1-1.el6    @anaconda-base-20120625.x86_64
+iwl1000-firmware.noarch        1:39.31.5.1-1.el6  @anaconda-base-20120625.x86_64
+iwl3945-firmware.noarch        15.32.2.9-4.el6    @anaconda-base-20120625.x86_64
+iwl4965-firmware.noarch        228.61.2.24-2.1.el6
+                                                  @anaconda-base-20120625.x86_64
+iwl5000-firmware.noarch        8.83.5.1_1-1.el6_1.1
+                                                  @anaconda-base-20120625.x86_64
+iwl5150-firmware.noarch        8.24.2.2-1.el6     @anaconda-base-20120625.x86_64
+iwl6000-firmware.noarch        9.221.4.1-1.el6    @anaconda-base-20120625.x86_64
+iwl6000g2a-firmware.noarch     17.168.5.3-1.el6   @anaconda-base-20120625.x86_64
+iwl6000g2b-firmware.noarch     17.168.5.2-1.el6   @anaconda-base-20120625.x86_64
+iwl6050-firmware.noarch        41.28.5.1-2.el6    @anaconda-base-20120625.x86_64
+jakarta-commons-codec.x86_64   1.3-11.7.el6       @anaconda-base-20120625.x86_64
+jakarta-commons-discovery.noarch
+                               1:0.4-5.4.el6      @anaconda-base-20120625.x86_64
+jakarta-commons-el.noarch      1.0-18.4.el6       @anaconda-base-20120625.x86_64
+jakarta-commons-httpclient.x86_64
+                               1:3.1-0.9.el6_5    @anaconda-base-20120625.x86_64
+jakarta-commons-io.noarch      1.4-3.el6          @anaconda-base-20120625.x86_64
+jakarta-commons-lang.noarch    2.4-1.1.el6        @anaconda-base-20120625.x86_64
+jakarta-commons-logging.noarch 1.0.4-10.el6       @anaconda-base-20120625.x86_64
+jakarta-commons-net.noarch     2.0-2.1.el6        @anaconda-base-20120625.x86_64
+jakarta-oro.x86_64             2.0.8-6.6.el6      @anaconda-base-20120625.x86_64
+jasper-libs.x86_64             1.900.1-15.el6_1.1 @anaconda-base-20120625.x86_64
+java-1.5.0-gcj.x86_64          1.5.0.0-29.1.el6   @anaconda-base-20120625.x86_64
+java-1.6.0-openjdk.x86_64      1:1.6.0.33-1.13.5.1.el6_6
+                                                  @slc6-updates                 
+java-1.6.0-openjdk-devel.x86_64
+                               1:1.6.0.33-1.13.5.1.el6_6
+                                                  @slc6-updates                 
+java-1.6.0-openjdk-javadoc.x86_64
+                               1:1.6.0.33-1.13.5.1.el6_6
+                                                  @slc6-updates                 
+java-1.7.0-openjdk.x86_64      1:1.7.0.71-2.5.3.1.el6
+                                                  @anaconda-base-20120625.x86_64
+java-1.7.0-openjdk-devel.x86_64
+                               1:1.7.0.71-2.5.3.1.el6
+                                                  @anaconda-base-20120625.x86_64
+java_cup.x86_64                1:0.10k-5.el6      @anaconda-base-20120625.x86_64
+jdepend.noarch                 2.9-1.2.el6        @anaconda-base-20120625.x86_64
+jetty-eclipse.noarch           6.1.24-2.el6       @anaconda-base-20120625.x86_64
+jline.noarch                   0.9.94-0.8.el6     @anaconda-base-20120625.x86_64
+jna.x86_64                     3.2.4-2.el6        @anaconda-base-20120625.x86_64
+jomolhari-fonts.noarch         0.003-8.1.el6      @anaconda-base-20120625.x86_64
+jpackage-utils.noarch          1.7.5-3.12.el6     @anaconda-base-20120625.x86_64
+jsch.noarch                    0.1.41-2.2.el6     @anaconda-base-20120625.x86_64
+junit.x86_64                   3.8.2-6.5.el6      @anaconda-base-20120625.x86_64
+junit4.noarch                  4.5-5.3.el6        @anaconda-base-20120625.x86_64
+jzlib.x86_64                   1.0.7-7.5.el6      @anaconda-base-20120625.x86_64
+kasumi.x86_64                  2.5-1.1.el6        @anaconda-base-20120625.x86_64
+kbd.x86_64                     1.15-11.el6        @anaconda-base-20120625.x86_64
+kbd-misc.noarch                1.15-11.el6        @anaconda-base-20120625.x86_64
+kernel.x86_64                  2.6.32-504.el6     @anaconda-base-20120625.x86_64
+kernel.x86_64                  2.6.32-504.1.3.el6 @slc6-updates                 
+kernel-devel.x86_64            2.6.32-504.el6     @anaconda-base-20120625.x86_64
+kernel-devel.x86_64            2.6.32-504.1.3.el6 @slc6-updates                 
+kernel-firmware.noarch         2.6.32-504.1.3.el6 @slc6-updates                 
+kernel-headers.x86_64          2.6.32-504.1.3.el6 @slc6-updates                 
+kernel-module-openafs-2.6.32-504.1.3.el6.x86_64
+                               1:1.6.6-cern3.0.slc6
+                                                  @slc6-updates                 
+kernel-module-openafs-2.6.32-504.el6.x86_64
+                               1:1.6.6-cern3.0.slc6
+                                                  @slc6-updates                 
+kexec-tools.x86_64             2.0.0-280.el6      @anaconda-base-20120625.x86_64
+keyutils.x86_64                1.4-5.el6          @anaconda-base-20120625.x86_64
+keyutils-libs.x86_64           1.4-5.el6          @anaconda-base-20120625.x86_64
+keyutils-libs-devel.x86_64     1.4-5.el6          @anaconda-base-20120625.x86_64
+khmeros-base-fonts.noarch      5.0-9.el6          @anaconda-base-20120625.x86_64
+khmeros-fonts-common.noarch    5.0-9.el6          @anaconda-base-20120625.x86_64
+kpartx.x86_64                  0.4.9-80.el6_6.1   @slc6-updates                 
+kpathsea.x86_64                2007-57.el6_2      @anaconda-base-20120625.x86_64
+krb5-auth-dialog.x86_64        0.17-3.slc6        @anaconda-base-20120625.x86_64
+krb5-devel.x86_64              1.10.3-33.el6      @anaconda-base-20120625.x86_64
+krb5-libs.x86_64               1.10.3-33.el6      @anaconda-base-20120625.x86_64
+krb5-workstation.x86_64        1.10.3-33.el6      @anaconda-base-20120625.x86_64
+kurdit-unikurd-web-fonts.noarch
+                               20020502-6.el6     @anaconda-base-20120625.x86_64
+latencytop.x86_64              0.5-9.el6          @anaconda-base-20120625.x86_64
+latencytop-common.x86_64       0.5-9.el6          @anaconda-base-20120625.x86_64
+latencytop-tui.x86_64          0.5-9.el6          @anaconda-base-20120625.x86_64
+latrace.x86_64                 0.5.9-2.el6        @anaconda-base-20120625.x86_64
+lcm.noarch                     0-7                @anaconda-base-20120625.x86_64
+lcm-firstboot.noarch           1-7.slc6           @anaconda-base-20120625.x86_64
+lcm-profile.noarch             1-20140602.1.slc6  @anaconda-base-20120625.x86_64
+lcms-libs.x86_64               1.19-1.el6         @anaconda-base-20120625.x86_64
+ledmon.x86_64                  0.79-1.el6         @anaconda-base-20120625.x86_64
+less.x86_64                    436-13.el6         @anaconda-base-20120625.x86_64
+libICE.x86_64                  1.0.6-1.el6        @anaconda-base-20120625.x86_64
+libICE-devel.x86_64            1.0.6-1.el6        @anaconda-base-20120625.x86_64
+libIDL.x86_64                  0.8.13-2.1.el6     @anaconda-base-20120625.x86_64
+libIDL-devel.x86_64            0.8.13-2.1.el6     @anaconda-base-20120625.x86_64
+libSM.x86_64                   1.2.1-2.el6        @anaconda-base-20120625.x86_64
+libSM-devel.x86_64             1.2.1-2.el6        @anaconda-base-20120625.x86_64
+libX11.x86_64                  1.6.0-2.2.el6      @anaconda-base-20120625.x86_64
+libX11-common.noarch           1.6.0-2.2.el6      @anaconda-base-20120625.x86_64
+libX11-devel.x86_64            1.6.0-2.2.el6      @anaconda-base-20120625.x86_64
+libXScrnSaver.x86_64           1.2.2-2.el6        @anaconda-base-20120625.x86_64
+libXau.x86_64                  1.0.6-4.el6        @anaconda-base-20120625.x86_64
+libXau-devel.x86_64            1.0.6-4.el6        @anaconda-base-20120625.x86_64
+libXaw.x86_64                  1.0.11-2.el6       @anaconda-base-20120625.x86_64
+libXcomposite.x86_64           0.4.3-4.el6        @anaconda-base-20120625.x86_64
+libXcomposite-devel.x86_64     0.4.3-4.el6        @anaconda-base-20120625.x86_64
+libXcursor.x86_64              1.1.14-2.1.el6     @anaconda-base-20120625.x86_64
+libXcursor-devel.x86_64        1.1.14-2.1.el6     @anaconda-base-20120625.x86_64
+libXdamage.x86_64              1.1.3-4.el6        @anaconda-base-20120625.x86_64
+libXdamage-devel.x86_64        1.1.3-4.el6        @anaconda-base-20120625.x86_64
+libXdmcp.x86_64                1.1.1-3.el6        @anaconda-base-20120625.x86_64
+libXext.x86_64                 1.3.2-2.1.el6      @anaconda-base-20120625.x86_64
+libXext-devel.x86_64           1.3.2-2.1.el6      @anaconda-base-20120625.x86_64
+libXfixes.x86_64               5.0.1-2.1.el6      @anaconda-base-20120625.x86_64
+libXfixes-devel.x86_64         5.0.1-2.1.el6      @anaconda-base-20120625.x86_64
+libXfont.x86_64                1.4.5-4.el6_6      @slc6-updates                 
+libXft.x86_64                  2.3.1-2.el6        @anaconda-base-20120625.x86_64
+libXft-devel.x86_64            2.3.1-2.el6        @anaconda-base-20120625.x86_64
+libXi.x86_64                   1.7.2-2.2.el6      @anaconda-base-20120625.x86_64
+libXi-devel.x86_64             1.7.2-2.2.el6      @anaconda-base-20120625.x86_64
+libXinerama.x86_64             1.1.3-2.1.el6      @anaconda-base-20120625.x86_64
+libXinerama-devel.x86_64       1.1.3-2.1.el6      @anaconda-base-20120625.x86_64
+libXmu.x86_64                  1.1.1-2.el6        @anaconda-base-20120625.x86_64
+libXmu-devel.x86_64            1.1.1-2.el6        @anaconda-base-20120625.x86_64
+libXp.x86_64                   1.0.2-2.1.el6      @anaconda-base-20120625.x86_64
+libXp-devel.x86_64             1.0.2-2.1.el6      @anaconda-base-20120625.x86_64
+libXpm.x86_64                  3.5.10-2.el6       @anaconda-base-20120625.x86_64
+libXrandr.x86_64               1.4.1-2.1.el6      @anaconda-base-20120625.x86_64
+libXrandr-devel.x86_64         1.4.1-2.1.el6      @anaconda-base-20120625.x86_64
+libXrender.x86_64              0.9.8-2.1.el6      @anaconda-base-20120625.x86_64
+libXrender-devel.x86_64        0.9.8-2.1.el6      @anaconda-base-20120625.x86_64
+libXres.x86_64                 1.0.7-2.1.el6      @anaconda-base-20120625.x86_64
+libXt.x86_64                   1.1.4-6.1.el6      @anaconda-base-20120625.x86_64
+libXt-devel.x86_64             1.1.4-6.1.el6      @anaconda-base-20120625.x86_64
+libXtst.x86_64                 1.2.2-2.1.el6      @anaconda-base-20120625.x86_64
+libXtst-devel.x86_64           1.2.2-2.1.el6      @anaconda-base-20120625.x86_64
+libXv.x86_64                   1.0.9-2.1.el6      @anaconda-base-20120625.x86_64
+libXvMC.x86_64                 1.0.8-2.1.el6      @anaconda-base-20120625.x86_64
+libXxf86dga.x86_64             1.1.4-2.1.el6      @anaconda-base-20120625.x86_64
+libXxf86misc.x86_64            1.0.3-4.el6        @anaconda-base-20120625.x86_64
+libXxf86vm.x86_64              1.1.3-2.1.el6      @anaconda-base-20120625.x86_64
+libXxf86vm-devel.x86_64        1.1.3-2.1.el6      @anaconda-base-20120625.x86_64
+libacl.x86_64                  2.2.49-6.el6       @anaconda-base-20120625.x86_64
+libacl-devel.x86_64            2.2.49-6.el6       @anaconda-base-20120625.x86_64
+libaio.x86_64                  0.3.107-10.el6     @anaconda-base-20120625.x86_64
+libao.x86_64                   0.8.8-7.1.el6      @anaconda-base-20120625.x86_64
+libarchive.x86_64              2.8.3-4.el6_2      @anaconda-base-20120625.x86_64
+libart_lgpl.x86_64             2.3.20-5.1.el6     @anaconda-base-20120625.x86_64
+libart_lgpl-devel.x86_64       2.3.20-5.1.el6     @anaconda-base-20120625.x86_64
+libasyncns.x86_64              0.8-1.1.el6        @anaconda-base-20120625.x86_64
+libatasmart.x86_64             0.17-4.el6_2       @anaconda-base-20120625.x86_64
+libattr.x86_64                 2.4.44-7.el6       @anaconda-base-20120625.x86_64
+libattr-devel.x86_64           2.4.44-7.el6       @anaconda-base-20120625.x86_64
+libavc1394.x86_64              0.5.3-9.1.el6      @anaconda-base-20120625.x86_64
+libbasicobjects.x86_64         0.1.1-11.el6       @anaconda-base-20120625.x86_64
+libblkid.x86_64                2.17.2-12.18.el6   @anaconda-base-20120625.x86_64
+libbonobo.x86_64               2.24.2-5.el6       @anaconda-base-20120625.x86_64
+libbonobo-devel.x86_64         2.24.2-5.el6       @anaconda-base-20120625.x86_64
+libbonoboui.x86_64             2.24.2-3.el6       @anaconda-base-20120625.x86_64
+libbonoboui-devel.x86_64       2.24.2-3.el6       @anaconda-base-20120625.x86_64
+libburn.x86_64                 0.7.0-2.el6        @anaconda-base-20120625.x86_64
+libcacard.x86_64               0.15.0-2.el6       @anaconda-base-20120625.x86_64
+libcanberra.x86_64             0.22-1.el6         @anaconda-base-20120625.x86_64
+libcanberra-devel.x86_64       0.22-1.el6         @anaconda-base-20120625.x86_64
+libcanberra-gtk2.x86_64        0.22-1.el6         @anaconda-base-20120625.x86_64
+libcap.x86_64                  2.16-5.5.el6       @anaconda-base-20120625.x86_64
+libcap-ng.x86_64               0.6.4-3.el6_0.1    @anaconda-base-20120625.x86_64
+libcap-ng-devel.x86_64         0.6.4-3.el6_0.1    @anaconda-base-20120625.x86_64
+libcdio.x86_64                 0.81-3.1.el6       @anaconda-base-20120625.x86_64
+libcgroup.x86_64               0.40.rc1-15.el6_6  @anaconda-base-20120625.x86_64
+libcgroup-devel.x86_64         0.40.rc1-15.el6_6  @anaconda-base-20120625.x86_64
+libchewing.x86_64              0.3.2-27.el6       @anaconda-base-20120625.x86_64
+libcollection.x86_64           0.6.2-11.el6       @anaconda-base-20120625.x86_64
+libcom_err.x86_64              1.41.12-21.el6     @anaconda-base-20120625.x86_64
+libcom_err-devel.x86_64        1.41.12-21.el6     @anaconda-base-20120625.x86_64
+libcroco.x86_64                0.6.2-5.el6        @anaconda-base-20120625.x86_64
+libcroco-devel.x86_64          0.6.2-5.el6        @anaconda-base-20120625.x86_64
+libcurl.x86_64                 7.19.7-40.el6_6.3  @slc6-updates                 
+libcurl-devel.x86_64           7.19.7-40.el6_6.3  @slc6-updates                 
+libdaemon.x86_64               0.14-1.el6         @anaconda-base-20120625.x86_64
+libdhash.x86_64                0.4.3-11.el6       @anaconda-base-20120625.x86_64
+libdiscid.x86_64               0.2.2-4.1.el6      @anaconda-base-20120625.x86_64
+libdmx.x86_64                  1.1.3-3.el6        @anaconda-base-20120625.x86_64
+libdrm.x86_64                  2.4.52-4.el6       @anaconda-base-20120625.x86_64
+libdrm-devel.x86_64            2.4.52-4.el6       @anaconda-base-20120625.x86_64
+libdv.x86_64                   1.0.0-8.1.el6      @anaconda-base-20120625.x86_64
+libedit.x86_64                 2.11-4.20080712cvs.1.el6
+                                                  @anaconda-base-20120625.x86_64
+liberation-fonts-common.noarch 1.05.1.20090721-5.el6
+                                                  @anaconda-base-20120625.x86_64
+liberation-mono-fonts.noarch   1.05.1.20090721-5.el6
+                                                  @anaconda-base-20120625.x86_64
+liberation-sans-fonts.noarch   1.05.1.20090721-5.el6
+                                                  @anaconda-base-20120625.x86_64
+liberation-serif-fonts.noarch  1.05.1.20090721-5.el6
+                                                  @anaconda-base-20120625.x86_64
+libertas-usb8388-firmware.noarch
+                               2:5.110.22.p23-3.1.el6
+                                                  @anaconda-base-20120625.x86_64
+libevent.x86_64                1.4.13-4.el6       @anaconda-base-20120625.x86_64
+libexif.x86_64                 0.6.21-5.el6_3     @anaconda-base-20120625.x86_64
+libffi.x86_64                  3.0.5-3.2.el6      @anaconda-base-20120625.x86_64
+libfontenc.x86_64              1.0.5-2.el6        @anaconda-base-20120625.x86_64
+libfprint.x86_64               0.1.0-19.pre2.el6  @anaconda-base-20120625.x86_64
+libgail-gnome.x86_64           1.20.1-4.1.el6     @anaconda-base-20120625.x86_64
+libgcc.x86_64                  4.4.7-11.el6       @anaconda-base-20120625.x86_64
+libgcj.x86_64                  4.4.7-11.el6       @anaconda-base-20120625.x86_64
+libgcrypt.x86_64               1.4.5-11.el6_4     @anaconda-base-20120625.x86_64
+libgcrypt-devel.x86_64         1.4.5-11.el6_4     @anaconda-base-20120625.x86_64
+libgdata.x86_64                0.6.4-2.el6        @anaconda-base-20120625.x86_64
+libgdata-devel.x86_64          0.6.4-2.el6        @anaconda-base-20120625.x86_64
+libgfortran.x86_64             4.4.7-11.el6       @anaconda-base-20120625.x86_64
+libglade2.x86_64               2.6.4-3.1.el6      @anaconda-base-20120625.x86_64
+libglade2-devel.x86_64         2.6.4-3.1.el6      @anaconda-base-20120625.x86_64
+libgnome.x86_64                2.28.0-11.el6      @anaconda-base-20120625.x86_64
+libgnome-devel.x86_64          2.28.0-11.el6      @anaconda-base-20120625.x86_64
+libgnomecanvas.x86_64          2.26.0-4.el6       @anaconda-base-20120625.x86_64
+libgnomecanvas-devel.x86_64    2.26.0-4.el6       @anaconda-base-20120625.x86_64
+libgnomekbd.x86_64             2.28.2-2.el6       @anaconda-base-20120625.x86_64
+libgnomeui.x86_64              2.24.1-4.el6       @anaconda-base-20120625.x86_64
+libgnomeui-devel.x86_64        2.24.1-4.el6       @anaconda-base-20120625.x86_64
+libgomp.x86_64                 4.4.7-11.el6       @anaconda-base-20120625.x86_64
+libgpg-error.x86_64            1.7-4.el6          @anaconda-base-20120625.x86_64
+libgpg-error-devel.x86_64      1.7-4.el6          @anaconda-base-20120625.x86_64
+libgphoto2.x86_64              2.4.7-4.el6        @anaconda-base-20120625.x86_64
+libgpod.x86_64                 0.7.2-6.el6        @anaconda-base-20120625.x86_64
+libgsf.x86_64                  1.14.15-5.el6      @anaconda-base-20120625.x86_64
+libgsf-devel.x86_64            1.14.15-5.el6      @anaconda-base-20120625.x86_64
+libgssglue.x86_64              0.1-11.el6         @anaconda-base-20120625.x86_64
+libgtop2.x86_64                2.28.0-3.el6       @anaconda-base-20120625.x86_64
+libgudev1.x86_64               147-2.57.el6       @anaconda-base-20120625.x86_64
+libgweather.x86_64             2.28.0-5.el6       @anaconda-base-20120625.x86_64
+libgweather-devel.x86_64       2.28.0-5.el6       @anaconda-base-20120625.x86_64
+libgxim.x86_64                 0.3.3-3.1.el6      @anaconda-base-20120625.x86_64
+libhangul.x86_64               0.0.10-1.el6       @anaconda-base-20120625.x86_64
+libical.x86_64                 0.43-6.el6         @anaconda-base-20120625.x86_64
+libical-devel.x86_64           0.43-6.el6         @anaconda-base-20120625.x86_64
+libicu.x86_64                  4.2.1-9.1.el6_2    @anaconda-base-20120625.x86_64
+libidn.x86_64                  1.18-2.el6         @anaconda-base-20120625.x86_64
+libidn-devel.x86_64            1.18-2.el6         @anaconda-base-20120625.x86_64
+libiec61883.x86_64             1.2.0-4.el6        @anaconda-base-20120625.x86_64
+libieee1284.x86_64             0.2.11-9.el6       @anaconda-base-20120625.x86_64
+libimobiledevice.x86_64        0.9.7-4.el6        @anaconda-base-20120625.x86_64
+libini_config.x86_64           1.1.0-11.el6       @anaconda-base-20120625.x86_64
+libipa_hbac.x86_64             1.11.6-30.el6_6.3  @slc6-updates                 
+libipa_hbac-python.x86_64      1.11.6-30.el6_6.3  @slc6-updates                 
+libiptcdata.x86_64             1.0.4-2.1.el6      @anaconda-base-20120625.x86_64
+libisofs.x86_64                0.6.32-1.el6       @anaconda-base-20120625.x86_64
+libitm.x86_64                  4.9.0-6.1.1.el6    @anaconda-base-20120625.x86_64
+libjpeg-turbo.x86_64           1.2.1-3.el6_5      @anaconda-base-20120625.x86_64
+libjpeg-turbo-devel.x86_64     1.2.1-3.el6_5      @anaconda-base-20120625.x86_64
+libldb.x86_64                  1.1.13-3.el6       @anaconda-base-20120625.x86_64
+libmcpp.x86_64                 2.7.2-4.1.el6      @anaconda-base-20120625.x86_64
+libmng.x86_64                  1.0.10-4.1.el6     @anaconda-base-20120625.x86_64
+libmng-devel.x86_64            1.0.10-4.1.el6     @anaconda-base-20120625.x86_64
+libmpcdec.x86_64               1.2.6-6.1.el6      @anaconda-base-20120625.x86_64
+libmtp.x86_64                  1.0.1-2.el6        @anaconda-base-20120625.x86_64
+libmusicbrainz3.x86_64         3.0.2-7.el6        @anaconda-base-20120625.x86_64
+libnice.x86_64                 0.0.9-3.el6        @anaconda-base-20120625.x86_64
+libnih.x86_64                  1.0.1-7.el6        @anaconda-base-20120625.x86_64
+libnl.x86_64                   1.1.4-2.el6        @anaconda-base-20120625.x86_64
+libnotify.x86_64               0.5.0-1.el6        @anaconda-base-20120625.x86_64
+libnotify-devel.x86_64         0.5.0-1.el6        @anaconda-base-20120625.x86_64
+libogg.x86_64                  2:1.1.4-2.1.el6    @anaconda-base-20120625.x86_64
+liboil.x86_64                  0.3.16-4.1.el6     @anaconda-base-20120625.x86_64
+libopenraw.x86_64              0.0.5-4.1.el6      @anaconda-base-20120625.x86_64
+libopenraw-gnome.x86_64        0.0.5-4.1.el6      @anaconda-base-20120625.x86_64
+libotf.x86_64                  0.9.9-3.1.el6      @anaconda-base-20120625.x86_64
+libpanelappletmm.x86_64        2.26.0-3.el6       @anaconda-base-20120625.x86_64
+libpath_utils.x86_64           0.2.1-11.el6       @anaconda-base-20120625.x86_64
+libpcap.x86_64                 14:1.4.0-1.20130826git2dbcaa1.el6
+                                                  @anaconda-base-20120625.x86_64
+libpciaccess.x86_64            0.13.3-0.1.el6     @anaconda-base-20120625.x86_64
+libplist.x86_64                1.2-1.el6          @anaconda-base-20120625.x86_64
+libpng.x86_64                  2:1.2.49-1.el6_2   @anaconda-base-20120625.x86_64
+libpng-devel.x86_64            2:1.2.49-1.el6_2   @anaconda-base-20120625.x86_64
+libproxy.x86_64                0.3.0-10.el6       @anaconda-base-20120625.x86_64
+libproxy-bin.x86_64            0.3.0-10.el6       @anaconda-base-20120625.x86_64
+libproxy-python.x86_64         0.3.0-10.el6       @anaconda-base-20120625.x86_64
+libpurple.x86_64               2.7.9-27.el6       @anaconda-base-20120625.x86_64
+libraw1394.x86_64              2.0.4-1.el6        @anaconda-base-20120625.x86_64
+libref_array.x86_64            0.1.4-11.el6       @anaconda-base-20120625.x86_64
+libreoffice-calc.x86_64        1:4.0.4.2-14.el6   @anaconda-base-20120625.x86_64
+libreoffice-core.x86_64        1:4.0.4.2-14.el6   @anaconda-base-20120625.x86_64
+libreoffice-draw.x86_64        1:4.0.4.2-14.el6   @anaconda-base-20120625.x86_64
+libreoffice-graphicfilter.x86_64
+                               1:4.0.4.2-14.el6   @anaconda-base-20120625.x86_64
+libreoffice-impress.x86_64     1:4.0.4.2-14.el6   @anaconda-base-20120625.x86_64
+libreoffice-langpack-en.x86_64 1:4.0.4.2-14.el6   @anaconda-base-20120625.x86_64
+libreoffice-math.x86_64        1:4.0.4.2-14.el6   @anaconda-base-20120625.x86_64
+libreoffice-opensymbol-fonts.noarch
+                               1:4.0.4.2-14.el6   @anaconda-base-20120625.x86_64
+libreoffice-pdfimport.x86_64   1:4.0.4.2-14.el6   @anaconda-base-20120625.x86_64
+libreoffice-ure.x86_64         1:4.0.4.2-14.el6   @anaconda-base-20120625.x86_64
+libreoffice-writer.x86_64      1:4.0.4.2-14.el6   @anaconda-base-20120625.x86_64
+libreoffice-xsltfilter.x86_64  1:4.0.4.2-14.el6   @anaconda-base-20120625.x86_64
+libreport.x86_64               2.0.9-21.el6       @anaconda-base-20120625.x86_64
+libreport-cli.x86_64           2.0.9-21.el6       @anaconda-base-20120625.x86_64
+libreport-compat.x86_64        2.0.9-21.el6       @anaconda-base-20120625.x86_64
+libreport-gtk.x86_64           2.0.9-21.el6       @anaconda-base-20120625.x86_64
+libreport-newt.x86_64          2.0.9-21.el6       @anaconda-base-20120625.x86_64
+libreport-plugin-kerneloops.x86_64
+                               2.0.9-21.el6       @anaconda-base-20120625.x86_64
+libreport-plugin-logger.x86_64 2.0.9-21.el6       @anaconda-base-20120625.x86_64
+libreport-plugin-mailx.x86_64  2.0.9-21.el6       @anaconda-base-20120625.x86_64
+libreport-plugin-reportuploader.x86_64
+                               2.0.9-21.el6       @anaconda-base-20120625.x86_64
+libreport-plugin-rhtsupport.x86_64
+                               2.0.9-21.el6       @anaconda-base-20120625.x86_64
+libreport-python.x86_64        2.0.9-21.el6       @anaconda-base-20120625.x86_64
+librsvg2.x86_64                2.26.0-14.el6      @anaconda-base-20120625.x86_64
+librsvg2-devel.x86_64          2.26.0-14.el6      @anaconda-base-20120625.x86_64
+libsamplerate.x86_64           0.1.7-2.1.el6      @anaconda-base-20120625.x86_64
+libsane-hpaio.x86_64           3.12.4-6.el6       @anaconda-base-20120625.x86_64
+libselinux.x86_64              2.0.94-5.8.el6     @anaconda-base-20120625.x86_64
+libselinux-devel.x86_64        2.0.94-5.8.el6     @anaconda-base-20120625.x86_64
+libselinux-python.x86_64       2.0.94-5.8.el6     @anaconda-base-20120625.x86_64
+libselinux-utils.x86_64        2.0.94-5.8.el6     @anaconda-base-20120625.x86_64
+libsemanage.x86_64             2.0.43-4.2.el6     @anaconda-base-20120625.x86_64
+libsepol.x86_64                2.0.41-4.el6       @anaconda-base-20120625.x86_64
+libsepol-devel.x86_64          2.0.41-4.el6       @anaconda-base-20120625.x86_64
+libshout.x86_64                2.2.2-5.1.el6      @anaconda-base-20120625.x86_64
+libsigc++20.x86_64             2.2.4.2-1.el6      @anaconda-base-20120625.x86_64
+libsmbclient.x86_64            3.6.23-12.el6      @anaconda-base-20120625.x86_64
+libsndfile.x86_64              1.0.20-5.el6       @anaconda-base-20120625.x86_64
+libsoup.x86_64                 2.34.3-2.el6       @anaconda-base-20120625.x86_64
+libsoup-devel.x86_64           2.34.3-2.el6       @anaconda-base-20120625.x86_64
+libspectre.x86_64              0.2.4-1.el6        @anaconda-base-20120625.x86_64
+libspiro.x86_64                20071029-3.1.el6   @anaconda-base-20120625.x86_64
+libss.x86_64                   1.41.12-21.el6     @anaconda-base-20120625.x86_64
+libssh2.x86_64                 1.4.2-1.el6        @anaconda-base-20120625.x86_64
+libsss_idmap.x86_64            1.11.6-30.el6_6.3  @slc6-updates                 
+libstdc++.x86_64               4.4.7-11.el6       @anaconda-base-20120625.x86_64
+libstdc++-devel.x86_64         4.4.7-11.el6       @anaconda-base-20120625.x86_64
+libtalloc.x86_64               2.0.7-2.el6        @anaconda-base-20120625.x86_64
+libtar.x86_64                  1.2.11-17.el6_4.1  @anaconda-base-20120625.x86_64
+libtasn1.x86_64                2.3-6.el6_5        @anaconda-base-20120625.x86_64
+libtasn1-devel.x86_64          2.3-6.el6_5        @anaconda-base-20120625.x86_64
+libtdb.x86_64                  1.2.10-1.el6       @anaconda-base-20120625.x86_64
+libtevent.x86_64               0.9.18-3.el6       @anaconda-base-20120625.x86_64
+libthai.x86_64                 0.1.12-3.el6       @anaconda-base-20120625.x86_64
+libtheora.x86_64               1:1.1.0-2.el6      @anaconda-base-20120625.x86_64
+libtiff.x86_64                 3.9.4-10.el6_5     @anaconda-base-20120625.x86_64
+libtirpc.x86_64                0.2.1-10.el6       @anaconda-base-20120625.x86_64
+libtool.x86_64                 2.2.6-15.5.el6     @anaconda-base-20120625.x86_64
+libtool-ltdl.x86_64            2.2.6-15.5.el6     @anaconda-base-20120625.x86_64
+libudev.x86_64                 147-2.57.el6       @anaconda-base-20120625.x86_64
+libusb.x86_64                  0.1.12-23.el6      @anaconda-base-20120625.x86_64
+libusb1.x86_64                 1.0.9-0.6.rc1.el6  @anaconda-base-20120625.x86_64
+libuser.x86_64                 0.56.13-5.el6      @anaconda-base-20120625.x86_64
+libuser-python.x86_64          0.56.13-5.el6      @anaconda-base-20120625.x86_64
+libutempter.x86_64             1.1.5-4.1.el6      @anaconda-base-20120625.x86_64
+libuuid.x86_64                 2.17.2-12.18.el6   @anaconda-base-20120625.x86_64
+libv4l.x86_64                  0.6.3-2.el6        @anaconda-base-20120625.x86_64
+libvirt.x86_64                 0.10.2-46.el6_6.2  @slc6-updates                 
+libvirt-client.x86_64          0.10.2-46.el6_6.2  @slc6-updates                 
+libvirt-devel.x86_64           0.10.2-46.el6_6.2  @slc6-updates                 
+libvirt-java.noarch            0.4.9-1.el6        @anaconda-base-20120625.x86_64
+libvirt-java-devel.noarch      0.4.9-1.el6        @anaconda-base-20120625.x86_64
+libvirt-python.x86_64          0.10.2-46.el6_6.2  @slc6-updates                 
+libvisual.x86_64               0.4.0-10.el6       @anaconda-base-20120625.x86_64
+libvorbis.x86_64               1:1.2.3-4.el6_2.1  @anaconda-base-20120625.x86_64
+libvpx.x86_64                  1.3.0-5.el6_5      @anaconda-base-20120625.x86_64
+libwacom.x86_64                0.8-1.el6          @anaconda-base-20120625.x86_64
+libwacom-data.noarch           0.8-1.el6          @anaconda-base-20120625.x86_64
+libwmf.x86_64                  0.2.8.4-23.el6     @anaconda-base-20120625.x86_64
+libwmf-lite.x86_64             0.2.8.4-23.el6     @anaconda-base-20120625.x86_64
+libwnck.x86_64                 2.28.0-3.el6       @anaconda-base-20120625.x86_64
+libx86.x86_64                  1.1-9.slc6         @anaconda-base-20120625.x86_64
+libxcb.x86_64                  1.9.1-2.el6        @anaconda-base-20120625.x86_64
+libxcb-devel.x86_64            1.9.1-2.el6        @anaconda-base-20120625.x86_64
+libxkbfile.x86_64              1.0.6-1.1.el6      @anaconda-base-20120625.x86_64
+libxklavier.x86_64             4.0-9.el6          @anaconda-base-20120625.x86_64
+libxml2.x86_64                 2.7.6-17.el6_6.1   @anaconda-base-20120625.x86_64
+libxml2-devel.x86_64           2.7.6-17.el6_6.1   @anaconda-base-20120625.x86_64
+libxml2-python.x86_64          2.7.6-17.el6_6.1   @anaconda-base-20120625.x86_64
+libxslt.x86_64                 1.1.26-2.el6_3.1   @anaconda-base-20120625.x86_64
+libxslt-devel.x86_64           1.1.26-2.el6_3.1   @anaconda-base-20120625.x86_64
+lklug-fonts.noarch             0.6-4.20090803cvs.el6
+                                                  @anaconda-base-20120625.x86_64
+lm_sensors-libs.x86_64         3.1.1-17.el6       @anaconda-base-20120625.x86_64
+lockdev.x86_64                 1.0.1-18.el6       @anaconda-base-20120625.x86_64
+log4j.x86_64                   1.2.14-6.4.el6     @anaconda-base-20120625.x86_64
+logrotate.x86_64               3.7.8-17.el6       @anaconda-base-20120625.x86_64
+lohit-assamese-fonts.noarch    2.4.3-5.el6        @anaconda-base-20120625.x86_64
+lohit-bengali-fonts.noarch     2.4.3-6.el6        @anaconda-base-20120625.x86_64
+lohit-devanagari-fonts.noarch  2.4.3-7.el6        @anaconda-base-20120625.x86_64
+lohit-gujarati-fonts.noarch    2.4.4-4.el6        @anaconda-base-20120625.x86_64
+lohit-kannada-fonts.noarch     2.4.5-6.el6        @anaconda-base-20120625.x86_64
+lohit-oriya-fonts.noarch       2.4.3-6.el6        @anaconda-base-20120625.x86_64
+lohit-punjabi-fonts.noarch     2.4.4-2.el6        @anaconda-base-20120625.x86_64
+lohit-tamil-fonts.noarch       2.4.5-5.el6        @anaconda-base-20120625.x86_64
+lohit-telugu-fonts.noarch      2.4.5-6.el6        @anaconda-base-20120625.x86_64
+lpadmincern.noarch             1.3.13-1.slc6      @anaconda-base-20120625.x86_64
+lpg-java-compat.noarch         1.1.0-4.1.el6      @anaconda-base-20120625.x86_64
+lpsolve.x86_64                 5.5.0.15-2.el6     @anaconda-base-20120625.x86_64
+lsof.x86_64                    4.82-4.el6         @anaconda-base-20120625.x86_64
+ltrace.x86_64                  0.5-28.45svn.el6   @anaconda-base-20120625.x86_64
+lua.x86_64                     5.1.4-4.1.el6      @anaconda-base-20120625.x86_64
+lucene.noarch                  2.3.1-5.9.el6      @anaconda-base-20120625.x86_64
+lucene-contrib.noarch          2.3.1-5.9.el6      @anaconda-base-20120625.x86_64
+lvm2.x86_64                    2.02.111-2.el6_6.1 @slc6-updates                 
+lvm2-libs.x86_64               2.02.111-2.el6_6.1 @slc6-updates                 
+lx.x86_64                      20030328-5.1.el6   @anaconda-base-20120625.x86_64
+lzo.x86_64                     2.03-3.1.el6_5.1   @anaconda-base-20120625.x86_64
+lzop.x86_64                    1.02-0.9.rc1.el6   @anaconda-base-20120625.x86_64
+m17n-contrib.noarch            1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-assamese.noarch   1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-bengali.noarch    1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-gujarati.noarch   1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-hindi.noarch      1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-kannada.noarch    1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-maithili.noarch   1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-malayalam.noarch  1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-marathi.noarch    1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-oriya.noarch      1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-punjabi.noarch    1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-sinhala.noarch    1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-tamil.noarch      1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-telugu.noarch     1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-contrib-urdu.noarch       1.1.10-4.el6_1.1   @anaconda-base-20120625.x86_64
+m17n-db.noarch                 1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-db-assamese.noarch        1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-db-bengali.noarch         1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-db-datafiles.noarch       1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-db-gujarati.noarch        1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-db-hindi.noarch           1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-db-kannada.noarch         1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-db-malayalam.noarch       1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-db-oriya.noarch           1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-db-punjabi.noarch         1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-db-sinhala.noarch         1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-db-tamil.noarch           1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-db-telugu.noarch          1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-db-thai.noarch            1.5.5-1.1.el6      @anaconda-base-20120625.x86_64
+m17n-lib.x86_64                1.5.5-2.el6_1.1    @anaconda-base-20120625.x86_64
+m2crypto.x86_64                0.20.2-9.el6       @anaconda-base-20120625.x86_64
+m4.x86_64                      1.4.13-5.el6       @anaconda-base-20120625.x86_64
+madan-fonts.noarch             2.000-3.el6        @anaconda-base-20120625.x86_64
+mailcap.noarch                 2.1.31-2.el6       @anaconda-base-20120625.x86_64
+mailx.x86_64                   12.4-7.el6         @anaconda-base-20120625.x86_64
+make.x86_64                    1:3.81-20.el6      @anaconda-base-20120625.x86_64
+man.x86_64                     1.6f-32.el6        @anaconda-base-20120625.x86_64
+man-pages.noarch               3.22-20.el6        @anaconda-base-20120625.x86_64
+man-pages-overrides.noarch     6.6.3-2.el6        @anaconda-base-20120625.x86_64
+mc.x86_64                      1:4.7.0.2-3.el6    @anaconda-base-20120625.x86_64
+mcpp.x86_64                    2.7.2-4.1.el6      @anaconda-base-20120625.x86_64
+mdadm.x86_64                   3.3-6.el6_6.1      @slc6-updates                 
+meanwhile.x86_64               1.1.0-3.el6        @anaconda-base-20120625.x86_64
+media-player-info.noarch       6-1.el6            @anaconda-base-20120625.x86_64
+mesa-dri-drivers.x86_64        10.1.2-2.el6       @anaconda-base-20120625.x86_64
+mesa-dri-filesystem.x86_64     10.1.2-2.el6       @anaconda-base-20120625.x86_64
+mesa-dri1-drivers.x86_64       7.11-8.el6         @anaconda-base-20120625.x86_64
+mesa-libEGL.x86_64             10.1.2-2.el6       @anaconda-base-20120625.x86_64
+mesa-libGL.x86_64              10.1.2-2.el6       @anaconda-base-20120625.x86_64
+mesa-libGL-devel.x86_64        10.1.2-2.el6       @anaconda-base-20120625.x86_64
+mesa-libGLU.x86_64             10.1.2-2.el6       @anaconda-base-20120625.x86_64
+mesa-libGLU-devel.x86_64       10.1.2-2.el6       @anaconda-base-20120625.x86_64
+mesa-libGLw.x86_64             6.5.1-10.el6       @anaconda-base-20120625.x86_64
+mesa-libGLw-devel.x86_64       6.5.1-10.el6       @anaconda-base-20120625.x86_64
+mesa-libgbm.x86_64             10.1.2-2.el6       @anaconda-base-20120625.x86_64
+mesa-private-llvm.x86_64       3.4-3.el6          @anaconda-base-20120625.x86_64
+metacity.x86_64                2.28.0-23.el6      @anaconda-base-20120625.x86_64
+microcode_ctl.x86_64           1:1.17-19.el6      @anaconda-base-20120625.x86_64
+min12xxw.x86_64                0.0.9-5.1.el6      @anaconda-base-20120625.x86_64
+mingetty.x86_64                1.08-5.el6         @anaconda-base-20120625.x86_64
+mlocate.x86_64                 0.22.2-4.el6       @anaconda-base-20120625.x86_64
+mobile-broadband-provider-info.noarch
+                               1.20100122-4.el6   @anaconda-base-20120625.x86_64
+mod_dnssd.x86_64               0.6-2.el6          @anaconda-base-20120625.x86_64
+module-init-tools.x86_64       3.9-24.el6         @anaconda-base-20120625.x86_64
+monitor-edid.x86_64            3.0-2.el6          @anaconda-base-20120625.x86_64
+mousetweaks.x86_64             2.28.2-1.el6       @anaconda-base-20120625.x86_64
+mozilla-filesystem.x86_64      1.9-5.1.el6        @anaconda-base-20120625.x86_64
+mozilla-prefs.x86_64           0.4.6-1.slc6       @anaconda-base-20120625.x86_64
+mpfr.x86_64                    2.4.1-6.el6        @anaconda-base-20120625.x86_64
+msktutil.x86_64                0.5.1-0.slc6       @anaconda-base-20120625.x86_64
+mtdev.x86_64                   1.1.2-5.el6        @anaconda-base-20120625.x86_64
+mtools.x86_64                  4.0.12-1.el6       @anaconda-base-20120625.x86_64
+mtr.x86_64                     2:0.75-5.el6       @anaconda-base-20120625.x86_64
+mx4j.noarch                    1:3.0.1-9.13.el6   @anaconda-base-20120625.x86_64
+mysql.x86_64                   5.1.73-3.el6_5     @anaconda-base-20120625.x86_64
+mysql-devel.x86_64             5.1.73-3.el6_5     @anaconda-base-20120625.x86_64
+mysql-libs.x86_64              5.1.73-3.el6_5     @anaconda-base-20120625.x86_64
+mythes-en.noarch               3.0-6.el6          @anaconda-base-20120625.x86_64
+nano.x86_64                    2.0.9-7.el6        @anaconda-base-20120625.x86_64
+nautilus.x86_64                2.28.4-19.el6      @anaconda-base-20120625.x86_64
+nautilus-extensions.x86_64     2.28.4-19.el6      @anaconda-base-20120625.x86_64
+nautilus-open-terminal.x86_64  0.17-4.el6         @anaconda-base-20120625.x86_64
+nautilus-sendto.x86_64         2.28.2-4.el6       @anaconda-base-20120625.x86_64
+nc.x86_64                      1.84-24.el6        @slc6-updates                 
+ncm-afsclt.noarch              1.5.5.slc6test-2   @anaconda-base-20120625.x86_64
+ncm-chkconfig.noarch           1.1.10-1           @anaconda-base-20120625.x86_64
+ncm-krb5clt.noarch             2.1.8-1.slc6       @anaconda-base-20120625.x86_64
+ncm-ncd.noarch                 1.2.23-1           @anaconda-base-20120625.x86_64
+ncm-ntpd.noarch                1.1.4-1            @anaconda-base-20120625.x86_64
+ncm-ocsagent.noarch            0.0.3-3            @anaconda-base-20120625.x86_64
+ncm-sendmail.noarch            1.6.3-1            @anaconda-base-20120625.x86_64
+ncm-srvtab.noarch              2.0.1-1.slc6       @anaconda-base-20120625.x86_64
+ncm-ssh.noarch                 1.1.2-3            @anaconda-base-20120625.x86_64
+ncm-template.noarch            1.0.17-1           @anaconda-base-20120625.x86_64
+ncurses.x86_64                 5.7-3.20090208.el6 @anaconda-base-20120625.x86_64
+ncurses-base.x86_64            5.7-3.20090208.el6 @anaconda-base-20120625.x86_64
+ncurses-devel.x86_64           5.7-3.20090208.el6 @anaconda-base-20120625.x86_64
+ncurses-libs.x86_64            5.7-3.20090208.el6 @anaconda-base-20120625.x86_64
+neon.x86_64                    0.29.3-3.el6_4     @anaconda-base-20120625.x86_64
+net-snmp.x86_64                1:5.5-50.el6_6.1   @anaconda-base-20120625.x86_64
+net-snmp-libs.x86_64           1:5.5-50.el6_6.1   @anaconda-base-20120625.x86_64
+net-tools.x86_64               1.60-110.el6_2     @anaconda-base-20120625.x86_64
+netcf-libs.x86_64              0.2.4-1.el6        @anaconda-base-20120625.x86_64
+netpbm.x86_64                  10.47.05-11.el6    @anaconda-base-20120625.x86_64
+netpbm-progs.x86_64            10.47.05-11.el6    @anaconda-base-20120625.x86_64
+netxen-firmware.noarch         4.0.534-3.1.el6    @anaconda-base-20120625.x86_64
+newt.x86_64                    0.52.11-3.el6      @anaconda-base-20120625.x86_64
+newt-python.x86_64             0.52.11-3.el6      @anaconda-base-20120625.x86_64
+nfs-utils.x86_64               1:1.2.3-54.el6     @anaconda-base-20120625.x86_64
+nfs-utils-lib.x86_64           1.1.5-9.el6        @anaconda-base-20120625.x86_64
+nfs4-acl-tools.x86_64          0.3.3-6.el6        @anaconda-base-20120625.x86_64
+notification-daemon.x86_64     0.5.0-1.el6        @anaconda-base-20120625.x86_64
+notify-python.x86_64           0.1.1-10.el6       @anaconda-base-20120625.x86_64
+nspluginwrapper.x86_64         1.4.4-1.el6_3      @anaconda-base-20120625.x86_64
+nspr.x86_64                    4.10.6-1.el6_5     @anaconda-base-20120625.x86_64
+nspr-devel.x86_64              4.10.6-1.el6_5     @anaconda-base-20120625.x86_64
+nss.x86_64                     3.16.2.3-3.el6_6.cern
+                                                  @slc6-updates                 
+nss-devel.x86_64               3.16.2.3-3.el6_6.cern
+                                                  @slc6-updates                 
+nss-softokn.x86_64             3.14.3-18.el6_6    @slc6-updates                 
+nss-softokn-devel.x86_64       3.14.3-18.el6_6    @slc6-updates                 
+nss-softokn-freebl.x86_64      3.14.3-18.el6_6    @slc6-updates                 
+nss-softokn-freebl-devel.x86_64
+                               3.14.3-18.el6_6    @slc6-updates                 
+nss-sysinit.x86_64             3.16.2.3-3.el6_6.cern
+                                                  @slc6-updates                 
+nss-tools.x86_64               3.16.2.3-3.el6_6.cern
+                                                  @slc6-updates                 
+nss-util.x86_64                3.16.2.3-2.el6_6   @slc6-updates                 
+nss-util-devel.x86_64          3.16.2.3-2.el6_6   @slc6-updates                 
+nss_compat_ossl.x86_64         0.9.6-1.el6        @anaconda-base-20120625.x86_64
+ntp.x86_64                     4.2.6p5-1.el6      @anaconda-base-20120625.x86_64
+ntpdate.x86_64                 4.2.6p5-1.el6      @anaconda-base-20120625.x86_64
+ntsysv.x86_64                  1.3.49.3-2.el6_4.1 @anaconda-base-20120625.x86_64
+numactl.x86_64                 2.0.9-2.el6        @anaconda-base-20120625.x86_64
+numad.x86_64                   0.5-11.20140620git.el6
+                                                  @anaconda-base-20120625.x86_64
+numpy.x86_64                   1.4.1-9.el6        @anaconda-base-20120625.x86_64
+obex-data-server.x86_64        1:0.4.3-4.el6      @anaconda-base-20120625.x86_64
+obexd.x86_64                   0.19-2.el6         @anaconda-base-20120625.x86_64
+objectweb-asm.noarch           3.2-2.1.el6        @anaconda-base-20120625.x86_64
+ocsinventory-agent.noarch      2.0.4-21.slc6      @anaconda-base-20120625.x86_64
+oddjob.x86_64                  0.30-5.el6         @anaconda-base-20120625.x86_64
+oddjob-mkhomedir.x86_64        0.30-5.el6         @anaconda-base-20120625.x86_64
+opal.x86_64                    3.6.6-4.el6.0.sl6  @anaconda-base-20120625.x86_64
+openafs.x86_64                 1:1.6.6-cern3.0.slc6
+                                                  @slc6-updates                 
+openafs-client.x86_64          1:1.6.6-cern3.0.slc6
+                                                  @slc6-updates                 
+openafs-krb5.x86_64            1:1.6.6-cern3.0.slc6
+                                                  @slc6-updates                 
+openchange.x86_64              1.0-6.el6          @anaconda-base-20120625.x86_64
+openjade.x86_64                1.3.2-36.el6       @anaconda-base-20120625.x86_64
+openjpeg-libs.x86_64           1.3-10.el6_5       @anaconda-base-20120625.x86_64
+openldap.x86_64                2.4.39-8.el6       @anaconda-base-20120625.x86_64
+openldap-devel.x86_64          2.4.39-8.el6       @anaconda-base-20120625.x86_64
+openmotif.x86_64               2.3.3-8.el6        @anaconda-base-20120625.x86_64
+openmotif-devel.x86_64         2.3.3-8.el6        @anaconda-base-20120625.x86_64
+openobex.x86_64                1.4-7.el6          @anaconda-base-20120625.x86_64
+opensp.x86_64                  1.5.2-12.1.el6     @anaconda-base-20120625.x86_64
+openssh.x86_64                 5.3p1-104.el6_6.1  @slc6-updates                 
+openssh-askpass.x86_64         5.3p1-104.el6_6.1  @slc6-updates                 
+openssh-clients.x86_64         5.3p1-104.el6_6.1  @slc6-updates                 
+openssh-server.x86_64          5.3p1-104.el6_6.1  @slc6-updates                 
+openssl.x86_64                 1.0.1e-30.el6_6.4  @slc6-updates                 
+openssl-devel.x86_64           1.0.1e-30.el6_6.4  @slc6-updates                 
+oprofile.x86_64                0.9.9-6.el6_6      @slc6-updates                 
+orca.x86_64                    2.28.2-1.el6       @anaconda-base-20120625.x86_64
+p11-kit.x86_64                 0.18.5-2.el6_5.2   @anaconda-base-20120625.x86_64
+p11-kit-trust.x86_64           0.18.5-2.el6_5.2   @anaconda-base-20120625.x86_64
+pakchois.x86_64                0.4-3.2.el6        @anaconda-base-20120625.x86_64
+paktype-fonts-common.noarch    2.0-8.el6          @anaconda-base-20120625.x86_64
+paktype-naqsh-fonts.noarch     2.0-8.el6          @anaconda-base-20120625.x86_64
+paktype-tehreer-fonts.noarch   2.0-8.el6          @anaconda-base-20120625.x86_64
+pam.x86_64                     1.1.1-20.el6       @anaconda-base-20120625.x86_64
+pam-devel.x86_64               1.1.1-20.el6       @anaconda-base-20120625.x86_64
+pam_krb5.x86_64                2.3.11-9.el6       @anaconda-base-20120625.x86_64
+pam_passwdqc.x86_64            1.0.5-6.el6        @anaconda-base-20120625.x86_64
+pango.x86_64                   1.28.1-10.el6      @anaconda-base-20120625.x86_64
+pango-devel.x86_64             1.28.1-10.el6      @anaconda-base-20120625.x86_64
+pangomm.x86_64                 2.26.0-1.el6       @anaconda-base-20120625.x86_64
+paps.x86_64                    0.6.8-13.el6.2     @anaconda-base-20120625.x86_64
+paps-libs.x86_64               0.6.8-13.el6.2     @anaconda-base-20120625.x86_64
+parted.x86_64                  2.1-25.el6         @anaconda-base-20120625.x86_64
+passwd.x86_64                  0.77-4.el6_2.2     @anaconda-base-20120625.x86_64
+patch.x86_64                   2.6-6.el6          @anaconda-base-20120625.x86_64
+patchutils.x86_64              0.3.1-3.1.el6      @anaconda-base-20120625.x86_64
+pax.x86_64                     3.4-10.1.el6       @anaconda-base-20120625.x86_64
+pbm2l2030.x86_64               1.4-5.1.el6        @anaconda-base-20120625.x86_64
+pbm2l7k.x86_64                 990321-8.el6       @anaconda-base-20120625.x86_64
+pciutils.x86_64                3.1.10-4.el6       @anaconda-base-20120625.x86_64
+pciutils-libs.x86_64           3.1.10-4.el6       @anaconda-base-20120625.x86_64
+pcmciautils.x86_64             015-4.2.el6        @anaconda-base-20120625.x86_64
+pcre.x86_64                    7.8-6.el6          @anaconda-base-20120625.x86_64
+perf.x86_64                    2.6.32-504.1.3.el6 @slc6-updates                 
+perl.x86_64                    4:5.10.1-136.el6_6.1
+                                                  @slc6-updates                 
+perl-AppConfig-caf.noarch      1.9.0-2            @anaconda-base-20120625.x86_64
+perl-Archive-Extract.x86_64    1:0.38-136.el6_6.1 @slc6-updates                 
+perl-Archive-Tar.x86_64        1.58-136.el6_6.1   @slc6-updates                 
+perl-Authen-Krb5.x86_64        1.9-1.slc6.cern.1  @anaconda-base-20120625.x86_64
+perl-Authen-SASL.noarch        2.13-3.el6         @anaconda-base-20120625.x86_64
+perl-CAF.noarch                1.9.0-2            @anaconda-base-20120625.x86_64
+perl-CGI.x86_64                3.51-136.el6_6.1   @slc6-updates                 
+perl-CPAN.x86_64               1.9402-136.el6_6.1 @slc6-updates                 
+perl-CPANPLUS.x86_64           0.88-136.el6_6.1   @slc6-updates                 
+perl-Compress-Raw-Bzip2.x86_64 2.021-136.el6_6.1  @slc6-updates                 
+perl-Compress-Raw-Zlib.x86_64  1:2.021-136.el6_6.1
+                                                  @slc6-updates                 
+perl-Compress-Zlib.x86_64      2.021-136.el6_6.1  @slc6-updates                 
+perl-Convert-ASN1.noarch       0.22-1.el6         @anaconda-base-20120625.x86_64
+perl-Crypt-SSLeay.x86_64       0.57-17.el6        @anaconda-base-20120625.x86_64
+perl-DBD-SQLite.x86_64         1.27-3.el6         @anaconda-base-20120625.x86_64
+perl-DBI.x86_64                1.609-4.el6        @anaconda-base-20120625.x86_64
+perl-DBIx-Simple.noarch        1.32-3.el6         @anaconda-base-20120625.x86_64
+perl-Date-Manip.noarch         6.24-1.el6         @anaconda-base-20120625.x86_64
+perl-Digest-HMAC.noarch        1.01-22.el6        @anaconda-base-20120625.x86_64
+perl-Digest-SHA.x86_64         1:5.47-136.el6_6.1 @slc6-updates                 
+perl-Digest-SHA1.x86_64        2.12-2.el6         @anaconda-base-20120625.x86_64
+perl-Email-Date-Format.noarch  1.002-5.el6        @anaconda-base-20120625.x86_64
+perl-Error.noarch              1:0.17015-4.el6    @anaconda-base-20120625.x86_64
+perl-ExtUtils-CBuilder.x86_64  1:0.27-136.el6_6.1 @slc6-updates                 
+perl-ExtUtils-Embed.x86_64     1.28-136.el6_6.1   @slc6-updates                 
+perl-ExtUtils-MakeMaker.x86_64 6.55-136.el6_6.1   @slc6-updates                 
+perl-ExtUtils-ParseXS.x86_64   1:2.2003.0-136.el6_6.1
+                                                  @slc6-updates                 
+perl-File-Fetch.x86_64         0.26-136.el6_6.1   @slc6-updates                 
+perl-GSSAPI.x86_64             0.26-6.el6         @anaconda-base-20120625.x86_64
+perl-Git.noarch                1.7.1-3.el6_4.1    @anaconda-base-20120625.x86_64
+perl-HTML-Parser.x86_64        3.64-2.el6         @anaconda-base-20120625.x86_64
+perl-HTML-Tagset.noarch        3.20-4.el6         @anaconda-base-20120625.x86_64
+perl-IO-Compress-Base.x86_64   2.021-136.el6_6.1  @slc6-updates                 
+perl-IO-Compress-Bzip2.x86_64  2.021-136.el6_6.1  @slc6-updates                 
+perl-IO-Compress-Zlib.x86_64   2.021-136.el6_6.1  @slc6-updates                 
+perl-IO-Socket-SSL.noarch      1.31-2.el6         @anaconda-base-20120625.x86_64
+perl-IO-String.noarch          1.08-9.el6         @anaconda-base-20120625.x86_64
+perl-IO-Zlib.x86_64            1:1.09-136.el6_6.1 @slc6-updates                 
+perl-IPC-Cmd.x86_64            1:0.56-136.el6_6.1 @slc6-updates                 
+perl-LC.noarch                 1.1.2-2            @anaconda-base-20120625.x86_64
+perl-LDAP.noarch               1:0.40-1.el6       @anaconda-base-20120625.x86_64
+perl-Locale-Maketext-Simple.x86_64
+                               1:0.18-136.el6_6.1 @slc6-updates                 
+perl-Log-Message.x86_64        1:0.02-136.el6_6.1 @slc6-updates                 
+perl-Log-Message-Simple.x86_64 0.04-136.el6_6.1   @slc6-updates                 
+perl-MIME-Lite.noarch          3.027-2.el6        @anaconda-base-20120625.x86_64
+perl-MIME-Types.noarch         1.28-2.el6         @anaconda-base-20120625.x86_64
+perl-MailTools.noarch          2.04-4.el6         @anaconda-base-20120625.x86_64
+perl-Module-Build.x86_64       1:0.3500-136.el6_6.1
+                                                  @slc6-updates                 
+perl-Module-CoreList.x86_64    2.18-136.el6_6.1   @slc6-updates                 
+perl-Module-Load.x86_64        1:0.16-136.el6_6.1 @slc6-updates                 
+perl-Module-Load-Conditional.x86_64
+                               0.30-136.el6_6.1   @slc6-updates                 
+perl-Module-Loaded.x86_64      1:0.02-136.el6_6.1 @slc6-updates                 
+perl-Module-Pluggable.x86_64   1:3.90-136.el6_6.1 @slc6-updates                 
+perl-Net-IP.noarch             1.25-13.el6        @anaconda-base-20120625.x86_64
+perl-Net-LibIDN.x86_64         0.12-3.el6         @anaconda-base-20120625.x86_64
+perl-Net-SSLeay.x86_64         1.35-9.el6         @anaconda-base-20120625.x86_64
+perl-Object-Accessor.x86_64    1:0.34-136.el6_6.1 @slc6-updates                 
+perl-Package-Constants.x86_64  1:0.02-136.el6_6.1 @slc6-updates                 
+perl-Params-Check.x86_64       1:0.26-136.el6_6.1 @slc6-updates                 
+perl-Parse-CPAN-Meta.x86_64    1:1.40-136.el6_6.1 @slc6-updates                 
+perl-Parse-RecDescent.noarch   1.962.2-2.el6      @anaconda-base-20120625.x86_64
+perl-Pod-Escapes.x86_64        1:1.04-136.el6_6.1 @slc6-updates                 
+perl-Pod-Simple.x86_64         1:3.13-136.el6_6.1 @slc6-updates                 
+perl-Proc-Daemon.noarch        0.06-1.el6         @anaconda-base-20120625.x86_64
+perl-Proc-ProcessTable.x86_64  0.44-4.el6         @anaconda-base-20120625.x86_64
+perl-SGMLSpm.noarch            1.03ii-21.el6      @anaconda-base-20120625.x86_64
+perl-SOAP-Lite.noarch          0.710.10-3.el6     @anaconda-base-20120625.x86_64
+perl-Term-UI.x86_64            0.20-136.el6_6.1   @slc6-updates                 
+perl-Test-Harness.x86_64       3.17-136.el6_6.1   @slc6-updates                 
+perl-Test-Simple.x86_64        0.92-136.el6_6.1   @slc6-updates                 
+perl-Text-Iconv.x86_64         1.7-6.el6          @anaconda-base-20120625.x86_64
+perl-Time-HiRes.x86_64         4:1.9721-136.el6_6.1
+                                                  @slc6-updates                 
+perl-Time-Piece.x86_64         1.15-136.el6_6.1   @slc6-updates                 
+perl-TimeDate.noarch           1:1.16-13.el6      @anaconda-base-20120625.x86_64
+perl-URI.noarch                1.40-2.el6         @anaconda-base-20120625.x86_64
+perl-WWW-Curl.x86_64           4.09-4.el6         @anaconda-base-20120625.x86_64
+perl-XML-Dumper.noarch         0.81-8.el6         @anaconda-base-20120625.x86_64
+perl-XML-Filter-BufferText.noarch
+                               1.01-8.el6         @anaconda-base-20120625.x86_64
+perl-XML-Grove.noarch          0.46alpha-40.el6   @anaconda-base-20120625.x86_64
+perl-XML-LibXML.x86_64         1:1.70-5.el6       @anaconda-base-20120625.x86_64
+perl-XML-NamespaceSupport.noarch
+                               1.10-3.el6         @anaconda-base-20120625.x86_64
+perl-XML-Parser.x86_64         2.36-7.el6         @anaconda-base-20120625.x86_64
+perl-XML-SAX.noarch            0.96-7.el6         @anaconda-base-20120625.x86_64
+perl-XML-SAX-Writer.noarch     0.50-8.el6         @anaconda-base-20120625.x86_64
+perl-XML-Simple.noarch         2.18-6.el6         @anaconda-base-20120625.x86_64
+perl-XML-Twig.noarch           3.34-1.el6         @anaconda-base-20120625.x86_64
+perl-YAML-Syck.x86_64          1.07-4.el6         @anaconda-base-20120625.x86_64
+perl-core.x86_64               5.10.1-136.el6_6.1 @slc6-updates                 
+perl-devel.x86_64              4:5.10.1-136.el6_6.1
+                                                  @slc6-updates                 
+perl-libs.x86_64               4:5.10.1-136.el6_6.1
+                                                  @slc6-updates                 
+perl-libwww-perl.noarch        5.833-2.el6        @anaconda-base-20120625.x86_64
+perl-libxml-perl.noarch        0.08-10.el6        @anaconda-base-20120625.x86_64
+perl-parent.x86_64             1:0.221-136.el6_6.1
+                                                  @slc6-updates                 
+perl-version.x86_64            3:0.77-136.el6_6.1 @slc6-updates                 
+phonebook.noarch               1.8.2-1.slc6       @anaconda-base-20120625.x86_64
+phonon-backend-gstreamer.x86_64
+                               1:4.6.2-28.el6_5   @anaconda-base-20120625.x86_64
+pidgin.x86_64                  2.7.9-27.el6       @anaconda-base-20120625.x86_64
+pidgin-sipe.x86_64             1.18.1-2.slc6      @anaconda-base-20120625.x86_64
+pinentry.x86_64                0.7.6-6.el6        @anaconda-base-20120625.x86_64
+pinentry-gtk.x86_64            0.7.6-6.el6        @anaconda-base-20120625.x86_64
+pinfo.x86_64                   0.6.9-12.el6       @anaconda-base-20120625.x86_64
+pixman.x86_64                  0.32.4-4.el6       @anaconda-base-20120625.x86_64
+pixman-devel.x86_64            0.32.4-4.el6       @anaconda-base-20120625.x86_64
+pkgconfig.x86_64               1:0.23-9.1.el6     @anaconda-base-20120625.x86_64
+plymouth.x86_64                0.8.3-27.el6_5.1   @anaconda-base-20120625.x86_64
+plymouth-core-libs.x86_64      0.8.3-27.el6_5.1   @anaconda-base-20120625.x86_64
+plymouth-gdm-hooks.x86_64      0.8.3-27.el6_5.1   @anaconda-base-20120625.x86_64
+plymouth-graphics-libs.x86_64  0.8.3-27.el6_5.1   @anaconda-base-20120625.x86_64
+plymouth-plugin-label.x86_64   0.8.3-27.el6_5.1   @anaconda-base-20120625.x86_64
+plymouth-plugin-two-step.x86_64
+                               0.8.3-27.el6_5.1   @anaconda-base-20120625.x86_64
+plymouth-scripts.x86_64        0.8.3-27.el6_5.1   @anaconda-base-20120625.x86_64
+plymouth-system-theme.noarch   0.8.3-27.el6_5.1   @anaconda-base-20120625.x86_64
+plymouth-theme-rings.noarch    0.8.3-27.el6_5.1   @anaconda-base-20120625.x86_64
+plymouth-utils.x86_64          0.8.3-27.el6_5.1   @anaconda-base-20120625.x86_64
+pm-utils.x86_64                1.2.5-11.el6       @anaconda-base-20120625.x86_64
+pnm2ppa.x86_64                 1:1.04-19.el6      @anaconda-base-20120625.x86_64
+policycoreutils.x86_64         2.0.83-19.47.el6_6.1
+                                                  @anaconda-base-20120625.x86_64
+polkit.x86_64                  0.96-7.el6         @anaconda-base-20120625.x86_64
+polkit-desktop-policy.noarch   0.96-7.el6         @anaconda-base-20120625.x86_64
+polkit-devel.x86_64            0.96-7.el6         @anaconda-base-20120625.x86_64
+polkit-docs.x86_64             0.96-7.el6         @anaconda-base-20120625.x86_64
+polkit-gnome.x86_64            0.96-4.el6         @anaconda-base-20120625.x86_64
+poppler.x86_64                 0.12.4-3.el6_0.1   @anaconda-base-20120625.x86_64
+poppler-data.noarch            0.4.0-1.el6        @anaconda-base-20120625.x86_64
+poppler-glib.x86_64            0.12.4-3.el6_0.1   @anaconda-base-20120625.x86_64
+poppler-utils.x86_64           0.12.4-3.el6_0.1   @anaconda-base-20120625.x86_64
+popt.x86_64                    1.13-7.el6         @anaconda-base-20120625.x86_64
+popt-devel.x86_64              1.13-7.el6         @anaconda-base-20120625.x86_64
+portreserve.x86_64             0.0.4-9.el6        @anaconda-base-20120625.x86_64
+postfix.x86_64                 2:2.6.6-6.el6_5    @anaconda-base-20120625.x86_64
+postgresql.x86_64              8.4.20-1.el6_5     @anaconda-base-20120625.x86_64
+postgresql-devel.x86_64        8.4.20-1.el6_5     @anaconda-base-20120625.x86_64
+postgresql-libs.x86_64         8.4.20-1.el6_5     @anaconda-base-20120625.x86_64
+powertop.x86_64                2.3-3.el6          @anaconda-base-20120625.x86_64
+ppl.x86_64                     0.10.2-11.el6      @anaconda-base-20120625.x86_64
+ppp.x86_64                     2.4.5-5.el6        @anaconda-base-20120625.x86_64
+prelink.x86_64                 0.4.6-3.1.el6_4    @anaconda-base-20120625.x86_64
+printer-filters.noarch         1.1-4.1.el6        @anaconda-base-20120625.x86_64
+procmail.x86_64                3.22-25.1.el6_5.1  @anaconda-base-20120625.x86_64
+procps.x86_64                  3.2.8-30.el6       @anaconda-base-20120625.x86_64
+psacct.x86_64                  6.3.2-63.el6_3.3   @anaconda-base-20120625.x86_64
+psmisc.x86_64                  22.6-19.el6_5      @anaconda-base-20120625.x86_64
+psutils.x86_64                 1.17-34.el6        @anaconda-base-20120625.x86_64
+pth.x86_64                     2.0.7-9.3.el6      @anaconda-base-20120625.x86_64
+ptlib.x86_64                   2.6.5-3.el6        @anaconda-base-20120625.x86_64
+ptouch-driver.x86_64           1.3-2.1.el6        @anaconda-base-20120625.x86_64
+pulseaudio.x86_64              0.9.21-17.el6      @anaconda-base-20120625.x86_64
+pulseaudio-gdm-hooks.x86_64    0.9.21-17.el6      @anaconda-base-20120625.x86_64
+pulseaudio-libs.x86_64         0.9.21-17.el6      @anaconda-base-20120625.x86_64
+pulseaudio-libs-devel.x86_64   0.9.21-17.el6      @anaconda-base-20120625.x86_64
+pulseaudio-libs-glib2.x86_64   0.9.21-17.el6      @anaconda-base-20120625.x86_64
+pulseaudio-libs-zeroconf.x86_64
+                               0.9.21-17.el6      @anaconda-base-20120625.x86_64
+pulseaudio-module-bluetooth.x86_64
+                               0.9.21-17.el6      @anaconda-base-20120625.x86_64
+pulseaudio-module-gconf.x86_64 0.9.21-17.el6      @anaconda-base-20120625.x86_64
+pulseaudio-module-x11.x86_64   0.9.21-17.el6      @anaconda-base-20120625.x86_64
+pulseaudio-utils.x86_64        0.9.21-17.el6      @anaconda-base-20120625.x86_64
+pyOpenSSL.x86_64               0.10-2.el6         @anaconda-base-20120625.x86_64
+pycairo.x86_64                 1.8.6-2.1.el6      @anaconda-base-20120625.x86_64
+pycairo-devel.x86_64           1.8.6-2.1.el6      @anaconda-base-20120625.x86_64
+pygobject2.x86_64              2.20.0-5.el6       @anaconda-base-20120625.x86_64
+pygobject2-codegen.x86_64      2.20.0-5.el6       @anaconda-base-20120625.x86_64
+pygobject2-devel.x86_64        2.20.0-5.el6       @anaconda-base-20120625.x86_64
+pygobject2-doc.x86_64          2.20.0-5.el6       @anaconda-base-20120625.x86_64
+pygpgme.x86_64                 0.1-18.20090824bzr68.el6
+                                                  @anaconda-base-20120625.x86_64
+pygtk2.x86_64                  2.16.0-3.el6       @anaconda-base-20120625.x86_64
+pygtk2-codegen.x86_64          2.16.0-3.el6       @anaconda-base-20120625.x86_64
+pygtk2-devel.x86_64            2.16.0-3.el6       @anaconda-base-20120625.x86_64
+pygtk2-doc.noarch              2.16.0-3.el6       @anaconda-base-20120625.x86_64
+pygtk2-libglade.x86_64         2.16.0-3.el6       @anaconda-base-20120625.x86_64
+pygtksourceview.x86_64         2.8.0-1.el6        @anaconda-base-20120625.x86_64
+pyorbit.x86_64                 2.24.0-5.el6       @anaconda-base-20120625.x86_64
+pytalloc.x86_64                2.0.7-2.el6        @anaconda-base-20120625.x86_64
+python.x86_64                  2.6.6-52.el6       @anaconda-base-20120625.x86_64
+python-beaker.noarch           1.3.1-7.el6        @anaconda-base-20120625.x86_64
+python-crypto.x86_64           2.0.1-22.el6       @anaconda-base-20120625.x86_64
+python-dateutil.noarch         1.4.1-6.el6        @anaconda-base-20120625.x86_64
+python-decorator.noarch        3.0.1-3.1.el6      @anaconda-base-20120625.x86_64
+python-devel.x86_64            2.6.6-52.el6       @anaconda-base-20120625.x86_64
+python-enchant.x86_64          1.3.1-5.2.el6      @anaconda-base-20120625.x86_64
+python-ethtool.x86_64          0.6-5.el6          @anaconda-base-20120625.x86_64
+python-iniparse.noarch         0.3.1-2.1.el6      @anaconda-base-20120625.x86_64
+python-iwlib.x86_64            0.1-1.2.el6        @anaconda-base-20120625.x86_64
+python-kerberos.x86_64         1.1-7.el6          @anaconda-base-20120625.x86_64
+python-krbV.x86_64             1.0.90-3.el6       @anaconda-base-20120625.x86_64
+python-ldap.x86_64             2.3.10-1.el6       @anaconda-base-20120625.x86_64
+python-libs.x86_64             2.6.6-52.el6       @anaconda-base-20120625.x86_64
+python-lxml.x86_64             2.2.3-1.1.el6      @anaconda-base-20120625.x86_64
+python-magic.x86_64            5.04-21.el6        @anaconda-base-20120625.x86_64
+python-mako.noarch             0.3.4-1.el6        @anaconda-base-20120625.x86_64
+python-markupsafe.x86_64       0.9.2-4.el6        @anaconda-base-20120625.x86_64
+python-matplotlib.x86_64       0.99.1.2-1.el6     @anaconda-base-20120625.x86_64
+python-meh.noarch              0.12.1-3.el6       @anaconda-base-20120625.x86_64
+python-netaddr.noarch          0.7.5-4.el6        @anaconda-base-20120625.x86_64
+python-nose.noarch             0.10.4-3.1.el6     @anaconda-base-20120625.x86_64
+python-nss.x86_64              0.13-1.el6         @anaconda-base-20120625.x86_64
+python-paramiko.noarch         1.7.5-2.1.el6      @anaconda-base-20120625.x86_64
+python-pycurl.x86_64           7.19.0-8.el6       @anaconda-base-20120625.x86_64
+python-rhsm.x86_64             1.12.5-2.el6       @anaconda-base-20120625.x86_64
+python-setuptools.noarch       0.6.10-3.el6       @anaconda-base-20120625.x86_64
+python-slip.noarch             0.2.20-1.el6_2     @anaconda-base-20120625.x86_64
+python-slip-dbus.noarch        0.2.20-1.el6_2     @anaconda-base-20120625.x86_64
+python-slip-gtk.noarch         0.2.20-1.el6_2     @anaconda-base-20120625.x86_64
+python-sssdconfig.noarch       1.11.6-30.el6_6.3  @slc6-updates                 
+python-suds.noarch             0.4.1-3.el6        @anaconda-base-20120625.x86_64
+python-urlgrabber.noarch       3.9.1-9.el6        @anaconda-base-20120625.x86_64
+python-virtinst.noarch         0.600.0-24.el6     @anaconda-base-20120625.x86_64
+pytz.noarch                    2010h-2.el6        @anaconda-base-20120625.x86_64
+pywebkitgtk.x86_64             1.1.6-4.el6        @anaconda-base-20120625.x86_64
+pyxdg.noarch                   0.18-1.el6         @anaconda-base-20120625.x86_64
+pyxf86config.x86_64            0.3.37-7.1.el6     @anaconda-base-20120625.x86_64
+qdox.noarch                    1.9.2-2.el6        @anaconda-base-20120625.x86_64
+qemu-img.x86_64                2:0.12.1.2-2.448.el6_6
+                                                  @slc6-updates                 
+ql2100-firmware.noarch         1.19.38-3.1.el6    @anaconda-base-20120625.x86_64
+ql2200-firmware.noarch         2.02.08-3.1.el6    @anaconda-base-20120625.x86_64
+ql23xx-firmware.noarch         3.03.27-3.1.el6    @anaconda-base-20120625.x86_64
+ql2400-firmware.noarch         7.03.00-1.el6_5    @anaconda-base-20120625.x86_64
+ql2500-firmware.noarch         7.03.00-1.el6_5    @anaconda-base-20120625.x86_64
+qt.x86_64                      1:4.6.2-28.el6_5   @anaconda-base-20120625.x86_64
+qt-devel.x86_64                1:4.6.2-28.el6_5   @anaconda-base-20120625.x86_64
+qt-sqlite.x86_64               1:4.6.2-28.el6_5   @anaconda-base-20120625.x86_64
+qt-x11.x86_64                  1:4.6.2-28.el6_5   @anaconda-base-20120625.x86_64
+qt3.x86_64                     3.3.8b-30.el6      @anaconda-base-20120625.x86_64
+qt3-devel.x86_64               3.3.8b-30.el6      @anaconda-base-20120625.x86_64
+quota.x86_64                   1:3.17-21.el6_5    @anaconda-base-20120625.x86_64
+radvd.x86_64                   1.6-1.el6          @anaconda-base-20120625.x86_64
+rarian.x86_64                  0.8.1-5.1.el6      @anaconda-base-20120625.x86_64
+rarian-compat.x86_64           0.8.1-5.1.el6      @anaconda-base-20120625.x86_64
+rcs.x86_64                     5.7-37.el6         @anaconda-base-20120625.x86_64
+rdate.x86_64                   1.4-16.el6         @anaconda-base-20120625.x86_64
+readahead.x86_64               1:1.5.6-2.el6      @anaconda-base-20120625.x86_64
+readline.x86_64                6.0-4.el6          @anaconda-base-20120625.x86_64
+readline-devel.x86_64          6.0-4.el6          @anaconda-base-20120625.x86_64
+redhat-logos.noarch            10:60.0.14-2.slc6  @anaconda-base-20120625.x86_64
+redhat-lsb.x86_64              4.0-7.el6          @anaconda-base-20120625.x86_64
+redhat-lsb-compat.x86_64       4.0-7.el6          @anaconda-base-20120625.x86_64
+redhat-lsb-core.x86_64         4.0-7.el6          @anaconda-base-20120625.x86_64
+redhat-lsb-graphics.x86_64     4.0-7.el6          @anaconda-base-20120625.x86_64
+redhat-lsb-printing.x86_64     4.0-7.el6          @anaconda-base-20120625.x86_64
+redhat-menus.noarch            14.0.0-3.el6       @anaconda-base-20120625.x86_64
+redhat-rpm-config.noarch       9.0.3-42.el6       @anaconda-base-20120625.x86_64
+regexp.x86_64                  1.5-4.4.el6        @anaconda-base-20120625.x86_64
+rfkill.x86_64                  0.3-4.el6          @anaconda-base-20120625.x86_64
+rhino.noarch                   1.7-0.7.r2.2.el6   @anaconda-base-20120625.x86_64
+rhythmbox.x86_64               0.12.8-1.el6       @anaconda-base-20120625.x86_64
+rng-tools.x86_64               2-13.el6_2         @anaconda-base-20120625.x86_64
+rootfiles.noarch               8.1-6.1.el6        @anaconda-base-20120625.x86_64
+rpcbind.x86_64                 0.2.0-11.el6       @anaconda-base-20120625.x86_64
+rpm.x86_64                     4.8.0-38.el6_6     @slc6-updates                 
+rpm-build.x86_64               4.8.0-38.el6_6     @slc6-updates                 
+rpm-libs.x86_64                4.8.0-38.el6_6     @slc6-updates                 
+rpm-python.x86_64              4.8.0-38.el6_6     @slc6-updates                 
+rpmdevtools.noarch             7.5-2.el6          @anaconda-base-20120625.x86_64
+rpmlint.noarch                 0.94-3.1.el6       @anaconda-base-20120625.x86_64
+rsync.x86_64                   3.0.6-12.el6       @anaconda-base-20120625.x86_64
+rsyslog.x86_64                 5.8.10-9.el6_6     @slc6-updates                 
+rt61pci-firmware.noarch        1.2-7.el6          @anaconda-base-20120625.x86_64
+rt73usb-firmware.noarch        1.8-7.el6          @anaconda-base-20120625.x86_64
+rtkit.x86_64                   0.5-2.el6_4        @anaconda-base-20120625.x86_64
+sac.x86_64                     1.3-5.1.el6        @anaconda-base-20120625.x86_64
+samba-client.x86_64            3.6.23-12.el6      @anaconda-base-20120625.x86_64
+samba-common.x86_64            3.6.23-12.el6      @anaconda-base-20120625.x86_64
+samba-winbind.x86_64           3.6.23-12.el6      @anaconda-base-20120625.x86_64
+samba-winbind-clients.x86_64   3.6.23-12.el6      @anaconda-base-20120625.x86_64
+samba4-libs.x86_64             4.0.0-64.el6.rc4   @anaconda-base-20120625.x86_64
+sane-backends.x86_64           1.0.21-3.el6       @anaconda-base-20120625.x86_64
+sane-backends-libs.x86_64      1.0.21-3.el6       @anaconda-base-20120625.x86_64
+sane-backends-libs-gphoto2.x86_64
+                               1.0.21-3.el6       @anaconda-base-20120625.x86_64
+sane-frontends.x86_64          1.0.14-9.2.el6     @anaconda-base-20120625.x86_64
+sat4j.noarch                   2.2.0-4.0.el6      @anaconda-base-20120625.x86_64
+scenery-backgrounds.noarch     6.0.0-1.el6        @anaconda-base-20120625.x86_64
+scl-utils.x86_64               20120927-23.el6_6  @slc6-updates                 
+seahorse.x86_64                2.28.1-4.el6       @anaconda-base-20120625.x86_64
+sed.x86_64                     4.2.1-10.el6       @anaconda-base-20120625.x86_64
+seekwatcher.noarch             0.12-5.el6         @anaconda-base-20120625.x86_64
+selinux-policy.noarch          3.7.19-260.el6_6.1 @slc6-updates                 
+selinux-policy-targeted.noarch 3.7.19-260.el6_6.1 @slc6-updates                 
+sendmail.x86_64                8.14.4-8.el6       @anaconda-base-20120625.x86_64
+sendmail-cf.noarch             8.14.4-8.el6       @anaconda-base-20120625.x86_64
+setserial.x86_64               2.17-25.el6        @anaconda-base-20120625.x86_64
+setup.noarch                   2.8.14-20.el6_4.1  @anaconda-base-20120625.x86_64
+setuptool.x86_64               1.19.9-4.el6       @anaconda-base-20120625.x86_64
+sg3_utils-libs.x86_64          1.28-6.el6         @anaconda-base-20120625.x86_64
+sgml-common.noarch             0.6.3-33.el6       @anaconda-base-20120625.x86_64
+sgpio.x86_64                   1.2.0.10-5.el6     @anaconda-base-20120625.x86_64
+shadow-utils.x86_64            2:4.1.4.2-19.el6   @anaconda-base-20120625.x86_64
+shared-mime-info.x86_64        0.70-6.el6         @anaconda-base-20120625.x86_64
+sicgsfilter.x86_64             2.0.6-1.slc6       @anaconda-base-20120625.x86_64
+sil-padauk-fonts.noarch        2.6.1-1.el6        @anaconda-base-20120625.x86_64
+sinjdoc.x86_64                 0.5-9.1.el6        @anaconda-base-20120625.x86_64
+sl-bookmarks.noarch            6-1.slc6           @anaconda-base-20120625.x86_64
+sl-indexhtml.noarch            6-1.sl6            @anaconda-base-20120625.x86_64
+sl-release.x86_64              100:6.6-2.slc6     @slc6-updates                 
+slang.x86_64                   2.2.1-1.el6        @anaconda-base-20120625.x86_64
+slf4j.noarch                   1.5.8-8.el6        @anaconda-base-20120625.x86_64
+smartmontools.x86_64           1:5.43-1.el6       @anaconda-base-20120625.x86_64
+smc-fonts-common.noarch        04.2-11.el6        @anaconda-base-20120625.x86_64
+smc-meera-fonts.noarch         04.2-11.el6        @anaconda-base-20120625.x86_64
+smp_utils.x86_64               0.94-4.el6         @anaconda-base-20120625.x86_64
+snappy.x86_64                  1.1.0-1.el6        @anaconda-base-20120625.x86_64
+sos.noarch                     2.2-68.el6         @anaconda-base-20120625.x86_64
+sound-juicer.x86_64            2.28.1-6.el6       @anaconda-base-20120625.x86_64
+sound-theme-freedesktop.noarch 0.7-3.el6          @anaconda-base-20120625.x86_64
+speex.x86_64                   1.2-0.12.rc1.1.el6 @anaconda-base-20120625.x86_64
+spice-glib.x86_64              0.22-7.el6         @anaconda-base-20120625.x86_64
+spice-gtk.x86_64               0.22-7.el6         @anaconda-base-20120625.x86_64
+spice-gtk-python.x86_64        0.22-7.el6         @anaconda-base-20120625.x86_64
+sqlite.x86_64                  3.6.20-1.el6       @anaconda-base-20120625.x86_64
+sqlite-devel.x86_64            3.6.20-1.el6       @anaconda-base-20120625.x86_64
+sssd.x86_64                    1.11.6-30.el6_6.3  @slc6-updates                 
+sssd-ad.x86_64                 1.11.6-30.el6_6.3  @slc6-updates                 
+sssd-client.x86_64             1.11.6-30.el6_6.3  @slc6-updates                 
+sssd-common.x86_64             1.11.6-30.el6_6.3  @slc6-updates                 
+sssd-common-pac.x86_64         1.11.6-30.el6_6.3  @slc6-updates                 
+sssd-ipa.x86_64                1.11.6-30.el6_6.3  @slc6-updates                 
+sssd-krb5.x86_64               1.11.6-30.el6_6.3  @slc6-updates                 
+sssd-krb5-common.x86_64        1.11.6-30.el6_6.3  @slc6-updates                 
+sssd-ldap.x86_64               1.11.6-30.el6_6.3  @slc6-updates                 
+sssd-proxy.x86_64              1.11.6-30.el6_6.3  @slc6-updates                 
+startup-notification.x86_64    0.10-2.1.el6       @anaconda-base-20120625.x86_64
+startup-notification-devel.x86_64
+                               0.10-2.1.el6       @anaconda-base-20120625.x86_64
+stix-fonts.noarch              0.9-13.1.el6       @anaconda-base-20120625.x86_64
+strace.x86_64                  4.5.19-1.19.el6    @anaconda-base-20120625.x86_64
+subversion.x86_64              1.6.11-10.el6_5    @anaconda-base-20120625.x86_64
+subversion-javahl.x86_64       1.6.11-10.el6_5    @anaconda-base-20120625.x86_64
+sudo.x86_64                    1.8.6p3-15.el6     @anaconda-base-20120625.x86_64
+svnkit.x86_64                  1.3.0-3.el6        @anaconda-base-20120625.x86_64
+swig.x86_64                    1.3.40-6.el6       @anaconda-base-20120625.x86_64
+sysstat.x86_64                 9.0.4-27.el6       @anaconda-base-20120625.x86_64
+system-config-date.noarch      1.9.60-2.el6       @anaconda-base-20120625.x86_64
+system-config-date-docs.noarch 1.0.11-1.el6       @anaconda-base-20120625.x86_64
+system-config-firewall.noarch  1.2.27-7.2.el6_6   @slc6-updates                 
+system-config-firewall-base.noarch
+                               1.2.27-7.2.el6_6   @slc6-updates                 
+system-config-firewall-tui.noarch
+                               1.2.27-7.2.el6_6   @slc6-updates                 
+system-config-kdump.noarch     2.0.5-18.el6       @anaconda-base-20120625.x86_64
+system-config-keyboard.x86_64  1.3.1-6.el6        @anaconda-base-20120625.x86_64
+system-config-keyboard-base.x86_64
+                               1.3.1-6.el6        @anaconda-base-20120625.x86_64
+system-config-network-tui.noarch
+                               1.6.0.el6.2-1.el6  @anaconda-base-20120625.x86_64
+system-config-printer.x86_64   1.1.16-23.el6      @anaconda-base-20120625.x86_64
+system-config-printer-libs.x86_64
+                               1.1.16-23.el6      @anaconda-base-20120625.x86_64
+system-config-printer-udev.x86_64
+                               1.1.16-23.el6      @anaconda-base-20120625.x86_64
+system-config-services.noarch  0.99.45-1.el6.3    @anaconda-base-20120625.x86_64
+system-config-services-docs.noarch
+                               1.1.8-1.el6        @anaconda-base-20120625.x86_64
+system-config-users.noarch     1.2.106-7.el6      @anaconda-base-20120625.x86_64
+system-config-users-docs.noarch
+                               1.0.8-2.el6        @anaconda-base-20120625.x86_64
+system-gnome-theme.noarch      60.0.2-1.el6       @anaconda-base-20120625.x86_64
+system-icon-theme.noarch       6.0.0-2.el6        @anaconda-base-20120625.x86_64
+system-setup-keyboard.x86_64   0.7-4.el6          @anaconda-base-20120625.x86_64
+systemtap.x86_64               2.5-5.el6          @anaconda-base-20120625.x86_64
+systemtap-client.x86_64        2.5-5.el6          @anaconda-base-20120625.x86_64
+systemtap-devel.x86_64         2.5-5.el6          @anaconda-base-20120625.x86_64
+systemtap-runtime.x86_64       2.5-5.el6          @anaconda-base-20120625.x86_64
+sysvinit-tools.x86_64          2.87-5.dsf.el6     @anaconda-base-20120625.x86_64
+taglib.x86_64                  1.6.1-1.1.el6      @anaconda-base-20120625.x86_64
+tar.x86_64                     2:1.23-11.el6      @anaconda-base-20120625.x86_64
+tbb.x86_64                     2.2-3.20090809.el6 @anaconda-base-20120625.x86_64
+tbb-devel.x86_64               2.2-3.20090809.el6 @anaconda-base-20120625.x86_64
+tcl.x86_64                     1:8.5.7-6.el6      @anaconda-base-20120625.x86_64
+tcp_wrappers.x86_64            7.6-57.el6         @anaconda-base-20120625.x86_64
+tcp_wrappers-libs.x86_64       7.6-57.el6         @anaconda-base-20120625.x86_64
+tcpdump.x86_64                 14:4.0.0-3.20090921gitdf3cb4.2.el6
+                                                  @anaconda-base-20120625.x86_64
+tcsh.x86_64                    6.17-24.el6        @anaconda-base-20120625.x86_64
+tex-cm-lgc.noarch              0.5-17.1.el6       @anaconda-base-20120625.x86_64
+tex-preview.noarch             11.85-10.el6       @anaconda-base-20120625.x86_64
+texlive.x86_64                 2007-57.el6_2      @anaconda-base-20120625.x86_64
+texlive-dvips.x86_64           2007-57.el6_2      @anaconda-base-20120625.x86_64
+texlive-latex.x86_64           2007-57.el6_2      @anaconda-base-20120625.x86_64
+texlive-texmf.noarch           2007-38.el6        @anaconda-base-20120625.x86_64
+texlive-texmf-dvips.noarch     2007-38.el6        @anaconda-base-20120625.x86_64
+texlive-texmf-errata.noarch    2007-7.1.el6       @anaconda-base-20120625.x86_64
+texlive-texmf-errata-dvips.noarch
+                               2007-7.1.el6       @anaconda-base-20120625.x86_64
+texlive-texmf-errata-fonts.noarch
+                               2007-7.1.el6       @anaconda-base-20120625.x86_64
+texlive-texmf-errata-latex.noarch
+                               2007-7.1.el6       @anaconda-base-20120625.x86_64
+texlive-texmf-fonts.noarch     2007-38.el6        @anaconda-base-20120625.x86_64
+texlive-texmf-latex.noarch     2007-38.el6        @anaconda-base-20120625.x86_64
+texlive-utils.x86_64           2007-57.el6_2      @anaconda-base-20120625.x86_64
+thai-scalable-fonts-common.noarch
+                               0.4.12-2.1.el6     @anaconda-base-20120625.x86_64
+thai-scalable-waree-fonts.noarch
+                               0.4.12-2.1.el6     @anaconda-base-20120625.x86_64
+theora-tools.x86_64            1:1.1.0-2.el6      @anaconda-base-20120625.x86_64
+thunderbird.x86_64             31.3.0-1.el6_6     @slc6-updates                 
+thunderbird-exchangecalendar.x86_64
+                               3.2.2-2.slc6       @anaconda-base-20120625.x86_64
+thunderbird-lightning.x86_64   1:3.3.1-1.slc6     @anaconda-base-20120625.x86_64
+tibetan-machine-uni-fonts.noarch
+                               1.901-5.el6        @anaconda-base-20120625.x86_64
+time.x86_64                    1.7-37.1.el6       @anaconda-base-20120625.x86_64
+tmpwatch.x86_64                2.9.16-4.el6       @anaconda-base-20120625.x86_64
+totem.x86_64                   2.28.6-4.el6       @anaconda-base-20120625.x86_64
+totem-mozplugin.x86_64         2.28.6-4.el6       @anaconda-base-20120625.x86_64
+totem-nautilus.x86_64          2.28.6-4.el6       @anaconda-base-20120625.x86_64
+totem-pl-parser.x86_64         2.28.3-1.el6       @anaconda-base-20120625.x86_64
+trace-cmd.x86_64               1.0.5-11.el6       @anaconda-base-20120625.x86_64
+traceroute.x86_64              3:2.0.14-2.el6     @anaconda-base-20120625.x86_64
+trilead-ssh2.noarch            213-6.2.el6        @anaconda-base-20120625.x86_64
+ttmkfdir.x86_64                3.0.9-32.1.el6     @anaconda-base-20120625.x86_64
+tzdata.noarch                  2014j-1.el6        @slc6-updates                 
+tzdata-java.noarch             2014j-1.el6        @slc6-updates                 
+udev.x86_64                    147-2.57.el6       @anaconda-base-20120625.x86_64
+udisks.x86_64                  1.0.1-7.el6_5      @anaconda-base-20120625.x86_64
+un-core-dotum-fonts.noarch     1.0.2-0.15.080608.el6
+                                                  @anaconda-base-20120625.x86_64
+un-core-fonts-common.noarch    1.0.2-0.15.080608.el6
+                                                  @anaconda-base-20120625.x86_64
+unique.x86_64                  1.1.4-2.el6        @anaconda-base-20120625.x86_64
+units.x86_64                   1.87-7.el6         @anaconda-base-20120625.x86_64
+unzip.x86_64                   6.0-1.el6          @anaconda-base-20120625.x86_64
+upstart.x86_64                 0.6.5-13.el6_5.3   @anaconda-base-20120625.x86_64
+urw-fonts.noarch               2.4-10.el6         @anaconda-base-20120625.x86_64
+usbmuxd.x86_64                 1.0.2-1.el6        @anaconda-base-20120625.x86_64
+usbredir.x86_64                0.5.1-1.el6        @anaconda-base-20120625.x86_64
+usbutils.x86_64                003-4.el6          @anaconda-base-20120625.x86_64
+useraddcern.noarch             0.3-1.slc6         @anaconda-base-20120625.x86_64
+usermode.x86_64                1.102-3.el6        @anaconda-base-20120625.x86_64
+usermode-gtk.x86_64            1.102-3.el6        @anaconda-base-20120625.x86_64
+ustr.x86_64                    1.0.4-9.1.el6      @anaconda-base-20120625.x86_64
+util-linux-ng.x86_64           2.17.2-12.18.el6   @anaconda-base-20120625.x86_64
+uuid.x86_64                    1.6.1-10.el6       @anaconda-base-20120625.x86_64
+uuid-perl.x86_64               1.6.1-10.el6       @anaconda-base-20120625.x86_64
+valgrind.x86_64                1:3.8.1-3.7.el6    @anaconda-base-20120625.x86_64
+vconfig.x86_64                 1.9-8.1.el6        @anaconda-base-20120625.x86_64
+vim-common.x86_64              2:7.2.411-1.8.el6  @anaconda-base-20120625.x86_64
+vim-enhanced.x86_64            2:7.2.411-1.8.el6  @anaconda-base-20120625.x86_64
+vim-minimal.x86_64             2:7.2.411-1.8.el6  @anaconda-base-20120625.x86_64
+vino.x86_64                    2.28.1-9.el6_4     @anaconda-base-20120625.x86_64
+virt-manager.x86_64            0.9.0-28.el6       @anaconda-base-20120625.x86_64
+virt-top.x86_64                1.0.4-3.15.el6     @anaconda-base-20120625.x86_64
+virt-viewer.x86_64             0.6.0-11.el6       @anaconda-base-20120625.x86_64
+virt-what.x86_64               1.11-1.2.el6       @anaconda-base-20120625.x86_64
+virt-who.noarch                0.10-8.el6         @anaconda-base-20120625.x86_64
+vlgothic-fonts.noarch          20091202-2.el6     @anaconda-base-20120625.x86_64
+vlgothic-fonts-common.noarch   20091202-2.el6     @anaconda-base-20120625.x86_64
+vorbis-tools.x86_64            1:1.2.0-7.el6      @anaconda-base-20120625.x86_64
+vte.x86_64                     0.25.1-9.el6       @anaconda-base-20120625.x86_64
+wacomexpresskeys.x86_64        0.4.2-3.el6        @anaconda-base-20120625.x86_64
+wavpack.x86_64                 4.60-1.1.el6       @anaconda-base-20120625.x86_64
+wdaemon.x86_64                 0.17-5.el6         @anaconda-base-20120625.x86_64
+webkitgtk.x86_64               1.4.3-9.el6_6      @slc6-updates                 
+wget.x86_64                    1.12-5.el6_6.1     @slc6-updates                 
+which.x86_64                   2.19-6.el6         @anaconda-base-20120625.x86_64
+wireless-tools.x86_64          1:29-5.1.1.el6     @anaconda-base-20120625.x86_64
+wodim.x86_64                   1.1.9-12.el6       @anaconda-base-20120625.x86_64
+words.noarch                   3.0-17.el6         @anaconda-base-20120625.x86_64
+wpa_supplicant.x86_64          1:0.7.3-4.el6_3    @anaconda-base-20120625.x86_64
+wqy-zenhei-fonts.noarch        0.9.45-3.el6       @anaconda-base-20120625.x86_64
+ws-commons-util.noarch         1.0.1-13.el6       @anaconda-base-20120625.x86_64
+ws-jaxme.noarch                0.5.1-4.6.el6      @anaconda-base-20120625.x86_64
+wsdl4j.noarch                  1.5.2-7.8.el6      @anaconda-base-20120625.x86_64
+xalan-j2.noarch                2.7.0-9.9.el6_5    @anaconda-base-20120625.x86_64
+xcb-util.x86_64                0.3.6-5.el6        @anaconda-base-20120625.x86_64
+xdg-user-dirs.x86_64           0.12-4.el6         @anaconda-base-20120625.x86_64
+xdg-user-dirs-gtk.x86_64       0.8-7.el6          @anaconda-base-20120625.x86_64
+xdg-utils.noarch               1.0.2-17.20091016cvs.el6
+                                                  @anaconda-base-20120625.x86_64
+xerces-j2.x86_64               2.7.1-12.7.el6_5   @anaconda-base-20120625.x86_64
+xkeyboard-config.noarch        2.11-1.el6         @anaconda-base-20120625.x86_64
+xml-common.noarch              0.6.3-33.el6       @anaconda-base-20120625.x86_64
+xml-commons-apis.x86_64        1.3.04-3.6.el6     @anaconda-base-20120625.x86_64
+xml-commons-resolver.x86_64    1.1-4.18.el6       @anaconda-base-20120625.x86_64
+xmldb-api.noarch               1:0.1-0.4.20011111cvs.1.5.el6
+                                                  @anaconda-base-20120625.x86_64
+xmldb-api-sdk.noarch           1:0.1-0.4.20011111cvs.1.5.el6
+                                                  @anaconda-base-20120625.x86_64
+xmlgraphics-commons.noarch     1.3.1-1.1.el6      @anaconda-base-20120625.x86_64
+xmlrpc-c.x86_64                1.16.24-1210.1840.el6
+                                                  @anaconda-base-20120625.x86_64
+xmlrpc-c-client.x86_64         1.16.24-1210.1840.el6
+                                                  @anaconda-base-20120625.x86_64
+xmlrpc3-client.noarch          3.0-4.15.el6       @anaconda-base-20120625.x86_64
+xmlrpc3-common.noarch          3.0-4.15.el6       @anaconda-base-20120625.x86_64
+xmlto.x86_64                   0.0.23-3.el6       @anaconda-base-20120625.x86_64
+xorg-x11-docs.noarch           1.3-6.1.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drivers.x86_64        7.3-13.4.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-acecad.x86_64     1.5.0-7.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-aiptek.x86_64     1.4.1-5.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-apm.x86_64        1.2.5-10.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-ast.x86_64        0.98.0-1.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-ati.x86_64        7.3.99-2.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-ati-firmware.noarch
+                               7.3.99-2.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-cirrus.x86_64     1.5.2-2.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-dummy.x86_64      0.3.6-15.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-elographics.x86_64
+                               1.4.1-3.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-evdev.x86_64      2.8.2-4.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-fbdev.x86_64      0.4.3-16.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-fpit.x86_64       1.4.0-6.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-glint.x86_64      1.2.8-10.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-hyperpen.x86_64   1.4.1-5.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-i128.x86_64       1.3.6-10.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-i740.x86_64       1.3.4-11.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-intel.x86_64      2.99.911-6.el6     @anaconda-base-20120625.x86_64
+xorg-x11-drv-keyboard.x86_64   1.8.0-1.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-mach64.x86_64     6.9.4-8.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-mga.x86_64        1.6.3-5.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-modesetting.x86_64
+                               0.8.0-14.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-mouse.x86_64      1.9.0-1.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-mutouch.x86_64    1.3.0-5.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-nouveau.x86_64    1:1.0.10-1.el6     @anaconda-base-20120625.x86_64
+xorg-x11-drv-nv.x86_64         2.1.20-5.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-openchrome.x86_64 0.3.3-6.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-penmount.x86_64   1.5.0-5.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-qxl.x86_64        0.1.1-15.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-r128.x86_64       6.9.1-8.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-rendition.x86_64  4.2.5-10.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-s3virge.x86_64    1.10.6-10.el6      @anaconda-base-20120625.x86_64
+xorg-x11-drv-savage.x86_64     2.3.7-2.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-siliconmotion.x86_64
+                               1.7.7-9.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-sis.x86_64        0.10.7-10.el6      @anaconda-base-20120625.x86_64
+xorg-x11-drv-sisusb.x86_64     0.9.6-10.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-synaptics.x86_64  1.7.6-1.el6        @anaconda-base-20120625.x86_64
+xorg-x11-drv-tdfx.x86_64       1.4.5-10.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-trident.x86_64    1.3.6-10.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-v4l.x86_64        0.2.0-36.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-vesa.x86_64       2.3.2-15.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-vmmouse.x86_64    13.0.0-2.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-vmware.x86_64     13.0.1-9.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-void.x86_64       1.4.0-23.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-voodoo.x86_64     1.2.5-10.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-wacom.x86_64      0.23.0-4.el6       @anaconda-base-20120625.x86_64
+xorg-x11-drv-xgi.x86_64        1.6.0-20.20121114git.el6
+                                                  @anaconda-base-20120625.x86_64
+xorg-x11-font-utils.x86_64     1:7.2-11.el6       @anaconda-base-20120625.x86_64
+xorg-x11-fonts-100dpi.noarch   7.2-9.1.el6        @anaconda-base-20120625.x86_64
+xorg-x11-fonts-ISO8859-1-100dpi.noarch
+                               7.2-9.1.el6        @anaconda-base-20120625.x86_64
+xorg-x11-fonts-Type1.noarch    7.2-9.1.el6        @anaconda-base-20120625.x86_64
+xorg-x11-fonts-misc.noarch     7.2-9.1.el6        @anaconda-base-20120625.x86_64
+xorg-x11-glamor.x86_64         0.6.0-5.20140506gitf78901e.el6
+                                                  @anaconda-base-20120625.x86_64
+xorg-x11-proto-devel.noarch    7.7-9.el6          @anaconda-base-20120625.x86_64
+xorg-x11-server-Xorg.x86_64    1.15.0-22.el6      @anaconda-base-20120625.x86_64
+xorg-x11-server-common.x86_64  1.15.0-22.el6      @anaconda-base-20120625.x86_64
+xorg-x11-server-utils.x86_64   7.7-2.el6          @anaconda-base-20120625.x86_64
+xorg-x11-utils.x86_64          7.5-6.el6          @anaconda-base-20120625.x86_64
+xorg-x11-xauth.x86_64          1:1.0.2-7.1.el6    @anaconda-base-20120625.x86_64
+xorg-x11-xinit.x86_64          1.0.9-14.el6       @anaconda-base-20120625.x86_64
+xorg-x11-xkb-utils.x86_64      7.7-4.el6          @anaconda-base-20120625.x86_64
+xsane.x86_64                   0.997-8.el6        @anaconda-base-20120625.x86_64
+xsane-common.x86_64            0.997-8.el6        @anaconda-base-20120625.x86_64
+xsane-gimp.x86_64              0.997-8.el6        @anaconda-base-20120625.x86_64
+xulrunner.x86_64               17.0.10-1.el6_4    @anaconda-base-20120625.x86_64
+xvattr.x86_64                  1.3-18.el6         @anaconda-base-20120625.x86_64
+xz.x86_64                      4.999.9-0.5.beta.20091007git.el6
+                                                  @anaconda-base-20120625.x86_64
+xz-libs.x86_64                 4.999.9-0.5.beta.20091007git.el6
+                                                  @anaconda-base-20120625.x86_64
+xz-lzma-compat.x86_64          4.999.9-0.5.beta.20091007git.el6
+                                                  @anaconda-base-20120625.x86_64
+yajl.x86_64                    1.0.7-3.el6        @anaconda-base-20120625.x86_64
+yelp.x86_64                    2.28.1-17.el6_3    @anaconda-base-20120625.x86_64
+yp-tools.x86_64                2.9-12.el6         @anaconda-base-20120625.x86_64
+ypbind.x86_64                  3:1.20.4-30.el6    @anaconda-base-20120625.x86_64
+yum.noarch                     3.2.29-60.el6      @anaconda-base-20120625.x86_64
+yum-autoupdate.noarch          6:4.3.1-1.slc6     @anaconda-base-20120625.x86_64
+yum-kernel-module.noarch       6:1-5.slc6.cern    @anaconda-base-20120625.x86_64
+yum-metadata-parser.x86_64     1.1.2-16.el6       @anaconda-base-20120625.x86_64
+yum-plugin-changelog.noarch    1.1.30-30.el6      @anaconda-base-20120625.x86_64
+yum-plugin-protectbase.noarch  1.1.30-30.el6      @anaconda-base-20120625.x86_64
+yum-plugin-security.noarch     1.1.30-30.el6      @anaconda-base-20120625.x86_64
+yum-plugin-tsflags.noarch      1.1.30-30.el6      @anaconda-base-20120625.x86_64
+yum-plugin-versionlock.noarch  1.1.30-30.el6      @anaconda-base-20120625.x86_64
+yum-utils.noarch               1.1.30-30.el6      @anaconda-base-20120625.x86_64
+zd1211-firmware.noarch         1.4-4.el6          @anaconda-base-20120625.x86_64
+zenity.x86_64                  2.28.0-1.el6       @anaconda-base-20120625.x86_64
+zip.x86_64                     3.0-1.el6          @anaconda-base-20120625.x86_64
+zlib.x86_64                    1.2.3-29.el6       @anaconda-base-20120625.x86_64
+zlib-devel.x86_64              1.2.3-29.el6       @anaconda-base-20120625.x86_64
+zsh.x86_64                     4.3.10-9.el6       @slc6-updates                 
