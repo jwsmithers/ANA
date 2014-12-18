@@ -3,13 +3,13 @@
 #                               Joshua Wyatt Smith                                             #
 #                               joshua.wyatt.smith@cern.ch                                     #
 ################################################################################################
-export ROOTDIR=/home/jwsmith/
+export ROOTDIR=/home/jwsmith/HDD
 source $ROOTDIR/CMT/v1r26p20140131/mgr/setup.sh
-export CMTCONFIG=x86_64-slc6-gcc44-opt
-export CMTBIN=Linux-x86_64
+export CMTCONFIG=armv7-fc21-gcc49-opt
+export CMTBIN=Linux-armv7l
 export CMTSITE=STANDALONE
 export SVNROOT=svn+ssh://jwsmith@svn.cern.ch/reps/atlasoff
-export VERSION=19.3.0
+export VERSION=18.9.0
 export LCGCMT_VERS=LCGCMT_67b
 export TopDir=$ROOTDIR/AtlasOfflineBuild-framework/InstallArea
 #export AntVersion=1.9.4
