@@ -1,0 +1,11 @@
+--- requirements	2015-01-22 10:10:51.480151502 +0200
++++ requirements1	2015-01-22 10:10:36.995236987 +0200
+@@ -53,7 +53,7 @@
+ application lwhists_comphistfiles "-s=tests/comphistfiles *.cxx"
+ private
+ 
+-macro_append LWHists_cppflags "-fno-tree-vectorize " 
++macro_append LWHists_cppflags "-fPIC -fno-tree-vectorize " 
+ 
+ macro_append lwhists_validate_dependencies "$(LWHists_library_dependencies)"
+ macro_append lwhists_benchmark_dependencies "$(LWHists_library_dependencies)"
