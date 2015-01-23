@@ -1,0 +1,9 @@
+--- requirements	2015-01-23 13:35:32.868351328 +0200
++++ requirements1	2015-01-23 13:35:17.733441763 +0200
+@@ -9,5 +9,6 @@
+ use AtlasReflex  AtlasReflex-*      External
+ use AtlasBoost   AtlasBoost-*       External
+ 
++macro_remove AtlasCxxPolicy_pp_cppflags " -fPIC "
+ 
+ apply_pattern lcgdict dict=AtlasSTLAddReflex headerfiles="../AtlasSTLAddReflex/AtlasSTLAddReflexDict.h" selectionfile=selection.xml
