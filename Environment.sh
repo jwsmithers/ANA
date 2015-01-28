@@ -27,4 +27,6 @@ export GaudiDir=$ROOTDIR/Gaudi
 
 #Java
 export CPLUS_INCLUDE_PATH=/usr/lib/jvm/$JAVAVERS/include:/usr/lib/jvm/$JAVAVERS/include/linux:$CPLUS_INCLUDE_PATH
-
+#gcc-xml-plugin
+#tbb
+export CPLUS_INCLUDE_PATH=$LCG_install/tbb/42_20140122/$CMTCONFIG/include:$CPLUS_INCLUDE_PATH

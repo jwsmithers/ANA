@@ -1,19 +1,20 @@
 --- requirements	2015-01-23 11:50:52.129491178 +0200
-+++ requirements1	2015-01-23 11:49:28.439950916 +0200
-@@ -49,7 +49,7 @@
++++ requirements1	2015-01-23 14:15:39.533977764 +0200
+@@ -49,7 +49,9 @@
  # to leave things as they are for now and avoid having to fix multiple packages. 
  macro cppflags                       "" \
        target-darwin                  " -D_GNU_SOURCE -pthread -pipe -fPIC -W -Wall " \
 -      target-unix                    " -D_GNU_SOURCE -pthread -pipe -ansi -fPIC -W -Wall "
-+      target-unix&target-linux                    " -D_GNU_SOURCE -pthread -pipe -ansi -fPIC -W -Wall "
++      target-unix                    " -D_GNU_SOURCE -pthread -pipe -ansi -fPIC -W -Wall " \
++      target-fc21		     " -D_GNU_SOURCE -pthread -pipe -ansi -fPIC -W -Wall "
++
  macro_append cppflags                " -pedantic -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-long-long "
  macro_append cppflags                "" \
               errorConversion         " -Werror=conversion "
-@@ -65,6 +65,8 @@
+@@ -65,6 +67,7 @@
  macro_append cppflags                "" \
               target-gcc              " -fno-var-tracking-assignments "
  
-+macro_append AtlasCxxPolicy_pp_cppflags " -fPIC "
 +
  # Enable c++11 for gcc47 (enables target-c11)
  macro_append cppflags  "" \
