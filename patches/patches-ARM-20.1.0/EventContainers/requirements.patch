@@ -1,0 +1,11 @@
+--- requirements	2015-01-28 19:12:48.327938269 +0200
++++ requirements1	2015-01-29 10:45:39.829641426 +0200
+@@ -7,5 +7,7 @@
+ private
+ 
+ use CLIDSvc        CLIDSvc-*           Control
+-application testIdCont ID_ContainerTest.cxx
++application testIdCont ../IDTest/ID_ContainerTest.cxx
++macro_append testIdContlinkopts " -lGaudiKernel -L/home/jwsmith/HDD/Gaudi/InstallArea/armv7l-fc21-gcc49-opt/lib"
+ macro_append testIdCont_dependencies           " install_includes"
++

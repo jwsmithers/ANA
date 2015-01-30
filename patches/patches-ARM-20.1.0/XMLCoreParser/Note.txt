@@ -1,0 +1,1 @@
+move ExpatCoreParser.h into the XMLCoreParer directory then adjust paths in the /src/*.cxx includes.
