@@ -1,0 +1,50 @@
+--- requirements	2014-11-11 17:59:17.652148403 +0200
++++ requirements1	2014-11-13 15:51:31.990387140 +0200
+@@ -29,6 +29,7 @@
+ 	     gcc46        "gfortran" \
+ 	     gcc47        "gfortran" \
+ 	     gcc48        "gfortran" \
++	     gcc49	  "gfortran" \
+ 	     target-clang3 "gfortran" \
+ 	     Darwin       "gfortran" \
+              useG77       "g77"
+@@ -137,13 +138,14 @@
+               HAS_GFO                  "gcc-v-4.2.0-20060924"
+ 
+ macro gfo_base_cmd  "$(ATLASFORTRANPOLICYROOT)/cmt/setup_gfo_base.sh"
+-macro GFO_BASE      "${ATLAS_EXTERNAL}/fortran/$(AtlasFortranPolicy_native_version)/gfortran32" \
++macro GFO_BASE      "" \
+       slc4&gcc-3.2.3 "${ATLAS_EXTERNAL}/fortran/$(AtlasFortranPolicy_native_version)/gfortran32" \
+       gcc43         "`$(gfo_base_cmd)`" \
+       gcc45         "`$(gfo_base_cmd)`" \
+       gcc46         "`$(gfo_base_cmd)`" \
+       gcc47         "`$(gfo_base_cmd)`" \
+       gcc48         "`$(gfo_base_cmd)`" \
++      gcc49	    "`$(gfo_base_cmd)`" \
+       target-clang3       "`$(gfo_base_cmd)`" \	  
+       slc4          "/usr" \
+       slc5          "/usr" \
+@@ -166,7 +168,7 @@
+    Darwin           "$(GFO_BASE)/local/gfortran" \
+    CERN             "$(GFO_BASE)/irun" \
+    BNL              "$(GFO_BASE)/irun" \
+-   STANDALONE       "$(GFO_BASE)/irun"
++   STANDALONE       "/usr"
+ 
+ # These two macros are identical to the asNeeded_linkopt and notAsNeeded_linkopt macros defined in AtlasPolicy
+ # but are needed here because this package doesn't have a dependency against AtlasPolicy
+@@ -194,12 +196,13 @@
+      HAS_GFO&gcc46  " $(gfo_notAsNeeded_linkopt) `$(for) -print-file-name=libgfortran.so` $(gfo_asNeeded_linkopt)" \
+      HAS_GFO&gcc47  " $(gfo_notAsNeeded_linkopt) `$(for) -print-file-name=libgfortran.so` $(gfo_asNeeded_linkopt)" \
+      HAS_GFO&gcc48  " $(gfo_notAsNeeded_linkopt) `$(for) -print-file-name=libgfortran.so` $(gfo_asNeeded_linkopt)" \
++     HAS_GFO&gcc49  " $(gfo_notAsNeeded_linkopt) `$(for) -print-file-name=libgfortran.so` $(gfo_asNeeded_linkopt)" \
+      HAS_GFO&target-clang3  " $(gfo_notAsNeeded_linkopt) `$(for) -print-file-name=libgfortran.so` $(gfo_asNeeded_linkopt)" \	 
+      HAS_GFO&slc4   " $(GFO)/$(GFO_LIBS)/libgfortran.so.1" \
+      HAS_GFO&slc5   " $(GFO)/$(GFO_LIBS)/libgfortran.so.1" \
+      HAS_GFO&slc6   " $(GFO)/$(GFO_LIBS)/libgfortran.so.1" \
+      HAS_GFO&Darwin " $(GFO)/$(GFO_LIBS)/libgfortran.dylib" \
+-     HAS_GFO        " $(GFO)/$(GFO_LIBS)/libgfortranbegin.a $(GFO)/$(GFO_LIBS)/libgfortran.a" \
++     HAS_GFO        " $(GFO)/$(GFO_LIBS)/libgfortran.so" \
+      HAS_G95        " $(G95)/lib/gcc-lib/i686-pc-linux-gnu/4.0.1/libf95.a"
+ 
+ 
