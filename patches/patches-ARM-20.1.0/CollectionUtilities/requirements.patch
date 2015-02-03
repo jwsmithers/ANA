@@ -1,18 +1,20 @@
---- requirements	2015-01-29 14:45:22.703370342 +0200
-+++ requirements1	2015-01-29 14:45:05.173470817 +0200
+--- requirements	2015-02-03 09:49:53.906166614 +0200
++++ requirements1	2015-02-03 09:50:09.281078860 +0200
 @@ -44,7 +44,7 @@
  apply_pattern collection_utility name=CollQuery
  apply_pattern collection_utility name=CollRemove
  apply_pattern collection_utility name=CollSplitByGUID
--#apply_pattern collection_utility name=TokenExtractor
-+apply_pattern collection_utility name=TokenExtractor
+-apply_pattern collection_utility name=TokenExtractor
++#apply_pattern collection_utility name=TokenExtractor
  
  apply_pattern declare_scripts files="../scripts/*.exe ../scripts/*.py"
  
-@@ -57,4 +57,4 @@
- use yampl               yampl-*                 External 
+@@ -54,7 +54,7 @@
+ use POOLCore            POOLCore-*              Database/APR
+ use PersistencySvc	PersistencySvc-*	Database/APR
+ use FileCatalog	        FileCatalog-*	        Database/APR
+-use yampl               yampl-*                 External 
++#use yampl               yampl-*                 External 
  
  macro_append CollectionUtilities_shlibflags " -lcurl"
--macro_append CollectionUtilities_linkopts " -lcurl"
-+macro_append CollectionUtilities_linkopts " -lcurl"
-\ No newline at end of file
+ macro_append CollectionUtilities_linkopts " -lcurl"
