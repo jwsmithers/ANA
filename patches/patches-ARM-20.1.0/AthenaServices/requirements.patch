@@ -1,0 +1,11 @@
+--- requirements	2015-02-03 11:40:09.007820596 +0200
++++ requirements1	2015-02-03 11:40:35.847661515 +0200
+@@ -46,7 +46,7 @@
+ use AtlasBoost       AtlasBoost-*      	  External
+ use AtlasPython      AtlasPython-*        External
+ use AtlasCLHEP       AtlasCLHEP-*      	  External
+-use yampl            yampl-*              External
++#use yampl            yampl-*              External
+ 
+ use EventInfo        EventInfo-*       	  Event
+ use CxxUtils	     CxxUtils-*		  Control
