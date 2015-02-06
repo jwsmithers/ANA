@@ -11,16 +11,15 @@ echo "Setting up your directory structure..."
 source Environment.sh
 echo "You've identified your system as $CMTCONFIG"
 alias goHome="cd $TopDir"
-################################################################################################################################
-## Create SVN file templates that will be used by cmt to checkout packages ##
-source ./scripts/PullAtlasVersion.sh
-goHome; cd ..
-################################################################################################################################
 ## Set some aliases ##
 while read name
 do
         alias $name="cd $TopDir/$name/$name-$VERSION"
 done < Projects.txt
+################################################################################################################################
+## Create SVN file templates that will be used by cmt to checkout packages ##
+source ./scripts/PullAtlasVersion.sh
+goHome; cd ..
 ################################################################################################################################
 ## Check to see if projects and their project.cmt files have been created. If not, create them  ##
 
