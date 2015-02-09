@@ -1,0 +1,14 @@
+--- requirements	2015-01-20 13:34:15.518480406 +0200
++++ requirements1	2015-02-09 16:37:02.835962321 +0200
+@@ -18,9 +18,9 @@
+ # This is "hidden" behind "private" and "no_auto_imports" to keep
+ # clients of EventInfo from seeing excess dependencies
+ private
+-use AtlasReflex        AtlasReflex-*        External -no_auto_imports
++#use AtlasReflex        AtlasReflex-*        External -no_auto_imports
+ 
+-apply_pattern lcgdict dict=TrkDetDescrTPCnv  selectionfile=selection.xml headerfiles="../TrkDetDescrTPCnv/TrkDetDescrTPCnvDict.h"
++#apply_pattern lcgdict dict=TrkDetDescrTPCnv  selectionfile=selection.xml headerfiles="../TrkDetDescrTPCnv/TrkDetDescrTPCnvDict.h"
+ 
+ private
+ # macro cppdebugflags '$(cppdebugflags_s)'

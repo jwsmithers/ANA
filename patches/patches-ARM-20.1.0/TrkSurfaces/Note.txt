@@ -1,0 +1,3 @@
+The lcgdict macro is commented out. It fails with an error saying -f is unrecongnized. This is either
+a stray cpp flag getting picked up or its not finding the input file. None of the other macros in other 
+packages fail so maybe this just isn't meant to be here.
