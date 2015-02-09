@@ -1,0 +1,11 @@
+--- requirements	2015-01-20 13:05:20.664024687 +0200
++++ requirements1	2015-02-09 09:25:24.940341317 +0200
+@@ -6,7 +6,7 @@
+ 
+ macro Xt_libs               "/usr/X11R6/lib" \
+       target-slc5&target-64 "/usr/lib64" \
+-      target-slc5           "/usr/lib" \
++      target-slc5&target-fc21 "/usr/lib" \
+       target-64             "/usr/X11R6/lib64" 
+ 
+ include_dirs "/usr/include/X11"
