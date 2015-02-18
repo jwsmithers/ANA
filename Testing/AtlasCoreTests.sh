@@ -9,7 +9,7 @@ source $TopDir/../PostInstall/PostInstallEnvironment.sh
 TestingDir=$TopDir/../Testing
 
 ## HelloWorld ##
-HelloWorldPath=$TopDir/AtlasCore/AtlasCore-18.9.0/InstallArea/jobOptions/AthExHelloWorld
+HelloWorldPath=$TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/jobOptions/AthExHelloWorld
 cd $TestingDir
 athena.py $HelloWorldPath/HelloWorldOptions.py
 

@@ -86,7 +86,7 @@ function CMTCheckout {
 }
 echo ""
 read -t 7 -p "Do you want to populate all directories? This is a very lenghly proceess and so will defualt to 'no' in 7 seconds. " -e Package_input
-if [ "$Package_input" == "yes" ] || [ "$Package_input" == "yes" ]
+if [ "$Package_input" == "yes" ] || [ "$Package_input" == "Yes" ]
 then
 	echo "Checkout out all packages..."
 	source ./scripts/PopulateDirectories.sh
@@ -109,7 +109,7 @@ source ./scripts/CreateEnvironments.sh
 ## Should we apply files changes and patches? ###
 echo ""
 read -t 7 -p "Do you want to apply the patches and file changes for ARM? If you recently checked out packages then this will default to 'yes', otherwise it will be skipped. " -e Changes_input
-if [ "$Changes_input" == "yes" ] || [ "$Changes_input" == "yes" ] || [ "$Package_input" == "yes" ] || [ "$Package_input" == "yes" ]
+if [ "$Changes_input" == "yes" ] || [ "$Changes_input" == "Yes" ] || [ "$Package_input" == "Yes" ] || [ "$Package_input" == "yes" ]
 then 
 	echo "Applying file changes to suit the ARM archetecture..."
 	source ./scripts/ApplyFileChanges.sh
