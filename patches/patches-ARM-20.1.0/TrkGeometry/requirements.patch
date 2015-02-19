@@ -1,8 +1,0 @@
---- requirements	2015-01-20 13:35:10.663145130 +0200
-+++ requirements1	2015-02-09 16:24:59.570263875 +0200
-@@ -36,4 +36,4 @@
- 
- macro DOXYGEN_IMAGE_PATH "../doc/images"
- macro DOXYGEN_INLINE_INHERITED_MEMB "YES"
--apply_pattern lcgdict dict=TrkGeometry selectionfile=selection.xml headerfiles="../TrkGeometry/TrkGeometryDict.h"
-+#apply_pattern lcgdict dict=TrkGeometry selectionfile=selection.xml headerfiles="../TrkGeometry/TrkGeometryDict.h"

@@ -1,6 +1,14 @@
 --- requirements	2015-01-23 13:05:56.888928135 +0200
-+++ requirements1	2015-01-23 13:07:57.533216191 +0200
-@@ -164,8 +164,8 @@
++++ requirements1	2015-02-18 19:21:29.848575313 +0200
+@@ -93,6 +93,7 @@
+ 
+ pattern lcgdict \
+   private ; \
++  macro_remove AtlasCxxPolicy_pp_cppflags " -fPIC " ; \
+   use Reflex         v*               LCG_Interfaces ; \
+   macro gcc_user_flags "" target-darwin&target-x86_64 " -m64" ; \
+   macro dict_dir "$(bin)dict" ; \
+@@ -164,8 +165,8 @@
  #HACK, should be fixed in GaudiPolicy. Get rid of icc command line options
  macro_remove cppflags "" target-icc "-wd383 -wd981 -wd1418 -wd1419 -we1011 -we117 -wd82 -wd522 -wd444 -wd304 -Wno-deprecated"
  

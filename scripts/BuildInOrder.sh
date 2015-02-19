@@ -8,7 +8,7 @@ do
 	cmt config
 	source setup.sh
 	cmt broadcast cmt config
-	cmt broadcast make install_headers
 	cmt broadcast make -i -j4	
+	cmt broadcast make -i -j4
 	
 done < WhatToBuild.txt

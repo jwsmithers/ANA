@@ -1,8 +1,0 @@
---- requirements	2015-01-20 13:36:09.127789668 +0200
-+++ requirements1	2015-02-09 16:19:08.147351264 +0200
-@@ -19,4 +19,4 @@
- # classes to be added to the dictionary, and which fields are
- # transient. It should be put in ../<package> dir and is conventionally called
- # selection.xml.
--apply_pattern lcgdict dict=TrkMaterialOnTrack selectionfile=selection.xml headerfiles="../TrkMaterialOnTrack/TrkMaterialOnTrackDict.h"
-+#apply_pattern lcgdict dict=TrkMaterialOnTrack selectionfile=selection.xml headerfiles="../TrkMaterialOnTrack/TrkMaterialOnTrackDict.h"
