@@ -1,6 +1,6 @@
+#!/usr/bin/python
 ## Create a requirement file from the SVN*.txt list.
 ## The format is "use <folder> <version> <path to folder>
-#!/usr/bin/python
 import sys
 from os import path
 My_List = [line.split() for line in open(sys.argv[1])]
