@@ -4,4 +4,7 @@ goHome
 cd /usr/lib; sudo ln -s $LCG_install/clhep/1.9.4.7/$CMTCONFIG/lib/* .
 goHome
 cd /usr/bin; sudo ln -s gfortan lcg-gfortran-4.9.0;sudo ln -s gfortan lcg-gfortran-4.9.1;sudo ln -s gfortan lcg-gfortran-4.9.2
+
+cd /usr/lib; sudo ln -s libdSFMT.so libdSFMT-std.so
+
 ##Boost ln of librariess should be in here?

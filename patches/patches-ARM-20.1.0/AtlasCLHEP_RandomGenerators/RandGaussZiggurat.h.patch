@@ -1,0 +1,14 @@
+--- RandGaussZiggurat.h	2015-02-25 12:15:20.196536466 +0200
++++ RandGaussZiggurat.h1	2015-02-25 12:18:56.840189080 +0200
+@@ -64,9 +64,9 @@
+   //  Instance methods using the localEngine to instead of the static 
+   //  generator, and the default mean and stdDev established at construction
+ 
+-  inline float fire() {return ziggurat_RNOR(localEngine.get()) * defaultStdDev + defaultMean;};
++  inline float fire() {return ziggurat_RNOR(HepRandom::getTheEngine()) * defaultStdDev + defaultMean;};
+ 
+-  inline float fire ( float mean, float stdDev ) {return ziggurat_RNOR(localEngine.get()) * stdDev + mean;};
++  inline float fire ( float mean, float stdDev ) {return ziggurat_RNOR(HepRandom::getTheEngine()) * stdDev + mean;};
+   
+   void fireArray  ( const int size, float* vect);
+   void fireArray  ( const int size, double* vect);
