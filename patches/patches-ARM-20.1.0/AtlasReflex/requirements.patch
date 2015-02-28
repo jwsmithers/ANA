@@ -1,10 +1,10 @@
 --- requirements	2015-01-23 13:05:56.888928135 +0200
-+++ requirements1	2015-02-18 19:21:29.848575313 +0200
++++ requirements1	2015-02-25 10:16:44.903414130 +0200
 @@ -93,6 +93,7 @@
  
  pattern lcgdict \
    private ; \
-+  macro_remove AtlasCxxPolicy_pp_cppflags " -fPIC " ; \
++  macro_remove AtlasCxxPolicy_pp_cppflags " -fPIC" ; \
    use Reflex         v*               LCG_Interfaces ; \
    macro gcc_user_flags "" target-darwin&target-x86_64 " -m64" ; \
    macro dict_dir "$(bin)dict" ; \

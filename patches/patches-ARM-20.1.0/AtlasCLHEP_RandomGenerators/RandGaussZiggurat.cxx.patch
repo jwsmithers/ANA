@@ -1,0 +1,16 @@
+--- RandGaussZiggurat.cxx	2015-02-25 12:20:01.314788089 +0200
++++ RandGaussZiggurat.cxx1	2015-02-25 12:20:37.284564380 +0200
+@@ -100,11 +100,11 @@
+ }
+ 
+ double RandGaussZiggurat::operator()() {
+-  return ziggurat_RNOR(localEngine.get()) * defaultStdDev + defaultMean;
++  return ziggurat_RNOR(HepRandom::getTheEngine()) * defaultStdDev + defaultMean;
+ }
+ 
+ double RandGaussZiggurat::operator()( double mean, double stdDev ) {
+-  return ziggurat_RNOR(localEngine.get()) * stdDev + mean;
++  return ziggurat_RNOR(HepRandom::getTheEngine()) * stdDev + mean;
+ }
+ 
+ void RandGaussZiggurat::shootArray( const int size, float* vect, float mean, float stdDev )

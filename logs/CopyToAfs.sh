@@ -5,5 +5,5 @@ while true; do
  sshpass -p $SSHPASS scp StdOut.log jwsmith@lxplus.cern.ch:/afs/cern.ch/user/j/jwsmith/www/projects/ANA 
  python TailIt.py > StdTail.log
  sshpass -p $SSHPASS scp StdTail.log jwsmith@lxplus.cern.ch:/afs/cern.ch/user/j/jwsmith/www/projects/ANA
- sleep 10
+ sleep 600
 done

@@ -15,6 +15,6 @@ def tail(file, n=1000, bs=1024):
     f.close()
     return lines
 
-J=tail("stdOut.log")
+J=tail("StdOut.log")
 for i in J:
     print i.strip()

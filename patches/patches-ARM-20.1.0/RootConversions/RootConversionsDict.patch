@@ -1,9 +1,0 @@
---- RootConversionsDict.h	2014-11-11 18:19:48.649255954 +0200
-+++ RootConversionsDict1.h	2014-11-13 15:42:33.658811818 +0200
-@@ -1,5 +1,5 @@
- #include "RootConversions/TVirtualConverter.h"
- #include "RootConversions/TConverterRegistry.h"
- #include "RootConversions/TConvertingStreamerInfo.h"
--#include "RootConversions/TConvertingBranchElement.h"
-+//#include "RootConversions/TConvertingBranchElement.h"
- #include "RootConversions/VectorConverters.h"
