@@ -1,7 +1,7 @@
-###########################################################################################											 #
-#				How to build ATHENA for ARM	                         #      #											 #
-#				Joshua Wyatt Smith					 #      #											 #
-#				joshua.wyatt.smith@cern.ch				 #      #											 #
+##########################################################################################											
+#				How to build ATHENA for ARM	                         #											 
+#				Joshua Wyatt Smith					 #      											 
+#				joshua.wyatt.smith@cern.ch				 #      
 ##########################################################################################
 
 This describes how to buld AtlasOffline using this framework..
