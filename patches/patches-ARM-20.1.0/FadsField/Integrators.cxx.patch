@@ -1,0 +1,13 @@
+--- Integrators.cxx	2015-03-11 11:50:22.709147162 +0200
++++ Integrators1.cxx	2015-03-11 11:50:09.449225335 +0200
+@@ -22,8 +22,8 @@
+ #include "G4HelixSimpleRunge.hh"
+ static FADS::IntegratorStepperFactory<G4HelixSimpleRunge> s7("HelixSimpleRunge");
+ 
+-#include "G4AtlasRK4.hh"
+-static FADS::IntegratorStepperFactory<G4AtlasRK4> s8("AtlasRK4");
++//#include "G4AtlasRK4.hh"
++//static FADS::IntegratorStepperFactory<G4AtlasRK4> s8("AtlasRK4");
+ 
+ #include "G4NystromRK4.hh"
+ static FADS::IntegratorStepperFactory<G4NystromRK4> s9("NystromRK4");

@@ -25,5 +25,9 @@ ln -s $LCG_install/tbb/42_20140122/$CMTCONFIG/include/tbb $TopDir/AtlasCore/Atla
 ln -s $LCG_install/HepPDT/2.06.01/$CMTCONFIG/lib/* $TopDir/AtlasEvent/AtlasEvent-$VERSION/InstallArea/$CMTCONFIG/lib
 
 #AtlasSimulation
-
 ln -s $ROOTDIR/geant4_install/lib/* $TopDir/AtlasSimulation/AtlasSimulation-$VERSION/InstallArea/$CMTCONFIG/lib
+
+ln -s $LCG_install/GSL/1.10/$CMTCONFIG/lib/* $TopDir/AtlasSimulation/AtlasSimulation-$VERSION/InstallArea/$CMTCONFIG/lib
+
+ln -s $LCG_install/MCGenerators/thepeg/1.9.2/$CMTCONFIG/include/* $TopDir/AtlasSimulation/AtlasSimulation-$VERSION/InstallArea/include
+ln -s $LCG_install/MCGenerators/thepeg/1.9.2/$CMTCONFIG/lib/ThePEG/* $TopDir/AtlasSimulation/AtlasSimulation-$VERSION/InstallArea/$CMTCONFIG/lib
