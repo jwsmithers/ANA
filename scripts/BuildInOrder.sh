@@ -9,6 +9,7 @@ do
 	source setup.sh
 	cmt broadcast cmt config
 	cmt broadcast make -i -j4	
-#	cmt broadcast make -i -j4
+	cmt broadcast make -i -j4
+#        cmt broadcast make clean
 	
 done < WhatToBuild.txt

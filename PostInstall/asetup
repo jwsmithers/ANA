@@ -172,7 +172,6 @@ export ATLAS_GPERFTOOLS_DIR=/home/jwsmith/HDD/AtlasOfflineBuild-framework/Instal
 export ANT_SITE=CMT
 export SVNROOT=svn+ssh://jwsmith@svn.cern.ch/reps/atlasoff
 export G4UI_USE_WO=1
-export XDG_CURRENT_DESKTOP=LXDE
 export TEXMFCNF=/home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71/LCG_Settings/../../../MCGenerators/rivet/2.2.0/armv7l-fc21-gcc49-opt/share/Rivet/texmf/cnf
 export GEANT4=/home/jwsmith/HDD/AtlasOfflineBuild-framework/InstallArea/AtlasSimulation/AtlasSimulation-20.1.0/InstallArea/external/Geant4/releases/specific/armv7l-fc21-gcc49-opt
 export BoostVERS=1.55.0
