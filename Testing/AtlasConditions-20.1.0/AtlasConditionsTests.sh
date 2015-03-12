@@ -6,18 +6,10 @@
 
 #This script calls the various tests available to AtlasCore and runs them within the ANA framework
 
-AtlasCoreDir=$AtlasConditions/InstallArea/JobOptions/
-
-for file in $AtlasConDir
+for file in $TopDir/AtlasConditions/AtlasConditions-$VERSION/InstallArea/jobOptions/*/*.py
 	do
-		for option in $file
-			do
-				if [ "$option" == "*.py" ]
-				then
-					echo "Running tests on $file"
-					echo "Now running ${option}"
-					get_files.py -jo "${option}"
-					athena.py "${option}" | tee "${option}"-Out.html
-				fi
-			done
+		echo "Running tests on $file"
+		echo 
+		get_files -jo "${file##*/}"
+		athena.py "${file##*/}" | tee "${file##*/}"-Out.html
 	done
