@@ -1,0 +1,11 @@
+--- NewDelFunctions.h	2015-02-05 19:48:44.273597231 +0200
++++ NewDelFunctions1.h	2015-02-05 19:48:10.293805868 +0200
+@@ -35,7 +35,7 @@
+ 
+    static void*
+    newArray_T(long size,
+-              void* p) { return p ? new (p) T[size] : new T[size]; }
++              void* p) { return p ? ::new (p) T[size] : new T[size]; }
+ 
+    static void*
+    newArray_p_T(long size,
