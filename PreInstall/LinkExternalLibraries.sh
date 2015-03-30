@@ -21,6 +21,9 @@ ln -s $LCG_install/CppUnit/1.12.1_p1/$CMTCONFIG/include/cppunit $TopDir/AtlasCor
 ln -s $LCG_install/valgrind/3.10.0/$CMTCONFIG/include/valgrind $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
 ln -s $LCG_install/tbb/42_20140122/$CMTCONFIG/include/tbb $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
 
+ln -s $TopDir/../PreInstall/yampl-install/include/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
+ln -s $TopDir/../PreInstall/yampl-install/lib/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib
+
 #AtlasEvent
 ln -s $LCG_install/HepPDT/2.06.01/$CMTCONFIG/lib/* $TopDir/AtlasEvent/AtlasEvent-$VERSION/InstallArea/$CMTCONFIG/lib
 ln -s $LCG_install/GSL/1.10/$CMTCONFIG/lib/* $TopDir/AtlasEvent/AtlasEvent-$VERSION/InstallArea/$CMTCONFIG/lib
