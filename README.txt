@@ -4,7 +4,7 @@
 #				joshua.wyatt.smith@cern.ch				 #      
 ##########################################################################################
 
-Welcome to ATLAS Nightly on ARM - v1.0.
+Welcome to ATLAS Nightly on ARM (ANA) - v1.0.
 This will build a version of the ATLAS software for ARM, on ARM.
 
 This assumes that you have downloaded and installed CMT, LCG, Gaudi, CORAL and COOL. Make sure
