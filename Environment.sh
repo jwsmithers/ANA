@@ -33,6 +33,3 @@ export CPLUS_INCLUDE_PATH=$LCG_install/tbb/42_20140122/$CMTCONFIG/include:$CPLUS
 
 #Geant4
 export CPLUS_INCLUDE_PATH=$ROOTDIR/geant4_install/include/Geant4:$CPLUS_INCLUDE_PATH
-
-# Remember to set the LHAPDF_DATA_PATH when trying to run generators.
-export LHAPDF_DATA_PATH=$TopDir/../Testing/AtlasOffline:$LHAPDF_DATA_PATH 

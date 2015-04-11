@@ -12,5 +12,8 @@ To do this see https://confluence.slac.stanford.edu/display/Atlas/Avoiding+repea
 
 
 To configure everything simply run 
+
 >> source BuildAtlasOffline.sh
+
+and follow the prompts.
 
