@@ -56,7 +56,7 @@
                +'''++++++++''';;''+;;   
                   .:;'++++++''::.`      
                                         
-
+ATLAS Nightly on ARM - v1.0
 
 Welcome, this will set up the build environment for an entire AtlasBuild.
 This assumes you have already built LCG and Gaudi packages separately in Gaudi_install and LCG_install.
