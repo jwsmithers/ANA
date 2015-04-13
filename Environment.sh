@@ -35,7 +35,5 @@ export CPLUS_INCLUDE_PATH=$LCG_install/tbb/42_20140122/$CMTCONFIG/include:$CPLUS
 #Geant4
 export CPLUS_INCLUDE_PATH=$ROOTDIR/geant4_install/include/Geant4:$CPLUS_INCLUDE_PATH
 
-
 # Qt4
 export QMAKESPEC=/usr/lib/qt4/mkspecs/linux-arm-gnueabi-g++
-

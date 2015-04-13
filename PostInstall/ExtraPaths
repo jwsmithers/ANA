@@ -9,4 +9,4 @@ export PYTHONPATH=$PYTHONPATH:$ROOTDIR/Gaudi/InstallArea/$CMTCONFIG/jobOptions:$
 export JOBOPTSEARCHPATH=$JOBOPTSEARCHPATH:$ROOTDIR/Gaudi/InstallArea/$CMTCONFIG/jobOptions:$TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/jobOptions
 source $LCG_install/ROOT/5.34.24/$CMTCONFIG/bin/thisroot.sh
 # Remember to set the LHAPDF_DATA_PATH when trying to run generators.
-export LHAPDF_DATA_PATH=$ROOTDIR/AtlasOfflineBuild-framework/Testing/AtlasOffline:$LHAPDF_DATA_PATH
+export LHAPDF_DATA_PATH=$TopDir/../Testing/AtlasOffline:$LHAPDF_DATA_PATH 
