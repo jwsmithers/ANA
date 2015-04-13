@@ -8,7 +8,7 @@ Welcome to ATLAS Nightly on ARM (ANA) - v2.0.
 This will build a version of the ATLAS software for ARM, on ARM.
 
 FIRST: DO
->> Source Environment.sh
+>> Source Variables.sh
 
 
 There is an order that must be followed to build everything. This is:
