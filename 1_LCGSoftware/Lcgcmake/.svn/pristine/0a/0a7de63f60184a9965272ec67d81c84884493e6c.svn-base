@@ -1,0 +1,75 @@
+There are two build systems in this directory: a simple one and an 
+cmake one. If you don't need to use additional libraries, both
+can be good for you. If you want to use additional libraries, you
+should modify the build system. To modify the cmake system the
+knowledge of cmake is needed.
+
+To use the simple build system (consists of 2 files: configure-simple and 
+Makefile-simple):
+
+1. ./configure-simple --help
+2. /.configure-simple [your arguments]
+3. make -f Makefile-simple mainNN
+4. source config.csh (of source config.sh depending on your shell). This
+   is needed only for advanced examples NN > 77
+5. mainNN.exe
+
+
+Description of the usage of autotooled system follows.
+
+
+Start configuration of the directory /examples with:
+
+> ./configure [arguments]
+
+The first of the above commands is optional, needed if you
+changed the files configure.ac or Makefile.am or if you use a different
+version of autotools
+
+To see possible arguments of the script configure type:
+
+> ./configure --help
+
+To compile examples type:
+
+> make mainNN
+
+with NN - number of example. The executable mainNN will be created from
+the file mainNN.f or mainNN.cc.
+
+The pathes to the linked libraries normally should be "rpathed" into
+the executables and found at runtime. If this is not the case
+you can set the variable LD_LIBRARY_PATH
+
+If your LHAPDF installation is non-standard it is possible that
+PDF sets are not found at runtime. In this case the variable
+LHAPATH should be set.
+
+
+The description of examples follows.
+
+main61 - main76 - author examples
+
+main77 - example that uses isajet and feynhiggs
+(It does not work yet: requires isajet and feynhiggs)
+
+main78, main79 - HepMC examples
+
+main81 - example of using LHAPDF PDF sets
+
+It is possible to compile and run the examples main78 or 79 only
+after configuring with arguments specifying the path to HepMC
+(and optionally to CLHEP)
+
+To run the example main79.cc you will have to download a PDG table from:
+'http://pdg.lbl.gov/computer_read.html' and name it 'PDG_ParticleDataTable.txt'
+
+It is possible to compile and run the example main81 only
+after configuring with arguments specifying the path to LHAPDF
+
+main78 produces 10 MB output file.
+
+
+AN IMPORTANT NOTE (needs a regular fix): 
+If shared libraries are used, Pythia BlockData is taken only
+if Pythia is the first in the list of libraries.

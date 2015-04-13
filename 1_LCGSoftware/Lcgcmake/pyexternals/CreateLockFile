@@ -1,0 +1,1 @@
+echo "Not locking file... this could be dangerous"

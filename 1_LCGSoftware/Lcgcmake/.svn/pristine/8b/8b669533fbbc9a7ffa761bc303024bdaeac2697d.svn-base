@@ -1,0 +1,118 @@
+ ctest for a generator is defined in lcgcmake/generators/CMakeLists.txt
+beside the definition of the generator itself.
+
+ If an executable is to be compiled for the "generator", it is done by
+lcgcmake/generators/"generator"/tests/CMakeLists.txt. The test code
+(if it is not taken from the installed generator's share/sources)
+is also put in this directory.
+
+ The CMakeLists.txt for the test compilation uses the cmake system
+FindPackage. Some macros to find well known packages are defined
+in the standard cmake (see documentation). If the tested package
+depends on some other package of GENSER or external, additional
+macros FindPackage are used, e.g. FindHepMC, FindThePEG. They can
+be defined in 2 places:
+
+ 1. package cmaketools defined in lcgcmake and installed in /external
+ 2. lcgcmake/cmake/modules . In this case this additional search path is
+    added inside lcgcmake/generators/"generator"/tests/CMakeLists.txt
+
+ Usually new Find* macros are put in the second location, and after
+full testing added to cmaketools (kept in svn).
+
+ When everything is prepared, a single ctest can be run in lcgcmake-build
+by 
+
+ ctest -R genname
+
+ It is possible to increase verbosity of the test like this:
+
+ ctest -VV -R genname
+
+ Further increase of verbosity can be obtained by defining the
+corresponding variable inside lcgcmake/generators/"generator"/tests/CMakeLists.txt,
+there is an example in lhapdf6 test.
+
+ It is recommended to avoid scripts in the ctests system
+
+ Once the test is defined in lcgcmake/generators/CMakeLists, it will be run in
+the nightlies.
+
+ The comparably long tests (physics tests should contain the following line:
+   LABELS PhysicsCheck
+
+
+ CTESTS NAMING CONVENTION:
+ Each test name contains
+   - generator's name
+   - generator's version
+   - type of test
+     - "native" tests are test that use examples, sources, ...  provided by package developers
+     - "genser" tests are test that use source codes made by GENSER team
+     - some tests may have a short name accompanying to its function, mainly these tests check common functionality of Installation or provide specific actions.
+   - definition of the test. It should be related with test's actions and/or parameters.
+ 
+ Formula of test name:
+   generator-version.(native|genser)-definition[-rivet for rivet tests]
+
+ Physics rivet tests convention:
+
+ 1. Reference histograms are kept in lcgcmake/generators/reference
+ 2. At the beginning of each reference yoda file there is a line like this:
+     #Reference made on 24.03.2014 by herwig++ 2.7.0 lcgcmt65 x86_64-slc5-gcc47-opt
+
+
+ Tools available for the histograms comparison:
+
+ 1. ${CMAKE_SOURCE_DIR}/cmake/scripts/yoda2root.cmake
+      -DAIDA2ROOT=${AIDA2ROOT} , example is ${CMAKE_SOURCE_DIR}/generators/reference/aida2root.py
+      -DPython_cmd=${Python_cmd}
+      -Dyoda_home=${yoda_home}
+      -DINPUT=filepath/filename.yoda
+      
+    creates filename.root at filepath. In addition creates filename.aida
+
+ 2. ${CMAKE_SOURCE_DIR}/generators/reference/reference.py
+
+    The main mode of work:
+
+      reference.py file1.root file2.root "Path=name1" limit=0.05  or 
+      reference.py file1.root file2.root "Path=name1,name2" "limit=0.05,0.05"
+        Compare histogram name1 in the two root files, Kolmogorov test, conf. limit 5% 
+        If the path is "XS", the script will calculate chi2 and use Tmath::Prob to
+        calculate probability.
+
+    Initially there was another mode of work:
+
+      reference.py file1.yoda file2.yoda "Path=XS" limit=0.05
+        But it is disabled now (will give an error). To use it, the code is to be further
+        developed, adding extraction of scatter plot errors from yoda.
+
+
+==  Save yoda file in SQLite3 database
+  The scripts for export .yoda files to SQLite3 database are generators/reference/push2database.sh and generators/reference/push2database.py. 
+  To process one file  use push2database.py (see generators/reference/push2database.py -h)
+  To process all .yoda files in selected directory use push2database.sh (see generators/reference/push2database.sh -h)
+  In any cases you need to specify database which will be used for storing data. Web page genservis.cern.ch use SQLite3 database from local file system (at the moment it is /var/www/genservis.db).
+  Recommended way to publish tests results to web site (will process all *.yoda files in ${CMAKE_BUILD_DIR}/generators):
+    - Use ctest -R copy
+  Manual way to publish tests results to web site:
+    - copy SQLite3 database from /var/www/ at genservis.cern.ch to temporary location (for example /tmp/genservis.db)
+    - export .yoda files to /tmp/genservis.db by using push2database.sh or push2database.py
+    - replace original genservis.db at genservis.cern.ch with /tmp/genservis.db
+  
+
+== How to make validation analyses and publish results (sherpa is used as example)
+  # Use -DVALIDATION in cmake command
+    cmake -DVALIDATION=ON ...
+  # build needed packages
+    make -j 8 sherpa rivet cmaketools
+  # run tests
+    ctest -R reference
+    ctest -j 8 -R sherpa.*.genser-.*-rivet
+  # obtain sftnight ticket and token
+    kdestroy; unlog; kinit sftnight; aklog
+  # copy result to SQLite3 DB
+    ctest -VV -R copy
+  # genservis.db on AFS and it local replica are syncronized every 30 minutes. You can do synchronization manually bu run /var/www/rsync.sh from genservis.cern.ch (you should be logged as apache user).
+  # to change anything go to http://genservis.cern.ch/?query=all&login=admin&password=admin and use 'edit' link.
