@@ -1,0 +1,43 @@
+package ACE
+
+use LCG_Policy v*
+use SEAL v* LCG_Interfaces
+use COOL v* LCG_Interfaces
+use Qt v* LCG_Interfaces
+
+private
+
+# Do not install the header files 
+macro_remove constituents 'install_includes'
+
+# Andrea: redefine the Qt version only within the private section 
+# to avoid interfering with other packages (LCG54 uses Qt 3.3.8).
+# Also fix a bug in the Qt link options for 4.3.0.
+macro Qt_config_version "4.3.0"
+macro Qt_linkopts "-L$(Qt_home)/lib -lQtCore -lQtGui" \
+      WIN32 "" \
+      osx104 ""
+
+# Fragment to generate the Qt "moc" files using the Qt "meta object compiler".
+# Copied from Murrough Landon's version for Atlas (LVL1/l1calo/qtExternal).
+make_fragment moc -header=empty_header
+
+# Generate the Qt "moc" files using the Qt "meta object compiler".
+document moc ace_moc_src -s=../$(package) *.h 
+
+# Build the ace application.
+macro_append use_linkopts "$(COOL_applibs)"
+macro ace_dependencies ace_moc_src
+macro ace_cxxflags " -pipe -g -D_REENTRANT -Wall -W -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED" WIN32 ""
+macro ace_sources "*.cpp $(bin)qt/moc/*.cpp" \
+      WIN32  "MainWindow.cpp" \
+      osx104 "MainWindow.cpp"
+application ace $(ace_sources)
+
+# Fake target for tests.
+action tests "echo No tests in this package"
+macro_remove cmt_actions_constituents "tests"
+
+# Fake target for examples.
+action examples "echo No examples in this package"
+macro_remove cmt_actions_constituents "examples"

@@ -1,0 +1,2 @@
+libGaudiPartProp.so:Gaudi::ParticlePropertySvc
+libGaudiPartProp.so:Gaudi__ParticlePropertySvc

@@ -1,0 +1,15 @@
+------------------------------------------------------------------------------
+
+References:
+- http://atlas.web.cern.ch/Atlas/GROUPS/DATABASE/project/doc/HVS.doc
+- http://atlas.web.cern.ch/Atlas/GROUPS/DATABASE/detector_description/RALaccess
+- http://atlassw1.phy.bnl.gov/cgi-bin/cvsweb.cgi/offline/Database/AthenaPOOL/RDBAccessSvc/src
+
+Download of Atlas software:
+- setenv CVSROOT :kserver:atlas-sw.cern.ch:/atlascvs
+  cvs co -d RDBAccessSvc offline/Database/AthenaPOOL/RDBAccessSvc
+  cvs co -d RDBAccessTest offline/AtlasTest/DatabaseTest/RDBAccessTest
+- Alternative CVS repository:
+  /afs/usatlas.bnl.gov/software/cvs/offline/Database/AthenaPOOL/RDBAccessSvc
+
+------------------------------------------------------------------------------

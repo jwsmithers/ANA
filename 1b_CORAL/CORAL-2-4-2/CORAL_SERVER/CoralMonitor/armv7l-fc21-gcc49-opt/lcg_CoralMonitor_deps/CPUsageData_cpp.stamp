@@ -1,0 +1,1 @@
+CPUsageData_cpp_dependencies =  ../src/CPUsageData.cpp   ../src/CPUsageData.h  $(bin)lcg_CoralMonitor_deps/CPUsageData_cpp.stamp

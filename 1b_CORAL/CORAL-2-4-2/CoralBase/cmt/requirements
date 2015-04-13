@@ -1,0 +1,288 @@
+package CoralBase
+
+#============================================================================
+# Public dependencies and build rules
+#============================================================================
+
+use LCG_Policy v*
+use Boost v* LCG_Interfaces
+
+#----------------------------------------------------------------------------
+# Define the pattern for library symlinks .dylib -> .so (sr #141482)
+#----------------------------------------------------------------------------
+
+pattern lcg_dylib_symlink \
+  action lcg_<package>_dylib "" target-mac "ln -fs liblcg_<package>.so $(CMTINSTALLAREA)/$(CMTCONFIG)/lib/liblcg_<package>.dylib" ; \
+  macro_append constituents "" target-mac lcg_<package>_dylib ; \
+  macro_remove cmt_actions_constituents "" target-mac lcg_<package>_dylib
+
+#----------------------------------------------------------------------------
+# Library
+#----------------------------------------------------------------------------
+
+apply_pattern include_dir_policy
+apply_pattern lcg_shared_library
+
+# Create a symlink .dylib -> .so on mac (sr #141482 - also see bug #37371)
+apply_pattern lcg_dylib_symlink
+
+#----------------------------------------------------------------------------
+# CORAL240 API changes
+#----------------------------------------------------------------------------
+
+# The -DCORAL240 flag is now hardcoded in VersionInfo.h (bug #89707):
+# it is set to two different values in the HEAD and CORAL_2_3-branch.
+# All API extensions are disabled in 2.3.x and cannot be reenabled.
+# The PM/SQ extensions are enabled in 2.4.x, CN/DC can be enabled here.
+
+# Enable the CORAL240 API change (property manager struct/class)
+# [disabled in 2.3.x, enabled by default in 2.4.x]
+###macro_append use_cppflags ' -DCORAL240PM' WIN32 ' /DCORAL240PM'
+
+# Enable the CORAL240 API extensions (sequences)
+# [disabled in 2.3.x, enabled by default in 2.4.x]
+###macro_append use_cppflags ' -DCORAL240SQ' WIN32 ' /DCORAL240SQ'
+
+# Enable the CORAL240 API extensions (change notifications)
+# [disabled in 2.3.x, can be enabled here for 2.4.x]
+###macro_append use_cppflags ' -DCORAL240CN' WIN32 ' /DCORAL240CN'
+
+# Enable the CORAL240 API extensions (delete cascade)
+# [disabled in 2.3.x, can be enabled here for 2.4.x]
+###macro_append use_cppflags ' -DCORAL240DC' WIN32 ' /DCORAL240DC'
+
+#----------------------------------------------------------------------------
+# Compilation and link flags (inherited by all CORAL packages)
+#----------------------------------------------------------------------------
+
+# Workaround for undefined __int128 in Coverity builds (SPI-343)
+###macro_remove cppflags "-std=c++0x"
+###macro_remove cppflags "-std=c++11"
+
+# --- Configure Windows build options ---
+# Workaround for CMT bug #46458 (make all_groups on vc9)
+macro_remove cmt_actions_constituents "" target-winxp "make"
+
+# Disable CRT deprecation warnings on WIN (getenv, sprintf...)
+macro_append use_cppflags '' target-winxp ' /D_CRT_SECURE_NO_WARNINGS'
+
+# Disable SCL deprecation warnings from boost headers on WIN (bug #76887)
+macro_append use_cppflags '' target-winxp ' /D_SCL_SECURE_NO_WARNINGS'
+
+# Enable Boost lib diagnostic on WIN (see boost/config/auto_link.hpp)
+macro_append use_cppflags '' target-winxp ' /DBOOST_LIB_DIAGNOSTIC'
+
+# Disable automatic selection of Boost libraries to link against on WIN
+# (this is needed if you upgrade to Boost 1.35 but use its vc71 build)
+macro_append use_cppflags '' target-winxp ' /DBOOST_ALL_NO_LIB'
+
+# Attempt to catch C++ exceptions as well as WIN32 structured exceptions
+# See http://http://msdn.microsoft.com/en-us/library/1deeycx5(VS.80).aspx
+# The /EHa flag is mandatory (on vc7 and vc9) if _set_se_translator is used 
+# See http://msdn.microsoft.com/en-us/library/5z4bw5h5(VS.80).aspx
+macro_remove cppflags '' target-winxp ' /EHsc'
+macro_append cppflags '' target-winxp ' /EHa'
+
+# --- Configure icc build options ---
+# Fix linker warning 'feupdateenv is not implemented and will always fail'
+# See http://www-lab.imr.edu/~sgi/new/intel/cc9.1/Release_Notes.htm
+macro_append cpplinkflags '' target-icc ' -i-dynamic '
+macro_append clinkflags '' target-icc ' -i-dynamic '
+# Remove invalid compiler option '-W'
+macro_remove cppflags '' target-icc '-W '
+# Add leading blank before appending options (avoid issues like bug #83825)
+macro_append cppflags '' target-icc ' '
+# Disable remark #193: zero used for undefined preprocessing identifier
+macro_append cppflags '' target-icc '-wd193 '
+# Disable remark #304: access control not specified ("public" by default)
+macro_append cppflags '' target-icc '-wd304 '
+# Disable remark #383: valued copied to temporary, reference to temporary
+macro_append cppflags '' target-icc '-wd383 '
+# Disable remark #981: operands are evaluated in unspecified order
+macro_append cppflags '' target-icc '-wd981 '
+# Disable remark #1418: external function definition with no prior declaration
+macro_append cppflags '' target-icc '-wd1418 '
+# Disable warning #1478: class std::auto_ptr was declared deprecated
+macro_append cppflags '' target-icc '-wd1478 '
+# Disable remark #1572: floating-point equality comparisons unreliable
+macro_append cppflags '' target-icc '-wd1572 '
+# Disable remark #2259: "int" to "unsigned short" may lose significant bits
+# [would prefer to keep it, but there's too many in Boost headers!]
+macro_append cppflags '' target-icc '-wd2259 '
+# Keep remark #68: integer conversion resulted in a change of sign
+macro_append cppflags '' target-icc '-ww68 '
+# Keep remark #82: storage class is not first
+macro_append cppflags '' target-icc '-ww82 '
+# Keep remark #111: statement is unreachable
+macro_append cppflags '' target-icc '-ww111 '
+# Keep remark #128: loop is not reachable from preceding code
+macro_append cppflags '' target-icc '-ww128 '
+# Keep remark #177: variable "xxx" was declared but never referenced
+macro_append cppflags '' target-icc '-ww177 '
+# Keep remark #181: argument incompatible with format string conversion
+macro_append cppflags '' target-icc '-ww181 '
+# Keep warning #191: type qualifier is meaningless on cast type
+# Keep warning #279: controlling expression is constant
+# Keep warning #327: NULL reference is not allowed
+# Keep remark #424: extra ";" ignored
+macro_append cppflags '' target-icc '-ww424 '
+# Keep remark #444: destructor for base class "xxx" is not virtual
+macro_append cppflags '' target-icc '-ww444 '
+# Keep remark #522: function redeclared "inline" after being called
+macro_append cppflags '' target-icc '-ww522 '
+# Keep remark #593: variable "xxx" was set but never used
+macro_append cppflags '' target-icc '-ww593 '
+# Keep warning #654: overloaded virtual function is only partially overridden
+# Keep warning #810: conversion may lose significant bits
+# Keep remark #1419: external declaration in primary source file
+macro_append cppflags '' target-icc '-ww1419 '
+# Keep remark #1599: declaration hides variable "xxx" (declared at line nnn)
+macro_append cppflags '' target-icc '-ww1599 '
+# Keep warning #2165: declaring a reference with "mutable" is nonstandard
+
+#----------------------------------------------------------------------------
+# Boost additional libraries
+#----------------------------------------------------------------------------
+
+macro_append CoralBase_linkopts ' $(Boost_linkopts)'
+macro_append lcg_CoralBase_shlibflags ' $(Boost_linkopts)'
+
+macro_append CoralBase_linkopts ' $(Boost_linkopts_filesystem)'
+macro_append lcg_CoralBase_shlibflags ' $(Boost_linkopts_filesystem)'
+
+macro_append CoralBase_linkopts ' $(Boost_linkopts_date_time)'
+macro_append lcg_CoralBase_shlibflags ' $(Boost_linkopts_date_time)'
+
+macro_append CoralBase_linkopts ' $(Boost_linkopts_system)'
+macro_append lcg_CoralBase_shlibflags ' $(Boost_linkopts_system)'
+
+macro_append CoralBase_linkopts ' $(Boost_linkopts_thread)'
+macro_append lcg_CoralBase_shlibflags ' $(Boost_linkopts_thread)'
+
+#----------------------------------------------------------------------------
+# Prototype changes in LCG_Policy requirements (SPI-169)
+#----------------------------------------------------------------------------
+
+# Keep pattern lcg_cond_mkdir unchanged
+pattern lcg_cond_mkdir \
+  action lcg_mkdir "if [ ! -d <dir> ]; then mkdir -p <dir>; fi" \
+    target-winxp 'if not exist "<dir>" mkdir "<dir>"'
+
+# Redefine pattern lcg_cond_mkdir: add <category> and <name>, remove <tstexp>
+pattern lcg_cond_mkdir_with_dep \
+  apply_pattern lcg_cond_mkdir dir=<dir> ; \
+  macro_append <category>_constituents "lcg_mkdir " ; \
+  macro <name>_dependencies "lcg_mkdir" 
+
+# Add new pattern lcg_application_template
+# With respect to Benedikt's: replace <category>s by <category>
+# With respect to Benedikt's: replace suffix=<name> by suffix=_<appname> (2x)
+# With respect to Benedikt's: do not use utilities/bin and utilities/lib
+pattern lcg_application_template \
+  application <appname> -group=<category> -suffix=_<appname> -import=<import> -import=<import2> <files> bindirname=<bindirname> ;\
+  macro_append <appname>linkopts " $(<package>_linkopts) $(<package>_<category>_linkopts) $(gcov_linkopts) $(icc_linkopts) " \
+    target-winxp " $(<package>_linkopts) $(<package>_<category>_linkopts) "
+
+# Add new pattern lcg_application (bindirname=bin)
+pattern lcg_application \
+  apply_pattern lcg_application_template appname=<appname> import=<import> import2=<import2> files=<files> category=<category> bindirname=bin
+
+# Redefine pattern lcg_tstexp_application (bindirname=<tstexp>s/bin)
+pattern lcg_tstexp_application \
+  apply_pattern lcg_cond_mkdir_with_dep dir=$(CMTINSTALLAREA)/$(CMTCONFIG)/<tstexp>s/lib category=<tstexp>s name=<tstexp>_<name> ;\
+  apply_pattern lcg_application_template appname=<tstexp>_<name> import=<import> import2=<import2> files=<files> category=<tstexp>s bindirname=<tstexp>s/bin ;\
+  macro_append <tstexp>_<name>linkopts " -L$(CMTINSTALLAREA)/$(CMTCONFIG)/<tstexp>s/lib " target-winxp " /LIBPATH:$(CMTINSTALLAREA)/$(CMTCONFIG)/<tstexp>s/lib "
+
+# Redefine pattern lcg_tstexp_library
+pattern lcg_tstexp_library \
+  apply_pattern lcg_cond_mkdir_with_dep dir=$(CMTINSTALLAREA)/$(CMTCONFIG)/<category>/lib category=<tstexp>s name=<tstexp>_<name> ;\
+  library <tstexp>_<name> -group=<tstexp>s -suffix=<name> <files> libdirname="<tstexp>s/lib" ;\
+  macro <tstexp>_<name>_shlibflags "$(libraryshr_linkopts) $(<package>_linkopts) -L$(CMTINSTALLAREA)/$(CMTCONFIG)/<tstexp>s/lib $(use_linkopts) $(gcov_linkopts) $(icc_linkopts) " \
+    target-winxp "$(libraryshr_linkopts) $(<package>_linkopts) /LIBPATH:$(CMTINSTALLAREA)/$(CMTCONFIG)/<tstexp>s/lib $(use_linkopts) " ;\
+  macro_append <package>_<tstexp>s_linkopts " -l<tstexp>_<name> " target-winxp " <tstexp>_<name>.lib " 
+
+# Redefine pattern lcg_tstexp_module
+pattern lcg_tstexp_module \
+  apply_pattern lcg_cond_mkdir_with_dep dir=$(CMTINSTALLAREA)/$(CMTCONFIG)/<tstexp>s/lib category=<tstexp>s name=<tstexp>_<name> ;\
+  library   <tstexp>_<name>   -group=<tstexp>s -suffix=<name> <files> libdirname="<tstexp>s/lib" ;\
+  macro lib_<tstexp>_<name>_cppflags "" target-winxp "-DPLUGIN_MANAGER_SAMPLE_BUILD_DLL" ;\
+  macro <tstexp>_<name>_shlibflags "$(libraryshr_linkopts) $(<package>_linkopts) -L$(CMTINSTALLAREA)/$(CMTCONFIG)/<tstexp>s/lib $(<package>_<tstexp>s_linkopts) $(use_linkopts) " \
+                      target-winxp "$(libraryshr_linkopts) $(<package>_linkopts) /LIBPATH:$(CMTINSTALLAREA)/$(CMTCONFIG)/<tstexp>s/lib $(<package>_<tstexp>s_linkopts) $(use_linkopts) "
+
+# Redefine pattern lcg_test_application
+pattern lcg_test_application \
+  apply_pattern lcg_tstexp_application name=<name> files=<files> tstexp=test import=<import> import2=<import2>
+
+# Redefine pattern lcg_example_application
+pattern lcg_example_application \
+  apply_pattern lcg_tstexp_application name=<name> files=<files> tstexp=example
+
+# Remove pattern lcg_unit_test_application
+pattern lcg_unit_test_application ""
+
+#----------------------------------------------------------------------------
+# Define the pattern for unit tests in CORAL
+#----------------------------------------------------------------------------
+
+pattern coral_unit_test \
+  apply_pattern lcg_test_application name=unit_<package>_<tname> files=../tests/<tname>/*.cpp import=CppUnit import2=<timport>
+
+#----------------------------------------------------------------------------
+# Define the pattern for package utilities in CORAL
+#----------------------------------------------------------------------------
+
+# New version using the new LCG_Policy patterns (SPI-169)
+# Inherit gcov/icc linkopts from pattern lcg_application (fix bug #91133)
+# Link lcg_<package> needed in lcg_module_library but not in lcg_shared_library
+pattern coral_utility \
+  apply_pattern lcg_application appname=<uname> files=../utilities/<uname>/*.cpp import2=<timport> category=utilities ; \
+  macro_append <uname>linkopts " -llcg_<package> " target-winxp " lcg_<package>.lib "
+
+#----------------------------------------------------------------------------
+# Debug flags
+#----------------------------------------------------------------------------
+
+# For debugging
+###macro_append CoralBase_cppflags ' -Wall -Werror '
+
+# For profiling
+###macro_append CoralBase_cppflags ' -p ' target-winxp ''
+
+#----------------------------------------------------------------------------
+# Fix "Warning: apply_tag with empty name [$(cmt_compiler_version)]" on mac
+#----------------------------------------------------------------------------
+
+# Failed attempt at fixing the warning... need to upgrade to v1r26 on mac?
+#macro cmt_compiler_version_query_command $(cmt_compiler_version_query_command)\
+#  target-mac '${CMTROOT}/../v1r26/mgr/cmt_dcc_version.sh'
+
+#============================================================================
+# Private dependencies and build rules
+#============================================================================
+
+private
+
+use CppUnit v* LCG_Interfaces -no_auto_imports
+
+# The unit tests
+apply_pattern coral_unit_test tname=BlobReadWrite
+apply_pattern coral_unit_test tname=ClangBug100663
+apply_pattern coral_unit_test tname=CoralBaseTest
+apply_pattern coral_unit_test tname=CppUnitExample
+apply_pattern coral_unit_test tname=DataTypeBug
+apply_pattern coral_unit_test tname=Date
+apply_pattern coral_unit_test tname=MessageStream
+apply_pattern coral_unit_test tname=TimeStamp
+
+# Special ad-hoc tests
+apply_pattern coral_unit_test tname=ThreadProfiling
+macro_append app_test_unit_CoralBase_ThreadProfiling_cppflags '' target-gcc ' -Wno-deprecated ' target-clang ' -Wunused-parameter '
+macro_append app_test_unit_CoralBase_ThreadProfiling_cppflags '' target-gcc42 '' target-gcc43 '' target-gcc ' -Wno-unused-local-typedefs '
+
+# Fake target for utilities
+action utilities "echo No utilities in this package"
+macro_remove cmt_actions_constituents "utilities"
+
+# Fake target for examples
+action examples "echo No examples in this package"
+macro_remove cmt_actions_constituents "examples"

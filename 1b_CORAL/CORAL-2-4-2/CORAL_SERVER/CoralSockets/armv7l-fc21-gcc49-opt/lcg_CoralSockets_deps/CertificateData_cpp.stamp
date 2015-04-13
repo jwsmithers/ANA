@@ -1,0 +1,1 @@
+CertificateData_cpp_dependencies =  ../src/CertificateData.cpp   /home/jwsmith/HDD/CORAL/CORAL-2-4-2/RelationalAccess/src/ICertificateData.h   ../src/CertificateData.h  $(bin)lcg_CoralSockets_deps/CertificateData_cpp.stamp

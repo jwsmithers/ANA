@@ -1,0 +1,38 @@
+package CoolApplication
+
+#============================================================================
+# Public dependencies and build rules
+#============================================================================
+
+use CoolKernel v*
+use RelationalCool v*
+
+#----------------------------------------------------------------------------
+# Library
+#----------------------------------------------------------------------------
+
+apply_pattern include_dir_policy
+apply_pattern lcg_shared_library
+
+#============================================================================
+# Private dependencies and build rules
+#============================================================================
+
+private
+
+###macro_append use_linkopts ' $(Boost_linkopts_thread)'
+
+# Link the CORAL libraries
+apply_tag NEEDS_CORAL_BASE
+
+# Fake target for tests
+action tests "echo No tests in this package"
+macro_remove cmt_actions_constituents "tests"
+
+# Fake target for utilities
+action utilities "echo No utilities in this package"
+macro_remove cmt_actions_constituents "utilities"
+
+# Fake target for examples
+action examples "echo No examples in this package"
+macro_remove cmt_actions_constituents "examples"

@@ -1,0 +1,55 @@
+package CoralAuthenticationService
+
+#============================================================================
+# Private dependencies and build rules
+#============================================================================
+
+private
+
+# Temporary hack to avoid c++ deprecation warnings for auto_ptr (bug #98085)
+macro_append cppflags "" target-c11 " -Wno-deprecated "
+
+#----------------------------------------------------------------------------
+# Library
+#----------------------------------------------------------------------------
+
+use CoralCommon v*
+use XercesC v* LCG_Interfaces
+
+apply_pattern lcg_shared_library
+
+# Create a symlink .dylib -> .so on mac (sr #141482 - also see bug #37371)
+apply_pattern lcg_dylib_symlink
+
+# Enable OpenSSL on linux (both slc4 and slc5)
+# [NB Eventually, should link ssl ONLY through voms, not directly]
+#macro_append CoralAuthenticationService_cppflags '' \
+#  target-slc ' -DHAVE_OPENSSL'
+#macro_append CoralAuthenticationService_linkopts '' \
+#  target-slc ' -lssl'
+#macro_append lcg_CoralAuthenticationService_shlibflags '' \
+#  target-slc ' -lssl'
+
+#----------------------------------------------------------------------------
+# Tests
+#----------------------------------------------------------------------------
+
+use CppUnit v* LCG_Interfaces -no_auto_imports
+
+apply_pattern coral_unit_test tname=OpenSSLCipher
+apply_pattern coral_unit_test tname=QueryMgr
+
+#----------------------------------------------------------------------------
+# Utilities
+#----------------------------------------------------------------------------
+
+apply_pattern coral_utility uname=coralDemo
+apply_pattern coral_utility uname=coralCredentialsManager
+
+#----------------------------------------------------------------------------
+# Examples
+#----------------------------------------------------------------------------
+
+# Fake target for examples
+action examples "echo No examples in this package"
+macro_remove cmt_actions_constituents "examples"

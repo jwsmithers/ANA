@@ -1,0 +1,5 @@
+<use   name="boost"/>
+<use   name="boost_filesystem"/>
+<export>
+  <lib   name="1"/>
+</export>

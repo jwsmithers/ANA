@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<servicelist>
+
+  <!-- CORAL nightly tests (replicaExcluding0/1/2 for O/M/S) - START -->
+
+  <logicalservice name="CORAL-Oracle-sftnight/replicaExcluding0">
+    <service name="oracle://nonexistent/schema" accessMode="update" authentication="password" />
+    <service name="oracle://lcg_coral_nightly/lcg_coral_nightly" accessMode="update" authentication="password" />
+  </logicalservice>
+
+  <logicalservice name="CORAL-Oracle-sftnight/replicaExcluding1">
+    <service name="sqlite_file:nonexistent" accessMode="readonly" authentication="password" />
+    <service name="oracle://lcg_coral_nightly/lcg_coral_nightly" accessMode="readOnly" authentication="password" />
+  </logicalservice>
+
+  <logicalservice name="CORAL-Oracle-sftnight/replicaExcluding2">
+    <service name="oracle://lcg_coral_nightly/nonexistent" accessMode="update" authentication="password" />
+    <service name="oracle://lcg_coral_nightly/lcg_coral_nightly" accessMode="update" authentication="password" />
+  </logicalservice>
+
+
+  <logicalservice name="CORAL-MySQL-sftnight/replicaExcluding0">
+    <service name="sqlite_file:nonexistent" accessMode="update" authentication="password" />
+    <service name="mysql://dbod-coolmyod.cern.ch:5500/LCG_CORAL_NIGHT" accessMode="update" authentication="password" />
+    <!--service name="mysql://coralmysql.cern.ch/LCG_CORAL_NIGHT" accessMode="update" authentication="password" /-->
+  </logicalservice>
+
+  <logicalservice name="CORAL-MySQL-sftnight/replicaExcluding1">
+    <service name="oracle://lcg_coral_nightly/nonexistent" accessMode="readonly" authentication="password" />
+    <service name="mysql://dbod-coolmyod.cern.ch:5500/LCG_CORAL_NIGHT" accessMode="readonly" authentication="password" />
+    <!--service name="mysql://coralmysql.cern.ch/LCG_CORAL_NIGHT" accessMode="readonly" authentication="password" /-->
+  </logicalservice>
+
+  <logicalservice name="CORAL-MySQL-sftnight/replicaExcluding2">
+    <service name="oracle://lcg_coral_nightly/nonexistent" accessMode="update" authentication="password" />
+    <service name="mysql://dbod-coolmyod.cern.ch:5500/LCG_CORAL_NIGHT" accessMode="update" authentication="password" />
+    <!--service name="mysql://coralmysql.cern.ch/LCG_CORAL_NIGHT" accessMode="update" authentication="password" /-->
+  </logicalservice>
+
+
+  <logicalservice name="CORAL-SQLite-sftnight/replicaExcluding0">
+    <service name="sqlite_file:nonexistent" accessMode="update" authentication="password" />
+    <service name="sqlite_file:ral.db" accessMode="update" authentication="password" />
+  </logicalservice>
+
+  <logicalservice name="CORAL-SQLite-sftnight/replicaExcluding1">
+    <service name="oracle://lcg_coral_nightly/nonexistent" accessMode="readonly" authentication="password" />
+    <service name="sqlite_file:ral.db" accessMode="readonly" authentication="password" />
+  </logicalservice>
+
+  <logicalservice name="CORAL-SQLite-sftnight/replicaExcluding2">
+    <service name="oracle://lcg_coral_nightly/nonexistent" accessMode="update" authentication="password" />
+    <service name="sqlite_file:ral.db" accessMode="update" authentication="password" />
+  </logicalservice>
+
+</servicelist>

@@ -1,0 +1,29 @@
+library lcg_CoralStubs -no_prototypes -no_modules *.cpp
+make_fragment make_header /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/make_header
+make_fragment dependencies /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/dependencies
+make_fragment cleanup_header /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/cleanup_header
+make_fragment protos_header /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/protos_header
+make_fragment buildproto /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/buildproto
+make_fragment dependencies_and_triggers /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/dependencies_and_triggers
+make_fragment java /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/java
+make_fragment java_copy /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/java_copy
+make_fragment cleanup /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/cleanup
+make_fragment cleanup_java /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/cleanup_java
+make_fragment jar_header /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/jar_header
+make_fragment library_header /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/library_header
+make_fragment jar /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/jar
+make_fragment library_no_share /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/library_no_share
+make_fragment library_no_static /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/library_no_static
+make_fragment library /home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71/LCG_Policy/cmt/fragments/library
+make_fragment cleanup_library /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/cleanup_library
+make_fragment fortran_library /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/fortran_library
+make_fragment c_library /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/c_library
+make_fragment cpp_library /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/cpp_library
+make_fragment yacc_library /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/yacc_library
+make_fragment lex_library /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/lex_library
+language fortran -suffix=f -suffix=F -linker=$(flink) -preprocessor_command=$(ppcmd)
+language c -suffix=c -linker=$(clink) -prototypes -dependencies_options=
+language c++ -suffix=C -suffix=cc -suffix=cxx -suffix=cpp -linker=$(cpplink) -fragment=cpp -dependencies_options=
+language java -suffix=java -linker=java
+language yacc -suffix=y -linker=$(clink) -prototypes
+language lex -suffix=l -linker=$(clink) -prototypes

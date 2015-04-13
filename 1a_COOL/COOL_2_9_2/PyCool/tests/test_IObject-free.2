@@ -1,0 +1,154 @@
+Property Catalogue: level[Info] Adding property: OutputLevel = 5 in scope "SEAL/Services/MessageService"
+Property Catalogue: level[Info] Adding property: Format =  "%-36s %-8s %s" in scope "SEAL/Services/MessageService"
+Property Catalogue: level[Info] Adding property: AuthenticationFile =  "/afs/cern.ch/user/a/avalassi/private/authentication.xml" in scope "CORAL/Services/XMLAuthenticationService"
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 6.614s
+
+OK
+
+python (pid=25154 ppid=23442) received fatal signal 6 (Aborted)
+signal context:
+  signo  = 6, errno = 0, code = -6 (*unknown reason*)
+  pid    = 25154, uid = 14546
+  value  = (-1072474126, 0xc01357f2)
+  stack  = (2, 0, (nil))
+
+  eip: 0023:00338eef           eflags: 00000206
+  eax: 00000000   ebx: 00006242   ecx: 00006242   edx: 00000006
+  esi: 00006242   edi: 00446cf8   ebp: bfff8c60   esp: bfff8c50
+   ds: 002b        es: 002b        fs: 0000        ss: 002b
+
+  signal esp: bfff8c50  trap: 0/0  oldmask: 00000000   cr2: 00000000
+
+  FPU:  control = ffff037f
+        status  = ffff0120
+        tag     = ffffffff
+        ip      = 0023:011b090d
+        data    = 002b:0a46bf7c
+        state   = 00000120
+    %fp0 = [3ffe:0000000000008000]
+    %fp1 = [4000:0000000000008000]
+    %fp2 = [3ffe:000000009a009999]
+    %fp3 = [3ffe:e93f221fd022cccc]
+    %fp4 = [3ffd:000000001c00eb85]
+    %fp5 = [400d:000000000000a656]
+    %fp6 = [4001:f85c98d50f48ce54]
+    %fp7 = [4002:000000000000b000]
+
+stack trace:
+ 0x0739c5ec _ZN4seal9DebugAids10stacktraceEi + 0x78 [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealBase.so]
+ 0x073d679a _ZN4seal6Signal9fatalDumpEiP7siginfoPv + 0x200 [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealBase.so]
+ 0x073d5f6d _ZN4seal6Signal5fatalEiP7siginfoPv + 0x1bd [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealBase.so]
+ 0x00fd4f80 ? + 0xfd4f80 [/lib/tls/libpthread.so.0]
+ 0x0033a6f5 abort + 0x1d5 [/lib/tls/libc.so.6]
+ 0x00384b4f ? + 0x384b4f [/lib/tls/libc.so.6]
+ 0x00382215 __libc_free + 0x35 [/lib/tls/libc.so.6]
+ 0x006a5203 _ZdlPv + 0x23 [/usr/lib/libstdc++.so.5]
+ 0x00a735f0 _ZNSt8auto_ptrIN5coral7monitor5Event7PayloadEED1Ev + 0x20 [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_CoralCommon.so]
+ 0x00bf9a4a _ZN5coral7monitor5Event6RecordD1Ev + 0x22 [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bfb17c _ZSt8_DestroyIN5coral7monitor5Event6RecordEEvPT_ + 0x1e [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bfb23d _ZSt13__destroy_auxIPN5coral7monitor5Event6RecordEEvT_S5_12__false_type + 0x29 [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bfaef1 _ZSt8_DestroyIPN5coral7monitor5Event6RecordEEvT_S5_ + 0x27 [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bfa84e _ZNSt6vectorIN5coral7monitor5Event6RecordESaIS3_EED1Ev + 0x26 [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bf9e8e _ZN5coral7monitor14SessionMonitorD1Ev + 0x22 [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bfa08e _ZNSt4pairIKSsN5coral7monitor14SessionMonitorEED1Ev + 0x22 [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bfb524 _ZSt8_DestroyISt4pairIKSsN5coral7monitor14SessionMonitorEEEvPT_ + 0x1e [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bfb462 _ZNSt8_Rb_treeISsSt4pairIKSsN5coral7monitor14SessionMonitorEESt10_Select1stIS5_ESt4lessISsESaIS5_EE12destroy_nodeEPSt13_Rb_tree_nodeIS5_E + 0x22 [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bfb2a7 _ZNSt8_Rb_treeISsSt4pairIKSsN5coral7monitor14SessionMonitorEESt10_Select1stIS5_ESt4lessISsESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E + 0x5b [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bfaf31 _ZNSt8_Rb_treeISsSt4pairIKSsN5coral7monitor14SessionMonitorEESt10_Select1stIS5_ESt4lessISsESaIS5_EE5clearEv + 0x37 [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bfa882 _ZNSt8_Rb_treeISsSt4pairIKSsN5coral7monitor14SessionMonitorEESt10_Select1stIS5_ESt4lessISsESaIS5_EED1Ev + 0x1e [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bf9ec8 _ZNSt3mapISsN5coral7monitor14SessionMonitorESt4lessISsESaISt4pairIKSsS2_EEED1Ev + 0x1e [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bf49d2 _ZN5coral7monitor7ServiceD0Ev + 0x58 [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00bf7496 _ZTv0_n12_N5coral7monitor7ServiceD0Ev + 0x1c [/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so]
+ 0x00b4f88a _ZN4seal10RefCounted5unrefEv + 0x5a [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b4f828 _ZN4seal21intrusive_ptr_releaseEPNS_10RefCountedE + 0x1e [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b4f801 _ZN5boost13intrusive_ptrIN4seal9ComponentEED2Ev + 0x4d [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b4f7a0 _ZN4seal6HandleINS_9ComponentEED1Ev + 0x1e [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b554e4 _ZSt8_DestroyIN4seal6HandleINS0_9ComponentEEEEvPT_ + 0x1e [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b55588 _ZSt13__destroy_auxIN9__gnu_cxx17__normal_iteratorIPN4seal6HandleINS2_9ComponentEEESt6vectorIS5_SaIS5_EEEEEvT_SB_12__false_type + 0x42 [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b54f31 _ZSt8_DestroyIN9__gnu_cxx17__normal_iteratorIPN4seal6HandleINS2_9ComponentEEESt6vectorIS5_SaIS5_EEEEEvT_SB_ + 0x29 [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b54b02 _ZNSt6vectorIN4seal6HandleINS0_9ComponentEEESaIS3_EE5eraseEN9__gnu_cxx17__normal_iteratorIPS3_S5_EES9_ + 0x5c [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b54200 _ZNSt6vectorIN4seal6HandleINS0_9ComponentEEESaIS3_EE5clearEv + 0x4a [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b53b9d _ZN4seal7ContextD0Ev + 0x4d [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b4f88a _ZN4seal10RefCounted5unrefEv + 0x5a [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b4f828 _ZN4seal21intrusive_ptr_releaseEPNS_10RefCountedE + 0x1e [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b606f8 _ZN5boost13intrusive_ptrIN4seal7ContextEED2Ev + 0x28 [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b60594 _ZN4seal6HandleINS_7ContextEED1Ev + 0x1e [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00b5fd5c _ZN4seal7ServiceD2Ev + 0x56 [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so]
+ 0x00ca55ce _ZN4seal11ApplicationD0Ev + 0x5c [/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealServices.so]
+ 0x018007c8 _ZNSt8auto_ptrIN4seal11ApplicationEED1Ev + 0x24 [/afs/cern.ch/sw/lcg/app/releases/COOL/internal/avalassi/COOL_HEAD/slc3_ia32_gcc323_dbg/lib/liblcg_PyCoolDict.so]
+ 0x004b128d _ZN4cool11ApplicationD1Ev + 0x73 [/afs/cern.ch/sw/lcg/app/releases/COOL/internal/avalassi/COOL_HEAD/slc3_ia32_gcc323_dbg/lib/liblcg_CoolApplication.so]
+ 0x004b3456 ? + 0x4b3456 [/afs/cern.ch/sw/lcg/app/releases/COOL/internal/avalassi/COOL_HEAD/slc3_ia32_gcc323_dbg/lib/liblcg_CoolApplication.so]
+ 0x0033b8e3 exit + 0x63 [/lib/tls/libc.so.6]
+ 0x002b4229 ? + 0x2b4229 [/afs/cern.ch/sw/lcg/external/Python/2.4.2/slc3_ia32_gcc323/lib/libpython2.4.so.1.0]
+ 0x002b48cf ? + 0x2b48cf [/afs/cern.ch/sw/lcg/external/Python/2.4.2/slc3_ia32_gcc323/lib/libpython2.4.so.1.0]
+ 0x002b33e9 PyErr_PrintEx + 0x30d [/afs/cern.ch/sw/lcg/external/Python/2.4.2/slc3_ia32_gcc323/lib/libpython2.4.so.1.0]
+ 0x002b30d6 PyErr_Print + 0x1a [/afs/cern.ch/sw/lcg/external/Python/2.4.2/slc3_ia32_gcc323/lib/libpython2.4.so.1.0]
+ 0x002b2f80 PyRun_SimpleFileExFlags + 0x15c [/afs/cern.ch/sw/lcg/external/Python/2.4.2/slc3_ia32_gcc323/lib/libpython2.4.so.1.0]
+ 0x002b2a31 PyRun_AnyFileExFlags + 0x71 [/afs/cern.ch/sw/lcg/external/Python/2.4.2/slc3_ia32_gcc323/lib/libpython2.4.so.1.0]
+ 0x002bb373 Py_Main + 0x5c7 [/afs/cern.ch/sw/lcg/external/Python/2.4.2/slc3_ia32_gcc323/lib/libpython2.4.so.1.0]
+ 0x080486ba main + 0x22 [python]
+ 0x0032679a __libc_start_main + 0xda [/lib/tls/libc.so.6]
+ 0x0804860d Py_Main + 0x31 [python]
+
+shared libraries present:
+ 0x00000000 /afs/cern.ch/sw/lcg/external/Python/2.4.2/slc3_ia32_gcc323/bin/python
+ 0x00209000 /afs/cern.ch/sw/lcg/external/Python/2.4.2/slc3_ia32_gcc323/lib/libpython2.4.so.1.0
+ 0x00fca000 /lib/tls/libpthread.so.0
+ 0x00bc6000 /lib/libdl.so.2
+ 0x00be4000 /lib/libutil.so.1
+ 0x0061b000 /usr/lib/libstdc++.so.5
+ 0x00c0b000 /lib/tls/libm.so.6
+ 0x00111000 /lib/libgcc_s.so.1
+ 0x00311000 /lib/tls/libc.so.6
+ 0x00c64000 /lib/ld-linux.so.2
+ 0x00a1f000 /afs/cern.ch/sw/lcg/external/Python/2.4.2/slc3_ia32_gcc323/lib/python2.4/lib-dynload/time.so
+ 0x001b0000 /afs/cern.ch/sw/lcg/external/Python/2.4.2/slc3_ia32_gcc323/lib/python2.4/lib-dynload/strop.so
+ 0x0011a000 /afs/cern.ch/sw/lcg/external/Python/2.4.2/slc3_ia32_gcc323/lib/python2.4/lib-dynload/readline.so
+ 0x004c7000 /usr/lib/libreadline.so.4
+ 0x00a87000 /usr/lib/libncurses.so.5
+ 0x00d51000 /usr/lib/libgpm.so.1
+ 0x006ce000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libPyROOT.so
+ 0x00fda000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libCore.so
+ 0x04d1e000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libCint.so
+ 0x00d56000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libHist.so
+ 0x01c66000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libGraf.so
+ 0x004f3000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libGraf3d.so
+ 0x00829000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libGpad.so
+ 0x043ab000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libTree.so
+ 0x01ea2000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libMatrix.so
+ 0x00a37000 /lib/libcrypt.so.1
+ 0x00d00000 /lib/libnss_files.so.2
+ 0x0090e000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/cint/stl/vector.dll
+ 0x0011e000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libvectorDict.so
+ 0x00138000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/cint/include/stdfunc.dll
+ 0x00142000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libMinuit.so
+ 0x001b6000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libPostscript.so
+ 0x0044a000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libHtml.so
+ 0x00ac7000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libReflex.so
+ 0x00488000 /afs/cern.ch/sw/lcg/external/root/5.10.00a/slc3_ia32_gcc323/root/lib/libCintex.so
+ 0x01779000 /afs/cern.ch/sw/lcg/app/releases/COOL/internal/avalassi/COOL_HEAD/slc3_ia32_gcc323_dbg/lib/liblcg_PyCoolDict.so
+ 0x07352000 /afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealBase.so
+ 0x005cf000 /afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_CoralBase.so
+ 0x009c6000 /afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_PluginManager.so
+ 0x00b36000 /afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealKernel.so
+ 0x004ac000 /afs/cern.ch/sw/lcg/app/releases/COOL/internal/avalassi/COOL_HEAD/slc3_ia32_gcc323_dbg/lib/liblcg_CoolApplication.so
+ 0x00c7a000 /afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealServices.so
+ 0x001ab000 /afs/cern.ch/sw/lcg/external/uuid/1.38/slc3_ia32_gcc323/lib/libuuid.so.1
+ 0x00606000 /lib/libnsl.so.1
+ 0x004b6000 /afs/cern.ch/sw/lcg/external/pcre/4.4/slc3_ia32_gcc323/lib/libpcre.so.0
+ 0x0466f000 /afs/cern.ch/sw/lcg/app/releases/COOL/internal/avalassi/COOL_HEAD/slc3_ia32_gcc323_dbg/lib/liblcg_RelationalCool.so
+ 0x00b6b000 /afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_RelationalAccess.so
+ 0x00a04000 /afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_8_1/slc3_ia32_gcc323_dbg/lib/liblcg_SealUtil.so
+ 0x06f40000 /afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_ConnectionService.so
+ 0x00a64000 /afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_CoralCommon.so
+ 0x00b91000 /afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_RelationalService.so
+ 0x00bc9000 /afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_XMLAuthenticationService.so
+ 0x01846000 /afs/cern.ch/sw/lcg/external/XercesC/2.7.0/slc3_ia32_gcc323/lib/libxerces-c.so.27
+ 0x00be7000 /afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MonitoringService.so
+ 0x0209a000 /afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_3_0/slc3_ia32_gcc323_dbg/lib/liblcg_coral_MySQLAccess.so
+ 0x0874f000 /afs/cern.ch/sw/lcg/external/mysql/5.0.18/slc3_ia32_gcc323/lib/libmysqlclient.so.15
+ 0x00a24000 /usr/lib/libz.so.1
+ 0x00a16000 /lib/libnss_dns.so.2
+ 0x00c2d000 /lib/libresolv.so.2

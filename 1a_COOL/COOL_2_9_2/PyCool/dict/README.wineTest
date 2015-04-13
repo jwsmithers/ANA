@@ -1,0 +1,68 @@
+1. Building from PyCool/dict executes two commands:
+
+export PYTHONPATH="M:\external\Boost\1.32.0_python242\win32_vc71\lib\python2.4\site-packages;M:\app\releases\SEAL\SEAL_1_7_9\win32_vc71_dbg\lib;M:\app\releases\SEAL\SEAL_1_7_9\win32_vc71_dbg\python;M:\external\root\5.08.00\win32_vc71\root\bin;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\bin;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\lib;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\python;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\bin;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\lib;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\python"; 
+
+wine /afs/cern.ch/sw/lcg/external/Python/2.4.2/win32_vc71/python.exe M:\\app\\releases\\SEAL\\SEAL_1_7_9\\win32_vc71_dbg\\bin\\lcgdict.py M:\\app\\releases\\COOL\\internal\\avalassi\\COOL_HEAD\\src\\PyCool\\dict\\PyCool_headers.h -s M:\\app\\releases\\COOL\\internal\\avalassi\\COOL_HEAD\\src\\PyCool\\dict\\PyCool_selection.xml -o M:\\app\\releases\\COOL\\internal\\avalassi\\COOL_HEAD\\tmp\\win32_vc71_dbg_wine\\src\\PyCool\\dict\\PyCool_headers_dict.cpp --split --reflex --gccxmlpath=M:\\external\\gccxml\\0.6.0_patch3\\win32_vc71\\bin 
+
+-I/afs/cern.ch/sw/lcg/app/releases/COOL/internal/avalassi/COOL_HEAD/src/PyCool -I/afs/cern.ch/sw/lcg/app/releases/COOL/internal/avalassi/COOL_HEAD/src/CoolApplication -I/afs/cern.ch/sw/lcg/app/releases/COOL/internal/avalassi/COOL_HEAD/src/CoolKernel -I/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_7_9/src/Foundation/SealBase -I/win32_vc71_dbg_wine/include -I/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_7_9/src/Foundation/SealPlatform -I/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_2_1/src/CoralBase -I/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_7_9/src/Framework/SealKernel -I/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_7_9/src/Foundation/PluginManager -I/afs/cern.ch/sw/lcg/app/releases/POOL/POOL_2_2_7/src/AttributeList -I/afs/cern.ch/sw/lcg/app/releases/POOL/POOL_2_2_7/src/POOLCore -I/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_7_9/src/Dictionary/Reflection -I/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_7_9/src/Framework/SealServices -I/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_7_9/src/Dictionary/Reflex -I/afs/cern.ch/sw/lcg/external/uuid/1.38/win32_vc71/include -I/afs/cern.ch/sw/lcg/external/Boost/1.32.0_python242/win32_vc71/include/boost-1_32 -I/afs/cern.ch/sw/lcg/external/Python/2.4.2/win32_vc71/include -I/afs/cern.ch/sw/lcg/external/pcre/4.4/win32_vc71/include -I/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_7_9/src -I/afs/cern.ch/sw/lcg/app/releases/SEAL/SEAL_1_7_9/win32_vc71_dbg/include -I/afs/cern.ch/sw/lcg/app/releases/POOL/POOL_2_2_7/src -I/afs/cern.ch/sw/lcg/app/releases/CORAL/CORAL_1_2_1/src -I/opt/avalassi/wine/win32/dosdevices/c:/Program Files/Microsoft Visual Studio .NET 2003/Vc7/include -I/opt/avalassi/wine/win32/dosdevices/c:/Program Files/Microsoft Visual Studio .NET 2003/Vc7/PlatformSDK/Include -D_GNU_SOURCE -DGNU_SOURCE -DWIN32 -D_MBCS -D_WINDOWS -DSEAL_KERNEL_BUILD_ARCHIVE -D_DEBUG -DLCGDICT_STRING
+
+where in the second case I separated the command from the long include path.
+
+2. Build by hand a simplified test case 
+
+Just execute two commands (export and wine)... 
+but first you must be in bash and create a directory tmp.
+
+bash
+
+export PYTHONPATH="M:\external\Boost\1.32.0_python242\win32_vc71\lib\python2.4\site-packages;M:\app\releases\SEAL\SEAL_1_7_9\win32_vc71_dbg\lib;M:\app\releases\SEAL\SEAL_1_7_9\win32_vc71_dbg\python;M:\external\root\5.08.00\win32_vc71\root\bin;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\bin;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\lib;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\python;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\bin;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\lib;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\python"; 
+
+\rm -rf tmp
+mkdir -p tmp
+
+wine /afs/cern.ch/sw/lcg/external/Python/2.4.2/win32_vc71/python.exe M:\\app\\releases\\SEAL\\SEAL_1_7_9\\win32_vc71_dbg\\bin\\lcgdict.py wineTest.h -s wineTest.xml -o tmp/wineTest_dict.cpp --split --reflex --gccxmlpath=M:\\external\\gccxml\\0.6.0_patch3\\win32_vc71\\bin
+
+This hangs on "Parsing file wineTest.h with GCC_XML".
+From another window,
+  ps -xfa | more
+reveals the two processes that are stuck:
+
+18451 pts/4    S      0:00              \_ /opt/avalassi/wine/wine-20050930-install/bin/wine-preloader /opt/avalassi/wine/wine-20050930-install/bin/wine-pthread c:\windows\system32\wcmd.exe /c M:\external\gccxml\0.6.0_patch3\win32_vc71\bin\gccxml wineTest.h -fxml=tmp\wineTest.xml -D__REFLEX__
+
+18452 pts/4    S      0:12                  \_ /opt/avalassi/wine/wine-20050930-install/bin/wine-preloader /opt/avalassi/wine/wine-20050930-install/bin/wine-pthread M:\external\gccxml\0.6.0_patch3\win32_vc71\bin\gccxml wineTest.h -fxml=tmp\wineTest.xml -D__REFLEX__
+
+These are the two typical processes that must be killed to complete the build.
+
+3. Execute gccxml from wine directly
+
+bash
+
+export PYTHONPATH="M:\external\Boost\1.32.0_python242\win32_vc71\lib\python2.4\site-packages;M:\app\releases\SEAL\SEAL_1_7_9\win32_vc71_dbg\lib;M:\app\releases\SEAL\SEAL_1_7_9\win32_vc71_dbg\python;M:\external\root\5.08.00\win32_vc71\root\bin;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\bin;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\lib;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\python;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\bin;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\lib;M:\app\releases\COOL\internal\avalassi\COOL_HEAD\win32_vc71_dbg_wine\python"; 
+
+\rm -rf tmp
+mkdir -p tmp
+
+wine /afs/cern.ch/sw/lcg/external/gccxml/0.6.0_patch3/win32_vc71/bin/gccxml wineTest.h -fxml=tmp/wineTest.xml -D__REFLEX__
+
+This hangs, indeed. It is the simplest example that hangs.
+
+Note that wineTest.xml here is the output of gccxml, not the input 
+to Reflex (and in fact it is in a different temporary directory!)
+
+4. Recipe to kill the processes from another window
+
+a. Wait for "Parsing file" on the build window
+
+b. On the second window, type
+   ps -xfa | grep gccxml | grep -v grep
+Wait until there are only two processes 
+(i.e. until gccxml_cc1plus has finished)
+
+c. On the second window, kill the two processes using
+   kill `ps -xfa | grep gccxml | grep -v grep | awk '{print $1}'`
+
+PS Another possibility could be to replace gccxml by gccxml_cc1plus
+with the correct settings, but these are too long to be all displayed.
+You can get a hint at them by typing
+  wine /afs/cern.ch/sw/lcg/external/gccxml/0.6.0_patch3/win32_vc71/bin/gccxml --print
+Also, it is difficult to pass to wine some options with a lot of ().

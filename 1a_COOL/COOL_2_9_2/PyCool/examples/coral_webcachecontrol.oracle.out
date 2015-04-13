@@ -1,0 +1,39 @@
+Lookup R/W replica
+DEBUG: -> db replica (R/W): oracle://lcg_cool_nightly/lcg_cool
+Lookup R/O replica
+DEBUG: -> db replica (R/O): oracle://lcg_cool_nightly/lcg_cool
+*** 00 ***************************************************************
+Recreate R/W database
+Data source lookup using /afs/cern.ch/user/a/avalassi/myLCG/COOL_HEAD/src/RelationalCool/tests/dblookup.xml file
+Create MV folder
+Store data
+Close R/W database
+Grant public READER privileges
+*** 01 ***************************************************************
+Open R/O database
+Retrieve data
+[0,100[ (0) [i (Int32) : 1] 2008-08-29_08:01:30.432616000 GMT
+<ROOT.boost::shared_ptr<cool::IObject> object at 0x10206b0>
+Close R/W database
+*** 02 ***************************************************************
+Open R/W database
+Store new data
+Retrieve new data
+[10,90[ (0) [i (Int32) : 2] 2008-08-29_08:01:31.222326000 GMT
+<ROOT.boost::shared_ptr<cool::IObject> object at 0xfa73b0>
+Close R/W database
+*** 03 ***************************************************************
+Open R/O database
+Retrieve new data
+[10,90[ (0) [i (Int32) : 2] 2008-08-29_08:01:31.222326000 GMT
+<ROOT.boost::shared_ptr<cool::IObject> object at 0x106e700>
+Close R/O database
+*** 04 ***************************************************************
+Refresh web cache schema info
+Not a Frontier replica: do nothing
+*** 05 ***************************************************************
+Open R/O database
+Retrieve new data
+[10,90[ (0) [i (Int32) : 2] 2008-08-29_08:01:31.222326000 GMT
+<ROOT.boost::shared_ptr<cool::IObject> object at 0xfae940>
+Close R/W database

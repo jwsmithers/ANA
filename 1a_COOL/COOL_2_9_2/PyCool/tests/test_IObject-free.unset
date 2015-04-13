@@ -1,0 +1,11 @@
+Property Catalogue: level[Info] Adding property: OutputLevel = 5 in scope "SEAL/Services/MessageService"
+Property Catalogue: level[Info] Adding property: Format =  "%-36s %-8s %s" in scope "SEAL/Services/MessageService"
+Property Catalogue: level[Info] Adding property: AuthenticationFile =  "/afs/cern.ch/user/a/avalassi/private/authentication.xml" in scope "CORAL/Services/XMLAuthenticationService"
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 4.352s
+
+OK
+free(): invalid pointer 0xb7071b0!
+free(): invalid pointer 0xb6d8848!
+free(): invalid pointer 0xb7117f8!

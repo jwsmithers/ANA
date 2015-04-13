@@ -1,0 +1,3 @@
+include_path none
+macro ROOT_header_file_filter /home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71/LCG_Settings/../../../ROOT/v5-34-21/armv7l-fc21-gcc49-opt/include
+macro ROOT_header_file_stamp /home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71/LCG_Settings/../../../ROOT/v5-34-21/armv7l-fc21-gcc49-opt/include/Type.h

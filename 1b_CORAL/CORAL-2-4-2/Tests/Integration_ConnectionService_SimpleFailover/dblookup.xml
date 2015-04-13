@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<servicelist>
+
+  <!-- CORAL nightly tests (failoverService0 for O/M/S) - START -->
+
+  <logicalservice name="CORAL-Oracle-sftnight/failoverService0">
+    <service name="oracle://lcg_coral_nightly/nonexistent" accessMode="readonly" authentication="password" />
+    <service name="mysql://dbod-coolmyod.cern.ch:5500/LCG_CORAL_NIGHT" accessMode="readonly" authentication="password" />
+    <!--service name="mysql://coralmysql.cern.ch/LCG_CORAL_NIGHT" accessMode="readonly" authentication="password" /-->
+  </logicalservice>
+
+  <logicalservice name="CORAL-MySQL-sftnight/failoverService0">
+    <service name="mysql://dbod-coolmyod.cern.ch:5500/NONEXISTENT" accessMode="readonly" authentication="password" />
+    <!--service name="mysql://coralmysql.cern.ch/NONEXISTENT" accessMode="readonly" authentication="password" /-->
+    <service name="sqlite_file:ral.db" accessMode="readonly" authentication="password" />
+  </logicalservice>
+
+  <logicalservice name="CORAL-SQLite-sftnight/failoverService0">
+    <service name="sqlite_file:nonexistentfolder/nonexistent.db" accessMode="readonly" authentication="password" />
+    <service name="oracle://lcg_coral_nightly/lcg_coral_nightly2" accessMode="readonly" authentication="password" />
+  </logicalservice>
+
+</servicelist>

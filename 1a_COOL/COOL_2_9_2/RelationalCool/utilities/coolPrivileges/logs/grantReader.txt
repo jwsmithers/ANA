@@ -1,0 +1,203 @@
+CoralApplication                     Info     Create a cool::CoralApplication...
+CoralApplication                     Info     Enable the COOL signal handler
+CoralApplication                     Info     Create a new own CORAL connection service
+CoralApplication                     Info     Create the COOL database service
+RalDatabaseSvc                       Info     Instantiate the RalDatabaseSvc
+CoralApplication                     Info     Create a cool::CoralApplication... DONE
+RelationalDatabase                   Debug    Instantiate a RelationalDatabase for 'oracle://lcg_cool_nightly;schema=lcg_cool;dbname=COOLTEST'
+RalSessionMgr                        Info     Instantiate a R/W RalSessionMgr for 'oracle://lcg_cool_nightly;schema=lcg_cool;dbname=COOLTEST'
+RalSessionMgr                        Info     Connect to the database server
+PluginManager                        Info     PluginManager creating CORAL/Services/ConnectionService component
+PluginManager                        Info     PluginMaager needs to load CORAL/Services/ConnectionService component
+PluginManager                        Info     PluginManager loaded ConnectionService library
+CORAL/Services/ConnectionService     Info     Loading default plugin for coral::IRelationalService: CORAL/Services/RelationalService
+PluginManager                        Info     PluginManager creating CORAL/Services/RelationalService component
+PluginManager                        Info     PluginMaager needs to load CORAL/Services/RelationalService component
+PluginManager                        Info     PluginManager loaded RelationalService library
+CORAL/Services/RelationalService     Info     Found plugin for RDBMS technology "coral" with native implementation
+CORAL/Services/RelationalService     Info     Found plugin for RDBMS technology "frontier" with native implementation
+CORAL/Services/RelationalService     Info     Found plugin for RDBMS technology "mysql" with native implementation
+CORAL/Services/RelationalService     Info     Found plugin for RDBMS technology "oracle" with native implementation
+CORAL/Services/RelationalService     Info     Found plugin for RDBMS technology "sqlite" with native implementation
+CORAL/Services/RelationalService     Info     Default implementation for RDBMS technology "coral" is native
+CORAL/Services/RelationalService     Info     Default implementation for RDBMS technology "frontier" is native
+CORAL/Services/RelationalService     Info     Default implementation for RDBMS technology "mysql" is native
+CORAL/Services/RelationalService     Info     Default implementation for RDBMS technology "oracle" is native
+CORAL/Services/RelationalService     Info     Default implementation for RDBMS technology "sqlite" is native
+PluginManager                        Info     PluginManager creating CORAL/RelationalPlugins/oracle component
+PluginManager                        Info     PluginMaager needs to load CORAL/RelationalPlugins/oracle component
+PluginManager                        Info     PluginManager loaded OracleAccess library
+CORAL/Services/ConnectionService     Info     Loading default plugin for coral::IAuthenticationService: CORAL/Services/XMLAuthenticationService
+PluginManager                        Info     PluginManager creating CORAL/Services/XMLAuthenticationService component
+PluginManager                        Info     PluginMaager needs to load CORAL/Services/XMLAuthenticationService component
+PluginManager                        Info     PluginManager loaded XMLAuthenticationService library
+CORAL/Services/XMLAuthenticationS... Info     Authentication using /afs/cern.ch/user/a/avalassi/private/authentication.xml file
+CORAL/Services/ConnectionService     Debug    No valid connection for string "oracle://lcg_cool_nightly/lcg_cool" found in the pool. Creating a new connection.
+CORAL/Services/ConnectionService     Debug    Trying to get a new update session on "oracle://lcg_cool_nightly/lcg_cool"
+CORAL/Services/ConnectionService     Debug    Connection parameters are: Retry-Period=10sec, Retry-Timeout=60sec, Connection-Timeout=0sec.
+CORAL/Services/ConnectionService     Info      Connection to service "lcg_cool_nightly" established. Id=b1e038fa-8418-11dd-a887-001617c3b642
+CORAL/Services/ConnectionService     Info     New session on connection to service "lcg_cool_nightly" started for user "lcg_cool". Connection Id=b1e038fa-8418-11dd-a887-001617c3b642
+CORAL/Services/ConnectionService     Debug     A New connection to service "lcg_cool_nightly" has been added in the active list. Id=b1e038fa-8418-11dd-a887-001617c3b642
+RelationalDatabase                   Info     Instantiate a R/W RalDatabase for 'oracle://lcg_cool_nightly;schema=lcg_cool;dbname=COOLTEST'
+RelationalQueryMgr                   Debug    Instantiate a RelationalQueryMgr
+RelationalQueryMgr                   Debug    Instantiate a RalQueryMgr
+RelationalSequenceMgr                Debug    Instantiate a RelationalSequenceMgr
+RelationalSequenceMgr                Debug    Instantiate a RalSequenceMgr
+RelationalSchemaMgr                  Debug    Instantiate a RelationalSchemaMgr
+RelationalSchemaMgr                  Debug    Instantiate a RalSchemaMgr
+RelationalNodeMgr                    Debug    Instantiate a RelationalNodeMgr
+RelationalTagMgr                     Debug    Instantiate a RelationalTagMgr
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "DB_ATTRIBUTE_NAME", "DB_ATTRIBUTE_VALUE" FROM LCG_COOL."COOLTEST_DB_ATTRIBUTES" "COOLTEST_DB_ATTRIBUTES""
+RelationalQueryMgr                   Debug    Successfully fetched 10 table rows
+RelationalDatabase                   Debug    Release number match: database with CURRENT release number 2.6.0 will be opened using CURRENT client release number 2.6.0
+RalPrivilegeManager                  Debug    Instantiate a RalPrivilegeManager for 'oracle://lcg_cool_nightly;schema=lcg_cool;dbname=COOLTEST'
+GRANT 'READER' privileges to user PUBLIC
+RelationalNodeMgr                    Debug    Fetch all nodes in the database
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" ORDER BY "NODE_FULLPATH" DESC"
+RelationalQueryMgr                   Debug    Successfully fetched 11 table rows
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/UcharSpec/uc
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalFolder                     Debug    Instantiate a RelationalFolder for '/UcharSpec/uc'
+RelationalFolder                     Debug    Delete the RelationalFolder for '/UcharSpec/uc'
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/UcharSpec/uc
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/UcharSpec
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/UcharSpec
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalFolderSet                  Debug    Instantiate a RelationalFolderSet for '/UcharSpec'
+RelationalFolderSet                  Debug    Delete the RelationalFolderSet for '/UcharSpec'
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/SimpleSpec/SV/sv1
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalFolder                     Debug    Instantiate a RelationalFolder for '/SimpleSpec/SV/sv1'
+RelationalFolder                     Debug    Delete the RelationalFolder for '/SimpleSpec/SV/sv1'
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/SimpleSpec/SV/sv1
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/SimpleSpec/SV
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/SimpleSpec/SV
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalFolderSet                  Debug    Instantiate a RelationalFolderSet for '/SimpleSpec/SV'
+RelationalFolderSet                  Debug    Delete the RelationalFolderSet for '/SimpleSpec/SV'
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/SimpleSpec/MV/mv2
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalFolder                     Debug    Instantiate a RelationalFolder for '/SimpleSpec/MV/mv2'
+RelationalFolder                     Debug    Delete the RelationalFolder for '/SimpleSpec/MV/mv2'
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/SimpleSpec/MV/mv2
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/SimpleSpec/MV/mv1
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalFolder                     Debug    Instantiate a RelationalFolder for '/SimpleSpec/MV/mv1'
+RelationalFolder                     Debug    Delete the RelationalFolder for '/SimpleSpec/MV/mv1'
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/SimpleSpec/MV/mv1
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/SimpleSpec/MV
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/SimpleSpec/MV
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalFolderSet                  Debug    Instantiate a RelationalFolderSet for '/SimpleSpec/MV'
+RelationalFolderSet                  Debug    Delete the RelationalFolderSet for '/SimpleSpec/MV'
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/SimpleSpec
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/SimpleSpec
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalFolderSet                  Debug    Instantiate a RelationalFolderSet for '/SimpleSpec'
+RelationalFolderSet                  Debug    Delete the RelationalFolderSet for '/SimpleSpec'
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/ReferenceSpec/ref
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalFolder                     Debug    Instantiate a RelationalFolder for '/ReferenceSpec/ref'
+RelationalFolder                     Debug    Delete the RelationalFolder for '/ReferenceSpec/ref'
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/ReferenceSpec/ref
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/ReferenceSpec
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/ReferenceSpec
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalFolderSet                  Debug    Instantiate a RelationalFolderSet for '/ReferenceSpec'
+RelationalFolderSet                  Debug    Delete the RelationalFolderSet for '/ReferenceSpec'
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalNodeMgr                    Debug    Fetch table row for folder[set] with fullPath=/
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "SELECT "NODE_ID", "NODE_PARENTID", "NODE_NAME", "NODE_FULLPATH", "NODE_DESCRIPTION", "NODE_ISLEAF", "NODE_SCHEMA_VERSION", "NODE_INSTIME", "LASTMOD_DATE", "FOLDER_VERSIONING", "FOLDER_PAYLOADSPEC", "FOLDER_PAYLOAD_INLINE", "FOLDER_PAYLOAD_EXTREF", "FOLDER_CHANNELSPEC", "FOLDER_CHANNEL_EXTREF", "FOLDER_IOVTABLENAME", "FOLDER_TAGTABLENAME", "FOLDER_IOV2TAGTABLENAME", "FOLDER_CHANNELTABLENAME" FROM LCG_COOL."COOLTEST_NODES" "COOLTEST_NODES" WHERE "NODE_FULLPATH"= :"fullName""
+RelationalQueryMgr                   Debug    Successfully fetched 1 table rows
+RelationalFolderSet                  Debug    Instantiate a RelationalFolderSet for '/'
+RelationalFolderSet                  Debug    Delete the RelationalFolderSet for '/'
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_DB_ATTRIBUTES" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_NODES" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_NODES_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_TAGS" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_TAG2TAG" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_TAG2TAG_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_TAGS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_IOVS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0010_IOVS" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0010_IOVS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0010_CHANNELS" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0005_TAGS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0007_IOVS" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0007_IOVS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0007_CHANNELS" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0003_TAGS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0009_IOVS" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0009_IOVS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0009_CHANNELS" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0009_TAGS" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0009_TAGS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0009_IOV2TAG" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0008_IOVS" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0008_IOVS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0008_CHANNELS" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0008_TAGS" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0008_TAGS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0008_IOV2TAG" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0004_TAGS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0002_TAGS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0006_IOVS" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0006_IOVS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0006_CHANNELS" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0001_TAGS_SEQ" TO PUBLIC"
+CORAL/RelationalPlugins/oracle       Debug    Prepared statement : "GRANT SELECT ON LCG_COOL."COOLTEST_F0000_TAGS_SEQ" TO PUBLIC"
+RalPrivilegeManager                  Debug    Delete the RalPrivilegeManager for 'oracle://lcg_cool_nightly;schema=lcg_cool;dbname=COOLTEST'
+RelationalDatabase                   Info     Delete the RalDatabase for 'oracle://lcg_cool_nightly;schema=lcg_cool;dbname=COOLTEST'
+RelationalDatabase                   Debug    Delete the RelationalDatabase for 'oracle://lcg_cool_nightly;schema=lcg_cool;dbname=COOLTEST'
+RelationalTagMgr                     Debug    Delete the RelationalTagMgr
+RelationalNodeMgr                    Debug    Delete the RelationalNodeMgr
+RelationalSchemaMgr                  Debug    Delete the RalSchemaMgr
+RelationalSchemaMgr                  Debug    Delete the RelationalSchemaMgr
+RelationalQueryMgr                   Debug    Delete the RalQueryMgr
+RelationalSequenceMgr                Debug    Delete the RalSequenceMgr
+RelationalSequenceMgr                Debug    Delete the RelationalSequenceMgr
+RalSessionMgr                        Info     Delete the RalSessionMgr for 'oracle://lcg_cool_nightly;schema=lcg_cool;dbname=COOLTEST'
+RalSessionMgr                        Info     Disconnect from the database server
+CORAL/Services/ConnectionService     Debug    Connection id=b1e038fa-8418-11dd-a887-001617c3b642 to service "lcg_cool_nightly" has 0 session(s) opended.
+CORAL/Services/ConnectionService     Debug    The active connection id=b1e038fa-8418-11dd-a887-001617c3b642 to service "lcg_cool_nightly" has been removed from the active list.
+RelationalQueryMgr                   Debug    Delete the RelationalQueryMgr
+CoralApplication                     Info     Delete the COOL CoralApplication...
+CoralApplication                     Info     Delete the COOL database service
+RalDatabaseSvc                       Info     Delete the RalDatabaseSvc...
+RalDatabaseSvc                       Info     Purge the connection pool
+RalDatabaseSvc                       Info     Reset the ICS pointer
+RalDatabaseSvc                       Info     Delete the RalDatabaseSvc... DONE
+CoralApplication                     Info     Delete the CORAL connection service
+CoralApplication                     Info     Delete the COOL CoralApplication... DONE

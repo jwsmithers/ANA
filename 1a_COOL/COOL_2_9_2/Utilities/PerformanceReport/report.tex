@@ -1,0 +1,87 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{a4wide}
+\usepackage{makeidx}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{times}
+\usepackage{titlesec}
+\ifx\pdfoutput\undefined
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue
+           ]{hyperref}
+\usepackage{pspicture}
+\else
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue
+           ]{hyperref}
+\fi
+\usepackage{color}
+\usepackage{xcolor}
+\setlength\fboxsep{1pt} % width of \colorbox
+% See http://tex.stackexchange.com/questions/6143/if-then-else-for-odd-page-even-page-in-latex
+\usepackage{ifthen}
+\makeindex
+\setcounter{tocdepth}{1}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% START - This code from http://xpt.sourceforge.net/techdocs/Latex/LaTexUsage/Latex10.001.html
+\edef\today{\number\day\space
+\ifcase\month\or
+January\or February\or March\or April\or May\or June\or 
+July\or August\or September\or October\or November\or December\fi \space
+\number\year} 
+% END - This code from http://xpt.sourceforge.net/techdocs/Latex/LaTexUsage/Latex10.001.html
+
+\setlength{\textwidth}{180mm} %\paperwidth=210mm => keep 15/15mm r/l margin
+\setlength{\textheight}{280mm} %\paperheight=296mm => keep 8/8mm t/b margin
+\setlength{\voffset}{-17mm} % Shift upper left -25mm (-1in=0,0) + 8mm
+\setlength{\hoffset}{-10mm} % Shift upper left -25mm (-1in=0,0) + 15mm
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{0mm}
+\setlength{\topmargin}{0mm}
+\setlength{\headheight}{0mm} 
+\setlength{\headsep}{0mm}
+\setlength{\footskip}{0mm}
+%\setlength{\baselineskip}{23pt}
+%\setlength{\partopsep}{-2mm}
+%\setlength{\topsep}{0mm}
+%\setlength{\itemsep}{0mm}
+%\setlength{\parsep}{1mm}
+%\flushbottom
+
+\begin{document}
+%\parskip=0.1cm
+
+% Avoid overfull and underfull by disabling text justification
+% See http://en.wikibooks.org/wiki/LaTeX/Formatting
+%\flushleft % Include this in the body file (else it leaves an empty page??)
+% See http://www.tex.ac.uk/cgi-bin/texfaq2html?label=overfull
+%%%\pretolerance=10000
+%%%\tolerance=10000
+%%%\setlength{\emergencystretch}{5em}
+
+%\begin{titlepage}
+%\vspace*{7cm}
+%\begin{center}
+%\end{center}
+%\end{titlepage}
+
+%\pagenumbering{roman}\tableofcontents
+\pagenumbering{arabic}
+
+%\titleformat{\section}[block]{\Large\bfseries\filcenter}{\fbox{\itshape\thesection}}{1em}{\underline}
+%\titleformat{\section}[block]{\Large\bfseries\filcenter}{\thesection.}{1em}{}
+\titleformat{\section}[block]{\Large\bfseries}{\thesection.}{1em}{}
+
+\include{report_body}
+%\include{report_body}
+
+\end{document}

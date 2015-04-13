@@ -1,0 +1,1 @@
+Config_cpp_dependencies =  ../src/Config.cpp   ../src/Config.h  $(bin)lcg_CoralAuthenticationService_deps/Config_cpp.stamp

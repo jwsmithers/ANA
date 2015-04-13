@@ -1,0 +1,610 @@
+Package CoolApplication
+Package managers: Andrea Valassi, Sven A. Schmidt and Marco Clemencic
+
+==============================================================================
+!2008.11.10 - Andrea
+
+Internal doc for tag COOL_2_6_0.
+
+Summary of changes in CoolApplication with respect to COOL_2_6_0-pre6:
+- Change API and implementation to replace 'const int f()' by 'int f()' 
+  and get rid of gcc43 compilation warnings (bug #42584, aka task #8261).
+
+==============================================================================
+!2008.10.21 - Andrea
+
+*** BRANCH RELEASE NOTES ***
+
+Tag COOL_2_4_0b. Rebuild of the 2.4.0a release for the LCG_54h configuration.
+Add support for Oracle on MacOSX. Bug fixes in CORAL and frontier_client.
+No change in the source code. Software version remains "2.4.0".
+
+NB: None of the _code_ changes in COOL_2_4-branch are released in COOL_2_4_0b!
+NB: [there is one minor exception, RelationalCool/tests/RelationalDatabaseId]
+NB: Only the _config_ branch changes are released in COOL_2_4_0b!
+
+==============================================================================
+!2008.10.16 - Andrea
+
+Internal tag COOL_2_6_0-pre5-bis ('2008/10/16 10:00:00').
+
+Changes in CoolApplication with respect to COOL_2_6_0-pre5:
+- Add gcc43 to all .cvsignore files.
+
+==============================================================================
+!2008.09.26 - Andrea
+
+Internal tag COOL_2_6_0-pre5.
+
+No changes in CoolApplication with respect to COOL_2_6_0-pre4:
+
+==============================================================================
+!2008.09.25 - Andrea
+
+Internal tag COOL_2_6_0-pre4.
+
+No changes in CoolApplication with respect to COOL_2_6_0-pre3.
+
+==============================================================================
+!2008.09.11 - Andrea
+
+Internal tag COOL_2_6_0-pre3.
+
+No changes in CoolApplication with respect to COOL_2_6_0-pre2.
+
+==============================================================================
+!2008.09.01 - Andrea
+
+Internal tag COOL_2_6_0-pre2.
+
+Summary of changes in CoolApplication with respect to COOL_2_6_0-pre1:
+- Move IApplication.h and MessageLevels.h to CoolKernel to remove 
+  the cyclic CMT dependency between RelationalCool and CoolApplication.
+- For backward compatibility of the public user API,
+  keep in CoolApplication two files IApplication.h and MessageLevels.h 
+  that simply include the real headers in CoolKernel.
+
+==============================================================================
+!2008.08.27 - Andrea
+
+Internal tag COOL_2_6_0-pre1.
+
+Summary of changes in CoolApplication with respect to COOL_2_5_0:
+- Add cmt/version.cmt to prepare support for the latest CMT version.
+- Remove SCRAM configuration fragments.
+
+==============================================================================
+!2008.06.10 - Andrea
+
+Tag COOL_2_5_0. Production release with API semantic changes, API extensions
+and package structure changes to remove the dependency on SEAL.
+Upgrade to LCG_55 using the 'de-SEALed' CORAL_2_0_0.
+
+Changes in CoolApplication with respect to COOL_2_4_0a:
+- Changes in the public CoolApplication API:
+  > Add a cool::Application constructor from a CORAL connService.
+  > Add cool::IApplication::connectionService() to get the CORAL connService.
+  > Undefine symbol 'ERROR' on Windows (defined in WinUser.h).
+  > Throw an exception in IApplication::context() as there is no SEAL context.
+- Package CoolApplication depends on RelationalCool.
+  > RelationalCool is not a plugin anymore, it is linked (the CoolApplication 
+    library needs class CoralApplication from the RelationalCool library).
+  > RelationalCool however needs a header file from package CoolApplication 
+    (class CoralApplication implements interface IApplication).
+- DatabaseSvcFactory uses a static Application instance (not a pointer).
+
+==============================================================================
+!2008.06.04 - Andrea
+
+*** BRANCH RELEASE NOTES ***
+
+Tag COOL_2_4_0a. Rebuild of the 2.4.0 release for the LCG_54g configuration.
+Port to osx105 and .so shared lib names on MacOSX. Changes in CORAL and ROOT.
+No change in the source code. Software version remains "2.4.0".
+
+NB: None of the _code_ changes in COOL_2_4-branch are released in COOL_2_4_0a!
+NB: Only the (osx105) _config_ branch changes are released in COOL_2_4_0a!
+
+==============================================================================
+!2008.04.09 - Andrea
+
+Modify some of Marco's changes to remove SEAL.
+- In COOL_2_4_0, RalDatabaseSvc could be loaded as a SEAL plugin
+  (either through CoolApplication or directly from a seal Context).
+- In Marco's code, RalDatabaseSvc could be loaded as a Reflex plugin.
+- In the present code, RalDatabaseSvc is linked directly to CoolApplication.
+
+Method IApplication::connectionSvc returns a reference (rather than
+a shared pointer) to the coral::IConnectionService.
+
+Class Application is implemented by instantiating a CoralApplication
+from the RelationalCool library. Class CoralApplication is needed in
+RelationalCool to implement tests and utilities: it cannot be in
+CoolApplication as otherwise there would be a circular dependency.
+
+Remove the dependency on Reflex, add a dependency on RelationalCool
+(also remove the private dependency of RelationalCool on CoolApplication).
+
+Remove class Cool3Application, replaced by CoralApplication in RelationalCool.
+
+Internally replace seal::MessageStream by coral::MessageStream.
+- WARNING: changing message verbosity has no effect yet. 
+- WARNING: retrieving message verbosity is not possible yet. 
+- WARNING: changing or retrieving message verbosity of an individual 
+  cool::IApplication affects all COOL and CORAL applications because 
+  this is implemented in coral::MessageStreams using static methods. 
+
+[Changes relevant to 'de-SEALed' COOL only - not included in COOL_2_4-branch]
+
+==============================================================================
+!2008.04.02 - Andrea
+
+Created a COOL_2_4 branch off COOL_2_4_1-pre1 for the whole of COOL:
+  cvs rtag -r COOL_2_4_1-pre1 -b COOL_2_4-branch cool
+For CoolApplication, COOL_2_4_1-pre1 is the same as COOL_2_4_0.
+
+==============================================================================
+!2008.03.20 - Marco
+
+Add IApplication::connectionSvc returning a boost shared pointer
+to the coral::IConnectionService used in the application.
+
+Add a Cool3Application class implementing cool::IApplication without SEAL.
+This class uses Reflex (via IDatabaseSvc) to load the RalDatabaseService.
+Add a dependency on Reflex (not really needed, also inherited via ColKernel).
+
+Class Application is implemented by instatiating a Cool3Application.
+
+[Changes relevant to 'de-SEALed' COOL only - not included in COOL_2_4-branch]
+
+==============================================================================
+!2008.02.28 - Andrea
+
+Tag COOL_2_4_0. Production release with backward compatible API extensions.
+Upgrade to LCG_54b using CORAL_1_9_5.
+
+==============================================================================
+!2008.02.21 - Andrea
+
+Tag COOL_2_3_1. Bug-fix production release (binary compatible with 2.3.0) 
+with performance optimizations for multi-version retrieval and insertion.
+Upgrade to LCG_54a including bug fixes in ROOT 5.18.00a. 
+
+==============================================================================
+!2008.02.13 - Andrea (-D '2008/02/13 19:30:00')
+
+Internal tag COOL_2_3_1-pre2 (bug fixes and performance optimizations).
+Use the default LCG_54 (including ROOT 5.18) on all platforms.
+
+==============================================================================
+!2008.02.04 - Andrea
+
+Internal tag COOL_2_3_1-pre1 (bug fixes and performance optimizations).
+
+==============================================================================
+!2008.01.21 - Andrea
+
+Tag COOL_2_3_0. Production release with backward compatible API extensions.
+Upgrade to LCG_54 using Python 2.5, ROOT 5.18 and several other new externals.
+
+PyCool is not supported on MacOSX because of bug #32770 in ROOT 5.18.00.
+The COOL nightlies are all green (except for the PyCool tests on MacOSX).
+
+==============================================================================
+!2007.12.19 - Andrea
+
+Internal tag COOL_2_3_0-pre1 (new COOL API extensions on standard LCG_53f).
+All CMT tests successful, bash tests not updated. Software version is 2.3.0.
+
+==============================================================================
+!2007.10.13 - Andrea
+
+Tag COOL_2_2_2. Production release (binary compatible with 2.2.0) with many
+performance and configuration improvements and bug fixes. New versions of 
+CORAL and Frontier server (fixing all pending problems in the tests) and ROOT.
+This is the first COOL release built by the SPI team (and no SCRAM config).
+
+==============================================================================
+!2007.11.13 - Andrea
+
+Disable the SEAL signal handler by default.
+Enable it only if COOL_ENABLE_SEALSIGNALHANDLER is set.
+As agreed with Marco for LHCb and Wim for Atlas.
+
+==============================================================================
+!2007.11.08 - Andrea
+
+Internal tag COOL_2_2_2-pre2 (using private CORAL192 build and SEAL193 copy).
+All CMT tests successful, bash tests not updated. Software version is 2.2.2.
+
+==============================================================================
+!2007.11.07 - Andrea
+
+Internal tag COOL_2_2_2-pre1 (using private CORAL192 build and SEAL193 copy).
+All CMT tests successful (no pending Frontier failures).
+Bash tests not updated (Wine failures are expected).
+
+==============================================================================
+!2007.10.30 - Andrea
+
+Remove old workaround for bug #28037 (CMTEXTRATAGS=SKIP_INSTALL_INCLUDES).
+
+==============================================================================
+!2007.10.30 - Andrea
+
+Added a fake make target "examples" to please nmake (task #5414).
+
+==============================================================================
+!2007.10.29 - Marco
+
+Added a fake make target "tests" to please nmake (task #5414).
+
+==============================================================================
+!2007.10.29 - Andrea
+
+Disable the SEAL signal handler if COOL_DISABLE_SEALSIGNALHANDLER is set.
+As requested by Marco for LHCb at today's COOL meeting.
+
+==============================================================================
+!2007.10.23 - Andrea
+
+Add a few verbose printouts (commented out) for debugging bug #30129.
+
+==============================================================================
+!2007.10.11 - Andrea
+
+Tag COOL_2_2_1. Production release (binary compatible with 2.2.0) with many
+configuration improvements, feature enhancements and bug fixes. New versions 
+of CORAL (with important bug fixes for SQLite and Frontier), ROOT and SEAL.
+This is the first COOL release with support for MacOSX/Intel platforms.
+
+==============================================================================
+!2007.10.09 - Andrea
+
+Drop SEAL package granularity in SCRAM as there is no .SCRAM in SEAL_1_9_3.
+CoolKernel depends on SEAL and adds link libraries SealBase, PluginManager 
+and SealKernel by default. SealUtil and SealServices are added where needed.
+
+==============================================================================
+!2007.10.08 - Andrea
+
+Internal tag COOL_2_2_1-pre5. Last private tag before COOL_2_2_1.
+All CMT/SCRAM tests successful on all platforms using a private CORAL191
+(except for the last pending failure RO_02b1 - bug #23368 in FrontierAccess),
+including MacOSX/PPC (last build) and gcc41 (not built for official COOL221).
+Non-debug osx104_ia32_gcc401 not built, test results copied from debug version.
+
+No changes in CoolApplication code or config.
+
+==============================================================================
+!2007.08.29 - Andrea (-D '2007/08/29 13:30:00')
+
+Internal tag COOL_2_2_1-pre4.
+First version with successful tests of slc4_ia32_gcc41 on SCRAM/BASH,
+including SQLite and Frontier support and complete private config for CMT.
+
+No changes in CoolApplication code or config.
+
+==============================================================================
+!2007.08.24 - Andrea (-D '2007/08/24 17:15:00')
+
+Internal tag COOL_2_2_1-pre3.
+First version with successful tests of MacOSX Intel on both CMT/QMTEST 
+and SCRAM/BASH, including PyCool (but still no Oracle support).
+First version with successful tests of slc4_ia32_gcc41 on SCRAM/BASH
+(but CMT is badly configured, and still no SQLite or Frontier support).
+
+No changes in CoolApplication code or config.
+
+==============================================================================
+!2007.08.07 - Andrea (-D '2007/08/07 16:02:00')
+
+Internal tag COOL_2_2_1-pre2.
+First version with all QMTEST tests as successful as bash tests.
+
+CMT config improvements:
+- New workaround for bug #28037 (install includes on a single platform).
+  In all packages with public headers (CoolKernel and CoolApplication),
+  change the constituents macro so that the installation of includes is
+  skipped in builds using 'cmt make CMTEXTRATAGS=SKIP_INSTALL_INCLUDES'.
+
+No changes in CoolApplication code.
+
+==============================================================================
+!2007.08.02 - Andrea (-D '2007/08/03 14:05:00')
+
+Internal tag COOL_2_2_1-pre1. 
+
+CMT config improvements:
+- Fixes for OSX link warnings.
+
+No changes in CoolApplication code.
+
+==============================================================================
+!2007.07.13 - Andrea
+
+Tag COOL_2_2_0. Production release with many performance optimizations and bug 
+fixes, also including backward-compatible API extensions and schema changes.
+New versions of CMT, CORAL, ROOT/Reflex, oracle, sqlite, frontier_client
+and LFC using LCG_53 (with respect to COOL 2.1.1 using LCG_51).
+
+==============================================================================
+!2007.04.16 - Marco
+
+Tag COOL_2_1_1. Bug-fix production release (binary compatible with 2.1.0).
+New versions of CORAL, ROOT and frontier_client using LCGCMT_51.
+
+==============================================================================
+!2007.03.24 - Andrea
+
+Tag COOL_2_1_0. Production release with backward-compatible API extensions 
+and schema changes. New versions of CORAL and ROOT using LCGCMT_50c.
+
+==============================================================================
+!2007.01.31 - Andrea
+
+Tag COOL_2_0_0. Major production release with backward-incompatible
+API and schema changes. New versions of SEAL, CORAL and frontier_client. 
+
+Summary of main API changes in CoolKernel and CoolApplication:
+- Changes in folder specification, payload specification and payload data API
+  > new StorageType::TypeId enum with associated new typedefs (eg Int64)
+  > new RecordSpecification class
+  > new Record and Field classes with validation of storage constraints
+  > temporary extensions use coral AttributeList for backward compatibility 
+  > new FolderSpecification class accepted by createFolder
+  > treat empty string "" as NULL
+- Stripped API of all SEAL classes
+  > integer type definitions not based on seal::IntBits
+  > new class cool::Time replaces seal::Time.
+  > new SEAL-free API for class cool::Application
+- Changes in the support for user-defined payload fields
+  > added support for BLOB and signed int64 payload data
+  > constraints on numbers and names of user-defined payload fields
+  > added cool::IFolder::renamePayload (to change unsupported payload names)
+  > string payload cannot contain character "\0" (only BLOBs can contain it)
+- Renamed methods and removed default channel arguments in IFolder:
+- Removed obsolete IDatabaseSvc::dropDatabase(dbId,throwIfDoesNotExist)
+- Added the possibility of specifying a CORAL role in the connection string
+- Changed default mode for openDatabase from read/write to read/only
+
+==============================================================================
+!2006.01.18 - Andrea
+
+Get rid of SEAL from the public CoolApplication API.
+
+Hide the SEAL component model behind a COOL-specific simple IApplication 
+interface and Application class. The SEAL-based implementation can be removed 
+(to be replaced by one based on the new CORAL component model) without changing
+the public CoolApplication headers (only the implementation would change).
+
+==============================================================================
+!2007.01.17 - Marco
+
+*** BRANCH RELEASE NOTES ***
+
+Tag COOL_1_3_4. Production release (backward-compatible bug-fix, 
+functionality enhancement and LCG_50 configuration upgrade release). 
+Important fixes in SEAL (component model and multithreading), CORAL and ROOT.
+
+==============================================================================
+!2006.10.30 - Andrea
+
+*** BRANCH RELEASE NOTES ***
+
+Tag COOL_1_3_3c. Rebuild of the 1.3.3 release for the LCG_48 configuration.
+Important fixes in SEAL (component model and multithreading), CORAL and ROOT.
+No change in the source code. Software version remains "1.3.3".
+
+==============================================================================
+!2006.10.16 - Marco
+
+*** BRANCH RELEASE NOTES ***
+
+Tag COOL_1_3_3b. Rebuild of the 1.3.3 release for the LCG_47b configuration.
+New version of ROOT. Pending bugs in SEAL and ROOT. 
+Partial support for MySQL on Windows (pending PyCoolUtilities bug #20780). 
+No change in the source code. Software version remains "1.3.3".
+
+===============================================================================
+!2006.09.29 - Andrea
+
+*** BRANCH RELEASE NOTES ***
+
+Tag COOL_1_3_3a. Rebuild release (bug fixes in CORAL and frontier_client).
+Pending bugs in SEAL, new bugs in ROOT. Same source code as COOL_1_3_3. 
+Only added two Frontier regression tests. Software version remains "1.3.3".
+
+==============================================================================
+!2006.08.28 - Andrea
+
+*** BRANCH RELEASE NOTES ***
+
+Tag COOL_1_3_3. Production release (backward-compatible bug-fix, 
+functionality enhancement and configuration upgrade release).
+Many important fixes in CORAL and Frontier; pending critical bugs in SEAL.
+
+==============================================================================
+!2006.07.25 - Marco
+
+Fixed possible segmentation faults in cool::Application::messageService()
+and cool::Application::databaseService(). API is backward compatible with 
+COOL132 (both methods return a reference, not a pointer or a seal handle).
+
+[Changes included by Marco in COOL_1_3-branch on 2006.07.25]
+
+==============================================================================
+!2006.07.21 - Andrea
+
+Added handler of SEAL PluginManager feedback to cool::Application.
+This will print out warning messages if there are problems loading plugins.
+
+If environment variable COOL_PLUGINMANAGER_DEBUG is set, 
+debug information will be printed about the modules being loaded 
+(otherwise only warnings will be displayed).
+
+[Changes included by Andrea in COOL_1_3-branch on 2006.07.24]
+
+==============================================================================
+!2006.07.12 - Marco
+
+*** BRANCH RELEASE NOTES ***
+
+Tag COOL_1_3_2c. Rebuild of COOL_1_3_2 for the LCG_46 configuration.
+No change in the source code. Software version remains "1.3.2".
+
+==============================================================================
+!2006.07.01 - Andrea
+
+Added seal::IMessageService, seal::RefCounted,
+boost::noncopyable_::noncopyable to the PyCool dictionary.
+
+Added messageService() method to cool::Application in CoolApplication.
+
+This will allow PyCool users to modify the output level from python.
+Added PyCool example messageService.py to show how to do that.
+
+[Changes included by Andrea in COOL_1_3-branch on 2006.07.24]
+
+==============================================================================
+!2006.06.19 - Marco
+
+*** BRANCH RELEASE NOTES ***
+
+Tag COOL_1_3_2b. Rebuild of COOL_1_3_2 for the LCG_45 configuration.
+No change in the source code. Software version remains "1.3.2".
+
+==============================================================================
+!2006.05.14 - Andrea
+
+Tag COOL_1_3_2a. Rebuild of the 1.3.2 release for the LCG_44 configuration.
+
+==============================================================================
+!2006.05.10 - Andrea
+
+Tag COOL_1_3_2. Production release (backward-compatible 
+bug-fix and Frontier support release in the 1.3 series).
+
+==============================================================================
+!2006.04.25 - Andrea, Marco, Sven
+
+Tag COOL_1_3_1. Production release (backward-compatible 
+COOL and CORAL bug-fix release in the 1.3 series).
+
+==============================================================================
+!2006.04.04 - Andrea
+
+Tag COOL_1_3_0. Functionality enhancement production release (first 
+release in the 1.3 series: backward incompatible API and schema changes).
+
+==============================================================================
+!2006.03.08 - Marco
+
+*** BRANCH RELEASE NOTES ***
+
+Tag COOL_1_2_9 (non-HEAD branch after COOL_1_2_8).
+Backward-compatible production release.
+Same code as 1.2.8, but compiled against LCG_42_4.
+
+==============================================================================
+!2006.01.27 - Andrea
+
+Tag COOL_1_2_8. Backward-compatible production release (internal migration 
+from SEAL Reflex to ROOT Reflex; port to gcc344; attempted port to AMD64).
+
+==============================================================================
+!2006.01.16 - Andrea
+
+Tag COOL_1_2_7. Backward-compatible production release
+(internal migration from RAL to CORAL and from Reflection to seal Reflex).
+
+==============================================================================
+!2005.11.15 - Marco
+
+Tag COOL_1_2_6. Production release (backward-compatible 
+SEAL_1_7_6 and POOL_2_2_4 upgrade release in the 1.2 series).
+
+==============================================================================
+!2005.10.24 - Andrea, Marco
+
+Tag COOL_1_2_5. Production release (backward-compatible 
+SEAL_1_7_5 and POOL_2_2_3 upgrade release in the 1.2 series).
+
+Retag COOL_1_2_4 code as COOL_1_2_5. 
+
+==============================================================================
+!2005.09.29 - Andrea, Sven, Marco, David, Uli
+
+Tag COOL_1_2_4. Production release (backward-compatible 
+bug-fix and POOL_2_2_1 upgrade release in the 1.2 series).
+
+==============================================================================
+!2005.08.29 - Andrea, Sven and Marco
+
+Tag COOL_1_2_3. Production release (backward-compatible 
+API enhancement and bug-fix release in the 1.2 series).
+
+==============================================================================
+!2005.07.27 - Andrea and Sven
+
+Tag COOL_1_2_2. Production release (upgrade to SEAL_1_7_1 bug fix release).
+
+==============================================================================
+!2005.07.20 - Andrea and Sven
+
+Tag COOL_1_2_1. Production release (backward-compatible 
+API enhancement and bug-fix release in the 1.2 series).
+
+==============================================================================
+!2005.07.07 - Andrea and Sven
+
+Internal tags for the next production release.
+
+Tag COOL_1_2_1-pre1.
+
+==============================================================================
+!2005.06.28 - Andrea and Sven
+
+Tag COOL_1_2_0. Production release (first release in the 1.2 series).
+
+==============================================================================
+!2005.06.01 - Andrea and Sven
+
+Add new class cool::Application (using, not derived from, seal::Application).
+
+DatabaseSvcFactory now uses cool::Application instead of seal::Application.
+
+==============================================================================
+!2005.05.25 - Andrea and Sven
+
+Tag COOL_1_1_0. Production release (first release in the 1.1 series).
+
+First release including package CoolApplication.
+
+==============================================================================
+!2005.05.18 - Andrea and Sven
+
+New package. 
+
+The purpose of this package is to provide simple tools to bootstrap 
+COOL from standalone applications that are not using SEAL Contexts.
+Applications that are already using SEAL or POOL do NOT need this package.
+
+The classes in this package are provided as a link library, not as a plugin.
+
+The classes in this package are technology-independent.
+
+[NB This package is NOT meant to build a link library of common technology-
+independent code that belongs neither to CoolKernel (pure API package with 
+no library) nor to the technology-specific implementation plugins. 
+Such a package (CoolCommon?) is not foreseen yet.]
+
+[NB This package is NOT meant to contain a technology-independent top-level
+DatabaseSvc responsible for dispatching database service requests to the
+appropriate technology-specific plugins (each containing an IDatabaseSvc).
+Such a package (CoolServices?) would provide a plugin required also by 
+non-standalone applications, hence it does not belong to the CoolApplication
+link library.]
+
+==============================================================================
+

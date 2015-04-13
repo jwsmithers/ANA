@@ -1,0 +1,1 @@
+crc32_cpp_dependencies =  ../src/crc32.cpp   ../src/crc32.h  $(bin)lcg_CoralServerBase_deps/crc32_cpp.stamp

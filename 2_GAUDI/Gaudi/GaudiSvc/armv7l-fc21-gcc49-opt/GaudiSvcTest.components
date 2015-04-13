@@ -1,0 +1,2 @@
+libGaudiSvcTest.so:GaudiSvcTest::CounterTestAlg
+libGaudiSvcTest.so:GaudiSvcTest__CounterTestAlg

@@ -1,0 +1,8 @@
+document python_init GaudiMP_python_init package=GaudiMP
+make_fragment make_header /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/make_header
+make_fragment dependencies /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/dependencies
+make_fragment cleanup_header /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/cleanup_header
+make_fragment python_init -header=python_init_header /home/jwsmith/HDD/Gaudi/GaudiPolicy/cmt/fragments/python_init
+make_fragment python_init_header /home/jwsmith/HDD/Gaudi/GaudiPolicy/cmt/fragments/python_init_header
+make_fragment document_header /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/document_header
+make_fragment dependency /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/dependency

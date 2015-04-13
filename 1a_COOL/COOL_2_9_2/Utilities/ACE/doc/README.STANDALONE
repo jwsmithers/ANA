@@ -1,0 +1,24 @@
+Install and build ACE standalone on lxplus:
+
+  tcsh
+  setenv CMTCONFIG slc4_amd64_gcc34_dbg
+  cd /afs/cern.ch/sw/lcg/app/releases/COOL/COOL_2_3_0/src/config/cmt
+  source CMT_env.csh
+
+  \rm -rf ~/myLCG/ACE
+  mkdir -p ~/myLCG/ACE/src/cmt
+  cd ~/myLCG/ACE/src/cmt
+  echo "project ACE"                      >  project.cmt
+  echo "use LCGCMT LCGCMT_54"             >> project.cmt
+  echo "build_strategy with_installarea"  >> project.cmt
+  echo "setup_strategy no_root no_config" >> project.cmt
+
+  cd ~/myLCG/ACE
+  cvs co ACE
+  cd ~/myLCG/ACE/src/Utilities/ACE/cmt
+  mv requirements.STANDALONE requirements
+  cmt config
+  cmt make 
+  source setup.csh
+  ace
+

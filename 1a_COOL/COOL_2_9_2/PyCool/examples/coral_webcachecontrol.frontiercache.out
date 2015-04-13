@@ -1,0 +1,39 @@
+Lookup R/W replica
+DEBUG: -> db replica (R/W): oracle://lcg_cool_nightly/lcg_cool
+Lookup R/O replica
+DEBUG: -> db replica (R/O): frontier://(serverurl=http://frontier3d:8000/lcg_cool_nightly)(clientcachemaxresultsize=0)(forcereload=short)/lcg_cool
+*** 00 ***************************************************************
+Recreate R/W database
+Data source lookup using /afs/cern.ch/user/a/avalassi/myLCG/COOL_HEAD/src/RelationalCool/tests/dblookup.xml file
+Create MV folder
+Store data
+Close R/W database
+Grant public READER privileges
+*** 01 ***************************************************************
+Open R/O database
+Retrieve data
+[0,100[ (0) [i (Int32) : 1] 2008-08-28_14:52:24.263965000 GMT
+<ROOT.boost::shared_ptr<cool::IObject> object at 0x1079730>
+Close R/W database
+*** 02 ***************************************************************
+Open R/W database
+Store new data
+Retrieve new data
+[10,90[ (0) [i (Int32) : 2] 2008-08-29_08:00:53.220754000 GMT
+<ROOT.boost::shared_ptr<cool::IObject> object at 0xfa6fb0>
+Close R/W database
+*** 03 ***************************************************************
+Open R/O database
+Retrieve new data
+[0,100[ (0) [i (Int32) : 1] 2008-08-28_14:52:24.263965000 GMT
+<ROOT.boost::shared_ptr<cool::IObject> object at 0xf93ee0>
+Close R/O database
+*** 04 ***************************************************************
+Refresh web cache schema info
+Refresh cache for (serverurl=http://frontier3d:8000/lcg_cool_nightly)(clientcachemaxresultsize=0)(forcereload=short)
+*** 05 ***************************************************************
+Open R/O database
+Retrieve new data
+[10,90[ (0) [i (Int32) : 2] 2008-08-29_08:00:53.220754000 GMT
+<ROOT.boost::shared_ptr<cool::IObject> object at 0xfb2010>
+Close R/W database

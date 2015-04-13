@@ -1,0 +1,33 @@
+!-----------------------------------------------------------------------------
+! Package     : GaudiPartProp
+! Responsible : Marco Clemencic
+! Purpose     : Gaudi Particle Property Service
+!-----------------------------------------------------------------------------
+
+============================= GaudiPartProp v2r1 =============================
+! 2014-03-18 - Ben Couturier
+ - Fixed bug #104127: remove hwaf configuration.
+
+============================= GaudiPartProp v2r0 =============================
+! 2013-12-11 - Sebastien Binet
+ - Added hwaf configuration files.
+
+! 2013-07-18 - Marco Clemencic
+ - Removed use of obsolete AlgFactory.h, SvcFactory.h, ToolFactory.h,
+   AudFactory.h and CnvFactory.h.
+
+! 2013-07-17 - Marco Clemencic
+ - Removed factories forward declarations.
+
+============================= GaudiPartProp v1r2 =============================
+! 2012-11-14 - Marco Clemencic
+ - Updated CMakeLists.txt.
+
+============================= GaudiPartProp v1r1 =============================
+! 2012-06-08 - Marco Clemencic
+ - Added CMake configuration files.
+
+============================= GaudiPartProp v1r0 =============================
+! 2011-12-05 - Marco Clemencic
+ - Moved ParticlePropertySvc to a dedicated package and wrapped it in the
+   namespace Gaudi.

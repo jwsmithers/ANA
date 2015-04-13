@@ -1,0 +1,26 @@
+package CoolDBDiscovery
+
+#============================================================================
+# Public dependencies and build rules
+#============================================================================
+
+use CoolKernel v*
+
+#============================================================================
+# Private dependencies and build rules
+#============================================================================
+
+private
+
+apply_pattern lcg_application appname=coolDBDiscovery files=../src/*.cpp category=utilities
+
+# Link the CORAL relational libraries
+apply_tag NEEDS_CORAL_RELATIONAL_ACCESS
+
+# Fake target for tests
+action tests "echo No tests in this package"
+macro_remove cmt_actions_constituents "tests"
+
+# Fake target for examples
+action examples "echo No examples in this package"
+macro_remove cmt_actions_constituents "examples"

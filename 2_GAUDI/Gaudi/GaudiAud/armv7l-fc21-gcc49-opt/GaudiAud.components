@@ -1,0 +1,6 @@
+libGaudiAud.so:AlgContextAuditor
+libGaudiAud.so:AlgErrorAuditor
+libGaudiAud.so:ChronoAuditor
+libGaudiAud.so:MemStatAuditor
+libGaudiAud.so:MemoryAuditor
+libGaudiAud.so:NameAuditor

@@ -1,0 +1,60 @@
+Wed Jun 11 17:57:51.131480799 CEST 2014
+Kill any running instance of coralServerProxy and sleep 1s
+Setup CMT environment using CMT_env.sh
+Configure CMT using AFS
+CMTCONFIG set to 'x86_64-slc6-gcc47-opt'
+CMTROOT set to '/afs/cern.ch/sw/contrib/CMT/v1r20p20090520'
+CMTPATH set to ''
+CMTPROJECTPATH set to '/afs/cern.ch/sw/lcg/releases:/afs/cern.ch/sw/lcg/app/releases'
+CMTUSERCONTEXT set to '/home/avalassi/CORAL/CORAL_ATLAS/src/config/cmt/USERCONTEXT/avalassi'
+CMTINSTALLAREA set to ''
+CMTSITE set to ''
+CMTEXTRATAGS set to ''
+LD_LIBRARY_PATH set to ''
+MANPATH set to '/usr/share/man/overrides:/usr/share/man/en:/usr/share/man:/usr/local/share/man'
+Wed Jun 11 17:57:53.108276662 CEST 2014
+CMTCONFIG is x86_64-slc6-gcc47-opt
+Using LCG:    67b
+Using LCGCMT: /afs/cern.ch/sw/lcg/app/releases/LCGCMT/LCGCMT_67b
+Using Boost:  /afs/cern.ch/sw/lcg/app/releases/LCGCMT/LCGCMT_67b/LCG_Settings/../../../../../external/Boost/1.53.0_python2.7/x86_64-slc6-gcc47-opt
+Using CORAL:  /home/avalassi/CORAL/CORAL_ATLAS/src
+Using ROOT:   
+Using COOL:   
+*******************************************************************
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Spawning the connection manager thread
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Setting up signal handlers
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Waiting for interrupts
+YYYY-MMM-DD hh:mm:ss.nnn [INF] TPCManager: new client connection <socket:5> from 127.0.0.1:nnnnn
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Packet::read <socket:5> - connection closed.
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Packet::read <socket:6> - connection closed.
+YYYY-MMM-DD hh:mm:ss.nnn [INF] ClientConnManager: sending server shutdown packet [Packet type=C op=0 size=0 ID=<0:0#0> data=]
+YYYY-MMM-DD hh:mm:ss.nnn [INF] PacketDispatcher : got shutdown packet, clear queued packets list
+YYYY-MMM-DD hh:mm:ss.nnn [INF] TPCManager: new client connection <socket:7> from 127.0.0.1:nnnnn
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Packet::read <socket:7> - connection closed.
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Packet::read <socket:5> - connection closed.
+YYYY-MMM-DD hh:mm:ss.nnn [INF] ClientConnManager: sending server shutdown packet [Packet type=C op=0 size=0 ID=<0:0#0> data=]
+YYYY-MMM-DD hh:mm:ss.nnn [INF] PacketDispatcher : got shutdown packet, clear queued packets list
+YYYY-MMM-DD hh:mm:ss.nnn [INF] TPCManager: new client connection <socket:6> from 127.0.0.1:nnnnn
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Packet::read <socket:6> - connection closed.
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Packet::read <socket:5> - connection closed.
+YYYY-MMM-DD hh:mm:ss.nnn [INF] ClientConnManager: sending server shutdown packet [Packet type=C op=0 size=0 ID=<0:0#0> data=]
+YYYY-MMM-DD hh:mm:ss.nnn [INF] PacketDispatcher : got shutdown packet, clear queued packets list
+YYYY-MMM-DD hh:mm:ss.nnn [INF] TPCManager: new client connection <socket:7> from 127.0.0.1:nnnnn
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Packet::read <socket:7> - connection closed.
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Packet::read <socket:5> - connection closed.
+YYYY-MMM-DD hh:mm:ss.nnn [INF] ClientConnManager: sending server shutdown packet [Packet type=C op=0 size=0 ID=<0:0#0> data=]
+YYYY-MMM-DD hh:mm:ss.nnn [INF] PacketDispatcher : got shutdown packet, clear queued packets list
+YYYY-MMM-DD hh:mm:ss.nnn [INF] TPCManager: new client connection <socket:6> from 127.0.0.1:nnnnn
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Packet::read <socket:6> - connection closed.
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Packet::read <socket:5> - connection closed.
+YYYY-MMM-DD hh:mm:ss.nnn [INF] ClientConnManager: sending server shutdown packet [Packet type=C op=0 size=0 ID=<0:0#0> data=]
+YYYY-MMM-DD hh:mm:ss.nnn [INF] PacketDispatcher : got shutdown packet, clear queued packets list
+YYYY-MMM-DD hh:mm:ss.nnn [INF] TPCManager: new client connection <socket:7> from 127.0.0.1:nnnnn
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Packet::read <socket:7> - connection closed.
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Packet::read <socket:5> - connection closed.
+YYYY-MMM-DD hh:mm:ss.nnn [INF] ClientConnManager: sending server shutdown packet [Packet type=C op=0 size=0 ID=<0:0#0> data=]
+YYYY-MMM-DD hh:mm:ss.nnn [INF] PacketDispatcher : got shutdown packet, clear queued packets list
+YYYY-MMM-DD hh:mm:ss.nnn [INF] Received interrupt, exiting
+=== TIMER (SPROXY) 0.00user 0.03system 25.14elapsed 0%CPU
+*******************************************************************
+Wed Jun 11 17:58:20.471879787 CEST 2014

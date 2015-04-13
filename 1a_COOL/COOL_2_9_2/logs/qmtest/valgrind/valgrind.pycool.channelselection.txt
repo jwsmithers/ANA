@@ -1,0 +1,191 @@
+==xxxxx== Memcheck, a memory error detector
+==xxxxx== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==xxxxx== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==xxxxx== Command: python /home/avalassi/COOL/COOL_2_8_17/src/../x86_64-slc5-gcc46-dbg/tests/bin/test_ChannelSelection.py
+==xxxxx== Parent PID: xxxxx
+==xxxxx== 
+--xxxxx-- 
+--xxxxx-- Valgrind options:
+--xxxxx--    -v
+--xxxxx--    --leak-check=full
+--xxxxx--    --show-reachable=yes
+--xxxxx--    --error-limit=no
+--xxxxx--    --log-file=/home/avalassi/COOL/COOL_2_8_17/src/logs/qmtest/valgrind/x86_64-slc5-gcc46-dbg/valgrind.pycool.channelselection.txt
+--xxxxx--    --suppressions=/home/avalassi/CORAL/CORAL_2_3_26/src/config/scripts/valgrind.supp
+--xxxxx--    --gen-suppressions=all
+--xxxxx--    --num-callers=50
+--xxxxx--    --track-origins=yes
+--xxxxx-- Contents of /proc/version:
+--xxxxx--   Linux version 2.6.18-308.20.1.el5 (mockbuild@lxdist03) (gcc version 4.1.2 20080704 (Red Hat 4.1.2-52)) #1 SMP Wed Nov 14 10:31:58 CET 2012
+--xxxxx-- Arch and hwcaps: AMD64, amd64-sse3-cx16
+--xxxxx-- Page sizes: currently 4096, max supported 4096
+--xxxxx-- Valgrind library directory: /afs/cern.ch/sw/lcg/external/valgrind/3.7.0p1/x86_64-slc5-gcc46-opt/lib/valgrind
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/external/Python/2.6.5p2/x86_64-slc5-gcc46-opt/bin/python (0x400000)
+--xxxxx-- Reading syms from /afs/cern.ch/sw/lcg/external/valgrind/3.7.0p1/x86_64-slc5-gcc46-opt/lib/valgrind/memcheck-amd64-linux (0x38000000)
+--xxxxx--    object doesn't have a dynamic symbol table
+--xxxxx-- Reading syms from /lib64/ld-2.5.so (0x301c400000)
+--xxxxx-- Reading suppressions file: /home/avalassi/CORAL/CORAL_2_3_26/src/config/scripts/valgrind.supp
+--xxxxx-- Reading suppressions file: /afs/cern.ch/sw/lcg/external/valgrind/3.7.0p1/x86_64-slc5-gcc46-opt/lib/valgrind/default.supp
+==xxxxx== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-xxxxx-by-avalassi-on-lxmrra5001.cern.ch
+==xxxxx== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-xxxxx-by-avalassi-on-lxmrra5001.cern.ch
+==xxxxx== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-xxxxx-by-avalassi-on-lxmrra5001.cern.ch
+==xxxxx== 
+==xxxxx== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==xxxxx== don't want to do, unless you know exactly what you're doing,
+==xxxxx== or are doing some strange experiment):
+==xxxxx==   /afs/cern.ch/sw/lcg/external/valgrind/3.7.0p1/x86_64-slc5-gcc46-opt/lib/valgrind/../../bin/vgdb --pid=xxxxx ...command...
+==xxxxx== 
+==xxxxx== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==xxxxx==   /path/to/gdb python
+==xxxxx== and then give GDB the following command
+==xxxxx==   target remote | /afs/cern.ch/sw/lcg/external/valgrind/3.7.0p1/x86_64-slc5-gcc46-opt/lib/valgrind/../../bin/vgdb --pid=xxxxx
+==xxxxx== --pid is optional if only one valgrind process is running
+==xxxxx== 
+--xxxxx-- REDIR: 0x301c4147a0 (strlen) redirected to 0x380437e7 (vgPlain_amd64_linux_REDIR_FOR_strlen)
+--xxxxx-- Reading syms from /afs/cern.ch/sw/lcg/external/valgrind/3.7.0p1/x86_64-slc5-gcc46-opt/lib/valgrind/vgpreload_core-amd64-linux.so (0x4803000)
+--xxxxx-- Reading syms from /afs/cern.ch/sw/lcg/external/valgrind/3.7.0p1/x86_64-slc5-gcc46-opt/lib/valgrind/vgpreload_memcheck-amd64-linux.so (0x4a05000)
+--xxxxx-- REDIR: 0x301c4145c0 (index) redirected to 0x4a09730 (index)
+--xxxxx-- REDIR: 0x301c414770 (strcmp) redirected to 0x4a0a6f0 (strcmp)
+--xxxxx-- Reading syms from /lib64/libpthread-2.5.so (0x301d800000)
+--xxxxx-- Reading syms from /lib64/libdl-2.5.so (0x301d400000)
+--xxxxx-- Reading syms from /lib64/libutil-2.5.so (0x3027400000)
+--xxxxx-- Reading syms from /lib64/libm-2.5.so (0x301cc00000)
+--xxxxx-- Reading syms from /lib64/libc-2.5.so (0x301c800000)
+--xxxxx-- REDIR: 0x301c87a010 (memset) redirected to 0x4a0bb50 (memset)
+--xxxxx-- REDIR: 0x301c87b450 (memcpy) redirected to 0x4a0aca0 (memcpy)
+--xxxxx-- REDIR: 0x301c879150 (rindex) redirected to 0x4a09520 (rindex)
+--xxxxx-- REDIR: 0x301c878d60 (strlen) redirected to 0x4a09a70 (strlen)
+--xxxxx-- REDIR: 0x301c878fe0 (strncmp) redirected to 0x4a09ed0 (strncmp)
+--xxxxx-- REDIR: 0x301c873ec0 (malloc) redirected to 0x4a091a1 (malloc)
+--xxxxx-- REDIR: 0x301c8759e0 (realloc) redirected to 0x4a09252 (realloc)
+--xxxxx-- REDIR: 0x301c8799d0 (bcmp) redirected to 0x4a0b770 (bcmp)
+--xxxxx-- REDIR: 0x301c875850 (free) redirected to 0x4a084dd (free)
+--xxxxx-- REDIR: 0x301c879520 (strstr) redirected to 0x4a0c270 (strstr)
+--xxxxx-- REDIR: 0x301c879850 (memchr) redirected to 0x4a0a7b0 (memchr)
+--xxxxx-- REDIR: 0x301c87c0b0 (rawmemchr) redirected to 0x4a0beb0 (rawmemchr)
+--xxxxx-- REDIR: 0x301c878630 (index) redirected to 0x4a095f0 (index)
+--xxxxx-- REDIR: 0x301c8790a0 (strncpy) redirected to 0x4a09c50 (strncpy)
+--xxxxx-- REDIR: 0x301c878e50 (strnlen) redirected to 0x4a09a10 (strnlen)
+--xxxxx-- REDIR: 0x301c87ab40 (mempcpy) redirected to 0x4a0bf80 (mempcpy)
+--xxxxx-- REDIR: 0x301c878820 (strcpy) redirected to 0x4a09ab0 (strcpy)
+--xxxxx-- REDIR: 0x301c878470 (strcat) redirected to 0x4a09770 (strcat)
+--xxxxx-- REDIR: 0x301c878f40 (strncat) redirected to 0x4a09930 (strncat)
+--xxxxx-- REDIR: 0x301c8787e0 (strcmp) redirected to 0x4a0a630 (strcmp)
+--xxxxx-- REDIR: 0x301c879e70 (memmove) redirected to 0x4a0bbe0 (memmove)
+--xxxxx-- REDIR: 0x301c87b150 (stpcpy) redirected to 0x4a0b810 (stpcpy)
+--xxxxx-- REDIR: 0x301c87c200 (strchrnul) redirected to 0x4a0be80 (strchrnul)
+--xxxxx-- REDIR: 0x301c873ae0 (calloc) redirected to 0x4a07b9b (calloc)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/external/Python/2.6.5p2/x86_64-slc5-gcc46-opt/lib/python2.6/lib-dynload/time.so (0x85fb000)
+--xxxxx-- REDIR: 0xffffffffff600400 (???) redirected to 0x380437dd (vgPlain_amd64_linux_REDIR_FOR_vtime)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/external/Python/2.6.5p2/x86_64-slc5-gcc46-opt/lib/python2.6/lib-dynload/strop.so (0x8c00000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/app/releases/ROOT/5.34.05/x86_64-slc5-gcc46-dbg/root/lib/libPyROOT.so (0x8e07000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/app/releases/ROOT/5.34.05/x86_64-slc5-gcc46-dbg/root/lib/libRIO.so (0x9117000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/app/releases/ROOT/5.34.05/x86_64-slc5-gcc46-dbg/root/lib/libTree.so (0x95e0000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/app/releases/ROOT/5.34.05/x86_64-slc5-gcc46-dbg/root/lib/libCore.so (0x9a6c000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/app/releases/ROOT/5.34.05/x86_64-slc5-gcc46-dbg/root/lib/libCint.so (0xa5ea000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/external/Python/2.6.5p2/x86_64-slc5-gcc46-opt/lib/libpython2.6.so.1.0 (0xb2c0000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/external/gcc/4.6.2/x86_64-slc5/lib64/libstdc++.so.6.0.16 (0xb67c000)
+--xxxxx--    object doesn't have a symbol table
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/external/gcc/4.6.2/x86_64-slc5/lib64/libgcc_s.so.1 (0xb981000)
+--xxxxx--    object doesn't have a symbol table
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/app/releases/ROOT/5.34.05/x86_64-slc5-gcc46-dbg/root/lib/libThread.so (0xbb96000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/app/releases/ROOT/5.34.05/x86_64-slc5-gcc46-dbg/root/lib/libNet.so (0xbded000)
+--xxxxx-- Reading syms from /lib64/libz.so.1.2.3 (0x301d000000)
+--xxxxx--    object doesn't have a symbol table
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/app/releases/ROOT/5.34.05/x86_64-slc5-gcc46-dbg/root/lib/libMathCore.so (0xc189000)
+--xxxxx-- Reading syms from /lib64/libcrypto.so.0.9.8e (0x3025000000)
+--xxxxx--    object doesn't have a symbol table
+--xxxxx-- Reading syms from /lib64/libssl.so.0.9.8e (0x3027000000)
+--xxxxx--    object doesn't have a symbol table
+--xxxxx-- Reading syms from /usr/lib64/libgssapi_krb5.so.2.2 (0x3025800000)
+--xxxxx--    object doesn't have a symbol table
+--xxxxx-- Reading syms from /usr/lib64/libkrb5.so.3.3 (0x3026400000)
+--xxxxx--    object doesn't have a symbol table
+--xxxxx-- Reading syms from /lib64/libcom_err.so.2.1 (0x3024400000)
+--xxxxx--    object doesn't have a symbol table
+--xxxxx-- Reading syms from /usr/lib64/libk5crypto.so.3.1 (0x3026000000)
+--xxxxx--    object doesn't have a symbol table
+--xxxxx-- Reading syms from /lib64/libresolv-2.5.so (0x3023800000)
+--xxxxx-- Reading syms from /usr/lib64/libkrb5support.so.0.1 (0x3026800000)
+--xxxxx--    object doesn't have a symbol table
+--xxxxx-- Reading syms from /lib64/libkeyutils-1.2.so (0x3026c00000)
+--xxxxx--    object doesn't have a symbol table
+--xxxxx-- Reading syms from /lib64/libselinux.so.1 (0x3020000000)
+--xxxxx--    object doesn't have a symbol table
+--xxxxx-- Reading syms from /lib64/libsepol.so.1 (0x301fc00000)
+--xxxxx--    object doesn't have a symbol table
+--xxxxx-- REDIR: 0x301c87b330 (strncasecmp) redirected to 0x4a0a0d0 (strncasecmp)
+--xxxxx-- REDIR: 0xb733e40 (operator new[](unsigned long)) redirected to 0x4a0884d (operator new[](unsigned long))
+--xxxxx-- REDIR: 0xb733d10 (operator new(unsigned long)) redirected to 0x4a08d37 (operator new(unsigned long))
+--xxxxx-- REDIR: 0xb731fe0 (operator delete(void*)) redirected to 0x4a081ef (operator delete(void*))
+--xxxxx-- REDIR: 0xffffffffff600000 (???) redirected to 0x380437d3 (vgPlain_amd64_linux_REDIR_FOR_vgettimeofday)
+--xxxxx-- REDIR: 0x301c833230 (setenv) redirected to 0x4a0c610 (setenv)
+--xxxxx-- REDIR: 0xb732020 (operator delete[](void*)) redirected to 0x4a07e6b (operator delete[](void*))
+--xxxxx-- REDIR: 0x301c87b2f0 (strcasecmp) redirected to 0x4a09fd0 (strcasecmp)
+--xxxxx-- Reading syms from /lib64/libnss_files-2.5.so (0xc78c000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/app/releases/ROOT/5.34.05/x86_64-slc5-gcc46-dbg/root/lib/libReflex.so (0xe597000)
+--xxxxx-- REDIR: 0x301c4158f0 (stpcpy) redirected to 0x4a0ba80 (stpcpy)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/app/releases/ROOT/5.34.05/x86_64-slc5-gcc46-dbg/root/lib/libCintex.so (0xe8d7000)
+--xxxxx-- Reading syms from /home/avalassi/COOL/COOL_2_8_17/x86_64-slc5-gcc46-dbg/lib/liblcg_PyCoolDict.so (0xeb33000)
+--xxxxx-- Reading syms from /home/avalassi/COOL/COOL_2_8_17/x86_64-slc5-gcc46-dbg/lib/liblcg_CoolApplication.so (0x4c1a000)
+--xxxxx-- Reading syms from /home/avalassi/COOL/COOL_2_8_17/x86_64-slc5-gcc46-dbg/lib/liblcg_RelationalCool.so (0xedab000)
+--xxxxx-- Reading syms from /home/avalassi/COOL/COOL_2_8_17/x86_64-slc5-gcc46-dbg/lib/liblcg_CoolKernel.so (0xefcb000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/external/Boost/1.48.0_python2.6/x86_64-slc5-gcc46-opt/lib/libboost_thread-gcc46-mt-1_48.so.1.48.0 (0xf016000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/external/Boost/1.48.0_python2.6/x86_64-slc5-gcc46-opt/lib/libboost_filesystem-gcc46-mt-1_48.so.1.48.0 (0xf230000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/external/Boost/1.48.0_python2.6/x86_64-slc5-gcc46-opt/lib/libboost_date_time-gcc46-mt-1_48.so.1.48.0 (0xf44e000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/external/Boost/1.48.0_python2.6/x86_64-slc5-gcc46-opt/lib/libboost_system-gcc46-mt-1_48.so.1.48.0 (0xf65e000)
+--xxxxx-- Reading syms from /home/avalassi/CORAL/CORAL_2_3_26/x86_64-slc5-gcc46-dbg/lib/liblcg_CoralBase.so (0xf861000)
+--xxxxx-- Reading syms from /home/avalassi/CORAL/CORAL_2_3_26/x86_64-slc5-gcc46-dbg/lib/liblcg_CoralKernel.so (0xf8db000)
+--xxxxx-- Reading syms from /home/avalassi/CORAL/CORAL_2_3_26/x86_64-slc5-gcc46-dbg/lib/liblcg_RelationalAccess.so (0xf91c000)
+--xxxxx-- Reading syms from /lib64/librt-2.5.so (0x301f000000)
+--xxxxx-- Reading syms from /cvmfs/sft.cern.ch/lcg/app/releases/ROOT/5.34.05/x86_64-slc5-gcc46-dbg/root/lib/libReflexDict.so (0x10845000)
+--xxxxx-- REDIR: 0xb733db0 (operator new(unsigned long, std::nothrow_t const&)) redirected to 0x4a08ba4 (operator new(unsigned long, std::nothrow_t const&))
+--xxxxx-- REDIR: 0xb732000 (operator delete(void*, std::nothrow_t const&)) redirected to 0x4a080c3 (operator delete(void*, std::nothrow_t const&))
+--xxxxx-- Discarding syms at 0xc78dfe0-0xc794268 in /lib64/libnss_files-2.5.so due to munmap()
+==xxxxx== 
+==xxxxx== HEAP SUMMARY:
+==xxxxx==     in use at exit: 12,345,179 bytes in 103,543 blocks
+==xxxxx==   total heap usage: 432,188 allocs, 328,645 frees, 36,798,728 bytes allocated
+==xxxxx== 
+==xxxxx== Searching for pointers to 103,543 not-freed blocks
+==xxxxx== Checked 20,968,056 bytes
+==xxxxx== 
+==xxxxx== LEAK SUMMARY:
+==xxxxx==    definitely lost: 0 bytes in 0 blocks
+==xxxxx==    indirectly lost: 0 bytes in 0 blocks
+==xxxxx==      possibly lost: 0 bytes in 0 blocks
+==xxxxx==    still reachable: 0 bytes in 0 blocks
+==xxxxx==         suppressed: 12,345,179 bytes in 103,543 blocks
+==xxxxx== 
+==xxxxx== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1609 from 523)
+--xxxxx-- 
+--xxxxx-- used_suppression:   1169 <ROOT_PyImport_PyROOT_LEAK>
+--xxxxx-- used_suppression:     86 <ROOT_libPyROOT_new_LEAK>
+--xxxxx-- used_suppression:     45 <python26_Py_malloc_LEAK>
+--xxxxx-- used_suppression:    104 <python26_Py_dictresize_malloc_LEAK>
+--xxxxx-- used_suppression:   2568 <ROOT_libCore_new_LEAK>
+--xxxxx-- used_suppression:   2046 <ROOT_libReflex_new_LEAK>
+--xxxxx-- used_suppression:   6125 <ROOT_libCint_new_LEAK>
+--xxxxx-- used_suppression:    741 <python26_PyImport_dlopen_LEAK>
+--xxxxx-- used_suppression:   1306 <python26_PyImport_malloc_LEAK>
+--xxxxx-- used_suppression:    282 <python26_PyObject_GC_Malloc_malloc_LEAK>
+--xxxxx-- used_suppression:  16988 <ROOT_libCint_alloc_LEAK>
+--xxxxx-- used_suppression:      1 <python26_Py_PyInit_malloc_LEAK>
+--xxxxx-- used_suppression:      1 <python26_Py_calculatepath_malloc_LEAK>
+--xxxxx-- used_suppression:      1 <python26_Py_realloc_malloc_LEAK>
+--xxxxx-- used_suppression:     37 <python26_add_subclass_LEAK>
+--xxxxx-- used_suppression:      1 <python26__Py_realloc_LEAK>
+--xxxxx-- used_suppression:      1 <python26_PyStringResize_LEAK>
+--xxxxx-- used_suppression:      5 <ROOT_libCore_new_LEAK3>
+--xxxxx-- used_suppression:      3 <ROOT_libPyROOT_new_LEAK4>
+--xxxxx-- used_suppression:     25 <ROOT_libCore_new_LEAK1>
+--xxxxx-- used_suppression:      1 <python26_Py_strdup_malloc_LEAK>
+--xxxxx-- used_suppression:   1066 <python26_PyObject_Free_addr4>
+--xxxxx-- used_suppression:     23 <python26_PyObject_Free_val8>
+--xxxxx-- used_suppression:     23 <python26_PyObject_Free_cond>
+--xxxxx-- used_suppression:     21 <python26_PyObject_Realloc_addr4>
+--xxxxx-- used_suppression:      3 <python26_PyObject_Realloc_val8>
+--xxxxx-- used_suppression:      3 <python26_PyObject_Realloc_cond>
+--xxxxx-- used_suppression:     70 dl-hack3
+==xxxxx== 
+==xxxxx== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 1609 from 523)
