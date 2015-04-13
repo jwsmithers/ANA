@@ -285,36 +285,6 @@ set(CMT_make_cmd
        ${CMAKE_MAKE_PROGRAM} -i -f ${CMAKE_SOURCE_DIR}/cmake/utils/Makefile-cmt.mk
                              -C <SOURCE_DIR>
                              CMT=${CMTROOT}/${CMAKE_SYSTEM_NAME}-${CMAKE_SYSTEM_PROCESSOR}/cmt)
-#---CORAL----------------------------------------------------------------------------------------------
-if(LCG_TARGET MATCHES "armv7l")
-  set(Coral_dependents cmt LCGCMT Boost CppUnit sqlite XercesC mysql QMtest tcmalloc Frontier_Client Python)
-else()
-  set(Coral_dependents cmt LCGCMT Boost CppUnit sqlite XercesC oracle mysql QMtest tcmalloc Frontier_Client Python)
-endif()
-LCGPackage_add(
-  CORAL
-  #SVN_REPOSITORY http://svn.cern.ch/guest/lcgcoral/coral/tags/${CORAL_native_version} --quiet
-  #SVN_REPOSITORY http://jwsmith@svn.cern.ch/reps/atlas-jwsmith/CORAL/trunk CORAL_2_4_4 --quiet
-  UPDATE_COMMAND <VOID>
-  CONFIGURE_COMMAND <VOID>
-  BUILD_COMMAND     ${CMT_make_cmd}
-  INSTALL_COMMAND ${CMAKE_COMMAND} -E copy_directory <SOURCE_DIR>/../${LCG_system} <INSTALL_DIR>
-          COMMAND ${CMAKE_COMMAND} -E copy_directory <SOURCE_DIR>/../include <INSTALL_DIR>/../include
-  DEPENDS ${Coral_dependents}
-)
-
-#---COOL-----------------------------------------------------------------------------------------------
-LCGPackage_add(
-  COOL
-  #SVN_REPOSITORY http://svn.cern.ch/guest/lcgcool/cool/tags/${COOL_native_version} --quiet
-  #SVN_REPOSITORY http://jwsmith@svn.cern.ch/reps/atlas-jwsmith/COOL/trunk COOL_2_9_4 --quiet
-  UPDATE_COMMAND <VOID>
-  CONFIGURE_COMMAND <VOID>
-  BUILD_COMMAND     ${CMT_make_cmd}
-  INSTALL_COMMAND ${CMAKE_COMMAND} -E copy_directory <SOURCE_DIR>/../${LCG_system} <INSTALL_DIR>
-          COMMAND ${CMAKE_COMMAND} -E copy_directory <SOURCE_DIR>/../include <INSTALL_DIR>/../include
-  DEPENDS LCGCMT CORAL ROOT
-)
 
 
 #---GaudiDeps------------------------------------------------------------------------------------------
