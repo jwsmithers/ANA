@@ -1,5 +1,4 @@
 #!/bin/sh
-CMTCONFIG=armv7l-fc21-gcc49-opt
-buildDir=`pwd`
-cmake -DCMAKE_INSTALL_PREFIX=$buildDir/../lcgcmake_install-$CMTCONFIG-71 $buildDir/../Lcgcmake
+LCGbuildDir=`pwd`
+cmake -DCMAKE_INSTALL_PREFIX=$LCGbuildDir/../lcgcmake_install-$CMTCONFIG-$LCGCMT_VERS $LCGbuildDir/../Lcgcmake
 make -j4 -k
