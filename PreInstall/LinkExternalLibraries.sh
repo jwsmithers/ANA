@@ -5,6 +5,19 @@ ln -s $ROOTDIR/CORAL/$CMTCONFIG/lib/* $TopDir/DetCommon/DetCommon-$VERSION/Insta
 ln -s $LCG_install/Boost/1.55.0_python2.7/$CMTCONFIG/lib/* $TopDir/DetCommon/DetCommon-$VERSION/InstallArea/$CMTCONFIG/lib/
 
 #AtlasCore
+ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/InstallArea/$CMTCONFIG/lib/libeformat* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/ 
+ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/eformat/eformat $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
+
+ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/InstallArea/$CMTCONFIG/lib/libcompression.so $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
+ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/compression/compression $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
+
+ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/InstallArea/$CMTCONFIG/lib/libers.so $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
+ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/ers/ers $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
+
+ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/InstallArea/$CMTCONFIG/lib/libData* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
+
+ln -s $ROOTDIR/COOL/$CMTCONFIG/lib/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
+
 ln -s $LCG_install/pytools/1.8_python2.7/share/sources/pyxml/xml $TopDir/AtlasCore/AtlasCore-$VERSION/TestPolicy/python
 
 ln -s $LCG_install/ROOT/5.34.24/$CMTCONFIG/lib/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/

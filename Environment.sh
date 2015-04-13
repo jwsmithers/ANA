@@ -27,6 +27,7 @@ export GaudiDir=$ROOTDIR/Gaudi
 
 #Java
 export CPLUS_INCLUDE_PATH=/usr/lib/jvm/$JAVAVERS/include:/usr/lib/jvm/$JAVAVERS/include/linux:$CPLUS_INCLUDE_PATH
+
 #gcc-xml-plugin
 #tbb
 export CPLUS_INCLUDE_PATH=$LCG_install/tbb/42_20140122/$CMTCONFIG/include:$CPLUS_INCLUDE_PATH
@@ -34,5 +35,7 @@ export CPLUS_INCLUDE_PATH=$LCG_install/tbb/42_20140122/$CMTCONFIG/include:$CPLUS
 #Geant4
 export CPLUS_INCLUDE_PATH=$ROOTDIR/geant4_install/include/Geant4:$CPLUS_INCLUDE_PATH
 
-# Remember to set the LHAPDF_DATA_PATH when trying to run generators.
-export LHAPDF_DATA_PATH=$TopDir/../Testing/AtlasOffline:$LHAPDF_DATA_PATH 
+
+# Qt4
+export QMAKESPEC=/usr/lib/qt4/mkspecs/linux-arm-gnueabi-g++
+
