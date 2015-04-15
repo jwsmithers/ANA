@@ -17,17 +17,17 @@
 #   use LCG_Settings v*  (no_version_directory)
 #
 # Selection :
-use CMT v1r26p20140131 (/home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt)
-use LCG_Platforms v1  (/home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71)
-use LCG_Configuration v1  (/home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71)
-use LCG_Settings v1  (/home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71)
-use CppUnit v1 LCG_Interfaces (/home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71) (no_auto_imports)
-use Python v1 LCG_Interfaces (/home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71) (no_auto_imports)
-use Boost v1 LCG_Interfaces (/home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71)
-use LCG_Policy v1  (/home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71)
-use CoralBase CoralBase-1-9-0  (/home/jwsmith/HDD/CORAL/CORAL-2-4-2)
-use RelationalAccess RelationalAccess-1-8-1  (/home/jwsmith/HDD/CORAL/CORAL-2-4-2)
-use CoralKernel CoralKernel-0-0-5  (/home/jwsmith/HDD/CORAL/CORAL-2-4-2)
+use CMT v1r26p20140131 (/home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt)
+use LCG_Platforms v1  (/home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT/LCGCMT_71)
+use LCG_Configuration v1  (/home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT/LCGCMT_71)
+use LCG_Settings v1  (/home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT/LCGCMT_71)
+use CppUnit v1 LCG_Interfaces (/home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT/LCGCMT_71) (no_auto_imports)
+use Python v1 LCG_Interfaces (/home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT/LCGCMT_71) (no_auto_imports)
+use Boost v1 LCG_Interfaces (/home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT/LCGCMT_71)
+use LCG_Policy v1  (/home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT/LCGCMT_71)
+use CoralBase CoralBase-1-9-0  (/home/jwsmith/HDD/ANA/ANA/1a_CORAL/CORAL-2-4-2)
+use RelationalAccess RelationalAccess-1-8-1  (/home/jwsmith/HDD/ANA/ANA/1a_CORAL/CORAL-2-4-2)
+use CoralKernel CoralKernel-0-0-5  (/home/jwsmith/HDD/ANA/ANA/1a_CORAL/CORAL-2-4-2)
 ----------> tags
 armv7l-fc21-gcc49-opt (from CMTCONFIG) package [LCG_Platforms] implies [target-armv7l target-fc21 target-gcc49 target-opt]
 CMTv1 (from CMTVERSION)
@@ -50,26 +50,25 @@ LCGCMT_prototypes (from PROJECT) excludes [LCGCMT_no_prototypes]
 LCGCMT_without_installarea (from PROJECT) excludes [LCGCMT_with_installarea]
 LCGCMT_without_version_directory (from PROJECT) excludes [LCGCMT_with_version_directory]
 CORAL (from PROJECT)
-jwsmith_no_config (from PROJECT) excludes [jwsmith_config]
-jwsmith_no_root (from PROJECT) excludes [jwsmith_root]
-jwsmith_cleanup (from PROJECT) excludes [jwsmith_no_cleanup]
-jwsmith_scripts (from PROJECT) excludes [jwsmith_no_scripts]
-jwsmith_prototypes (from PROJECT) excludes [jwsmith_no_prototypes]
-jwsmith_with_installarea (from PROJECT) excludes [jwsmith_without_installarea]
-jwsmith_without_version_directory (from PROJECT) excludes [jwsmith_with_version_directory]
-jwsmith (from PROJECT)
-lcgcmake-install-gcc49_no_config (from PROJECT) excludes [lcgcmake-install-gcc49_config]
-lcgcmake-install-gcc49_no_root (from PROJECT) excludes [lcgcmake-install-gcc49_root]
-lcgcmake-install-gcc49_cleanup (from PROJECT) excludes [lcgcmake-install-gcc49_no_cleanup]
-lcgcmake-install-gcc49_scripts (from PROJECT) excludes [lcgcmake-install-gcc49_no_scripts]
-lcgcmake-install-gcc49_prototypes (from PROJECT) excludes [lcgcmake-install-gcc49_no_prototypes]
-lcgcmake-install-gcc49_without_installarea (from PROJECT) excludes [lcgcmake-install-gcc49_with_installarea]
-lcgcmake-install-gcc49_without_version_directory (from PROJECT) excludes [lcgcmake-install-gcc49_with_version_directory]
+ANA_no_config (from PROJECT) excludes [ANA_config]
+ANA_no_root (from PROJECT) excludes [ANA_root]
+ANA_cleanup (from PROJECT) excludes [ANA_no_cleanup]
+ANA_scripts (from PROJECT) excludes [ANA_no_scripts]
+ANA_prototypes (from PROJECT) excludes [ANA_no_prototypes]
+ANA_with_installarea (from PROJECT) excludes [ANA_without_installarea]
+ANA_without_version_directory (from PROJECT) excludes [ANA_with_version_directory]
+ANA (from PROJECT)
+lcgcmake_install-armv7l-fc21-gcc49-opt-71_no_config (from PROJECT) excludes [lcgcmake_install-armv7l-fc21-gcc49-opt-71_config]
+lcgcmake_install-armv7l-fc21-gcc49-opt-71_no_root (from PROJECT) excludes [lcgcmake_install-armv7l-fc21-gcc49-opt-71_root]
+lcgcmake_install-armv7l-fc21-gcc49-opt-71_cleanup (from PROJECT) excludes [lcgcmake_install-armv7l-fc21-gcc49-opt-71_no_cleanup]
+lcgcmake_install-armv7l-fc21-gcc49-opt-71_scripts (from PROJECT) excludes [lcgcmake_install-armv7l-fc21-gcc49-opt-71_no_scripts]
+lcgcmake_install-armv7l-fc21-gcc49-opt-71_prototypes (from PROJECT) excludes [lcgcmake_install-armv7l-fc21-gcc49-opt-71_no_prototypes]
+lcgcmake_install-armv7l-fc21-gcc49-opt-71_without_installarea (from PROJECT) excludes [lcgcmake_install-armv7l-fc21-gcc49-opt-71_with_installarea]
+lcgcmake_install-armv7l-fc21-gcc49-opt-71_without_version_directory (from PROJECT) excludes [lcgcmake_install-armv7l-fc21-gcc49-opt-71_with_version_directory]
 armv7l (from package CMT) applied [CMT]
 fedora21 (from package CMT) applied [CMT]
 gcc492 (from package CMT) package [LCG_Platforms] implies [host-gcc49] applied [CMT]
 Unix (from package CMT) package [LCG_Platforms] implies [host-unix] excludes [WIN32 Win32]
-experimental (from package LCG_Settings) activated LCG_Platforms
 target-unix (from package LCG_Settings) activated LCG_Platforms
 target-gcc49 (from package LCG_Settings) package [LCG_Platforms] implies [target-gcc4 target-lcg-compiler lcg-compiler target-c11 experimental] activated LCG_Platforms
 target-gcc (from package LCG_Settings) activated LCG_Platforms
@@ -84,10 +83,11 @@ host-unix (from package LCG_Platforms)
 target-armv7l (from package LCG_Platforms)
 target-fc21 (from package LCG_Platforms) package [LCG_Platforms] implies [target-linux]
 lcg-compiler (from package LCG_Platforms)
+experimental (from package LCG_Platforms)
 ROOT_GE_5_15 (from package LCG_Configuration) applied [LCG_Configuration]
 ROOT_GE_5_19 (from package LCG_Configuration) applied [LCG_Configuration]
 ----------> CMTPATH
-# Add path /home/jwsmith/HDD from initialization
-# Add path /home/jwsmith/HDD/CORAL/CORAL-2-4-2 from initialization
-# Add path /home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT from initialization
-# Add path /home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71 from ProjectPath
+# Add path /home/jwsmith/HDD/ANA/ANA from initialization
+# Add path /home/jwsmith/HDD/ANA/ANA/1a_CORAL/CORAL-2-4-2 from initialization
+# Add path /home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT from initialization
+# Add path /home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT/LCGCMT_71 from ProjectPath
