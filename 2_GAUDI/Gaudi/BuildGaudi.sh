@@ -11,7 +11,8 @@ export CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:${f}
 export CMTPROJECTPATH=${CMTPROJECTPATH}:${f}
 done
 
-cd cmake/toolchain/ ; ./make_heptools.py $LCG_install/LCGCMT/LCGCMT-$LCGCMT_VERS | tee heptools-$LCGCMT_VERS.cmake
+#need absolute path
+cd cmake/toolchain/ ; ./make_heptools.py /home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT/LCGCMT_71 | tee heptools-71.cmake
 cd $GaudiDir
 
 make -f Makefile-cmake.mk configure | tee configure.log
