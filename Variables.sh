@@ -9,7 +9,7 @@ export CMAKECONFIG=armv7l-fc21-gcc49-opt
 export LCGCMT_VERS=71
 
 ##LCG
-export LCG_install=$ROOTDIR/1_LCGSoftware/lcgcmake_install-$CMTCONFIG-LCGCMT_VERS
+export LCG_install=$ROOTDIR/1_LCGSoftware/lcgcmake_install-$CMTCONFIG-$LCGCMT_VERS
 ##CORAL
 export CORALDir=$ROOTDIR/1a_CORAL/CORAL-2-4-2
 ##COOL

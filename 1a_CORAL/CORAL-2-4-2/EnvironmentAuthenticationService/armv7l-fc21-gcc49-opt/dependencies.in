@@ -1,3 +1,0 @@
-include_path none
-macro Boost_header_file_filter /home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71/LCG_Settings/../../../Boost/1.55.0_python2.7/armv7l-fc21-gcc49-opt/include/boost-1_55
-macro Boost_header_file_stamp /home/jwsmith/HDD/lcgcmake-install-gcc49/LCGCMT/LCGCMT_71/LCG_Settings/../../../Boost/1.55.0_python2.7/armv7l-fc21-gcc49-opt/include/boost-1_55/boost/any.hpp
