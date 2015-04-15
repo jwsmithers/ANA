@@ -3,7 +3,7 @@
 #====================================
 #  Document install_tmpdict
 #
-#   Generated Tue Mar 31 09:54:57 2015  by jwsmith
+#   Generated Wed Apr 15 17:02:17 2015  by jwsmith
 #
 #====================================
 
@@ -107,7 +107,7 @@ install_tmpdict :: $(install_tmpdictactionstamp)
 
 #$(install_tmpdictactionstamp) :: $(install_tmpdict_dependencies)
 $(install_tmpdictactionstamp) ::
-	$(silent) mkdir -p /home/jwsmith/HDD/COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/tmp; cp -rf ../armv7l-fc21-gcc49-opt/dict /home/jwsmith/HDD/COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/tmp/.
+	$(silent) mkdir -p /home/jwsmith/HDD/ANA/ANA/1b_COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/tmp; cp -rf ../armv7l-fc21-gcc49-opt/dict /home/jwsmith/HDD/ANA/ANA/1b_COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/tmp/.
 	$(silent) cat /dev/null > $(install_tmpdictactionstamp)
 #	@echo ok > $(install_tmpdictactionstamp)
 
@@ -118,7 +118,7 @@ else
 
 #install_tmpdict :: $(install_tmpdict_dependencies)
 install_tmpdict ::
-	$(silent) mkdir -p /home/jwsmith/HDD/COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/tmp; cp -rf ../armv7l-fc21-gcc49-opt/dict /home/jwsmith/HDD/COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/tmp/.
+	$(silent) mkdir -p /home/jwsmith/HDD/ANA/ANA/1b_COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/tmp; cp -rf ../armv7l-fc21-gcc49-opt/dict /home/jwsmith/HDD/ANA/ANA/1b_COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/tmp/.
 
 endif
 
