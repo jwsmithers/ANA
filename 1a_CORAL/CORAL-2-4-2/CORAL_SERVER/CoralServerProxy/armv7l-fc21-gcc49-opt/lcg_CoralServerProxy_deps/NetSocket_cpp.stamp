@@ -1,1 +1,0 @@
-NetSocket_cpp_dependencies =  ../src/NetSocket.cpp   ../src/NetSocket.h   ../src/NetAddress.h   ../src/NetEndpointAddress.h  $(bin)lcg_CoralServerProxy_deps/NetSocket_cpp.stamp

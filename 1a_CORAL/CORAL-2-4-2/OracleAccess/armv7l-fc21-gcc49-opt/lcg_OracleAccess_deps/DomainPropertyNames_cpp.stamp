@@ -1,1 +1,0 @@
-DomainPropertyNames_cpp_dependencies =  ../src/DomainPropertyNames.cpp   ../src/DomainPropertyNames.h  $(bin)lcg_OracleAccess_deps/DomainPropertyNames_cpp.stamp

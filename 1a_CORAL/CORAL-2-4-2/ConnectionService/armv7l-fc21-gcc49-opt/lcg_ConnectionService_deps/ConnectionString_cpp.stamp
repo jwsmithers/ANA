@@ -1,1 +1,0 @@
-ConnectionString_cpp_dependencies =  ../src/ConnectionString.cpp   ../src/ConnectionString.h  $(bin)lcg_ConnectionService_deps/ConnectionString_cpp.stamp

@@ -1,6 +1,0 @@
-libGaudiGoogleProfiling.so:Google::CPUProfiler
-libGaudiGoogleProfiling.so:Google::HeapChecker
-libGaudiGoogleProfiling.so:Google::HeapProfiler
-libGaudiGoogleProfiling.so:Google__CPUProfiler
-libGaudiGoogleProfiling.so:Google__HeapChecker
-libGaudiGoogleProfiling.so:Google__HeapProfiler

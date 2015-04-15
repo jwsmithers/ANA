@@ -1,1 +1,0 @@
-DummyByteBufferIterator_cpp_dependencies =  ../src/DummyByteBufferIterator.cpp   /home/jwsmith/HDD/CORAL/CORAL-2-4-2/CORAL_SERVER/CoralServerBase/CoralServerBase/ByteBuffer.h   /home/jwsmith/HDD/CORAL/CORAL-2-4-2/CORAL_SERVER/CoralServerBase/CoralServerBase/IByteBufferIterator.h   ../src/DummyByteBufferIterator.h  $(bin)lcg_CoralStubs_deps/DummyByteBufferIterator_cpp.stamp

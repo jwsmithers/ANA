@@ -1,1 +1,0 @@
-dosmap_cpp_dependencies =  ../src/dosmap.cpp   ../src/cruntime.h   ../src/oscalls.h   ../src/internal.h   ../src/mtdll.h  $(bin)lcg_MySQLAccess_deps/dosmap_cpp.stamp

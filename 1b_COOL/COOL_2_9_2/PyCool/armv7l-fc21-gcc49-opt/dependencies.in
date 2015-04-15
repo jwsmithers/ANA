@@ -1,5 +1,0 @@
-include_path none
-macro ROOT_header_file_filter /home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT/LCGCMT_71/LCG_Settings/../../../ROOT/5.34.24/armv7l-fc21-gcc49-opt/include
-macro ROOT_header_file_stamp /home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT/LCGCMT_71/LCG_Settings/../../../ROOT/5.34.24/armv7l-fc21-gcc49-opt/include/Type.h
-macro Boost_header_file_filter /home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT/LCGCMT_71/LCG_Settings/../../../Boost/1.55.0_python2.7/armv7l-fc21-gcc49-opt/include/boost-1_55
-macro Boost_header_file_stamp /home/jwsmith/HDD/ANA/ANA/1_LCGSoftware/lcgcmake_install-armv7l-fc21-gcc49-opt-71/LCGCMT/LCGCMT_71/LCG_Settings/../../../Boost/1.55.0_python2.7/armv7l-fc21-gcc49-opt/include/boost-1_55/boost/any.hpp

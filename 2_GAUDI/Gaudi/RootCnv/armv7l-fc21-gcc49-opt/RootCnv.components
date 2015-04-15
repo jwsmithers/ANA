@@ -1,6 +1,0 @@
-libRootCnv.so:Gaudi::RootCnvSvc
-libRootCnv.so:Gaudi::RootEvtSelector
-libRootCnv.so:Gaudi::RootPerfMonSvc
-libRootCnv.so:Gaudi__RootCnvSvc
-libRootCnv.so:Gaudi__RootEvtSelector
-libRootCnv.so:Gaudi__RootPerfMonSvc

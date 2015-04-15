@@ -1,1 +1,0 @@
-NetAddress_cpp_dependencies =  ../src/NetAddress.cpp   ../src/NetAddress.h  $(bin)lcg_CoralServerProxy_deps/NetAddress_cpp.stamp

@@ -1,6 +1,0 @@
-libGaudiGSL.so:EqSolver
-libGaudiGSL.so:FuncMinimum
-libGaudiGSL.so:GslErrorCount
-libGaudiGSL.so:GslErrorException
-libGaudiGSL.so:GslErrorPrint
-libGaudiGSL.so:GslSvc

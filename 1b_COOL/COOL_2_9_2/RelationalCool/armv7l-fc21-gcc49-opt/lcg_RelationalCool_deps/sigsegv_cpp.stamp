@@ -1,1 +1,0 @@
-sigsegv_cpp_dependencies =  ../src/sigsegv.cpp  $(bin)lcg_RelationalCool_deps/sigsegv_cpp.stamp

@@ -1,8 +1,0 @@
-document merge_genconfDb GaudiMPConfDbMerge ../armv7l-fc21-gcc49-opt/libGaudiMP.so inDir=/home/jwsmith/HDD/Gaudi/GaudiMP/armv7l-fc21-gcc49-opt/genConf/GaudiMP library=GaudiMP merge_genconfDb_switch=--do-merge
-make_fragment make_header /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/make_header
-make_fragment dependencies /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/dependencies
-make_fragment cleanup_header /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/cleanup_header
-make_fragment merge_genconfDb -header=merge_genconfDb_header /home/jwsmith/HDD/Gaudi/GaudiPolicy/cmt/fragments/merge_genconfDb
-make_fragment merge_genconfDb_header /home/jwsmith/HDD/Gaudi/GaudiPolicy/cmt/fragments/merge_genconfDb_header
-make_fragment document_header /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/document_header
-make_fragment dependency /home/jwsmith/HDD/lcgcmake-install-gcc49/cmt/v1r26p20140131/armv7l-fc21-gcc49-opt/CMT/v1r26p20140131/mgr/fragments/dependency
