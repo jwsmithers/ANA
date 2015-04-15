@@ -3,7 +3,7 @@
 #====================================
 #  Document install_scripts
 #
-#   Generated Tue Mar 31 09:54:25 2015  by jwsmith
+#   Generated Wed Apr 15 16:56:51 2015  by jwsmith
 #
 #====================================
 
@@ -107,7 +107,7 @@ install_scripts :: $(install_scriptsactionstamp)
 
 #$(install_scriptsactionstamp) :: $(install_scripts_dependencies)
 $(install_scriptsactionstamp) ::
-	$(silent) mkdir -p /home/jwsmith/HDD/COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/bin; cp -rf ../scripts/*.* /home/jwsmith/HDD/COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/bin/.; cp -rf ../scripts/sql /home/jwsmith/HDD/COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/bin/.
+	$(silent) mkdir -p /home/jwsmith/HDD/ANA/ANA/1b_COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/bin; cp -rf ../scripts/*.* /home/jwsmith/HDD/ANA/ANA/1b_COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/bin/.; cp -rf ../scripts/sql /home/jwsmith/HDD/ANA/ANA/1b_COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/bin/.
 	$(silent) cat /dev/null > $(install_scriptsactionstamp)
 #	@echo ok > $(install_scriptsactionstamp)
 
@@ -118,7 +118,7 @@ else
 
 #install_scripts :: $(install_scripts_dependencies)
 install_scripts ::
-	$(silent) mkdir -p /home/jwsmith/HDD/COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/bin; cp -rf ../scripts/*.* /home/jwsmith/HDD/COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/bin/.; cp -rf ../scripts/sql /home/jwsmith/HDD/COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/bin/.
+	$(silent) mkdir -p /home/jwsmith/HDD/ANA/ANA/1b_COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/bin; cp -rf ../scripts/*.* /home/jwsmith/HDD/ANA/ANA/1b_COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/bin/.; cp -rf ../scripts/sql /home/jwsmith/HDD/ANA/ANA/1b_COOL/COOL_2_9_2/../armv7l-fc21-gcc49-opt/bin/.
 
 endif
 

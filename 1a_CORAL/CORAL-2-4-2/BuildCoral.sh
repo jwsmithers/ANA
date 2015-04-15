@@ -21,8 +21,8 @@ export CPLUS_INCLUDE_PATH=$LCG_install/Python/2.7.6/$CMTCONFIG/include/python2.7
 #export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:${f}/include
 #done
 
-echo "setting up your path variables... > CMTCONFIG, SVNROOT, CMTINSTALLAREA, CMTPROJECTPATH, CMTPATH, CPLUS_INCLUDE_PATH"
-echo "Appending to your curent paths... > LD_LIBRARY_PATH, PATH"
+echo "setting up your path variables..."
+echo "Appending to your curent paths..."
 
 cd ./config/cmt
 cmt config
