@@ -18,3 +18,5 @@ export COOLDir=$ROOTDIR/1b_COOL/COOL_2_9_2
 export COOL_include=$COOLDir/../$CMTCONFIG/include
 ##Gaudi
 export GaudiDir=$ROOTDIR/2_GAUDI/Gaudi
+
+export SW_Extras=$ROOTDIR/sw_extras

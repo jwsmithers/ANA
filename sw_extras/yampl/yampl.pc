@@ -1,4 +1,4 @@
-prefix=/home/jwsmith/HDD/AtlasOfflineBuild-framework/PreInstall/yampl-install
+prefix=/home/jwsmith/HDD/ANA/ANA/sw_extras/yampl_install
 includedir=${prefix}/include
 libdir=${prefix}/lib
 

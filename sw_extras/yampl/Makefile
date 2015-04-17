@@ -14,7 +14,7 @@ LIBYAMPL = libyampl.so
 LIBZMQ = ./zeromq/src/.libs/libzmq.a
 EXAMPLES = examples
 TESTS = tests
-PREFIX = /home/jwsmith/HDD/AtlasOfflineBuild-framework/PreInstall/yampl-install
+PREFIX = /home/jwsmith/HDD/ANA/ANA/sw_extras/yampl_install
 TAGS = tags
 
 all: $(LIBZMQ) $(LIBYAMPL) $(EXAMPLES) $(TESTS) $(TAGS)
