@@ -29,9 +29,11 @@ uname -v = #1 SMP Mon Dec 8 23:46:50 UTC 2014
 
 PATH: /usr/lib/ccache
 PATH: /usr/local/bin
+PATH: /bin
 PATH: /usr/bin
 PATH: /usr/local/sbin
 PATH: /usr/sbin
+PATH: /sbin
 PATH: /home/jwsmith/.local/bin
 PATH: /home/jwsmith/bin
 
@@ -53,7 +55,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 configure:2329: $? = 0
 configure:2318: g++ -v >&5
 Using built-in specs.
-COLLECT_GCC=/usr/bin/g++
+COLLECT_GCC=/bin/g++
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/armv7hl-redhat-linux-gnueabi/4.9.2/lto-wrapper
 Target: armv7hl-redhat-linux-gnueabi
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.9.2-20150212/obj-armv7hl-redhat-linux-gnueabi/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.9.2-20150212/obj-armv7hl-redhat-linux-gnueabi/cloog-install --enable-gnu-indirect-function --disable-sjlj-exceptions --with-cpu=cortex-a8 --with-tune=cortex-a8 --with-arch=armv7-a --with-float=hard --with-fpu=vfpv3-d16 --with-abi=aapcs-linux --build=armv7hl-redhat-linux-gnueabi
@@ -111,7 +113,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 configure:3028: $? = 0
 configure:3017: gcc -v >&5
 Using built-in specs.
-COLLECT_GCC=/usr/bin/gcc
+COLLECT_GCC=/bin/gcc
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/armv7hl-redhat-linux-gnueabi/4.9.2/lto-wrapper
 Target: armv7hl-redhat-linux-gnueabi
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.9.2-20150212/obj-armv7hl-redhat-linux-gnueabi/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.9.2-20150212/obj-armv7hl-redhat-linux-gnueabi/cloog-install --enable-gnu-indirect-function --disable-sjlj-exceptions --with-cpu=cortex-a8 --with-tune=cortex-a8 --with-arch=armv7-a --with-float=hard --with-fpu=vfpv3-d16 --with-abi=aapcs-linux --build=armv7hl-redhat-linux-gnueabi
@@ -199,9 +201,9 @@ configure: failed program was:
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
 configure:3552: checking for grep that handles long lines and -e
-configure:3610: result: /usr/bin/grep
+configure:3610: result: /bin/grep
 configure:3615: checking for egrep
-configure:3677: result: /usr/bin/grep -E
+configure:3677: result: /bin/grep -E
 configure:3682: checking for ANSI C header files
 configure:3702: gcc -c -g -O2  conftest.c >&5
 configure:3702: $? = 0
@@ -895,8 +897,8 @@ ac_cv_lib_pthread_pthread_create=yes
 ac_cv_lib_rt_clock_gettime=yes
 ac_cv_lib_uuid_uuid_unparse=yes
 ac_cv_objext=o
-ac_cv_path_EGREP='/usr/bin/grep -E'
-ac_cv_path_GREP=/usr/bin/grep
+ac_cv_path_EGREP='/bin/grep -E'
+ac_cv_path_GREP=/bin/grep
 ac_cv_prog_CPP='gcc -E'
 ac_cv_prog_ac_ct_CC=gcc
 ac_cv_prog_ac_ct_CXX=g++
@@ -923,9 +925,9 @@ DEFS='-DHAVE_CONFIG_H'
 ECHO_C=''
 ECHO_N='-n'
 ECHO_T=''
-EGREP='/usr/bin/grep -E'
+EGREP='/bin/grep -E'
 EXEEXT=''
-GREP='/usr/bin/grep'
+GREP='/bin/grep'
 LDFLAGS=''
 LIBOBJS=''
 LIBS='-luuid -lrt -lpthread '

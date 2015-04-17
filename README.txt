@@ -16,6 +16,7 @@ There is an order that must be followed to build everything. This is:
 1a_CORAL
 1b_COOL
 2_Gaudi
+sw_extras
 3_ANA
 
 Make sure that SVN is set it up so that no password is required to check out packages from svn.cern.ch.
