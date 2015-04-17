@@ -8,6 +8,11 @@ readline=readline-6.2.4.1
 cd $SW_Extras
 tar -xvf ${eigen}.tar.gz
 mv eigen-eigen-10219c95fe65 eigen
+mkdir eigen_build
+mkdir eigen_install
+cd eigen_build
+cmake -DCMAKE_INSTALL_PREFIX=../eigen_install ../eigen
+make install
 
 ## Python Install
 cd $SW_Extras

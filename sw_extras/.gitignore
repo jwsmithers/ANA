@@ -1,4 +1,6 @@
 eigen
+eigen_build
+eigen_install
 readline
 geant4
 geant4_build
