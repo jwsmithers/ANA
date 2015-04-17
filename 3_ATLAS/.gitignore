@@ -18,9 +18,6 @@ Testing/
 
 nicos_content20.1.0.html
 
-PreInstall/yampl-install
-
-PreInstall/readline-6.2.4.1/
 WhatToBuild.txt
 logs/StdError.log
 logs/StdOut.log

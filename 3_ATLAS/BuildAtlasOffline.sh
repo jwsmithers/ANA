@@ -100,7 +100,7 @@ else
 	echo "Not checking out packages."
 fi
 goHome && cd ../
-#return 1
+return 1
 ################################################################################################################################
 ### Create the extra environment scripts in each directory ##
 source ./scripts/CreateEnvironments.sh
