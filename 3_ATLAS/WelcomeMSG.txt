@@ -56,13 +56,11 @@
                +'''++++++++''';;''+;;   
                   .:;'++++++''::.`      
                                         
-ATLAS Nightly on ARM - v1.0
+ATLAS Nightly on ARM - v2.0
 
-Welcome, this will set up the build environment for an entire AtlasBuild.
-This assumes you have already built LCG and Gaudi packages separately in Gaudi_install and LCG_install.
-Please set the environment variables in Environment.sh
+This will build the entire ATLAS software stack on ARM (or even just locally)
 
-Now grab a cup of coffee or 300. This could take a while.
+Grab a cup of coffee or 300. This could take a while.
 
 Joshua Wyatt Smith
 joshua.wyatt.smith@cern.ch
