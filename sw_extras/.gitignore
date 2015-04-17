@@ -1,5 +1,6 @@
 eigen
 readline
+geant4
 geant4_build
 geant4_install
 setuptools
