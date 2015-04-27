@@ -5,7 +5,7 @@
  include_dirs none
  
 -macro AtlasTBB_linkopts "-ltbb"
-+macro AtlasTBB_linkopts "-ltbb -L/home/jwsmith/HDD/lcgcmake-install-gcc49/tbb/42_20140122/armv7l-fc21-gcc49-opt/lib"
++macro AtlasTBB_linkopts "-ltbb -L$(LCG_install)/tbb/42_20140122/$(CMTCONFIG)/lib"
  
  private
  

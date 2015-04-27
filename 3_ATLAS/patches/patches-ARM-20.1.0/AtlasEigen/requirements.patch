@@ -5,7 +5,7 @@
  
  include_path none
 -macro AtlasEigen_include $(AtlasEigen_cmtpath)/InstallArea/$(CMTCONFIG)/include
-+macro AtlasEigen_include /home/jwsmith/HDD/eigen-local
++macro AtlasEigen_include $(SW_Extras)/eigen_install/include
  apply_pattern include_path extras=$(AtlasEigen_include)
  
  apply_pattern set_root_include_path

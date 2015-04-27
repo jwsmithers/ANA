@@ -6,6 +6,6 @@
  use CLIDSvc        CLIDSvc-*           Control
 -application testIdCont ID_ContainerTest.cxx
 +application testIdCont ../IDTest/ID_ContainerTest.cxx
-+macro_append testIdContlinkopts " -lGaudiKernel -L/home/jwsmith/HDD/Gaudi/InstallArea/armv7l-fc21-gcc49-opt/lib"
++macro_append testIdContlinkopts " -lGaudiKernel -L$(GaudiDir)/InstallArea/$(CMTCONFIG)/lib"
  macro_append testIdCont_dependencies           " install_includes"
 +

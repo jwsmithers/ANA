@@ -13,7 +13,7 @@ export TopDir=$ROOTDIR/3_ATLAS/InstallArea
 #export AntVersion=1.9.4
 
 #Java
-export JAVAVERS=java-1.8.0-openjdk-1.8.0.25-4.b18.fc21.arm
+export JAVAVERS=java-1.8.0-openjdk-1.8.0.40-25.b25.fc21.arm
 export CPLUS_INCLUDE_PATH=/usr/lib/jvm/$JAVAVERS/include:/usr/lib/jvm/$JAVAVERS/include/linux:$CPLUS_INCLUDE_PATH
 
 #gcc-xml-plugin
