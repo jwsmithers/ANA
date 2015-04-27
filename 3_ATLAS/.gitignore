@@ -17,6 +17,8 @@ SVN/
 Testing/
 
 nicos_content20.1.0.html
+TEMP*
+ATLAS*
 
 WhatToBuild.txt
 logs/StdError.log
