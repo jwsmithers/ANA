@@ -1,4 +1,4 @@
 !lcgcmake_build-armv7l-fc21-gcc49-opt-71/YumPackages.sh
-!lcgcmake_install-armv7l-fc21-gcc49-opt-71/BuildLCG
+!lcgcmake_build-armv7l-fc21-gcc49-opt-71/BuildLCG.sh
 lcgcmake_install-armv7l-fc21-gcc49-opt-71
 lcgcmake_build-armv7l-fc21-gcc49-opt-71
