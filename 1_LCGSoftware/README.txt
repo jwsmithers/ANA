@@ -1,4 +1,4 @@
 To build the LCG software, do
->> source YumPackages.sh
+>> source Packages.sh
 >> source BuildLCG.sh
 

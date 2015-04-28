@@ -7,8 +7,8 @@ export ROOTDIR=/home/jwsmith/HDD/ANA/ANA
 export CMTCONFIG=armv7l-fc21-gcc49-opt
 export CMAKECONFIG=armv7l-fc21-gcc49-opt
 export LCGCMT_VERS=71root6
-export CORAL_VERS=-3_0_3
-export COOL_VERS=-3_0_3
+export CORAL_VERS=CORAL_3_0_3
+export COOL_VERS=COOL_3_0_3
 
 
 ##LCG
