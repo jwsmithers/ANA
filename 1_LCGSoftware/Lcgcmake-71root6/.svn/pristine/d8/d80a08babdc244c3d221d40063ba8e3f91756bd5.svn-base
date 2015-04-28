@@ -1,0 +1,3 @@
+SWIG_AUTHOR_VERSION=$(echo $SWIG_VERSION | sed 's@\([0-9]*\)\.\([0-9]*\)\.\([0-9]*\).*@\1.\2.\3@')
+export AGILE_GEN_PATH=${AGILE_HOME}/../../..
+export SWIG_LIB=${SWIG_HOME}/share/swig/${SWIG_AUTHOR_VERSION}

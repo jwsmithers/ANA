@@ -1,0 +1,79 @@
+--- JHUGenerator/genps.c.orig	2013-11-11 09:21:57.000000000 +0100
++++ JHUGenerator/genps.c	2013-11-11 09:22:37.000000000 +0100
+@@ -7,12 +7,12 @@
+ #define EMCON_PREC 1e-13
+ 
+ 
+-inline double lsp(double *Mom1, double *Mom2){
++double lsp(double *Mom1, double *Mom2){
+    return Mom1[0]*Mom2[0] - Mom1[1]*Mom2[1] - Mom1[2]*Mom2[2] - Mom1[3]*Mom2[3];
+ };
+ 
+ 
+-inline void swapmom_(double *Mom1, double *Mom2){
++void swapmom_(double *Mom1, double *Mom2){
+ double tmp[4];
+ 
+    tmp[0]=Mom1[0];
+@@ -31,7 +31,7 @@
+    Mom2[3]=tmp[3];
+ };
+ 
+-inline void swapdbl_(double *r1, double *r2){
++void swapdbl_(double *r1, double *r2){
+ double tmp;
+ 
+    tmp=(*r1);
+--- JHUGenerator/makefile.orig	2013-09-04 18:09:12.000000000 +0200
++++ JHUGenerator/makefile	2013-09-04 18:53:38.000000000 +0200
+@@ -1,21 +1,20 @@
+-Here = $(PWD)
+-ModuleDir = $(Here)/modules
+-ObjectDir = $(Here)/objects
+-PDFDir = $(Here)/pdfs
+-VegasDir = $(Here)/vegas
++ModuleDir = modules
++ObjectDir = objects
++PDFDir = pdfs
++VegasDir = vegas
+ 
+-# compiler options, Comp=ifort/gfort
++# compiler options, Comp=ifort [default] / gfortran
+ Opt  = Yes
+-Comp = ifort
++Comp?= ifort
+ 
+ 
+ 
+-ifeq ($(Comp),gfort)
++ifeq ($(Comp),gfortran)
+  ifeq ($(Opt),Yes)
+     OptOpts  = -O3
+  else
+     OptOpts  = -O0
+  endif
+- fcomp = f95 $(OptOpts) -ffree-line-length-none -I$(VegasDir) -J$(ModuleDir) -Dcompiler=2
++ fcomp = gfortran $(OptOpts) -ffree-line-length-none -I$(VegasDir) -J$(ModuleDir) -Dcompiler=2
+ endif
+ 
+--- JHUGenME/makefile.orig	2013-06-18 15:36:49.000000000 +0200
++++ JHUGenME/makefile	2015-02-14 12:23:14.538116477 +0100
+@@ -1,14 +1,14 @@
+-Comp = gfort
++Comp?= gfortran
+ 
+ ifeq ($(Comp),ifort)
+ fcomp = ifort -fpp -O2 -vec-report0 -Dcompiler=1
+ # fcomp = ifort -fpp -O0 -vec-report0 -Dcompiler=1
+ endif
+-ifeq ($(Comp),gfort)
+-fcomp = f95 -O3 -ffree-line-length-none -Dcompiler=2
++ifeq ($(Comp),gfortran)
++fcomp = gfortran -O3 -ffree-line-length-none -Dcompiler=2
+ endif
+ 
+-ccomp = gcc
++ccomp = gcc -Wl,--no-as-needed
+ 
+ 
+ 

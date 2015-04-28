@@ -1,0 +1,102 @@
+--- examples-C++/pythia/pythia_test.cc.orig	2013-10-17 14:18:33.000000000 +0200
++++ examples-C++/pythia/pythia_test.cc	2013-10-17 14:20:14.000000000 +0200
+@@ -17,7 +17,7 @@
+ 
+ using namespace Pythia8; 
+ 
+-int NumberOfEvents = 10000;
++int NumberOfEvents = 2000;
+ 
+ int main() {
+ 
+--- examples-C++/pythia/pythia_test.cc.orig	2013-11-12 19:17:43.000000000 +0100
++++ examples-C++/pythia/pythia_test.cc	2013-11-12 19:19:58.000000000 +0100
+@@ -4,8 +4,13 @@
+ 
+ 
+ //pythia header files
+-#include "Pythia.h"
+-#include "HepMCInterface.h"
++#if PYTHIA8_VERSION >= 180
++  #include "Pythia8/Pythia.h"
++  #include "Pythia8ToHepMC.h"
++#else
++  #include "Pythia.h"
++  #include "HepMCInterface.h"
++#endif
+ 
+ //HepMC header files
+ #include "HepMC/GenEvent.h"
+@@ -23,8 +28,11 @@
+ 
+   //Initialize MC-TESTER
+   MC_Initialize();
+-
++#if PYTHIA8_VERSION >= 180
++  HepMC::Pythia8ToHepMC ToHepMC;
++#else
+   HepMC::I_Pythia8 ToHepMC;
++#endif
+ 
+   // Initialization of pythia
+   Pythia pythia;
+--- HEPEvent/Makefile
++++ HEPEvent/Makefile
+@@ -17,6 +17,8 @@
+   export DYLD_LIBRARY_PATH
+ endif
+ 
++ROOT_LIBS = $(shell $(ROOTBIN)/root-config --libs)
++
+ ######## Targets #####################################################
+ LIB_OBJ = HEPParticle.o HEPEvent.o \
+           LUJETSEvent.o LUJETSParticle.o \
+@@ -71,7 +73,7 @@
+   $(ROOTBIN)/rootcint -f $(DICT_SRC) -c -p -D_USE_ROOT_ $(LIB_HDR)
+ 
+ $(LIB): $(LIB_OBJ)
+-	 $(LD) $(LDFLAGS) $(SOFLAGS) -o $(LIB) $(LIB_OBJ) -L$(ROOTLIBPATH) -lCore -lCint
++	 $(LD) $(LDFLAGS) $(SOFLAGS) -o $(LIB) $(LIB_OBJ) -L$(ROOTLIBPATH) $(ROOT_LIBS)
+ 
+ $(LIB_A): $(LIB_OBJ)
+ 	   ar cr $(LIB_A) $(LIB_OBJ)
+--- src/Makefile
++++ src/Makefile
+@@ -34,6 +34,8 @@
+ 
+ override CXXFLAGS += -I../HEPEvent
+ 
++ROOT_LIBS = $(shell $(ROOTBIN)/root-config --libs)
++
+ ######## Targets #####################################################
+ all: $(LIB) $(LIB_A)
+ 
+@@ -52,7 +54,7 @@
+ 
+ 
+ $(LIB): $(LIB_OBJ)
+-	 $(LD) $(LDFLAGS) $(SOFLAGS) -o $(LIB) $(LIB_OBJ) -L$(ROOTLIBPATH) -lCore -lCint -lHist -lGpad -lGraf -lRIO -L$(CURDIR)/../lib -lHEPEvent
++	 $(LD) $(LDFLAGS) $(SOFLAGS) -o $(LIB) $(LIB_OBJ) -L$(ROOTLIBPATH) $(ROOT_LIBS) -L$(CURDIR)/../lib -lHEPEvent
+ 
+ $(LIB_A): $(LIB_OBJ)
+ 	   ar cr $(LIB_A) $(LIB_OBJ) 
+--- HepMCEvent/Makefile
++++ HepMCEvent/Makefile
+@@ -32,6 +32,8 @@
+ 
+ ROOT_CINT=$(ROOTBIN)/rootcint
+ 
++ROOT_LIBS = $(shell $(ROOTBIN)/root-config --libs)
++
+ ##############   What has to be built ###############################
+ 
+ 
+@@ -48,7 +50,7 @@
+   $(HEPMC_INC) $(CLHEP_INC) $(HEPEVENT_INC) $(LIB_HDR)
+ 
+ $(LIB): $(LIB_OBJ)
+-	 $(LD) $(LDFLAGS) $(SOFLAGS) -o $(LIB) $(LIB_OBJ) -L$(ROOTLIBPATH) -lCore -lCint -L$(CURDIR)/../lib -lHEPEvent
++	 $(LD) $(LDFLAGS) $(SOFLAGS) -o $(LIB) $(LIB_OBJ) -L$(ROOTLIBPATH) $(ROOT_LIBS) -L$(CURDIR)/../lib -lHEPEvent
+ 
+ $(LIB_A): $(LIB_OBJ)
+ 	   ar cr $(LIB_A) $(LIB_OBJ)

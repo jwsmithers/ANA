@@ -1,4 +1,4 @@
-To build the LCG software, cd to the *_build_* directory and do
+To build the LCG software, do
 >> source YumPackages.sh
 >> source BuildLCG.sh
 

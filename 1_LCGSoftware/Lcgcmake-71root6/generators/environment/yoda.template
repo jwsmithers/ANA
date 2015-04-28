@@ -1,0 +1,1 @@
+[ ! -z "$ROOT_HOME" ] && export PYTHONPATH=$ROOT_HOME/lib:$PYTHONPATH

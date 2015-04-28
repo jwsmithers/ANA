@@ -1,0 +1,3 @@
+echo
+echo "To run JHUGen you need to change directory to $JHU_HOME:"
+echo "  cd $JHU_HOME"

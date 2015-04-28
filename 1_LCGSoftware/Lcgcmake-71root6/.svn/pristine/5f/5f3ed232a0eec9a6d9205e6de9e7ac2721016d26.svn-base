@@ -1,0 +1,20 @@
+Name: GENSER_MC_ZJETS
+Year: 2014
+Summary: ZJETS analysis for the GENSER rivet tests
+Experiment: None
+Collider: None
+Status: VALIDATED
+Authors:
+ - Mikhail Kirsanov <Mikhail.Kirsanov@cern.ch>
+RunInfo:
+  $l^+ l^-$ + jets analysis with $l = e, \mu$. Usually used default
+  generator $M_{ee}$ mass cuts and lower $p_T$ cut 20 GeV
+NumEvents: 1000000
+NeedCrossSection: yes
+PtCuts: [25]
+Description:
+  'The analysis looks for Z decaying to ee or mumu. If it is found, jets are
+   reconstructed. The following Z and jets variables are histogrammed: Z $p_T$,
+   jet multiplicity (simple and normalized histogram), jet1 $p_T$, jet2 $p_T$.
+   The histogram binning is optimized for the limited statistics available in
+   the GENSER tests'
