@@ -16,6 +16,8 @@ export TopDir=$ROOTDIR/3_ATLAS/InstallArea
 export JAVAVERS=java-1.8.0-openjdk-1.8.0.40-25.b25.fc21.arm
 export CPLUS_INCLUDE_PATH=/usr/lib/jvm/$JAVAVERS/include:/usr/lib/jvm/$JAVAVERS/include/linux:$CPLUS_INCLUDE_PATH
 
+#Python
+export CPLUS_INCLUDE_PATH=$LCG_install/Python/2.7.6/$CMTCONFIG/include/python2.7:$CPLUS_INCLUDE_PATH
 #gcc-xml-plugin
 #tbb
 export CPLUS_INCLUDE_PATH=$LCG_install/tbb/42_20140122/$CMTCONFIG/include:$CPLUS_INCLUDE_PATH

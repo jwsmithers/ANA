@@ -1,0 +1,9 @@
+AtlasCLHEP
+AtlasCLHEP_RandomGenerators
+AtlasGdb
+AtlasPolicy
+AtlasSealCLHEP (1 was, two weren't))
+EventContainers
+RootConversions
+TrigConfStorage
+XMLCoreParser

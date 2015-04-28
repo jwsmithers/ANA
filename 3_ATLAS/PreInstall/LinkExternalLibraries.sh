@@ -1,28 +1,34 @@
 #!/bin/sh
 #DetCommon
-ln -s $ROOTDIR/COOL/$CMTCONFIG/lib/* $TopDir/DetCommon/DetCommon-$VERSION/InstallArea/$CMTCONFIG/lib/
-ln -s $ROOTDIR/CORAL/$CMTCONFIG/lib/* $TopDir/DetCommon/DetCommon-$VERSION/InstallArea/$CMTCONFIG/lib/
+ln -s $COOLDir/../$CMTCONFIG/lib/* $TopDir/DetCommon/DetCommon-$VERSION/InstallArea/$CMTCONFIG/lib/
+ln -s $CORALDir/../$CMTCONFIG/lib/* $TopDir/DetCommon/DetCommon-$VERSION/InstallArea/$CMTCONFIG/lib/
 ln -s $LCG_install/Boost/1.55.0_python2.7/$CMTCONFIG/lib/* $TopDir/DetCommon/DetCommon-$VERSION/InstallArea/$CMTCONFIG/lib/
 
 #AtlasCore
-ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/InstallArea/$CMTCONFIG/lib/libeformat* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/ 
-ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/eformat/eformat $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
+#ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/InstallArea/$CMTCONFIG/lib/libeformat* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/ 
+#ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/eformat/eformat $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
 
-ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/InstallArea/$CMTCONFIG/lib/libcompression.so $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
-ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/compression/compression $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
+#ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/InstallArea/$CMTCONFIG/lib/libcompression.so $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
+#ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/compression/compression $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
 
-ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/InstallArea/$CMTCONFIG/lib/libers.so $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
-ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/ers/ers $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
+#ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/InstallArea/$CMTCONFIG/lib/libers.so $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
+#ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/ers/ers $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
 
-ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/InstallArea/$CMTCONFIG/lib/libData* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
+#ln -s $ROOTDIR/tdaq-common/tdaq-common-01-31-00/InstallArea/$CMTCONFIG/lib/libData* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
 
-ln -s $ROOTDIR/COOL/$CMTCONFIG/lib/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
+ln -s $COOLDir/../$CMTCONFIG/lib/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
 
 ln -s $LCG_install/pytools/1.8_python2.7/share/sources/pyxml/xml $TopDir/AtlasCore/AtlasCore-$VERSION/TestPolicy/python
 
 ln -s $LCG_install/ROOT/5.34.24/$CMTCONFIG/lib/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
+ln -s $LCG_install/ROOT/5.34.24/$CMTCONFIG/include/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include/
+
 ln -s $LCG_install/uuid/1.42/$CMTCONFIG/lib/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
+
+
 ln -s $LCG_install/XercesC/3.1.1p1/$CMTCONFIG/lib/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
+ln -s $LCG_install/XercesC/3.1.1p1/$CMTCONFIG/include/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include/
+
 ln -s $LCG_install/libunwind/1.1/$CMTCONFIG/lib/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
 ln -s $LCG_install/CppUnit/1.12.1_p1/$CMTCONFIG/lib/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/
 ln -s $LCG_install/tbb/42_20140122/$CMTCONFIG/lib/*  $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib/ 
@@ -34,8 +40,8 @@ ln -s $LCG_install/CppUnit/1.12.1_p1/$CMTCONFIG/include/cppunit $TopDir/AtlasCor
 ln -s $LCG_install/valgrind/3.10.0/$CMTCONFIG/include/valgrind $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
 ln -s $LCG_install/tbb/42_20140122/$CMTCONFIG/include/tbb $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
 
-ln -s $TopDir/../PreInstall/yampl-install/include/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
-ln -s $TopDir/../PreInstall/yampl-install/lib/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib
+ln -s $SW_Extras/yampl_install/include/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/include
+ln -s $SW_Extras/yampl_install/lib/* $TopDir/AtlasCore/AtlasCore-$VERSION/InstallArea/$CMTCONFIG/lib
 
 #AtlasEvent
 ln -s $LCG_install/HepPDT/2.06.01/$CMTCONFIG/lib/* $TopDir/AtlasEvent/AtlasEvent-$VERSION/InstallArea/$CMTCONFIG/lib
@@ -46,7 +52,7 @@ ln -s $LCG_install/GSL/1.10/$CMTCONFIG/lib/* $TopDir/AtlasEvent/AtlasEvent-$VERS
 ln -s $LCG_install/HepPDT/2.06.01/$CMTCONFIG/lib/* $TopDir/AtlasConditions/AtlasConditions-$VERSION/InstallArea/$CMTCONFIG/lib
 
 #AtlasSimulation
-ln -s $ROOTDIR/geant4_install/lib/* $TopDir/AtlasSimulation/AtlasSimulation-$VERSION/InstallArea/$CMTCONFIG/lib
+ln -s $SW_Extras/geant4_install/lib/* $TopDir/AtlasSimulation/AtlasSimulation-$VERSION/InstallArea/$CMTCONFIG/lib
 
 ln -s $LCG_install/GSL/1.10/$CMTCONFIG/lib/* $TopDir/AtlasSimulation/AtlasSimulation-$VERSION/InstallArea/$CMTCONFIG/lib
 

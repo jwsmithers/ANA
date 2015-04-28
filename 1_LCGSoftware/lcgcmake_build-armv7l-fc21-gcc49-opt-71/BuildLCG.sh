@@ -11,4 +11,6 @@ echo "Patching LCG cmt requirements files..."
 echo ""
 cd $LCGbuildDir/../patches/LCGCMT/LCGCMT_Platforms
 source requirements.sh
+cd $LCGbuildDir/../patches/LCGCMT/LCGCMT_Settings
+source requirements.sh
 cd $LCGbuildDir
