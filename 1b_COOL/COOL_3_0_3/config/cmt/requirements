@@ -1,0 +1,76 @@
+package COOL
+
+# Define CMTINSTALLAREA correctly
+use LCG_Policy v*
+
+#============================================================================
+# Project components
+#============================================================================
+
+use CoolKernel      v*
+use CoolApplication v*
+use RelationalCool  v*
+use PyCool          v*
+use PyCoolUtilities v*
+use Examples        v*
+
+use CoolDBDiscovery    v* Utilities
+use ACE                v* Utilities
+
+# These two tools are no longer supported (bug #95364)
+###use CoolMiniClient     v* Utilities
+###use VerificationClient v* Utilities
+
+include_path none
+
+#============================================================================
+# Private dependencies, build rules and runtime
+#============================================================================
+
+private
+
+#----------------------------------------------------------------------------
+# COOL test runtime
+#----------------------------------------------------------------------------
+
+use CoolTest v*
+
+#----------------------------------------------------------------------------
+# Actions and build rules - install setup
+#----------------------------------------------------------------------------
+
+macro ProjectTest CoolTest
+macro ProjectTest_cmtpath $(CoolTest_cmtpath)
+
+action install_cmt "if [ ! -d $(CMTINSTALLAREA)/$(tag)/cmt ]; then mkdir -p $(CMTINSTALLAREA)/$(tag); \cp -dpr $(config_cmtpath)/cmt $(CMTINSTALLAREA)/$(tag)/cmt; fi"
+action install_ProjectTest "if [ ! -d $(CMTINSTALLAREA)/$(tag)/$(ProjectTest) ]; then mkdir -p $(CMTINSTALLAREA)/$(tag); \cp -dpr $(ProjectTest_cmtpath)/$(ProjectTest) $(CMTINSTALLAREA)/$(tag)/$(ProjectTest); fi"
+macro setupdir $(CMTINSTALLAREA)/$(tag)/bin
+macro setupcsh $(setupdir)/setup$(config_project).csh
+macro setupsh $(setupdir)/setup$(config_project).sh
+action install_setup_scripts "mkdir -p $(setupdir); \rm -f $(setupcsh) $(setupsh); echo setenv CMTCONFIG $(tag) > $(setupcsh); echo export CMTCONFIG=$(tag) > $(setupsh); echo set CMTsrcdir=`basename $(config_cmtpath)` >> $(setupcsh); echo CMTsrcdir=`basename $(config_cmtpath)` >> $(setupsh); cat _setup.csh >> $(setupcsh); cat _setup.sh >> $(setupsh)"
+
+# Append to 'constituents' to execute an action in 'cmt make'
+# (append to 'all_constituents' to execute it only in 'cmt make all').
+# Remove the action from cmt_actions_constituents so that the action 
+# is not executed twice in 'cmt make all_groups' (it executes all actions).
+macro_append constituents "install_setup_scripts install_cmt install_ProjectTest"
+macro_remove cmt_actions_constituents "install_setup_scripts install_cmt install_ProjectTest"
+
+#----------------------------------------------------------------------------
+# Actions and build rules - tests, utilities and examples
+#----------------------------------------------------------------------------
+
+# Fake target for tests
+action tests "echo No tests in this package"
+macro_remove cmt_actions_constituents "tests"
+
+# Fake target for utilities
+action utilities "echo No utilities in this package"
+macro_remove cmt_actions_constituents "utilities"
+
+# Fake target for examples
+action examples "echo No examples in this package"
+macro_remove cmt_actions_constituents "examples"
+ 
+#============================================================================
+

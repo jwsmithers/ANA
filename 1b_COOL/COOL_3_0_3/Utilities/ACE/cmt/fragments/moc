@@ -1,0 +1,28 @@
+# CMT Makefile document fragment to generate Qt "moc" files
+# from header files containing Qt (sub)classes.
+#
+# We check that the header files contain the required Q_OBJECT macro.
+# To cope with the difficulties of moving HDMC to CMT, allow a non-ATLAS 
+# style header file location to be specified for the #include directives 
+# in the moc files. The default is the ATLAS convention, ie the package name.
+
+ifneq ($(shell grep Q_OBJECT ${FULLNAME}),)
+
+hprefix ?= $(package)
+mocdir := $(bin)qt/moc
+
+###ifneq ($(OSTYPE),darwin)
+
+${CONSTITUENT} :: ${mocdir}/moc${NAME}.cpp
+
+${mocdir}/moc${NAME}.cpp : ${FULLNAME}
+	@if test ! -d ${mocdir}; then mkdir -p ${mocdir}; fi
+	${QTDIR}/bin/moc -f$(hprefix)/$(<F) -o $@ $<
+
+else
+
+${CONSTITUENT} :: ${FULLNAME}
+
+###endif
+
+endif

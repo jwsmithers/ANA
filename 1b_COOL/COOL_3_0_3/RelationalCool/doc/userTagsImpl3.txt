@@ -1,0 +1,70 @@
+===============================================
+User tag implementation (AV 01.03.2006)
+===============================================
+
+Just a few brief notes to complement userTagsSpec3.txt and userTagsImpl2.txt.
+
+With respect to the implementation proposed in userTagsImpl2.txt:
+- Drop the constraint that objectId is a function of userId and sysId.
+  For every userId, more than one tag can be associated, hence there
+  would be no good constraining scheme. Simply use a sequence with no 
+  holes, describing the order in which rows are inserted in the table.
+- This means that more than one user tag can be specified on insertion.
+- The newHeadId column must reference the userId column instead
+  of the objectId column.
+- For each tag, a __complete__ parallel branch of IOV HEAD is maintained.
+  When a HEAD tag is defined, all IOVs are re-inserted into the IOV table
+  with a new userId (originalId is the old userId) and the relevant tagId.
+- The full history of tags is maintained in the IOV table.
+  This may become very very large. Payloads should be stored externally.
+  Note that userId could be used as FK reference to the external payload
+  table: you do not actually need a separate FK column
+  (one userId <-> one payload).
+- The IOV2TAG table is simply a snapshot of the IOV table for the
+  IOVs currently associated to tags. It does not hold additional
+  information that cannot be retrieved from the IOV table via simple queries.
+- A table (the tag table?) must maintain the history of when HEAD tags
+  where defined (at which objectId).
+
+=======================================================
+Additional notes after Richard's reply (AV 02.03.2006)
+=======================================================
+
+Richard suggests that we could just implement scenario 2.
+
+I think in any case that it would be safer to implement this using the same 
+implementation as scenario 3, with all relevant information in the IOV table, 
+but throwing away rows from the IOV table as they become obsolete.
+This seems safer in the sense that it would in any case allow us to
+switch on history logging if required by the users and/or for our own
+internal debugging, while the removal of obsolete rows would prevent
+the IOV table from growing too big.
+
+The duplication of information across the IOV and IOV2TAG tables however
+should be avoided. One possibility would be to add the extra tagged rows
+to the IOV table (ALL associations of IOVs to tags), as suggested for
+scenario 3, and get rid of the IOV2TAG table as the IOV table alone
+could be enough (and not too large if old data are purged). The alternative
+possibility (better?) is to add to the IOV2TAG table ALL columns from the
+IOV table (except the payload) and actually have the tagged rows ONLY
+in the IOV2TAG table instead of the IOV table, but with the same logic
+used in the IOV table. 
+
+In any case, the splitting of payload from IOV table seems unavoidable.
+Note that my previous comment was wrong: it is not enough to keep userId
+as reference to the payload, because current userId for system inserted
+objects is the userId of the new IOV triggering system insertion, while
+the originalId for these system objects may be another system inserted
+object. One possibility is to add a new column originalUserId which 
+actually points to the very first user inserted object, i.e. the one which
+indeed was inserted with a payload.
+
+It would be useful to implement an internal 'purge' method taking as
+argument a date/objectId before which all obsolete rows can be erased. 
+The implementation could use this internally periodically, or after
+each insertion, in spec#2. To implement spec#3 it would be enough to
+switch off its automatic use, and only offer it to users as an
+additional functionality.
+
+
+

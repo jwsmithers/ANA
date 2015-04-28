@@ -1,0 +1,38 @@
+AV 14.06.2006
+
+Get more info about the free() messages printed out on COOL tests
+since the migration of COOL to the CORAL connection service.
+
+Use Marco's suggested trick of setting "setenv MALLOC_CHECK_ 2".
+
+The main problem is that the effect is not completely reproducible.
+For some backends it happens on some tests, for some backends on other tests.
+If some python tests are included it happens, but then if one test
+is excluded or another is added, it does not happen again.
+
+Concentrate on the test_IObject.py PyCool test.
+Reproduced the problem on MySQL (but not SQLite).
+
+  unsetenv MALLOC_CHECK_
+  python test_IObject.py > & test_IObject-free.unset
+  setenv MALLOC_CHECK_ 0
+  python test_IObject.py > & test_IObject-free.0
+  setenv MALLOC_CHECK_ 1
+  python test_IObject.py > & test_IObject-free.1
+  setenv MALLOC_CHECK_ 2
+  python test_IObject.py > & test_IObject-free.2
+
+The last logfile is the interesting one.
+It shows that the problem occurs in
+liblcg_coral_MonitoringService.so
+(as initially reported by Marco).
+
+For reference: I also tried to 'rehash' as suggested by the CORAL team,
+but this had no effect:
+
+  unsetenv MALLOC_CHECK_
+  python test_IObject.py
+  rehash
+  python test_IObject.py
+
+The problem (three free messages) appears in both cases.

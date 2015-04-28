@@ -1,0 +1,32 @@
+package RelationalService
+
+#============================================================================
+# Private dependencies and build rules
+#============================================================================
+
+private
+
+#----------------------------------------------------------------------------
+# Library
+#----------------------------------------------------------------------------
+
+use CoralCommon v* 
+
+apply_pattern lcg_module_library
+
+# Create a symlink .dylib -> .so on mac (sr #141482 - also see bug #37371)
+apply_pattern lcg_dylib_symlink
+
+#----------------------------------------------------------------------------
+# Tests and utilities
+#----------------------------------------------------------------------------
+
+apply_pattern coral_unit_test tname=LoadService
+
+# Fake target for utilities
+action utilities "echo No utilities in this package"
+macro_remove cmt_actions_constituents "utilities"
+
+# Fake target for examples
+action examples "echo No examples in this package"
+macro_remove cmt_actions_constituents "examples"

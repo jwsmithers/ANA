@@ -1,0 +1,47 @@
+package ACE
+
+use CoolApplication v*
+use Qt v* LCG_Interfaces
+
+private
+
+# Link the CORAL base libraries (fix CORALCOOL-2754 on CC7)
+apply_tag NEEDS_CORAL_BASE
+
+# Do not install the header files 
+macro_remove constituents 'install_includes'
+
+# Fragment to generate the Qt "moc" files using the Qt "meta object compiler".
+# Copied from Murrough Landon's version for Atlas (LVL1/l1calo/qtExternal).
+make_fragment moc -header=empty_header
+
+# Generate the Qt "moc" files using the Qt "meta object compiler".
+document moc ace_moc_src -s=../$(package) *.h 
+
+# Build the ace application (on Linux only).
+macro ace_dependencies ace_moc_src
+macro ace_cppflags  " -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED" \
+      target-winxp  ""
+macro ace_sources   "*.cpp $(bin)qt/moc/*.cpp" \
+      target-winxp  "MainWindow.cpp" \
+      target-darwin "MainWindow.cpp"
+macro Qt_linkopts   $(Qt_linkopts) \
+      target-winxp  "" \
+      target-darwin ""
+
+apply_pattern lcg_application appname=ace files=$(ace_sources) category=utilities
+
+# Disable 'type qualifiers on function return type' gcc43 warning (bug #42574)
+macro_remove cppflags '' target-gcc43 '-Wall -W'
+
+# Disable warning #82 for Qt (bug #102163): storage class is not first
+macro_remove cppflags '' target-icc '-ww82 '
+macro_append cppflags '' target-icc '-wd82 '
+
+# Fake target for tests
+action tests "echo No tests in this package"
+macro_remove cmt_actions_constituents "tests"
+
+# Fake target for examples
+action examples "echo No examples in this package"
+macro_remove cmt_actions_constituents "examples"

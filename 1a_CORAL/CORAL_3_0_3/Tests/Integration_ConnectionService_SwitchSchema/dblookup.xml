@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<servicelist>
+
+  <!-- CORAL nightly tests (service0/1/2/3 for O/M/S) - START -->
+
+  <logicalservice name="CORAL-Oracle-sftnight/service0">
+    <service name="oracle://lcg_coral_nightly/lcg_coral_nightly" accessMode="update" authentication="password" />
+  </logicalservice>
+
+  <logicalservice name="CORAL-Oracle-sftnight/service1">
+    <service name="oracle://lcg_coral_nightly/lcg_coral_nightly_R" accessMode="update" authentication="password" />
+  </logicalservice>
+
+  <logicalservice name="CORAL-Oracle-sftnight/service2">
+    <service name="oracle://lcg_coral_nightly/lcg_coral_nightly" accessMode="update" authentication="password" />
+  </logicalservice>
+
+  <logicalservice name="CORAL-Oracle-sftnight/service3">
+    <service name="oracle://lcg_coral_nightly/lcg_coral_nightly" accessMode="update" authentication="password" />
+  </logicalservice>
+
+
+  <logicalservice name="CORAL-MySQL-sftnight/service0">
+    <service name="mysql://dbod-coolmyod.cern.ch:5500/LCG_CORAL_NIGHT" accessMode="update" authentication="password" />
+    <!--service name="mysql://coralmysql.cern.ch/LCG_CORAL_NIGHT" accessMode="update" authentication="password" /-->
+  </logicalservice>
+
+  <logicalservice name="CORAL-MySQL-sftnight/service1">
+    <service name="mysql://dbod-coolmyod.cern.ch:5500/LCG_CORAL_NIGHT" accessMode="update" authentication="password" />
+    <!--service name="mysql://coralmysql.cern.ch/LCG_CORAL_NIGHT" accessMode="update" authentication="password" /-->
+  </logicalservice>
+
+  <logicalservice name="CORAL-MySQL-sftnight/service2">
+    <service name="mysql://dbod-coolmyod.cern.ch:5500/LCG_CORAL_NIGHT" accessMode="update" authentication="password" />
+    <!--service name="mysql://coralmysql.cern.ch/LCG_CORAL_NIGHT" accessMode="update" authentication="password" /-->
+  </logicalservice>
+
+  <logicalservice name="CORAL-MySQL-sftnight/service3">
+    <service name="mysql://dbod-coolmyod.cern.ch:5500/LCG_CORAL_NIGHT" accessMode="update" authentication="password" />
+    <!--service name="mysql://coralmysql.cern.ch/LCG_CORAL_NIGHT" accessMode="update" authentication="password" /-->
+  </logicalservice>
+
+
+  <logicalservice name="CORAL-SQLite-sftnight/service0">
+    <service name="sqlite_file:ral.db" accessMode="update" authentication="password" />
+  </logicalservice>
+
+  <logicalservice name="CORAL-SQLite-sftnight/service1">
+    <service name="sqlite_file:ral.db" accessMode="update" authentication="password" />
+  </logicalservice>
+
+  <logicalservice name="CORAL-SQLite-sftnight/service2">
+    <service name="sqlite_file:ral.db" accessMode="update" authentication="password" />
+  </logicalservice>
+
+  <logicalservice name="CORAL-SQLite-sftnight/service3">
+    <service name="sqlite_file:ral.db" accessMode="update" authentication="password" />
+  </logicalservice>
+
+</servicelist>

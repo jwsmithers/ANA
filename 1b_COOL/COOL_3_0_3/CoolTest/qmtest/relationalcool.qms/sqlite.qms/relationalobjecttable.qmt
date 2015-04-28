@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!DOCTYPE extension  PUBLIC '-//QM/2.3/Extension//EN'  'http://www.codesourcery.com/qm/dtds/2.3/-//qm/2.3/extension//en.dtd'>
+<extension class="COOLTests.DatabaseTest" kind="test">
+  <argument name="stdin"><text/></argument>
+  <argument name="timeout"><integer>180</integer></argument>
+  <argument name="stdout"><text/></argument>
+  <argument name="prerequisites"><set>
+    <!-- <tuple><text>relationalcool.channelselection</text><enumeral>PASS</enumeral></tuple> -->
+    <!-- <tuple><text>relationalcool.payloadspecification</text><enumeral>PASS</enumeral></tuple> -->
+    <!-- <tuple><text>relationalcool.versionnumber</text><enumeral>PASS</enumeral></tuple> -->
+    <!-- <tuple><text>relationalcool.hvspathhandler</text><enumeral>PASS</enumeral></tuple> -->
+    <!-- <tuple><text>relationalcool.relationaldatabaseid</text><enumeral>PASS</enumeral></tuple> -->
+    <!-- <tuple><text>relationalcool.objectid</text><enumeral>PASS</enumeral></tuple> -->
+    <!-- <tuple><text>relationalcool.utility_methods</text><enumeral>PASS</enumeral></tuple> -->
+    <!-- <tuple><text>relationalcool.sqlite.raldatabase</text><enumeral>PASS</enumeral></tuple> -->
+  </set></argument>
+  <argument name="target_group"><text>.*</text></argument>
+  <argument name="exit_code"><integer>0</integer></argument>
+  <argument name="environment"><set/></argument>
+  <argument name="command"><text>test_RelationalCool_RelationalObjectTable</text></argument>
+  <argument name="stderr"><text/></argument>
+  <argument name="resources"><set/></argument>
+  <argument name="db_type"><enumeral>SQLite</enumeral></argument>
+  <argument name="package_name"><enumeral>RelationalCool</enumeral></argument>
+</extension>

@@ -1,0 +1,71 @@
+package CoralServerBase
+
+#============================================================================
+# Public dependencies and build rules
+#============================================================================
+
+use RelationalAccess v*
+use CoralMonitor v* CORAL_SERVER
+
+# Compilation flags for LCGxx
+###macro LCG_twodigit_python_cmd 'print "$(LCG_config_version)"[:2]'
+###macro LCG_twodigit_cmd "python -c '$(LCG_twodigit_python_cmd)'"
+###macro LCG_twodigit `$(LCG_twodigit_cmd)`
+###macro_append use_cppflags ' -DLCG$(LCG_twodigit)' WIN32 ''
+
+# Disable CRT deprecation warnings on VC9 (getenv, sprintf...)
+macro_append use_cppflags '' target-vc9 ' /D_CRT_SECURE_NO_WARNINGS'
+
+# Temporary hack to avoid c++ deprecation warnings for auto_ptr (bug #98085)
+macro_append cppflags "" target-c11 " -Wno-deprecated "
+
+#----------------------------------------------------------------------------
+# Library
+#----------------------------------------------------------------------------
+
+apply_pattern include_dir_policy
+apply_pattern lcg_shared_library
+
+# Create a symlink .dylib -> .so on mac (sr #141482 - also see bug #37371)
+apply_pattern lcg_dylib_symlink
+
+#============================================================================
+# Private dependencies and build rules
+#============================================================================
+
+private
+
+#----------------------------------------------------------------------------
+# Headers
+#----------------------------------------------------------------------------
+
+# Do not install the header files 
+macro_remove constituents 'install_includes'
+
+#----------------------------------------------------------------------------
+# Tests
+#----------------------------------------------------------------------------
+
+use CppUnit v* LCG_Interfaces -no_auto_imports
+
+apply_pattern coral_unit_test tname=ByteBuffer
+apply_pattern coral_unit_test tname=CALOpcode
+apply_pattern coral_unit_test tname=CALPacket
+apply_pattern coral_unit_test tname=CoralServerProxyException
+apply_pattern coral_unit_test tname=CTLPacket
+
+#----------------------------------------------------------------------------
+# Utilities
+#----------------------------------------------------------------------------
+
+# Fake target for utilities
+action utilities "echo No utilities in this package"
+macro_remove cmt_actions_constituents "utilities"
+
+#----------------------------------------------------------------------------
+# Examples
+#----------------------------------------------------------------------------
+
+# Fake target for examples
+action examples "echo No examples in this package"
+macro_remove cmt_actions_constituents "examples"

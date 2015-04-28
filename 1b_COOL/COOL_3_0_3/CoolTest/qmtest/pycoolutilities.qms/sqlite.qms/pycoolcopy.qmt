@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!DOCTYPE extension  PUBLIC '-//QM/2.3/Extension//EN'  'http://www.codesourcery.com/qm/dtds/2.3/-//qm/2.3/extension//en.dtd'>
+<extension class="COOLTests.SourceTargetTest" kind="test">
+  <argument name="stdin"><text/></argument>
+  <argument name="timeout"><integer>420</integer></argument>
+  <argument name="stdout"><text/></argument>
+  <argument name="prerequisites"><set>
+    <tuple><text>pycool.import_pycool</text><enumeral>PASS</enumeral></tuple>
+    <!-- <tuple><text>pycoolutilities.sqlite.pycoolpayloader</text><enumeral>PASS</enumeral></tuple> -->
+  </set></argument>
+  <argument name="target_group"><text>.*</text></argument>
+  <argument name="exit_code"><integer>0</integer></argument>
+  <argument name="environment"><set/></argument>
+  <argument name="command"><text>test_PyCoolCopy.py</text></argument>
+  <argument name="stderr"><text/></argument>
+  <argument name="resources"><set/></argument>
+  <argument name="db_type"><enumeral>SQLite</enumeral></argument>
+  <argument name="package_name"><enumeral>PyCoolUtilities</enumeral></argument>
+</extension>

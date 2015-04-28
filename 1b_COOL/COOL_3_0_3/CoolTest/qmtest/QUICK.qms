@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!DOCTYPE extension  PUBLIC '-//QM/2.3/Extension//EN'  'http://www.codesourcery.com/qm/dtds/2.3/-//qm/2.3/extension//en.dtd'>
+<extension class="explicit_suite.ExplicitSuite" kind="suite">
+  <argument name="suite_ids"><set>
+    <!-- Around 1 minute -->
+    <text>coolkernel</text>
+    <text>relationalcool.no_db</text>
+    <text>pycool.no_db</text>
+    <!-- NO (around 12 minutes) -->
+    <!--text>regression</text-->
+  </set></argument>
+  <argument name="test_ids"><set>
+    <!-- Around 1 minute -->
+    <text>pycool.mysql.idatabasesvc</text>
+    <text>pycool.oracle.idatabasesvc</text>
+    <text>pycool.sqlite.idatabasesvc</text>
+    <text>relationalcool.mysql.raldatabasesvc</text>
+    <text>relationalcool.oracle.raldatabasesvc</text>
+    <text>relationalcool.sqlite.raldatabasesvc</text>
+  </set></argument>
+</extension>

@@ -1,0 +1,81 @@
+Fri Sep  2 12:41:57 2005    test_performance.prof
+
+         132214 function calls (132001 primitive calls) in 4.170 CPU seconds
+
+   Ordered by: cumulative time
+   List reduced from 216 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    4.170    4.170 profile:0(import test_performance; test_performance.main())
+     10/1    0.000    0.000    4.170    4.170 <string>:1(?)
+        1    0.000    0.000    3.720    3.720 test_performance.py:8(main)
+        1    0.010    0.010    2.520    2.520 CoolPayloader.py:61(validateFolder)
+     3300    0.500    0.000    2.110    0.001 AttributeList.py:59(keys)
+    43989    1.420    0.000    2.080    0.000 __init__.py:162(dispatching_method)
+      100    0.010    0.000    1.780    0.018 AttributeList.py:158(__eq__)
+      100    0.000    0.000    1.780    0.018 AttributeList.py:166(__ne__)
+     1800    0.120    0.000    1.550    0.001 AttributeList.py:80(typeName)
+      200    0.030    0.000    1.170    0.006 CoolPayloader.py:31(createPayload)
+
+
+Fri Sep  2 12:41:57 2005    test_performance.prof
+
+         132214 function calls (132001 primitive calls) in 4.170 CPU seconds
+
+   Ordered by: internal time
+   List reduced from 216 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    43989    1.420    0.000    2.080    0.000 __init__.py:162(dispatching_method)
+     3300    0.500    0.000    2.110    0.001 AttributeList.py:59(keys)
+     9911    0.350    0.000    1.050    0.000 __init__.py:1137(__getitem__)
+    18756    0.310    0.000    0.520    0.000 __init__.py:728(plain_inserter)
+        2    0.220    0.110    0.280    0.140 __init__.py:72(loadDictionary)
+    18980    0.210    0.000    0.210    0.000 __init__.py:315(_empty_instance)
+    18529    0.140    0.000    0.150    0.000 __init__.py:413(__del__)
+     1800    0.120    0.000    1.550    0.001 AttributeList.py:80(typeName)
+     1429    0.090    0.000    0.120    0.000 __init__.py:151(static_dispatching_method)
+      600    0.080    0.000    0.990    0.002 AttributeList.py:100(__getitem__)
+
+=======================================================================================
+After keys() caching in AttributeList.py:
+=======================================================================================
+
+Fri Sep  2 13:25:43 2005    test_performance.prof
+
+         54214 function calls (54001 primitive calls) in 2.110 CPU seconds
+
+   Ordered by: cumulative time
+   List reduced from 216 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    2.110    2.110 profile:0(import test_performance; test_performance.main())
+     10/1    0.000    0.000    2.110    2.110 <string>:1(?)
+        1    0.000    0.000    1.690    1.690 test_performance.py:8(main)
+    10989    0.750    0.000    1.020    0.000 __init__.py:162(dispatching_method)
+        1    0.040    0.040    0.900    0.900 CoolPayloader.py:61(validateFolder)
+        1    0.000    0.000    0.540    0.540 CoolPayloader.py:44(writeFolder)
+      200    0.000    0.000    0.500    0.002 CoolPayloader.py:31(createPayload)
+      600    0.050    0.000    0.500    0.001 AttributeList.py:120(__setitem__)
+        1    0.010    0.010    0.420    0.420 test_performance.py:2(?)
+        1    0.000    0.000    0.410    0.410 CoolPayloader.py:2(?)
+
+
+Fri Sep  2 13:25:43 2005    test_performance.prof
+
+         54214 function calls (54001 primitive calls) in 2.110 CPU seconds
+
+   Ordered by: internal time
+   List reduced from 216 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    10989    0.750    0.000    1.020    0.000 __init__.py:162(dispatching_method)
+        2    0.240    0.120    0.270    0.135 __init__.py:72(loadDictionary)
+     6529    0.100    0.000    0.110    0.000 __init__.py:413(__del__)
+     1800    0.090    0.000    0.340    0.000 AttributeList.py:81(typeName)
+     1429    0.080    0.000    0.120    0.000 __init__.py:151(static_dispatching_method)
+     6756    0.080    0.000    0.140    0.000 __init__.py:728(plain_inserter)
+     3300    0.070    0.000    0.250    0.000 AttributeList.py:61(keys)
+     6980    0.060    0.000    0.060    0.000 __init__.py:315(_empty_instance)
+      600    0.050    0.000    0.500    0.001 AttributeList.py:120(__setitem__)
+       27    0.050    0.002    0.090    0.003 __init__.py:326(_collect_methods)

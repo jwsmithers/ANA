@@ -1,0 +1,468 @@
+
+<!doctype html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: package PyCoolReferenceDb</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>PyCoolReferenceDb</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/afs/cern.ch/sw/lcg/app/releases/COOL/internal/marcocle/COOL_HEAD/slc4_ia32_gcc34_dbg/python/PyCoolReferenceDb/__init__.py">/afs/cern.ch/sw/lcg/app/releases/COOL/internal/marcocle/COOL_HEAD/slc4_ia32_gcc34_dbg/python/PyCoolReferenceDb/__init__.py</a></font></td></tr></table>
+    <p><tt>###print&nbsp;'DEBUG:&nbsp;Import&nbsp;sys'</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Package Contents</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="PyCoolReferenceDb.html#ReferenceDbMgr">ReferenceDbMgr</a>
+</font></dt><dt><font face="helvetica, arial"><a href="unittest.html#TestCase">unittest.TestCase</a>(<a href="__builtin__.html#object">__builtin__.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="PyCoolReferenceDb.html#TestReferenceDbRO">TestReferenceDbRO</a>
+</font></dt><dt><font face="helvetica, arial"><a href="PyCoolReferenceDb.html#TestReferenceDbRW">TestReferenceDbRW</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ReferenceDbMgr">class <strong>ReferenceDbMgr</strong></a></font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ReferenceDbMgr-__del__"><strong>__del__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReferenceDbMgr-__init__"><strong>__init__</strong></a>(self, isSchemaVersion20x<font color="#909090">=True</font>)</dt></dl>
+
+<dl><dt><a name="ReferenceDbMgr-createReferenceDb"><strong>createReferenceDb</strong></a>(self, connectString)</dt></dl>
+
+<dl><dt><a name="ReferenceDbMgr-dropReferenceDb"><strong>dropReferenceDb</strong></a>(self, connectString)</dt></dl>
+
+<dl><dt><a name="ReferenceDbMgr-referencePayloadHigh"><strong>referencePayloadHigh</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReferenceDbMgr-referencePayloadLow"><strong>referencePayloadLow</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReferenceDbMgr-referencePayloadNull"><strong>referencePayloadNull</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReferenceDbMgr-referencePayloadSpec"><strong>referencePayloadSpec</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReferenceDbMgr-simplePayload"><strong>simplePayload</strong></a>(self, iobj)</dt></dl>
+
+<dl><dt><a name="ReferenceDbMgr-simplePayloadSpec"><strong>simplePayloadSpec</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReferenceDbMgr-ucharPayload"><strong>ucharPayload</strong></a>(self, iobj)</dt></dl>
+
+<dl><dt><a name="ReferenceDbMgr-ucharPayloadSpec"><strong>ucharPayloadSpec</strong></a>(self)</dt></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TestReferenceDbRO">class <strong>TestReferenceDbRO</strong></a>(<a href="unittest.html#TestCase">unittest.TestCase</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="PyCoolReferenceDb.html#TestReferenceDbRO">TestReferenceDbRO</a></dd>
+<dd><a href="unittest.html#TestCase">unittest.TestCase</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TestReferenceDbRO-__del__"><strong>__del__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRO-__init__"><strong>__init__</strong></a>(self, methodName<font color="#909090">='runTest'</font>)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRO-assertEqualsAL"><strong>assertEqualsAL</strong></a>(self, lhs, rhs, skipA_UCHAR<font color="#909090">=True</font>, skipA_BLOB64K<font color="#909090">=True</font>)</dt><dd><tt>#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution.<br>
+#&nbsp;Test&nbsp;method&nbsp;to&nbsp;compare&nbsp;two&nbsp;Records&nbsp;deeply<br>
+#&nbsp;(standard&nbsp;comparison&nbsp;only&nbsp;compares&nbsp;their&nbsp;pointers).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-expectedSqlType"><strong>expectedSqlType</strong></a>(self, stType, technology)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRO-runTest"><strong>runTest</strong></a>(self)</dt><dd><tt>#&nbsp;Strictly&nbsp;needed&nbsp;only&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;instantiate&nbsp;this&nbsp;class</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-setUp"><strong>setUp</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRO-tearDown"><strong>tearDown</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_01_NodeHierarchy"><strong>test_RO_01_NodeHierarchy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_02_ReferencePayload"><strong>test_RO_02_ReferencePayload</strong></a>(self)</dt><dd><tt>#&nbsp;From&nbsp;RelationalCool/tests/RalDatabase_extendedSpec</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_02a_ReferencePayloadUChar"><strong>test_RO_02a_ReferencePayloadUChar</strong></a>(self)</dt><dd><tt>#&nbsp;Test&nbsp;A_UCHAR&nbsp;explicitly&nbsp;(COOL&nbsp;bug&nbsp;#18146,&nbsp;CORAL&nbsp;bug&nbsp;#22203)</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_02b1_ReferencePayloadBlobEmpty"><strong>test_RO_02b1_ReferencePayloadBlobEmpty</strong></a>(self)</dt><dd><tt>#&nbsp;Test&nbsp;A_BLOB64K&nbsp;explicitly&nbsp;for&nbsp;a&nbsp;null&nbsp;blob</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_02b2_ReferencePayloadBlob"><strong>test_RO_02b2_ReferencePayloadBlob</strong></a>(self)</dt><dd><tt>#&nbsp;Test&nbsp;A_BLOB64K&nbsp;explicitly&nbsp;(COOL&nbsp;bug&nbsp;#18146,&nbsp;CORAL&nbsp;bug&nbsp;#22203)</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_02c_ReferencePayloadNull"><strong>test_RO_02c_ReferencePayloadNull</strong></a>(self)</dt><dd><tt>#&nbsp;From&nbsp;RelationalCool/tests/RalDatabase_extendedSpec</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_03_listChannels"><strong>test_RO_03_listChannels</strong></a>(self)</dt><dd><tt>#&nbsp;Test&nbsp;for&nbsp;Richard's&nbsp;bug&nbsp;#16995&nbsp;in&nbsp;Frontier&nbsp;(due&nbsp;to&nbsp;CORAL&nbsp;bug&nbsp;#18275)</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_04_findMV_headTag"><strong>test_RO_04_findMV_headTag</strong></a>(self)</dt><dd><tt>#&nbsp;Test&nbsp;for&nbsp;findObject&nbsp;for&nbsp;MV&nbsp;HEAD&nbsp;and&nbsp;tag</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_05_findMV_userTag"><strong>test_RO_05_findMV_userTag</strong></a>(self)</dt><dd><tt>#&nbsp;Test&nbsp;for&nbsp;findObject&nbsp;for&nbsp;MV&nbsp;user&nbsp;tag&nbsp;(test&nbsp;for&nbsp;Frontier&nbsp;MV&nbsp;bug&nbsp;#19753)</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_06a_UCharPayload"><strong>test_RO_06a_UCharPayload</strong></a>(self)</dt><dd><tt>#&nbsp;Test&nbsp;A_UCHAR&nbsp;for&nbsp;all&nbsp;256&nbsp;values&nbsp;(COOL&nbsp;bug&nbsp;#18146,&nbsp;CORAL&nbsp;bug&nbsp;#22203)</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_06b_UCharPayload_asString"><strong>test_RO_06b_UCharPayload_asString</strong></a>(self)</dt><dd><tt>#&nbsp;Test&nbsp;A_STRING1&nbsp;for&nbsp;all&nbsp;256&nbsp;values</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_06c_UCharPayload_asBlob"><strong>test_RO_06c_UCharPayload_asBlob</strong></a>(self)</dt><dd><tt>#&nbsp;Test&nbsp;A_BLOB1&nbsp;for&nbsp;all&nbsp;256&nbsp;values</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_07_ReferenceSchema"><strong>test_RO_07_ReferenceSchema</strong></a>(self)</dt><dd><tt>#&nbsp;Compare&nbsp;expected&nbsp;and&nbsp;actual&nbsp;SQL&nbsp;column&nbsp;types&nbsp;in&nbsp;the&nbsp;reference&nbsp;IOV&nbsp;table<br>
+#&nbsp;Only&nbsp;run&nbsp;this&nbsp;test&nbsp;if&nbsp;the&nbsp;current&nbsp;software&nbsp;release&nbsp;is&nbsp;2.0&nbsp;or&nbsp;higher:<br>
+#&nbsp;need&nbsp;the&nbsp;StorageType&nbsp;API&nbsp;-&nbsp;could&nbsp;also&nbsp;implement&nbsp;it&nbsp;using&nbsp;ExtendedALS,<br>
+#&nbsp;but&nbsp;this&nbsp;would&nbsp;not&nbsp;add&nbsp;anything&nbsp;useful&nbsp;to&nbsp;the&nbsp;schema&nbsp;evolution&nbsp;tests.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_08_content_sv"><strong>test_RO_08_content_sv</strong></a>(self)</dt><dd><tt>#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution/Attic/test_ReferenceDb.py<br>
+#&nbsp;[this&nbsp;was&nbsp;test_02_content_sv1]</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_09_content_mv1_HEAD"><strong>test_RO_09_content_mv1_HEAD</strong></a>(self)</dt><dd><tt>#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution/Attic/test_ReferenceDb.py<br>
+#&nbsp;[this&nbsp;was&nbsp;test_03_content_mv1_HEAD]</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_10_content_mv1_Tag_A1"><strong>test_RO_10_content_mv1_Tag_A1</strong></a>(self)</dt><dd><tt>#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution/Attic/test_ReferenceDb.py<br>
+#&nbsp;[this&nbsp;was&nbsp;test_04_content_mv1_Tag_A1]</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_11_content_mv1_Tag_B1"><strong>test_RO_11_content_mv1_Tag_B1</strong></a>(self)</dt><dd><tt>#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution/Attic/test_ReferenceDb.py<br>
+#&nbsp;[this&nbsp;was&nbsp;test_05_content_mv1_Tag_B1]</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_12_content_mv2_HEAD"><strong>test_RO_12_content_mv2_HEAD</strong></a>(self)</dt><dd><tt>#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution/Attic/test_ReferenceDb.py<br>
+#&nbsp;[this&nbsp;was&nbsp;approximately&nbsp;test_06_content_mv2_HEAD]</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-test_RO_13_content_mv2_UserTag_A2"><strong>test_RO_13_content_mv2_UserTag_A2</strong></a>(self)</dt><dd><tt>#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution/Attic/test_ReferenceDb.py<br>
+#&nbsp;[this&nbsp;was&nbsp;approximately&nbsp;test_07_content_mv2_Tag_A2]</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>connectString</strong> = ''</dl>
+
+<dl><dt><strong>db</strong> = 0</dl>
+
+<dl><dt><strong>iTest</strong> = 0</dl>
+
+<dl><dt><strong>mgr</strong> = 0</dl>
+
+<dl><dt><strong>schemaVersion20x</strong> = True</dl>
+
+<hr>
+Methods inherited from <a href="unittest.html#TestCase">unittest.TestCase</a>:<br>
+<dl><dt><a name="TestReferenceDbRO-__call__"><strong>__call__</strong></a>(self, *args, **kwds)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRO-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRO-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRO-assertAlmostEqual"><strong>assertAlmostEqual</strong></a> = failUnlessAlmostEqual(self, first, second, places<font color="#909090">=7</font>, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-assertAlmostEquals"><strong>assertAlmostEquals</strong></a> = failUnlessAlmostEqual(self, first, second, places<font color="#909090">=7</font>, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-assertEqual"><strong>assertEqual</strong></a> = failUnlessEqual(self, first, second, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-assertEquals"><strong>assertEquals</strong></a> = failUnlessEqual(self, first, second, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-assertFalse"><strong>assertFalse</strong></a> = failIf(self, expr, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;if&nbsp;the&nbsp;expression&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-assertNotAlmostEqual"><strong>assertNotAlmostEqual</strong></a> = failIfAlmostEqual(self, first, second, places<font color="#909090">=7</font>, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-assertNotAlmostEquals"><strong>assertNotAlmostEquals</strong></a> = failIfAlmostEqual(self, first, second, places<font color="#909090">=7</font>, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-assertNotEqual"><strong>assertNotEqual</strong></a> = failIfEqual(self, first, second, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-assertNotEquals"><strong>assertNotEquals</strong></a> = failIfEqual(self, first, second, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-assertRaises"><strong>assertRaises</strong></a> = failUnlessRaises(self, excClass, callableObj, *args, **kwargs)</dt><dd><tt>Fail&nbsp;unless&nbsp;an&nbsp;exception&nbsp;of&nbsp;class&nbsp;excClass&nbsp;is&nbsp;thrown<br>
+by&nbsp;callableObj&nbsp;when&nbsp;invoked&nbsp;with&nbsp;arguments&nbsp;args&nbsp;and&nbsp;keyword<br>
+arguments&nbsp;kwargs.&nbsp;If&nbsp;a&nbsp;different&nbsp;type&nbsp;of&nbsp;exception&nbsp;is<br>
+thrown,&nbsp;it&nbsp;will&nbsp;not&nbsp;be&nbsp;caught,&nbsp;and&nbsp;the&nbsp;test&nbsp;case&nbsp;will&nbsp;be<br>
+deemed&nbsp;to&nbsp;have&nbsp;suffered&nbsp;an&nbsp;error,&nbsp;exactly&nbsp;as&nbsp;for&nbsp;an<br>
+unexpected&nbsp;exception.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-assertTrue"><strong>assertTrue</strong></a> = failUnless(self, expr, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;unless&nbsp;the&nbsp;expression&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-assert_"><strong>assert_</strong></a> = failUnless(self, expr, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;unless&nbsp;the&nbsp;expression&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-countTestCases"><strong>countTestCases</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRO-debug"><strong>debug</strong></a>(self)</dt><dd><tt>Run&nbsp;the&nbsp;test&nbsp;without&nbsp;collecting&nbsp;errors&nbsp;in&nbsp;a&nbsp;TestResult</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-defaultTestResult"><strong>defaultTestResult</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRO-fail"><strong>fail</strong></a>(self, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;immediately,&nbsp;with&nbsp;the&nbsp;given&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-failIf"><strong>failIf</strong></a>(self, expr, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;if&nbsp;the&nbsp;expression&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-failIfAlmostEqual"><strong>failIfAlmostEqual</strong></a>(self, first, second, places<font color="#909090">=7</font>, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-failIfEqual"><strong>failIfEqual</strong></a>(self, first, second, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-failUnless"><strong>failUnless</strong></a>(self, expr, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;unless&nbsp;the&nbsp;expression&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-failUnlessAlmostEqual"><strong>failUnlessAlmostEqual</strong></a>(self, first, second, places<font color="#909090">=7</font>, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-failUnlessEqual"><strong>failUnlessEqual</strong></a>(self, first, second, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-failUnlessRaises"><strong>failUnlessRaises</strong></a>(self, excClass, callableObj, *args, **kwargs)</dt><dd><tt>Fail&nbsp;unless&nbsp;an&nbsp;exception&nbsp;of&nbsp;class&nbsp;excClass&nbsp;is&nbsp;thrown<br>
+by&nbsp;callableObj&nbsp;when&nbsp;invoked&nbsp;with&nbsp;arguments&nbsp;args&nbsp;and&nbsp;keyword<br>
+arguments&nbsp;kwargs.&nbsp;If&nbsp;a&nbsp;different&nbsp;type&nbsp;of&nbsp;exception&nbsp;is<br>
+thrown,&nbsp;it&nbsp;will&nbsp;not&nbsp;be&nbsp;caught,&nbsp;and&nbsp;the&nbsp;test&nbsp;case&nbsp;will&nbsp;be<br>
+deemed&nbsp;to&nbsp;have&nbsp;suffered&nbsp;an&nbsp;error,&nbsp;exactly&nbsp;as&nbsp;for&nbsp;an<br>
+unexpected&nbsp;exception.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRO-id"><strong>id</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRO-run"><strong>run</strong></a>(self, result<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRO-shortDescription"><strong>shortDescription</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;one-line&nbsp;description&nbsp;of&nbsp;the&nbsp;test,&nbsp;or&nbsp;None&nbsp;if&nbsp;no<br>
+description&nbsp;has&nbsp;been&nbsp;provided.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;this&nbsp;method&nbsp;returns&nbsp;the&nbsp;first&nbsp;line&nbsp;of<br>
+the&nbsp;specified&nbsp;test&nbsp;method's&nbsp;docstring.</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="unittest.html#TestCase">unittest.TestCase</a>:<br>
+<dl><dt><strong>__dict__</strong> = &lt;dictproxy object&gt;<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dl>
+
+<dl><dt><strong>__weakref__</strong> = &lt;attribute '__weakref__' of 'TestCase' objects&gt;<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dl>
+
+<dl><dt><strong>failureException</strong> = &lt;class exceptions.AssertionError&gt;<dd><tt>Assertion&nbsp;failed.</tt></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TestReferenceDbRW">class <strong>TestReferenceDbRW</strong></a>(<a href="unittest.html#TestCase">unittest.TestCase</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="PyCoolReferenceDb.html#TestReferenceDbRW">TestReferenceDbRW</a></dd>
+<dd><a href="unittest.html#TestCase">unittest.TestCase</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TestReferenceDbRW-__del__"><strong>__del__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRW-__init__"><strong>__init__</strong></a>(self, methodName<font color="#909090">='runTest'</font>)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRW-assertEqualsAL"><strong>assertEqualsAL</strong></a>(self, lhs, rhs, skipA_UCHAR<font color="#909090">=True</font>, skipA_BLOB64K<font color="#909090">=True</font>)</dt><dd><tt>#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution.<br>
+#&nbsp;Test&nbsp;method&nbsp;to&nbsp;compare&nbsp;two&nbsp;Records&nbsp;deeply<br>
+#&nbsp;(standard&nbsp;comparison&nbsp;only&nbsp;compares&nbsp;their&nbsp;pointers).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-runTest"><strong>runTest</strong></a>(self)</dt><dd><tt>#&nbsp;Strictly&nbsp;needed&nbsp;only&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;instantiate&nbsp;this&nbsp;class</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-setUp"><strong>setUp</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRW-tearDown"><strong>tearDown</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRW-test_RW_01_createNewFolderSet"><strong>test_RW_01_createNewFolderSet</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRW-test_RW_02_add_folder_SV"><strong>test_RW_02_add_folder_SV</strong></a>(self)</dt><dd><tt>#&nbsp;Tests&nbsp;adding&nbsp;a&nbsp;new&nbsp;SV&nbsp;folder.<br>
+#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution/Attic/test_ReferenceDb.py<br>
+#&nbsp;[this&nbsp;was&nbsp;test_09_add_folder_SV]</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-test_RW_03_add_folder_MV"><strong>test_RW_03_add_folder_MV</strong></a>(self)</dt><dd><tt>#&nbsp;Tests&nbsp;adding&nbsp;a&nbsp;new&nbsp;MV&nbsp;folder.<br>
+#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution/Attic/test_ReferenceDb.py<br>
+#&nbsp;[this&nbsp;was&nbsp;test_10_add_folder_MV]</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-test_RW_04_add_folder_MV_userTag"><strong>test_RW_04_add_folder_MV_userTag</strong></a>(self)</dt><dd><tt>#&nbsp;Tests&nbsp;adding&nbsp;a&nbsp;new&nbsp;MV&nbsp;folder&nbsp;with&nbsp;user&nbsp;tagged&nbsp;data.<br>
+#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution/Attic/test_ReferenceDb.py<br>
+#&nbsp;[this&nbsp;was&nbsp;test_11_add_folder_userTag]</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-test_RW_05_add_data_existing_folder_SV"><strong>test_RW_05_add_data_existing_folder_SV</strong></a>(self)</dt><dd><tt>#&nbsp;Tests&nbsp;adding&nbsp;new&nbsp;SV&nbsp;data&nbsp;to&nbsp;an&nbsp;existing&nbsp;evolved&nbsp;folder.<br>
+#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution/Attic/test_ReferenceDb.py<br>
+#&nbsp;[this&nbsp;was&nbsp;test_12_add_data_existing_folder_SV]</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-test_RW_06_add_data_existing_folder_MV"><strong>test_RW_06_add_data_existing_folder_MV</strong></a>(self)</dt><dd><tt>#&nbsp;Tests&nbsp;adding&nbsp;new&nbsp;MV&nbsp;data&nbsp;to&nbsp;an&nbsp;existing&nbsp;evolved&nbsp;folder.<br>
+#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution/Attic/test_ReferenceDb.py<br>
+#&nbsp;[this&nbsp;was&nbsp;test_13_add_data_existing_folder_MV]<br>
+#&nbsp;[this&nbsp;was&nbsp;also&nbsp;test_14_add_userTag_existing_folder_MV]</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-test_RW_07_add_dataUserTag_existing_folder_MV"><strong>test_RW_07_add_dataUserTag_existing_folder_MV</strong></a>(self)</dt><dd><tt>#&nbsp;Tests&nbsp;adding&nbsp;new&nbsp;MV&nbsp;data&nbsp;with&nbsp;user&nbsp;tags&nbsp;to&nbsp;an&nbsp;existing&nbsp;evolved&nbsp;folder.<br>
+#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution/Attic/test_ReferenceDb.py<br>
+#&nbsp;[this&nbsp;was&nbsp;test_14_add_userTag_existing_folder_MV]</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-test_RW_08_createTagRelation"><strong>test_RW_08_createTagRelation</strong></a>(self)</dt><dd><tt>#&nbsp;Tests&nbsp;HVS&nbsp;with&nbsp;existing&nbsp;tags.<br>
+#&nbsp;From&nbsp;RelationalCool/tests/SchemaEvolution/Attic/test_ReferenceDb.py<br>
+#&nbsp;[this&nbsp;was&nbsp;approximately&nbsp;test_15_createTagRelation]</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-test_RW_09_add_folder_longPayloadDesc"><strong>test_RW_09_add_folder_longPayloadDesc</strong></a>(self)</dt><dd><tt>#&nbsp;Tests&nbsp;adding&nbsp;a&nbsp;new&nbsp;folder&nbsp;with&nbsp;a&nbsp;long&nbsp;payload&nbsp;description</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>connectString</strong> = ''</dl>
+
+<dl><dt><strong>db</strong> = 0</dl>
+
+<dl><dt><strong>iTest</strong> = 0</dl>
+
+<dl><dt><strong>mgr</strong> = 0</dl>
+
+<dl><dt><strong>schemaVersion20x</strong> = True</dl>
+
+<hr>
+Methods inherited from <a href="unittest.html#TestCase">unittest.TestCase</a>:<br>
+<dl><dt><a name="TestReferenceDbRW-__call__"><strong>__call__</strong></a>(self, *args, **kwds)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRW-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRW-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRW-assertAlmostEqual"><strong>assertAlmostEqual</strong></a> = failUnlessAlmostEqual(self, first, second, places<font color="#909090">=7</font>, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-assertAlmostEquals"><strong>assertAlmostEquals</strong></a> = failUnlessAlmostEqual(self, first, second, places<font color="#909090">=7</font>, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-assertEqual"><strong>assertEqual</strong></a> = failUnlessEqual(self, first, second, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-assertEquals"><strong>assertEquals</strong></a> = failUnlessEqual(self, first, second, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-assertFalse"><strong>assertFalse</strong></a> = failIf(self, expr, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;if&nbsp;the&nbsp;expression&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-assertNotAlmostEqual"><strong>assertNotAlmostEqual</strong></a> = failIfAlmostEqual(self, first, second, places<font color="#909090">=7</font>, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-assertNotAlmostEquals"><strong>assertNotAlmostEquals</strong></a> = failIfAlmostEqual(self, first, second, places<font color="#909090">=7</font>, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-assertNotEqual"><strong>assertNotEqual</strong></a> = failIfEqual(self, first, second, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-assertNotEquals"><strong>assertNotEquals</strong></a> = failIfEqual(self, first, second, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-assertRaises"><strong>assertRaises</strong></a> = failUnlessRaises(self, excClass, callableObj, *args, **kwargs)</dt><dd><tt>Fail&nbsp;unless&nbsp;an&nbsp;exception&nbsp;of&nbsp;class&nbsp;excClass&nbsp;is&nbsp;thrown<br>
+by&nbsp;callableObj&nbsp;when&nbsp;invoked&nbsp;with&nbsp;arguments&nbsp;args&nbsp;and&nbsp;keyword<br>
+arguments&nbsp;kwargs.&nbsp;If&nbsp;a&nbsp;different&nbsp;type&nbsp;of&nbsp;exception&nbsp;is<br>
+thrown,&nbsp;it&nbsp;will&nbsp;not&nbsp;be&nbsp;caught,&nbsp;and&nbsp;the&nbsp;test&nbsp;case&nbsp;will&nbsp;be<br>
+deemed&nbsp;to&nbsp;have&nbsp;suffered&nbsp;an&nbsp;error,&nbsp;exactly&nbsp;as&nbsp;for&nbsp;an<br>
+unexpected&nbsp;exception.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-assertTrue"><strong>assertTrue</strong></a> = failUnless(self, expr, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;unless&nbsp;the&nbsp;expression&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-assert_"><strong>assert_</strong></a> = failUnless(self, expr, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;unless&nbsp;the&nbsp;expression&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-countTestCases"><strong>countTestCases</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRW-debug"><strong>debug</strong></a>(self)</dt><dd><tt>Run&nbsp;the&nbsp;test&nbsp;without&nbsp;collecting&nbsp;errors&nbsp;in&nbsp;a&nbsp;TestResult</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-defaultTestResult"><strong>defaultTestResult</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRW-fail"><strong>fail</strong></a>(self, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;immediately,&nbsp;with&nbsp;the&nbsp;given&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-failIf"><strong>failIf</strong></a>(self, expr, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;if&nbsp;the&nbsp;expression&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-failIfAlmostEqual"><strong>failIfAlmostEqual</strong></a>(self, first, second, places<font color="#909090">=7</font>, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-failIfEqual"><strong>failIfEqual</strong></a>(self, first, second, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-failUnless"><strong>failUnless</strong></a>(self, expr, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;unless&nbsp;the&nbsp;expression&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-failUnlessAlmostEqual"><strong>failUnlessAlmostEqual</strong></a>(self, first, second, places<font color="#909090">=7</font>, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-failUnlessEqual"><strong>failUnlessEqual</strong></a>(self, first, second, msg<font color="#909090">=None</font>)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-failUnlessRaises"><strong>failUnlessRaises</strong></a>(self, excClass, callableObj, *args, **kwargs)</dt><dd><tt>Fail&nbsp;unless&nbsp;an&nbsp;exception&nbsp;of&nbsp;class&nbsp;excClass&nbsp;is&nbsp;thrown<br>
+by&nbsp;callableObj&nbsp;when&nbsp;invoked&nbsp;with&nbsp;arguments&nbsp;args&nbsp;and&nbsp;keyword<br>
+arguments&nbsp;kwargs.&nbsp;If&nbsp;a&nbsp;different&nbsp;type&nbsp;of&nbsp;exception&nbsp;is<br>
+thrown,&nbsp;it&nbsp;will&nbsp;not&nbsp;be&nbsp;caught,&nbsp;and&nbsp;the&nbsp;test&nbsp;case&nbsp;will&nbsp;be<br>
+deemed&nbsp;to&nbsp;have&nbsp;suffered&nbsp;an&nbsp;error,&nbsp;exactly&nbsp;as&nbsp;for&nbsp;an<br>
+unexpected&nbsp;exception.</tt></dd></dl>
+
+<dl><dt><a name="TestReferenceDbRW-id"><strong>id</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRW-run"><strong>run</strong></a>(self, result<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="TestReferenceDbRW-shortDescription"><strong>shortDescription</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;one-line&nbsp;description&nbsp;of&nbsp;the&nbsp;test,&nbsp;or&nbsp;None&nbsp;if&nbsp;no<br>
+description&nbsp;has&nbsp;been&nbsp;provided.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;this&nbsp;method&nbsp;returns&nbsp;the&nbsp;first&nbsp;line&nbsp;of<br>
+the&nbsp;specified&nbsp;test&nbsp;method's&nbsp;docstring.</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="unittest.html#TestCase">unittest.TestCase</a>:<br>
+<dl><dt><strong>__dict__</strong> = &lt;dictproxy object&gt;<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dl>
+
+<dl><dt><strong>__weakref__</strong> = &lt;attribute '__weakref__' of 'TestCase' objects&gt;<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dl>
+
+<dl><dt><strong>failureException</strong> = &lt;class exceptions.AssertionError&gt;<dd><tt>Assertion&nbsp;failed.</tt></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

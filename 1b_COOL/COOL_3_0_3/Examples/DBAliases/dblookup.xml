@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<servicelist>
+
+  <logicalservice name="CondDB">
+    <service name="sqlite_file:CondDB.db" accessMode="update" authentication="password" />
+    <service name="oracle://devdb10/lhcb_lcg_cool_dev" accessMode="update" authentication="password" />
+    <service name="mysql://pclhcb91.cern.ch/MARCOCLE" accessMode="update" authentication="password" />
+  </logicalservice>
+
+</servicelist>

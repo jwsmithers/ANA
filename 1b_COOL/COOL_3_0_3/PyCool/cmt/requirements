@@ -1,0 +1,157 @@
+package PyCool
+
+#============================================================================
+# Public dependencies and build rules
+#============================================================================
+
+# Define CMTINSTALLAREA correctly
+use LCG_Policy v*
+
+use CoolKernel *
+use CoolApplication *
+use Python * LCG_Interfaces 
+
+# Try to drop Reflex dependency of PyCool in ROOT6 (bug #102997)
+macro select_reflex "Reflex * LCG_Interfaces"
+###macro select_reflex $(select_reflex) ROOT_GE_6_00 "ROOT * LCG_Interfaces"
+use $(select_reflex)
+
+#----------------------------------------------------------------------------
+# Library
+#----------------------------------------------------------------------------
+
+# Make PyCool_helpers.h visible verbatim in PyCoolDict.so (bug #103539)
+# See http://stackoverflow.com/questions/14802807/compare-files-date-bash
+action concatenate_headers "if [ ! -e $(PyCool_root)/$(tag)/dict/PyCool_headers_and_helpers.h ] || [ $(PyCool_root)/$(tag)/dict/PyCool_headers_and_helpers.h -ot $(PyCool_root)/dict/PyCool_headers.h ] || [ $(PyCool_root)/$(tag)/dict/PyCool_headers_and_helpers.h -ot $(RelationalCool_root)/src/PyCool_helpers.h ] ; then mkdir -p $(PyCool_root)/$(tag)/dict ; cat $(PyCool_root)/dict/PyCool_headers.h $(RelationalCool_root)/src/PyCool_helpers.h > $(PyCool_root)/$(tag)/dict/PyCool_headers_and_helpers.h ; cp $(PyCool_root)/$(tag)/dict/PyCool_headers_and_helpers.h $(CMTINSTALLAREA)/$(tag)/python/PyCool/_internal/PyCool_headers_and_helpers.h ; fi"
+macro concatenate_headers_dependencies install_pythonmods
+macro lcg_PyCoolGen_dependencies concatenate_headers
+
+# Workaround for LCGCMT bug #45934 with CMT v1r20p20070208
+# -> Remove "-import= -import=Reflex" (kills macro <dictionary>_use_linkopts)
+# -> Note that Reflex_linkopts are already added to that macro by 'use Reflex'
+pattern reflex_dictionary \
+  private ;\
+  document reflex_dictionary_generator <dictionary>Gen <headerfiles> dictionary=<dictionary> libdirname=lib ; \
+  library <dictionary>Dict -s=../$(tag)/dict/<dictionary> *.cpp ; \
+  macro <dictionary>_reflex_selection_file " <selectionfile> " ; \ 
+  macro <dictionary>_rootmap $(<PACKAGE>ROOT)/$(tag)/<dictionary>Dict.rootmap \
+    <project>_with_installarea $(CMTINSTALLAREA)/$(tag)/lib/<project>Dict.rootmap ;\
+  macro <dictionary>_reflex_options " <options> $(gccxmlopts) --select=<selectionfile> --gccxmlpath=$(GCCXML_home)/bin" ; \
+  macro <dictionary>Dict_dependencies "$(<package>_linker_library) <dictionary>Gen" ;\
+  macro <dictionary>Dict_shlibflags "$(libraryshr_linkopts) $(cmt_installarea_linkopts) $(<package>_linkopts) $(<dictionary>Dict_use_linkopts) " ;\
+  end_private
+
+# Remove gccxml dependency for PyCool in ROOT6 (bug #103971 and SPI-435)
+# Generate "barebone" dictionaries for ROOT6 via --interpreteronly (bug #103298)
+pattern root6_dictionary \
+  private ;\
+  document reflex_dictionary_generator <dictionary>Gen <headerfiles> dictionary=<dictionary> libdirname=lib ; \
+  library <dictionary>Dict -s=../$(tag)/dict/<dictionary> *.cpp ; \
+  macro <dictionary>_reflex_selection_file " <selectionfile> " ; \ 
+  macro <dictionary>_reflex_options " <options> --select=<selectionfile> --interpreteronly" ; \
+  macro <dictionary>Dict_dependencies "$(<package>_linker_library) <dictionary>Gen" ;\
+  macro <dictionary>Dict_shlibflags "$(libraryshr_linkopts) $(cmt_installarea_linkopts) $(<package>_linkopts) $(<dictionary>Dict_use_linkopts) " ;\
+  end_private
+
+# Use different selections for ROOT6/c++11 and ROOT5/boost 
+# [This is related to task #48846, bug #103302, bug #103309, bug #103298]
+# If ROOT6 is used, we can automatically assume that >=COOL290 is used
+macro PyCool_selection_file ../dict/PyCool_selection.xml \
+  ROOT_GE_6_00&target-c11 ../dict/PyCool_selection_root6.xml
+macro PyCool_dictionary_pattern reflex_dictionary \
+  ROOT_GE_6_00&target-c11 root6_dictionary
+apply_pattern $(PyCool_dictionary_pattern) dictionary=lcg_PyCool \
+  selectionfile=$(PyCool_selection_file) \
+  headerfiles=$(PyCool_root)/$(tag)/dict/PyCool_headers_and_helpers.h
+
+include_path none
+
+#============================================================================
+# Private dependencies and build rules
+#============================================================================
+
+private
+
+# 1. Disable c++0x/c++11 for target-c11 on ROOT5 (workaround for bug #97948)
+# Use target-c11 instead of target-gccmax (fix bug #98684)
+# 2. Reenable c++0x/c++11 for target-c11 on ROOT6 (see ROOT-5559)
+macro_remove cppflags "-std=c++0x" ROOT_GE_6_00&target-c11 ""
+macro_remove cppflags "-std=c++11" ROOT_GE_6_00&target-c11 ""
+
+# Add -fpermissive for c++11 on ROOT6 (temporary workaround for bug #103303)
+# Use this only on gcc as on clang the option does not exist (SPI-355)
+# Disable the workaround as this issue is now fixed in ROOT6 (ROOT-5757)
+###macro_append cppflags "" ROOT_GE_6_00&target-c11&target-gcc " -fpermissive "
+
+# Disable COOL290 API deprecation warnings in PyCool (bug #103338)
+macro_append cppflags "" \
+  target-gcc " -Wno-deprecated-declarations " \
+  target-clang " -Wno-deprecated-declarations "
+
+# Debug options for genreflex (show the full gccxml invocation)
+###macro_prepend gccxmlopts "" target-winxp " --debug=1"
+
+# Debug options for gccxml in genreflex (print all #define)
+###macro_prepend gccxmlopts '' target-winxp ' --gccxmlopt="-E -dM"'
+
+# Add missing options to genreflex for Windows (MarcoC - Nov 2006)
+macro_prepend gccxmlopts "" target-winxp " -D__MT__"
+
+# Disable vc9 warnings (workaround for bug #45757)
+macro_prepend use_cppflags "" target-vc9 " /D_SCL_SECURE_NO_WARNINGS"
+
+macro_append Boost_linkopts " $(Boost_linkopts_thread)"
+macro_append CORAL_linkopts " $(CORAL_libs)"
+
+# Change the name of the generated rootmap file for ROOT5
+# Do not generate any rootmap for ROOT6 (see bug #103298)
+macro lcg_PyCool_rootmap "$(CMTINSTALLAREA)/$(tag)/lib/lcg_PyCool.rootmap" \
+  ROOT_GE_6_00&target-c11 ""
+
+#----------------------------------------------------------------------------
+# Install temporary dictionary files (debug bug #102087)
+#----------------------------------------------------------------------------
+
+macro tmpdir "$(CMTINSTALLAREA)/$(tag)/tmp"
+action install_tmpdict "mkdir -p $(tmpdir); cp -rf ../$(tag)/dict $(tmpdir)/."
+
+# Copy dictionaries after they are generated but before they are compiled
+# This makes it possible to debug ROOT6 dictionary generation (ROOT-5544)
+macro install_tmpdict_dependencies lcg_PyCoolGen
+
+# Append to 'constituents' to execute an action in 'cmt make'
+# (append to 'all_constituents' to execute it only in 'cmt make all').
+# Remove the action from cmt_actions_constituents so that the action 
+# is not executed twice in 'cmt make all_groups' (it executes all actions).
+macro_append constituents " install_tmpdict "
+macro_remove cmt_actions_constituents "install_tmpdict"
+
+#----------------------------------------------------------------------------
+# Install an empty pcm (workaround for ROOT-6366)
+#----------------------------------------------------------------------------
+
+# Install an empty pcm (workaround for ROOT-6366)
+###action install_pcm "touch $(CMTINSTALLAREA)/$(tag)/lib/lcg_PyCoolDict_rdict.pcm"
+
+# Append to 'constituents' to execute an action in 'cmt make'
+# (append to 'all_constituents' to execute it only in 'cmt make all').
+# Remove the action from cmt_actions_constituents so that the action 
+# is not executed twice in 'cmt make all_groups' (it executes all actions).
+###macro_append constituents "" ROOT_GE_6_00 " install_pcm "
+###macro_remove cmt_actions_constituents "install_pcm"
+
+#----------------------------------------------------------------------------
+# Tests
+#----------------------------------------------------------------------------
+
+apply_pattern lcg_test_python
+apply_pattern lcg_cond_mkdir dir=$(PyCool_cmtpath)/../$(tag)/tests/bin
+macro_append tests_dependencies lcg_mkdir
+
+# Fake target for utilities
+action utilities "echo No utilities in this package"
+macro_remove cmt_actions_constituents "utilities"
+
+# Fake target for examples
+action examples "echo No examples in this package"
+macro_remove cmt_actions_constituents "examples"

@@ -1,0 +1,7 @@
+SET MARKUP HTML ENTMAP OFF
+prompt <h2>TABLE &1</h2>
+SET MARKUP HTML ENTMAP ON
+
+desc &2
+
+quit;

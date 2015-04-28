@@ -1,0 +1,173 @@
+package CoralTest
+
+# Define CMTINSTALLAREA correctly
+use LCG_Policy v*
+
+# Basic dependencies as in CoralBase
+use Boost v* LCG_Interfaces
+# Eventually drop Boost dependency of CoralBase in ROOT6
+###macro select_boost "Boost * LCG_Interfaces" ROOT_GE_6_00 "LCG_Policy v*" 
+###use $(select_boost)
+
+#----------------------------------------------------------------------------
+# CORAL plugin runtime
+#----------------------------------------------------------------------------
+
+use XercesC v* LCG_Interfaces 
+
+use oracle v* LCG_Interfaces
+use mysql  v* LCG_Interfaces
+use sqlite v* LCG_Interfaces
+use Frontier_Client v* LCG_Interfaces
+
+# Workaround to set correctly oracle charset (to be put in LCG_Interfaces)
+set NLS_LANG american_america.WE8ISO8859P1
+
+# New deployment strategy for tnsnames.ora (CORALCOOL-2756, SPI-758, SPI-726).
+# Also workaround for obsolete tnsnames.ora in LHCb cvmfs (CORALCOOL-2164).
+set TNS_ADMIN /afs/cern.ch/sw/lcg/app/releases/CORAL/internal/oracle/admin
+
+#----------------------------------------------------------------------------
+# Generic test runtime for CORAL and COOL
+#----------------------------------------------------------------------------
+
+use CppUnit  v* LCG_Interfaces
+use QMtest   v* LCG_Interfaces
+use valgrind v* LCG_Interfaces
+use igprof   v* LCG_Interfaces
+use tcmalloc v* LCG_Interfaces
+
+# Workaround for "failed to start tool 'memcheck'" issue on 32bit platforms?
+# See http://daveti.blog.com/2012/08/01/valgrind-dynamic-code-analysis-tool-part-v-valgrind-failed-to-start-tool-memcheck-for-platform/
+###set VALGRIND_LIB "$(valgrind_home)/lib/valgrind"
+
+#----------------------------------------------------------------------------
+# PyCoral runtime
+#----------------------------------------------------------------------------
+
+use Python * LCG_Interfaces 
+
+#----------------------------------------------------------------------------
+# More specific test runtime for CORAL
+#----------------------------------------------------------------------------
+
+path_prepend QMTEST_CLASS_PATH "$(CoralTest_root)/qmtest"
+
+# This is used within qmtest for logging (and configuring tests if needed)
+set CORALSYS $(CORAL_home)/../$(tag)
+
+#----------------------------------------------------------------------------
+# Additional runtime for the CORAL nightly tests
+# Some settings are different on the various slots
+#----------------------------------------------------------------------------
+
+# CMTCONFIG three-digit id to use unique tables/ports in tests (bug #102696)
+# NB: every new development or supported platform must be added here!
+set CORAL_CMTCONFIG_HASH         999 \
+    x86_64-ubuntu14-gcc48-opt    481 \
+    x86_64-ubuntu14-gcc48-dbg    482 \
+    x86_64-ubuntu14-gcc49-opt    491 \
+    x86_64-ubuntu14-gcc49-dbg    492 \
+    i686-slc5-gcc43-opt          501 \
+    i686-slc5-gcc43-dbg          502 \
+    x86_64-slc5-gcc43-opt        503 \
+    x86_64-slc5-gcc43-dbg        504 \
+    i686-slc5-gcc46-opt          511 \
+    i686-slc5-gcc46-dbg          512 \
+    x86_64-slc5-gcc46-opt        513 \
+    x86_64-slc5-gcc46-dbg        514 \
+    i686-slc5-icc13-opt          521 \
+    i686-slc5-icc13-dbg          522 \
+    x86_64-slc5-icc13-opt        523 \
+    x86_64-slc5-icc13-dbg        524 \
+    i686-slc6-gcc46-opt          601 \
+    i686-slc6-gcc46-dbg          602 \
+    x86_64-slc6-gcc46-opt        603 \
+    x86_64-slc6-gcc46-dbg        604 \
+    i686-slc6-gcc46-cov          605 \
+    i686-slc6-gcc46-pro          606 \
+    x86_64-slc6-gcc46-cov        607 \
+    x86_64-slc6-gcc46-pro        608 \
+    i686-slc6-gcc47-opt          611 \
+    i686-slc6-gcc47-dbg          612 \
+    x86_64-slc6-gcc47-opt        613 \
+    x86_64-slc6-gcc47-dbg        614 \
+    i686-slc6-gcc48-opt          621 \
+    i686-slc6-gcc48-dbg          622 \
+    x86_64-slc6-gcc48-opt        623 \
+    x86_64-slc6-gcc48-dbg        624 \
+    i686-slc6-clang32-opt        631 \
+    i686-slc6-clang32-dbg        632 \
+    x86_64-slc6-clang32-opt      633 \
+    x86_64-slc6-clang32-dbg      634 \
+    i686-slc6-clang33-opt        641 \
+    i686-slc6-clang33-dbg        642 \
+    x86_64-slc6-clang33-opt      643 \
+    x86_64-slc6-clang33-dbg      644 \
+    i686-slc6-icc13-opt          651 \
+    i686-slc6-icc13-dbg          652 \
+    x86_64-slc6-icc13-opt        653 \
+    x86_64-slc6-icc13-dbg        654 \
+    i686-slc6-gcc49-opt          661 \
+    i686-slc6-gcc49-dbg          662 \
+    x86_64-slc6-gcc49-opt        663 \
+    x86_64-slc6-gcc49-dbg        664 \
+    i686-slc6-gccmax-opt         691 \
+    i686-slc6-gccmax-dbg         692 \
+    x86_64-slc6-gccmax-opt       693 \
+    x86_64-slc6-gccmax-dbg       694 \
+    i386-mac106-gcc42-opt        701 \
+    i386-mac106-gcc42-dbg        702 \
+    x86_64-mac106-gcc42-opt      703 \
+    x86_64-mac106-gcc42-dbg      704 \
+    i686-cc7-gcc48-opt           781 \
+    i686-cc7-gcc48-dbg           782 \
+    x86_64-cc7-gcc48-opt         783 \
+    x86_64-cc7-gcc48-dbg         784 \
+    i686-cc7-gcc49-opt           791 \
+    i686-cc7-gcc49-dbg           792 \
+    x86_64-cc7-gcc49-opt         793 \
+    x86_64-cc7-gcc49-dbg         794 \
+    x86_64-mac108-gcc42-opt      803 \
+    x86_64-mac108-gcc42-dbg      804 \
+    x86_64-mac108-llvm42-opt     813 \
+    x86_64-mac108-llvm42-dbg     814 \
+    x86_64-mac108-clang42-opt    823 \
+    x86_64-mac108-clang42-dbg    824
+
+#============================================================================
+# Private actions and build rules
+#============================================================================
+
+private
+
+#----------------------------------------------------------------------------
+# Actions and build rules - install scripts
+#----------------------------------------------------------------------------
+
+action install_scripts "mkdir -p $(CMTINSTALLAREA)/$(tag)/bin; cp -r ../scripts/*.* $(CMTINSTALLAREA)/$(tag)/bin/."
+
+# Append to 'constituents' to execute an action in 'cmt make'
+# (append to 'all_constituents' to execute it only in 'cmt make all').
+# Remove the action from cmt_actions_constituents so that the action 
+# is not executed twice in 'cmt make all_groups' (it executes all actions).
+macro_append constituents "install_scripts"
+macro_remove cmt_actions_constituents "install_scripts"
+
+#----------------------------------------------------------------------------
+# Actions and build rules - tests, utilities and examples
+#----------------------------------------------------------------------------
+
+# Fake target for tests
+action tests "echo No tests in this package"
+macro_remove cmt_actions_constituents "tests"
+
+# Fake target for utilities
+action utilities "echo No utilities in this package"
+macro_remove cmt_actions_constituents "utilities"
+
+# Fake target for examples
+action examples "echo No examples in this package"
+macro_remove cmt_actions_constituents "examples"
+
+#============================================================================

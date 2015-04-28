@@ -1,0 +1,130 @@
+------------------------------------------------
+AV's plan for cleaning up the code - 14.12.2004
+------------------------------------------------
+
+General ideas:
+- Need three or more types of classes, Relational, Ral, Hvs;
+  for the moment they can stay all in RelationalCool, then we can move them
+- Hvs for the moment is only needed to model transient HVS entities
+  and factor out functionality that is implemented by CondDB stuff too
+  (eg HvsNode should be - again - a base clas for RelationalFolder)
+- Relational classes should contain all the table and column names
+  and all the algorithmic logic of the relational implementation
+- Ral classes should contain only the code that really does table
+  creation/dropping and row insertion/update/select/delete: the idea 
+  is that one can provide a MySQL or OCCI direct implementation of 
+  the Relational conddb by JUST replacing the Ral classes
+==> Main emphasis of this round of cleanup should be to extract out of
+    the Ral classes the functionality that belongs to Relational
+
+Specific points for Ral classes
+
+- RalDatabaseSvc: OK should remain
+
+- RalDatabaseSvcFactory: OK for now... eventually may be replaced
+  by a more general DatabaseSvcFactory, which should understand
+  IDs of the form "ral::mysql:/" or "mysql::mysql:/" and instantiate
+  a Ralor MySQL database service to handle the same mysql database....
+
+- RalTransaction: should disappear, it should become RelationalTransaction.
+  The idea is that the user does not manipulate transactions.
+  All methoids called by the user are encapsulated within a transaction.
+  Typically, these methods have the form { 1.startTransaction
+  2.doSomethingInDb 3.commitTransaction }. Such methods should
+  go to the Relational classes. In particular, startTransaction and
+  commitTransaction should be achieved withRelationalTransaction, eg
+    RelationalFolder::findObject(...){
+      RelationalTransaction transaction( m_db );
+      m_db->fetchRow(...);
+      transaction.commit();
+      ... interpret the row and return the object ...
+    }
+    RelationalTransaction( RelationalDatabase* db ) {
+      db->startTransaction( this );
+    }
+  The RalDatabase, ie the only Ral aware class, is the one that both
+  fetches the object and actually starts the transaction:
+    virtual RelationalDatabase startTransaction( RelationalTransaction t ) = 0;
+    virtual RelationalDatabase fetchRow(...) = 0;
+    RalDatabase::startTransaction( RelationalTransaction t ) {
+      m_session->startTransaction(...);
+      t.setStarted(); // JUST SETS A FLAG...
+    }
+    RalDatabase::fetchRow(...) {
+      m_session->getCursorForTheQuery.....
+    }
+  Forcing the startTransaction method to accept a RelationalTransaction
+  argument binds the startTransaction to a particular transaction instance,
+  so that one is not just tempted to call startTransaction instead
+  of writing "RelationalTransaction t" in the method where t is started.
+  Eventually, note that RDBMS offer the possibility to start transacions
+  with a name, so as to have several concurrent isolated transactions
+  in the same session... passing the argument can just pass the name...
+
+- RalSequence: this should also change as RelationalSequence.
+  Again, RalDatabase should take care of doing the actual insert/delete
+  and so on in the database....
+  I would keep this for quite a while, because I am not sure when
+  RAL will support native sequences, or provide SYSDATE support.
+  Eventually one may think of having all sequences in the same table,
+  each sequence in a separate row, to have fewer tables.
+
+- RalDatabase: this should be the ONLY Ral class (apart from the
+  databasesvc and its factory) that remains.
+  NB: for the moment, the methods it is answeriung are of the form
+  'fetch object from object table with that order'...
+  Eventually, this could be refactored slightly so that it offers
+  much higher level services, eg generic table handling, BUT
+  - we dont want to reinvent RAL
+  - somewhere the specific choices of how to write the queries in SQL 
+    (eg the order of inserting the arguments) must be made,
+    and it should be in the RAL specific class
+
+Other points:
+
+- Should make much more uniform the treatment of the various tables
+  in the code, have a uniform look and feel for defining the column
+  names and column types. We may think of using typedefs for the
+  column types (in the static declarations), so that the code is not
+  forced to make assumptions in setValue/getValue (eg if IValidityKey
+  is declared as long long but the iovSince column is typedefed
+  temporarily as long, the code can be written without knowing
+  that the iovSince is long... it will just force a conversion
+  from IValidityKey to/from iovSince type, whatever that is)
+
+- It may be (??) useful to have a table class, and derive all 
+  tables that are present in our code from that class.
+  But not sure, what would this gain exactly?
+  Maybe we can let RalDatabase handle the base table, and then automatically
+  all derived tables by inheritance?
+  
+- Instead/in any case, it may be useful to split out the various
+  'namespaces' RelationalObjectTable, RelationalFolderTable and so on
+  as real classes RelationalObjectTable, RelationalFolderTable, and so on.
+  Definitely (again!), the look and feel should be more harmonious,
+  eg column definitions for RelationalObjectTable in file
+  RelationalObject.h, or RelationalObjectTable.h, not moving
+  from RalDatabase.h to RelationalDatabase.h and so on...
+
+AOB
+
+- Iterators
+  Eventually these should become real iterators which retrieve rows in bulk,
+  say 1000 by 1000, but not N millions rows all together if this is what is 
+  in the table and in the iteration loop. For this reason it should
+  only have forward iteration. "Freezing" of the database
+  can be achived by only selecting rows whose insertion time,
+  or update time, is less than the time at which the iterator
+  was created....
+  The number of rows fetched in each roundtrip may be set by the user, 
+  but it may also be an internal detail at the beginning.
+  That is to say: the initial implementation of the iterator
+  now returns an ObjectVectorIterator, but eventually
+  it should return something more complex!
+
+- Update time
+  The feature outlined above needs an extra "update time" column
+  that should be changed when for instance the online columns
+  has +infinity transformed into a real time.
+  Note that also in the versioning mode you will have the need
+  for updating the rows (eg "HEAD unti objectId..." column).

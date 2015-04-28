@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE extension  PUBLIC '-//QM/2.3/Extension//EN'  'http://www.codesourcery.com/qm/dtds/2.3/-//qm/2.3/extension//en.dtd'>
+<extension class="explicit_suite.ExplicitSuite" kind="suite">
+  <argument name="suite_ids"><set>
+    <!-- Around 1 minute -->
+    <text>unit_coralserver</text>
+  </set></argument>
+  <argument name="test_ids"><set>
+    <!-- Around 2 minutes -->
+    <!--text>integration.miscellaneousbugs_mysql</text-->
+    <!--text>integration.miscellaneousbugs_mysql-coral</text-->
+    <!--text>integration.miscellaneousbugs_oracle</text-->
+    <!--text>integration.miscellaneousbugs_oracle-coral</text-->
+    <!--text>integration.miscellaneousbugs_oracle-frontier</text-->
+    <text>integration.miscellaneousbugs_sqlite</text>
+    <!--text>integration.writeread_mysql</text-->
+    <!--text>integration.writeread_mysql-coral</text-->
+    <!--text>integration.writeread_oracle</text-->
+    <!--text>integration.writeread_oracle-coral</text-->
+    <!--text>integration.writeread_oracle-frontier</text-->
+    <text>integration.writeread_sqlite</text>
+    <!-- Around 1 minute -->
+    <!--text>pycoral_integration.basic_mysql-coral</text-->
+    <!--text>pycoral_integration.basic_mysql</text-->
+    <!--text>pycoral_integration.basic_oracle-coral</text-->
+    <!--text>pycoral_integration.basic_oracle-frontier</text-->
+    <!--text>pycoral_integration.basic_oracle</text-->
+    <text>pycoral_integration.basic_sqlite</text>
+    <!--text>pycoral_integration.miscellaneousbugs_mysql-coral</text-->
+    <!--text>pycoral_integration.miscellaneousbugs_mysql</text-->
+    <!--text>pycoral_integration.miscellaneousbugs_oracle-coral</text-->
+    <!--text>pycoral_integration.miscellaneousbugs_oracle-frontier</text-->
+    <!--text>pycoral_integration.miscellaneousbugs_oracle</text-->
+    <text>pycoral_integration.miscellaneousbugs_sqlite</text>
+    <!-- Around 0 minute -->
+    <text>pycoral.importpycoral</text>
+    <!-- Around 1 minute -->
+    <text>unit.connectionservice_connection</text>
+    <text>unit.coralbase_blobreadwrite</text>
+    <text>unit.coralbase_coralbasetest</text>
+    <text>unit.coralbase_cppunitexample</text>
+    <text>unit.coralbase_datatypebug</text>
+    <text>unit.coralbase_date</text>
+    <text>unit.coralbase_messagestream</text>
+    <text>unit.coralbase_timestamp</text>
+    <text>unit.coralcommon_monitoringevent</text>
+    <text>unit.coralcommon_simpleexpressionparser</text>
+    <text>unit.coralcommon_timer</text>
+    <text>unit.coralcommon_uriparser</text>
+    <text>unit.coralkernel_coralkerneltest</text>
+    <text>unit.coralkernel_externalpluginmanager</text>
+    <text>unit.coralkernel_pluginlist</text>
+    <text>unit.coralkernel_pluginmanager</text>
+    <text>unit.coralkernel_propertymanager</text>
+  </set></argument>
+</extension>
