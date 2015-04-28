@@ -1,0 +1,22 @@
+--- requirements	2015-04-17 18:13:01.928308681 +0200
++++ requirements1	2015-04-28 11:54:03.540301546 +0200
+@@ -9,8 +9,8 @@
+ apply_pattern declare_python_modules files="gdbhacks *.py"
+ apply_pattern declare_scripts files="atlasAddress2Line"
+ 
+-application resolveAtlasAddr2Line ../app/resolveAtlasAddr2Line.cpp
+-macro_append resolveAtlasAddr2Line_dependencies " external_make_all "
++#application resolveAtlasAddr2Line ../app/resolveAtlasAddr2Line.cpp
++#macro_append resolveAtlasAddr2Line_dependencies " external_make_all "
+ 
+ macro AtlasGdb_native_version "7.8.1"
+ macro AtlasGdb_lib "$(AtlasGdb_root)/$(CMTCONFIG)/lib"
+@@ -60,7 +60,7 @@
+   slc6&64&clang32 \ 
+  " $(AtlasGdb_root)/$(tag)/lib/libbfd.a \ 
+    $(AtlasGdb_root)/$(tag)/lib/x86_64/libiberty.a -lz " \
+-  slc6&64&icc13 \ 
++  slc6&64&icc13&fc21 \ 
+  " $(AtlasGdb_root)/$(tag)/lib/libbfd.a \ 
+    $(AtlasGdb_root)/$(tag)/lib/libiberty.a -lz " \
+   slc6 \

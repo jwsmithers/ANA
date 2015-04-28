@@ -1,0 +1,25 @@
+--- requirements	2015-04-28 14:11:45.714367085 +0200
++++ requirements1	2015-04-28 14:13:50.598600118 +0200
+@@ -5,11 +5,11 @@
+ 
+ macro LCG_releases        "$(LCG_Settings_root)/../../.." \
+       ATLAS&LCG_nightlies "$(LCG_Settings_root)/../../.." \
+-      ATLAS               "${SITEROOT}/sw/lcg/app/releases"
++      ATLAS               "${LCG_install}"
+ 
+ macro LCG_external        "$(LCG_Settings_root)/../../.." \
+       ATLAS&LCG_nightlies "$(LCG_Settings_root)/../../.." \
+-      ATLAS               "${SITEROOT}/sw/lcg/external"
++      ATLAS               "${LCG_install}"
+ 
+ # ==== pattern to express optional dependencies =====
+ pattern use_optional \
+@@ -137,7 +137,7 @@
+       target-gcc46             "4.6.3" \
+       target-gcc47             "4.7.2" \
+       target-gcc48             "4.8.1" \
+-      target-gcc49             "4.9.1" \
++      target-gcc49             "4.9.2" \
+       target-gccmax            "max" \
+       target-g11max            "g11" \
+       target-icc11             "4.3.6" \
