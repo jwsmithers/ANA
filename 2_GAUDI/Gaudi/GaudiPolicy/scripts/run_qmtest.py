@@ -77,6 +77,10 @@ def main(argv = None):
 
     print "==========> Running tests for package %s" % opts.package
 
+    if not os.path.isdir(opts.qmtest_dir):
+        print "==========> No test directory, exiting"
+        return
+        
     # create the destination directory if necessary
     if opts.output:
         results_dest_dir = os.path.realpath(os.path.join(opts.qmtest_dir, os.path.dirname(opts.output)))

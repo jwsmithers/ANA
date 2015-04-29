@@ -2,6 +2,47 @@ Package : Gaudi
 Package manager : Marco Clemencic
 Commit Id: $Format:%H$
 
+! 2015-04-20 - Marco Clemencic
+ - Modified the minimal boostrap function to force the import of GaudiPython
+   with ROOT <= 6.2.5, to work around a bug in ROOT.
+
+! 2015-04-13 - Marco Clemencic
+ - Refactored printing of alg sequences and moved it after the initialize,
+   to allow an implemetation in C++ (to avoid GaudiPython in gaudirun.py).
+
+! 2015-04-13 - Marco Clemencic
+ - Enable GaudiPython in gaudirun.py with an environment variable.
+   Setting GAUDIRUN_USE_GAUDIPYTHON (any non-empty value) forces the use of
+   GaudiPython for bootstrapping in gaudirun.py.
+
+! 2015-04-10 - Marco Clemencic
+ - Replaced GaudiPython/cppyy with ctypes in Gaudi.Main.
+   GaudiPython is still used for the --printsequence and custom main loop
+   cases.
+
+================================ Gaudi v26r1 =================================
+! 2015-02-02 - Marco Clemencic
+ - Fixed GAUDI-1001: '\' and '\n' not correctly interpreted by gaudirun.py
+
+! 2015-01-30 - Marco Clemencic
+ - Added command line option to restart gaudirun.py from old options (smaller
+   memory footprint) after having parsed the options in Python.
+
+! 2015-01-26 - Marco Clemencic
+ - Replaced the only QMTest test not based on GaudiTest with a Nose-based test.
+
+================================ Gaudi v26r0 =================================
+! 2015-01-15 - Marco Clemencic
+ - Minor change in the CMake configuration to fix backward compatibility of the
+   test environment with CMT.
+
+=============================== Gaudi v25r6p1 ================================
+================================ Gaudi v25r6 =================================
+================================ Gaudi v25r5 =================================
+! 2014-09-25 - Marco Clemencic
+ - Bump package version to allow detection of the backward incompatible change
+   in the Plugin Service via the GAUDI_VERSION cpp macro.
+
 ================================ Gaudi v25r3 =================================
 ================================ Gaudi v25r2 =================================
 ! 2014-03-26 - Marco Clemencic

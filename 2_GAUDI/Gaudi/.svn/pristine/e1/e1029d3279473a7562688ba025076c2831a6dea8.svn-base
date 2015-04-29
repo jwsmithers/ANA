@@ -1,3 +1,0 @@
-// test the use of namespace in instance names
-MyNamespace::MyAlg.Int = 10;
-Gaudi::Alg.Gaudi::Tool.Float = 1.234;

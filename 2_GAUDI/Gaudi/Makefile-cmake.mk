@@ -34,9 +34,6 @@
 #     configure [*]_
 #         alias to CMake 'rebuild_cache' target
 #
-#     tests [*]_
-#         backward-compatibility target for the CMT generic Makefile
-#
 # :Author: Marco Clemencic
 #
 # .. [*] Targets defined by this Makefile. 
@@ -92,7 +89,7 @@ all:
 # deep clean
 purge:
 	$(RM) -r $(BUILDDIR) $(CURDIR)/InstallArea/$(BINARY_TAG)
-	find $(CURDIR) -name "*.pyc" -exec $(RM) -v \{} \;
+	find $(CURDIR) "(" -name "InstallArea" -prune -o -name "*.pyc" ")" -a -type f -exec $(RM) -v \{} \;
 
 # delegate any target to the build directory (except 'purge')
 ifneq ($(MAKECMDGOALS),purge)
@@ -111,12 +108,17 @@ endif
 
 # This wrapping around the test target is used to ensure the generation of
 # the XML output from ctest. 
-test:
-	cd build.$(BINARY_TAG) && $(CTEST) -T test $(ARGS)
+test: $(BUILDDIR)/$(BUILD_CONF_FILE)
+	$(RM) -r $(BUILDDIR)/Testing $(BUILDDIR)/html
+	-cd $(BUILDDIR) && $(CTEST) -T test $(ARGS)
+	+$(BUILD_CMD) HTMLSummary
 
-tests: all
-	-cd build.$(BINARY_TAG) && $(CTEST) -T test $(ARGS)
-	$(BUILD_CMD) QMTestSummary
+ifeq ($(VERBOSE),)
+# less verbose install (see GAUDI-1018)
+# (emulate the default CMake install target)
+install: all
+	cd $(BUILDDIR) && $(CMAKE) -P cmake_install.cmake| grep -v "^-- Up-to-date:"
+endif
 
 # ensure that the target are always passed to the CMake Makefile
 FORCE:

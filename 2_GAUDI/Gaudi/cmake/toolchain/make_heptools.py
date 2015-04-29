@@ -27,7 +27,7 @@ include(${CMAKE_CURRENT_LIST_DIR}/heptools-common.cmake)
 # Prepare the search paths according to the versions above
 LCG_prepare_paths()"""
 
-    __AA_projects__ = ("RELAX", "ROOT")
+    __AA_projects__ = ("COOL", "CORAL", "RELAX", "ROOT")
 
     __special_dirs__ = {"CLHEP": "clhep",
                         "fftw": "fftw3",

@@ -2,6 +2,199 @@ Package : GaudiKernel
 Package manager : Marco Clemencic
 Commit Id: $Format:%H$
 
+! 2015-04-23 - Rosen Matev
+ - Fixed GAUDI-1028: typo in ConfigurableUser
+
+! 2015-04-21 - Marco Clemencic
+ - GAUDI-1023: ensure that the waring is printed by genconf
+   Also fixed the retrieval of the PropertyMgr owner name (if it was set).
+
+! 2015-04-20 - Marco Clemencic
+ - GAUDI-1023: issue a warning when re-declaring a property
+   The anti-pattern is used a bit too often to just fail: we need some time to
+   fix the code before before enforcing the correct behavior.
+
+! 2015-04-20 - Marco Clemencic
+ - Added a (C) function that returns the ROOT version (code), to be used in
+   Python to get the version of ROOT without importing cppyy.
+
+! 2015-04-13 - Marco Clemencic
+ - Fixed visibility of gaudirun.py Python helper functions.
+
+! 2015-04-13 - Marco Clemencic
+ - Implemented printing of alg sequences in C++ as a private function
+   (to avoid GaudiPython in gaudirun.py).
+
+! 2015-04-12 - Marco Clemencic
+ - Added I/O dictionaries for KeyedContainerManager, missing when we do not
+   import GaudiPython in guadirun.py.
+
+! 2015-04-10 - Marco Clemencic
+ - Added C helper functions to bootstrap from Python without GaudiPython.
+
+! 2015-03-15 - Marco Clemencic
+ - GAUDI-1023: fail when re-declaring a property
+   - added hasProperty method to IProperty.
+   - added check to all the declareProperty methods in PropertyMgr
+   - added unit test executable for PropertyMgr
+
+! 2015-03-15 - Marco Clemencic
+ - GAUDI-1024: Added deprecation warning to Tokenizer.h.
+
+! 2015-03-14 - Marco Clemencic
+ - GAUDI-1024: Added Gaudi::Utils::AttribStringParser to replace Tokenizer
+
+! 2015-04-13 - Marco Clemencic
+ - GAUDI-1018: Made empty VERBOSE equivalent to unset
+
+! 2015-04-14 - Marco Clemencic
+ - Hide warning introduced with fix to GAUDI-312.
+
+! 2015-04-14 - Stewart Martin-Haugh
+ - Fixed GAUDI-312: invalid read in Tokenizer.
+
+! 2015-04-09 - Marco Clemencic
+ - Use C++11 functional instead of boost/function.hpp in IFileMgr.
+
+! 2015-04-08 - Marco Clemencic
+ - Disable CPU features detection on aarch64 (ARM64).
+
+! 2015-03-31 - Marco Clemencic
+ - Removed inclusion of ParsersFactory.h from Parsers.h (added with GAUDI-1011)
+   The inclusion of ParsersFactory.h simplify the creation of custom parsers,
+   but (because of the way ROOT 6 used headers) was causing huge penalties in
+   start up time (Gaudi tests taking twice the time) and an increased memory use
+   (detected in some LHCb tests).
+
+! 2015-03-20 - Marco Clemencic
+ - GAUDI-1018: Respect VERBOSE setting in genconf and genconfuser.
+
+! 2015-03-06 - Marco Clemencic
+ - Fixed GAUDI-1017: GaudiUtils::Map cannot be used as property after GAUDI-1011
+
+! 2015-03-05 - Sasha Mazurov
+ - GAUDI-1011: Support std::tuple and std::array properties in jobs options
+
+! 2015-03-05 - Marco Clemencic
+ - GAUDI-1016: add GaudiHandle::isSet() or isValid() method
+   Renamed getObject as isValid and made it public, added method "get" to get
+   the wrapped pointer without trying to retrieve it, and the method isSet() to
+   check if the wrapped pointer is not null (without trying to retrieve it).
+
+! 2015-03-06 - Charles Leggett
+ - make ToolHandle constructor explicit
+         ToolHandle( const IInterface* parent = 0, bool createIf = true )
+   as it is badly abused. Also declare ToolHandle(int) as deleted.
+
+============================= GaudiKernel v31r4 ==============================
+! 2015-02-06 - Marco Clemencic
+ - Added methods to IToolSvc to get all the tool instances.
+
+! 2015-02-03 - Marco Clemencic
+ - Added small tool to report the CPU capabilities (GAUDI-999) and a simple test
+   relying on the content of /proc/cpuinfo.
+
+! 2015-02-03 - Gerhard Raven
+ - GAUDI-999: Add code which determines the 'instruction level' of the CPU
+
+! 2015-02-03 - Marco Clemencic
+ - Fixed issue introduced with the fix to GAUDI-1001.
+
+! 2015-02-02 - Marco Clemencic
+ - Fixed GAUDI-1001: '\' and '\n' not correctly interpreted by gaudirun.py
+
+! 2015-01-26 - Marco Clemencic
+ - Removed duplicated tests.
+
+! 2015-01-13 - Marco Clemencic
+ - Fixed warning in genreflex with ROOT 6.02.03.
+
+============================= GaudiKernel v31r3 ==============================
+! 2015-01-13 - Marco Clemencic
+ - Fixed regression introduced with commit f0b0a33
+   (GAUDI-993: more speed improvements in DataSvc::retrieveEntry)
+
+! 2015-01-12 - Gerhard Raven
+ - GAUDI-993: Avoid recursion in DataSvc::i_retrieveEntry.
+
+! 2015-01-09 - Marco Clemencic
+ - Modified GCCXML exclusions to work with the ATLAS version of gccxml.
+
+! 2015-01-08 - Marco Clemencic
+ - Added the class StatusCode::ScopedDisableChecking to ignore all the
+   StatusCode instances produced in a scope.
+
+! 2015-01-07 - Gerhard Raven
+ - GAUDI-995: improve Algorithm storage/management in AlgorithmManager
+
+! 2015-01-07 - Gerhard Raven
+ - GAUDI-993: removed recursion in DataSvcHelpers::RegistryEntry::i_find
+
+! 2015-01-07 - Gerhard Raven
+ - GAUDI-993: more speed improvements in DataSvc::retrieveEntry
+
+! 2015-01-07 - Marco Clemencic
+ - Fixed g++ 4.9 warning (unused typedef).
+
+! 2015-01-07 - Gerhard Raven
+ - Small performance improvements to StatusCode:
+   - added move constructor
+   - use std::make_shared instead of std::shared_ptr constructor
+
+! 2015-01-06 - Marco Clemencic
+ - Added StatusCode::checkingEnabled() static method to check if the checking
+   is enabled or not.
+
+! 2015-01-06 - Marco Clemencic
+ - Fixed wrong "unchecked StatusCode" reporting after patch GAUDI-992.
+   Modified the StatusCode::check() to correctly report the function also when
+   StatusCode::~StatusCode() is not inlined.
+
+! 2014-12-10 - Gerhard Raven
+ - GAUDI-993: Improve string handling in DataSvc::retrieveEntry
+   Use boost::string_ref too speed up string manipulations.
+
+! 2014-12-10 - Marco Clemencic
+ - Fixed mistake in patch GAUDI-992.
+
+! 2014-12-09 - Gerhard Raven
+ - GAUDI-992: improve StatusCode::~StatusCode
+   Use small inlined destructor that delegates to another method for the check,
+   instead of using an off-lined destructor.
+
+============================= GaudiKernel v31r2 ==============================
+! 2014-11-19 - Marco Clemencic
+ - Fixed extra ';'.
+
+! 2014-10-25 - Marco Clemencic
+ - Fixed a problem with the interpretation of \n and \t in .opts files.
+
+============================= GaudiKernel v31r1 ==============================
+! 2014-10-06 - Marco Clemencic
+ - Added (build-time) tests for GAUDI-905 and GAUDI-973.
+
+! 2014-10-06 - Marco Clemencic
+ - GAUDI-973: make it possible to use StringKey in std::unordered_map
+
+! 2014-10-06 - Gerhard Raven
+ - GAUDI-905: Add Gaudi::StringKey constructor from plain C-string
+
+! 2014-09-18 - Marco Clemencic
+ - Fixed a test after the change in PluginService.
+
+! 2014-05-07 - Sebastien Binet
+ - use new PluginService API (with C++11 variadic templates for the factories.)
+ - hide the C++11 constructs from Reflex as GCC-XML parser predates C++11
+
+! 2014-09-18 - Marco Clemencic
+ - Fixed Eclipse Code Analysis warning.
+
+! 2014-09-18 - Marco Clemencic
+ - Fixed warnings from genreflex (ROOT 6).
+
+! 2014-07-11 - Marco Clemencic
+ - Removed references to the obsolete IFactory.
+
 ============================= GaudiKernel v31r0 ==============================
 ! 2014-07-04 - Marco Clemencic
  - Fixed the test for GAUDI-975 to work without build directory.

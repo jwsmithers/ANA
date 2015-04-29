@@ -10,8 +10,8 @@ echo "Installing cmt..."
 echo ""
 source setup.sh
 make
-echo "Patching LCG cmt requirements files..."
-echo ""
-cd $LCGbuildDir/patches/LCGCMT/LCGCMT_Platforms
-source requirements.sh
+#echo "Patching LCG cmt requirements files..."
+#echo ""
+#cd $LCGbuildDir/patches/LCGCMT/LCGCMT_Platforms
+#source requirements.sh
 cd $LCGbuildDir

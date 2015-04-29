@@ -143,6 +143,10 @@ const std::vector<Property*>& AlgTool::getProperties() const
   return m_propertyMgr->getProperties();
 }
 
+bool AlgTool::hasProperty(const std::string& name) const {
+  return m_propertyMgr->hasProperty(name);
+}
+
 //------------------------------------------------------------------------------
 StatusCode AlgTool::setProperties()
 //------------------------------------------------------------------------------
@@ -193,6 +197,12 @@ AlgTool::AlgTool( const std::string& type,
   , m_threadID      (       )
   , m_pAuditorSvc   ( 0     )
   , m_auditInit     ( false )
+  , m_auditorInitialize(false)
+  , m_auditorStart(false)
+  , m_auditorStop(false)
+  , m_auditorFinalize(false)
+  , m_auditorReinitialize(false)
+  , m_auditorRestart(false)
   , m_state         ( Gaudi::StateMachine::CONFIGURED )
   , m_targetState   ( Gaudi::StateMachine::CONFIGURED )
 {

@@ -32,9 +32,11 @@ class ServiceManager;
  */
 class GAUDI_API Service: public CommonMessaging<implements3<IService, IProperty, IStateful> > {
 public:
-  typedef Gaudi::PluginService::Factory2<IService*,
-                                         const std::string&,
-                                         ISvcLocator*> Factory;
+#ifndef __REFLEX__
+  typedef Gaudi::PluginService::Factory<IService*,
+                                        const std::string&,
+                                        ISvcLocator*> Factory;
+#endif
   friend class ServiceManager;
 
   /// Release Interface instance.
@@ -77,6 +79,7 @@ public:
   virtual const Property& getProperty( const std::string& name) const;
   virtual StatusCode getProperty( const std::string& n, std::string& v ) const;
   virtual const std::vector<Property*>& getProperties( ) const;
+  virtual bool hasProperty(const std::string& name) const;
 
   /** set the property form the value
    *
@@ -276,11 +279,12 @@ private:
 template <class T>
 class SvcFactory {
 public:
-  template <typename S>
-  static typename S::ReturnType create(typename S::Arg1Type a1,
-                                       typename S::Arg2Type a2) {
-    return new T(a1, a2);
+#ifndef __REFLEX__
+  template <typename S, typename... Args>
+  static typename S::ReturnType create(Args... args) {
+    return new T(args...);
   }
+#endif
 };
 
 // Macros to declare component factories

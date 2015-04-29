@@ -10,6 +10,8 @@
 #  TCMALLOC_LIBRARY_DIRS (not cached)
 #  PPROF_EXECUTABLE
 
+set(TCMALLOC_INCLUDE_DIR "/home/jwsmith/gperftools-install/include")
+
 find_path(TCMALLOC_INCLUDE_DIR google/tcmalloc.h)
 foreach(component tcmalloc profiler)
   find_library(TCMALLOC_${component}_LIBRARY NAMES ${component})
@@ -20,7 +22,9 @@ find_program(PPROF_EXECUTABLE NAMES pprof
              HINTS ${TCMALLOC_INCLUDE_DIR}/../bin)
 
 set(TCMALLOC_INCLUDE_DIRS ${TCMALLOC_INCLUDE_DIR})
-set(TCMALLOC_LIBRARIES ${TCMALLOC_tcmalloc_LIBRARY} ${TCMALLOC_profiler_LIBRARY})
+#set(TCMALLOC_LIBRARIES ${TCMALLOC_tcmalloc_LIBRARY} ${TCMALLOC_profiler_LIBRARY})
+set(TCMALLOC_LIBRARIES "/home/jwsmith/gperftools-install/lib")
+
 
 # handle the QUIETLY and REQUIRED arguments and set TCMALLOC_FOUND to TRUE if
 # all listed variables are TRUE

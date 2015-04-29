@@ -4,7 +4,7 @@ echo ""
 echo "Retreiving version ${VERSION} and creating package lists..."
 echo ""
 wget http://atlas-computing.web.cern.ch/atlas-computing/links/buildDirectory/www/nicos_content${VERSION}.html
-html2text -width 160 nicos_content${VERSION}.html > ATLAS${VERSION}TEMP.txt
+/home/jwsmith/html2text-1.3.2a/html2text -width 160 nicos_content${VERSION}.html > ATLAS${VERSION}TEMP.txt
 rm nicos_content${VERSION}.html
 sed '1,11d' ATLAS${VERSION}TEMP.txt > ATLAS${VERSION}TEMP2.txt
 head --lines=-5 ATLAS${VERSION}TEMP2.txt > ATLAS${VERSION}.txt

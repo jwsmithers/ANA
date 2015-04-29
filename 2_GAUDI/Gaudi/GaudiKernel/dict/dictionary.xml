@@ -17,7 +17,7 @@
   <class name="GaudiHandleBase"/>
   <class name="GaudiHandleArrayBase"/>
   <class name="GaudiHandleProperty"/>
-  <class name="GaudiHandleArrayProperty"/>  
+  <class name="GaudiHandleArrayProperty"/>
 
   <class name="LinkManager"/>
   <class name="LinkManager::Link">
@@ -66,7 +66,6 @@
   <class name="IEventTimeDecoder"/>
   <class name="IEvtSelector"/>
   <class name="IExceptionSvc"/>
-  <!--class name="IFactory"/-->
   <class name="IHistogramSvc"/>
   <class name="IHistorySvc"/>
   <class name="IIncidentListener"/>
@@ -218,6 +217,11 @@
   </class>
   <class name="std::vector<SmartRef<KeyedObject<unsigned long> > >"/>
 
+  <class name="Containers::KeyedObjectManager<Containers::hashmap>"/>
+  <class name="Containers::KeyedObjectManager<Containers::map>"/>
+  <class name="Containers::KeyedObjectManager<Containers::array>"/>
+  <class name="Containers::KeyedObjectManager<Containers::vector>"/>
+
   <!--class name="std::vector<std::basic_string<char> >"/-->
 
   <!-- Gaudi N-tuples -->
@@ -246,7 +250,6 @@
   <enum name="MSG::Color"/>
 
   <class pattern="SmartIF&lt;*&gt;"/>
-  <class pattern="SmartIFBase&lt;*&gt;"/>
 
   <!-- Temporary work-around for ROOT bug #44916 -->
   <class name="std::string"/>
@@ -257,13 +260,10 @@
     <!-- Marco Cl.: This is needed because with ROOT >= 5.16 we get some dictionaries that we do not need. -->
     <class name="NTuple::Item&lt;IOpaqueAddress*&gt;"/>
 
-    <class pattern="NTuple::Item&lt;bool&gt;">
+    <class name="NTuple::Item&lt;bool&gt;">
       <method pattern="=*"/>
     </class>
     <class pattern="NTuple::*&lt;*&gt;">
-      <method name="="/>
-    </class>
-    <class pattern="NTuple::_Acc*::_Acc*">
       <method name="="/>
     </class>
     <class pattern="Rndm::*">

@@ -1,5 +1,5 @@
 package GaudiKernel
-version v31r0
+version v31r4
 author "LHCb Gaudi Team"
 
 branches GaudiKernel cmt doc src
@@ -34,7 +34,7 @@ macro GaudiKernelDict_use_linkopts $(use_linkopts)
 macro_append GaudiKernelGen_dependencies "install_more_includes"
 
 #-----Generate Configurables
-macro genconfig_cmd          /home/jwsmith/HDD/Gaudi/InstallArea/armv7l-fc21-gcc49-opt/bin/genconf.exe \
+macro genconfig_cmd           $(GAUDIKERNELROOT)/$(tag)/genconf.exe \
      GAUDI_with_installarea  genconf.exe \
      GAUDIATLAS_with_installarea  genconf.exe
 

@@ -563,9 +563,11 @@ lineSkipper = LineSkipper(["//GP:",
                                  r"^[-+]*\s*$",
                                  # Hide the fake error message coming from POOL/ROOT (ROOT 5.21)
                                  r"ERROR Failed to modify file: .* Errno=2 No such file or directory",
-                                 # Hide unckeched StatusCodes  from dictionaries
+                                 # Hide unchecked StatusCodes from dictionaries
                                  r"^ +[0-9]+ \|.*ROOT",
                                  r"^ +[0-9]+ \|.*\|.*Dict",
+                                 # Hide success StatusCodeSvc message
+                                 r"StatusCodeSvc.*all StatusCode instances where checked",
                                  # Remove ROOT TTree summary table, which changes from one version to the other
                                  r"^\*.*\*$",
                                  # Remove Histos Summaries
@@ -2028,7 +2030,7 @@ class XMLResultStream(ResultStream):
                       "LogicalProcessorsPerPhysical" : "0" ,
                       "ProcessorClockFrequency" : "0" ,
                       }
-            self._site = ET.SubElement(newdataset, "site", attrib)
+            self._site = ET.SubElement(newdataset, "Site", attrib)
             self._Testing = ET.SubElement(self._site,"Testing")
 
             # Start time elements

@@ -7,6 +7,8 @@
 #  UNWIND_LIBRARIES
 #  UNWIND_LIBRARY_DIRS (not cached)
 
+set(UNWIND_INCLUDE_DIR "/home/jwsmith/libunwind-install/include")
+set(UNWIND_LIBRARIES "/home/jwsmith/libunwind-install/lib")
 find_path(UNWIND_INCLUDE_DIR unwind.h)
 find_library(UNWIND_LIBRARIES NAMES unwind)
 

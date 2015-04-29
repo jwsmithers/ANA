@@ -1,5 +1,5 @@
 package GaudiPolicy
-version v15r0
+version v15r4
 
 branches cmt doc
 
@@ -18,7 +18,7 @@ tag x86_64-slc5-gcc43-test   x86_64-slc5-gcc43-opt target-test
 tag x86_64-slc5-gcc46-test   x86_64-slc5-gcc46-opt target-test
 tag x86_64-slc6-gcc46-test   x86_64-slc6-gcc46-opt target-test
 tag x86_64-slc6-gcc48-test   x86_64-slc6-gcc48-opt target-test
-tag armv7l-fc21-gcc49-test   armv7l-fc21-gcc49-opt target-test
+tag x86_64-slc6-gcc49-test   x86_64-slc6-gcc49-opt target-test
 
 # Add Google malloc replacement to the LD_LIBRARY_PATH
 use tcmalloc * LCG_Interfaces -no_auto_imports
@@ -492,7 +492,7 @@ pattern generate_componentslist \
 
 # TEMPORARY alias for backward compatibility in ATLAS. FIXME!
 pattern generate_rootmap \
-  action warning_depr_rootmap "echo ; echo =========\> WARNING: in package <package>, pattern generate_rootmap is deprecated. use gerenate_componentslist instead; echo "  ; \
+  action warning_depr_rootmap "echo ; echo =========\> WARNING: in package <package>, pattern generate_rootmap is deprecated. use generate_componentslist instead; echo "  ; \
   private ; \
    macro_append all_dependencies " warning_depr_rootmap " ; \
   end_private ; \
@@ -668,6 +668,7 @@ macro cppdebugflags    "" \
       target-dbg        "$(cppdebugflags_s)"\
       target-opt        "$(cppoptimized_s)"
 macro cppdebugflags_s  "-g" \
+      target-gcc48     "-Og -g" \
       target-gcc49     "-Og -g" \
       target-winxp            "/Od /Z7"
 macro cppoptimized_s   "-O2 -DNDEBUG" \
@@ -683,6 +684,7 @@ macro cdebugflags     "" \
       target-dbg           "$(cdebugflags_s)" \
       target-opt           "$(coptimized_s)"
 macro cdebugflags_s   "-g" \
+      target-gcc48    "-Og -g" \
       target-gcc49    "-Og -g" \
       target-winxp           "/Od /Z7"
 macro coptimized_s    "-O2 -DNDEBUG" \
@@ -693,6 +695,7 @@ macro coptimized_s    "-O2 -DNDEBUG" \
 macro fdebugflags      "" \
       target-dbg            "$(fdebugflags_s)"
 macro fdebugflags_s    "-g"\
+      target-gcc48     "-Og -g" \
       target-gcc49     "-Og -g" \
       target-winxp            "/nopdbfile /debug:full /optimize:0"
 macro foptimized_s     "-O2 -DNDEBUG" \
@@ -722,16 +725,16 @@ macro_append LCG_Platforms_cflags "" \
 macro_append LCG_Platforms_fflags "" \
                        target-cov " --coverage"
 
-macro cppflags         " -fmessage-length=0 -Df2cFortran -fPIC -D_GNU_SOURCE -Dlinux -Dunix -pipe -ansi -Wall -Wextra -Werror=return-type -pthread " \
-      target-mac105    " -Df2cFortran -fPIC -D_GNU_SOURCE -Dunix -pipe -ansi -Wall -Wextra -Werror=return-type -Wno-long-double " \
-      target-mac106    " -Df2cFortran -fPIC -D_GNU_SOURCE -Dunix -pipe -ansi -Wall -Wextra -Werror=return-type " \
+macro cppflags         " -fmessage-length=0 -Df2cFortran -fPIC -D_GNU_SOURCE -Dlinux -Dunix -pipe -Wall -Wextra -Werror=return-type -pthread " \
+      target-mac105    " -Df2cFortran -fPIC -D_GNU_SOURCE -Dunix -pipe -Wall -Wextra -Werror=return-type -Wno-long-double " \
+      target-mac106    " -Df2cFortran -fPIC -D_GNU_SOURCE -Dunix -pipe -Wall -Wextra -Werror=return-type " \
       target-vc9       '$(includes) /D "WIN32" /D "_MBCS"  /D "_WINDOWS" /FD /c /nologo /W3 /EHsc /MD /GR /Zm500' \
       target-vc7       '$(includes) /D "WIN32" /D "_MBCS"  /D "_WINDOWS" /FD /c /nologo /W3 /GX /MD /GR /Zm500'
 
 # The -pedantic flag gives problems on GCC 4.3.
-macro_append cppflags "" \
+macro_append cppflags "-pedantic -Wno-long-long " \
     target-gcc43 "" \
-    GAUDI_PEDANTIC&target-gcc "-pedantic -Wno-long-long "
+    GAUDI_NO_PEDANTIC ""
 
 ##############################################################################
 # Intel compiler support
@@ -808,9 +811,9 @@ macro_append cppflags       "" \
       host-i386&target-x86_64 " -m64"
 
 # Enable the C++11 and C11 standards on the platforms where they are enabled in LCGCMT
-macro_append cppflags "" \
+macro_append cppflags " -ansi" \
          target-c11 " -std=c++11"
-macro_append cflags "" \
+macro_append cflags " -ansi" \
          target-c11 " -std=c11"
 
 # FIXME: enforce the use of Boost Filesystem V3 to be compatible between 1.44 and 1.48
@@ -828,12 +831,14 @@ macro_append cppflags "" \
          target-gcc43 " -Wno-deprecated" \
          target-gcc46 " -Wno-deprecated" \
          target-gcc47 " -Wno-deprecated" \
+         target-gcc48 " -Wno-deprecated" \
          target-gcc49 " -Wno-deprecated" \
          target-gccmax " -Wno-deprecated" \
          target-clang " -Wno-deprecated"
 # FIXME: (MCl) hide ~900 warnings from Boost
 macro_append cppflags "" \
          no-hide-warnings "" \
+         target-gcc48 " -Wno-unused-local-typedefs" \
          target-gcc49 " -Wno-unused-local-typedefs" \
          target-gccmax " -Wno-unused-local-typedefs"
 # FIXME: (MCl)
@@ -919,7 +924,7 @@ macro cpplinkflags "" \
       target-vc    "/nologo /machine:ix86 $(linkdebugflags) $(makeLinkMap) /nodefaultlib kernel32.lib user32.lib ws2_32.lib advapi32.lib shell32.lib msvcrt.lib msvcprt.lib oldnames.lib "
 
 macro_append cpplinkflags "" \
-      target-linux               ""
+      target-linux               "-Wl,--no-undefined "
 
 macro_remove shlibflags "" \
       target-mac "-undefined suppress"
@@ -945,7 +950,7 @@ macro componentshr_linkopts "" \
       target-winxp          "/DLL "
 
 macro_append componentshr_linkopts "" \
-      target-linux                 ""
+      target-linux                 "-Wl,--no-undefined "
 
 macro_append componentshr_linkopts "" \
       target-linux                 "-pthread "
@@ -968,7 +973,7 @@ macro libraryshr_linkopts   "" \
       target-winxp          "/DLL"
 
 macro_append libraryshr_linkopts "" \
-      target-linux               ""
+      target-linux               "-Wl,--no-undefined "
 
 macro_append libraryshr_linkopts "" \
       target-linux                 "-pthread "
@@ -1568,6 +1573,12 @@ macro_append pp_cppflags " $(CppSpecificFlags)"
 macro_append pp_cflags   " $(CppSpecificFlags)"
 
 #-------------------------------------------------------------------
+
+# Declare a special tag to avoid CMT warnings
+#
+#  lcg-nightlies: used in LHCb nightly builds to switch between the LCG nightly
+#                 builds layout and the LCG release layout.
+tag lcg-nightlies
 
 # FIXME: This should be the kind of pattern to enable custom test settings, but
 # an environment variable is not so safe to use.

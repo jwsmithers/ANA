@@ -11,7 +11,7 @@ __all__ = [ 'gbl','InterfaceCast', 'Interface', 'PropertyEntry',
             'AppMgr', 'PyAlgorithm', 'CallbackStreamBuf',
             'iAlgorithm', 'iDataSvc', 'iHistogramSvc','iNTupleSvc','iService', 'iAlgTool', 'Helper',
             'SUCCESS', 'FAILURE', 'toArray',
-            'ROOT', 'makeNullPointer', 'makeClass', 'setOwnership',
+            'ROOT', 'makeNullPointer', 'setOwnership',
             'getClass', 'loaddict', 'deprecation' ]
 
 from GaudiKernel import ROOT6WorkAroundEnabled
@@ -68,7 +68,6 @@ else:
 #----Convenient accessors to PyROOT functionality ---------------------------------------
 ROOT            = cppyy.libPyROOT
 makeNullPointer = cppyy.libPyROOT.MakeNullPointer
-makeClass       = cppyy.libPyROOT.MakeRootClass
 setOwnership    = cppyy.libPyROOT.SetOwnership
 
 def deprecation(message):
@@ -208,9 +207,9 @@ class iProperty(object) :
                 raise AttributeError, 'property %s does not exist' % name
             prop = ip.getProperty(name)
 
-            if ROOT6WorkAroundEnabled('ROOT-6032'):
+            if ROOT6WorkAroundEnabled('ROOT-7201'):
                 canSetValue = (hasattr(prop, 'value') and
-                               'const(&)[' not in prop.value.func_doc and
+                               'const&[' not in prop.value.func_doc and
                                type(value) == type(prop.value()))
             else:
                 canSetValue = (hasattr(prop, 'value') and
@@ -789,24 +788,14 @@ class AppMgr(iService) :
         return Helper.service( self._svcloc, name, True )
     def services(self) :
         l = self._svcloc.getServices()
-        nl = l.__class__(l)  # get a copy
-        s = []
-        for i in range(l.size()) :
-            s.append(nl.front().name())
-            nl.pop_front()
-        return s
+        return [s.name() for s in l]
     def algorithm(self, name , createIf = False ) :
         alg = Helper.algorithm( self._algmgr, name , createIf )
         if not alg : return iAlgorithm ( name       , alg )
         else       : return iAlgorithm ( alg.name() , alg )
     def algorithms(self) :
         l = self._algmgr.getAlgorithms()
-        nl = l.__class__(l)  # get a copy
-        s = []
-        for i in range(l.size()) :
-            s.append(nl.front().name())
-            nl.pop_front()
-        return s
+        return [a.name() for a in l]
     def tool(self, name ) :
         return iAlgTool(name)
     def property( self , name ) :
@@ -886,6 +875,22 @@ class AppMgr(iService) :
             self.pyalgorithms.remove(alg)
             setOwnership(alg,1)
         self.topAlg = tmp
+    def printAlgsSequences(self):
+        """
+        Print the sequence of Algorithms.
+        """
+        def printAlgo( algName, appMgr, prefix = ' ') :
+            print prefix + algName
+            alg = appMgr.algorithm( algName.split( "/" )[ -1 ] )
+            prop = alg.properties()
+            if prop.has_key( "Members" ) :
+                subs = prop[ "Members" ].value()
+                for i in subs : printAlgo( i.strip( '"' ), appMgr, prefix + "     " )
+        mp = self.properties()
+        prefix = 'ApplicationMgr    SUCCESS '
+        print prefix + "****************************** Algorithm Sequence ****************************"
+        for i in mp["TopAlg"].value(): printAlgo( i, self, prefix )
+        print prefix + "******************************************************************************"
     def config ( self, **args ):
         """
         Simple utility to perform the configuration of Gaudi application.
@@ -950,6 +955,8 @@ class AppMgr(iService) :
         return self._appmgr.configure()
     def start(self) :
         return self._appmgr.start()
+    def terminate(self):
+        return self._appmgr.terminate()
     def run(self, n) :
         if self.FSMState() == Gaudi.StateMachine.CONFIGURED :
             sc = self.initialize()
