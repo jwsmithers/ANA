@@ -1,5 +1,6 @@
 !Testing/AtlasCore-20.1.0/AtlasCoreTests.sh
 !Testing/AtlasConditions-20.1.0/AtlasCoreTests.sh
+!SVN/README.txt
 
 InstallArea/DetCommon/
 InstallArea/AtlasCore/
@@ -13,7 +14,6 @@ InstallArea/AtlasOffline/
 InstallArea/AtlasHLT/
 
 SVN/
-
 Testing/
 
 nicos_content20.1.0.html
