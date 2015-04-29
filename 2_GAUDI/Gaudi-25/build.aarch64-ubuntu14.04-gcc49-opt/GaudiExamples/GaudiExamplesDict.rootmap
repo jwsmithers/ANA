@@ -1,0 +1,41 @@
+{ decls }
+namespace Gaudi { namespace Examples {  } }
+namespace Gaudi { namespace Examples { class Event; } }
+namespace Gaudi { namespace Examples { class Collision; } }
+template <typename TYPE> class SmartRefVector;
+namespace std {  }
+namespace Gaudi { namespace Examples { class MyTrack; } }
+namespace Gaudi { namespace Examples { class MyVertex; } }
+template <typename TYPE> class ObjectVector;
+namespace Containers { class hashmap; }
+namespace Containers { template <typename SETUP> class KeyedObjectManager; }
+
+[ libGaudiExamplesDict.so ]
+# List of selected classes
+class Gaudi::Examples::Collision
+class Gaudi::Examples::Counter
+class Gaudi::Examples::Event
+class Gaudi::Examples::MyTrack
+class Gaudi::Examples::MyVertex
+class KeyedContainer<Gaudi::Examples::MyTrack,Containers::KeyedObjectManager<Containers::hashmap> >
+class KeyedContainer<Gaudi::Examples::MyVertex,Containers::KeyedObjectManager<Containers::hashmap> >
+class ObjectVector<Gaudi::Examples::MyTrack>
+class ObjectVector<Gaudi::Examples::MyVertex>
+class SmartRef<Gaudi::Examples::Collision>
+class SmartRef<Gaudi::Examples::Event>
+class SmartRef<Gaudi::Examples::MyTrack>
+class SmartRef<Gaudi::Examples::MyVertex>
+class SmartRefVector<Gaudi::Examples::Collision>
+class SmartRefVector<Gaudi::Examples::MyTrack>
+class SmartRefVector<Gaudi::Examples::MyVertex>
+class vector<Gaudi::Examples::MyTrack*>
+class vector<Gaudi::Examples::MyVertex*>
+class vector<KeyedObject<int>*>
+class vector<SmartRef<Gaudi::Examples::Collision> >
+class vector<SmartRef<Gaudi::Examples::MyTrack> >
+class vector<SmartRef<Gaudi::Examples::MyVertex> >
+header GaudiExamples/Collision.h
+header GaudiExamples/Counter.h
+header GaudiExamples/Event.h
+header GaudiExamples/MyTrack.h
+header GaudiExamples/MyVertex.h

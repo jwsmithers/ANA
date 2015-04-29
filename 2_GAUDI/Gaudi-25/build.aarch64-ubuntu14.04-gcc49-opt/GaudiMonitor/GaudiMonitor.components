@@ -1,0 +1,3 @@
+libGaudiMonitor.so:ExceptionSvc
+libGaudiMonitor.so:HistorySvc
+libGaudiMonitor.so:IssueLogger

@@ -1,0 +1,296 @@
+--- requirements	2015-01-30 12:46:49.403657668 +0200
++++ requirements1	2015-02-02 12:01:25.721666437 +0200
+@@ -57,14 +57,14 @@
+    macro <project>_home "<path>"
+ 
+ cmtpath_pattern_reverse \
+-   macro <project>_install_include "" \
++   macro <project>_install_include " <path>/$(<project>_installarea_prefix)$(shared_install_subdir)/include " \
+          <project>_without_installarea "" \
+          <project>_with_installarea&target-unix " <path>/$(<project>_installarea_prefix)$(shared_install_subdir)/include "\
+          <project>_with_installarea&target-winxp ' "<path>\$(<project>_installarea_prefix)$(shared_install_subdir)\include"' ; \
+    include_dirs ${<project>_install_include}
+ 
+ cmtpath_pattern \
+-   macro <project>_install_include "" \
++   macro <project>_install_include " <path>/$(<project>_installarea_prefix)$(shared_install_subdir)/include " \
+          <project>_without_installarea "" \
+          <project>_with_installarea&target-unix "<path>/$(<project>_installarea_prefix)$(shared_install_subdir)/include" \
+          <project>_with_installarea&target-winxp '"<path>\$(<project>_installarea_prefix)$(shared_install_subdir)\include"' ; \
+@@ -102,7 +102,7 @@
+ #     example: apply_pattern libraryShr library=GaudiKernel
+ 
+ pattern libraryShr\
+-    set <library>Shr   "" \
++    set <library>Shr   "$(<package>Dir)/lib<library>" \
+         <project>_without_installarea&target-unix    "$(<package>Dir)/lib<library>" \
+         <project>_without_installarea&target-winxp  "$(<package>Dir)\<library>"
+ 
+@@ -118,7 +118,7 @@
+     end_private
+ 
+ pattern library_Llinkopts \
+-    macro_append <package>_linkopts                 "" \
++    macro_append <package>_linkopts                 " -L$(<package>Dir) -l<library> " \
+          <project>_with_installarea&target-unix     " -l<library> "\
+          <project>_with_installarea&target-winxp    " <library>.lib "\
+          <project>_without_installarea&target-unix  " -L$(<package>Dir) -l<library> "\
+@@ -133,7 +133,7 @@
+     end_private
+ 
+ pattern library_Softlinks \
+-    macro_append <package>_libraries              "" \
++    macro_append <package>_libraries              " <library> " \
+          <project>_without_installarea&target-unix " <library> "\
+                  target-winxp                     ""
+ 
+@@ -192,8 +192,8 @@
+ #--------------------------------------------
+ 
+ cmtpath_pattern \
+-   macro <project>_install_python "" \
+-         <project>_without_installarea "" \
++   macro <project>_install_python "<path>/$(<project>_installarea_prefix)$(shared_install_subdir)/python" \
++         <project>_without_installarea "<path>/$(<project>_installarea_prefix)$(shared_install_subdir)/python" \
+          <project>_with_installarea&target-unix&no-pyzip "<path>/$(<project>_installarea_prefix)$(shared_install_subdir)/python"\
+          <project>_with_installarea&target-winxp&no-pyzip "<path>\$(<project>_installarea_prefix)$(shared_install_subdir)\python" \
+          <project>_with_installarea&target-unix "<path>/$(<project>_installarea_prefix)$(shared_install_subdir)/python.zip" \
+@@ -209,7 +209,7 @@
+ 
+ 
+ pattern install_python_modules \
+-    macro <package>_install_python "" \
++    macro <package>_install_python "$(<package>_root)/python" \
+          <project>_without_installarea&target-unix "$(<package>_root)/python" \
+          <project>_without_installarea&target-winxp "$(<package>_root)\python" ; \
+     path_remove  PYTHONPATH ${<package>_install_python} ; \
+@@ -220,7 +220,7 @@
+     macro_append <package>_python_init_dependencies " <package>_python " ;
+ 
+ pattern install_custom_python_modules \
+-    macro <package>_install_python "" \
++    macro <package>_install_python "$(<package>_root)/<source>" \
+          <project>_without_installarea&target-unix "$(<package>_root)/<source>" \
+          <project>_without_installarea&target-winxp "$(<package>_root)\<source>" ; \
+     path_remove  PYTHONPATH ${<package>_install_python} ; \
+@@ -280,7 +280,7 @@
+ 
+ # Main pattern
+ pattern pyd_module \
+-  macro <package>_install_pyd_module "" \
++  macro <package>_install_pyd_module "$(<package>_root)/$(tag)" \
+         <project>_without_installarea&target-unix "$(<package>_root)/$(tag)" \
+         <project>_without_installarea&target-winxp "$(<package>_root)\$(tag)" ; \
+   path_remove  PYTHONPATH $(<package>_install_pyd_module) ; \
+@@ -300,8 +300,8 @@
+   macro_append <module>_use_linkopts " $(Boost_linkopts_python)"
+ 
+ cmtpath_pattern \
+-   macro <project>_install_pyd_module "" \
+-         <project>_without_installarea "" \
++   macro <project>_install_pyd_module "<path>/$(<project>_installarea_prefix)/$(python_bin_module_dir)" \
++         <project>_without_installarea "<path>/$(<project>_installarea_prefix)/$(python_bin_module_dir)" \
+          <project>_with_installarea&target-unix "<path>/$(<project>_installarea_prefix)/$(python_bin_module_dir)" \
+          <project>_with_installarea&target-winxp "<path>\$(<project>_installarea_prefix)\$(python_bin_module_dir)" ; \
+     path_remove  PYTHONPATH $(<project>_install_pyd_module) ; \
+@@ -331,15 +331,15 @@
+ #   macro scripts_dir "$(scripts_offset)/$(scripts_maindir)" target-winxp "$(scripts_offset)\$(scripts_maindir)"
+ 
+ cmtpath_pattern \
+-   macro <project>_install_scripts "" \
+-         <project>_without_installarea "" \
++   macro <project>_install_scripts "<path>/$(<project>_installarea_prefix)$(shared_install_subdir)/$(scripts_dir)" \
++         <project>_without_installarea "<path>/$(<project>_installarea_prefix)$(shared_install_subdir)/$(scripts_dir)" \
+          <project>_with_installarea&target-unix "<path>/$(<project>_installarea_prefix)$(shared_install_subdir)/$(scripts_dir)"\
+          <project>_with_installarea&target-winxp "<path>\$(<project>_installarea_prefix)$(shared_install_subdir)\$(scripts_dir)" ; \
+     path_remove  PATH ${<project>_install_scripts} ; \
+     path_prepend PATH ${<project>_install_scripts}
+ 
+ pattern install_scripts \
+-    macro <package>_install_scripts "" \
++    macro <package>_install_scripts "$(<package>_root)/$(scripts_dir)" \
+          <project>_without_installarea&target-unix "$(<package>_root)/$(scripts_dir)" \
+          <project>_without_installarea&target-winxp "$(<package>_root)\$(scripts_dir)" ; \
+     path_remove  PATH ${<package>_install_scripts} ; \
+@@ -517,6 +517,7 @@
+ tag sl57   host-slc5
+ # Atlas uses shared directories
+ tag ATLAS  use-shared-dir
++tag fc21   use-shared-dir
+ 
+ # Fragments =================================================================
+ 
+@@ -560,7 +561,8 @@
+ tag CMTv1&CMTr26 c_native_dependencies cpp_native_dependencies
+ 
+ macro cmt_compiler_version "${cmt_compiler_version}" \
+-              target-gcc43 "gcc43"
++              target-gcc43 "gcc43"\
++	      target-gcc49 "gcc49"
+ 
+ macro cppcomp         "$(cpp) -c $(cppdebugflags) $(cppflags) $(pp_cppflags) $(includes)" \
+       VisualC         "cl.exe $(cppdebugflags) $(cppflags) $(pp_cppflags)"
+@@ -587,11 +589,12 @@
+ macro make_shlib    "echo" \
+       HP-UX         "${CMTROOT}/mgr/cmt_make_shlib_common.sh extract" \
+       OSF1          "${CMTROOT}/mgr/cmt_make_shlib_common.sh noextract" \
+-      host-linux  "${CMTROOT}/mgr/cmt_make_shlib_common.sh extract" \
++      host-linux    "${CMTROOT}/mgr/cmt_make_shlib_common.sh extract" \
+       CYGWIN        "${CMTROOT}/mgr/cmt_make_shlib_common.sh extract" \
+       SunOS         "${CMTROOT}/mgr/cmt_make_shlib_common.sh extract" \
+       host-darwin "${CMTROOT}/mgr/cmt_make_shlib_common.sh extract" \
+-      host-visualc "$(GAUDIPOLICYROOT)\cmt\cmt_make_shlib.bat"
++      host-visualc "$(GAUDIPOLICYROOT)\cmt\cmt_make_shlib.bat" \
++      host-armv7l  "${CMTROOT}/mgr/cmt_make_shlib_common.sh extract"
+ 
+ macro merge_componentslist_cmd "python $(GaudiPolicy_root)/scripts/merge_files.py" \
+            target-winxp "$(GaudiPolicy_root)/scripts/merge_files.py"
+@@ -835,7 +838,9 @@
+ macro_append cppflags "" \
+          no-hide-warnings "" \
+          target-gcc48 " -Wno-unused-local-typedefs" \
+-         target-gccmax " -Wno-unused-local-typedefs"
++         target-gccmax " -Wno-unused-local-typedefs" \
++	 target-gcc49 " -Wno-unused-local-typedefs" 
++
+ # FIXME: (MCl)
+ macro_append cppflags "" \
+          no-hide-warnings "" \
+@@ -848,7 +853,8 @@
+ # FIXME: (MCl) gccmax is an alias to gcc47
+ macro_append gccxml_cppflags "" \
+          target-gccmax " -D__STRICT_ANSI__" \
+-         target-gcc47 " -D__STRICT_ANSI__"
++         target-gcc47 " -D__STRICT_ANSI__" \
++	 target-gcc49 " -D__STRIC_ANSI__"
+ 
+ # ppcmd=-I can be used on Windows as on Linux
+ macro ppcmd "-I"
+@@ -857,7 +863,8 @@
+ macro for_name      "gfortran" \
+       target-slc4   "g77" \
+       target-darwin "gfortran -ff2c" \
+-      target-winxp  "f77.exe"
++      target-winxp  "f77.exe" \
++      target-armv7l "gfortran" 
+ 
+ macro for "$(for_name)"
+ 
+@@ -912,14 +919,17 @@
+ 
+ macro makeLinkMap            ""\
+       target-linux           "-Wl,-Map,Linux.map"\
+-      target-winxp           "/map"
++      target-winxp           "/map" \
++      target-armv7l	     "-Wl,-Map,Linux.map"
+ 
+ macro cpplinkflags "" \
+       target-linux "-Wl,-Bdynamic $(linkdebugflags) -ldl -Wl,--as-needed " \
+-      target-vc    "/nologo /machine:ix86 $(linkdebugflags) $(makeLinkMap) /nodefaultlib kernel32.lib user32.lib ws2_32.lib advapi32.lib shell32.lib msvcrt.lib msvcprt.lib oldnames.lib "
++      target-vc    "/nologo /machine:ix86 $(linkdebugflags) $(makeLinkMap) /nodefaultlib kernel32.lib user32.lib ws2_32.lib advapi32.lib shell32.lib msvcrt.lib msvcprt.lib oldnames.lib "\
++      target-armv7l "-Wl,-Bdynamic $(linkdebugflags) -ldl -Wl,--as-needed "
+ 
+ macro_append cpplinkflags "" \
+-      target-linux               "-Wl,--no-undefined "
++      target-linux               "-Wl,--no-undefined " \
++      target-armv7l		"-Wl,--no-undefined "
+ 
+ macro_remove shlibflags "" \
+       target-mac "-undefined suppress"
+@@ -942,16 +952,18 @@
+ 
+ macro componentshr_linkopts "" \
+       target-linux          "-fPIC -ldl -Wl,--as-needed " \
+-      target-winxp          "/DLL "
++      target-winxp          "/DLL "\
++      target-armv7l	    "-fPIC -ldl -Wl,--as-needed "
+ 
+ macro_append componentshr_linkopts "" \
+-      target-linux                 "-Wl,--no-undefined "
++      target-linux                 "-Wl,--no-undefined " \
++      target-armv7l		   "-Wl,--no-undefined "
+ 
+ macro_append componentshr_linkopts "" \
+       target-linux                 "-pthread "
+ 
+ macro_append componentshr_linkopts "" \
+-      target-linux&target-opt&strip-symbols "-Wl,-s "
++      target-linux&target-opt&target-armv7l&strip-symbols "-Wl,-s "
+ 
+ macro_append componentshr_linkopts "" \
+       target-cov  " $(linkdebugflags) "
+@@ -965,13 +977,15 @@
+ 
+ macro libraryshr_linkopts   "" \
+       target-linux          "-fPIC -ldl -Wl,--as-needed " \
+-      target-winxp          "/DLL"
++      target-winxp          "/DLL" \
++      target-armv7l         "-fPIC -ldl -Wl,--as-needed "
+ 
+ macro_append libraryshr_linkopts "" \
+-      target-linux               "-Wl,--no-undefined "
+-
++      target-linux               "-Wl,--no-undefined "\
++      target-armv7l		 "-Wl,--no-undefined "
+ macro_append libraryshr_linkopts "" \
+-      target-linux                 "-pthread "
++      target-linux                 "-pthread "\
++      target-armv7l                "-pthread "
+ 
+ macro_append libraryshr_linkopts   "" \
+ 	  target-cov  " $(linkdebugflags) "
+@@ -993,7 +1007,8 @@
+       target-gcc&target-x86_64 " -Wl,-z,max-page-size=0x1000 "
+ 
+ macro application_linkopts  "" \
+-      target-linux                 "-Wl,--export-dynamic "
++      target-linux                 "-Wl,--export-dynamic "\
++      target-armv7l                "-Wl,--export-dynamic "
+ 
+ macro shlibsuffix   "so" \
+       target-winxp         "dll"
+@@ -1100,7 +1115,8 @@
+ macro use_GaudiCoreSvc "GaudiCoreSvc * -no_auto_imports" \
+         no_genconf "" \
+         do_genconf "GaudiCoreSvc * -no_auto_imports" \
+-        ATLAS "GaudiCoreSvc * -no_auto_imports"
++        ATLAS "GaudiCoreSvc * -no_auto_imports" \
++        tag-armv7l "GaudiCoreSvc * -no_auto_imports"
+ 
+ # if one wants to modify this pattern, the correction has to be made also
+ # in the GaudiCoreSvc requirements file since it is using directly
+@@ -1544,13 +1560,15 @@
+ #-------------------------------------------------------------------
+ 
+ # don't create zipped python files for ATLAS
+-tag ATLAS no-pyzip
++tag ATLAS no-pyzip \
++target-armv7l no-pyzip
+ 
+-macro_append pp_cppflags "" \
++macro_append pp_cppflags " -DATLAS_GAUDI_V21 " \
+       ATLAS " -DATLAS_GAUDI_V21 "
+ 
+ macro_append pp_cppflags "" \
+-      ATLAS&target-opt " -DNDEBUG "
++      ATLAS&target-opt " -DNDEBUG " \
++      target-opt " -DNDEBUG "
+ 
+ #
+ # extra CPP flags
+@@ -1558,11 +1576,13 @@
+ 
+ # for building slc5 binaries on slc6 host
+ macro CppSpecificFlags "" \
+-    ATLAS&host-slc6&target-slc5 " -D__USE_XOPEN2K8 "
++    ATLAS&host-slc6&target-slc5 " -D__USE_XOPEN2K8 " \
++    target-armv7l " -D__USE_XOPEN2K8 "
+ 
+ # set an env var for use outside, eg a Makefile
+ set CPPEXPFLAGS "" \
+-  ATLAS $(CppSpecificFlags)
++  ATLAS $(CppSpecificFlags) \
++  target-armv7l $(CppSpecificFlags)
+ 
+ macro_append pp_cppflags " $(CppSpecificFlags)"
+ macro_append pp_cflags   " $(CppSpecificFlags)"

@@ -1,0 +1,147 @@
+mkdir -p /home/jwsmith/ANA/2_GAUDI/Gaudi/build.aarch64-ubuntu14.04-gcc49-opt
+cd /home/jwsmith/ANA/2_GAUDI/Gaudi/build.aarch64-ubuntu14.04-gcc49-opt && cmake -DCMAKE_TOOLCHAIN_FILE=/home/jwsmith/ANA/2_GAUDI/Gaudi/toolchain.cmake /home/jwsmith/ANA/2_GAUDI/Gaudi
+-- Target system: aarch64-ubuntu14.04-gcc49
+-- Build type: opt
+-- Using heptools version 74root6
+-- Target system: aarch64-ubuntu14.04-gcc49
+-- Build type: opt
+-- Found LCGCMT 74root6rs in /home/seuster/LCGStack/lcgcmake-install
+-- Looking for local directories...
+-- Found:
+--   Gaudi
+--   GaudiCoreSvc
+--   GaudiSvc
+--   GaudiPython
+--   GaudiAlg
+--   GaudiPluginService
+--   GaudiUtils
+--   GaudiExamples
+--   GaudiPolicy
+--   GaudiMonitor
+--   GaudiMP
+--   GaudiKernel/src/Util
+--   GaudiKernel
+--   GaudiProfiling
+--   GaudiAud
+--   PartPropSvc
+--   RootHistCnv
+--   GaudiCommonSvc
+--   GaudiSys
+--   GaudiGSL
+--   GaudiRelease
+--   RootCnv
+--   GaudiPartProp
+-- Adding directory GaudiPluginService (1/23)
+-- Boost version: 1.56.0
+-- Found the following Boost libraries:
+--   unit_test_framework
+-- Adding directory GaudiKernel (2/23)
+-- Boost version: 1.56.0
+-- Found the following Boost libraries:
+--   filesystem
+--   thread
+--   system
+-- Adding directory Gaudi (3/23)
+-- Adding directory GaudiCoreSvc (4/23)
+-- Boost version: 1.56.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   regex
+--   thread
+-- Adding directory GaudiSvc (5/23)
+-- Boost version: 1.56.0
+-- Found the following Boost libraries:
+--   regex
+-- Adding directory GaudiUtils (6/23)
+-- Boost version: 1.56.0
+-- Adding directory GaudiAlg (7/23)
+-- Boost version: 1.56.0
+-- Found the following Boost libraries:
+--   regex
+-- Adding directory GaudiPython (8/23)
+-- Adding directory GaudiGSL (9/23)
+-- Adding directory RootCnv (10/23)
+-- Adding directory GaudiExamples (11/23)
+-- Boost version: 1.56.0
+-- Found the following Boost libraries:
+--   python
+-- Adding directory GaudiPolicy (12/23)
+-- Adding directory GaudiMonitor (13/23)
+-- Adding directory GaudiMP (14/23)
+-- Adding directory GaudiKernel/src/Util (15/23)
+-- Boost version: 1.56.0
+-- Found the following Boost libraries:
+--   program_options
+--   regex
+-- Adding directory GaudiProfiling (16/23)
+-- Boost version: 1.56.0
+-- Found the following Boost libraries:
+--   python
+-- Could NOT find unwind (missing:  UNWIND_INCLUDE_DIR UNWIND_LIBRARIES) 
+-- Could NOT find tcmalloc (missing:  TCMALLOC_INCLUDE_DIR TCMALLOC_LIBRARIES) 
+-- Adding directory GaudiAud (17/23)
+-- Adding directory PartPropSvc (18/23)
+-- Boost version: 1.56.0
+-- Found the following Boost libraries:
+--   regex
+-- Adding directory RootHistCnv (19/23)
+-- Boost version: 1.56.0
+-- Adding directory GaudiCommonSvc (20/23)
+-- Boost version: 1.56.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+-- Adding directory GaudiSys (21/23)
+-- Adding directory GaudiRelease (22/23)
+-- Adding directory GaudiPartProp (23/23)
+-- Preparing environment configuration:
+--   environment for external packages
+--     PythonInterp
+--     XercesC
+--     UUID
+--     pytools
+--     CppUnit
+--     RELAX
+--     GSL
+--     CLHEP
+--     QMTest
+--     PythonLibs
+--     HepPDT
+--     AIDA
+--     Boost
+--     ROOT
+--   environment for the project
+--   environment for local subdirectories
+--     GaudiPluginService
+--     GaudiKernel
+--     Gaudi
+--     GaudiCoreSvc
+--     GaudiSvc
+--     GaudiUtils
+--     GaudiAlg
+--     GaudiPython
+--     GaudiGSL
+--     RootCnv
+--     GaudiExamples
+--     GaudiPolicy
+--     GaudiMonitor
+--     GaudiMP
+--     GaudiKernel/src/Util
+--     GaudiProfiling
+--     GaudiAud
+--     PartPropSvc
+--     RootHistCnv
+--     GaudiCommonSvc
+--     GaudiSys
+--     GaudiRelease
+--     GaudiPartProp
+-- Generating GaudiEnvironment.xml
+-- Generating GaudiBuildEnvironment.xml
+-- Generating GaudiConfigVersion.cmake
+-- Generating GaudiConfig.cmake
+-- Generating GaudiPlatformConfig.cmake
+-- Generating 'export' files.
+-- Generating manifest.xml
+-- Configuring incomplete, errors occurred!
+See also "/home/jwsmith/ANA/2_GAUDI/Gaudi/build.aarch64-ubuntu14.04-gcc49-opt/CMakeFiles/CMakeOutput.log".

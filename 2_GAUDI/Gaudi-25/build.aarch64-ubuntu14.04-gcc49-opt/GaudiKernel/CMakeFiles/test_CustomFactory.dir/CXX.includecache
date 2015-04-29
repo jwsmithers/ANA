@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../GaudiPluginService/Gaudi/Details/PluginServiceDetails.h
+string
+-
+sstream
+-
+map
+-
+set
+-
+typeinfo
+-
+mutex
+-
+
+../GaudiPluginService/Gaudi/PluginService.h
+string
+-
+typeinfo
+-
+Gaudi/Details/PluginServiceDetails.h
+-
+
+/home/jwsmith/ANA/2_GAUDI/Gaudi/GaudiKernel/tests/src/custom_factory.cpp
+Gaudi/PluginService.h
+/home/jwsmith/ANA/2_GAUDI/Gaudi/GaudiKernel/tests/src/Gaudi/PluginService.h
+

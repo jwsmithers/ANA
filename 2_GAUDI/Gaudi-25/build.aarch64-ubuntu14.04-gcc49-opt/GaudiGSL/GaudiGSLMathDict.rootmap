@@ -1,0 +1,63 @@
+{ decls }
+namespace Genfun { namespace GaudiMathImplementation {  } }
+namespace Gaudi {  }
+class IGslSvc;
+class IGslErrorHandler;
+
+[ libGaudiGSLMathDict.so ]
+# List of selected classes
+class Gaudi::InterfaceId<IGslErrorHandler,2,0>
+class Gaudi::InterfaceId<IGslSvc,2,0>
+class Genfun::GaudiMathImplementation::Adapter2DoubleFunction
+class Genfun::GaudiMathImplementation::Adapter3DoubleFunction
+class Genfun::GaudiMathImplementation::AdapterIFunction
+class Genfun::GaudiMathImplementation::Constant
+class Genfun::GaudiMathImplementation::GSLFunctionWithError
+class Genfun::GaudiMathImplementation::GSLFunctionWithMode
+class Genfun::GaudiMathImplementation::GSLFunctionWithModeAndError
+class Genfun::GaudiMathImplementation::GSLSpline
+class Genfun::GaudiMathImplementation::GSLSplineDeriv
+class Genfun::GaudiMathImplementation::GSLSplineDeriv2
+class Genfun::GaudiMathImplementation::GSLSplineInteg
+class Genfun::GaudiMathImplementation::NumericalDefiniteIntegral
+class Genfun::GaudiMathImplementation::NumericalDerivative
+class Genfun::GaudiMathImplementation::NumericalIndefiniteIntegral
+class Genfun::GaudiMathImplementation::SimpleFunction
+class Genfun::GaudiMathImplementation::SplineBase
+class GslError
+class IGslErrorHandler
+class IGslSvc
+header GaudiMath/FunAdapters.h
+header GaudiMath/Constant.h
+header GaudiMath/GSLFunAdapters.h
+header GaudiMath/Splines.h
+header GaudiMath/NumericalDefiniteIntegral.h
+header GaudiMath/NumericalDerivative.h
+header GaudiMath/NumericalIndefiniteIntegral.h
+header GaudiGSL/GslError.h
+header GaudiGSL/IGslErrorHandler.h
+header GaudiGSL/IGslSvc.h
+# List of selected namespaces
+namespace GslErrorHandlers
+namespace Genfun::GaudiMathImplementation
+namespace GaudiMath::Integration
+namespace GaudiMath::Interpolation
+# List of selected typedefs and outer classes
+typedef Genfun::GaudiMathImplementation::GSLFunction
+typedef GaudiMath::AIDAFunction
+typedef GaudiMath::Function2D
+typedef GaudiMath::Function3D
+typedef GaudiMath::SimpleFunction
+typedef GaudiMath::GSLFunctionWithMode
+typedef GaudiMath::GSLFunctionWithError
+typedef GaudiMath::GSLFunctionWithModeAndError
+typedef GaudiMath::Constant
+typedef GaudiMath::Derivative
+typedef GaudiMath::SimpleFun
+typedef GaudiMath::IndIntegral
+typedef GaudiMath::DefIntegral
+typedef GaudiMath::SimpleSpline
+typedef GaudiMath::Spline
+typedef GaudiMath::SplineDeriv
+typedef GaudiMath::SplineDeriv2
+typedef GaudiMath::SplineInteg
