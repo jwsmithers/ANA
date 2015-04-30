@@ -1,3 +1,0 @@
-libGaudiMP.so:IoComponentMgr
-libGaudiMP.so:RecordOutputStream
-libGaudiMP.so:ReplayOutputStream

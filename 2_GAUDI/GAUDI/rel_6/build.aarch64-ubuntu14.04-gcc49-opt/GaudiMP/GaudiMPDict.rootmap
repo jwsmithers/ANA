@@ -1,9 +1,0 @@
-{ decls }
-namespace GaudiMP {  }
-
-[ libGaudiMPDict.so ]
-# List of selected classes
-class GaudiMP::PyROOTPickle
-class GaudiMP::TESSerializer
-header GaudiMP/PyROOTPickle.h
-header GaudiMP/TESSerializer.h
