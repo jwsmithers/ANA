@@ -20,6 +20,6 @@ export LCG_install=/home/seuster/LCGStack/lcgcmake-install
 #export COOLDir=$ROOTDIR/1b_COOL/$COOL_VERS
 #export COOL_include=$COOLDir/../$CMTCONFIG/include
 ##Gaudi
-export GaudiDir=$ROOTDIR/2_GAUDI/Gaudi
+export GaudiDir=$ROOTDIR/2_GAUDI/GAUDI/
 
 export SW_Extras=$ROOTDIR/sw_extras

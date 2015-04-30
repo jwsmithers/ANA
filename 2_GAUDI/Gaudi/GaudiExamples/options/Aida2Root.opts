@@ -1,3 +1,0 @@
-#include "Histograms.opts"
-
-ApplicationMgr.TopAlg += { "Aida2Root" } ;

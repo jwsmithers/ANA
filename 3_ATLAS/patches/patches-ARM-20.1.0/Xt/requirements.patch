@@ -5,7 +5,7 @@
  macro Xt_libs               "/usr/X11R6/lib" \
        target-slc5&target-64 "/usr/lib64" \
 -      target-slc5           "/usr/lib" \
-+      target-slc5&target-fc21 "/usr/lib" \
++      target-slc5&target-fc21&target-aarch64 "/usr/lib" \
        target-64             "/usr/X11R6/lib64" 
  
  include_dirs "/usr/include/X11"

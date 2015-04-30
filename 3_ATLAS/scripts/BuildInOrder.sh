@@ -2,9 +2,9 @@
 
 while read line
 do
-	cd $TopDir/$line/$line-$VERSION
+	cd $TopDir/$line/$VERSION
 	source BuildSetup.sh
-	cd $TopDir/$line/$line-$VERSION/${line}Release/cmt
+	cd $TopDir/$line/$VERSION/${line}Release/cmt
 	cmt config
 	source setup.sh
 	cmt broadcast cmt config

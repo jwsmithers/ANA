@@ -16,7 +16,7 @@
   " $(AtlasGdb_root)/$(tag)/lib/libbfd.a \ 
     $(AtlasGdb_root)/$(tag)/lib/x86_64/libiberty.a -lz " \
 -  slc6&64&icc13 \ 
-+  slc6&64&icc13&fc21 \ 
++  slc6&64&icc13&fc21&aarch64 \ 
   " $(AtlasGdb_root)/$(tag)/lib/libbfd.a \ 
     $(AtlasGdb_root)/$(tag)/lib/libiberty.a -lz " \
    slc6 \

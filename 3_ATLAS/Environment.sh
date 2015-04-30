@@ -8,7 +8,7 @@ source /home/jwsmith/CMT/*/mgr/setup.sh
 export CMTBIN=Linux-aarch64
 export CMTSITE=STANDALONE
 export SVNROOT=svn+ssh://svn.cern.ch/reps/atlasoff
-export VERSION=20.1.0
+export VERSION=rel_6
 export LCGCMT_VERS=LCGCMT_74root6
 export TopDir=$ROOTDIR/3_ATLAS/InstallArea
 #export AntVersion=1.9.4

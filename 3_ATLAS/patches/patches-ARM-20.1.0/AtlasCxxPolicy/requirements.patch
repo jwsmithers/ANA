@@ -6,7 +6,7 @@
        target-darwin                  " -D_GNU_SOURCE -pthread -pipe -fPIC -W -Wall " \
 -      target-unix                    " -D_GNU_SOURCE -pthread -pipe -ansi -fPIC -W -Wall "
 +      target-unix                    " -D_GNU_SOURCE -pthread -pipe -ansi -fPIC -W -Wall " \
-+      target-fc21		     " -D_GNU_SOURCE -pthread -pipe -ansi -fPIC -W -Wall -Wno-deprecated -Wno-unused-local-typedefs -fsigned-bitfields -fsigned-char"
++      target-fc21&target-aarch64     " -D_GNU_SOURCE -pthread -pipe -ansi -fPIC -W -Wall -Wno-deprecated -Wno-unused-local-typedefs -fsigned-bitfields -fsigned-char"
 +
  macro_append cppflags                " -pedantic -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-long-long "
  macro_append cppflags                "" \
