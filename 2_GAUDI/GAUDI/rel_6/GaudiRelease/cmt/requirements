@@ -1,0 +1,57 @@
+# Package used to manage the Gaudi project packages
+# No wildcards allowed
+
+package GaudiRelease
+
+version v26r1
+branches doc cmt
+
+# CMT and Gaudi policy
+use GaudiPolicy	   v15r4
+
+# Gaudi executable
+use Gaudi          v26r1
+
+# Gaudi Plugin Service
+use GaudiPluginService    v2r2
+
+# Gaudi libraries - generic
+use GaudiKernel    v31r4
+use GaudiCoreSvc   v3r3
+use GaudiCommonSvc v3r4
+use GaudiSvc       v21r5
+use GaudiAud       v10r2
+use GaudiAlg       v15r2
+use GaudiGSL       v8r4
+use GaudiUtils     v5r3
+use GaudiPartProp  v2r1
+
+# Technology-specific Persistency packages
+use RootCnv        v1r23p1
+use RootHistCnv    v12r1
+use GaudiPython    v13r4
+
+# Container package specifying the minimum set of core packages
+use GaudiSys       v26r1
+
+# Monitoring utilities.
+use GaudiMonitor   v5r3
+
+# Profiling components and tools
+use GaudiProfiling v2r4
+
+# Multi Processing libraries
+use GaudiMP v3r2
+
+# Examples packages
+use GaudiExamples   v26r1
+
+
+# Atlas packages
+use PartPropSvc      v6r2
+
+### Mark the package as the container package of the project.
+apply_pattern container_package
+
+# Allow the generation of QMTest summary
+apply_pattern QMTestSummarize

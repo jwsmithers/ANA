@@ -1,0 +1,10 @@
+#ifndef GAUDIALG_VERSION
+/* Automatically generated file: do not modify! */
+#ifndef CALC_GAUDI_VERSION
+#define CALC_GAUDI_VERSION(maj,min) (((maj) << 16) + (min))
+#endif
+#define GAUDIALG_MAJOR_VERSION 15
+#define GAUDIALG_MINOR_VERSION 2
+#define GAUDIALG_PATCH_VERSION 0
+#define GAUDIALG_VERSION CALC_GAUDI_VERSION(GAUDIALG_MAJOR_VERSION,GAUDIALG_MINOR_VERSION)
+#endif

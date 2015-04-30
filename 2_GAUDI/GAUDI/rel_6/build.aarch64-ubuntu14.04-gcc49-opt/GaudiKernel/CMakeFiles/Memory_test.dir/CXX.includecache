@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../GaudiKernel/GaudiKernel/Kernel.h
+
+../GaudiKernel/GaudiKernel/Memory.h
+GaudiKernel/Kernel.h
+../GaudiKernel/GaudiKernel/GaudiKernel/Kernel.h
+GaudiKernel/SystemBase.h
+../GaudiKernel/GaudiKernel/GaudiKernel/SystemBase.h
+
+../GaudiKernel/GaudiKernel/SystemBase.h
+
+/home/jwsmith/ANA/2_GAUDI/Gaudi-26r1/GaudiKernel/tests/src/Memory_test.cpp
+GaudiKernel/Memory.h
+/home/jwsmith/ANA/2_GAUDI/Gaudi-26r1/GaudiKernel/tests/src/GaudiKernel/Memory.h
+cstdlib
+-
+iomanip
+-
+iostream
+-
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="Gaudi" version="v26r1" />
+  <heptools>
+    <version>74root6</version>
+    <binary_tag>aarch64-ubuntu14.04-gcc49-opt</binary_tag>
+    <lcg_system>aarch64-ubuntu14.04-gcc49</lcg_system>
+    <packages>
+      <package name="RELAX" version="RELAX_1_4_2" />
+    </packages>
+  </heptools>
+</manifest>

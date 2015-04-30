@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+  <title>Gaudi Release Notes</title>
+  <script type="text/javascript" language="JavaScript">
+<!-- Work around for old browsers
+  function addLinks(){
+    // do nothing
+  }
+//-->
+  </script>
+  <script type="text/javascript" language="JavaScript1.2">
+<!-- This function requires JavaScript 1.2
+  // replaces the occurrences of (patch|task|bug)+number with the link to the savannah page
+  function LinkToSavannah()
+  {
+    patch = "<a href='https://savannah.cern.ch/patch/index.php?$2'>$1&nbsp;#$2</a>";
+    bug = "<a href='https://savannah.cern.ch/bug/index.php?$2'>$1&nbsp;#$2</a>";
+    task = "<a href='https://savannah.cern.ch/task/index.php?$2'>$1&nbsp;#$2</a>";
+    s = document.getElementsByTagName("body")[0].innerHTML;
+    s = s.replace(/([Pp]atch) #([0-9]*)/g,patch);
+    s = s.replace(/([Tt]ask) #([0-9]*)/g,task);
+    s = s.replace(/([Bb]ug) #([0-9]*)/g,bug);
+    document.getElementsByTagName("body")[0].innerHTML = s;
+  }
+  // replaces the occurrences of ([A-Z]+-[0-9]+) with the link to the JIRA issue
+  function LinkToJIRA()
+  {
+    s = document.getElementsByTagName("body")[0].innerHTML;
+    s = s.replace(/([A-Z]+)-[0-9]+/g, function(match, p1) {
+      var url = "https://its.cern.ch/jira/browse/";
+      if (p1 == "ROOT" || p1 == "SPI" || p1 == "PF" || p1 == "CFHEP" ||
+          p1 == "CVM")
+          url = "https://sft.its.cern.ch/jira/browse/";
+      return '<a href="' + url + match + '">' + match + '</a>';
+    });
+    document.getElementsByTagName("body")[0].innerHTML = s;
+  }
+  function addLinks() {
+    LinkToSavannah();
+    LinkToJIRA();
+  }
+// -->
+  </script>
+  <style type="text/css">
+span.author { color: #737373; }
+  </style>
+</head>
+<body onload="javascript:addLinks()">
+<pre>
+Package: GaudiRelease<br>
+Package Coordinator: Marco Clemencic, Charles Leggett<br>
+Purpose: Gaudi common set of packages<br><br>
+</pre>
+<!-- ====================================================================== -->
+<h2><a name="v26r1">Gaudi v26r1</a> (2015-02-16)</h2>
+<h3>Externals version: <a href="http://lcgsoft.cern.ch/index.py?page=cfg_overview&cfg=74root6">LCGCMT_74root6</a></h3>
+<h3>General Changes</h3>
+<ul>
+<li>Fixes and improvements to the CMake configuration system
+    <ul>
+    <li>LBCORE-716: include path order not correct</li>
+    <li>LBCORE-725: relocatability of CMake builds</li>
+    <li>added the possibility to extend the toolchain for a project</li>
+    <li>GAUDI-1004: avoid cmake segfault when there is a loop in the dependencies between projects</li>
+    </ul>
+    (<span class="author">Marco Clemencic</span>)</li>
+<li>Replaced QMTest with a home made test wrapper.<br/>
+    (<span class="author">Marco Clemencic</span>, <span class="author">Valentin Comte</span>)</li>
+</ul>
+<h3>Packages Changes</h3>
+<ul>
+<li>Gaudi (v26r1):
+<ul>
+<li>Fixed GAUDI-1001: '\' and '\n' not correctly interpreted by gaudirun.py<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+<li>Added command line option to restart gaudirun.py from old options (smaller
+   memory footprint) after having parsed the options in Python.<br/>
+   (<span class="author">Marco Clemencic</span>)</li>
+</ul>
+</li>
+<li>GaudiKernel (v31r4):
+<ul>
+<li>Added methods to IToolSvc to get all the tool instances.<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+<li>GAUDI-999: Add code which determines the 'instruction level' of the CPU.<br/>
+    (<span class="author">Gerhard Raven</span>)</li>
+</ul>
+</li>
+<li>GaudiPolicy (v15r4):
+<ul>
+<li>Introduced the Python module GaudiTesting as a replacement for QMTest with
+    the GaudiTest extension.<br/>
+    (<span class="author">Marco Clemencic</span>, <span class="author">Valentin Comte</span>)</li>
+</ul>
+</li>
+<li>GaudiCommonSvc (v3r4):
+<ul>
+<li>Added _PyObject_GC_Malloc to the whitelist of StatusCodeSvc (visible only
+   with gcc4.9).<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+</ul>
+</li>
+</ul>
+<!-- ====================================================================== -->
+<h2><a name="v26r0">Gaudi v26r0</a> (2015-01-12)</h2>
+<h3>Externals version: <a href="http://lcgsoft.cern.ch/index.py?page=cfg_overview&cfg=72root6">LCGCMT_72root6</a></h3>
+<h3>General Changes</h3>
+<ul>
+<li>This is the first version officially released with CMake.</li>
+<li>Improvements to the Doxygen documentation (GAUDI-980).<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+<li>Minor fixes and improvements in a few tests.<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+</ul>
+<h3>Packages Changes</h3>
+<ul>
+<li>GaudiMonitor (v5r3):
+<ul>
+<li>Adapted HistorySvc to the changes introduced with GAUDI-995 (backward
+    incompatible change in IAlgManager).<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+<li>Refactored HistorySvc implementation using some C++11 constructs.<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+</ul>
+</li>
+<li>GaudiPluginService (v2r2):
+<ul>
+<li>Improved Doxygen documentation.<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+</ul>
+</li>
+<li>GaudiSvc (v21r5):
+<ul>
+<li>Fixed g++ 4.9 warning (unused typedef).<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+</ul>
+</li>
+<li>GaudiProfiling (v2r4):
+<ul>
+<li>Modified interlprofiler.md to use Doxygen flavour of markdown.<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+</ul>
+</li>
+<li>GaudiKernel (v31r3):
+<ul>
+<li>GAUDI-992: improve StatusCode::~StatusCode (plus fixes and fine tunings)<br/>
+    (<span class="author">Gerhard Raven</span>,
+     <span class="author">Marco Clemencic</span>)</li>
+<li>GAUDI-993: Improve performances of DataSvc::retrieveEntry<br/>
+    (<span class="author">Gerhard Raven</span>)</li>
+<li>GAUDI-995: improve Algorithm storage/management in AlgorithmManager<br/>
+    (<span class="author">Gerhard Raven</span>)</li>
+<li>Added the class StatusCode::ScopedDisableChecking to ignore all the
+   StatusCode instances produced in a scope.<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+<li>Fixed g++ 4.9 warning (unused typedef).<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+</ul>
+</li>
+<li>GaudiPython (v13r4):
+<ul>
+<li>Adapted GaudiPython.Bindings to the changes introduced with GAUDI-995
+   (backward incompatible change in IAlgManager).<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+</ul>
+</li>
+<li>GaudiCoreSvc (v3r2):
+<ul>
+<li>GAUDI-995: improve Algorithm storage/management in AlgorithmManager<br/>
+    (<span class="author">Gerhard Raven</span>)</li>
+</ul>
+</li>
+<li>GaudiPolicy (v15r3):
+<ul>
+<li>Minor addition to test reference exclusions.<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+</ul>
+</li>
+<li>GaudiRelease (v26r0):
+<ul>
+<li>Added CMake target to build Doxygen documentation.<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+</ul>
+</li>
+<li>GaudiCommonSvc (v3r3):
+<ul>
+<li>Modified StatusCodeSvc to report that there is no "unchecked" StatusCode, to
+   simplify the testing (DEBUG).<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+</ul>
+</li>
+<li>GaudiExamples (v26r0):
+<ul>
+<li>Reorganized and improved StatusCodeSvc tests.<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+<li>Implemented a special test to expose the regression introduced with
+   GAUDI-992 (only in CMake build).<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+<li>Extended StatusCodeSvc tests to check the new class
+   StatusCode::ScopedDisableChecking.<br/>
+    (<span class="author">Marco Clemencic</span>)</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<a href="release.notes.v25.html">Older versions</a>
+</body>
+</html>

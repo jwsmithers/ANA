@@ -1,0 +1,19 @@
+{ decls }
+namespace Gaudi {  }
+namespace std {  }
+namespace pool {  }
+
+[ libRootCnvDict.so ]
+# List of selected classes
+class Gaudi::RootNTupleDescriptor
+class Gaudi::RootObjectRefs
+class Gaudi::RootRef
+class PoolDbLinkManager
+class PoolDbTokenWrap
+class UCharDbArray
+class pool::Guid
+class pool::Token
+class vector<Gaudi::RootRef>
+class vector<pool::Token*>
+header RootCnv/RootRefs.h
+header RootCnv/PoolClasses.h

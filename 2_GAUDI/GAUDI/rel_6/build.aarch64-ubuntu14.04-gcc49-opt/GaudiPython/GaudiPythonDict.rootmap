@@ -1,0 +1,515 @@
+{ decls }
+namespace __gnu_cxx {  }
+namespace std {  }
+namespace GaudiPython {  }
+namespace Gaudi { namespace Utils { namespace Histos {  } } }
+template <typename T> class BoundedVerifier;
+template <typename TYPE, typename VERIFIER> class SimpleProperty;
+template <typename T> class NullVerifier;
+template <typename TYPE, typename VERIFIER> class SimplePropertyRef;
+namespace Gaudi { class Histo1DDef; }
+template <typename T> class PropertyVerifier;
+namespace GaudiAlg {  }
+class GaudiTupleAlg;
+class GaudiHistoAlg;
+class GaudiAlgorithm;
+namespace Tuples {  }
+class ContainedObject;
+class DataObject;
+class Algorithm;
+template <typename PBASE> class GaudiHistos;
+template <typename PBASE> class GaudiTuples;
+namespace Gaudi { namespace Utils {  } }
+template <typename TYPE, typename VERIFIER> class PropertyWithVerifier;
+template <typename TYPE> class PropertyWithValue;
+namespace AIDA {  }
+namespace Gaudi {  }
+
+[ libGaudiPythonDict.so ]
+# List of selected classes
+class AIDA::IAxis
+class AIDA::IBaseHistogram
+class AIDA::IHistogram
+class AIDA::IHistogram1D
+class AIDA::IHistogram2D
+class AIDA::IHistogram3D
+class AIDA::IProfile
+class AIDA::IProfile1D
+class AIDA::IProfile2D
+class BoundedVerifier<Gaudi::Histo1DDef>
+class BoundedVerifier<Long64_t>
+class BoundedVerifier<ULong64_t>
+class BoundedVerifier<bool>
+class BoundedVerifier<char>
+class BoundedVerifier<double>
+class BoundedVerifier<float>
+class BoundedVerifier<int>
+class BoundedVerifier<long double>
+class BoundedVerifier<long>
+class BoundedVerifier<map<int,double> >
+class BoundedVerifier<map<string,double> >
+class BoundedVerifier<map<string,int> >
+class BoundedVerifier<map<string,string> >
+class BoundedVerifier<map<string,vector<double> > >
+class BoundedVerifier<map<string,vector<int> > >
+class BoundedVerifier<map<string,vector<string> > >
+class BoundedVerifier<pair<double,double> >
+class BoundedVerifier<pair<int,int> >
+class BoundedVerifier<short>
+class BoundedVerifier<signed char>
+class BoundedVerifier<string>
+class BoundedVerifier<unsigned char>
+class BoundedVerifier<unsigned int>
+class BoundedVerifier<unsigned long>
+class BoundedVerifier<unsigned short>
+class BoundedVerifier<vector<Long64_t> >
+class BoundedVerifier<vector<ULong64_t> >
+class BoundedVerifier<vector<bool> >
+class BoundedVerifier<vector<char> >
+class BoundedVerifier<vector<double> >
+class BoundedVerifier<vector<float> >
+class BoundedVerifier<vector<int> >
+class BoundedVerifier<vector<long double> >
+class BoundedVerifier<vector<long> >
+class BoundedVerifier<vector<pair<double,double> > >
+class BoundedVerifier<vector<short> >
+class BoundedVerifier<vector<signed char> >
+class BoundedVerifier<vector<string> >
+class BoundedVerifier<vector<unsigned char> >
+class BoundedVerifier<vector<unsigned int> >
+class BoundedVerifier<vector<unsigned long> >
+class BoundedVerifier<vector<unsigned short> >
+class BoundedVerifier<vector<vector<double> > >
+class BoundedVerifier<vector<vector<string> > >
+class Chrono
+class ChronoEntity
+class Gaudi::IDataConnection
+class Gaudi::IFileCatalog
+class Gaudi::IFileCatalogMgr
+class Gaudi::IIODataManager
+class Gaudi::RangeBase_
+class Gaudi::StringKey
+class Gaudi::Utils::Aida2ROOT
+class Gaudi::Utils::HistoStats
+class Gaudi::Utils::Histos::HistoStrings
+class Gaudi::Utils::Histos::Table
+class Gaudi::Utils::MapBase
+class GaudiAlg::ID
+class GaudiAlg::Print
+class GaudiAlg::Print1D
+class GaudiAlg::Print1DProf
+class GaudiAlg::Print2D
+class GaudiAlg::Print2DProf
+class GaudiAlg::Print3D
+class GaudiAlg::PrintStat
+class GaudiAlg::PrintTuple
+class GaudiAlgorithm
+class GaudiCommon<Algorithm>
+class GaudiHistoAlg
+class GaudiHistos<GaudiAlgorithm>
+class GaudiPython::AlgDecorator
+class GaudiPython::CallbackStreamBuf
+class GaudiPython::Helper
+class GaudiPython::HistoDecorator
+class GaudiPython::Printer<ContainedObject>
+class GaudiPython::Printer<DataObject>
+class GaudiPython::PyAlg<GaudiAlgorithm>
+class GaudiPython::PyAlg<GaudiHistoAlg>
+class GaudiPython::PyAlg<GaudiTupleAlg>
+class GaudiPython::PyAlgorithm
+class GaudiPython::TupleAlgDecorator
+class GaudiPython::TupleDecorator
+class GaudiPython::TupleToolDecorator
+class GaudiTupleAlg
+class GaudiTuples<GaudiHistoAlg>
+class IErrorTool
+class IGenericTool
+class IHistoTool
+class ISequencerTimerTool
+class ITupleTool
+class ParticleProperty
+class PropertyCallbackFunctor
+class PropertyCallbackPointerFunctor
+class PropertyVerifier<Gaudi::Histo1DDef>
+class PropertyVerifier<Long64_t>
+class PropertyVerifier<ULong64_t>
+class PropertyVerifier<bool>
+class PropertyVerifier<char>
+class PropertyVerifier<double>
+class PropertyVerifier<float>
+class PropertyVerifier<int>
+class PropertyVerifier<long double>
+class PropertyVerifier<long>
+class PropertyVerifier<map<int,double> >
+class PropertyVerifier<map<string,double> >
+class PropertyVerifier<map<string,int> >
+class PropertyVerifier<map<string,string> >
+class PropertyVerifier<map<string,vector<double> > >
+class PropertyVerifier<map<string,vector<int> > >
+class PropertyVerifier<map<string,vector<string> > >
+class PropertyVerifier<pair<double,double> >
+class PropertyVerifier<pair<int,int> >
+class PropertyVerifier<short>
+class PropertyVerifier<signed char>
+class PropertyVerifier<string>
+class PropertyVerifier<unsigned char>
+class PropertyVerifier<unsigned int>
+class PropertyVerifier<unsigned long>
+class PropertyVerifier<unsigned short>
+class PropertyVerifier<vector<Long64_t> >
+class PropertyVerifier<vector<ULong64_t> >
+class PropertyVerifier<vector<bool> >
+class PropertyVerifier<vector<char> >
+class PropertyVerifier<vector<double> >
+class PropertyVerifier<vector<float> >
+class PropertyVerifier<vector<int> >
+class PropertyVerifier<vector<long double> >
+class PropertyVerifier<vector<long> >
+class PropertyVerifier<vector<pair<double,double> > >
+class PropertyVerifier<vector<short> >
+class PropertyVerifier<vector<signed char> >
+class PropertyVerifier<vector<string> >
+class PropertyVerifier<vector<unsigned char> >
+class PropertyVerifier<vector<unsigned int> >
+class PropertyVerifier<vector<unsigned long> >
+class PropertyVerifier<vector<unsigned short> >
+class PropertyVerifier<vector<vector<double> > >
+class PropertyVerifier<vector<vector<string> > >
+class PropertyWithValue<Long64_t>
+class PropertyWithValue<ULong64_t>
+class PropertyWithValue<bool>
+class PropertyWithValue<char>
+class PropertyWithValue<double>
+class PropertyWithValue<float>
+class PropertyWithValue<int>
+class PropertyWithValue<long double>
+class PropertyWithValue<long>
+class PropertyWithValue<map<int,double> >
+class PropertyWithValue<map<string,double> >
+class PropertyWithValue<map<string,int> >
+class PropertyWithValue<map<string,string> >
+class PropertyWithValue<map<string,vector<double> > >
+class PropertyWithValue<map<string,vector<int> > >
+class PropertyWithValue<map<string,vector<string> > >
+class PropertyWithValue<pair<double,double> >
+class PropertyWithValue<pair<int,int> >
+class PropertyWithValue<short>
+class PropertyWithValue<signed char>
+class PropertyWithValue<string>
+class PropertyWithValue<unsigned char>
+class PropertyWithValue<unsigned int>
+class PropertyWithValue<unsigned long>
+class PropertyWithValue<unsigned short>
+class PropertyWithValue<vector<Long64_t> >
+class PropertyWithValue<vector<ULong64_t> >
+class PropertyWithValue<vector<bool> >
+class PropertyWithValue<vector<char> >
+class PropertyWithValue<vector<double> >
+class PropertyWithValue<vector<float> >
+class PropertyWithValue<vector<int> >
+class PropertyWithValue<vector<long double> >
+class PropertyWithValue<vector<long> >
+class PropertyWithValue<vector<pair<double,double> > >
+class PropertyWithValue<vector<short> >
+class PropertyWithValue<vector<signed char> >
+class PropertyWithValue<vector<string> >
+class PropertyWithValue<vector<unsigned char> >
+class PropertyWithValue<vector<unsigned int> >
+class PropertyWithValue<vector<unsigned long> >
+class PropertyWithValue<vector<unsigned short> >
+class PropertyWithValue<vector<vector<double> > >
+class PropertyWithValue<vector<vector<string> > >
+class PropertyWithVerifier<Long64_t,BoundedVerifier<Long64_t> >
+class PropertyWithVerifier<Long64_t,NullVerifier<Long64_t> >
+class PropertyWithVerifier<ULong64_t,BoundedVerifier<ULong64_t> >
+class PropertyWithVerifier<ULong64_t,NullVerifier<ULong64_t> >
+class PropertyWithVerifier<bool,BoundedVerifier<bool> >
+class PropertyWithVerifier<bool,NullVerifier<bool> >
+class PropertyWithVerifier<char,BoundedVerifier<char> >
+class PropertyWithVerifier<char,NullVerifier<char> >
+class PropertyWithVerifier<double,BoundedVerifier<double> >
+class PropertyWithVerifier<double,NullVerifier<double> >
+class PropertyWithVerifier<float,BoundedVerifier<float> >
+class PropertyWithVerifier<float,NullVerifier<float> >
+class PropertyWithVerifier<int,BoundedVerifier<int> >
+class PropertyWithVerifier<int,NullVerifier<int> >
+class PropertyWithVerifier<long double,BoundedVerifier<long double> >
+class PropertyWithVerifier<long double,NullVerifier<long double> >
+class PropertyWithVerifier<long,BoundedVerifier<long> >
+class PropertyWithVerifier<long,NullVerifier<long> >
+class PropertyWithVerifier<map<int,double>,BoundedVerifier<map<int,double> > >
+class PropertyWithVerifier<map<int,double>,NullVerifier<map<int,double> > >
+class PropertyWithVerifier<map<string,double>,BoundedVerifier<map<string,double> > >
+class PropertyWithVerifier<map<string,double>,NullVerifier<map<string,double> > >
+class PropertyWithVerifier<map<string,int>,BoundedVerifier<map<string,int> > >
+class PropertyWithVerifier<map<string,int>,NullVerifier<map<string,int> > >
+class PropertyWithVerifier<map<string,string>,BoundedVerifier<map<string,string> > >
+class PropertyWithVerifier<map<string,string>,NullVerifier<map<string,string> > >
+class PropertyWithVerifier<map<string,vector<double> >,BoundedVerifier<map<string,vector<double> > > >
+class PropertyWithVerifier<map<string,vector<double> >,NullVerifier<map<string,vector<double> > > >
+class PropertyWithVerifier<map<string,vector<int> >,BoundedVerifier<map<string,vector<int> > > >
+class PropertyWithVerifier<map<string,vector<int> >,NullVerifier<map<string,vector<int> > > >
+class PropertyWithVerifier<map<string,vector<string> >,BoundedVerifier<map<string,vector<string> > > >
+class PropertyWithVerifier<map<string,vector<string> >,NullVerifier<map<string,vector<string> > > >
+class PropertyWithVerifier<pair<double,double>,BoundedVerifier<pair<double,double> > >
+class PropertyWithVerifier<pair<double,double>,NullVerifier<pair<double,double> > >
+class PropertyWithVerifier<pair<int,int>,BoundedVerifier<pair<int,int> > >
+class PropertyWithVerifier<pair<int,int>,NullVerifier<pair<int,int> > >
+class PropertyWithVerifier<short,BoundedVerifier<short> >
+class PropertyWithVerifier<short,NullVerifier<short> >
+class PropertyWithVerifier<signed char,BoundedVerifier<signed char> >
+class PropertyWithVerifier<signed char,NullVerifier<signed char> >
+class PropertyWithVerifier<string,BoundedVerifier<string> >
+class PropertyWithVerifier<string,NullVerifier<string> >
+class PropertyWithVerifier<unsigned char,BoundedVerifier<unsigned char> >
+class PropertyWithVerifier<unsigned char,NullVerifier<unsigned char> >
+class PropertyWithVerifier<unsigned int,BoundedVerifier<unsigned int> >
+class PropertyWithVerifier<unsigned int,NullVerifier<unsigned int> >
+class PropertyWithVerifier<unsigned long,BoundedVerifier<unsigned long> >
+class PropertyWithVerifier<unsigned long,NullVerifier<unsigned long> >
+class PropertyWithVerifier<unsigned short,BoundedVerifier<unsigned short> >
+class PropertyWithVerifier<unsigned short,NullVerifier<unsigned short> >
+class PropertyWithVerifier<vector<Long64_t>,BoundedVerifier<vector<Long64_t> > >
+class PropertyWithVerifier<vector<Long64_t>,NullVerifier<vector<Long64_t> > >
+class PropertyWithVerifier<vector<ULong64_t>,BoundedVerifier<vector<ULong64_t> > >
+class PropertyWithVerifier<vector<ULong64_t>,NullVerifier<vector<ULong64_t> > >
+class PropertyWithVerifier<vector<bool>,BoundedVerifier<vector<bool> > >
+class PropertyWithVerifier<vector<bool>,NullVerifier<vector<bool> > >
+class PropertyWithVerifier<vector<char>,BoundedVerifier<vector<char> > >
+class PropertyWithVerifier<vector<char>,NullVerifier<vector<char> > >
+class PropertyWithVerifier<vector<double>,BoundedVerifier<vector<double> > >
+class PropertyWithVerifier<vector<double>,NullVerifier<vector<double> > >
+class PropertyWithVerifier<vector<float>,BoundedVerifier<vector<float> > >
+class PropertyWithVerifier<vector<float>,NullVerifier<vector<float> > >
+class PropertyWithVerifier<vector<int>,BoundedVerifier<vector<int> > >
+class PropertyWithVerifier<vector<int>,NullVerifier<vector<int> > >
+class PropertyWithVerifier<vector<long double>,BoundedVerifier<vector<long double> > >
+class PropertyWithVerifier<vector<long double>,NullVerifier<vector<long double> > >
+class PropertyWithVerifier<vector<long>,BoundedVerifier<vector<long> > >
+class PropertyWithVerifier<vector<long>,NullVerifier<vector<long> > >
+class PropertyWithVerifier<vector<pair<double,double> >,BoundedVerifier<vector<pair<double,double> > > >
+class PropertyWithVerifier<vector<pair<double,double> >,NullVerifier<vector<pair<double,double> > > >
+class PropertyWithVerifier<vector<short>,BoundedVerifier<vector<short> > >
+class PropertyWithVerifier<vector<short>,NullVerifier<vector<short> > >
+class PropertyWithVerifier<vector<signed char>,BoundedVerifier<vector<signed char> > >
+class PropertyWithVerifier<vector<signed char>,NullVerifier<vector<signed char> > >
+class PropertyWithVerifier<vector<string>,BoundedVerifier<vector<string> > >
+class PropertyWithVerifier<vector<string>,NullVerifier<vector<string> > >
+class PropertyWithVerifier<vector<unsigned char>,BoundedVerifier<vector<unsigned char> > >
+class PropertyWithVerifier<vector<unsigned char>,NullVerifier<vector<unsigned char> > >
+class PropertyWithVerifier<vector<unsigned int>,BoundedVerifier<vector<unsigned int> > >
+class PropertyWithVerifier<vector<unsigned int>,NullVerifier<vector<unsigned int> > >
+class PropertyWithVerifier<vector<unsigned long>,BoundedVerifier<vector<unsigned long> > >
+class PropertyWithVerifier<vector<unsigned long>,NullVerifier<vector<unsigned long> > >
+class PropertyWithVerifier<vector<unsigned short>,BoundedVerifier<vector<unsigned short> > >
+class PropertyWithVerifier<vector<unsigned short>,NullVerifier<vector<unsigned short> > >
+class PropertyWithVerifier<vector<vector<double> >,BoundedVerifier<vector<vector<double> > > >
+class PropertyWithVerifier<vector<vector<double> >,NullVerifier<vector<vector<double> > > >
+class PropertyWithVerifier<vector<vector<string> >,BoundedVerifier<vector<vector<string> > > >
+class PropertyWithVerifier<vector<vector<string> >,NullVerifier<vector<vector<string> > > >
+class SimpleProperty<Long64_t,BoundedVerifier<Long64_t> >
+class SimpleProperty<ULong64_t,BoundedVerifier<ULong64_t> >
+class SimpleProperty<bool,BoundedVerifier<bool> >
+class SimpleProperty<char,BoundedVerifier<char> >
+class SimpleProperty<double,BoundedVerifier<double> >
+class SimpleProperty<float,BoundedVerifier<float> >
+class SimpleProperty<int,BoundedVerifier<int> >
+class SimpleProperty<long double,BoundedVerifier<long double> >
+class SimpleProperty<long,BoundedVerifier<long> >
+class SimpleProperty<map<int,double>,BoundedVerifier<map<int,double> > >
+class SimpleProperty<map<string,double>,BoundedVerifier<map<string,double> > >
+class SimpleProperty<map<string,int>,BoundedVerifier<map<string,int> > >
+class SimpleProperty<map<string,string>,BoundedVerifier<map<string,string> > >
+class SimpleProperty<map<string,vector<double> >,BoundedVerifier<map<string,vector<double> > > >
+class SimpleProperty<map<string,vector<int> >,BoundedVerifier<map<string,vector<int> > > >
+class SimpleProperty<map<string,vector<string> >,BoundedVerifier<map<string,vector<string> > > >
+class SimpleProperty<pair<double,double>,BoundedVerifier<pair<double,double> > >
+class SimpleProperty<pair<int,int>,BoundedVerifier<pair<int,int> > >
+class SimpleProperty<short,BoundedVerifier<short> >
+class SimpleProperty<signed char,BoundedVerifier<signed char> >
+class SimpleProperty<string,BoundedVerifier<string> >
+class SimpleProperty<unsigned char,BoundedVerifier<unsigned char> >
+class SimpleProperty<unsigned int,BoundedVerifier<unsigned int> >
+class SimpleProperty<unsigned long,BoundedVerifier<unsigned long> >
+class SimpleProperty<unsigned short,BoundedVerifier<unsigned short> >
+class SimpleProperty<vector<Long64_t>,BoundedVerifier<vector<Long64_t> > >
+class SimpleProperty<vector<ULong64_t>,BoundedVerifier<vector<ULong64_t> > >
+class SimpleProperty<vector<bool>,BoundedVerifier<vector<bool> > >
+class SimpleProperty<vector<char>,BoundedVerifier<vector<char> > >
+class SimpleProperty<vector<double>,BoundedVerifier<vector<double> > >
+class SimpleProperty<vector<float>,BoundedVerifier<vector<float> > >
+class SimpleProperty<vector<int>,BoundedVerifier<vector<int> > >
+class SimpleProperty<vector<long double>,BoundedVerifier<vector<long double> > >
+class SimpleProperty<vector<long>,BoundedVerifier<vector<long> > >
+class SimpleProperty<vector<pair<double,double> >,BoundedVerifier<vector<pair<double,double> > > >
+class SimpleProperty<vector<short>,BoundedVerifier<vector<short> > >
+class SimpleProperty<vector<signed char>,BoundedVerifier<vector<signed char> > >
+class SimpleProperty<vector<string>,BoundedVerifier<vector<string> > >
+class SimpleProperty<vector<unsigned char>,BoundedVerifier<vector<unsigned char> > >
+class SimpleProperty<vector<unsigned int>,BoundedVerifier<vector<unsigned int> > >
+class SimpleProperty<vector<unsigned long>,BoundedVerifier<vector<unsigned long> > >
+class SimpleProperty<vector<unsigned short>,BoundedVerifier<vector<unsigned short> > >
+class SimpleProperty<vector<vector<double> >,BoundedVerifier<vector<vector<double> > > >
+class SimpleProperty<vector<vector<string> >,BoundedVerifier<vector<vector<string> > > >
+class SimplePropertyRef<Long64_t,NullVerifier<Long64_t> >
+class SimplePropertyRef<ULong64_t,NullVerifier<ULong64_t> >
+class SimplePropertyRef<bool,NullVerifier<bool> >
+class SimplePropertyRef<char,NullVerifier<char> >
+class SimplePropertyRef<double,NullVerifier<double> >
+class SimplePropertyRef<float,NullVerifier<float> >
+class SimplePropertyRef<int,NullVerifier<int> >
+class SimplePropertyRef<long double,NullVerifier<long double> >
+class SimplePropertyRef<long,NullVerifier<long> >
+class SimplePropertyRef<map<int,double>,NullVerifier<map<int,double> > >
+class SimplePropertyRef<map<string,double>,NullVerifier<map<string,double> > >
+class SimplePropertyRef<map<string,int>,NullVerifier<map<string,int> > >
+class SimplePropertyRef<map<string,string>,NullVerifier<map<string,string> > >
+class SimplePropertyRef<map<string,vector<double> >,NullVerifier<map<string,vector<double> > > >
+class SimplePropertyRef<map<string,vector<int> >,NullVerifier<map<string,vector<int> > > >
+class SimplePropertyRef<map<string,vector<string> >,NullVerifier<map<string,vector<string> > > >
+class SimplePropertyRef<pair<double,double>,NullVerifier<pair<double,double> > >
+class SimplePropertyRef<pair<int,int>,NullVerifier<pair<int,int> > >
+class SimplePropertyRef<short,NullVerifier<short> >
+class SimplePropertyRef<signed char,NullVerifier<signed char> >
+class SimplePropertyRef<string,NullVerifier<string> >
+class SimplePropertyRef<unsigned char,NullVerifier<unsigned char> >
+class SimplePropertyRef<unsigned int,NullVerifier<unsigned int> >
+class SimplePropertyRef<unsigned long,NullVerifier<unsigned long> >
+class SimplePropertyRef<unsigned short,NullVerifier<unsigned short> >
+class SimplePropertyRef<vector<Long64_t>,NullVerifier<vector<Long64_t> > >
+class SimplePropertyRef<vector<ULong64_t>,NullVerifier<vector<ULong64_t> > >
+class SimplePropertyRef<vector<bool>,NullVerifier<vector<bool> > >
+class SimplePropertyRef<vector<char>,NullVerifier<vector<char> > >
+class SimplePropertyRef<vector<double>,NullVerifier<vector<double> > >
+class SimplePropertyRef<vector<float>,NullVerifier<vector<float> > >
+class SimplePropertyRef<vector<int>,NullVerifier<vector<int> > >
+class SimplePropertyRef<vector<long double>,NullVerifier<vector<long double> > >
+class SimplePropertyRef<vector<long>,NullVerifier<vector<long> > >
+class SimplePropertyRef<vector<pair<double,double> >,NullVerifier<vector<pair<double,double> > > >
+class SimplePropertyRef<vector<short>,NullVerifier<vector<short> > >
+class SimplePropertyRef<vector<signed char>,NullVerifier<vector<signed char> > >
+class SimplePropertyRef<vector<string>,NullVerifier<vector<string> > >
+class SimplePropertyRef<vector<unsigned char>,NullVerifier<vector<unsigned char> > >
+class SimplePropertyRef<vector<unsigned int>,NullVerifier<vector<unsigned int> > >
+class SimplePropertyRef<vector<unsigned long>,NullVerifier<vector<unsigned long> > >
+class SimplePropertyRef<vector<unsigned short>,NullVerifier<vector<unsigned short> > >
+class SimplePropertyRef<vector<vector<double> >,NullVerifier<vector<vector<double> > > >
+class SimplePropertyRef<vector<vector<string> >,NullVerifier<vector<vector<string> > > >
+class Stat
+class StatEntity
+class Tuples::Tuple
+class _Bit_reference
+class __gnu_cxx::dummy
+class allocator<IAlgorithm*>
+class allocator<IRegistry*>
+class allocator<IService*>
+class basic_ostream<char,char_traits<char> >
+class list<IAlgorithm*>
+class list<IService*>
+class ostream
+class unary_function<GaudiAlg::ID,unsigned long>
+class unary_function<Long64_t,unsigned long>
+class unary_function<ULong64_t,unsigned long>
+class unary_function<__int128,unsigned long>
+class unary_function<basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >,unsigned long>
+class unary_function<bool,unsigned long>
+class unary_function<char,bool>
+class unary_function<char,unsigned long>
+class unary_function<const IInterface*,IInterface*>
+class unary_function<const char*,unsigned long>
+class unary_function<double,unsigned long>
+class unary_function<float,unsigned long>
+class unary_function<int,unsigned long>
+class unary_function<long double,unsigned long>
+class unary_function<long,unsigned long>
+class unary_function<pair<const string,AIDA::IHistogram1D*>,const string>
+class unary_function<pair<const string,AIDA::IHistogram2D*>,const string>
+class unary_function<pair<const string,AIDA::IHistogram3D*>,const string>
+class unary_function<pair<const string,AIDA::IProfile1D*>,const string>
+class unary_function<pair<const string,AIDA::IProfile2D*>,const string>
+class unary_function<pair<const string,NTuple::Array<float>*>,const string>
+class unary_function<pair<const string,NTuple::Item<IOpaqueAddress*>*>,const string>
+class unary_function<pair<const string,NTuple::Item<Long64_t>*>,const string>
+class unary_function<pair<const string,NTuple::Item<ULong64_t>*>,const string>
+class unary_function<pair<const string,NTuple::Item<bool>*>,const string>
+class unary_function<pair<const string,NTuple::Item<char>*>,const string>
+class unary_function<pair<const string,NTuple::Item<double>*>,const string>
+class unary_function<pair<const string,NTuple::Item<float>*>,const string>
+class unary_function<pair<const string,NTuple::Item<int>*>,const string>
+class unary_function<pair<const string,NTuple::Item<short>*>,const string>
+class unary_function<pair<const string,NTuple::Item<unsigned char>*>,const string>
+class unary_function<pair<const string,NTuple::Item<unsigned int>*>,const string>
+class unary_function<pair<const string,NTuple::Item<unsigned short>*>,const string>
+class unary_function<pair<const string,NTuple::Matrix<float>*>,const string>
+class unary_function<pair<const string,SmartIF<IService> >,const string>
+class unary_function<pair<const string,Tuples::TupleObj*>,const string>
+class unary_function<pair<const string,string>,const string>
+class unary_function<short,unsigned long>
+class unary_function<signed char,unsigned long>
+class unary_function<string,unsigned long>
+class unary_function<unsigned __int128,unsigned long>
+class unary_function<unsigned char,unsigned long>
+class unary_function<unsigned int,unsigned long>
+class unary_function<unsigned long,unsigned long>
+class unary_function<unsigned short,unsigned long>
+class unary_function<wchar_t,unsigned long>
+class vector<AIDA::IHistogram1D*>
+class vector<AIDA::IHistogram2D*>
+class vector<AIDA::IHistogram3D*>
+class vector<AIDA::IProfile1D*>
+class vector<AIDA::IProfile2D*>
+class vector<GaudiAlg::ID>
+class vector<IAlgTool*>
+class vector<IRegistry*>
+class vector<IService*>
+class vector<Property*>
+class vector<const Property*>
+class vector<const StatEntity*>
+header AIDA/IAxis.h
+header AIDA/IBaseHistogram.h
+header AIDA/IHistogram.h
+header AIDA/IHistogram1D.h
+header AIDA/IHistogram2D.h
+header AIDA/IHistogram3D.h
+header AIDA/IProfile.h
+header AIDA/IProfile1D.h
+header AIDA/IProfile2D.h
+header GaudiKernel/Chrono.h
+header GaudiKernel/ChronoEntity.h
+header GaudiUtils/IIODataManager.h
+header GaudiUtils/IFileCatalog.h
+header GaudiUtils/IFileCatalogMgr.h
+header GaudiKernel/Range.h
+header GaudiKernel/StringKey.h
+header GaudiUtils/Aida2ROOT.h
+header GaudiUtils/HistoStats.h
+header GaudiUtils/HistoStrings.h
+header GaudiUtils/HistoTableFormat.h
+header GaudiKernel/MapBase.h
+header GaudiAlg/GaudiHistoID.h
+header GaudiAlg/Print.h
+header GaudiAlg/GaudiAlgorithm.h
+header GaudiAlg/GaudiHistoAlg.h
+header GaudiPython/AlgDecorators.h
+header GaudiPython/CallbackStreamBuf.h
+header GaudiPython/Helpers.h
+header GaudiPython/HistoDecorator.h
+header GaudiPython/Algorithm.h
+header GaudiPython/TupleDecorator.h
+header GaudiAlg/GaudiTupleAlg.h
+header GaudiAlg/IErrorTool.h
+header GaudiAlg/IGenericTool.h
+header GaudiAlg/IHistoTool.h
+header GaudiAlg/ISequencerTimerTool.h
+header GaudiAlg/ITupleTool.h
+header GaudiKernel/ParticleProperty.h
+header GaudiKernel/PropertyCallbackFunctor.h
+header GaudiKernel/Stat.h
+header GaudiKernel/StatEntity.h
+header GaudiAlg/Tuple.h
+# List of selected typedefs and outer classes
+typedef std::ostream
+typedef GaudiAlg::HistoID
+typedef GaudiAlg::TupleID
+# List of selected enums and outer classes
+enum Gaudi::Utils::Histos::Formats::Format
