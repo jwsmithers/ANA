@@ -1,0 +1,464 @@
+rm -f -r /home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt/Testing /home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt/html
+cd /home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt && ctest -T test 
+   Site: 
+   Build name: 
+Create new tag: 20150501-1123 - Experimental
+Test project /home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt
+        Start   1: cmake.EnvConfigTests
+  1/198 Test   #1: cmake.EnvConfigTests ..................................***Failed    0.27 sec
+        Start   2: cmake.project_manifest.doctest
+  2/198 Test   #2: cmake.project_manifest.doctest ........................   Passed    0.48 sec
+        Start   3: cmake.CMakeModules
+  3/198 Test   #3: cmake.CMakeModules ....................................***Failed    0.27 sec
+        Start   4: cmake.QMTDeps
+  4/198 Test   #4: cmake.QMTDeps .........................................***Failed    0.27 sec
+        Start   5: GaudiPluginService.Test_GaudiPluginService_UseCases
+  5/198 Test   #5: GaudiPluginService.Test_GaudiPluginService_UseCases ...   Passed    0.27 sec
+        Start   6: GaudiPluginService.listcomponents.usage
+  6/198 Test   #6: GaudiPluginService.listcomponents.usage ...............   Passed    0.27 sec
+        Start   7: GaudiPluginService.listcomponents.help1
+  7/198 Test   #7: GaudiPluginService.listcomponents.help1 ...............   Passed    0.27 sec
+        Start   8: GaudiPluginService.listcomponents.help2
+  8/198 Test   #8: GaudiPluginService.listcomponents.help2 ...............   Passed    0.27 sec
+        Start   9: GaudiPluginService.listcomponents.wrong_args
+  9/198 Test   #9: GaudiPluginService.listcomponents.wrong_args ..........   Passed    0.27 sec
+        Start  10: GaudiKernel.DirSearchPath_test
+ 10/198 Test  #10: GaudiKernel.DirSearchPath_test ........................   Passed    0.27 sec
+        Start  11: GaudiKernel.test_SerializeSTL
+ 11/198 Test  #11: GaudiKernel.test_SerializeSTL .........................   Passed    0.27 sec
+        Start  12: GaudiKernel.PathResolver_test
+ 12/198 Test  #12: GaudiKernel.PathResolver_test .........................   Passed    0.27 sec
+        Start  13: GaudiKernel.test_GaudiTime
+ 13/198 Test  #13: GaudiKernel.test_GaudiTime ............................   Passed    0.27 sec
+        Start  14: GaudiKernel.test_GaudiTiming
+ 14/198 Test  #14: GaudiKernel.test_GaudiTiming ..........................   Passed    1.27 sec
+        Start  15: GaudiKernel.Parsers_test
+ 15/198 Test  #15: GaudiKernel.Parsers_test ..............................   Passed    0.27 sec
+        Start  16: GaudiKernel.Memory_test
+ 16/198 Test  #16: GaudiKernel.Memory_test ...............................   Passed    0.27 sec
+        Start  17: GaudiKernel.test_headers_build
+ 17/198 Test  #17: GaudiKernel.test_headers_build ........................   Passed    0.27 sec
+        Start  18: GaudiKernel.test_GAUDI-905
+ 18/198 Test  #18: GaudiKernel.test_GAUDI-905 ............................   Passed    0.27 sec
+        Start  19: GaudiKernel.confdb
+ 19/198 Test  #19: GaudiKernel.confdb ....................................***Failed    0.27 sec
+        Start  20: GaudiKernel.nose
+ 20/198 Test  #20: GaudiKernel.nose ......................................***Failed    0.27 sec
+        Start  21: GaudiKernel.genconf_with_custom_factory
+ 21/198 Test  #21: GaudiKernel.genconf_with_custom_factory ...............   Passed    0.70 sec
+        Start  22: GaudiKernel.AttribStringParser_test
+ 22/198 Test  #22: GaudiKernel.AttribStringParser_test ...................   Passed    0.28 sec
+        Start  23: GaudiKernel.test_PropertyMgr
+ 23/198 Test  #23: GaudiKernel.test_PropertyMgr ..........................   Passed    0.28 sec
+        Start  24: GaudiKernel.bug_87340
+ 24/198 Test  #24: GaudiKernel.bug_87340 .................................   Passed    0.89 sec
+        Start  25: Gaudi.bug_35201
+ 25/198 Test  #25: Gaudi.bug_35201 .......................................   Passed    0.80 sec
+        Start  26: Gaudi.bug_35347
+ 26/198 Test  #26: Gaudi.bug_35347 .......................................   Passed    0.80 sec
+        Start  27: Gaudi.bug_36742
+ 27/198 Test  #27: Gaudi.bug_36742 .......................................   Passed    0.80 sec
+        Start  28: Gaudi.bug_36742b
+ 28/198 Test  #28: Gaudi.bug_36742b ......................................   Passed    0.79 sec
+        Start  29: Gaudi.bug_37479
+ 29/198 Test  #29: Gaudi.bug_37479 .......................................   Passed    0.80 sec
+        Start  30: Gaudi.bug_37488
+ 30/198 Test  #30: Gaudi.bug_37488 .......................................   Passed    0.80 sec
+        Start  31: Gaudi.bug_38194
+ 31/198 Test  #31: Gaudi.bug_38194 .......................................   Passed    0.80 sec
+        Start  32: Gaudi.bug_38206
+ 32/198 Test  #32: Gaudi.bug_38206 .......................................   Passed    0.80 sec
+        Start  33: Gaudi.bug_39809
+ 33/198 Test  #33: Gaudi.bug_39809 .......................................   Passed    0.80 sec
+        Start  34: Gaudi.bug_39846
+ 34/198 Test  #34: Gaudi.bug_39846 .......................................   Passed    0.80 sec
+        Start  35: Gaudi.bug_42428
+ 35/198 Test  #35: Gaudi.bug_42428 .......................................   Passed    0.80 sec
+        Start  36: Gaudi.bug_45517
+ 36/198 Test  #36: Gaudi.bug_45517 .......................................   Passed    0.80 sec
+        Start  37: Gaudi.bug_61144
+ 37/198 Test  #37: Gaudi.bug_61144 .......................................   Passed    0.80 sec
+        Start  38: Gaudi.case_sensitivity
+ 38/198 Test  #38: Gaudi.case_sensitivity ................................   Passed    0.79 sec
+        Start  39: Gaudi.cmdline_conf
+ 39/198 Test  #39: Gaudi.cmdline_conf ....................................   Passed    0.80 sec
+        Start  40: Gaudi.conf_to_str
+ 40/198 Test  #40: Gaudi.conf_to_str .....................................   Passed    0.79 sec
+        Start  41: Gaudi.conf_user.autoapply
+ 41/198 Test  #41: Gaudi.conf_user.autoapply .............................   Passed    0.74 sec
+        Start  42: Gaudi.conf_user.delayed_creation
+ 42/198 Test  #42: Gaudi.conf_user.delayed_creation ......................   Passed    0.74 sec
+        Start  43: Gaudi.conf_user.passive_dep
+ 43/198 Test  #43: Gaudi.conf_user.passive_dep ...........................   Passed    0.74 sec
+        Start  44: Gaudi.custom_main_loop
+ 44/198 Test  #44: Gaudi.custom_main_loop ................................   Passed    7.96 sec
+        Start  45: Gaudi.custom_main_loop_parallel
+ 45/198 Test  #45: Gaudi.custom_main_loop_parallel .......................   Passed    0.80 sec
+        Start  46: Gaudi.export_oldopts
+ 46/198 Test  #46: Gaudi.export_oldopts ..................................   Passed    1.40 sec
+        Start  47: Gaudi.export_oldopts_special
+ 47/198 Test  #47: Gaudi.export_oldopts_special ..........................   Passed    1.35 sec
+        Start  48: Gaudi.import_opts
+ 48/198 Test  #48: Gaudi.import_opts .....................................   Passed    0.79 sec
+        Start  49: Gaudi.import_py
+ 49/198 Test  #49: Gaudi.import_py .......................................   Passed    0.79 sec
+        Start  50: Gaudi.import_py_err
+ 50/198 Test  #50: Gaudi.import_py_err ...................................   Passed    0.79 sec
+        Start  51: Gaudi.minimal_gaudi_exe
+ 51/198 Test  #51: Gaudi.minimal_gaudi_exe ...............................   Passed    0.65 sec
+        Start  52: Gaudi.minimal_gaudirun_py
+ 52/198 Test  #52: Gaudi.minimal_gaudirun_py .............................   Passed    0.84 sec
+        Start  53: Gaudi.override1
+ 53/198 Test  #53: Gaudi.override1 .......................................   Passed    0.80 sec
+        Start  54: Gaudi.override2
+ 54/198 Test  #54: Gaudi.override2 .......................................   Passed    0.80 sec
+        Start  56: Gaudi.pickle_write
+ 55/198 Test  #56: Gaudi.pickle_write ....................................   Passed    0.80 sec
+        Start  55: Gaudi.pickle_read
+ 56/198 Test  #55: Gaudi.pickle_read .....................................   Passed    0.79 sec
+        Start  57: Gaudi.prevent_gaudipython
+ 57/198 Test  #57: Gaudi.prevent_gaudipython .............................   Passed    0.80 sec
+        Start  58: Gaudi.propagate_properties
+ 58/198 Test  #58: Gaudi.propagate_properties ............................   Passed    0.74 sec
+        Start  59: Gaudi.purge
+ 59/198 Test  #59: Gaudi.purge ...........................................   Passed    0.75 sec
+        Start  60: Gaudi.gaudi_args
+ 60/198 Test  #60: Gaudi.gaudi_args ......................................   Passed    0.79 sec
+        Start  61: Gaudi.reference
+ 61/198 Test  #61: Gaudi.reference .......................................   Passed    0.80 sec
+        Start  62: Gaudi.use_temp_opts.minimal_gaudirun_py
+ 62/198 Test  #62: Gaudi.use_temp_opts.minimal_gaudirun_py ...............   Passed    1.10 sec
+        Start  63: Gaudi.use_temp_opts.remove_tmp_file
+ 63/198 Test  #63: Gaudi.use_temp_opts.remove_tmp_file ...................   Passed    0.84 sec
+        Start  64: Gaudi.nose
+ 64/198 Test  #64: Gaudi.nose ............................................***Failed    0.27 sec
+        Start  65: GaudiSvc.gaudisvctest
+ 65/198 Test  #65: GaudiSvc.gaudisvctest .................................   Passed    0.77 sec
+        Start  66: GaudiUtils.testXMLFileCatalogWrite
+ 66/198 Test  #66: GaudiUtils.testXMLFileCatalogWrite ....................   Passed    0.31 sec
+        Start  67: GaudiUtils.testXMLFileCatalogRead
+ 67/198 Test  #67: GaudiUtils.testXMLFileCatalogRead .....................   Passed    0.29 sec
+        Start  68: GaudiGSL.IntegralInTest
+ 68/198 Test  #68: GaudiGSL.IntegralInTest ...............................   Passed    0.28 sec
+        Start  69: GaudiGSL.DerivativeTest
+ 69/198 Test  #69: GaudiGSL.DerivativeTest ...............................   Passed    0.28 sec
+        Start  70: GaudiGSL.2DoubleFuncTest
+ 70/198 Test  #70: GaudiGSL.2DoubleFuncTest ..............................   Passed    0.28 sec
+        Start  71: GaudiGSL.GSLAdaptersTest
+ 71/198 Test  #71: GaudiGSL.GSLAdaptersTest ..............................   Passed    0.28 sec
+        Start  72: GaudiGSL.PFuncTest
+ 72/198 Test  #72: GaudiGSL.PFuncTest ....................................   Passed    0.28 sec
+        Start  73: GaudiGSL.ExceptionsTest
+ 73/198 Test  #73: GaudiGSL.ExceptionsTest ...............................   Passed    0.28 sec
+        Start  74: GaudiGSL.SimpleFuncTest
+ 74/198 Test  #74: GaudiGSL.SimpleFuncTest ...............................   Passed    0.28 sec
+        Start  75: GaudiGSL.3DoubleFuncTest
+ 75/198 Test  #75: GaudiGSL.3DoubleFuncTest ..............................   Passed    0.28 sec
+        Start  76: GaudiGSL.InterpTest
+ 76/198 Test  #76: GaudiGSL.InterpTest ...................................***Failed    0.58 sec
+        Start  77: GaudiGSL.Integral1Test
+ 77/198 Test  #77: GaudiGSL.Integral1Test ................................   Passed    0.28 sec
+        Start  78: GaudiExamples.abort_event
+ 78/198 Test  #78: GaudiExamples.abort_event .............................   Passed    1.05 sec
+        Start  79: GaudiExamples.aida2root
+ 79/198 Test  #79: GaudiExamples.aida2root ...............................   Passed    5.73 sec
+        Start 134: GaudiExamples.histoex1
+ 80/198 Test #134: GaudiExamples.histoex1 ................................   Passed   17.95 sec
+        Start 135: GaudiExamples.histoex2
+ 81/198 Test #135: GaudiExamples.histoex2 ................................***Failed   17.74 sec
+        Start  80: GaudiExamples.aida2rootex
+ 82/198 Test  #80: GaudiExamples.aida2rootex .............................***Failed   19.62 sec
+        Start  81: GaudiExamples.algerraud
+ 83/198 Test  #81: GaudiExamples.algerraud ...............................   Passed    0.75 sec
+        Start  82: GaudiExamples.algorithm_destructor
+ 84/198 Test  #82: GaudiExamples.algorithm_destructor ....................   Passed    1.77 sec
+        Start  83: GaudiExamples.algsequencer
+ 85/198 Test  #83: GaudiExamples.algsequencer ............................   Passed    2.10 sec
+        Start  84: GaudiExamples.algsequencer_pyopts
+ 86/198 Test  #84: GaudiExamples.algsequencer_pyopts .....................   Passed    2.53 sec
+        Start  85: GaudiExamples.algtools
+ 87/198 Test  #85: GaudiExamples.algtools ................................   Passed    0.92 sec
+        Start  86: GaudiExamples.algtools2
+ 88/198 Test  #86: GaudiExamples.algtools2 ...............................   Passed    0.96 sec
+        Start  87: GaudiExamples.algtools_list_tools
+ 89/198 Test  #87: GaudiExamples.algtools_list_tools .....................   Passed    1.32 sec
+        Start  88: GaudiExamples.algtools_pyopts
+ 90/198 Test  #88: GaudiExamples.algtools_pyopts .........................   Passed    1.35 sec
+        Start  89: GaudiExamples.algtypealiases
+ 91/198 Test  #89: GaudiExamples.algtypealiases ..........................   Passed    1.21 sec
+        Start  90: GaudiExamples.array_properties
+ 92/198 Test  #90: GaudiExamples.array_properties ........................   Passed    9.69 sec
+        Start  91: GaudiExamples.auditors_user_timing
+ 93/198 Test  #91: GaudiExamples.auditors_user_timing ....................   Passed    1.63 sec
+        Start  92: GaudiExamples.boost_array_properties
+ 94/198 Test  #92: GaudiExamples.boost_array_properties ..................   Passed    9.00 sec
+        Start  93: GaudiExamples.bug.71216
+ 95/198 Test  #93: GaudiExamples.bug.71216 ...............................   Passed    2.11 sec
+        Start  94: GaudiExamples.bug.74981
+ 96/198 Test  #94: GaudiExamples.bug.74981 ...............................   Passed    0.96 sec
+        Start  95: GaudiExamples.bug.76642
+ 97/198 Test  #95: GaudiExamples.bug.76642 ...............................   Passed    2.49 sec
+        Start  96: GaudiExamples.bug_101513.prepare
+ 98/198 Test  #96: GaudiExamples.bug_101513.prepare ......................   Passed    2.81 sec
+        Start  97: GaudiExamples.bug_101513.with_error
+ 99/198 Test  #97: GaudiExamples.bug_101513.with_error ...................   Passed    2.51 sec
+        Start  98: GaudiExamples.bug_101513.without_error
+100/198 Test  #98: GaudiExamples.bug_101513.without_error ................   Passed    2.46 sec
+        Start  99: GaudiExamples.bug_30209_namespace_in_sequencer
+101/198 Test  #99: GaudiExamples.bug_30209_namespace_in_sequencer ........   Passed    1.01 sec
+        Start 100: GaudiExamples.bug_34121_tool_properties_in_python
+102/198 Test #100: GaudiExamples.bug_34121_tool_properties_in_python .....***Failed   12.49 sec
+        Start 101: GaudiExamples.bug_35913
+103/198 Test #101: GaudiExamples.bug_35913 ...............................   Passed    0.98 sec
+        Start 102: GaudiExamples.bug_38882
+104/198 Test #102: GaudiExamples.bug_38882 ...............................   Passed   11.90 sec
+        Start 103: GaudiExamples.bug_41136
+105/198 Test #103: GaudiExamples.bug_41136 ...............................   Passed    1.13 sec
+        Start 104: GaudiExamples.chronostatsvc.per_event_file
+106/198 Test #104: GaudiExamples.chronostatsvc.per_event_file ............   Passed   10.42 sec
+        Start 105: GaudiExamples.colormsg
+107/198 Test #105: GaudiExamples.colormsg ................................   Passed    0.67 sec
+        Start 107: GaudiExamples.conditional_output.write
+108/198 Test #107: GaudiExamples.conditional_output.write ................   Passed    2.73 sec
+        Start 106: GaudiExamples.conditional_output.read
+109/198 Test #106: GaudiExamples.conditional_output.read .................   Passed    2.47 sec
+        Start 108: GaudiExamples.configurableuser
+110/198 Test #108: GaudiExamples.configurableuser ........................   Passed    1.15 sec
+        Start 109: GaudiExamples.counterex
+111/198 Test #109: GaudiExamples.counterex ...............................   Passed    0.86 sec
+        Start 110: GaudiExamples.counterex_py
+112/198 Test #110: GaudiExamples.counterex_py ............................***Failed   10.23 sec
+        Start 111: GaudiExamples.countersvcalg
+113/198 Test #111: GaudiExamples.countersvcalg ...........................   Passed    0.86 sec
+        Start 112: GaudiExamples.dataondemand.dynamic
+114/198 Test #112: GaudiExamples.dataondemand.dynamic ....................   Passed    1.92 sec
+        Start 113: GaudiExamples.dataondemand.static
+115/198 Test #113: GaudiExamples.dataondemand.static .....................   Passed    1.91 sec
+        Start 114: GaudiExamples.deferred_write.enforced
+116/198 Test #114: GaudiExamples.deferred_write.enforced .................   Passed    1.64 sec
+        Start 115: GaudiExamples.deferred_write.explicit
+117/198 Test #115: GaudiExamples.deferred_write.explicit .................   Passed    1.64 sec
+        Start 116: GaudiExamples.errorlog
+118/198 Test #116: GaudiExamples.errorlog ................................   Passed    0.66 sec
+        Start 117: GaudiExamples.event_timeout
+119/198 Test #117: GaudiExamples.event_timeout ...........................   Passed   22.98 sec
+        Start 118: GaudiExamples.event_timeout_abort
+120/198 Test #118: GaudiExamples.event_timeout_abort .....................   Passed   10.77 sec
+        Start 120: GaudiExamples.evtcolsex.prepare
+121/198 Test #120: GaudiExamples.evtcolsex.prepare .......................   Passed   13.02 sec
+        Start 123: GaudiExamples.evtcolwrite
+122/198 Test #123: GaudiExamples.evtcolwrite .............................***Failed   14.04 sec
+        Start 119: GaudiExamples.evtcolread
+123/198 Test #119: GaudiExamples.evtcolread ..............................***Failed    8.72 sec
+        Start 122: GaudiExamples.evtcolsex.write
+124/198 Test #122: GaudiExamples.evtcolsex.write .........................   Passed   11.40 sec
+        Start 121: GaudiExamples.evtcolsex.read
+125/198 Test #121: GaudiExamples.evtcolsex.read ..........................   Passed    2.69 sec
+        Start 124: GaudiExamples.extended_properties2
+126/198 Test #124: GaudiExamples.extended_properties2 ....................***Failed    8.76 sec
+        Start 125: GaudiExamples.gaudicommontests
+127/198 Test #125: GaudiExamples.gaudicommontests ........................   Passed    0.69 sec
+        Start 126: GaudiExamples.gaudimt
+128/198 Test #126: GaudiExamples.gaudimt .................................   Passed    0.52 sec
+        Start 127: GaudiExamples.gaudipython_mix
+129/198 Test #127: GaudiExamples.gaudipython_mix .........................   Passed   11.06 sec
+        Start 128: GaudiExamples.google_auditors.cpuprofiler
+130/198 Test #128: GaudiExamples.google_auditors.cpuprofiler .............***Failed    0.98 sec
+        Start 129: GaudiExamples.google_auditors.heapchecker
+131/198 Test #129: GaudiExamples.google_auditors.heapchecker .............***Failed    0.98 sec
+        Start 130: GaudiExamples.google_auditors.heapprofiler
+132/198 Test #130: GaudiExamples.google_auditors.heapprofiler ............***Failed    0.98 sec
+        Start 131: GaudiExamples.gsltools
+133/198 Test #131: GaudiExamples.gsltools ................................   Passed    0.70 sec
+        Start 132: GaudiExamples.histo_ascii_dump
+134/198 Test #132: GaudiExamples.histo_ascii_dump ........................   Passed   36.36 sec
+        Start 133: GaudiExamples.histoex
+135/198 Test #133: GaudiExamples.histoex .................................***Failed   16.74 sec
+        Start 136: GaudiExamples.histograms
+136/198 Test #136: GaudiExamples.histograms ..............................   Passed    5.62 sec
+        Start 137: GaudiExamples.history
+137/198 Test #137: GaudiExamples.history .................................   Passed    0.68 sec
+        Start 138: GaudiExamples.histoutilsex
+138/198 Test #138: GaudiExamples.histoutilsex ............................***Failed    8.76 sec
+        Start 139: GaudiExamples.incidentsvc
+139/198 Test #139: GaudiExamples.incidentsvc .............................   Passed    0.66 sec
+        Start 140: GaudiExamples.init_loop_check_off
+140/198 Test #140: GaudiExamples.init_loop_check_off .....................   Passed    0.90 sec
+        Start 141: GaudiExamples.init_loop_check_on
+141/198 Test #141: GaudiExamples.init_loop_check_on ......................   Passed    0.90 sec
+        Start 174: GaudiExamples.root_io.write
+142/198 Test #174: GaudiExamples.root_io.write ...........................   Passed   23.35 sec
+        Start 142: GaudiExamples.jira.gaudi_971
+143/198 Test #142: GaudiExamples.jira.gaudi_971 ..........................   Passed    4.87 sec
+        Start 143: GaudiExamples.maps
+144/198 Test #143: GaudiExamples.maps ....................................   Passed    0.72 sec
+        Start 144: GaudiExamples.multi_input.prepare_base
+145/198 Test #144: GaudiExamples.multi_input.prepare_base ................   Passed    3.00 sec
+        Start 145: GaudiExamples.multi_input.prepare_ext
+146/198 Test #145: GaudiExamples.multi_input.prepare_ext .................   Passed    3.05 sec
+        Start 146: GaudiExamples.multi_input.read
+147/198 Test #146: GaudiExamples.multi_input.read ........................   Passed    3.26 sec
+        Start 147: GaudiExamples.ntuples
+148/198 Test #147: GaudiExamples.ntuples .................................   Passed    2.32 sec
+        Start 148: GaudiExamples.particlepropsvc
+149/198 Test #148: GaudiExamples.particlepropsvc .........................   Passed    1.00 sec
+        Start 149: GaudiExamples.pluginservice.compat_aliases
+150/198 Test #149: GaudiExamples.pluginservice.compat_aliases ............***Failed    0.59 sec
+        Start 150: GaudiExamples.properties.all
+151/198 Test #150: GaudiExamples.properties.all ..........................   Passed    0.73 sec
+        Start 151: GaudiExamples.properties.all2
+152/198 Test #151: GaudiExamples.properties.all2 .........................   Passed    0.98 sec
+        Start 152: GaudiExamples.properties.all_py
+153/198 Test #152: GaudiExamples.properties.all_py .......................   Passed    1.03 sec
+        Start 153: GaudiExamples.properties.custom_properties
+154/198 Test #153: GaudiExamples.properties.custom_properties ............   Passed    1.01 sec
+        Start 154: GaudiExamples.properties.extended_opts
+155/198 Test #154: GaudiExamples.properties.extended_opts ................   Passed    0.65 sec
+        Start 155: GaudiExamples.properties.extended_py
+156/198 Test #155: GaudiExamples.properties.extended_py ..................   Passed    1.00 sec
+        Start 156: GaudiExamples.properties.namespace_opts
+157/198 Test #156: GaudiExamples.properties.namespace_opts ...............   Passed    0.65 sec
+        Start 157: GaudiExamples.properties.namespace_opts_py
+158/198 Test #157: GaudiExamples.properties.namespace_opts_py ............   Passed    0.85 sec
+        Start 158: GaudiExamples.python_bin_module
+159/198 Test #158: GaudiExamples.python_bin_module .......................   Passed    0.64 sec
+        Start 159: GaudiExamples.qotdalg
+160/198 Test #159: GaudiExamples.qotdalg .................................   Passed    0.68 sec
+        Start 160: GaudiExamples.randomnumber
+161/198 Test #160: GaudiExamples.randomnumber ............................   Passed    1.98 sec
+        Start 161: GaudiExamples.return_codes.alg_failure
+162/198 Test #161: GaudiExamples.return_codes.alg_failure ................   Passed    0.96 sec
+        Start 162: GaudiExamples.return_codes.corrupted_input
+163/198 Test #162: GaudiExamples.return_codes.corrupted_input ............   Passed    4.26 sec
+        Start 163: GaudiExamples.return_codes.exception
+164/198 Test #163: GaudiExamples.return_codes.exception ..................   Passed    0.95 sec
+        Start 164: GaudiExamples.return_codes.fake_corrupted_input
+165/198 Test #164: GaudiExamples.return_codes.fake_corrupted_input .......   Passed    1.00 sec
+        Start 165: GaudiExamples.return_codes.input_file
+166/198 Test #165: GaudiExamples.return_codes.input_file .................   Passed    2.25 sec
+        Start 166: GaudiExamples.return_codes.sigsegv
+167/198 Test #166: GaudiExamples.return_codes.sigsegv ....................   Passed    4.86 sec
+        Start 167: GaudiExamples.return_codes.stop_run
+168/198 Test #167: GaudiExamples.return_codes.stop_run ...................   Passed    0.95 sec
+        Start 168: GaudiExamples.return_codes.svc_finalization
+169/198 Test #168: GaudiExamples.return_codes.svc_finalization ...........   Passed    0.95 sec
+        Start 170: GaudiExamples.root_io.coll.write
+170/198 Test #170: GaudiExamples.root_io.coll.write ......................   Passed    7.93 sec
+        Start 173: GaudiExamples.root_io.read
+171/198 Test #173: GaudiExamples.root_io.read ............................   Passed    5.97 sec
+        Start 169: GaudiExamples.root_io.coll.read
+172/198 Test #169: GaudiExamples.root_io.coll.read .......................   Passed    2.75 sec
+        Start 172: GaudiExamples.root_io.extcoll.write
+173/198 Test #172: GaudiExamples.root_io.extcoll.write ...................   Passed    9.99 sec
+        Start 171: GaudiExamples.root_io.extcoll.read
+174/198 Test #171: GaudiExamples.root_io.extcoll.read ....................***Failed    2.80 sec
+        Start 175: GaudiExamples.selections
+175/198 Test #175: GaudiExamples.selections ..............................   Passed    1.05 sec
+        Start 176: GaudiExamples.signal_handler
+176/198 Test #176: GaudiExamples.signal_handler ..........................   Passed    1.00 sec
+        Start 177: GaudiExamples.statsvcalg
+177/198 Test #177: GaudiExamples.statsvcalg ..............................   Passed    0.86 sec
+        Start 178: GaudiExamples.statuscodesvc.basic
+178/198 Test #178: GaudiExamples.statuscodesvc.basic .....................   Passed    0.95 sec
+        Start 179: GaudiExamples.statuscodesvc.filter1
+179/198 Test #179: GaudiExamples.statuscodesvc.filter1 ...................   Passed    0.95 sec
+        Start 180: GaudiExamples.statuscodesvc.filter2
+180/198 Test #180: GaudiExamples.statuscodesvc.filter2 ...................   Passed    0.95 sec
+        Start 181: GaudiExamples.statuscodesvc.filter_lib
+181/198 Test #181: GaudiExamples.statuscodesvc.filter_lib ................   Passed    0.95 sec
+        Start 182: GaudiExamples.stringkey
+182/198 Test #182: GaudiExamples.stringkey ...............................   Passed    8.55 sec
+        Start 183: GaudiExamples.templatedalg
+183/198 Test #183: GaudiExamples.templatedalg ............................   Passed    0.65 sec
+        Start 184: GaudiExamples.templatedalg_pyopts
+184/198 Test #184: GaudiExamples.templatedalg_pyopts .....................   Passed    1.00 sec
+        Start 186: GaudiExamples.thistwrite
+185/198 Test #186: GaudiExamples.thistwrite ..............................   Passed    2.08 sec
+        Start 185: GaudiExamples.thistread
+186/198 Test #185: GaudiExamples.thistread ...............................   Passed    1.99 sec
+        Start 187: GaudiExamples.timing
+187/198 Test #187: GaudiExamples.timing ..................................   Passed    9.66 sec
+        Start 188: GaudiExamples.timing_histos
+188/198 Test #188: GaudiExamples.timing_histos ...........................   Passed    5.17 sec
+        Start 189: GaudiExamples.tupleex
+189/198 Test #189: GaudiExamples.tupleex .................................   Passed   14.26 sec
+        Start 190: GaudiExamples.tupleex1
+190/198 Test #190: GaudiExamples.tupleex1 ................................***Failed   13.28 sec
+        Start 191: GaudiExamples.tupleex2
+191/198 Test #191: GaudiExamples.tupleex2 ................................***Failed   13.25 sec
+        Start 192: GaudiExamples.tupleex3
+192/198 Test #192: GaudiExamples.tupleex3 ................................***Failed  1919.44 sec
+        Start 193: GaudiExamples.tupleex4
+193/198 Test #193: GaudiExamples.tupleex4 ................................***Failed    8.92 sec
+        Start 194: GaudiExamples.tupleex_py
+194/198 Test #194: GaudiExamples.tupleex_py ..............................***Failed   13.04 sec
+        Start 195: GaudiExamples.tupleex_pyopts
+195/198 Test #195: GaudiExamples.tupleex_pyopts ..........................   Passed   67.18 sec
+        Start 196: GaudiPolicy.GAUDI-976
+196/198 Test #196: GaudiPolicy.GAUDI-976 .................................   Passed    1.15 sec
+        Start 197: GaudiPolicy.GaudiTesting.nose
+197/198 Test #197: GaudiPolicy.GaudiTesting.nose .........................***Failed    0.27 sec
+        Start 198: GaudiAud.bug_28570_algcontextsvc_warning
+198/198 Test #198: GaudiAud.bug_28570_algcontextsvc_warning ..............   Passed    0.65 sec
+
+86% tests passed, 27 tests failed out of 198
+
+Label Time Summary:
+Gaudi                 =  39.64 sec
+GaudiAud              =   0.65 sec
+GaudiExamples         = 2535.35 sec
+GaudiGSL              =   3.07 sec
+GaudiKernel           =   6.15 sec
+GaudiPluginService    =   1.35 sec
+GaudiPolicy           =   1.43 sec
+GaudiSvc              =   0.77 sec
+GaudiUtils            =   0.60 sec
+QMTest                = 2577.03 sec
+disabled              =   0.52 sec
+rel_6                 =   1.29 sec
+
+Total Test time (real) = 2591.90 sec
+
+The following tests FAILED:
+	  1 - cmake.EnvConfigTests (Failed)
+	  3 - cmake.CMakeModules (Failed)
+	  4 - cmake.QMTDeps (Failed)
+	 19 - GaudiKernel.confdb (Failed)
+	 20 - GaudiKernel.nose (Failed)
+	 64 - Gaudi.nose (Failed)
+	 76 - GaudiGSL.InterpTest (Failed)
+	 80 - GaudiExamples.aida2rootex (Failed)
+	100 - GaudiExamples.bug_34121_tool_properties_in_python (Failed)
+	110 - GaudiExamples.counterex_py (Failed)
+	119 - GaudiExamples.evtcolread (Failed)
+	123 - GaudiExamples.evtcolwrite (Failed)
+	124 - GaudiExamples.extended_properties2 (Failed)
+	128 - GaudiExamples.google_auditors.cpuprofiler (Failed)
+	129 - GaudiExamples.google_auditors.heapchecker (Failed)
+	130 - GaudiExamples.google_auditors.heapprofiler (Failed)
+	133 - GaudiExamples.histoex (Failed)
+	135 - GaudiExamples.histoex2 (Failed)
+	138 - GaudiExamples.histoutilsex (Failed)
+	149 - GaudiExamples.pluginservice.compat_aliases (Failed)
+	171 - GaudiExamples.root_io.extcoll.read (Failed)
+	190 - GaudiExamples.tupleex1 (Failed)
+	191 - GaudiExamples.tupleex2 (Failed)
+	192 - GaudiExamples.tupleex3 (Failed)
+	193 - GaudiExamples.tupleex4 (Failed)
+	194 - GaudiExamples.tupleex_py (Failed)
+	197 - GaudiPolicy.GaudiTesting.nose (Failed)
+cd build.aarch64-ubuntu14.04-gcc49-opt && make HTMLSummary
+make[1]: Entering directory `/home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt'
+make[2]: Entering directory `/home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt'
+make[3]: Entering directory `/home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt'
+make[4]: Entering directory `/home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt'
+Scanning dependencies of target HTMLSummary
+make[4]: Leaving directory `/home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt'
+make[4]: Entering directory `/home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt'
+Converting *Test.xml files from . to HTML format in html
+Process the file : ./Testing/20150501-1123/Test.xml
+make[4]: Leaving directory `/home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt'
+Built target HTMLSummary
+make[3]: Leaving directory `/home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt'
+make[2]: Leaving directory `/home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt'
+make[1]: Leaving directory `/home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt'
