@@ -1,6 +1,5 @@
-cd build.aarch64-ubuntu14.04-gcc49-opt && make rebuild_cache
-make[1]: Entering directory `/home/jwsmith/ANA/2_GAUDI/Gaudi-26r1/build.aarch64-ubuntu14.04-gcc49-opt'
-Running CMake to regenerate build system...
+mkdir -p /home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt
+cd /home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt && cmake -DCMAKE_TOOLCHAIN_FILE=/home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/toolchain.cmake /home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6
 -- Target system: aarch64-ubuntu14.04-gcc49
 -- Build type: opt
 -- Using heptools version 74root6
@@ -78,7 +77,7 @@ Running CMake to regenerate build system...
 -- Boost version: 1.56.0
 -- Found the following Boost libraries:
 --   python
--- creating hacked version of /home/jwsmith/ANA/2_GAUDI/Gaudi-26r1/GaudiKernel/GaudiKernel/StatusCode.h
+-- creating hacked version of /home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/GaudiKernel/GaudiKernel/StatusCode.h
 -- Addind QMTest tests...
 -- ... added 118 tests.
 -- Adding directory GaudiPolicy (12/24)
@@ -95,8 +94,6 @@ Running CMake to regenerate build system...
 -- Boost version: 1.56.0
 -- Found the following Boost libraries:
 --   python
--- Found unwind: /home/jwsmith/libunwind-install/include  
--- Found tcmalloc: /home/jwsmith/gperftools-install/include  
 -- Adding directory GaudiAud (17/24)
 -- Addind QMTest tests...
 -- ... added 1 tests.
@@ -169,5 +166,4 @@ Running CMake to regenerate build system...
 -- Generating manifest.xml
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/jwsmith/ANA/2_GAUDI/Gaudi-26r1/build.aarch64-ubuntu14.04-gcc49-opt
-make[1]: Leaving directory `/home/jwsmith/ANA/2_GAUDI/Gaudi-26r1/build.aarch64-ubuntu14.04-gcc49-opt'
+-- Build files have been written to: /home/jwsmith/ANA/2_GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt

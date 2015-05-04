@@ -11,6 +11,15 @@ export SVNROOT=svn+ssh://svn.cern.ch/reps/atlasoff
 export VERSION=rel_6
 export LCGCMT_VERS=LCGCMT_74root6
 export TopDir=$ROOTDIR/3_ATLAS/InstallArea
+
+
+#CLHEP
+export CPLUS_INCLUDE_PATH=/home/seuster/LCGStack/lcgcmake-install/clhep/2.1.4.1/aarch64-ubuntu14.04-gcc49-opt/include:$CPLUS_INCLUDE_PATH
+
+#libunwind&gperf
+
+export CPLUS_INCLUDE_PATH=/home/jwsmith/libunwind-install/include:/home/jwsmith/gperftools-install/include:$CPLUS_INCLUDE_PATH
+
 #export AntVersion=1.9.4
 
 #Java

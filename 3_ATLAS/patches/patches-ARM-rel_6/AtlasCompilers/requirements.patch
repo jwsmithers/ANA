@@ -1,0 +1,11 @@
+--- requirements	2015-05-01 10:02:47.204822000 +0000
++++ requirements1	2015-05-01 10:09:32.274822000 +0000
+@@ -17,7 +17,7 @@
+       target-gcc46   "4.6.3"	\
+       target-gcc47   "4.7.2"	\
+       target-gcc48   "4.8.1"	\
+-      target-gcc49   "4.9.1"	\	  
++      target-gcc49   "4.9.2"	\	  
+       target-clang32 "4.6.3"    \
+       target-clang33 "4.8.1"    \
+       target-icc13   "4.8.1"

@@ -11,7 +11,7 @@ endif()
 find_package(GaudiProject)
 #---------------------------------------------------------------
 
-option(GAUDI_ATLAS "Enable ATLAS-specific settings" OFF)
+option(GAUDI_ATLAS "Enable ATLAS-specific settings" ON)
 
 # Declare project name and version
 gaudi_project(Gaudi v26r1)
