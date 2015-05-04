@@ -1,0 +1,12 @@
+--- requirements	2015-02-09 09:16:51.048440147 +0200
++++ requirements1	2015-02-09 09:17:46.378098142 +0200
+@@ -11,8 +11,7 @@
+ 
+ public
+ 
+-macro JDK_BINDIR          "i386" \
+-                 "x86_64" "amd64"
++macro JDK_BINDIR          "arm"
+ 
+ path_remove LD_LIBRARY_PATH "/jre"
+ path_append LD_LIBRARY_PATH "${JDK_HOME}/jre/lib/${JDK_BINDIR}"

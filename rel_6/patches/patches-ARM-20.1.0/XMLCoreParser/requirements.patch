@@ -1,0 +1,11 @@
+--- requirements	2015-01-29 11:33:57.037686470 +0200
++++ requirements1	2015-01-29 11:33:49.372731274 +0200
+@@ -7,7 +7,7 @@
+ library XMLCoreParser XMLCoreParser.cxx DOMNode.cxx ExpatCoreParser.cxx
+ apply_pattern installed_library
+ 
+-private
++#private
+ use AtlasExpat AtlasExpat-* External
+ 
+ ignore_pattern config

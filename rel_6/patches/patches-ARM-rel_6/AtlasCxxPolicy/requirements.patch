@@ -1,0 +1,12 @@
+--- requirements	2015-05-02 18:25:36.864822000 +0000
++++ requirements1	2015-05-04 10:38:57.924822000 +0000
+@@ -228,7 +228,8 @@
+ # in 32-bit or 64-bit mode, although it can in either case run 64-bit applications.
+ macro_append AtlasCxxPolicy_pp_cppflags           "" \
+              target-gcc&target-x86_64&host-x86_64 " -DHAVE_64_BITS" \
+-             target-gcc&target-x86_64&host-darwin " -DHAVE_64_BITS"
++             target-gcc&target-x86_64&host-darwin " -DHAVE_64_BITS" \
++	     target-aarch64 			  " -DHAVE_64_BITS"
+ 
+ # Add flag to control 64-bit Identifiers
+ macro_append AtlasCxxPolicy_pp_cppflags  " -D__IDENTIFIER_64BIT__ " 

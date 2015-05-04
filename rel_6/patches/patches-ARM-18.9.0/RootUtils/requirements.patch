@@ -1,0 +1,14 @@
+--- requirements	2014-11-13 13:22:26.782194970 +0200
++++ requirements1	2014-11-13 13:22:40.712107736 +0200
+@@ -22,9 +22,9 @@
+ # will work with both the old and this new versions of root.
+ include_dirs $(ROOT_home)/include/cint
+ 
+-private
++#private
+ use AtlasReflex      AtlasReflex-*      External
+-apply_pattern lcgdict dict=RootUtils selectionfile=selection.xml headerfiles="../RootUtils/RootUtilsDict.h"
++#apply_pattern lcgdict dict=RootUtils selectionfile=selection.xml headerfiles="../RootUtils/RootUtilsDict.h"
+ 
+ library RootUtilsPyROOT pyroot/*.cxx
+ apply_pattern named_installed_library library=RootUtilsPyROOT

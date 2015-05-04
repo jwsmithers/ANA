@@ -1,0 +1,21 @@
+AthenaServices
+AtlasCLHEP_RandomGenerators
+AtlasCLHEP
+AtlasFortranPolicy
+AtlasPolicy-requirements
+AtlasSealCLHEP
+AtlasSealCLHEP/selection
+AtlasTBB
+FadsField/Integrators
+RootConversions/TConvertingBranchElement
+
+
+EventContainers?
+ROOT-v5.34.24/NewDelFunctions.patch
+XMLCoreParser
+
+
+JavaJNI/requirements
+AtlasReflex -> This will NEED to be patched!
+CheckerGccPlugins/requirements.patch -> Also NEEDS to be patched
+DetCommonPolicy/requirements

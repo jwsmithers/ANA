@@ -1,0 +1,15 @@
+--- AthenaSealSvc.cxx	2015-03-06 15:44:31.495979333 +0200
++++ AthenaSealSvc1.cxx	2015-03-06 15:45:25.095638038 +0200
+@@ -1044,9 +1044,9 @@
+     dictNames.reserve( 10 );
+ 
+     // STL dictionaries 
+-#ifdef ROOT6_MIGRATION_HAVE_REFLEX
+-    dictNames.push_back( "STLRflx" );
+-#endif
++//#ifdef ROOT6_MIGRATION_HAVE_REFLEX
++//    dictNames.push_back( "STLRflx" );
++//#endif
+ //   dictNames.push_back( "STLAddRflx" );
+ //   dictNames.push_back( "AtlasSTLAddReflexDict" );
+ 

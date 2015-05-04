@@ -1,0 +1,11 @@
+--- requirements	2015-01-28 17:38:48.856686592 +0200
++++ requirements1	2015-01-28 17:41:22.385773924 +0200
+@@ -12,7 +12,7 @@
+ # includes are installed under InstallArea/$(CMTCONFIG)/include
+ include_dirs none
+ 
+-macro AtlasTBB_linkopts "-ltbb"
++macro AtlasTBB_linkopts "-ltbb -L$(LCG_install)/tbb/42_20140122/$(CMTCONFIG)/lib"
+ 
+ private
+ 

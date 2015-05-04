@@ -1,0 +1,24 @@
+--- GenericBacktrace.c	2014-11-11 18:08:44.368520142 +0200
++++ GenericBacktrace1.c	2014-11-12 17:53:00.202352316 +0200
+@@ -30,8 +30,8 @@
+ 
+ struct layout
+ {
+-  void *__unbounded next;
+-  void *__unbounded return_address;
++  char next;
++  char return_address;
+ };
+ 
+ 
+@@ -89,8 +89,8 @@
+ int hhh_GenericBacktrace( void **array, int size )
+ {
+    struct layout *current;
+-   void *__unbounded top_frame;
+-   void *__unbounded top_stack;
++   char top_frame;
++   char top_stack;
+    int cnt = 0;
+ 
+ #if defined ( __i386 )

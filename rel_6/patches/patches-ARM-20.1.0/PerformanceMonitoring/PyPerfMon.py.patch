@@ -1,0 +1,17 @@
+--- PyPerfMon.py	2015-03-24 14:55:21.674586803 +0200
++++ PyPerfMon1.py	2015-03-24 14:55:02.174705961 +0200
+@@ -224,10 +224,10 @@
+         _msg.info('installing pmon-malloc hooks: %s', self._do_malloc_mon)
+         import AthenaPython.PyAthena as PyAthena
+         lib = PyAthena.load_library('PerfMonEventDict')
+-        memstats = PyAthena.PerfMon.MemStats
+-        memstats.enable(bool(self._do_malloc_mon))
+-        _msg.info('pmon-malloc hooks enabled: %s', bool(memstats.enabled()))
+-        memstats.start()
++        #memstats = PyAthena.PerfMon.MemStats
++        #memstats.enable(bool(self._do_malloc_mon))
++        #_msg.info('pmon-malloc hooks enabled: %s', bool(memstats.enabled()))
++        #memstats.start()
+         _res = pymon()
+         _msg.info("initialization [cpu=%8.3f ms vmem=%8.3f MB] [OK]",
+                   _res[0], _res[1])

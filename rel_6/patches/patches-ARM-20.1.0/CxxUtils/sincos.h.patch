@@ -1,0 +1,14 @@
+--- sincos.h	2015-02-03 10:26:51.903693863 +0200
++++ sincos.h1	2015-02-03 10:27:21.478527801 +0200
+@@ -74,9 +74,9 @@
+ #if defined(__GNUC__) && (defined(__i386__) || defined(__x86_64__))
+   // Inline assembly version.  Uses x87 FPU.
+   { __asm __volatile__ ("fsincos\n\t" : "=t" (cs), "=u" (sn) : "0" (x)); }
+-#elif defined(__USE_GNU)
++//#elif defined(__USE_GNU)
+   // Version using the GNU sincos() function.
+-  { sincos(x, &sn, &cs); }
++//  { sincos(x, &sn, &cs); }
+ #else
+   // Generic version.
+   : sn (std::sin (x)), cs (std::cos (x)) {}
