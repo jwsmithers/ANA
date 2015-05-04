@@ -1,9 +1,0 @@
-<lcgdict>
-  <!-- Use empty selection.xml and manually load PyCoolDict.so (bug #103298) -->
-  <selection>
-    <!-- HELPERS -->
-    <!--function pattern="cool::PyCool::Helpers::*"/-->
-  </selection>
-  <exclusion>
-  </exclusion>
-</lcgdict>

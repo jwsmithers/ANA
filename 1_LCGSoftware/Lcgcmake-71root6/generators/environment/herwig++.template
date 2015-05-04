@@ -1,2 +1,0 @@
-export REPO=${HERWIGPP_HOME}/share/Herwig++/HerwigDefaults.rpo
-export LHAPATH=$LHAPDF_HOME/share/PDFsets

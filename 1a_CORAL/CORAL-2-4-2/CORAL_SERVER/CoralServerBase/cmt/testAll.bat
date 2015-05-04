@@ -1,6 +1,0 @@
-test_unit_CoralServerBase_CTLPacket.exe
-test_unit_CoralServerBase_CALPacket.exe
-test_unit_CoralServerBase_ByteBuffer.exe
-test_unit_CoralServerBase_CALOpcode.exe
-test_unit_CoralServerBase_CoralServerProxyException.exe
-

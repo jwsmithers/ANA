@@ -1,2 +1,0 @@
-purge recyclebin;
-exit;

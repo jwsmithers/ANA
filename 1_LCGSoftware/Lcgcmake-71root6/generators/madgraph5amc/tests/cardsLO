@@ -1,7 +1,0 @@
-generate p p > Z j
-output MYPROC
-launch
-
-
-exit
-

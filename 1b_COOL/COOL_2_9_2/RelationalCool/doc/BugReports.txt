@@ -1,8 +1,0 @@
-2005.02.03 Schema evolution (AV, MC)
-
-The new software does not allow to delete the old tables.
-Long term solutions: provide schema evolution.
-Short term solution: provide scripts to clean the schema.
-
-
-

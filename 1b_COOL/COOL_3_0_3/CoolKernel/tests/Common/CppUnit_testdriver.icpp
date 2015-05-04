@@ -1,4 +1,0 @@
-
-#include "CoolUnitTest.h"
-
-COOLTEST_MAIN(CoolUnitTest)
