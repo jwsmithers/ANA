@@ -1,12 +1,31 @@
---- requirements	2015-05-04 22:21:53.684822000 +0000
-+++ requirements1	2015-05-04 22:29:00.714822000 +0000
+--- requirements	2015-02-20 08:51:11.000000000 +0000
++++ requirements1	2015-05-05 11:08:25.314822000 +0000
+@@ -31,7 +31,7 @@
+ library EventStorageRecords	EventStorageRecords.cxx 
+ 
+ library DataWriter 		DataWriter.cxx Guid.cxx 
+-macro DataWriter_shlibflags "-lRawFileName -lers -luuid -lz -lESCompression -lcompression -lEventStorageRecords"
++macro DataWriter_shlibflags "-lRawFileName -lers -L/home/seuster/LCGStack/lcgcmake-install/uuid/1.42/aarch64-ubuntu14.04-gcc49-opt/lib -luuid -lz -lESCompression -lcompression -lEventStorageRecords"
+ macro DataWriter_dependencies "RawFileName ESCompression EventStorageRecords"
+ 
+ 
+@@ -48,7 +48,7 @@
+                                 Guid.cxx \
+                                 MergedRawFile.cxx
+ 
+-macro DataReader_shlibflags "-lRawFileName -ldl -lers -luuid \
++macro DataReader_shlibflags "-lRawFileName -ldl -lers -L/home/seuster/LCGStack/lcgcmake-install/uuid/1.42/aarch64-ubuntu14.04-gcc49-opt/lib -luuid \
+ 			    -lz -lESCompression -lcompression \
+ 			    -lEventStorageRecords"
+ macro DataReader_dependencies "RawFileName ESCompression EventStorageRecords"
 @@ -70,15 +70,15 @@
  # Tier0 merging transform and binary
  ###
  
 -application file_merging ../bin/Merging.cxx Guid.cxx
+-macro file_merginglinkopts "-lRawFileName -lDataReader -luuid -lers"
 +#application file_merging ../bin/Merging.cxx Guid.cxx
- macro file_merginglinkopts "-lRawFileName -lDataReader -luuid -lers"
++macro file_merginglinkopts "-lRawFileName -lDataReader -L/home/seuster/LCGStack/lcgcmake-install/uuid/1.42/aarch64-ubuntu14.04-gcc49-opt/lib -luuid -lers"
  macro file_merging_dependencies "RawFileName DataReader" 
  
 -application file_demerging ../bin/Demerging.cxx 
