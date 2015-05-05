@@ -1,0 +1,113 @@
+--- requirements	2015-02-20 08:51:38.000000000 +0000
++++ requirements1	2015-05-04 19:49:17.554822000 +0000
+@@ -57,6 +57,10 @@
+ # rtems cross comilation gcc43
+ tag ppc-rtems-rce405-opt	ppc	ppc-rtems	rtems	rce405		powerpc-rtems-gcc powerpc-rtems-gcc43 opt ppc-rtems-rce405 
+ 
++# arm 64 bit gcc49
++tag aarch64-ubuntu14.04-gcc49-opt       aarch64 aarch64-ubuntu14.04     linux   ubuntu14.04     gcc     gcc49   opt     aarch64-ubuntu14.04-gcc49 gcc4
++tag aarch64-ubuntu14.04-gcc49-dbg       aarch64 aarch64-ubuntu14.04     linux   ubuntu14.04     gcc     gcc49   debug   aarch64-ubuntu14.04-gcc49 gcc4
++
+ # path to Intel C++ compiler
+ macro		icc_root			""							\
+ 		icc8				"/afs/cern.ch/sw/lcg/external/icc/8.0"			\
+@@ -79,13 +83,13 @@
+ 		gcc46				"4.6.2"		\
+ 		gcc47				"4.7.2"		\
+ 		gcc48				"4.8.1"		\
+-		gcc49				"4.9.1"		\
++		gcc49				"4.9.2"		\
+ 		icc11				"4.3.2"		\
+ 		icc13				"4.8.1"		\
+         	powerpc-rtems-gcc43		"4.3.2"
+ 		
+ # path for LCG-provided gcc compilers
+-macro 		lcg_gcc_path			"/afs/cern.ch/sw/lcg/contrib/gcc"
++macro 		lcg_gcc_path			"/usr/lib/gcc"
+ 
+ #macro		icc_prefix			""				\
+ #		icc10&x86_64			"${icc_root}/x86_64"		\
+@@ -94,9 +98,10 @@
+ # we run all on x86_64 nodes
+ macro		gcc_config_tag		"i686-slc5"			\
+ 		x86_64&slc5		"x86_64-slc5"			\
+-		x86_64&slc6             "x86_64-slc6"
++		x86_64&slc6             "x86_64-slc6"			\
++		aarch64			"aarch64"
+ 
+-macro		gcc_prefix		"${lcg_gcc_path}/${gcc_version}/$(gcc_config_tag)"	
++macro		gcc_prefix		"${lcg_gcc_path}/$(gcc_config_tag)/${gcc_version}"	
+ 
+ macro		gcc_prefix_lib		"lib"	\
+ 		x86_64			"lib64"
+@@ -107,12 +112,13 @@
+ 		icc&x86_64-slc5		"${icc_root}/bin"			\
+ 		icc&x86_64-slc6		"${icc_root}/bin"			\
+ 		gcc4			"${gcc_prefix}/bin"			\
+-	        powerpc-rtems-gcc43	"${powerpc_gcc_prefix}/bin"
++	        powerpc-rtems-gcc43	"${powerpc_gcc_prefix}/bin"		\
++		aarch64			"/usr/bin"			
+ 
+ path_prepend	LD_LIBRARY_PATH		""					\
+ 		icc&x86_64-slc5		"${icc_root}/lib/intel64"		\
+ 		icc&x86_64-slc6		"${icc_root}/lib/intel64"		\
+-		gcc			"${gcc_prefix}/${gcc_prefix_lib}"
++		gcc			"/usr/lib"
+ 
+ # up-to-date MAN
+ path_prepend	MAN_PATH			""						\
+@@ -197,14 +203,16 @@
+ 		i686-slc5&gcc4		" -O2 -mtune=pentium4 -funroll-loops -falign-loops -falign-jumps -falign-functions "		\
+ 		i686-slc6&gcc4		" -O2 "										\
+ 		icc13			" -O2 -axSSSE3 -vec-report0 -par-report0 -parallel " \
+-                powerpc-rtems-gcc43     " -O4 -mlongcall -msoft-float "
+-		
++                powerpc-rtems-gcc43     " -O4 -mlongcall -msoft-float "					\
++		aarch64			" -O2 -mtune=cortex-a57 -ftree-vectorize -fomit-frame-pointer -fsigned-char -fsigned-bitfields " 
++
+ macro		c_opt_flags 		""														\
+ 		x86_64-slc6&gcc4	" -O2 -mtune=core2 -ftree-vectorize -fomit-frame-pointer -fno-exceptions "    							\
+ 		i686-slc5&gcc4		" -O2 -mtune=pentium4 -funroll-loops -falign-loops -falign-jumps -falign-functions -fno-exceptions "	\
+ 		i686-slc6&gcc4		" -O2 "											\
+ 		icc13			" -O2 -axSSSE3 -vec-report1 -par-report1 -parallel " \
+-                powerpc-rtems-gcc43     " -O4 -mlongcall -msoft-float "
++                powerpc-rtems-gcc43     " -O4 -mlongcall -msoft-float "	\
++		aarch64                 " -O2 -mtune=cortex-a57 -ftree-vectorize -fomit-frame-pointer -fsigned-char -fsigned-bitfields "
+ 
+ macro		debug_flags 		"-g "	
+ 
+@@ -228,7 +236,9 @@
+ 		x86_64&osx		" -fPIC -m64 -ansi -pipe "						\
+ 		i386&osx		" -fPIC -m32 -ansi -pipe "						\
+ 		icc			" -fPIC -ansi -Dlinux -Dunix " \
+-                powerpc-rtems-gcc43     " -Wall -Wno-unused -fasm -Wall -Wno-unused -fasm  -Wall -Wno-unused -fasm -specs bsp_specs -qrtems"
++                powerpc-rtems-gcc43     " -Wall -Wno-unused -fasm -Wall -Wno-unused -fasm  -Wall -Wno-unused -fasm -specs bsp_specs -qrtems" \
++		aarch64 		" -fPIC -march=armv8-a -ansi -pedantic -pipe -W -Wall -Wwrite-strings -fsigned-char -fsigned-bitfields "
++		
+ 
+ macro 		cppflags		""									\
+ 		i686-slc5&gcc		" -fPIC -m32 -march=i686 -ansi -pedantic -pipe -W -Wall -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-long-long -Wno-missing-field-initializers"	\
+@@ -238,7 +248,8 @@
+ 		x86_64&osx		" -fPIC -m64 -ansi -pipe "					\
+ 		i386&osx		" -fPIC -m32 -ansi -pipe "					\
+ 		icc			" -fPIC -ansi -Dlinux -Dunix  " \
+-                powerpc-rtems-gcc43     " -Wall -Wno-unused -fasm -Wall -Wno-unused -fasm  -Wall -Wno-unused -fasm -specs bsp_specs -qrtems"
++                powerpc-rtems-gcc43     " -Wall -Wno-unused -fasm -Wall -Wno-unused -fasm  -Wall -Wno-unused -fasm -specs bsp_specs -qrtems" \
++		aarch64			" -fPIC -march=armv8-a -ansi -pedantic -pipe -W -Wall -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-long-long -Wno-missing-field-initializers -fsigned-char -fsigned-bitfields"
+ 
+ # C/C++ preprocessor flags
+ macro		pp_cflags		""				\
+@@ -320,7 +331,7 @@
+ 			i686-slc4			" -m32 "					\
+ 			i686-slc5			" -m32 "					\
+ 			x86_64-slc4			" -m64 "					\
+-			x86_64-slc5			" -m64 "			
++			x86_64-slc5			" -m64 "								
+ 
+ # no include path to src directory of each package
+ pattern -global include_path_1 include_path	none
+@@ -684,4 +695,3 @@
+ ####################################################################################################
+ 
+ make_fragment check_application
+-

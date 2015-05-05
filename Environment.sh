@@ -16,12 +16,6 @@ export VERSION=rel_6
 export LCGCMT_VERS=LCGCMT_74root6
 export TopDir=$ROOTDIR/rel_6
 
-#CLHEP
-export CPLUS_INCLUDE_PATH=/home/seuster/LCGStack/lcgcmake-install/clhep/2.1.4.1/aarch64-ubuntu14.04-gcc49-opt/include:$CPLUS_INCLUDE_PATH
-
-#libunwind&gperf
-
-export CPLUS_INCLUDE_PATH=/home/jwsmith/libunwind-install/include:/home/jwsmith/gperftools-install/include:$CPLUS_INCLUDE_PATH
 
 ##LCG
 export LCG_install=/home/seuster/LCGStack/lcgcmake-install
@@ -29,3 +23,14 @@ export LCG_install=/home/seuster/LCGStack/lcgcmake-install
 export GaudiDir=$ROOTDIR/GAUDI/GAUDI/rel_6
 
 export SW_Extras=$ROOTDIR/sw_extras
+
+#CLHEP
+export CPLUS_INCLUDE_PATH=/home/seuster/LCGStack/lcgcmake-install/clhep/2.1.4.1/aarch64-ubuntu14.04-gcc49-opt/include:$CPLUS_INCLUDE_PATH
+
+#Python
+export CPLUS_INCLUDE_PATH=export CPLUS_INCLUDE_PATH=/home/seuster/LCGStack/lcgcmake-install/Python/2.7.9/aarch64-ubuntu14.04-gcc49-opt/include/python2.7:$CPLUS_INCLUDE_PATH
+
+#libunwind&gperf
+
+export CPLUS_INCLUDE_PATH=/home/jwsmith/libunwind-install/include:/home/jwsmith/gperftools-install/include:$CPLUS_INCLUDE_PATH
+

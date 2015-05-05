@@ -22,15 +22,13 @@ echo ""
 read -t 7 -p "Do you want to apply the patches and file changes for ARM? If you recently checked out packages then this will default to 'yes', otherwise it will be skipped. " -e Changes_input
 if [ "$Changes_input" == "yes" ] || [ "$Changes_input" == "Yes" ] || [ "$Package_input" == "Yes" ] || [ "$Package_input" == "yes" ]
 then 
-	echo "Applying file changes to suit the ARM archetecture..."
-	source ./scripts/ApplyFileChanges.sh
 	echo "Applying patches to suit the ARM archetecture..."
-	source ./scripts/ApplyPatches.sh
+	source $TopDir/scripts/ApplyPatches.sh
 else
 	echo ""
 	echo "Not applying patches and files changes. I assume this already has been done."
 fi
-goHome && cd ../
+goHome
 ################################################################################################################################
 ### What to build (Build Everything by default) ###
 echo ""
@@ -93,7 +91,7 @@ fi
 
 
 
-source ./scripts/BuildInOrder.sh > >(tee $TopDir/../logs/StdOut.log) 2> >(tee $TopDir/../logs/StdError.log >&2)
+source $TopDir/scripts/BuildInOrder.sh > >(tee $TopDir/logs/StdOut.log) 2> >(tee $TopDir/logs/StdError.log >&2)
 ################################################################################################################################
 echo ""
 echo "goodbye!";

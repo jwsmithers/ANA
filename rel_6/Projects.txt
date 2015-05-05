@@ -1,0 +1,10 @@
+DetCommon
+AtlasCore
+AtlasConditions
+AtlasEvent
+AtlasReconstruction
+AtlasTrigger
+AtlasAnalysis
+AtlasSimulation
+AtlasOffline
+AtlasHLT

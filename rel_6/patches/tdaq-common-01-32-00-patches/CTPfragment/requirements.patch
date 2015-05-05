@@ -1,0 +1,25 @@
+--- requirements	2015-05-04 21:11:56.024822000 +0000
++++ requirements1	2015-05-04 22:45:17.664822000 +0000
+@@ -20,17 +20,17 @@
+ # test application
+ #
+ use EventStorage
+-application dump-l1ct-data ../src/test/dump-l1ct-data.cxx
++#application dump-l1ct-data ../src/test/dump-l1ct-data.cxx
+ macro dump-l1ct-data_dependencies "CTPfragment"
+-macro dump-l1ct-datalinkopts "-lDataReader -lers -leformat -lCTPfragment -lboost_program_options-$(boost_libsuffix)"
++macro dump-l1ct-datalinkopts "-lDataReader -lers -leformat -lCTPfragment -lboost_program_options-$(boost_libsuffix) -lboost_system-$(boost_libsuffix) -lm -ldl"
+ apply_pattern install_apps files="dump-l1ct-data"
+ 
+-application dump-l1ct-timing ../src/test/dump-l1ct-timing.cxx
++#application dump-l1ct-timing ../src/test/dump-l1ct-timing.cxx
+ macro dump-l1ct-timing_dependencies "CTPfragment"
+-macro dump-l1ct-timinglinkopts "-lDataReader -lers -leformat -lCTPfragment -lboost_program_options-$(boost_libsuffix)"
++macro dump-l1ct-timinglinkopts "-lDataReader -lers -leformat -lCTPfragment -lboost_program_options-$(boost_libsuffix) -lboost_system-$(boost_libsuffix) -lm -ldl"
+ apply_pattern install_apps files="dump-l1ct-timing"
+ 
+ library CTPfragment -s ../src *.cxx
+-macro CTPfragment_shlibflags "-lers -leformat"
++macro CTPfragment_shlibflags "-lers -leformat -lboost_program_options-$(boost_libsuffix) -lboost_system-$(boost_libsuffix) -lm -ldl"
+ apply_pattern install_libs files="libCTPfragment.so"
+ 

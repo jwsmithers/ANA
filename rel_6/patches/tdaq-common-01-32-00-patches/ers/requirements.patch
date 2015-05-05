@@ -1,0 +1,11 @@
+--- requirements	2015-05-05 10:41:25.904822000 +0000
++++ requirements1	2015-05-05 10:46:05.614822000 +0000
+@@ -9,7 +9,7 @@
+ 
+ private
+ 
+-macro boost_libs "-lboost_thread-$(boost_libsuffix) -lboost_date_time-$(boost_libsuffix)"
++macro boost_libs " -lboost_thread-$(boost_libsuffix) -lboost_date_time-$(boost_libsuffix) -lboost_system-$(boost_libsuffix) -ldl"
+ 
+ ########################################################################################################
+ #       ERS Libraries

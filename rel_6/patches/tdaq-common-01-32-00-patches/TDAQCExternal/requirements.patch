@@ -1,0 +1,67 @@
+--- requirements	2015-02-20 08:51:33.000000000 +0000
++++ requirements1	2015-05-05 10:26:08.524822000 +0000
+@@ -35,8 +35,8 @@
+ include_path	none
+ 
+ # where LCG s/w is installed
+-macro         LCG_PATH                "/afs/cern.ch/sw/lcg" 		\
+-              STANDALONE              "${SITEROOT}/sw/lcg"
++macro         LCG_PATH                "/home/seuster/LCGStack/lcgcmake-install" 		\
++              STANDALONE              "/home/seuster/LCGStack/lcgcmake-install"
+ 
+ macro 	      LCG_INST_PATH	${LCG_PATH}
+ 
+@@ -55,31 +55,31 @@
+ # this is compatible for all LCG tags currenltly in use, so we are safe
+ 
+ # alternative:
+-macro 		LCG_app_path 		"releases/LCG_73root6"
+-macro         	BOOST_VERSION           "1.55.0_python2.7"
++macro 		LCG_app_path 		""
++macro         	BOOST_VERSION           "1.56.0_python2.7"
+ macro		PYTHON_VERSION		"2.7.9"
+-macro          BOOST_ext_path           "$(LCG_app_path)/Boost"
+-macro          PYTHON_ext_path          "$(LCG_app_path)/Python"
++macro          BOOST_ext_path           "$(LCG_PATH)/Boost"
++macro          PYTHON_ext_path          "$(LCG_PATH)/Python"
+ 		
+ # Boost
+ # /afs/cern.ch/sw/lcg/releases/Boost/1.55.0_python2.7-f9e91
+ 
+-#macro		BOOST_VERSION		"1.55.0_python2.7-f9e91"
+-macro		BOOST_VERSION_         	"1_55"
++#macro		BOOST_VERSION		"1.56.0_python2.7"
++macro		BOOST_VERSION_         	"1_56"
+ 
+ 
+ macro		Boost_version_headers	"boost-${BOOST_VERSION_}"
+ #macro		BOOST_ext_path		"releases/Boost"
+-macro   	BOOST_HOME		"${dlr}${lb}LCG_INST_PATH${rb}/${BOOST_ext_path}/${BOOST_VERSION}"
+-macro   	BOOST_HOME_		"${LCG_INST_PATH}/${BOOST_ext_path}/${BOOST_VERSION}"
++macro   	BOOST_HOME		"${BOOST_ext_path}/${BOOST_VERSION}"
++macro   	BOOST_HOME_		"${BOOST_ext_path}/${BOOST_VERSION}"
+ 
+ # Python
+ # /afs/cern.ch/sw/lcg/releases/Python/2.7.6-31787/x86_64-slc6-gcc48-opt/
+-#macro		PYTHON_VERSION		"2.7.6-31787"
++macro		PYTHON_VERSION		"2.7.9"
+ macro		Python_version_headers  "python2.7"
+-#macro		PYTHON_ext_path         "releases/Python"
+-macro   	PYTHON_HOME		"${dlr}${lb}LCG_INST_PATH${rb}/${PYTHON_ext_path}/${PYTHON_VERSION}"
+-macro   	PYTHON_HOME_		"${LCG_INST_PATH}/${PYTHON_ext_path}/${PYTHON_VERSION}"
++#macro		PYTHON_ext_path         "$(LCG_PATH)/Python"
++macro   	PYTHON_HOME		"${PYTHON_ext_path}/${PYTHON_VERSION}"
++macro   	PYTHON_HOME_		"${PYTHON_ext_path}/${PYTHON_VERSION}"
+ 
+ 
+ # UUID is taken from LCG only on SLC5 platform
+@@ -101,7 +101,8 @@
+ 			i686-slc5	"i686-slc5"	\
+ 			i686-slc6	"i686-slc6"	\
+ 			x86_64-slc5	"x86_64-slc5"	\
+-			x86_64-slc6	"x86_64-slc6"
++			x86_64-slc6	"x86_64-slc6"	\
++			aarch64 	"aarch64"
+ 
+ document installer	inst_libs_stdcpplibs	-group=inst				\
+ 			-s=${lcg_gcc_path}/${gcc_version}/$(stdcppruntime)/$(stdcpplibprefix)	$(stdcpplibs)	 	\
