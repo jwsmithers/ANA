@@ -1,0 +1,27 @@
+--- requirements	2015-05-06 23:01:14.564822000 +0000
++++ requirements1	2015-05-06 22:59:12.204822000 +0000
+@@ -3,14 +3,22 @@
+ author  Sebastien Binet <binet@cern.ch>
+ 
+ ## For Athena policies: it has to be the first use statement
+-use AtlasPolicy         AtlasPolicy-*
+-use PyCmt               PyCmt-*         Tools -no_auto_imports
++use AtlasPolicy 	AtlasPolicy-*
++use PyCmt		PyCmt-*		Tools -no_auto_imports
+ 
+ macro_append AtlasLzo_linkopts " -llzo2"
+ apply_pattern include_path extras=$(CMTINSTALLAREA)/$(CMTCONFIG)/include
+ 
+ private
+ 
++pattern New_ConfigGuess \
++ private ; \
++ macro_append constituents " New_ConfigGuess" ;\
++ action New_ConfigGuess "cd ../src ; tar -xvf lzo-2.0.3.tar.gz ; rm lzo-2.0.3/autoconf/config.guess ; cp /usr/share/automake-1.14/config.guess lzo-2.0.3/autoconf ; rm lzo-2.0.3.tar.gz ; tar -czv lzo-2.0.3 -f lzo-2.0.3.tar.gz ; rm -r lzo-2.0.3 ; cd ../cmt " ; \
++ end_private
++
++apply_pattern New_ConfigGuess
++
+ apply_pattern make_pkgbuild \
+  name=lzo \
+  file=pkgbuild_lzo.py

@@ -1,2 +1,2 @@
 x=$(find ./ -name "requirements")
-grep -r -in "genconf" ./$x
+grep -r -in "make_pkgbuild" ./$x

@@ -1,17 +1,6 @@
---- requirements	2015-05-05 17:41:33.244822000 +0000
-+++ requirements1	2015-05-05 17:38:42.094822000 +0000
-@@ -3,16 +3,16 @@
- author  binet
- 
- ## for athena policies: this has to be the first use statement
--use AtlasPolicy         AtlasPolicy-*
-+use AtlasPolicy 	AtlasPolicy-*
- 
- ## for external policies
- use ExternalPolicy ExternalPolicy-* External
--use PyCmt                  PyCmt-*                  Tools -no_auto_imports
-+use PyCmt		   PyCmt-*		    Tools -no_auto_imports
- 
+--- requirements	2015-04-24 19:52:08.000000000 +0000
++++ requirements1	2015-05-06 20:52:07.324822000 +0000
+@@ -12,7 +12,7 @@
  # includes are installed under InstallArea/$(CMTCONFIG)/include
  include_dirs none
  

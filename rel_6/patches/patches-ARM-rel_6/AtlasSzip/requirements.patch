@@ -1,0 +1,17 @@
+--- requirements	2015-05-06 22:40:02.624822000 +0000
++++ requirements1	2015-05-06 22:53:13.784822000 +0000
+@@ -11,6 +11,14 @@
+ 
+ private
+ 
++pattern New_ConfigGuess \
++ private ; \
++ macro_append constituents " New_ConfigGuess" ;\
++ action New_ConfigGuess "cd ../src ; tar -xvf szip-2.1.tar.gz ; rm szip-2.1/bin/config.guess ; cp /usr/share/automake-1.14/config.guess szip-2.1/bin/ ; rm szip-2.1.tar.gz ; tar -czv szip-2.1 -f szip-2.1.tar.gz ; rm -r szip-2.1 ; cd ../cmt " ; \
++ end_private
++
++apply_pattern New_ConfigGuess
++
+ apply_pattern make_pkgbuild \
+  name=szip \
+  file=pkgbuild_szip.py
