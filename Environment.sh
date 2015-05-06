@@ -8,7 +8,7 @@ export CMTCONFIG=aarch64-ubuntu14.04-gcc49-opt
 export CMAKECONFIG=aarch64-ubuntu14.04-gcc49-opt
 export LCGCMT_VERS=74root6
 
-source /home/jwsmith/CMT/*/mgr/setup.sh
+#source /home/jwsmith/CMT/*/mgr/setup.sh
 export CMTBIN=Linux-aarch64
 export CMTSITE=STANDALONE
 export SVNROOT=svn+ssh://svn.cern.ch/reps/atlasoff
@@ -28,6 +28,9 @@ export SW_Extras=$ROOTDIR/sw_extras
 export CPLUS_INCLUDE_PATH=/home/jwsmith/ANA/rel_6/tdaq-common/tdaq-common-01-32-00/installed/include:$CPLUS_INCLUDE_PATH
 #CLHEP
 export CPLUS_INCLUDE_PATH=/home/seuster/LCGStack/lcgcmake-install/clhep/2.1.4.1/aarch64-ubuntu14.04-gcc49-opt/include:$CPLUS_INCLUDE_PATH
+
+#tbb
+export CPLUS_INCLUDE_PATH=/home/seuster/LCGStack/lcgcmake-install/tbb/42_20140122/aarch64-ubuntu14.04-gcc49-opt/include:$CPLUS_INCLUDE_PATH
 
 #Python
 export CPLUS_INCLUDE_PATH=export CPLUS_INCLUDE_PATH=/home/seuster/LCGStack/lcgcmake-install/Python/2.7.9/aarch64-ubuntu14.04-gcc49-opt/include/python2.7:$CPLUS_INCLUDE_PATH

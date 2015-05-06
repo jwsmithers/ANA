@@ -1,2 +1,2 @@
 #!/bin/sh
-tar -cvz ./tdaq-common --exclude-from=TarExclude.txt -f tdaq-common-ARM.tar.gz
+tar -cvz ./DetCommon --exclude-from=TarExclude.txt -f DetCommon_rel_6_ARM64.tar.gz

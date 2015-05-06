@@ -1,14 +1,23 @@
---- requirements	2015-04-30 18:23:58.104822000 +0000
-+++ requirements1	2015-05-01 14:36:01.584822000 +0000
+--- requirements	2015-05-06 16:35:41.364822000 +0000
++++ requirements1	2015-05-06 16:56:45.814822000 +0000
 @@ -9,7 +9,7 @@
  # This is not necessarily the same as the package version.
  macro CheckerGccPlugins_native_version "CheckerGccPlugins-00-01-16"
  
 -macro CheckerGccPlugins_home "${ATLAS_EXTERNAL}/CheckerGccPlugins/$(CheckerGccPlugins_native_version)"
-+macro CheckerGccPlugins_home "${TopDir}/AtlasCore/${VERSION}/External/CheckerGccPlugins/"
++macro CheckerGccPlugins_home "/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/External/CheckerGccPlugins/"
  
  
  ##### Construct the compiler command-line arguments for enabling checking.
+@@ -20,7 +20,7 @@
+ # version.
+ apply_tag CheckerGccPlugins_project_$(CheckerGccPlugins_project)
+ 
+-macro CheckerGccPlugins_plugin_dir "$(CheckerGccPlugins_cmtpath)/$(cmt_installarea_prefix)/$(CMTCONFIG)/lib" \
++macro CheckerGccPlugins_plugin_dir "/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/$(CMTCONFIG)/lib" \
+   CheckerGccPlugins_project_AtlasCore "$(CheckerGccPlugins_home)/$(CMTCONFIG)" \
+   CheckerGccPlugins_project_AtlasProduction "$(CheckerGccPlugins_home)/$(CMTCONFIG)" \
+   CheckerGccPlugins_project_AtlasPhysics "$(CheckerGccPlugins_home)/$(CMTCONFIG)"
 @@ -29,7 +29,6 @@
  
  private
