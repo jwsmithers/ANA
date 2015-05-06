@@ -14,7 +14,7 @@ export CMTSITE=STANDALONE
 export SVNROOT=svn+ssh://svn.cern.ch/reps/atlasoff
 export VERSION=rel_6
 export LCGCMT_VERS=LCGCMT_74root6
-export TopDir=$ROOTDIR/rel_6
+export TopDir=$ROOTDIR/$VERSION
 
 
 ##LCG
@@ -24,6 +24,8 @@ export GaudiDir=$ROOTDIR/GAUDI/GAUDI/rel_6
 
 export SW_Extras=$ROOTDIR/sw_extras
 
+#tdaq-common
+export CPLUS_INCLUDE_PATH=/home/jwsmith/ANA/rel_6/tdaq-common/tdaq-common-01-32-00/installed/include:$CPLUS_INCLUDE_PATH
 #CLHEP
 export CPLUS_INCLUDE_PATH=/home/seuster/LCGStack/lcgcmake-install/clhep/2.1.4.1/aarch64-ubuntu14.04-gcc49-opt/include:$CPLUS_INCLUDE_PATH
 

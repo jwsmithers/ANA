@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/sh/
 
 function CreatePaths {
 	echo "#!/bin/sh" > BuildSetup.sh

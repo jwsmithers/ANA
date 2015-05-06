@@ -1,0 +1,3 @@
+In /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/External/AtlasLzo/src/something.tar.gz, the config.guess file is old.
+
+I corrected it by untaring it, removing it (something/config.guess), copying the one from /usr/share/automake*/config.guess and then making a new tarball)

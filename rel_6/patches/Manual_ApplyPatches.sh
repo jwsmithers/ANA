@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #temp script... just lists all the patch contents
-PatchDir=$TopDir/../patches/patches-ARM-20.1.0/*/*.patch
+PatchDir=$TopDir/patches/patches-ARM-rel_6/*/*.patch
 for i in $PatchDir
 do
 	echo -e "\x1B[31m XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \x1B[0m"

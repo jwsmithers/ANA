@@ -37,56 +37,56 @@ read -t 15 -p "What package would you like to build? Only specify one. I.e. DetC
 if [ "$Package_name" == "DetCommon" ]
 then
 	echo "Building DetCommon..."
-	echo "DetCommon" > ./WhatToBuild.txt
+	echo "DetCommon" > ./.WhatToBuild.txt
 
 elif [ "$Package_name" == "AtlasCore" ]
 then
         echo "Building AtlasCore..."
-        echo "AtlasCore" > ./WhatToBuild.txt
+        echo "AtlasCore" > ./.WhatToBuild.txt
 
 elif [ "$Package_name" == "AtlasConditions" ]
 then
         echo "Building AtlasConditions..."
-        echo "AtlasConditions" > ./WhatToBuild.txt
+        echo "AtlasConditions" > ./.WhatToBuild.txt
 
 elif [ "$Package_name" == "AtlasEvent" ]
 then
         echo "Building AtlasEvent..."
-        echo "AtlasEvent" > ./WhatToBuild.txt
+        echo "AtlasEvent" > ./.WhatToBuild.txt
 	
 elif [ "$Package_name" == "AtlasReconstruction" ]
 then
         echo "Building AtlasReconstruction..."
-        echo "AtlasReconstruction" > ./WhatToBuild.txt
+        echo "AtlasReconstruction" > ./.WhatToBuild.txt
 
 elif [ "$Package_name" == "AtlasTrigger" ]
 then
         echo "Building AtlasTrigger..."
-        echo "AtlasTrigger" > ./WhatToBuild.txt
+        echo "AtlasTrigger" > ./.WhatToBuild.txt
 
 elif [ "$Package_name" == "AtlasAnalysis" ]
 then
         echo "Building AtlasAnalysis..."
-        echo "AtlasAnalysis" > ./WhatToBuild.txt
+        echo "AtlasAnalysis" > ./.WhatToBuild.txt
 
 elif [ "$Package_name" == "AtlasSimulation" ]
 then
         echo "Building AtlasSimulation..."
-        echo "AtlasSimulation" > ./WhatToBuild.txt
+        echo "AtlasSimulation" > ./.WhatToBuild.txt
 
 elif [ "$Package_name" == "AtlasOffline" ]
 then
         echo "Building AtlasOffline..."
-        echo "AtlasOffline" > ./WhatToBuild.txt
+        echo "AtlasOffline" > ./.WhatToBuild.txt
 
 elif [ "$Package_name" == "AtlasHLT" ]
 then
         echo "Building AtlasHLT..."
-        echo "AtlasHLT" > ./WhatToBuild.txt
+        echo "AtlasHLT" > ./.WhatToBuild.txt
 
 else
 	echo "Building everything... sit tight."
-	cat Projects.txt > ./WhatToBuild.txt
+	cat Projects.txt > ./.WhatToBuild.txt
 fi
 
 

@@ -1,11 +1,22 @@
---- requirements	2015-01-28 17:38:48.856686592 +0200
-+++ requirements1	2015-01-28 17:41:22.385773924 +0200
-@@ -12,7 +12,7 @@
+--- requirements	2015-05-05 17:41:33.244822000 +0000
++++ requirements1	2015-05-05 17:38:42.094822000 +0000
+@@ -3,16 +3,16 @@
+ author  binet
+ 
+ ## for athena policies: this has to be the first use statement
+-use AtlasPolicy         AtlasPolicy-*
++use AtlasPolicy 	AtlasPolicy-*
+ 
+ ## for external policies
+ use ExternalPolicy ExternalPolicy-* External
+-use PyCmt                  PyCmt-*                  Tools -no_auto_imports
++use PyCmt		   PyCmt-*		    Tools -no_auto_imports
+ 
  # includes are installed under InstallArea/$(CMTCONFIG)/include
  include_dirs none
  
 -macro AtlasTBB_linkopts "-ltbb"
-+macro AtlasTBB_linkopts "-ltbb -L$(LCG_install)/tbb/42_20140122/$(CMTCONFIG)/lib"
++macro AtlasTBB_linkopts "-L/home/seuster/LCGStack/lcgcmake-install/tbb/42_20140122/aarch64-ubuntu14.04-gcc49-opt/lib -l :libtbb.so.2 -ltbb"
  
  private
  

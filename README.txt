@@ -8,18 +8,17 @@ Welcome to ATLAS Nightly on ARM (ANA) - v2.0.
 This will build a version of the ATLAS software for ARM, on ARM.
 
 FIRST: DO
->> Source Variables.sh
+>> Source Environmet
+
+(Make sure the paths in that file are correct).
 
 
-There is an order that must be followed to build everything. This is:
-1_LCGSoftware
-1a_CORAL
-1b_COOL
-2_Gaudi
-sw_extras
-3_ANA
+Then tdaq-common needs to be built. cd to that directory in rel_6, do 
+>> source BuildSetup.sh
+cd to TDAQCRelease/cmt and do
+>> cmt config
+>> cmt broadcast cmt config
+>> cmt broadcast 'make -j6 && make inst'
 
-Make sure that SVN is set it up so that no password is required to check out packages from svn.cern.ch.
-To do this see https://confluence.slac.stanford.edu/display/Atlas/Avoiding+repeating+passwords+for+CVS+and+SVN
-
-To begin, go to each folder (1,1a,1b,2,3) and follow the README instructions. 
+You are now ready to build the atlas software.
+(More to come)
