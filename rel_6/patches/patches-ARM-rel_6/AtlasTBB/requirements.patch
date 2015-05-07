@@ -1,11 +1,11 @@
---- requirements	2015-04-24 19:52:08.000000000 +0000
-+++ requirements1	2015-05-06 20:52:07.324822000 +0000
+--- requirements	2015-05-07 11:08:08.504822000 +0000
++++ requirements1	2015-05-07 11:22:08.194822000 +0000
 @@ -12,7 +12,7 @@
  # includes are installed under InstallArea/$(CMTCONFIG)/include
  include_dirs none
  
 -macro AtlasTBB_linkopts "-ltbb"
-+macro AtlasTBB_linkopts "-L/home/seuster/LCGStack/lcgcmake-install/tbb/42_20140122/aarch64-ubuntu14.04-gcc49-opt/lib -l :libtbb.so.2 -ltbb"
++macro AtlasTBB_linkopts " /home/seuster/LCGStack/lcgcmake-install/tbb/42_20140122/aarch64-ubuntu14.04-gcc49-opt/lib/libtbb.so.2 "
  
  private
  

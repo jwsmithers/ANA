@@ -2,9 +2,7 @@
 
 function CreatePaths {
 	echo "#!/bin/sh" > BuildSetup.sh
-	echo "source /home/jwsmith/CMT/*/mgr/setup.sh" >> BuildSetup.sh
 	echo "export CMTINSTALLAREA="$TopDir/$line/$VERSION"/InstallArea" >> BuildSetup.sh
-#	echo "export CMTINSTALLAREA="${ROOTDIR}"/InstallArea" >> BuildSetup.sh
 	echo "export CMTPROJECTPATH="$TopDir":"$GaudiDir/../../":"$TopDir/$line/$VERSION":"$LCG_install"" >> BuildSetup.sh
 	echo "export CMTPATH="$TopDir/$line/$VERSION":"$LCG_install"/LCGCMT:"$ROOTDIR"" >> BuildSetup.sh
 	echo "export CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH":"$GaudiDir"/InstallArea/"$CMTCONFIG"/include:"$LCG_install"/uuid/*/"$CMTCONFIG"/include:"$LCG_install"/AIDA/3.2.1/"$CMTCONFIG"/src/cpp:"$TopDir"/AtlasCore/${VERSION}/External/AtlasGdb/"$CMTCONFIG"/pkg-build-install-gdb/include" >> BuildSetup.sh	

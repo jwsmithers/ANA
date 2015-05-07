@@ -5,28 +5,28 @@ eigen=Eigen-3.2.4
 readline=readline-6.2.4.1
 
 ## Eigen install.
-cd $SW_Extras
-tar -xvf ${eigen}.tar.gz
-mv eigen-eigen-10219c95fe65 eigen
-mkdir eigen_build
-mkdir eigen_install
-cd eigen_build
-cmake -DCMAKE_INSTALL_PREFIX=../eigen_install ../eigen
-make install
+#cd $SW_Extras
+#tar -xvf ${eigen}.tar.gz
+#mv eigen-eigen-10219c95fe65 eigen
+#mkdir eigen_build
+#mkdir eigen_install
+#cd eigen_build
+#cmake -DCMAKE_INSTALL_PREFIX=../eigen_install ../eigen
+#make install
 
 ## Python Install
-cd $SW_Extras
-tar -xvf ${setuptools}.tar.gz
-mv setuptools-15.1 setuptools
-cd setuptools
-$LCG_install/Python/*/$CMTCONFIG/bin/python setup.py install
+#cd $SW_Extras
+#tar -xvf ${setuptools}.tar.gz
+#mv setuptools-15.1 setuptools
+#cd setuptools
+#$LCG_install/Python/*/$CMTCONFIG/bin/python setup.py install
 
 ## Needs a python install
-cd $SW_Extras
-tar -xvf ${readline}.tar.gz
-mv readline-6.2.4.1 readline
-cd readline
-$LCG_install/Python/*/$CMTCONFIG/bin/python setup.py install
+#cd $SW_Extras
+#tar -xvf ${readline}.tar.gz
+#mv readline-6.2.4.1 readline
+#cd readline
+#$LCG_install/Python/*/$CMTCONFIG/bin/python setup.py install
 
 ## Installs using cmake
 #cd $SW_Extras
@@ -38,14 +38,4 @@ $LCG_install/Python/*/$CMTCONFIG/bin/python setup.py install
 #cmake -DCMAKE_INSTALL_PREFIX=../geant4_install ../geant4
 #make 
 #make install
-
-## yampl
-#export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$LCG_install/uuid/1.42/$CMTCONFIG/include
-#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$LCG_install/uuid/1.42/$CMTCONFIG/lib
-#cd $SW_Extras/yampl
-#mkdir ../yampl_install
-#./configure --prefix=$SW_Extras/yampl_install
-#make 
-#make install
-
 

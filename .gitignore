@@ -13,4 +13,5 @@ AtlasSimulation
 AtlasOffline
 AtlasHLT
 install.armv7l-fc21-gcc49-opt.history
+*.tar.gz
 .svn
