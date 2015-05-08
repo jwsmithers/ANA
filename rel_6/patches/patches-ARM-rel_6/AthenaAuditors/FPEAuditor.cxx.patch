@@ -1,0 +1,29 @@
+--- FPEAuditor.cxx	2015-05-08 14:30:59.694822000 +0000
++++ FPEAuditor.cxx.1	2015-05-08 14:32:21.114822000 +0000
+@@ -119,7 +119,7 @@
+   if ( m_NstacktracesOnFPE )
+     {
+       ATH_MSG_INFO ("Installed Signalhandler !");
+-      FPEAudit::unmask_fpe();
++      //FPEAudit::unmask_fpe();
+       m_SigHandInstalled=true;
+     }
+   FPEAudit::s_array_O[0]=NULL;
+@@ -134,7 +134,7 @@
+   
+   feclearexcept(FE_ALL_EXCEPT);
+   fesetenv (&m_env);
+-  FPEAudit::mask_fpe();
++  //FPEAudit::mask_fpe();
+   
+   // feenableexcept (0);
+   // fedisableexcept (FE_ALL_EXCEPT);
+@@ -335,6 +335,6 @@
+   if (!m_fpe_stack.empty()) {
+     m_fpe_stack.back().second |= raised;
+   }
+-  if ( m_SigHandInstalled )
+-    FPEAudit::unmask_fpe();
++  //if ( m_SigHandInstalled )
++  //  FPEAudit::unmask_fpe();
+ }
