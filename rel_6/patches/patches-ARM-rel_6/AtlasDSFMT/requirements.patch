@@ -1,0 +1,26 @@
+--- requirements	2015-04-24 19:50:31.000000000 +0000
++++ requirements1	2015-05-08 13:04:29.044822000 +0000
+@@ -7,11 +7,11 @@
+ use ExternalPolicy    ExternalPolicy-*    External
+ 
+ macro AtlasDSFMT_home "${ATLAS_EXTERNAL}/dSFMT"
+-macro AtlasDSFMT_native_version "2.1"
+-macro AtlasDSFMT_lib "$(AtlasDSFMT_home)/dSFMT-$(AtlasDSFMT_native_version)/$(CMTCONFIG)"
++macro AtlasDSFMT_native_version "2.2"
++macro AtlasDSFMT_lib "$(AtlasDSFMT_home)/dSFMT-$(AtlasDSFMT_native_version)/$(CMTCONFIG)/lib"
+ 
+-#macro AtlasDSFMT_linkopts " -L$(AtlasDSFMT_lib)  -ldSFMT-std "
+-macro AtlasDSFMT_linkopts " -L$(AtlasDSFMT_lib)  -ldSFMT-sse2 "
++macro AtlasDSFMT_linkopts " -L$(AtlasDSFMT_lib)  -ldSFMT-std "
++#macro AtlasDSFMT_linkopts " -L$(AtlasDSFMT_lib)  -ldSFMT-sse2 "
+ 
+ macro AtlasDSFMT_include "$(AtlasDSFMT_home)/dSFMT-$(AtlasDSFMT_native_version)/include"
+ include_dirs "$(AtlasDSFMT_include)"
+@@ -31,5 +31,5 @@
+ macro_append cppflags ' -DDSFMT_MEXP=19937 '
+ 
+ private
+-#macro AtlasDSFMT_libraries "$(AtlasDSFMT_lib)/libdSFMT-std.a"
+-macro AtlasDSFMT_libraries "$(AtlasDSFMT_lib)/libdSFMT-sse2.a"
++macro AtlasDSFMT_libraries "$(AtlasDSFMT_lib)/libdSFMT-std.so"
++#macro AtlasDSFMT_libraries "$(AtlasDSFMT_lib)/libdSFMT-sse2.a"

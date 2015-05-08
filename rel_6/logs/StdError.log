@@ -494,150 +494,150 @@ Creating cleanup scripts.
 #CMT---> Info: Document install_scripts
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document checkreq
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.8.6
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.8.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.8 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.8
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.8.6.cmtref
-   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.8.6 to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQt3Support.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCLucene.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtCore.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDeclarative.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesignerComponents.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtDesigner.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtGui.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtHelp.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtMultimedia.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtNetwork.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtOpenGL.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScript.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtScriptTools.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSql.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtSvg.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtTest.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXmlPatterns.so.4.8.6
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.8.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.8 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.8
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.8.6.cmtref
+   Symlinking /home/seuster/LCGStack/lcgcmake-install/LCGCMT/LCGCMT_74root6/LCG_Settings/../../../qt/4.8.6/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.8.6 to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libQtXml.so.4.8.6
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document check_install_
 #CMT---> Info: Document install_
@@ -656,9 +656,9 @@ Creating cleanup scripts.
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document check_install_
 #CMT---> Info: Document install_
+#CMT---> Info: Document checkreq
 #CMT---> Info: Document install_jars
 #CMT---> Warning: Source file /home/seuster/sw/lcg/external/Java/mysql-connector/5.0.5/share/mysql-connector-java-5.0.5-bin.jar not found
-#CMT---> Info: Document checkreq
 #CMT---> Info: Document check_install_
 #CMT---> (install_jars.make) /home/seuster/sw/lcg/external/Java/mysql-connector/5.0.5/share/mysql-connector-java-5.0.5-bin.jar: No rule for such target
 #CMT---> Info: Document install_
@@ -689,10 +689,10 @@ Creating cleanup scripts.
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document checkreq
-   Creating reference file /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libdSFMT-sse2.a.cmtref
-   Symlinking /home/seuster/external/dSFMT/dSFMT-2.1/aarch64-ubuntu14.04-gcc49-opt/libdSFMT-sse2.a to /home/jwsmith/ANA/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libdSFMT-sse2.a
-#CMT---> Info: Document checkreq#CMT--->
- Info: Document check_install_AtlasDSFMT_home
+   Creating reference file /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libdSFMT-sse2.a.cmtref
+   Symlinking /home/seuster/external/dSFMT/dSFMT-2.1/aarch64-ubuntu14.04-gcc49-opt/libdSFMT-sse2.a to /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libdSFMT-sse2.a
+#CMT---> Info: Document checkreq
+#CMT---> Info: Document check_install_AtlasDSFMT_home
 #CMT---> Info: Document install_AtlasDSFMT_home
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document checkreq
@@ -704,270 +704,118 @@ Creating cleanup scripts.
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document checkreq
-#CMT---> Info: Document checkreq
-#CMT---> Info: Library checker_gccplugins
 #CMT---> Info: Document install_scripts
+#CMT---> Info: Library checker_gccplugins
+#CMT---> Info: Document checkreq
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document check_install_scripts
 #CMT---> Info: Document install_scripts
-#CMT---> Info: Document install_includes#CMT--->
- Info: Document checkreq
-#CMT---> Info: Document check_install_joboptions
 #CMT---> Info: Document install_root_include_path
+#CMT---> Info: Document checkreq
+#CMT---> Info: Document check_install_joboptions
+#CMT---> Info: Document install_includes
 #CMT---> Info: Document check_install_runtime
 #CMT---> Info: Document install_runtime
 #CMT---> Info: Document install_joboptions
+#CMT---> Info: Library PmbCxxUtils
 #CMT---> Info: Document install_root_include_path
-#CMT--->#CMT---> Info: Library PmbCxxUtils Info: Document checkreq
-
+#CMT---> Info: Document checkreq
 #CMT---> Info: Document install_includes
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/CustomBenchmark.o] Error 1 (ignored)
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/CustomBenchmark.o: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/libPmbCxxUtils.so] Error 1 (ignored)
 #CMT---> Info: Document PmbCxxUtils_optdebug_library
-#CMT---> (PmbCxxUtils_optdebug_library.make) ../aarch64-ubuntu14.04-gcc49-opt/libPmbCxxUtils.so: No rule for such target
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/libPmbCxxUtils.so': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/libPmbCxxUtils.so.debug] Error 1 (ignored)
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/libPmbCxxUtils.so': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/libPmbCxxUtils.so.debug] Error 1 (ignored)
-objcopy: 'libPmbCxxUtils.so': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/libPmbCxxUtils.so.debug] Error 1 (ignored)
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document install_includes
 #CMT---> Info: Document check_install_python_modules
+#CMT---> Info: Document checkreq
 #CMT---> Info: Document check_install_scripts
 #CMT---> Info: Document install_root_include_path
+#CMT---> Info: Document install_includes
 #CMT---> Info: Document install_python_modules
 #CMT---> Info: Document install_scripts
+#CMT---> Info: Document checkreq
+#CMT---> Info: Document check_install_scripts
 #CMT---> Info: Document check_install_python_modules
 #CMT---> Info: Document install_root_include_path
 #CMT---> Info: Document install_includes
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document check_install_scripts
 #CMT---> Info: Document install_scripts
 #CMT---> Info: Document install_python_modules
-#CMT---> Info: Document install_includes
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document install_root_include_path
 #CMT---> Info: Library LWHists
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/LWBinLabels.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/LWHistControls.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/TProfile_LW.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/LWHist2D.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/LWHist1D.o] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/TH1I_LW.o] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/LWPoolAreaBookKeeper.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/TH2I_LW.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/TH2F_LW.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/TProfile2D_LW.o] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/LWHistStats.o] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/LWHistTraceUtils.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/LWPoolArea.o] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/LWPool.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/LWHist.o] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/LWBinUtils.o] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/TH1D_LW.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/LWPools.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/TH2D_LW.o] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/TH1F_LW.o] Error 1 (ignored)
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/LWBinLabels.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/TProfile_LW.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/LWHist1D.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/LWHist2D.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/LWHistControls.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/TH1I_LW.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/TH2I_LW.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/LWPoolAreaBookKeeper.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/TH2F_LW.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/TProfile2D_LW.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/LWHistStats.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/LWPool.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/LWHistTraceUtils.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/LWHist.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/LWPoolArea.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/TH1D_LW.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/LWBinUtils.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/TH2D_LW.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/LWPools.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/TH1F_LW.o: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/libLWHists.so] Error 1 (ignored)
-#CMT---> Info: Application lwhists_benchmark
-#CMT---> Info: Document LWHists_optdebug_library
-#CMT---> Info: Application lwhists_validate
-#CMT---> (LWHists_optdebug_library.make) ../aarch64-ubuntu14.04-gcc49-opt/libLWHists.so: No rule for such target
-#CMT---> Info: Application lwhists_comphistfiles
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/libLWHists.so': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/libLWHists.so.debug] Error 1 (ignored)
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/libLWHists.so': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/libLWHists.so.debug] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-objcopy: 'libLWHists.so': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/libLWHists.so.debug] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/main_benchmark.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/main_validation.o] Error 1 (ignored)
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/main_benchmark.o: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/lwhists_benchmark.exe] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/validatefunctions.o] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/lwhists_benchmark.exe': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/lwhists_benchmark.exe] Error 1 (ignored)
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/lwhists_benchmark.exe': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/lwhists_benchmark.exe] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/main_comphistfiles.o] Error 1 (ignored)
-objcopy: 'lwhists_benchmark.exe': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/lwhists_benchmark.exe] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/main_comphistfiles.o: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/lwhists_comphistfiles.exe] Error 1 (ignored)
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/lwhists_comphistfiles.exe': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/lwhists_comphistfiles.exe] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/HistValBase.o] Error 1 (ignored)
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/lwhists_comphistfiles.exe': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/lwhists_comphistfiles.exe] Error 1 (ignored)
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/main_validation.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/validatefunctions.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/HistValBase.o: No such file or directory
-objcopy: 'lwhists_comphistfiles.exe': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/lwhists_comphistfiles.exe] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/lwhists_validate.exe] Error 1 (ignored)
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/lwhists_validate.exe': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/lwhists_validate.exe] Error 1 (ignored)
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/lwhists_validate.exe': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/lwhists_validate.exe] Error 1 (ignored)
-objcopy: 'lwhists_validate.exe': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/lwhists_validate.exe] Error 1 (ignored)
-#CMT---> Info: Document check_install_joboptions
-#CMT---> Info: Document check_install_scripts
-#CMT---> Info: Document check_install_xmls
-#CMT---> Info: Document check_install_runtime
 #CMT---> Info: Document checkreq
-#CMT---> Info: Document check_install_python_modules
 #CMT---> Info: Document install_root_include_path
 #CMT---> Info: Document install_includes
+#CMT---> Info: Document LWHists_optdebug_library
+#CMT---> Info: Application lwhists_comphistfiles
+#CMT---> Info: Application lwhists_validate
+#CMT---> Info: Application lwhists_benchmark
+#CMT---> Info: Document checkreq
+#CMT---> Info: Document check_install_python_modules
+#CMT---> Info: Document check_install_joboptions
+#CMT--->#CMT---> Info: Document check_install_xmls#CMT---> Info: Document check_install_runtime
+
+ Info: Document check_install_scripts
+#CMT---> Info: Document install_includes
+#CMT---> Info: Document install_root_include_path
+#CMT---> Info: Document install_runtime
 #CMT---> Info: Document install_joboptions
 #CMT---> Info: Document install_scripts
 #CMT---> Info: Document install_xmls
-#CMT---> Info: Document install_runtime
 #CMT---> Info: Document install_python_modules
 #CMT---> Info: Document checkreq
 #CMT---> Info: Application ChkLib
-#CMT---> Info: Document install_root_include_path
-#CMT---> Info: Document install_includes
 #CMT---> Info: Document check_install_runtime
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/ChkLib.o] Error 1 (ignored)
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/ChkLib.o: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/ChkLib.exe] Error 1 (ignored)
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/ChkLib.exe': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/ChkLib.exe] Error 1 (ignored)
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/ChkLib.exe': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/ChkLib.exe] Error 1 (ignored)
-objcopy: 'ChkLib.exe': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/ChkLib.exe] Error 1 (ignored)
+#CMT---> Info: Document install_includes
+#CMT---> Info: Document install_root_include_path
 #CMT---> Info: Document install_runtime
 #CMT---> Info: Document install_root_include_path
-#CMT---> Info: Document check_install_scripts
 #CMT---> Info: Document checkreq
-#CMT---> Info: Document install_includes
 #CMT---> Info: Document check_install_runtime
+#CMT---> Info: Document check_install_scripts
+#CMT---> Info: Document install_includes
 #CMT---> Info: Document install_scripts
 #CMT---> Info: Document install_runtime
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document check_install_pygraphics_binariesbinaries
 #CMT---> Info: Document check_install_pygraphics_pymodulepython_modules
+#CMT--->#CMT---> Info: Document check_install_pygraphics_binariesbinaries
+ Info: Document checkreq
 #CMT---> Info: Document install_includes
 #CMT---> Info: Document install_root_include_path
 #CMT---> Info: Document install_pygraphics_binariesbinaries
 #CMT---> Info: Document install_pygraphics_pymodulepython_modules
-#CMT---> Info: Document install_includes
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document install_root_include_path
 #CMT---> Info: Document install_includes
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document install_root_include_path
-#CMT--->#CMT---> Info: Document checkreq
- Info: Document install_root_include_path
 #CMT---> Info: Document install_includes
-#CMT---> Info: Document check_install_python_modules
+#CMT---> Info: Document checkreq
+#CMT---> Info: Document install_root_include_path
+#CMT---> Info: Document install_includes
+#CMT---> Info: Document checkreq
+#CMT--->#CMT---> Info: Document check_install_scripts
+ Info: Document check_install_python_modules
+#CMT---> Info: Document install_includes
+#CMT---> Info: Document install_root_include_path
 #CMT---> Info: Document check_install_trfruntime
-#CMT---> Info: Document checkreq#CMT--->
- Info: Document check_install_scripts
-#CMT---> Info: Document install_root_include_path
-#CMT---> Info: Document install_includes
 #CMT---> Info: Document install_trfruntime
 #CMT---> Info: Document install_scripts
 #CMT---> Info: Document install_python_modules
-#CMT---> Info: Document check_install_scripts
 #CMT---> Info: Document check_install_python_modules
-#CMT---> Info: Document checkreq
+#CMT---> Info: Document check_install_scripts
 #CMT---> Info: Document check_install_trfs_exe
 #CMT---> Info: Document check_install_trfs_pyt
 #CMT---> Info: Document check_install_trfs_jop
-#CMT--->#CMT---> Info: Document install_includes
- Info: Document install_root_include_path
-#CMT---> Info: Document install_scripts
+#CMT---> Info: Document checkreq
+#CMT---> Info: Document install_root_include_path
+#CMT---> Info: Document install_includes
 #CMT---> Info: Document install_python_modules
+#CMT---> Info: Document install_scripts
 #CMT---> Info: Document install_trfs_exe
 #CMT---> Info: Document install_trfs_pyt
 #CMT---> Info: Document install_trfs_jop
 #CMT---> Info: Document PyJobTransformsMisc_python_init
-#CMT---> Info: Document checkreq
 #CMT---> Info: Document install_root_include_path
-#CMT---> Info: Document install_includes
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document install_includes
+#CMT---> Info: Document install_includes
+#CMT---> Info: Document checkreq
 #CMT---> Info: Document check_install_runtime
 #CMT---> Info: Document install_root_include_path
 #CMT---> Info: Document install_runtime
@@ -975,49 +823,13 @@ make[2]: [../aarch64-ubuntu14.04-gcc49-opt/ChkLib.exe] Error 1 (ignored)
 #CMT---> Info: Document install_includes
 #CMT---> Info: Document checkreq
 #CMT---> Info: Library CoWTools
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/CoWLibrary.o] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/CoWRecordStats.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/VecStream.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/Monitor.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/StrStream.o] Error 1 (ignored)
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-cc1plus: error: cannot load plugin /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so
-/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14.04-gcc49-opt/lib/libchecker_gccplugins.so: cannot open shared object file: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/CoWRecord.o] Error 1 (ignored)
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/MStrStream.o] Error 1 (ignored)
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/CoWLibrary.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/VecStream.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/CoWRecordStats.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/Monitor.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/StrStream.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/MStrStream.o: No such file or directory
-g++: error: ../aarch64-ubuntu14.04-gcc49-opt/CoWRecord.o: No such file or directory
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/libCoWTools.so] Error 1 (ignored)
 #CMT---> Info: Document CoWTools_optdebug_library
-#CMT---> (CoWTools_optdebug_library.make) ../aarch64-ubuntu14.04-gcc49-opt/libCoWTools.so: No rule for such target
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/libCoWTools.so': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/libCoWTools.so.debug] Error 1 (ignored)
-objcopy: '../aarch64-ubuntu14.04-gcc49-opt/libCoWTools.so': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/libCoWTools.so.debug] Error 1 (ignored)
-objcopy: 'libCoWTools.so': No such file
-make[2]: [../aarch64-ubuntu14.04-gcc49-opt/libCoWTools.so.debug] Error 1 (ignored)
+#CMT---> Info: Document install_includes
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document install_root_include_path
-#CMT---> Info: Document install_includes
-#CMT---> Info: Document check_install_python_modules
 #CMT---> Info: Document checkreq
 #CMT---> Info: Document external_untar
+#CMT---> Info: Document check_install_python_modules
 #CMT---> Info: Document check_install_scripts
 #CMT---> Info: Document check_install_exe
 #CMT---> Info: Document install_root_include_path
@@ -1030,23 +842,10 @@ make[2]: [external_untar] Error 1 (ignored)
 /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/External/AtlasGdb/aarch64-ubuntu14.04-gcc49-opt/gdb-7.9/missing: 81: /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/External/AtlasGdb/aarch64-ubuntu14.04-gcc49-opt/gdb-7.9/missing: makeinfo: not found
 #CMT---> Info: Document external_make_compile
 make[3]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
-make[4]: [configure-intl] Error 1 (ignored)
-make[3]: *** [all] Interrupt
-make[2]: *** [external_make_compile] Interrupt
-make[1]: *** [external_make_compile] Interrupt
-make: *** [all] Interrupt
-#CMT---> Info: Document checkreq
-#CMT---> Info: Document check_install_scripts
-#CMT---> Info: Document check_install_xmls
-#CMT---> Info: Document check_install_
-#CMT---> Info: Document install_root_include_path
-#CMT---> Info: Document check_install_runtime
-#CMT---> Info: Document install_includes
-#CMT---> Info: Document install_scripts
-#CMT---> Info: Document install_xmls
-#CMT---> Info: Document install_
-#CMT---> Warning: Source file /home/seuster/external/AtlasAuth/v18/authentication.xml not found
-#CMT---> Info: Document install_runtime
-/bin/sh: 1: cd: can't cd to /home/seuster/external/AtlasAuth/v18
-
-[1]+  Stopped                 ${CMTROOT}/${CMTBIN}/cmt.exe broadcast make -i -j6
+configure: WARNING:
+*** Makeinfo is missing. Info documentation will not be built.
+configure: WARNING: decimal float is not supported for this target, ignored
+util.c: In function ‘_rl_tropen’:
+util.c:510:3: warning: format ‘%ld’ expects argument of type ‘long int’, but argument 3 has type ‘__pid_t’ [-Wformat=]
+   sprintf (fnbuf, "/var/tmp/rltrace.%ld", getpid());
+   ^
