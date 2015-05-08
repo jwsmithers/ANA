@@ -1,0 +1,10 @@
+--- requirements	2015-04-24 19:56:25.000000000 +0000
++++ requirements1	2015-05-08 12:37:32.084822000 +0000
+@@ -222,7 +222,6 @@
+ use  pyAMI                       pyAMI-05-00-03-01                     External        
+ use  yampl                       yampl-00-00-03                        External        
+ use  McEventSelector             McEventSelector-02-03-04              Generators      
+-use  OffloadSvc                  OffloadSvc-00-00-07                   Offloading      
+ use  PATCore                     PATCore-00-00-20                      PhysicsAnalysis/AnalysisCommon
+ use  AraTool                     AraTool-00-02-09                      PhysicsAnalysis 
+ use  AtlasCoreRunTime            AtlasCoreRunTime-00-00-52            
