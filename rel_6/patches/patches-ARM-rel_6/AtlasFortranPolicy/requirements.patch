@@ -1,5 +1,5 @@
 --- requirements	2015-04-24 19:41:31.000000000 +0000
-+++ requirements1	2015-05-04 11:48:06.204822000 +0000
++++ requirements1	2015-05-08 16:26:26.754822000 +0000
 @@ -151,12 +151,14 @@
        slc5          "/usr" \
        slc6          "/usr" \
@@ -17,17 +17,16 @@
        
  macro GFO           "" \
     slc4&gcc-3.2.3   "$(GFO_BASE)/irun" \
-@@ -168,7 +170,8 @@
+@@ -168,7 +170,7 @@
     Darwin           "$(GFO_BASE)/local/gfortran" \
     CERN             "$(GFO_BASE)/irun" \
     BNL              "$(GFO_BASE)/irun" \
 -   STANDALONE       "$(GFO_BASE)/irun"
-+   STANDALONE       "$(GFO_BASE)/irun" \
-+   ubuntu	    "/usr/bin/gfortran" 
++   STANDALONE	    "/usr" 
  
  # These two macros are identical to the asNeeded_linkopt and notAsNeeded_linkopt macros defined in AtlasPolicy
  # but are needed here because this package doesn't have a dependency against AtlasPolicy
-@@ -203,14 +206,15 @@
+@@ -203,14 +205,15 @@
       HAS_GFO&slc6   " $(GFO)/$(GFO_LIBS)/libgfortran.so.1" \
       HAS_GFO&Darwin " $(GFO)/$(GFO_LIBS)/libgfortran.dylib" \
       HAS_GFO        " $(GFO)/$(GFO_LIBS)/libgfortranbegin.a $(GFO)/$(GFO_LIBS)/libgfortran.a" \
@@ -41,7 +40,7 @@
        HAS_GFO&slc5   "" \
        HAS_GFO&slc6   "" \
 -      HAS_GFO "$(GFO)/bin $(GFO)/include $(GFO)/$(GFO_LIBS)  $(GFO)/libexec "
-+      HAS_GFO "$(GFO)/bin $(GFO)/include $(GFO)/$(GFO_LIBS)  $(GFO)/libexec " \
++      HAS_GFO "$(GFO)/bin /usr/lib/gcc/aarch64-linux-gnu/4.9/include /usr/lib/gcc/aarch64-linux-gnu/4.9/  $(GFO)/libexec " \
 +      HAS_GFO&ubuntu   "" 
  
  #
