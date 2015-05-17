@@ -1,3 +1,4 @@
 .svn
+.git
 InstallArea
-aarch64-ubuntu14.04-gcc49-opt
+aarch64-ubuntu14-gcc49-opt

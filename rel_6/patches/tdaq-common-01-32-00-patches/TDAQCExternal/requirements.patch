@@ -6,8 +6,8 @@
  # where LCG s/w is installed
 -macro         LCG_PATH                "/afs/cern.ch/sw/lcg" 		\
 -              STANDALONE              "${SITEROOT}/sw/lcg"
-+macro         LCG_PATH                "/home/seuster/LCGStack/lcgcmake-install" 		\
-+              STANDALONE              "/home/seuster/LCGStack/lcgcmake-install"
++macro         LCG_PATH                "/home/jwsmith/lcgcmake-install" 		\
++              STANDALONE              "/home/jwsmith/lcgcmake-install"
  
  macro 	      LCG_INST_PATH	${LCG_PATH}
  

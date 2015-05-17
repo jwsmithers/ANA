@@ -4,7 +4,7 @@
  tag x86_64-slc6-gcc46-test   x86_64-slc6-gcc46-opt target-test
  tag x86_64-slc6-gcc48-test   x86_64-slc6-gcc48-opt target-test
  tag x86_64-slc6-gcc49-test   x86_64-slc6-gcc49-opt target-test
-+tag aarch64-ubuntu14.04-gcc49-test aarch64-ubuntu14.04-gcc49-opt target-test
++tag aarch64-ubuntu14-gcc49-test aarch64-ubuntu14-gcc49-opt target-test
 +
  
  # Add Google malloc replacement to the LD_LIBRARY_PATH

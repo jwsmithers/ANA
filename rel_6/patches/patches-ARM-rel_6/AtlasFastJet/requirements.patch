@@ -1,0 +1,11 @@
+--- requirements	2015-05-15 17:05:51.754822000 +0000
++++ requirements1	2015-05-15 17:06:56.854822000 +0000
+@@ -7,7 +7,7 @@
+ use fastjet * LCG_Interfaces
+ 
+ macro fastjet_native_version 3.1.1
+-macro AtlasFastJet_home ${SITEROOT}/sw/lcg/releases/LCG_72a/fastjet/$(fastjet_native_version)/$(LCG_system)
++macro AtlasFastJet_home ${LCG_install}/fastjet/$(fastjet_native_version)/$(LCG_system)
+ macro AtlasFastJet_native_version $(fastjet_native_version) 
+ 
+ macro AtlasFastJet_system "$(LCG_ext_system)" \

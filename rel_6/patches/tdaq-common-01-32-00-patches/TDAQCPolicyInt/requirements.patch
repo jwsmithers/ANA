@@ -5,8 +5,8 @@
  tag ppc-rtems-rce405-opt	ppc	ppc-rtems	rtems	rce405		powerpc-rtems-gcc powerpc-rtems-gcc43 opt ppc-rtems-rce405 
  
 +# arm 64 bit gcc49
-+tag aarch64-ubuntu14.04-gcc49-opt       aarch64 aarch64-ubuntu14.04     linux   ubuntu14.04     gcc     gcc49   opt     aarch64-ubuntu14.04-gcc49 gcc4
-+tag aarch64-ubuntu14.04-gcc49-dbg       aarch64 aarch64-ubuntu14.04     linux   ubuntu14.04     gcc     gcc49   debug   aarch64-ubuntu14.04-gcc49 gcc4
++tag aarch64-ubuntu14-gcc49-opt       aarch64 aarch64-ubuntu14     linux   ubuntu14     gcc     gcc49   opt     aarch64-ubuntu14-gcc49 gcc4
++tag aarch64-ubuntu14-gcc49-dbg       aarch64 aarch64-ubuntu14     linux   ubuntu14     gcc     gcc49   debug   aarch64-ubuntu14-gcc49 gcc4
 +
  # path to Intel C++ compiler
  macro		icc_root			""							\

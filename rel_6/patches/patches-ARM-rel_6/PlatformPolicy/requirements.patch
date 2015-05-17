@@ -6,10 +6,10 @@
  
 +
 +# ------------------ ARM 64 ------------
-+tag aarch64-ubuntu14.04-gcc49-opt 	Linux ubuntu14.04  64  gcc-4.9  opt    aarch64-ubuntu14.04-gcc49
-+tag aarch64-ubuntu14.04-gcc49-opt       Linux ubuntu14.04  64  gcc-4.9  debug  aarch64-ubuntu14.04-gcc49
++tag aarch64-ubuntu14-gcc49-opt 	Linux ubuntu14  64  gcc-4.9  opt    aarch64-ubuntu14-gcc49
++tag aarch64-ubuntu14-gcc49-opt       Linux ubuntu14  64  gcc-4.9  debug  aarch64-ubuntu14-gcc49
 +
-+tag ubuntu14.04 host-ubuntu
++tag ubuntu14 host-ubuntu
 +tag ubuntu	host-ubuntu
 +
  # ------------------ Special Platform tags ------------

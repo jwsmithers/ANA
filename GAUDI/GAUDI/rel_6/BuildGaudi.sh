@@ -2,15 +2,17 @@
 export CMTPROJECTPATH=$GaudiDir:$LCG_install
 export CMAKE_PREFIX_PATH=$GaudiDir:$GaudiDir/cmake:$LCG_install
 export CMTINSTALLAREA=$GaudiDir/InstallArea
-source /home/jwsmith/CMT/*/mgr/setup.sh
+export CMTCONFIG=aarch64-ubuntu14-gcc49-opt
+export CMAKECONFIG=aarch64-ubuntu14-gcc49-opt
+#source /home/jwsmith/CMT/*/mgr/setup.sh
 
 export UNWIND_INCLUDE_DIRS=/home/jwsmith/libunwind-install/include
 export UNWIND_LIBRARIES=/home/jwsmith/libunwind-install/lib
 
-export TCMALLOC_INCLUDE_DIR=/home/jwsmith/gperftools-install/include
-export TCMALLOC_LIBRARIES=/home/jwsmith/gperftools-install/lib
+#export TCMALLOC_INCLUDE_DIR=/home/jwsmith/gperftools-install/include
+#export TCMALLOC_LIBRARIES=/home/jwsmith/gperftools-install/lib
 
-export CPLUS_INCLUDE_PATH=/home/seuster/LCGStack/lcgcmake-install/ROOT/6.02.99/aarch64-ubuntu14.04-gcc49-opt/test:/home/jwsmith/ANA/GAUDI/GAUDI/rel_6/GaudiPython/src/Test:$CPLUS_INCLUDE_PATH
+#export CPLUS_INCLUDE_PATH=/home/seuster/LCGStack/lcgcmake-install/ROOT/6.02.99/aarch64-ubuntu14.04-gcc49-opt/test:/home/jwsmith/ANA/GAUDI/GAUDI/rel_6/GaudiPython/src/Test:$CPLUS_INCLUDE_PATH
 
 Files=($LCG_install/*/*/$CMTCONFIG)
 for f in "${Files[@]}"

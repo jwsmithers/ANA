@@ -1,0 +1,11 @@
+--- requirements	2015-05-15 17:15:57.384822000 +0000
++++ requirements1	2015-05-15 17:16:11.114822000 +0000
+@@ -9,7 +9,7 @@
+ 
+ macro Genser_home "$(LCG_external)/MCGenerators"
+ macro Lhapdf_home "$(Genser_home)/lhapdf"
+-macro Lhapdf_version "6.1.4"
++macro Lhapdf_version "6.1.5"
+ macro Lhapdf_native_version "$(Lhapdf_version)_lcgcmt$(LCG_config_version)"
+ macro Lhapdf_system "$(LCG_ext_system)"
+ macro Lhapdf_dir "$(Lhapdf_home)/$(Lhapdf_version)/$(Lhapdf_system)"

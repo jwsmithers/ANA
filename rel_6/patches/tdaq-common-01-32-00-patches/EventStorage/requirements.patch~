@@ -1,0 +1,89 @@
+--- requirements	2015-02-20 08:51:11.000000000 +0000
++++ requirements1	2015-05-05 11:08:25.314822000 +0000
+@@ -31,7 +31,7 @@
+ library EventStorageRecords	EventStorageRecords.cxx 
+ 
+ library DataWriter 		DataWriter.cxx Guid.cxx 
+-macro DataWriter_shlibflags "-lRawFileName -lers -luuid -lz -lESCompression -lcompression -lEventStorageRecords"
++macro DataWriter_shlibflags "-lRawFileName -lers -L/home/jwsmith/lcgcmake-install/uuid/1.42/aarch64-ubuntu14-gcc49-opt/lib -luuid -lz -lESCompression -lcompression -lEventStorageRecords"
+ macro DataWriter_dependencies "RawFileName ESCompression EventStorageRecords"
+ 
+ 
+@@ -48,7 +48,7 @@
+                                 Guid.cxx \
+                                 MergedRawFile.cxx
+ 
+-macro DataReader_shlibflags "-lRawFileName -ldl -lers -luuid \
++macro DataReader_shlibflags "-lRawFileName -ldl -lers -L/home/jwsmith/lcgcmake-install/uuid/1.42/aarch64-ubuntu14-gcc49-opt/lib -luuid \
+ 			    -lz -lESCompression -lcompression \
+ 			    -lEventStorageRecords"
+ macro DataReader_dependencies "RawFileName ESCompression EventStorageRecords"
+@@ -70,15 +70,15 @@
+ # Tier0 merging transform and binary
+ ###
+ 
+-application file_merging ../bin/Merging.cxx Guid.cxx
+-macro file_merginglinkopts "-lRawFileName -lDataReader -luuid -lers"
++#application file_merging ../bin/Merging.cxx Guid.cxx
++macro file_merginglinkopts "-lRawFileName -lDataReader -L/home/jwsmith/lcgcmake-install/uuid/1.42/aarch64-ubuntu14-gcc49-opt/lib -luuid -lers"
+ macro file_merging_dependencies "RawFileName DataReader" 
+ 
+-application file_demerging ../bin/Demerging.cxx 
++#application file_demerging ../bin/Demerging.cxx 
+ macro file_demerginglinkopts "-lRawFileName -lDataReader -lers"
+ macro file_demerging_dependencies "DataReader RawFileName" 
+ 
+-application ESCompress ../bin/ESCompress.cxx
++#application ESCompress ../bin/ESCompress.cxx
+ macro ESCompresslinkopts "-lers -lDataWriter -lDataReader -lboost_program_options-$(boost_libsuffix) -lboost_filesystem-$(boost_libsuffix)"
+ macro ESCompress_dependencies "DataReader DataWriter" 
+ 
+@@ -90,39 +90,39 @@
+ # Legacy test applications
+ ###
+ 
+-application readData ../test/readData.cxx 
++#application readData ../test/readData.cxx 
+ macro readDatalinkopts "-lRawFileName -lDataReader -lers" 
+ macro readData_dependencies "RawFileName DataReader"
+ 
+-application testWritingSpeed ../test/testWritingSpeed.cxx
++#application testWritingSpeed ../test/testWritingSpeed.cxx
+ macro testWritingSpeedlinkopts "-lRawFileName -lDataWriter -lDWCBcout -lers"
+ macro testWritingSpeed_dependencies "RawFileName DataWriter DWCBcout"
+ 
+-application testReadingSpeed ../test/testReadingSpeed.cxx
++#application testReadingSpeed ../test/testReadingSpeed.cxx
+ macro testReadingSpeedlinkopts "-lRawFileName -lDataReader -lers -lESCompression"
+ macro testReadingSpeed_dependencies "RawFileName DataReader ESCompression"
+ 
+-application readMetaData ../test/readMetaData.cxx 
++#application readMetaData ../test/readMetaData.cxx 
+ macro readMetaDatalinkopts "-lRawFileName -lDataReader -lers" 
+ macro readMetaData_dependencies "RawFileName DataReader"
+ 
+-application testOffsets ../test/testOffsets.cxx 
++#application testOffsets ../test/testOffsets.cxx 
+ macro testOffsetslinkopts "-lRawFileName -lDataReader -lers" 
+ macro testOffsets_dependencies "RawFileName DataReader"
+ 
+-application testPickDataReader ../test/testPickDataReader.cxx 
++#application testPickDataReader ../test/testPickDataReader.cxx 
+ macro testPickDataReaderlinkopts "-lRawFileName -lDataReader -lers" 
+ macro testPickDataReader_dependencies "RawFileName DataReader"
+ 
+-application FileConverter ../test/FileConverter.cxx 
++#application FileConverter ../test/FileConverter.cxx 
+ macro FileConverterlinkopts "-lRawFileName -lers -lESCompression"
+ macro FileConverter_dependencies RawFileName ESCompression
+ 
+-application testFileNames ../test/testFileNames.cxx
++#application testFileNames ../test/testFileNames.cxx
+ macro testFileNameslinkopts "-lRawFileName -lers"
+ macro testFileNames_dependencies RawFileName
+ 
+-application testWritingStreams ../test/testWritingStreams.cxx
++#application testWritingStreams ../test/testWritingStreams.cxx
+ macro testWritingStreamslinkopts "-lers -lRawFileName -lDataWriter -lDWCBcout"
+ macro testWritingStreams_dependencies "RawFileName DataWriter DWCBcout"
+  

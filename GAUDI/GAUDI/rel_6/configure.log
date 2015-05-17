@@ -1,4 +1,9 @@
-cd build.aarch64-ubuntu14.04-gcc49-opt && make rebuild_cache
-make[1]: Entering directory `/home/jwsmith/ANA/GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt'
-Running CMake to regenerate build system...
-make[1]: Leaving directory `/home/jwsmith/ANA/GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14.04-gcc49-opt'
+mkdir -p /home/jwsmith/ANA/GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14-gcc49-opt
+cd /home/jwsmith/ANA/GAUDI/GAUDI/rel_6/build.aarch64-ubuntu14-gcc49-opt && cmake -DCMAKE_TOOLCHAIN_FILE=/home/jwsmith/ANA/GAUDI/GAUDI/rel_6/toolchain.cmake /home/jwsmith/ANA/GAUDI/GAUDI/rel_6
+-- Target binary tag from CMAKECONFIG: aarch64-ubuntu14-gcc49-opt
+-- Target system: aarch64-ubuntu14-gcc49
+-- Build type: opt
+-- Target system: aarch64-ubuntu14-gcc49
+-- Build type: opt
+-- Host system: aarch64-ubuntu14.04-gcc49
+-- Configuring incomplete, errors occurred!

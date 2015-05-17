@@ -91,7 +91,8 @@ fi
 
 
 
-source $TopDir/scripts/BuildInOrder.sh > >(tee $TopDir/logs/StdOut.log) 2> >(tee $TopDir/logs/StdError.log >&2)
+#source $TopDir/scripts/BuildInOrder.sh > >(tee $TopDir/logs/StdOut.log) 2> >(tee $TopDir/logs/StdError.log >&2)
+source $TopDir/scripts/BuildInOrder.sh > >(tee $TopDir/logs/StdOut.log) 2>&1
 ################################################################################################################################
 echo ""
 echo "goodbye!";

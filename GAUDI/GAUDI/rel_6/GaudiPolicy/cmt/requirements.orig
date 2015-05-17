@@ -19,6 +19,8 @@ tag x86_64-slc5-gcc46-test   x86_64-slc5-gcc46-opt target-test
 tag x86_64-slc6-gcc46-test   x86_64-slc6-gcc46-opt target-test
 tag x86_64-slc6-gcc48-test   x86_64-slc6-gcc48-opt target-test
 tag x86_64-slc6-gcc49-test   x86_64-slc6-gcc49-opt target-test
+tag aarch64-ubuntu14.04-gcc49-test aarch64-ubuntu14.04-gcc49-opt target-test
+
 
 # Add Google malloc replacement to the LD_LIBRARY_PATH
 use tcmalloc * LCG_Interfaces -no_auto_imports
@@ -624,13 +626,13 @@ macro_prepend  cpp_name "" \
     lcg-compiler&target-gcc&CERNDISTCC "" \
     lcg-compiler&target-gccmax    "" \
     lcg-compiler&target-g11max    "" \
-    lcg-compiler&target-gcc       "lcg-" \
+    lcg-compiler&target-gcc       "" \
     lcg-compiler&target-clang     "lcg-"
 macro_append   cpp_name "" \
     lcg-compiler&target-gcc&CERNDISTCC "" \
     lcg-compiler&target-gccmax    "" \
     lcg-compiler&target-g11max    "" \
-    lcg-compiler&target-gcc       "-$(gcc_config_version)" \
+    lcg-compiler&target-gcc       "" \
     lcg-compiler&target-clang     "-$(clang_config_version)"
 macro cpp_name "$(cpp_name)" target-icc "icpc"
 
@@ -639,13 +641,13 @@ macro_prepend  cc_name  "" \
     lcg-compiler&target-gcc&CERNDISTCC "" \
     lcg-compiler&target-gccmax    "" \
     lcg-compiler&target-g11max    "" \
-    lcg-compiler&target-gcc       "lcg-" \
+    lcg-compiler&target-gcc       "" \
     lcg-compiler&target-clang     "lcg-"
 macro_append   cc_name  "" \
     lcg-compiler&target-gcc&CERNDISTCC "" \
     lcg-compiler&target-gccmax    "" \
     lcg-compiler&target-g11max    "" \
-    lcg-compiler&target-gcc       "-$(gcc_config_version)" \
+    lcg-compiler&target-gcc       "" \
     lcg-compiler&target-clang     "-$(clang_config_version)"
 
 # FORTRAN compiler
@@ -654,13 +656,13 @@ macro_prepend  for_name "" \
     lcg-compiler&target-gcc&CERNDISTCC "" \
     lcg-compiler&target-gccmax    "" \
     lcg-compiler&target-g11max    "" \
-    lcg-compiler&target-gcc       "lcg-" \
+    lcg-compiler&target-gcc       "" \
     lcg-compiler&target-clang     "lcg-"
 macro_append   for_name "" \
     lcg-compiler&target-gcc&CERNDISTCC "" \
     lcg-compiler&target-gccmax    "" \
     lcg-compiler&target-g11max    "" \
-    lcg-compiler&target-gcc       "-$(gcc_config_version)" \
+    lcg-compiler&target-gcc       "" \
     lcg-compiler&target-clang     "-$(gcc_config_version)"
 
 # C++ debug, optimized and profiled options
@@ -725,11 +727,12 @@ macro_append LCG_Platforms_cflags "" \
 macro_append LCG_Platforms_fflags "" \
                        target-cov " --coverage"
 
-macro cppflags         " -fmessage-length=0 -Df2cFortran -fPIC -D_GNU_SOURCE -Dlinux -Dunix -pipe -Wall -Wextra -Werror=return-type -pthread " \
+macro cppflags         "" \
       target-mac105    " -Df2cFortran -fPIC -D_GNU_SOURCE -Dunix -pipe -Wall -Wextra -Werror=return-type -Wno-long-double " \
       target-mac106    " -Df2cFortran -fPIC -D_GNU_SOURCE -Dunix -pipe -Wall -Wextra -Werror=return-type " \
       target-vc9       '$(includes) /D "WIN32" /D "_MBCS"  /D "_WINDOWS" /FD /c /nologo /W3 /EHsc /MD /GR /Zm500' \
-      target-vc7       '$(includes) /D "WIN32" /D "_MBCS"  /D "_WINDOWS" /FD /c /nologo /W3 /GX /MD /GR /Zm500'
+      target-vc7       '$(includes) /D "WIN32" /D "_MBCS"  /D "_WINDOWS" /FD /c /nologo /W3 /GX /MD /GR /Zm500' \
+      target-aarch64   " -fPIC -D_GNU_SOURCE -Dlinux -Dunix -pipe -Wall -Wextra -Werror=return-type -pthread -fsigned-char -fsigned-bitfields "
 
 # The -pedantic flag gives problems on GCC 4.3.
 macro_append cppflags "-pedantic -Wno-long-long " \
@@ -893,7 +896,7 @@ macro fcomp            "$(for) -c $(fincludes) $(fdebugflags) $(fflags) $(pp_ffl
 
 # C compiler
 
-macro_append cflags " -fmessage-length=0 -fPIC " \
+macro_append cflags " -fmessage-length=0 -fPIC -fsigned-char -fsigned-bitfields " \
              target-winxp    " "
 
 macro_append cflags  "" \
