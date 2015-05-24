@@ -1,0 +1,8 @@
+--- requirements	2015-05-24 18:47:59.924822000 +0000
++++ requirements1	2015-05-24 18:50:22.324822000 +0000
+@@ -53,4 +53,4 @@
+ macro           test_histogramStyles_dependencies              HistogramStyles
+ 
+ macro		test_histogramStyleslinkopts	    	       "-lRIO -lNet -lHist -lCore -lGpad -lPhysics -lers -lGraf\
+-                                                		-lHistogramStyles"
++                                                		-lHistogramStyles -lMathCore"

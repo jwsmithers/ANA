@@ -1,0 +1,35 @@
+--- requirements	2015-05-24 19:00:23.414822000 +0000
++++ requirements1	2015-05-24 19:29:26.104822000 +0000
+@@ -1,4 +1,4 @@
+-package dqm_core
++
+ 
+ author  Alina.Radu@cern.ch, Haleh.Hadavand.cern.ch, Serguei.Kolos@cern.ch
+ manager Alina.Radu@cern.ch, Haleh.Hadavand.cern.ch, Serguei.Kolos@cern.ch
+@@ -15,6 +15,8 @@
+ #////////////////////////////////////////////////////////////////////////////
+ macro_remove pp_cppflags "-DERS_NO_DEBUG"
+ 
++macro_append    cpplinkflags            " -L${BOOST_HOME_}/${BOOST_libdir} "
++
+ #############################################################################
+ #  install patterns
+ #############################################################################
+@@ -83,12 +85,14 @@
+ 
+ application	dqm_core_test				"../test/test_core.cpp"
+ macro           dqm_core_test_dependencies   		"dqm_core dqm_dummy"
+-macro		dqm_core_testlinkopts			"-lCore -lHist -ldqm_dummy -ldqm_core -lers \
++macro		dqm_core_testlinkopts			"-lCore -ldqm_dummy -ldqm_core -lers -lHist \
+ 					 	 	 -lboost_thread-${boost_libsuffix} \
+-                                         	 	 -lboost_program_options-${boost_libsuffix}"
++                                         	 	 -lboost_program_options-${boost_libsuffix} \
++							 -lboost_system-${boost_libsuffix} -lboost_date_time-${boost_libsuffix} -lboost_regex-${boost_libsuffix}"
+ 
+ application     dqm_core_algorithm_test			"../test/test_algorithm.cpp"
+ macro           dqm_core_algorithm_test_dependencies	"dqm_core dqm_dummy"
+ macro           dqm_core_algorithm_testlinkopts		"-lCore -ldqm_core -ldqm_dummy -lHist -lers \
+ 							 -lboost_thread-${boost_libsuffix} \
+-							 -lboost_program_options-${boost_libsuffix}"
++							 -lboost_program_options-${boost_libsuffix} \ 
++							 -lboost_system-${boost_libsuffix} -lboost_date_time-${boost_libsuffix} -lboost_regex-${boost_libsuffix}"

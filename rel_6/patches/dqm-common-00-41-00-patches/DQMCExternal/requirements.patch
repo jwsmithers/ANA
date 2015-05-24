@@ -1,0 +1,11 @@
+--- requirements	2015-02-18 16:11:43.000000000 +0000
++++ requirements1	2015-05-24 16:13:11.284822000 +0000
+@@ -47,7 +47,7 @@
+ # redefine /afs/cern.ch/sw/lcg/releases/LCGCMT/LCGCMT_69root6/LCG_Settings/../../.. which is set in LCG_Settings
+ 
+ # relative to LCG_INST_PATH=/afs/cern.ch/sw/lcg
+-macro LCG_app_path "releases/LCG_${LCG_config_version}"	\
++macro LCG_app_path ""	\
+ 	NIGHTLIES       "app/nightlies/dev4/$(yest)"
+ 
+ # ROOT

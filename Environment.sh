@@ -12,6 +12,7 @@ source /home/jwsmith/CMT/*/mgr/setup.sh
 #source /home/jwsmith/lcgcmake-install/cmt/v1r20p20090520/aarch64-ubuntu14-gcc49-opt/CMT/v1r20p20090520/mgr/setup.sh
 export CMTBIN=Linux-aarch64
 export CMTSITE=STANDALONE
+CMTEXTRATAGS=no-separate-debug
 export SVNROOT=svn+ssh://svn.cern.ch/reps/atlasoff
 export VERSION=rel_6
 export LCGCMT_VERS=LCGCMT_75root6
