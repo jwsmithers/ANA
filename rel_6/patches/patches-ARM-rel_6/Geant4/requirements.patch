@@ -1,0 +1,44 @@
+--- requirements	2015-04-24 21:22:17.000000000 +0000
++++ requirements1	2015-05-24 21:53:47.604822000 +0000
+@@ -16,10 +16,10 @@
+     BNL         "${SITEROOT}/cernsw/geant4/releases" \
+     LBNL        "${SITEROOT}/sw/geant4/releases" \
+     EXTSITE     "${SITEROOT}/geant4/releases" \
+-    STANDALONE  "${SITEROOT}/geant4/releases"
++    STANDALONE  "${SITEROOT}/external/geant4/geant4.9.6.p04/${CMTCONFIG}"
+ 
+-macro Geant4_native_version "geant4.10.1.patch00.atlas01"
+-macro Geant4_export_paths "$(Geant4_home)/share/${Geant4_native_version}/include $(Geant4_home)/specific/$(CMTCONFIG)/${Geant4_native_version}/lib $(Geant4_home)/share/${Geant4_native_version}/data"
++macro Geant4_native_version "Geant4-9.6.4"
++macro Geant4_export_paths "$(Geant4_home)/share/${Geant4_native_version}/include $(Geant4_home)/lib $(Geant4_home)/share/${Geant4_native_version}/data $(Geant4_home)/lib/${Geant4_native_version}"
+ macro Geant4_follow_symlinks "" PACK yes
+ 
+ private
+@@ -41,13 +41,15 @@
+ 
+ ## G4 build variables
+ 
++macro Geant4_installed_home "${Geant4_home}"
++
+ set G4VERS       "$(Geant4_native_version)"
+ set G4PATH       "$(Geant4_installed_home)"
+-set GEANT4       "$(Geant4_installed_home)/specific/$(CMTCONFIG)"
++set GEANT4       "$(Geant4_installed_home)"
+ set Geant4_data  "$(Geant4_installed_home)/share/${Geant4_native_version}/data"
+ set G4INSTALL    "${GEANT4}/${Geant4_native_version}"
+-set G4INCLUDE    "$(Geant4_installed_home)/share/${Geant4_native_version}/include"
+-set G4LIB        "${G4INSTALL}/lib"
++set G4INCLUDE    "$(Geant4_installed_home)/include/Geant4"
++set G4LIB        "$(Geant4_installed_home)/lib"
+ 
+ set G4SYSTEM      "Linux-g++" \
+     target-darwin "Darwin-g++"
+@@ -59,7 +61,7 @@
+              debug            " -DG4DEBUG -DG4VERBOSE "
+ 
+ macro_append Geant4_cppflags  " -DG4USE_STD_NAMESPACE -DG4_STORE_TRAJECTORY -DG4USE_STL -DG4VIS_USE "
+-macro        Geant4_linkopts  " -L$(G4LIB)/$(G4SYSTEM)"
++macro        Geant4_linkopts  " -L$(G4LIB)/$(G4SYSTEM) -L${Geant4_home}/lib"
+ 
+ 
+ ## G4 Kernel
