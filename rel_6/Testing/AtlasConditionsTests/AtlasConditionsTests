@@ -1,0 +1,7 @@
+#!/bin/sh
+export AtlasVersion=AtlasConditions
+alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
+echoC
+timeout 10 athena.py InDetGeometryValidation/ReadTRT_DetectorElements_jobOptions.py
+echoC
+timeout 10 athena.py InDetGeometryValidation/ReadSiDetectorElements_jobOptions.py

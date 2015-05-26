@@ -1,0 +1,35 @@
+#!/bin/sh
+export AtlasVersion=AtlasSimulation
+alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
+echoC
+timeout 10 athena.py CaloDigEx/CaloDigEx.py
+echoC
+timeout 10 athena.py CaloDigEx/CaloDigEx.py
+echoC
+timeout 10 athena.py CaloSimEx/CaloSimEx.py
+echoC
+timeout 10 athena.py CaloSimEx/CaloSimEx.py
+echoC
+athena.py  -s Digitization/DigitizationRTT_all_noLVL1.py
+echoC
+athena.py  -s Digitization/DigitizationRTT_all_noLVL1.py
+echoC
+athena.py  Digitization/NightlyPileUp.py
+echoC
+athena.py  Digitization/NightlyPileUp.py
+echoC
+athena.py G4AtlasApps/jobOptions.G4Atlas.py
+echoC
+athena.py G4AtlasApps/jobOptions.G4Atlas.py
+echoC
+athena.py G4AtlasApps/jobOptions.G4Atlas_ReadEvgen.py
+echoC
+athena.py G4AtlasApps/jobOptions.G4Atlas_ReadEvgen.py
+echoC
+athena.py G4AtlasApps/jobOptions.G4Cosmic.py
+echoC
+athena.py G4AtlasApps/jobOptions.G4Cosmic.py
+echoC
+athena.py  TileSimEx/jobOptions_TileTB_Sim.py 
+echoC
+athena.py  TileSimEx/jobOptions_TileTB_Sim.py 

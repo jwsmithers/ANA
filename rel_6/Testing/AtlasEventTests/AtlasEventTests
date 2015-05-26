@@ -1,0 +1,12 @@
+#!/bin/sh
+export AtlasVersion=AtlasEvent
+alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
+echoC
+athena.py AthenaDBTestRec/ReadRefDBExample.py
+echoC
+athena.py -s AthenaServices/MultiplePass_test.py
+echoC
+athena.py -s EventLoopTest/ByteStreamReadTest.py
+echoC
+athena.py -s AthenaServices/MixingEventSelector_test.py
+

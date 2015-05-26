@@ -1,0 +1,124 @@
+#!/bin/sh
+export AtlasVersion=AtlasAnalysis
+alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
+echoC
+athena.py UserDataExamples/UserDataExamples_Writer.py
+echoC
+athena.py UserDataExamples/UserDataExamples_Writer.py
+echoC
+athena.py UserDataExamples/UserDataExamples_Reader.py
+echoC
+athena.py UserDataExamples/UserDataExamples_Reader.py
+echoC
+athena.py InDetAlignExample/AlignmentATNSimple.py
+echoC
+athena.py InDetAlignExample/AlignmentATNSimple.py
+echoC
+athena.py InDetMonitoringATN/jobOptions_cosmics.py
+echoC
+athena.py InDetMonitoringATN/jobOptions_cosmics.py
+echoC
+athena.py  -c 'doMonitoring=False; runAccumulator=False; doLArCalibDataQuality=True; GainList=["HIGH"]; PartitionType="EMB"; Partition="EB-EMBA"; PartitionTypeGeneric="EMBPS"; RunNumberList=[174585]; RunNumberFlag=int(RunNumberList[0]); InputDir=" "; FullFileName=["/afs/cern.ch/user/l/larcalib/w0/Test/data11_calib.00174585.calibration_LArElec-Pedestal-7s-High-BarrelPS.daq.RAW._lb0000._EB-EMBA._0001.data"]; GroupingType="ExtendedSubDetector" ' LArCalibProcessing/UseLArExtendedSubDetGrouping.py  LArCalibProcessing/LArCalib_PedestalAutoCorr_jobOptions.py LArCalibProcessing/LArCalib_PedestalAutoCorr_testing.py
+echoC
+athena.py  -c 'doMonitoring=False; runAccumulator=False; doLArCalibDataQuality=True; GainList=["HIGH"]; PartitionType="EMB"; Partition="EB-EMBA"; PartitionTypeGeneric="EMBPS"; RunNumberList=[174585]; RunNumberFlag=int(RunNumberList[0]); InputDir=" "; FullFileName=["/afs/cern.ch/user/l/larcalib/w0/Test/data11_calib.00174585.calibration_LArElec-Pedestal-7s-High-BarrelPS.daq.RAW._lb0000._EB-EMBA._0001.data"]; GroupingType="ExtendedSubDetector" ' LArCalibProcessing/UseLArExtendedSubDetGrouping.py  LArCalibProcessing/LArCalib_PedestalAutoCorr_jobOptions.py LArCalibProcessing/LArCalib_PedestalAutoCorr_testing.py
+echoC
+athena.py  -c 'doMonitoring=False; doLArCalibDataQuality=True; CorrectBadChannels=True; ApplyAdHocCorrection=False; GainList=["HIGH"]; PartitionType="EMB"; Partition="EB-EMBA"; PartitionTypeGeneric="EMBPS"; RunNumberList=[174586]; RunNumberFlag=int(RunNumberList[0]); InputDir=" "; FullFileName=["/afs/cern.ch/user/l/larcalib/w0/Test/data11_calib.00174586.calibration_LArElec-Ramp-7s-High-BarrelPS.daq.RAW._lb0000._EB-EMBA._0001.data"]; GroupingType="ExtendedSubDetector" ' LArCalibProcessing/UseLArExtendedSubDetGrouping.py  LArCalibProcessing/LArCalib_Ramp_jobOptions.py LArCalibProcessing/LArCalib_Ramp_testing.py
+echoC
+athena.py  -c 'doMonitoring=False; doLArCalibDataQuality=True; CorrectBadChannels=True; ApplyAdHocCorrection=False; GainList=["HIGH"]; PartitionType="EMB"; Partition="EB-EMBA"; PartitionTypeGeneric="EMBPS"; RunNumberList=[174586]; RunNumberFlag=int(RunNumberList[0]); InputDir=" "; FullFileName=["/afs/cern.ch/user/l/larcalib/w0/Test/data11_calib.00174586.calibration_LArElec-Ramp-7s-High-BarrelPS.daq.RAW._lb0000._EB-EMBA._0001.data"]; GroupingType="ExtendedSubDetector" ' LArCalibProcessing/UseLArExtendedSubDetGrouping.py  LArCalibProcessing/LArCalib_Ramp_jobOptions.py LArCalibProcessing/LArCalib_Ramp_testing.py
+echoC
+athena.py -c "rec.doDetailedAuditor=True ; rec.doNameAuditor=True " RecExRecoTest/RecExRecoTest_RTT_empty.py
+echoC
+athena.py -c "rec.doDetailedAuditor=True ; rec.doNameAuditor=True " RecExRecoTest/RecExRecoTest_RTT_empty.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExAnaTest/RecExAnaTest_RTT_notrigger.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExAnaTest/RecExAnaTest_RTT_notrigger.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5 ; doFloatingPointException=True ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " RecExAnaTest/RecExAnaTest_RTT_notrigger.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5 ; doFloatingPointException=True ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " RecExAnaTest/RecExAnaTest_RTT_notrigger.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExAnaTest/RecExAnaTest_RTT_all.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExAnaTest/RecExAnaTest_RTT_all.py
+echoC
+athena.py  --drop-and-reload -c "jp.AthenaCommonFlags.EvtMax=5 ; " RecExAnaTest/RecExAnaTest_RTT_all.py
+echoC
+athena.py  --drop-and-reload -c "jp.AthenaCommonFlags.EvtMax=5 ; " RecExAnaTest/RecExAnaTest_RTT_all.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5 ; doFloatingPointException=True ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " RecExAnaTest/RecExAnaTest_RTT_all.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5 ; doFloatingPointException=True ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " RecExAnaTest/RecExAnaTest_RTT_all.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExRecoTest/RecExRecoTest_RTT_esd.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExRecoTest/RecExRecoTest_RTT_esd.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExCommon/esdtoaod.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExCommon/esdtoaod.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExCommon/aodtotag.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExCommon/aodtotag.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5;rec.doDetailedAuditor=True;jp.AthenaCommonFlags.PoolInputQuery='(EventNumber == 2 || EventNumber == 4)'; rec.doNameAuditor=True" RecExCommon/tagtoaod.py 
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5;rec.doDetailedAuditor=True;jp.AthenaCommonFlags.PoolInputQuery='(EventNumber == 2 || EventNumber == 4)'; rec.doNameAuditor=True" RecExCommon/tagtoaod.py 
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExTrigTest/RecExTrigTest_RTT_esdtrigger.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExTrigTest/RecExTrigTest_RTT_esdtrigger.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExCommon/esdtoaod.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExCommon/esdtoaod.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExCommon/aodtotag.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExCommon/aodtotag.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py D3PDMakerConfig/AODToEgammaD3PD.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py D3PDMakerConfig/AODToEgammaD3PD.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5;jp.AthenaCommonFlags.PoolInputQuery='(EventNumber == 2 || EventNumber == 4)' ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True" RecExCommon/tagtoaod.py 
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5;jp.AthenaCommonFlags.PoolInputQuery='(EventNumber == 2 || EventNumber == 4)' ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True" RecExCommon/tagtoaod.py 
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ;jp.AthenaCommonFlags.FilesInput=['root://eosatlas//eos/atlas/atlascerngroupdisk/phys-rig/pileupSamples/mc12_8TeV.105200.McAtNloJimmy_CT10_ttbar_LeptonFilter.digit.RDO.e1513_s1499_s1504_d700/RDO.01177879._000001.pool.root.1'] " AthenaCommon/MemTraceInclude.py RecExRecoTest/RecExRecoTest_RTT_common.py RecExCommon/rdotobs.py
+echoC
+athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ;jp.AthenaCommonFlags.FilesInput=['root://eosatlas//eos/atlas/atlascerngroupdisk/phys-rig/pileupSamples/mc12_8TeV.105200.McAtNloJimmy_CT10_ttbar_LeptonFilter.digit.RDO.e1513_s1499_s1504_d700/RDO.01177879._000001.pool.root.1'] " AthenaCommon/MemTraceInclude.py RecExRecoTest/RecExRecoTest_RTT_common.py RecExCommon/rdotobs.py
+echoC
+athena.py  -c "rec.AutoConfiguration=['everything']; jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doTruth=False " RecExRecoTest/RecExRecoTest_RTT_common.py RecExCommon/bstoesd.py 
+echoC
+athena.py  -c "rec.AutoConfiguration=['everything']; jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doTruth=False " RecExRecoTest/RecExRecoTest_RTT_common.py RecExCommon/bstoesd.py 
+echoC
+athena.py  -c "rec.AutoConfiguration=['everything']; jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doTruth=False ; rec.doNameAuditor=True " RecExRecoTest/RecExRecoTest_RTT_common.py RecExCommon/esdtoaod.py 
+echoC
+athena.py  -c "rec.AutoConfiguration=['everything']; jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doTruth=False ; rec.doNameAuditor=True " RecExRecoTest/RecExRecoTest_RTT_common.py RecExCommon/esdtoaod.py 
+echoC
+athena.py  -c "rec.AutoConfiguration=['everything']; jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ;  rec.doTruth=False ; rec.doNameAuditor=True " RecExRecoTest/RecExRecoTest_RTT_common.py RecExCommon/aodtotag.py 
+echoC
+athena.py  -c "rec.AutoConfiguration=['everything']; jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ;  rec.doTruth=False ; rec.doNameAuditor=True " RecExRecoTest/RecExRecoTest_RTT_common.py RecExCommon/aodtotag.py 
+echoC
+athena.py  -c "rec.AutoConfiguration=['everything'];jp.AthenaCommonFlags.EvtMax=5;jp.AthenaCommonFlags.PoolInputQuery='(EventNumber == 2 || EventNumber == 4)'; rec.doDetailedAuditor=True ;  rec.doTruth=False ; rec.doNameAuditor=True " RecExCommon/tagtoaod.py 
+echoC
+athena.py  -c "rec.AutoConfiguration=['everything'];jp.AthenaCommonFlags.EvtMax=5;jp.AthenaCommonFlags.PoolInputQuery='(EventNumber == 2 || EventNumber == 4)'; rec.doDetailedAuditor=True ;  rec.doTruth=False ; rec.doNameAuditor=True " RecExCommon/tagtoaod.py 
+echoC
+athena.py TileRecEx/jobOptions_TileCommissioningAtn.py
+echoC
+athena.py TileRecEx/jobOptions_TileCommissioningAtn.py
+echoC
+athena.py TileRecEx/jobOptions_TileCosmicAtn.py
+echoC
+athena.py TileRecEx/jobOptions_TileCosmicAtn.py
+echoC
+athena.py  -c RunNumber=239908 TileRecEx/jobOptions_TileCosmicAtn.py
+echoC
+athena.py  -c RunNumber=239908 TileRecEx/jobOptions_TileCosmicAtn.py
+echoC
+athena.py AthExHelloWorld/HelloWorld_ATN.py
+echoC
+athena.py AthExHelloWorld/HelloWorld_ATN.py
+echoC

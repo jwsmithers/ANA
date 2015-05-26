@@ -1,0 +1,12 @@
+#!/bin/sh
+export AtlasVersion=AtlasCore
+
+alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
+echoC
+athena.py AthExHelloWorld/HelloWorldOptions.py
+echoC
+athena.py AthExHelloWorld/HelloWorld_ATN.py
+echoC
+athena.py AthenaServices/SimplePOSIXTimeKeeperSvc_test.py
+echoC
+athena.py AthenaServices/AthDictLoaderSvc_test.py 
