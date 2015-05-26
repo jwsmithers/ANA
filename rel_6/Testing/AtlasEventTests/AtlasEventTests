@@ -1,12 +1,24 @@
 #!/bin/sh
-export AtlasVersion=AtlasEvent
+#!/bin/sh
+export AtlasVersion=AtlasCore
+function SuccessOrNot {
+        if [ $1 -eq 0 ]; then
+          echo "$(tput setaf 2) $2 succeeded" >> PASSorFAIL
+        else
+          echo "$(tput setaf 1) $2 FAILED" >> PASSorFAIL
+        fi
+}
+
 alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
-echoC
-athena.py AthenaDBTestRec/ReadRefDBExample.py
-echoC
-athena.py -s AthenaServices/MultiplePass_test.py
-echoC
-athena.py -s EventLoopTest/ByteStreamReadTest.py
-echoC
-athena.py -s AthenaServices/MixingEventSelector_test.py
+alias athena.py='timeout 100 athena.py'
+
+function runTest {
+        echoC
+        athena.py $1
+        SuccessOrNot $? $1
+}
+runTest AthenaDBTestRec/ReadRefDBExample.py
+runTest AthenaServices/MultiplePass_test.py
+runTest EventLoopTest/ByteStreamReadTest.py
+runTest AthenaServices/MixingEventSelector_test.py
 

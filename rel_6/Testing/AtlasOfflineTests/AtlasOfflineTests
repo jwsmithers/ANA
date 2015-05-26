@@ -1,0 +1,58 @@
+#!/bin/sh
+export AtlasVersion=AtlasOffline
+function SuccessOrNot {
+        if [ $1 -eq 0 ]; then
+          echo "$(tput setaf 2) $2 succeeded" >> PASSorFAIL
+        else
+          echo "$(tput setaf 1) $2 FAILED" >> PASSorFAIL
+        fi
+}
+
+alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
+alias athena.py='timeout 30 athena.py'
+
+echoC
+athena.py --nprocs=2 -c "jp.AthenaCommonFlags.EvtMax=8; from AthenaMP.AthenaMPFlags import jobproperties as jps; jps.AthenaMPFlags.PreCountedEvents=6; jps.AthenaMPFlags.CollectSubprocessLogs=True" RecExRecoTest/RecExRecoTest_RTT_id.py
+SuccessOrNot $? RecExRecoTest/RecExRecoTest_RTT_id.py
+echoC
+athena.py --nprocs=2 -c "jp.AthenaCommonFlags.EvtMax=8; from AthenaMP.AthenaMPFlags import jobproperties as jps; jps.AthenaMPFlags.CollectSubprocessLogs=True" RecExRecoTest/RecExRecoTest_RTT_id.py
+SuccessOrNot $? RecExRecoTest/RecExRecoTest_RTT_id.py
+echoC
+athena.py --nprocs=2 -c "from AthenaMP.AthenaMPFlags import jobproperties as jps; jps.AthenaMPFlags.PreCountedEvents=4; jps.AthenaMPFlags.CollectSubprocessLogs=True" G4AtlasApps/jobOptions.G4Atlas.py
+SuccessOrNot $? G4AtlasApps/jobOptions.G4Atlas.py
+echoC
+athena.py --nprocs=2 -c "jp.AthenaCommonFlags.EvtMax=8; from AthenaMP.AthenaMPFlags import jobproperties as jps; jps.AthenaMPFlags.WorkerTopDir='MPWorkers'; jps.AthenaMPFlags.CollectSubprocessLogs=True" RecExRecoTest/RecExRecoTest_RTT_id.py
+SuccessOrNot $? RecExRecoTest/RecExRecoTest_RTT_id.py
+echoC
+athena.py --nprocs=2 -c "jp.AthenaCommonFlags.EvtMax=5; from AthenaMP.AthenaMPFlags import jobproperties as jps; jps.AthenaMPFlags.CollectSubprocessLogs=True" AthenaCommon/MemTraceInclude.py RecExRecoTest/RecExRecoTest_RTT_idmuoncalomuoncomb.py
+SuccessOrNot $? RecExRecoTest/RecExRecoTest_RTT_idmuoncalomuoncomb.py
+echoC
+athena.py --nprocs=2 -c "jp.AthenaCommonFlags.EvtMax=8; from AthenaMP.AthenaMPFlags import jobproperties as jps; jps.AthenaMPFlags.OutputReportFile='MPOutputs'; jps.AthenaMPFlags.CollectSubprocessLogs=True" RecExRecoTest/RecExRecoTest_RTT_id.py
+SuccessOrNot $? RecExRecoTest/RecExRecoTest_RTT_id.py
+echoC
+athena.py --nprocs=2 -c "jp.AthenaCommonFlags.EvtMax=8; from AthenaMP.AthenaMPFlags import jobproperties as jps; jps.AthenaMPFlags.CollectSubprocessLogs=True" RecExCommon/rdotoesdnotrigger.py
+SuccessOrNot $? RecExCommon/rdotoesdnotrigger.py
+echoC
+athena.py --nprocs=1 -c "jp.AthenaCommonFlags.EvtMax=8; from AthenaMP.AthenaMPFlags import jobproperties as jps; jps.AthenaMPFlags.CollectSubprocessLogs=True" RecExRecoTest/RecExRecoTest_RTT_id.py
+SuccessOrNot $? RecExRecoTest/RecExRecoTest_RTT_id.py
+echoC
+athena.py  -s InDetSLHC_Example/jobOptions_simulation_SLHC.py
+SuccessOrNot $? InDetSLHC_Example/jobOptions_simulation_SLHC.py
+echoC
+athena.py  -s InDetSLHC_Example/jobOptions_digitization_SLHC.py
+SuccessOrNot $? InDetSLHC_Example/jobOptions_digitization_SLHC.py
+echoC
+athena.py AthExHelloWorld/HelloWorldOptions.py
+SuccessOrNot $? AthExHelloWorld/HelloWorldOptions.py
+echoC
+athena.py RecExOnline/RecExOnline_User_Offline.py
+SuccessOrNot $? RecExOnline/RecExOnline_User_Offline.py
+echoC
+athena.py -c "REO_doAutoConfiguration=True" RecExOnline/RecExOnline_User_Offline_isOnlineTrue.py
+SuccessOrNot $? RecExOnline/RecExOnline_User_Offline_isOnlineTrue.py
+echoC
+athena.py -c "REO_doAutoConfiguration=False" RecExOnline/RecExOnline_User_Offline_isOnlineTrue.py
+SuccessOrNot $? RecExOnline/RecExOnline_User_Offline_isOnlineTrue.py
+echoC
+athena.py -c "REO_doAutoConfiguration=False; beamType='cosmics'" RecExOnline/RecExOnline_User_Offline_isOnlineTrue.py
+SuccessOrNot $? RecExOnline/RecExOnline_User_Offline_isOnlineTrue.py

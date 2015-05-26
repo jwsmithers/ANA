@@ -1,12 +1,23 @@
 #!/bin/sh
 export AtlasVersion=AtlasCore
+function SuccessOrNot {
+	if [ $1 -eq 0 ]; then
+    	  echo "$(tput setaf 2) $2 succeeded" >> PASSorFAIL
+	else
+   	  echo "$(tput setaf 1) $2 FAILED" >> PASSorFAIL
+	fi
+}
 
 alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
-echoC
-athena.py AthExHelloWorld/HelloWorldOptions.py
-echoC
-athena.py AthExHelloWorld/HelloWorld_ATN.py
-echoC
-athena.py AthenaServices/SimplePOSIXTimeKeeperSvc_test.py
-echoC
-athena.py AthenaServices/AthDictLoaderSvc_test.py 
+alias athena.py='timeout 100 athena.py'
+
+function runTest {
+	echoC
+	athena.py $1
+	SuccessOrNot $? $1
+}
+
+runTest AthExHelloWorld/HelloWorldOptions.py
+runTest AthExHelloWorld/HelloWorld_ATN.py
+runTest AthenaServices/SimplePOSIXTimeKeeperSvc_test.py
+runTest AthenaServices/AthDictLoaderSvc_test.py 

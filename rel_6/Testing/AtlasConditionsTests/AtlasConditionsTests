@@ -1,7 +1,23 @@
 #!/bin/sh
+
+#!/bin/sh
 export AtlasVersion=AtlasConditions
+function SuccessOrNot {
+        if [ $1 -eq 0 ]; then
+          echo "$(tput setaf 2) $2 succeeded" >> PASSorFAIL
+        else
+          echo "$(tput setaf 1) $2 FAILED" >> PASSorFAIL
+        fi
+}
+
 alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
-echoC
-timeout 10 athena.py InDetGeometryValidation/ReadTRT_DetectorElements_jobOptions.py
-echoC
-timeout 10 athena.py InDetGeometryValidation/ReadSiDetectorElements_jobOptions.py
+alias athena.py='timeout 10 athena.py'
+
+function runTest {
+        echoC
+        athena.py $1
+        SuccessOrNot $? $1
+}
+
+runTest InDetGeometryValidation/ReadTRT_DetectorElements_jobOptions.py
+runTest InDetGeometryValidation/ReadSiDetectorElements_jobOptions.py

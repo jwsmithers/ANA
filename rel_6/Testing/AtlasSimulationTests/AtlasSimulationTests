@@ -1,35 +1,28 @@
 #!/bin/sh
 export AtlasVersion=AtlasSimulation
+
+function SuccessOrNot {
+        if [ $1 -eq 0 ]; then
+          echo "$(tput setaf 2) $2 succeeded" >> PASSorFAIL
+        else
+          echo "$(tput setaf 1) $2 FAILED" >> PASSorFAIL
+        fi
+}
+
 alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
-echoC
-timeout 10 athena.py CaloDigEx/CaloDigEx.py
-echoC
-timeout 10 athena.py CaloDigEx/CaloDigEx.py
-echoC
-timeout 10 athena.py CaloSimEx/CaloSimEx.py
-echoC
-timeout 10 athena.py CaloSimEx/CaloSimEx.py
-echoC
-athena.py  -s Digitization/DigitizationRTT_all_noLVL1.py
-echoC
-athena.py  -s Digitization/DigitizationRTT_all_noLVL1.py
-echoC
-athena.py  Digitization/NightlyPileUp.py
-echoC
-athena.py  Digitization/NightlyPileUp.py
-echoC
-athena.py G4AtlasApps/jobOptions.G4Atlas.py
-echoC
-athena.py G4AtlasApps/jobOptions.G4Atlas.py
-echoC
-athena.py G4AtlasApps/jobOptions.G4Atlas_ReadEvgen.py
-echoC
-athena.py G4AtlasApps/jobOptions.G4Atlas_ReadEvgen.py
-echoC
-athena.py G4AtlasApps/jobOptions.G4Cosmic.py
-echoC
-athena.py G4AtlasApps/jobOptions.G4Cosmic.py
-echoC
-athena.py  TileSimEx/jobOptions_TileTB_Sim.py 
-echoC
-athena.py  TileSimEx/jobOptions_TileTB_Sim.py 
+alias athena.py='timeout 30 athena.py'
+
+function runTest {
+        echoC
+        athena.py $1
+        SuccessOrNot $? $1
+}
+
+runTest CaloDigEx/CaloDigEx.py
+runTest CaloSimEx/CaloSimEx.py
+runTest Digitization/DigitizationRTT_all_noLVL1.py
+runTest Digitization/NightlyPileUp.py
+runTest G4AtlasApps/jobOptions.G4Atlas.py
+runTest G4AtlasApps/jobOptions.G4Atlas_ReadEvgen.py
+runTest G4AtlasApps/jobOptions.G4Cosmic.py
+runTest TileSimEx/jobOptions_TileTB_Sim.py 
