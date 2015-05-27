@@ -1,0 +1,11 @@
+--- ShowerDeconstruction.cxx	2015-05-27 17:55:11.704822000 +0000
++++ ShowerDeconstruction.cxx1	2015-05-27 17:55:48.864822000 +0000
+@@ -47,7 +47,7 @@
+   (*m_param)["tagprob"] = 0.7;
+   (*m_param)["fakeprob"] = 0.01;
+ 
+-  m_WModel = new Deconstruction::WDecayModel(*m_param);
++ // m_WModel = new Deconstruction::WDecayModel(*m_param);
+   m_topModel = new Deconstruction::TopGluonModel(*m_param);
+   m_bkgModel = new Deconstruction::BackgroundModel(*m_param);
+   m_isrModel = new Deconstruction::ISRModel(*m_param);
