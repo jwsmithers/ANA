@@ -1,0 +1,10 @@
+--- requirements	2015-04-24 19:34:40.000000000 +0000
++++ requirements1	2015-05-29 13:53:54.694822000 +0000
+@@ -89,6 +89,7 @@
+ apply_pattern disable_package_on platform=target-i686
+ apply_pattern disable_package_on platform=target-slc4
+ apply_pattern disable_package_on platform=target-mac
++apply_pattern disable_package_on platform=target-aarch64
+ 
+ apply_pattern install_more_includes more=GaudiProfiling
+ 

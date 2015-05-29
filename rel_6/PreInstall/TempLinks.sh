@@ -1,9 +1,14 @@
 #/bin/sh
-
-
+mkdir /home/jwsmith/ANA/rel_6/DetCommon/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt
+mkdir /home/jwsmith/ANA/rel_6/DetCommon/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt/lib
+mkdir /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt
+mkdir /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt/lib
+mkdir /home/jwsmith/ANA/rel_6/AtlasConditions/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt
+mkdir /home/jwsmith/ANA/rel_6/AtlasConditions/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt/lib
+mkdir /home/jwsmith/ANA/rel_6/AtlasEvent/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt
+mkdir /home/jwsmith/ANA/rel_6/AtlasEvent/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt/lib
 ###### DetCommon #######
 ln -s /home/jwsmith/ANA/rel_6/tdaq-common/tdaq-common-01-32-00/installed/aarch64-ubuntu14-gcc49-opt/lib/* /home/jwsmith/ANA/rel_6/DetCommon/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt/lib 
-#ln -s /home/jwsmith//lcgcmake-install/CORAL/3_0-preview/aarch64-ubuntu14-gcc49-opt/lib/liblcg_*  /home/jwsmith/ANA/rel_6/DetCommon/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt/lib
 ln -s /home/jwsmith/lcgcmake-install/CORAL/3_0_3/aarch64-ubuntu14-gcc49-opt/lib/liblcg_*  /home/jwsmith/ANA/rel_6/DetCommon/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt/lib
 ###### AtlasCore #######
 ln -s /home/jwsmith/lcgcmake-install/CORAL/3_0_3/aarch64-ubuntu14-gcc49-opt/lib/liblcg_*  /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt/lib

@@ -1,4 +1,0 @@
-# setting LC_ALL to "C"
-# Restarting with LD_PRELOAD='libprofiler.so'
-# WARNING: Ignoring preload of library libprofiler.so because it is already in LD_PRELOAD.
-# --> Including file '/tmp/tmph7857U.py'

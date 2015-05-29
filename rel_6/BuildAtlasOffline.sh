@@ -34,7 +34,12 @@ goHome
 echo ""
 read -t 15 -p "What package would you like to build? Only specify one. I.e. DetCommon, AtlasCore, AtlasConditions etc. By default everything gets built. You have 15 seconds. " -e Package_name
 
-if [ "$Package_name" == "DetCommon" ]
+if [ "$Package_name" == "GAUDI" ]
+then
+        echo "Building GAUDI..."
+        echo "GAUDI" > ./.WhatToBuild.txt
+
+elif [ "$Package_name" == "DetCommon" ]
 then
 	echo "Building DetCommon..."
 	echo "DetCommon" > ./.WhatToBuild.txt

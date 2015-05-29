@@ -1,3 +1,0 @@
-#include "Common.opts"
-ApplicationMgr.TopAlg = { "LoopAlg" };
-ApplicationMgr.InitializationLoopCheck = False;

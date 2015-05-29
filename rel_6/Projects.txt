@@ -1,3 +1,4 @@
+GAUDI
 DetCommon
 AtlasCore
 AtlasConditions

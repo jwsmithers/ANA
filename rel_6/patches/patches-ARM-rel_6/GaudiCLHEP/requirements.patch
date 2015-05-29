@@ -1,0 +1,15 @@
+--- requirements	2015-04-24 19:34:45.000000000 +0000
++++ requirements1	2015-05-29 13:49:46.824822000 +0000
+@@ -4,10 +4,10 @@
+ use LCG_Settings      v*
+ 
+ # Use CLHEP 2.2.0.4 
+-macro CLHEP_native_version "2.2.0.4" 
++macro CLHEP_native_version "2.1.4.1" 
+ 
+ # overwrite with fixed location, needed for newer LCGs
+-macro CLHEP_home "${SITEROOT}/sw/lcg/external/clhep/$(CLHEP_native_version)/$(LCG_system)" 
++macro CLHEP_home "${LCG_install}/clhep/$(CLHEP_native_version)/$(LCG_system)" 
+ 
+ include_path none
+ include_dirs $(CLHEP_home)/include
