@@ -1,5 +1,6 @@
 #!/bin/sh
 echo "Setting up Atlas environment.."
+export LHAPDF_DATA_PATH=/home/jwsmith/cteq6l1
 export AtlasProject=AtlasOfflineArm
 export G4LEVELGAMMADATA=/home/seuster/external/geant4/geant4.9.6.p04/aarch64-ubuntu14-gcc49-opt/share/Geant4-9.6.4/data/PhotonEvaporation
 export CORAL_DBLOOKUP_PATH=/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/XML/AtlasAuthentication

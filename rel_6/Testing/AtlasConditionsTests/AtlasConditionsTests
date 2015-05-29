@@ -1,23 +1,30 @@
 #!/bin/sh
-
-#!/bin/sh
 export AtlasVersion=AtlasConditions
+echo -e "\e[1;34m${AtlasVersion} \e[0m" >> PASSorFAIL
 function SuccessOrNot {
-        if [ $1 -eq 0 ]; then
-          echo "$(tput setaf 2) $2 succeeded" >> PASSorFAIL
+	if [ $1 -eq 0 ]; then
+          echo -e "\e[1;32m$2 succeeded \e[0m" >> ../PASSorFAIL
         else
-          echo "$(tput setaf 1) $2 FAILED" >> PASSorFAIL
+          echo -e "\e[1;31m$2 FAILED \e[0m" >> ../PASSorFAIL
         fi
 }
 
 alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
-alias athena.py='timeout 10 athena.py'
+#alias athena.py='timeout 100 athena.py'
 
 function runTest {
         echoC
-        athena.py $1
+        newdir=`cut -d/ -f1 <<< $1`
+        runName=`cut -d/ -f2 <<< $1`
+        echo ${newdir}
+#        mkdir ${newdir}
+        cd ${newdir}
+#        ln -s /home/jwsmith/ANA/rel_6/Testing/Database_fromLxplus/* .
+        athena.py $1 > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
         SuccessOrNot $? $1
+        cd ..
 }
 
 runTest InDetGeometryValidation/ReadTRT_DetectorElements_jobOptions.py
 runTest InDetGeometryValidation/ReadSiDetectorElements_jobOptions.py
+

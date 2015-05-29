@@ -1,23 +1,38 @@
 #!/bin/sh
-#!/bin/sh
-export AtlasVersion=AtlasCore
+export AtlasVersion=AtlasEvent
+echo -e "\e[1;34m${AtlasVersion} \e[0m" >> PASSorFAIL
 function SuccessOrNot {
         if [ $1 -eq 0 ]; then
-          echo "$(tput setaf 2) $2 succeeded" >> PASSorFAIL
+          echo -e "\e[1;32m$2 succeeded \e[0m" >> ../PASSorFAIL
         else
-          echo "$(tput setaf 1) $2 FAILED" >> PASSorFAIL
+          echo -e "\e[1;31m$2 FAILED \e[0m" >> ../PASSorFAIL
         fi
 }
 
-alias athena.py='timeout 100 athena.py'
+alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
+#alias athena.py='timeout 100 athena.py'
 
 function runTest {
-        echo "$(tput setaf 1)$(tput setab 7) Starting new test: $1 $(tput sgr 0)"
-        athena.py $1
-        SuccessOrNot $? $1
+        echoC
+        newdir=`cut -d/ -f1 <<< $1`
+	runName=`cut -d/ -f2 <<< $1`
+        echo ${newdir}
+#        mkdir ${newdir}
+	cd ${newdir}	
+#        ln -s /home/jwsmith/ANA/rel_6/Testing/Database_fromLxplus/* .
+	if [ ${runName} == "MultiplePass_test.py" ] || [ ${runName} == "MixingEventSelector_test.py" ]
+        then
+		athena.py ${runName} > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
+	else
+		athena.py $1 > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
+        fi
+	SuccessOrNot $? $1
+        cd ..
 }
 runTest AthenaDBTestRec/ReadRefDBExample.py
+
 runTest AthenaServices/MultiplePass_test.py
+
 runTest EventLoopTest/ByteStreamReadTest.py
 runTest AthenaServices/MixingEventSelector_test.py
 
