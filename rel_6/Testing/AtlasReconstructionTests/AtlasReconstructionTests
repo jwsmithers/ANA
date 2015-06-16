@@ -32,11 +32,11 @@ function runTest {
 
 
 
-###############################################################
-#runTest CaloRecEx/CaloRecEx_topOptions.py
-#runTest jobOptions_RecExCommon_NewConfig.py
-##runTest InDetExperimentalReco/jobOptions_RecExCommon_masking.py
 ##############################################################
+runTest CaloRecEx/CaloRecEx_topOptions.py
+runTest jobOptions_RecExCommon_NewConfig.py
+#runTest InDetExperimentalReco/jobOptions_RecExCommon_masking.py
+#############################################################
 
 function runTestmem {
         echoC
@@ -56,21 +56,21 @@ function runTestmem {
         cd ..
 }
 
-#runTestmem RecExRecoTest/RecExRecoTest_RTT_empty.py
-#runTestmem RecExRecoTest/RecExRecoTest_RTT_forwarddet.py
-#runTestmem RecExRecoTest/RecExRecoTest_RTT_calo.py
-#runTestmem RecExRecoTest/RecExRecoTest_RTT_id.py
+runTestmem RecExRecoTest/RecExRecoTest_RTT_empty.py
+runTestmem RecExRecoTest/RecExRecoTest_RTT_forwarddet.py
+runTestmem RecExRecoTest/RecExRecoTest_RTT_calo.py
+runTestmem RecExRecoTest/RecExRecoTest_RTT_id.py
 runTestmem RecExRecoTest/RecExRecoTest_RTT_muon.py ##One we were working on 
-#runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuon.py
-#runTestmem RecExRecoTest/RecExRecoTest_RTT_idcalo.py
-#runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuoncalo.py ## But this one finds /GLOBAL/TrackingGeo/LayerMaterialV2
-#runTestmem RecExRecoTest/RecExRecoTest_RTT_idcaloegamma.py
-#runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuoncalomuoncomb.py
-#runTestmem RecExRecoTest/RecExRecoTest_RTT_calomax.py
-#runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuonmax.py
-#runTestmem RecExRecoTest/RecExRecoTest_RTT_idcalomax.py
-#runTestmem RecExRecoTest/RecExRecoTest_RTT_esd.py
-##############################################################
+runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuon.py
+runTestmem RecExRecoTest/RecExRecoTest_RTT_idcalo.py
+runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuoncalo.py ## But this one finds /GLOBAL/TrackingGeo/LayerMaterialV2
+runTestmem RecExRecoTest/RecExRecoTest_RTT_idcaloegamma.py
+runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuoncalomuoncomb.py
+runTestmem RecExRecoTest/RecExRecoTest_RTT_calomax.py
+runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuonmax.py
+runTestmem RecExRecoTest/RecExRecoTest_RTT_idcalomax.py
+runTestmem RecExRecoTest/RecExRecoTest_RTT_esd.py
+#############################################################
 #
 #function runTestesd1 {
 #        echoC

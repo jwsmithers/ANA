@@ -1,4 +1,5 @@
 #!/bin/sh
+export AtlasProject=ManaCore
 export AtlasVersion=AtlasCore
 echo -e "\e[1;34m${AtlasVersion} \e[0m" >> PASSorFAIL
 function SuccessOrNot {

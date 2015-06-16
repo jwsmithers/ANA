@@ -19,8 +19,6 @@ export LCGCMT_VERS=LCGCMT_75root6
 export TopDir=$ROOTDIR/$VERSION
 ##LCG
 export LCG_install=/home/jwsmith/lcgcmake-install
-##Gaudi
-#export GaudiDir=$ROOTDIR/GAUDI/GAUDI/rel_6
 export SW_Extras=$ROOTDIR/sw_extras
 
 ###### Temporary Path amendums #######
