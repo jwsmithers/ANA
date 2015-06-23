@@ -1,10 +1,14 @@
 #/bin/sh
+mkdir /home/jwsmith/ANA/rel_6/DetCommon/rel_6/InstallArea/
 mkdir /home/jwsmith/ANA/rel_6/DetCommon/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt
 mkdir /home/jwsmith/ANA/rel_6/DetCommon/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt/lib
+mkdir /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea
 mkdir /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt
 mkdir /home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt/lib
+mkdir /home/jwsmith/ANA/rel_6/AtlasConditions/rel_6/InstallArea/
 mkdir /home/jwsmith/ANA/rel_6/AtlasConditions/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt
 mkdir /home/jwsmith/ANA/rel_6/AtlasConditions/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt/lib
+mkdir /home/jwsmith/ANA/rel_6/AtlasEvent/rel_6/InstallArea/
 mkdir /home/jwsmith/ANA/rel_6/AtlasEvent/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt
 mkdir /home/jwsmith/ANA/rel_6/AtlasEvent/rel_6/InstallArea/aarch64-ubuntu14-gcc49-opt/lib
 ###### DetCommon #######

@@ -1,7 +1,7 @@
 #!/bin/sh
 #setuptools=setuptools-15.1
 #eigen=Eigen-3.2.4
-geant4=geant4.9.6.p04
+geant4=geant4.9.6.p04.atlas02
 #readline=readline-6.2.4.1
 
 ## Eigen install.
@@ -34,7 +34,7 @@ tar -xvf ${geant4}.tar.gz
 mv geant4.9.6.p04 geant4
 mkdir geant4_build
 cd geant4_build
-cmake -DCMAKE_INSTALL_PREFIX=/home/seuster/external/geant4/geant4.9.6.p04/aarch64-ubuntu14.04-gcc49-opt ../geant4
+cmake -DGEANT4_INSTALL_DATA=ON -DCMAKE_INSTALL_PREFIX=/home/seuster/external/geant4/geant4.9.6.p04/aarch64-ubuntu14-gcc49-opt ../geant4
 make -j8 
 make install
 
