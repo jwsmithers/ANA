@@ -1,0 +1,11 @@
+--- TrackVertexAssociationTool.cxx	2015-06-24 10:39:24.884822000 +0000
++++ TrackVertexAssociationTool.cxx1	2015-06-24 10:40:18.394822000 +0000
+@@ -101,7 +101,7 @@
+ 
+   for( const xAOD::TrackParticle* track : *trackContainer) {
+     
+-    const xAOD::Vertex * v = & m_tvaTool->getUniqueMatchVertex(*track, vecVert) ;
++    const xAOD::Vertex * v = m_tvaTool->getUniqueMatchVertex(*track, vecVert) ;
+     tva->associate( track, v );
+   }
+   return tva;

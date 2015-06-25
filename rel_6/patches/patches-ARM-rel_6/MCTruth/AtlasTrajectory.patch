@@ -1,0 +1,11 @@
+--- AtlasTrajectory.h	2015-06-25 10:09:47.004822000 +0000
++++ AtlasTrajectory.h1	2015-06-25 10:10:11.484822000 +0000
+@@ -12,7 +12,7 @@
+ 	AtlasTrajectory(const G4Track* aTrack);
+ 	~AtlasTrajectory() {}
+ 	void AppendStep(const G4Step* aStep);
+-	void DrawTrajectory() const override { DrawTrajectory(0); }
++	void DrawTrajectory() const { DrawTrajectory(0); }
+ 	void DrawTrajectory(G4int) const;
+ private:
+ 	const G4TrackingManager *theTrackManager;
