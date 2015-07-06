@@ -1,0 +1,11 @@
+--- requirements	2015-07-06 13:21:07.264822000 +0000
++++ requirements1	2015-07-06 13:35:08.754822000 +0000
+@@ -27,6 +27,8 @@
+ # sami end enable debug build
+ 
+ 
++macro_append cppflags " -fpermissive "
++
+ end_private
+ 
+ 

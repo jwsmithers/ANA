@@ -68,7 +68,7 @@
        target-vc9       '$(includes) /D "WIN32" /D "_MBCS"  /D "_WINDOWS" /FD /c /nologo /W3 /EHsc /MD /GR /Zm500' \
 -      target-vc7       '$(includes) /D "WIN32" /D "_MBCS"  /D "_WINDOWS" /FD /c /nologo /W3 /GX /MD /GR /Zm500'
 +      target-vc7       '$(includes) /D "WIN32" /D "_MBCS"  /D "_WINDOWS" /FD /c /nologo /W3 /GX /MD /GR /Zm500' \
-+      target-aarch64   " -fPIC -D_GNU_SOURCE -Dlinux -Dunix -pipe -Wall -Wextra -Werror=return-type -pthread -fsigned-char -fsigned-bitfields "
++      target-aarch64   " -fPIC -D_GNU_SOURCE -Dlinux -Dunix -pipe -Wall -Wextra -Werror=return-type -pthread -fsigned-char -fsigned-bitfields -fpermissive "
  
  # The -pedantic flag gives problems on GCC 4.3.
  macro_append cppflags "-pedantic -Wno-long-long " \
@@ -77,7 +77,7 @@
  # C compiler
  
 -macro_append cflags " -fmessage-length=0 -fPIC " \
-+macro_append cflags " -fmessage-length=0 -fPIC -fsigned-char -fsigned-bitfields " \
++macro_append cflags " -fmessage-length=0 -fPIC -fsigned-char -fsigned-bitfields -fpermissive " \
               target-winxp    " "
  
  macro_append cflags  "" \

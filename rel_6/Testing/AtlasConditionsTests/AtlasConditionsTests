@@ -25,6 +25,6 @@ function runTest {
         cd ..
 }
 
-runTest InDetGeometryValidation/ReadTRT_DetectorElements_jobOptions.py
+#runTest InDetGeometryValidation/ReadTRT_DetectorElements_jobOptions.py
 runTest InDetGeometryValidation/ReadSiDetectorElements_jobOptions.py
 

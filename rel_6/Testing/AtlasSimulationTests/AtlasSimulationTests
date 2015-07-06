@@ -10,7 +10,7 @@ function SuccessOrNot {
 }
 
 alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
-alias athena.py='timeout 30 athena.py'
+#alias athena.py='timeout 30 athena.py'
 
 function runTest {
         echoC
