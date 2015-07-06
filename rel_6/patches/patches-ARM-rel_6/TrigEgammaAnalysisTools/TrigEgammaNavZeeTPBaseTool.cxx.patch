@@ -1,0 +1,11 @@
+--- TrigEgammaNavZeeTPBaseTool.cxx	2015-07-06 13:57:36.634822000 +0000
++++ TrigEgammaNavZeeTPBaseTool.cxx1	2015-07-06 13:59:22.294822000 +0000
+@@ -105,7 +105,7 @@
+     if( (m_MVACalibTool.retrieve()).isFailure()) {
+         ATH_MSG_ERROR("Failed to retrieve " << m_MVACalibTool);
+         m_applyMVACalib = false;
+-        m_MVACalibTool = 0;
++        //m_MVACalibTool = 0;
+         return StatusCode::FAILURE; 
+     }
+     else {

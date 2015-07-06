@@ -1,0 +1,13 @@
+--- TrigEgammaNavZeeTPNtuple.cxx	2015-07-06 13:52:08.014822000 +0000
++++ TrigEgammaNavZeeTPNtuple.cxx1	2015-07-06 13:54:27.264822000 +0000
+@@ -358,8 +358,8 @@
+   const std::vector< Trig::Feature<xAOD::TrigRingerRings > > vec_featRinger = fc.get< xAOD::TrigRingerRings >("",TrigDefs::alsoDeactivateTEs);
+   for( Trig::Feature<xAOD::TrigRingerRings > featRinger : vec_featRinger ){
+     const xAOD::TrigRingerRings *ringer = featRinger.cptr();
+-    if(emCluster->RoIword() == ringer->RoIword() ){
+-    //if(emCluster->RoIword() == ringer->emCluster()->RoIword()){
++    //if(emCluster->RoIword() == ringer->RoIword() ){
++    if(emCluster->RoIword() == ringer->emCluster()->RoIword()){
+       for(unsigned i = 0; i < ringer->size();++i){
+         m_trig_L2_calo_rings->push_back(ringer->rings()[i]);
+       } // loop over rings
