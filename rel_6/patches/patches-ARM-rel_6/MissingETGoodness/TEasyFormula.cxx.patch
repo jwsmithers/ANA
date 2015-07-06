@@ -1,0 +1,11 @@
+--- TEasyFormula.cxx	2015-07-06 14:41:35.904822000 +0000
++++ TEasyFormula.cxx1	2015-07-06 14:42:36.704822000 +0000
+@@ -123,7 +123,7 @@
+   // that represent this variable.
+ 
+   Int_t ret = DefinedVariable(name) ;
+-  if (ret>=0) { action = kDefinedVariable; }
++  //if (ret>=0) { action = kDefinedVariable; }
+   return ret ;
+ }
+ 
