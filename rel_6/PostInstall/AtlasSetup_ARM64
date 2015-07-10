@@ -162,5 +162,4 @@ export SVNROOT=svn+ssh://svn.cern.ch/reps/atlasoff
 export G4UI_USE_WO=1
 export TEXMFCNF=/home/jwsmith/lcgcmake-install/LCGCMT/LCGCMT_75root6/LCG_Settings/../../../MCGenerators/rivet/2.2.0/aarch64-ubuntu14-gcc49-opt/share/Rivet/texmf/cnf
 export GEANT4=/home/seuster/external/geant4/geant4.9.6.p04/aarch64-ubuntu14-gcc49-opt
-export LESSCLOSE=/usr/bin/lesspipe %s %s
 export BoostVERS=1.56.0

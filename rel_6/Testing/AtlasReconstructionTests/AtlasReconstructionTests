@@ -33,9 +33,9 @@ function runTest {
 
 
 ##############################################################
-runTest CaloRecEx/CaloRecEx_topOptions.py
-runTest jobOptions_RecExCommon_NewConfig.py
-#runTest InDetExperimentalReco/jobOptions_RecExCommon_masking.py
+#runTest CaloRecEx/CaloRecEx_topOptions.py
+#runTest jobOptions_RecExCommon_NewConfig.py
+##runTest InDetExperimentalReco/jobOptions_RecExCommon_masking.py
 #############################################################
 
 function runTestmem {
@@ -70,23 +70,37 @@ runTestmem RecExRecoTest/RecExRecoTest_RTT_calomax.py
 runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuonmax.py
 runTestmem RecExRecoTest/RecExRecoTest_RTT_idcalomax.py
 runTestmem RecExRecoTest/RecExRecoTest_RTT_esd.py
-#############################################################
-#
-#function runTestesd1 {
-#        echoC
-#        athena.py -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True ; rec.noESDTrigger=True " AthenaCommon/MemTraceInclude.py $1
-#        SuccessOrNot $? $1
-#}
-#
-#function runTestesd2 {
-#        echoC
-#	athena.py -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True ; rec.noESDTrigger=True ; rec.doESD.set_Value_and_Lock(True) ; jp.AthenaCommonFlags.PoolESDOutput='reco_ESD.pool.root' " AthenaCommon/MemTraceInclude.py $1
-#        SuccessOrNot $? $1
-#}
-#
+############################################################
+
+function runTestesd1 {
+	echoC
+        newdir=`cut -d/ -f1 <<< $1`
+        runName=`cut -d/ -f2 <<< $1`
+        echo ${newdir}
+        mkdir ${newdir}
+        cd ${newdir}
+        ln -s /home/jwsmith/ANA/rel_6/Testing/Database_fromLxplus/* .
+        athena.py -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True ; rec.noESDTrigger=True " AthenaCommon/MemTraceInclude.py $1 > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
+        SuccessOrNot $? $1
+        cd ..
+}
+
+function runTestesd2 {
+        echoC
+        newdir=`cut -d/ -f1 <<< $1`
+        runName=`cut -d/ -f2 <<< $1`
+        echo ${newdir}
+        mkdir ${newdir}
+        cd ${newdir}
+        ln -s /home/jwsmith/ANA/rel_6/Testing/Database_fromLxplus/* .
+        athena.py -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True ; rec.noESDTrigger=True ; rec.doESD.set_Value_and_Lock(True) ; jp.AthenaCommonFlags.PoolESDOutput='reco_ESD.pool.root' " AthenaCommon/MemTraceInclude.py $1  > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
+        SuccessOrNot $? $1
+        cd ..
+}
+
 #runTestesd1 RecExCommon/esdtoesd.py
 #runTestesd2 RecExCommon/esdtoesd.py
-###############################################################
+##############################################################
 #
 #function runTestMCNatlo {
 #        echoC

@@ -1,14 +1,112 @@
 #!/bin/sh
 export AtlasVersion=AtlasTrigger
 
+echo -e "\e[1;34m${AtlasVersion} \e[0m" >> PASSorFAIL
+function SuccessOrNot {
+        if [ $1 -eq 0 ]; then
+          echo -e "\e[1;32m$2 succeeded \e[0m" >> ../PASSorFAIL
+        else
+          echo -e "\e[1;31m$2 FAILED \e[0m" >> ../PASSorFAIL
+        fi
+}
+
+alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
+#####################################################
+function runTest {
+        echoC
+        newdir=`cut -d/ -f1 <<< $1`
+        runName=`cut -d/ -f2 <<< $1`
+        echo ${newdir}
+        mkdir ${newdir}
+	cd ${newdir}
+        ln -s /home/jwsmith/ANA/rel_6/Testing/Database_fromLxplus/* .
+        athena.py $1 > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
+        SuccessOrNot $? $1
+        cd ..
+}
+
+#runTest RecExRecoTest/RecExRecoTest_RTT_empty.py
+
+######################################################
+function runTest2 {
+        echoC
+        newdir=`cut -d/ -f1 <<< $1`
+        runName=`cut -d/ -f2 <<< $1`
+        echo ${newdir}
+        mkdir ${newdir}
+        cd ${newdir}
+        ln -s /home/jwsmith/ANA/rel_6/Testing/Database_fromLxplus/* .
+        athena.py -c "jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py $1 > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
+        SuccessOrNot $?
+        cd ..
+}
+
+runTest RecExTrigTest/RecExTrigTest_RTT_trigger.py
+runTest RecExTrigTest/RecExTrigTest_RTT_esdtrigger.py
+
+######################################################
+function runTest3 {
+        echoC
+        newdir=`cut -d/ -f1 <<< $1`
+        runName=`cut -d/ -f2 <<< $1`
+        echo ${newdir}
+        mkdir ${newdir}
+        cd ${newdir}
+        ln -s /home/jwsmith/ANA/rel_6/Testing/Database_fromLxplus/* .
+        athena.py -c "jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True  ; rec.doESD.set_Value_and_Lock(True) ; jp.AthenaCommonFlags.PoolESDOutput='reco_ESD.pool.root'  " AthenaCommon/MemTraceInclude.py $1 > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
+        SuccessOrNot $?
+        cd ..
+}
+
+runTest3 RecExCommon/esdtoesd.py
+
+######################################################
+function runTest4 {
+        echoC
+        newdir=`cut -d/ -f1 <<< $1`
+        runName=`cut -d/ -f2 <<< $1`
+        echo ${newdir}
+        mkdir ${newdir}
+        cd ${newdir}
+        ln -s /home/jwsmith/ANA/rel_6/Testing/Database_fromLxplus/* .
+        athena.py -c "jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True" AthenaCommon/MemTraceInclude.py $1 > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
+        SuccessOrNot $?
+        cd ..
+}
 
 
+runTest4 RecExCommon/rdotordo.py
 
+######################################################
 
-athena.py RecExRecoTest/RecExRecoTest_RTT_empty.py
-athena.py -c "jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True  " AthenaCommon/MemTraceInclude.py RecExTrigTest/RecExTrigTest_RTT_trigger.py
-athena.py -c "jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True  " AthenaCommon/MemTraceInclude.py RecExTrigTest/RecExTrigTest_RTT_esdtrigger.py
-athena.py -c "jp.AthenaCommonFlags.EvtMax=5 ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True  ; rec.doESD.set_Value_and_Lock(True) ; jp.AthenaCommonFlags.PoolESDOutput='reco_ESD.pool.root'  " AthenaCommon/MemTraceInclude.py RecExCommon/esdtoesd.py
-athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " AthenaCommon/MemTraceInclude.py RecExCommon/rdotordo.py
-athena.py  -c "jp.AthenaCommonFlags.EvtMax=5; jp.AthenaCommonFlags.PoolRDOInput=['RDO.pool.root'] ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " RecExTrigTest/RecExTrigTest_RTT_esdtrigger.py
-athena.py -c 'jp.AthenaCommonFlags.FilesInput=["/afs/cern.ch/atlas/project/rig/referencefiles/dataStreams_high_mu/data12_8TeV/data12_8TeV.00209109.physics_JetTauEtmiss.merge.RAW._lb0186._SFO-1._0001.1"];rec.doDPD.set_Value_and_Lock(True);rec.doNameAuditor=True;jp.AthenaCommonFlags.PoolESDOutput="data_ESD.pool.root"' RecExCommon/rdotoesd.py
+function runTest5 {
+        echoC
+        newdir=`cut -d/ -f1 <<< $1`
+        runName=`cut -d/ -f2 <<< $1`
+        echo ${newdir}
+        mkdir ${newdir}
+        cd ${newdir}
+        ln -s /home/jwsmith/ANA/rel_6/Testing/Database_fromLxplus/* .      
+	athena.py -c "jp.AthenaCommonFlags.EvtMax=5; jp.AthenaCommonFlags.PoolRDOInput=['RDO.pool.root'] ; rec.doDetailedAuditor=True ; rec.doNameAuditor=True " $1 > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
+        SuccessOrNot $?
+        cd ..
+}
+
+runTest5 RecExTrigTest/RecExTrigTest_RTT_esdtrigger.py
+
+######################################################
+
+function runTest6 {
+        echoC
+        newdir=`cut -d/ -f1 <<< $1`
+        runName=`cut -d/ -f2 <<< $1`
+        echo ${newdir}
+        mkdir ${newdir}
+        cd ${newdir}
+        ln -s /home/jwsmith/ANA/rel_6/Testing/Database_fromLxplus/* .        
+	athena.py -c 'jp.AthenaCommonFlags.FilesInput=["/afs/cern.ch/atlas/project/rig/referencefiles/dataStreams_high_mu/data12_8TeV/data12_8TeV.00209109.physics_JetTauEtmiss.merge.RAW._lb0186._SFO-1._0001.1"];rec.doDPD.set_Value_and_Lock(True);rec.doNameAuditor=True;jp.AthenaCommonFlags.PoolESDOutput="data_ESD.pool.root"' $1 > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
+        SuccessOrNot $?
+        cd ..
+}
+
+runTest6 RecExCommon/rdotoesd.py
