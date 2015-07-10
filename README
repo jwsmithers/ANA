@@ -5,21 +5,86 @@
 ##########################################################################################
 
 Welcome to ATLAS Nightly on ARM (ANA).
-This will build a version of the ATLAS software for ARM, on ARM (or any other architecture you might want).
+This will build a version of the ATLAS software for ARM, on ARM (or any other architecture
+ you might want).
 
 
-FIRST: DO
->> Source Environmet
+################################## Layout ################################################
+1) Build LCG Stack (assumed completed, not covered here)
+#tdaq and dqm common arent completely integreated into ANA, 
+#therefore they require a bit of extra work.
+2) Build tdaq-common
+3) Build dqm-common
+4) Build sw_extras (Just geant)
+5) Build ATLAS projects (GAUDI, Detcommon etc) 
 
+Appendices:
+
+A1) The Patches
+A2) Creating atlas environment scripts
+
+##########################################################################################
+
+1) Done.
+
+>> source Environnemt.sh
 (Make sure the paths in that file are correct).
 
+>> cd rel_6; source CheckoutTarBalls.sh
 
-Then tdaq-common needs to be built. cd to that directory in rel_6, do 
->> source BuildSetup.sh
-cd to TDAQCRelease/cmt and do
+2) tdaq-common:
+
+>> cd patches/tdaq-common-01-*-patches
+#Go into each folder, make sure the patch makes sense, then for each do 
+>> source *.sh
+#Remember to check package versions in paths
+
+>> cd ANA/rel_6/tdaq-common/tdaq-common-01-*
+>> cp ../../BuildSetup_tdaq-common.sh . #Correct the paths
+>> source BuildSetup_tdaq-common.sh
+>> cd TDAQCRelease/cmt
 >> cmt config
 >> cmt broadcast cmt config
 >> cmt broadcast 'make -j6 && make inst'
 
-You are now ready to build the atlas software.
-(More to come)
+3) Exact same steps as 2), however copy the BuildSetup_dqm-common.sh script instead.
+
+4) Build sw_extras
+
+>> cd ANA/sw_pacakages
+>> source Buildsw_extras.sh #Remember to correct for paths
+
+5) Build ATLAS projects
+>> cd ANA/rel_6
+>> source BuildAtlasOffline.sh  # see ANA/rel_6/README for more info on what this script does.
+
+
+Appendices:
+
+A1) The patches can be applied manually (make sure to source Environment.sh first) and automatically. Applying a patch twice and saying (y) will reverse the patch.
+Creating patches is a bit annoying unfortunately. From the directory where the "faulty" file is: 
+
+>> diff -u OriginalFile NewFile > OriginalFile.patch
+>> patch -b < OriginalFile.patch
+
+Then create a folder in patches/patches-*/ and move the patch in there. Create a template.sh file in same folder so that it get's found by master script when run (copy one from another patch and adjust paths).
+
+
+A2) Once everything as been built one needs to get the environment variables out such as that in rel_6/PostInstall/. 
+>> env > AtlasSetup
+Then in a text editor add "export" to beginning of each line adn get rid of unnecessary variables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

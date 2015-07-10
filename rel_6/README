@@ -4,22 +4,16 @@
 #				joshua.wyatt.smith@cern.ch				 #      
 ##########################################################################################
 
-First you need to get the required projects. These are specified in Projects_on_AFS.txt.
-
-Open CheckoutTarBalls.sh and adjust accordingly. Then 
-
->> source CheckoutTarballs.sh 
-
-To build the projects do:
  
->> source BuildAtlasOffline.sh
+The BuildAtlasOffline.sh script:
 
-This runs the build script located in ./scripts/BuildInOrder.sh
+> Gives the options to apply patches automatically.
 
-Some things to note.
+> Gives the option to build one or all project. (excluding tdaq and dqm)
 
-a) Should you want a "make clean" or add in the debug symbols (count on about 10-20 times mores space needed) you can do this in BuildInOrder.sh, change accordingly.
+> Creates the BuildSetup.sh scripts in each projects "home" folder.
 
-b) You will be presented with an option to apply patches. This also defaults to "no". Patches can be applied "by hand as well". See the README in the ./patches directory for more info regarding the patches.
+> Runs the build script located in ./scripts/BuildInOrder.sh
 
-c) Which project to build. Either an individual project can be specified, or be default the all get built. The projects get built in order of the Projects.txt file, and so changing this file changes the defualt packages.
+	> Should you want a "make clean" or add in the debug symbols (count on about 10-20 times mores space needed) you can do this in BuildInOrder.sh, change accordingly.
+
