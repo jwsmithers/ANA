@@ -8,11 +8,11 @@ export CMTCONFIG=aarch64-ubuntu14-gcc49-opt
 export CMAKECONFIG=aarch64-ubuntu14-gcc49-opt
 export LCGCMT_VERS=75root6
 
+#CMT: version v1r25xxx is essentail. (NOT v1r26!)
 source /home/jwsmith/CMT/*/mgr/setup.sh
 #source /home/jwsmith/lcgcmake-install/cmt/v1r20p20090520/aarch64-ubuntu14-gcc49-opt/CMT/v1r20p20090520/mgr/setup.sh
 export CMTBIN=Linux-aarch64
 export CMTSITE=STANDALONE
-CMTEXTRATAGS=no-separate-debug
 export SVNROOT=svn+ssh://svn.cern.ch/reps/atlasoff
 export VERSION=rel_6
 export LCGCMT_VERS=LCGCMT_75root6

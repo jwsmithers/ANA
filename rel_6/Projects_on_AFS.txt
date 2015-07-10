@@ -1,3 +1,4 @@
+GAUDI_rel_6
 DetCommon_rel_6
 AtlasCore_rel_6
 AtlasConditions_rel_6

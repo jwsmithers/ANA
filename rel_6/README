@@ -1,0 +1,25 @@
+##########################################################################################											
+#				How to build ATHENA for ARM	                         #											 
+#				Joshua Wyatt Smith					 #      											 
+#				joshua.wyatt.smith@cern.ch				 #      
+##########################################################################################
+
+First you need to get the required projects. These are specified in Projects_on_AFS.txt.
+
+Open CheckoutTarBalls.sh and adjust accordingly. Then 
+
+>> source CheckoutTarballs.sh 
+
+To build the projects do:
+ 
+>> source BuildAtlasOffline.sh
+
+This runs the build script located in ./scripts/BuildInOrder.sh
+
+Some things to note.
+
+a) Should you want a "make clean" or add in the debug symbols (count on about 10-20 times mores space needed) you can do this in BuildInOrder.sh, change accordingly.
+
+b) You will be presented with an option to apply patches. This also defaults to "no". Patches can be applied "by hand as well". See the README in the ./patches directory for more info regarding the patches.
+
+c) Which project to build. Either an individual project can be specified, or be default the all get built. The projects get built in order of the Projects.txt file, and so changing this file changes the defualt packages.

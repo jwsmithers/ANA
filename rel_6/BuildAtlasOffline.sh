@@ -20,19 +20,19 @@ source ./scripts/CreateEnvironments.sh
 ## Should we apply files changes and patches? ###
 echo ""
 read -t 7 -p "Do you want to apply the patches and file changes for ARM? If you recently checked out packages then this will default to 'yes', otherwise it will be skipped. " -e Changes_input
-if [ "$Changes_input" == "yes" ] || [ "$Changes_input" == "Yes" ] || [ "$Package_input" == "Yes" ] || [ "$Package_input" == "yes" ]
+if [ "$Changes_input" == "yes" ] || [ "$Changes_input" == "Yes" ]
 then 
-	echo "Applying patches to suit the ARM archetecture..."
+	echo "Applying patches to suit the desired architecture..."
 	source $TopDir/scripts/ApplyPatches.sh
 else
 	echo ""
-	echo "Not applying patches and files changes. I assume this already has been done."
+	echo "NOT applying patches and files changes."
 fi
 goHome
 ################################################################################################################################
 ### What to build (Build Everything by default) ###
 echo ""
-read -t 15 -p "What package would you like to build? Only specify one. I.e. DetCommon, AtlasCore, AtlasConditions etc. By default everything gets built. You have 15 seconds. " -e Package_name
+read -t 15 -p "What package would you like to build? Only specify one. I.e. GAUDI, DetCommon, AtlasCore, AtlasConditions etc or press enter and everything will be built. Everything will be bult in 15 seconds... " -e Package_name
 
 if [ "$Package_name" == "GAUDI" ]
 then
