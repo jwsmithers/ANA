@@ -1,5 +1,5 @@
 #!/bin/bash
-cd $TopDir/patches/patches-ARM-rel_6/Hephaestus 
+cd $TopDir/patches/patches-ARM-$VERSION/Hephaestus 
 patch_dir=`pwd`
-cd $TopDir/AtlasCore/rel_6/Control/Hephaestus/src
+cd $TopDir/AtlasCore/$VERSION/Control/Hephaestus/src
 patch -b < $patch_dir/*.patch

@@ -15,6 +15,7 @@ export CMTBIN=Linux-aarch64
 export CMTSITE=STANDALONE
 export SVNROOT=svn+ssh://svn.cern.ch/reps/atlasoff
 export VERSION=rel_6
+export VERSION=20.8.0
 export LCGCMT_VERS=LCGCMT_75root6
 export TopDir=$ROOTDIR/$VERSION
 ##LCG

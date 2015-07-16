@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/AtlasFastJet
+cd $TopDir/patches/patches-ARM-$VERSION/AtlasFastJet
 patch_dir=`pwd`
-cd $TopDir/AtlasEvent/rel_6/External/AtlasFastJet/cmt
+cd $TopDir/AtlasEvent/$VERSION/External/AtlasFastJet/cmt
 patch -b < $patch_dir/*.patch

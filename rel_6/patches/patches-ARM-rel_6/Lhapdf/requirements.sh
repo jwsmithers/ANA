@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/Lhapdf
+cd $TopDir/patches/patches-ARM-$VERSION/Lhapdf
 patch_dir=`pwd`
-cd $TopDir/AtlasEvent/rel_6/External/Lhapdf/cmt
+cd $TopDir/AtlasEvent/$VERSION/External/Lhapdf/cmt
 patch -b < $patch_dir/*.patch

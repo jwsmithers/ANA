@@ -1,5 +1,5 @@
 #!/bin/sh
-cd ~/ANA/rel_6/AtlasReconstruction/rel_6/External/AtlasShowerDeconstruction
+cd ~/ANA/$VERSION/AtlasReconstruction/$VERSION/External/AtlasShowerDeconstruction
 mv src src~
 mkdir src ; cd src
 mkdir lib ; mkdir include

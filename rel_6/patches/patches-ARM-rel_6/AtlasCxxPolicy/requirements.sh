@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/AtlasCxxPolicy
+cd $TopDir/patches/patches-ARM-$VERSION/AtlasCxxPolicy
 patch_dir=`pwd`
-cd $TopDir/AtlasCore/rel_6/AtlasCxxPolicy/cmt
+cd $TopDir/AtlasCore/$VERSION/AtlasCxxPolicy/cmt
 patch -b < $patch_dir/*.patch

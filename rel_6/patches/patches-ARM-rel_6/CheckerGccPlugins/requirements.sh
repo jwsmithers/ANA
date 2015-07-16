@@ -1,5 +1,5 @@
 #!/bin/bash
-cd $TopDir/patches/patches-ARM-rel_6/CheckerGccPlugins
+cd $TopDir/patches/patches-ARM-$VERSION/CheckerGccPlugins
 patch_dir=`pwd`
-cd $TopDir/AtlasCore/rel_6/External/CheckerGccPlugins/cmt
+cd $TopDir/AtlasCore/$VERSION/External/CheckerGccPlugins/cmt
 patch -b < $patch_dir/*.patch

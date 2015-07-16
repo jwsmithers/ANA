@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/AtlasCompilers
+cd $TopDir/patches/patches-ARM-$VERSION/AtlasCompilers
 patch_dir=`pwd`
-cd $TopDir/DetCommon/rel_6/External/AtlasCompilers/cmt
+cd $TopDir/DetCommon/$VERSION/External/AtlasCompilers/cmt
 patch -b < $patch_dir/requirements.patch

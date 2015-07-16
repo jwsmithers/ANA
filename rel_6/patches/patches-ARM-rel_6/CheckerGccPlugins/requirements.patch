@@ -5,7 +5,7 @@
  macro CheckerGccPlugins_native_version "CheckerGccPlugins-00-01-16"
  
 -macro CheckerGccPlugins_home "${ATLAS_EXTERNAL}/CheckerGccPlugins/$(CheckerGccPlugins_native_version)"
-+macro CheckerGccPlugins_home "/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/External/CheckerGccPlugins/"
++macro CheckerGccPlugins_home "/home/jwsmith/ANA/$VERSION/AtlasCore/$VERSION/External/CheckerGccPlugins/"
  
  
  ##### Construct the compiler command-line arguments for enabling checking.
@@ -14,7 +14,7 @@
  apply_tag CheckerGccPlugins_project_$(CheckerGccPlugins_project)
  
 -macro CheckerGccPlugins_plugin_dir "$(CheckerGccPlugins_cmtpath)/$(cmt_installarea_prefix)/$(CMTCONFIG)/lib" \
-+macro CheckerGccPlugins_plugin_dir "/home/jwsmith/ANA/rel_6/AtlasCore/rel_6/InstallArea/$(CMTCONFIG)/lib" \
++macro CheckerGccPlugins_plugin_dir "/home/jwsmith/ANA/$VERSION/AtlasCore/$VERSION/InstallArea/$(CMTCONFIG)/lib" \
    CheckerGccPlugins_project_AtlasCore "$(CheckerGccPlugins_home)/$(CMTCONFIG)" \
    CheckerGccPlugins_project_AtlasProduction "$(CheckerGccPlugins_home)/$(CMTCONFIG)" \
    CheckerGccPlugins_project_AtlasPhysics "$(CheckerGccPlugins_home)/$(CMTCONFIG)"

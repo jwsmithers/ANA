@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/AthenaAuditors
+cd $TopDir/patches/patches-ARM-$VERSION/AthenaAuditors
 patch_dir=`pwd`
-cd $TopDir/AtlasCore/rel_6/Control/AthenaAuditors/src
+cd $TopDir/AtlasCore/$VERSION/Control/AthenaAuditors/src
 patch -b < $patch_dir/FPEAudit_linux.icc.patch

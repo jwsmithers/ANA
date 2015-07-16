@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/Xt
+cd $TopDir/patches/patches-ARM-$VERSION/Xt
 patch_dir=`pwd`
-cd $TopDir/AtlasConditions/rel_6/External/Xt/cmt
+cd $TopDir/AtlasConditions/$VERSION/External/Xt/cmt
 patch -b < $patch_dir/*.patch

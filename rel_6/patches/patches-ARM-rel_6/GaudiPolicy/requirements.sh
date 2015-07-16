@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/GaudiPolicy
+cd $TopDir/patches/patches-ARM-$VERSION/GaudiPolicy
 patch_dir=`pwd`
-cd $TopDir/GAUDI/rel_6/GaudiPolicy/cmt
+cd $TopDir/GAUDI/$VERSION/GaudiPolicy/cmt
 patch -b < $patch_dir/requirements.patch

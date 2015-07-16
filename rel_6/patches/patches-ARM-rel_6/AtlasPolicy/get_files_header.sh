@@ -1,6 +1,6 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/AtlasPolicy
+cd $TopDir/patches/patches-ARM-$VERSION/AtlasPolicy
 patch_dir=`pwd`
-cd $TopDir/AtlasCore/rel_6/AtlasPolicy/cmt/fragments
+cd $TopDir/AtlasCore/$VERSION/AtlasPolicy/cmt/fragments
 patch -b < $patch_dir/get_files_header.patch
 #Don't create a backup of this one

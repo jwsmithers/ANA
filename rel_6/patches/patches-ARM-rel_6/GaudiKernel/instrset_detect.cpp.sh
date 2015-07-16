@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/GaudiKernel
+cd $TopDir/patches/patches-ARM-$VERSION/GaudiKernel
 patch_dir=`pwd`
-cd $TopDir/GAUDI/rel_6/GaudiKernel/src/Lib
+cd $TopDir/GAUDI/$VERSION/GaudiKernel/src/Lib
 patch -b < $patch_dir/*.patch

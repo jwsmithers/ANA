@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/MCTruth
+cd $TopDir/patches/patches-ARM-$VERSION/MCTruth
 patch_dir=`pwd`
-cd $TopDir/AtlasSimulation/rel_6/Simulation/G4Sim/MCTruth/MCTruth
+cd $TopDir/AtlasSimulation/$VERSION/Simulation/G4Sim/MCTruth/MCTruth
 patch -b < $patch_dir/*.patch

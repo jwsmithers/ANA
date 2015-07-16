@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/AtlasExternalArea
+cd $TopDir/patches/patches-ARM-$VERSION/AtlasExternalArea
 patch_dir=`pwd`
-cd $TopDir/AtlasCore/rel_6/External/AtlasExternalArea/cmt
+cd $TopDir/AtlasCore/$VERSION/External/AtlasExternalArea/cmt
 patch -b < $patch_dir/*.patch

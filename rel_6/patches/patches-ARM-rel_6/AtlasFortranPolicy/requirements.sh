@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/AtlasFortranPolicy
+cd $TopDir/patches/patches-ARM-$VERSION/AtlasFortranPolicy
 patch_dir=`pwd`
-cd $TopDir/AtlasCore/rel_6/AtlasFortranPolicy/cmt
+cd $TopDir/AtlasCore/$VERSION/AtlasFortranPolicy/cmt
 patch -b < $patch_dir/*.patch

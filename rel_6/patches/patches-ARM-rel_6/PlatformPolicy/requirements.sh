@@ -1,5 +1,5 @@
 #!/bin/bash
-cd $TopDir/patches/patches-ARM-rel_6/PlatformPolicy
+cd $TopDir/patches/patches-ARM-$VERSION/PlatformPolicy
 patch_dir=`pwd`
-cd $TopDir/AtlasCore/rel_6/External/PlatformPolicy/cmt
+cd $TopDir/AtlasCore/$VERSION/External/PlatformPolicy/cmt
 patch -b < $patch_dir/*.patch

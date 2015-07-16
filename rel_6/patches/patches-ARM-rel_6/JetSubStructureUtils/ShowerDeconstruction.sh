@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/JetSubStructureUtils
+cd $TopDir/patches/patches-ARM-$VERSION/JetSubStructureUtils
 patch_dir=`pwd`
-cd $TopDir/AtlasReconstruction/rel_6/Reconstruction/Jet/JetSubStructureUtils/Root
+cd $TopDir/AtlasReconstruction/$VERSION/Reconstruction/Jet/JetSubStructureUtils/Root
 patch -b < $patch_dir/*.patch

@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/AtlasLzo
+cd $TopDir/patches/patches-ARM-$VERSION/AtlasLzo
 patch_dir=`pwd`
-cd $TopDir/AtlasCore/rel_6/External/AtlasLzo/cmt
+cd $TopDir/AtlasCore/$VERSION/External/AtlasLzo/cmt
 patch -b < $patch_dir/*.patch

@@ -1,5 +1,5 @@
 #!/bin/bash
-cd $TopDir/patches/patches-ARM-rel_6/DetCommonPolicy
+cd $TopDir/patches/patches-ARM-$VERSION/DetCommonPolicy
 patch_dir=`pwd`
-cd $TopDir/DetCommon/rel_6/DetCommonPolicy/cmt
+cd $TopDir/DetCommon/$VERSION/DetCommonPolicy/cmt
 patch -b < $patch_dir/*.patch

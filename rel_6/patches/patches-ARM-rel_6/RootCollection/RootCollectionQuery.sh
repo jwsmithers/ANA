@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/RootCollection
+cd $TopDir/patches/patches-ARM-$VERSION/RootCollection
 patch_dir=`pwd`
-cd $TopDir/AtlasCore/rel_6/Database/APR/RootCollection/src
+cd $TopDir/AtlasCore/$VERSION/Database/APR/RootCollection/src
 patch -b < $patch_dir/*.patch

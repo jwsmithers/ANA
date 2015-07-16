@@ -1,6 +1,6 @@
 #!/bin/sh
-cd $TopDir/patches/patches-ARM-rel_6/RootUtils
+cd $TopDir/patches/patches-ARM-$VERSION/RootUtils
 patch_dir=`pwd`
-cd $TopDir/AtlasCore/rel_6/Control/RootUtils/src/pyroot
+cd $TopDir/AtlasCore/$VERSION/Control/RootUtils/src/pyroot
 mv PyROOTTTreePatch.cxx PyROOTTTreePatch.cxx~ 
 #mv PyROOTTTreePatch.cxx~ PyROOTTTreePatch.cxx
