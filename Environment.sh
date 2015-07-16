@@ -14,9 +14,12 @@ source /home/jwsmith/CMT/*/mgr/setup.sh
 export CMTBIN=Linux-aarch64
 export CMTSITE=STANDALONE
 export SVNROOT=svn+ssh://svn.cern.ch/reps/atlasoff
-export VERSION=rel_6
+#export VERSION=rel_6
 export VERSION=20.8.0
 export LCGCMT_VERS=LCGCMT_75root6
+export dqm_VERSION=00-43-00
+export tdaq_VERSION=01-34-00
+
 export TopDir=$ROOTDIR/$VERSION
 ##LCG
 export LCG_install=/home/jwsmith/lcgcmake-install
