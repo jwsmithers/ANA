@@ -1,0 +1,23 @@
+There are quite a few subtleties to get the test working.
+
+Ask Rolf about sqlite, geomDB and 
+
+
+
+
+
+Some alterations so far:
+
+import egammaRec/egammaRec.py always results in a crash, add
+"
+rec.doEgamma=False
+"
+to joboptions
+
+
+For some reason gemoetry stopped wrking since it was calling tagInfo. Add
+"
+from GeoModelSvc.GeoModelSvcConf import GeoModelSvc
+GeoModelSvc.UseTagInfo=False
+"
+to fix.

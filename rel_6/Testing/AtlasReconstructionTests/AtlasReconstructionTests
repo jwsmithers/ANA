@@ -10,7 +10,6 @@ function SuccessOrNot {
 }
 
 alias echoC='echo "$(tput setaf 1)$(tput setab 7) Starting new test... $(tput sgr 0)"'
-#alias athena.py='timeout 100 athena.py'
 function runTest {
         echoC
         newdir=`cut -d/ -f1 <<< $1`
@@ -22,7 +21,11 @@ function runTest {
         then
  		cd InDetExperimentalReco
                 athena.py ${runName} > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
-        else
+	elif [ ${runName} == "CaloRecEx_topOptions.py" ]
+	then 
+		cd CaloRecEx
+		athena.py -l DEBUG ${runName} > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
+	else
         	cd ${newdir}
 	        athena.py $1 > >(tee ${runName}.log) 2>&1 ; ( exit ${PIPESTATUS[0]} )
         fi
@@ -33,7 +36,7 @@ function runTest {
 
 
 ##############################################################
-#runTest CaloRecEx/CaloRecEx_topOptions.py
+#runTest CaloRecEx_topOptions.py #switched off egamma options
 #runTest jobOptions_RecExCommon_NewConfig.py
 ##runTest InDetExperimentalReco/jobOptions_RecExCommon_masking.py
 #############################################################
@@ -56,20 +59,20 @@ function runTestmem {
         cd ..
 }
 
-runTestmem RecExRecoTest/RecExRecoTest_RTT_empty.py
-runTestmem RecExRecoTest/RecExRecoTest_RTT_forwarddet.py
-runTestmem RecExRecoTest/RecExRecoTest_RTT_calo.py
-runTestmem RecExRecoTest/RecExRecoTest_RTT_id.py
+#runTestmem RecExRecoTest/RecExRecoTest_RTT_empty.py
+#runTestmem RecExRecoTest/RecExRecoTest_RTT_forwarddet.py
+#runTestmem RecExRecoTest/RecExRecoTest_RTT_calo.py
+#runTestmem RecExRecoTest/RecExRecoTest_RTT_id.py
 runTestmem RecExRecoTest/RecExRecoTest_RTT_muon.py ##One we were working on 
-runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuon.py
-runTestmem RecExRecoTest/RecExRecoTest_RTT_idcalo.py
-runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuoncalo.py ## But this one finds /GLOBAL/TrackingGeo/LayerMaterialV2
-runTestmem RecExRecoTest/RecExRecoTest_RTT_idcaloegamma.py
-runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuoncalomuoncomb.py
-runTestmem RecExRecoTest/RecExRecoTest_RTT_calomax.py
-runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuonmax.py
-runTestmem RecExRecoTest/RecExRecoTest_RTT_idcalomax.py
-runTestmem RecExRecoTest/RecExRecoTest_RTT_esd.py
+#runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuon.py
+#runTestmem RecExRecoTest/RecExRecoTest_RTT_idcalo.py
+#runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuoncalo.py ## But this one finds /GLOBAL/TrackingGeo/LayerMaterialV2
+#runTestmem RecExRecoTest/RecExRecoTest_RTT_idcaloegamma.py
+#runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuoncalomuoncomb.py
+#runTestmem RecExRecoTest/RecExRecoTest_RTT_calomax.py
+#runTestmem RecExRecoTest/RecExRecoTest_RTT_idmuonmax.py
+#runTestmem RecExRecoTest/RecExRecoTest_RTT_idcalomax.py
+#runTestmem RecExRecoTest/RecExRecoTest_RTT_esd.py
 ############################################################
 
 function runTestesd1 {
