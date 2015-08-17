@@ -14,11 +14,15 @@ source /home/jwsmith/CMT/*/mgr/setup.sh
 export CMTBIN=Linux-aarch64
 export CMTSITE=STANDALONE
 export SVNROOT=svn+ssh://svn.cern.ch/reps/atlasoff
-#export VERSION=rel_6
-export VERSION=20.8.0
 export LCGCMT_VERS=LCGCMT_75root6
-export dqm_VERSION=00-43-00
-export tdaq_VERSION=01-34-00
+
+export VERSION=rel_6
+export dqm_VERSION=00-41-00
+export tdaq_VERSION=01-32-00
+
+#export VERSION=rel_4
+#export dqm_VERSION=00-43-00
+#export tdaq_VERSION=01-34-00
 
 export TopDir=$ROOTDIR/$VERSION
 ##LCG
@@ -30,7 +34,7 @@ export SW_Extras=$ROOTDIR/sw_extras
 export CPLUS_INCLUDE_PATH=/home/seuster/external/yampl/aarch64-ubuntu14.04-gcc49-opt/include:$CPLUS_INCLUDE_PATH
 
 #tdaq-common
-export CPLUS_INCLUDE_PATH=/home/jwsmith/ANA/rel_6/tdaq-common/tdaq-common-01-32-00/installed/include:$CPLUS_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=/home/jwsmith/ANA/$VERSION/tdaq-common/tdaq-common-${tdaq_VERSION}/installed/include:$CPLUS_INCLUDE_PATH
 #CLHEP
 export CPLUS_INCLUDE_PATH=/home/jwsmith/lcgcmake-install/clhep/2.1.4.1/aarch64-ubuntu14-gcc49-opt/include:$CPLUS_INCLUDE_PATH
 
